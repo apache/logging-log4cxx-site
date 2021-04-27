@@ -1,0 +1,28 @@
+var namespacelog4cxx_1_1pattern =
+[
+    [ "CachedDateFormat", "classlog4cxx_1_1pattern_1_1CachedDateFormat.html", "classlog4cxx_1_1pattern_1_1CachedDateFormat" ],
+    [ "ClassNamePatternConverter", "classlog4cxx_1_1pattern_1_1ClassNamePatternConverter.html", "classlog4cxx_1_1pattern_1_1ClassNamePatternConverter" ],
+    [ "DatePatternConverter", "classlog4cxx_1_1pattern_1_1DatePatternConverter.html", "classlog4cxx_1_1pattern_1_1DatePatternConverter" ],
+    [ "FileDatePatternConverter", "classlog4cxx_1_1pattern_1_1FileDatePatternConverter.html", null ],
+    [ "FileLocationPatternConverter", "classlog4cxx_1_1pattern_1_1FileLocationPatternConverter.html", "classlog4cxx_1_1pattern_1_1FileLocationPatternConverter" ],
+    [ "FormattingInfo", "classlog4cxx_1_1pattern_1_1FormattingInfo.html", "classlog4cxx_1_1pattern_1_1FormattingInfo" ],
+    [ "FullLocationPatternConverter", "classlog4cxx_1_1pattern_1_1FullLocationPatternConverter.html", "classlog4cxx_1_1pattern_1_1FullLocationPatternConverter" ],
+    [ "IntegerPatternConverter", "classlog4cxx_1_1pattern_1_1IntegerPatternConverter.html", "classlog4cxx_1_1pattern_1_1IntegerPatternConverter" ],
+    [ "LevelPatternConverter", "classlog4cxx_1_1pattern_1_1LevelPatternConverter.html", "classlog4cxx_1_1pattern_1_1LevelPatternConverter" ],
+    [ "LineLocationPatternConverter", "classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html", "classlog4cxx_1_1pattern_1_1LineLocationPatternConverter" ],
+    [ "LineSeparatorPatternConverter", "classlog4cxx_1_1pattern_1_1LineSeparatorPatternConverter.html", "classlog4cxx_1_1pattern_1_1LineSeparatorPatternConverter" ],
+    [ "LiteralPatternConverter", "classlog4cxx_1_1pattern_1_1LiteralPatternConverter.html", "classlog4cxx_1_1pattern_1_1LiteralPatternConverter" ],
+    [ "LoggerPatternConverter", "classlog4cxx_1_1pattern_1_1LoggerPatternConverter.html", "classlog4cxx_1_1pattern_1_1LoggerPatternConverter" ],
+    [ "LoggingEventPatternConverter", "classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html", "classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter" ],
+    [ "MessagePatternConverter", "classlog4cxx_1_1pattern_1_1MessagePatternConverter.html", "classlog4cxx_1_1pattern_1_1MessagePatternConverter" ],
+    [ "MethodLocationPatternConverter", "classlog4cxx_1_1pattern_1_1MethodLocationPatternConverter.html", "classlog4cxx_1_1pattern_1_1MethodLocationPatternConverter" ],
+    [ "NameAbbreviator", "classlog4cxx_1_1pattern_1_1NameAbbreviator.html", "classlog4cxx_1_1pattern_1_1NameAbbreviator" ],
+    [ "NamePatternConverter", "classlog4cxx_1_1pattern_1_1NamePatternConverter.html", "classlog4cxx_1_1pattern_1_1NamePatternConverter" ],
+    [ "NDCPatternConverter", "classlog4cxx_1_1pattern_1_1NDCPatternConverter.html", "classlog4cxx_1_1pattern_1_1NDCPatternConverter" ],
+    [ "PatternConverter", "classlog4cxx_1_1pattern_1_1PatternConverter.html", "classlog4cxx_1_1pattern_1_1PatternConverter" ],
+    [ "PatternParser", "classlog4cxx_1_1pattern_1_1PatternParser.html", null ],
+    [ "PropertiesPatternConverter", "classlog4cxx_1_1pattern_1_1PropertiesPatternConverter.html", "classlog4cxx_1_1pattern_1_1PropertiesPatternConverter" ],
+    [ "RelativeTimePatternConverter", "classlog4cxx_1_1pattern_1_1RelativeTimePatternConverter.html", "classlog4cxx_1_1pattern_1_1RelativeTimePatternConverter" ],
+    [ "ThreadPatternConverter", "classlog4cxx_1_1pattern_1_1ThreadPatternConverter.html", "classlog4cxx_1_1pattern_1_1ThreadPatternConverter" ],
+    [ "ThrowableInformationPatternConverter", "classlog4cxx_1_1pattern_1_1ThrowableInformationPatternConverter.html", "classlog4cxx_1_1pattern_1_1ThrowableInformationPatternConverter" ]
+];

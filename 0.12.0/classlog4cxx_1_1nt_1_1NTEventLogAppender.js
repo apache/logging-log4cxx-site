@@ -1,0 +1,25 @@
+var classlog4cxx_1_1nt_1_1NTEventLogAppender =
+[
+    [ "HANDLE", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a112956b99a29fdde362f3b2c4598e84d", null ],
+    [ "SID", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#ab3f814b616941ec9b1a4ebf9266d3190", null ],
+    [ "NTEventLogAppender", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#ae0935942b7116ede09d5686692def109", null ],
+    [ "NTEventLogAppender", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#aee5423ebf52236d96d7288e712476ecf", null ],
+    [ "~NTEventLogAppender", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a9feeaa23b1c28b5713bac53392a72083", null ],
+    [ "activateOptions", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a8a4b597ac0e1c9f59d691575ebe47357", null ],
+    [ "addRegistryInfo", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#ad56314ef108282e4afec48a038e5b0cc", null ],
+    [ "append", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a42baa70b2eea2c5098f57b413c4ab32f", null ],
+    [ "close", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a0f95c6f7067460f8965e0bf09b8233e2", null ],
+    [ "getLog", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a6845c105725910914e94b47735fde082", null ],
+    [ "getServer", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a3c8ae70fe7918baa812cbc928df7d377", null ],
+    [ "getSource", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a01df5ac83e1b6bc534168ddf301bf2af", null ],
+    [ "requiresLayout", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a3da65f34a3267849a8db13fa4314a26d", null ],
+    [ "setLog", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a0ab952cfe45e01f3e7626cb6e000c283", null ],
+    [ "setOption", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#af6bfae32b99b985b7acfabad77266aed", null ],
+    [ "setServer", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a4052a3fbb1a74e7b5c225aa8793a9755", null ],
+    [ "setSource", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a9c84f5b4c7a79837b297fe7da3968773", null ],
+    [ "hEventLog", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a44c63b1fdfc7c4e9975862f66096b069", null ],
+    [ "log", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a772a8a68d1b5e0ed15caeaa9079ba021", null ],
+    [ "pCurrentUserSID", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#adda6bf1454d470281f193f77f9f6d8f9", null ],
+    [ "server", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a6d74fe2d184c717ba96905d5942ee0af", null ],
+    [ "source", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a4ab11ead06e9f31db63af6a7e14da212", null ]
+];
