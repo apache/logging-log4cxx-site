@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <tr>
 <th>Version </th><th>Date </th><th>Description  </th></tr>
 <tr>
-<td><a href="#0.12.0">0.12.0</a> </td><td>Not yet released</td><td>First release to require C++11. Updates for smart pointers. Standardization on CMake for building. </td></tr>
+<td><a href="#0.12.0">0.12.0</a> </td><td>2021-05-01 </td><td>First release to require C++11. Updates for smart pointers. Standardization on CMake for building. </td></tr>
 <tr>
 <td><a href="#0.11.0">0.11.0</a> </td><td>2020-08-09 </td><td>Maintenance release. </td></tr>
 <tr>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <tr>
 <td><a href="#0.0.1">0.0.1</a> </td><td>2003-05-31 </td><td></td></tr>
 </table>
-<p><a class="anchor" id="0.12.0"></a> </p><h2>Release 0.12.0 - Not yet released</h2>
+<p><a class="anchor" id="0.12.0"></a> </p><h2>Release 0.12.0 - 2021-05-01</h2>
 <p>This is the first release to require a minimum version of C++11. This means that all objects in <a class="el" href="namespacelog4cxx.html">log4cxx</a> are now created using <code>std::shared_ptr</code> as the smart pointer implementation.</p>
 <p>Alternative build systems have been removed, and we now support CMake only for building the library.</p>
 <p>With the introduction of smart pointers, the old behavior of implicit casting no longer works. In order to cast between classes, use the new <a class="el" href="namespacelog4cxx.html#a17ec97af273461c6a22fe75656898851">log4cxx::cast</a> method. This method returns an invalid <code>shared_ptr</code> on failure, or a <code>shared_ptr</code> pointing at the same object on success. This should be transparent to user code, unless you are interacting with <a class="el" href="namespacelog4cxx.html">log4cxx</a> internals directly.</p>
@@ -134,6 +134,7 @@ $(document).ready(function(){initNavTree('changelog.html','');});
 <li>[<a href="https://issues.apache.org/jira/browse/LOGCXX-510">LOGCXX-510</a>] - Build problems using CMAKE and Visual Studio 2019 Community</li>
 <li>[<a href="https://issues.apache.org/jira/browse/LOGCXX-517">LOGCXX-517</a>] - Circular reference in ErrorHandlerTestCase</li>
 <li>[<a href="https://issues.apache.org/jira/browse/LOGCXX-521">LOGCXX-521</a>] - Can\'t link cleanly with ODBC</li>
+<li>[<a href="https://issues.apache.org/jira/browse/LOGCXX-526">LOGCXX-526</a>] - GCC-11.1.0 Support</li>
 </ul>
 <h2>New Feature </h2>
 <ul>
