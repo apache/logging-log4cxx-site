@@ -30,6 +30,7 @@
 	# redirect and not be fully transparent (anymore), because this way users may recognize the dir
 	# structure and ask for other available sites.
 	#
+	RewriteCond %{REQUEST_URI} !^/log4cxx/\d+\.\d+.\d+(?:/(?:.+)?)?$
 	RewriteCond %{REQUEST_URI} !^/log4cxx/latest_stable(?:/(?:.+)?)?$
 	RewriteCond %{REQUEST_URI} !^/log4cxx/next_stable(?:/(?:.+)?)?$
 	RewriteCond %{REQUEST_URI} !^/log4cxx/old_stable(?:/(?:.+)?)?$
