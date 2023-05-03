@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac7d85dd16b6d5d37e782a49f469d53dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the appender, flushing the buffer first then closing the default connection if it is open.  <br /></td></tr>
 <tr class="separator:ac7d85dd16b6d5d37e782a49f469d53dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a141deda09c89495e8091efea1e93e959"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a141deda09c89495e8091efea1e93e959">flushBuffer</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p)</td></tr>
-<tr class="memdesc:a141deda09c89495e8091efea1e93e959"><td class="mdescLeft">&#160;</td><td class="mdescRight">loops through the buffer of LoggingEvents, gets a sql string from <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a5b520b4aa7dc66346734e8bfab4f44bc" title="Sends the event to the attached PatternLayout object.">getLogStatement()</a> and sends it to <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#acc1fb7d41337d5cb40c7e7e74eb9945b" title="Override this to provide an alternate method of getting connections (such as caching).">execute()</a>.  <br /></td></tr>
+<tr class="memdesc:a141deda09c89495e8091efea1e93e959"><td class="mdescLeft">&#160;</td><td class="mdescRight">loops through the buffer of LoggingEvents, gets a sql string from <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a5b520b4aa7dc66346734e8bfab4f44bc" title="To be removed.">getLogStatement()</a> and sends it to <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#acc1fb7d41337d5cb40c7e7e74eb9945b" title="To be removed.">execute()</a>.  <br /></td></tr>
 <tr class="separator:a141deda09c89495e8091efea1e93e959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a294a7f60e6284c213b5d2fdb98f708ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a294a7f60e6284c213b5d2fdb98f708ba">requiresLayout</a> () const override</td></tr>
 <tr class="memdesc:a294a7f60e6284c213b5d2fdb98f708ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does this appender require a layout?  <br /></td></tr>
@@ -287,10 +287,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5b520b4aa7dc66346734e8bfab4f44bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a5b520b4aa7dc66346734e8bfab4f44bc">getLogStatement</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) const</td></tr>
-<tr class="memdesc:a5b520b4aa7dc66346734e8bfab4f44bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the event to the attached <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> object.  <br /></td></tr>
+<tr class="memdesc:a5b520b4aa7dc66346734e8bfab4f44bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be removed.  <br /></td></tr>
 <tr class="separator:a5b520b4aa7dc66346734e8bfab4f44bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1fb7d41337d5cb40c7e7e74eb9945b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#acc1fb7d41337d5cb40c7e7e74eb9945b">execute</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;sql, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p)</td></tr>
-<tr class="memdesc:acc1fb7d41337d5cb40c7e7e74eb9945b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to provide an alternate method of getting connections (such as caching).  <br /></td></tr>
+<tr class="memdesc:acc1fb7d41337d5cb40c7e7e74eb9945b"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be removed.  <br /></td></tr>
 <tr class="separator:acc1fb7d41337d5cb40c7e7e74eb9945b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d07254cf0f1e7118652a5c044bc643c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a2d07254cf0f1e7118652a5c044bc643c">closeConnection</a> (<a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a80cbdd0e4d300d4b087b8d7cb247f543">SQLHDBC</a> con)</td></tr>
 <tr class="memdesc:a2d07254cf0f1e7118652a5c044bc643c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to return the connection to a pool, or to clean up the resource.  <br /></td></tr>
@@ -311,8 +311,6 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html" title="The ODBCAppender sends log events to a database.">ODBCAppender</a> sends log events to a database. </p>
 <p>Each append call adds the <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The internal representation of logging events.">spi::LoggingEvent</a> to a buffer. When the buffer is full, values are extracted from each <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The internal representation of logging events.">spi::LoggingEvent</a> and the sql insert statement executed.</p>
 <p>The SQL insert statement pattern must be provided either in the Log4cxx configuration file using the <b>sql</b> parameter element or programatically by calling the <code>setSql(String sql)</code> method.</p>
-<p>If no <b>ColumnMapping</b> element is provided in the configuration file the sql statement is assumed to be a <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> layout. In this case all the conversion patterns in <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> can be used inside of the statement. (see the test cases for examples)</p>
-<p>If the <b>sql</b> element is not provided and no <b>ColumnMapping</b> element is provided the attached a <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> layout element is assumed to contain the sql statement.</p>
 <p>The following <b>param</b> elements are optional:</p><ul>
 <li>one of <b>DSN</b>, <b>URL</b>, <b>ConnectionString</b> - The <b>serverName</b> parameter value in the <a href="https://learn.microsoft.com/en-us/sql/odbc/reference/syntax/sqlconnect-function">SQLConnect</a> call.</li>
 <li><b>User</b> - The <b>UserName</b> parameter value in the <a href="https://learn.microsoft.com/en-us/sql/odbc/reference/syntax/sqlconnect-function">SQLConnect</a> call.</li>
@@ -370,10 +368,6 @@ Protected Member Functions</h2></td></tr>
 <div class="line">  &lt;<span class="keywordtype">priority</span> <span class="keyword">value</span> =<span class="stringliteral">&quot;INFO&quot;</span> /&gt;</div>
 <div class="line">  &lt;<span class="keywordtype">appender-ref</span> <span class="keyword">ref</span>=<span class="stringliteral">&quot;ASYNC&quot;</span> /&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">root</span>&gt;</div>
-<div class="line">&lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;PatternAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;ODBCAppender&quot;</span>&gt;</div>
-<div class="line"> &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;DSN&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;LoggingDSN&quot;</span>/&gt;</div>
-<div class="line"> &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;sql&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;INSERT INTO [ApplicationLogs].[dbo].[UnitTestLog] ([Thread],[LogName],[LogTime],[LogLevel],[FileName],[FileLine],[Message],[MappedContext]) VALUES (&#39;%t&#39;, &#39;%c&#39;,&#39;%d{yyyy-MM-dd HH:mm:ss.SSSSSS}&#39;,&#39;%p&#39;,&#39;%f&#39;,&#39;%L&#39;,&#39;%m{&#39;}&#39;,&#39;%J{&#39;}&#39;)&quot;</span> /&gt;</div>
-<div class="line">&lt;/<span class="keywordtype">appender</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">log4j:configuration</span>&gt;</div>
 </div><!-- fragment --><p>You may also want to consider the <a class="el" href="classlog4cxx_1_1db_1_1DBAppender.html" title="The DBAppender lets you log messages to a database.">DBAppender</a> class, which uses APR in order to support logging to databases apart from ODBC. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -640,8 +634,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Override this to provide an alternate method of getting connections (such as caching). </p>
-<p>One method to fix this is to open connections at the start of <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a141deda09c89495e8091efea1e93e959" title="loops through the buffer of LoggingEvents, gets a sql string from getLogStatement() and sends it to e...">flushBuffer()</a> and close them at the end. I use a connection pool outside of <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html" title="The ODBCAppender sends log events to a database.">ODBCAppender</a> which is accessed in an override of this method. </p>
+<p>To be removed. </p>
 
 </div>
 </div>
@@ -669,7 +662,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>loops through the buffer of LoggingEvents, gets a sql string from <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a5b520b4aa7dc66346734e8bfab4f44bc" title="Sends the event to the attached PatternLayout object.">getLogStatement()</a> and sends it to <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#acc1fb7d41337d5cb40c7e7e74eb9945b" title="Override this to provide an alternate method of getting connections (such as caching).">execute()</a>. </p>
+<p>loops through the buffer of LoggingEvents, gets a sql string from <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a5b520b4aa7dc66346734e8bfab4f44bc" title="To be removed.">getLogStatement()</a> and sends it to <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#acc1fb7d41337d5cb40c7e7e74eb9945b" title="To be removed.">execute()</a>. </p>
 <p>Errors are sent to the errorHandler.</p>
 <p>If a statement fails the LoggingEvent stays in the buffer! </p>
 
@@ -755,8 +748,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sends the event to the attached <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> object. </p>
-<p>The layout will format the given pattern into a workable SQL string. </p>
+<p>To be removed. </p>
 
 </div>
 </div>
