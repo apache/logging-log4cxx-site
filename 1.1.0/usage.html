@@ -112,7 +112,6 @@ $(document).ready(function(){initNavTree('usage.html',''); initResizable(); });
 </ul>
 </li>
 <li class="level1"><a href="#default-initialization">Default Initialization</a></li>
-<li class="level1"><a href="#nested-diagnostic-contexts">Nested Diagnostic Contexts</a></li>
 <li class="level1"><a href="#custom-types">Logging Custom Types</a></li>
 <li class="level1"><a href="#logging-with-fmt">Logging with {fmt}</a></li>
 <li class="level1"><a href="#internal-debugging">Internal Debugging</a></li>
@@ -550,32 +549,6 @@ Default Initialization</h1>
 <p>The Log4cxx library does not make any assumptions about its environment. In particular, when initially created the root <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> has no appender. However the library will attempt automatic configuration.</p>
 <p>If the LoggerRepositoy is not yet configured on the first call to <a class="el" href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">getLogger</a> of <a class="el" href="classlog4cxx_1_1LogManager.html">LogManager</a>, the <a class="el" href="classlog4cxx_1_1DefaultConfigurator.html#a1114a17958c8c8383b11d6fef1e8e727">configure</a> method of <a class="el" href="classlog4cxx_1_1DefaultConfigurator.html">DefaultConfigurator</a> is called via <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1">ensureIsConfigured</a> method of <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a>.</p>
 <p>To use automatic configuration with a non-standard file name create and use your own wrapper for <a class="el" href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">getLogger</a>. A full example can be seen in the <a class="el" href="com_2foo_2config3_8cpp-example.html">com/foo/config3.cpp</a> file.</p>
-<h1><a class="anchor" id="nested-diagnostic-contexts"></a>
-Nested Diagnostic Contexts</h1>
-<p>Most real-world systems have to deal with multiple clients simultaneously. In a typical multithreaded implementation of such a system, different threads will handle different clients. Logging is especially well suited to trace and debug complex distributed applications. A common approach to differentiate the logging output of one client from another is to instantiate a new separate logger for each client. This promotes the proliferation of loggers and increases the management overhead of logging.</p>
-<p>A lighter technique is to uniquely stamp each log request initiated from the same client interaction. Neil Harrison described this method in the book "Patterns for Logging Diagnostic Messages," in <em>Pattern Languages of Program Design 3</em>, edited by R. Martin, D. Riehle, and F. Buschmann (Addison-Wesley, 1997).</p>
-<p>To uniquely stamp each request, the user pushes contextual information into the NDC, the abbreviation of <em>Nested Diagnostic Context</em>. The NDC class is shown below.</p>
-<div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a> {</div>
-<div class="line">    <span class="keyword">class </span>NDC {</div>
-<div class="line">        <span class="keyword">public</span>:</div>
-<div class="line">            <span class="comment">// pushes the value on construction and pops on destruction.</span></div>
-<div class="line">            NDC(<span class="keyword">const</span> std::string&amp; value);</div>
-<div class="line">            NDC(<span class="keyword">const</span> std::wstring&amp; value);</div>
-<div class="line"> </div>
-<div class="line">            <span class="comment">// Remove the top of the context from the NDC.</span></div>
-<div class="line">            <span class="keyword">static</span> <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> <a class="code hl_function" href="classlog4cxx_1_1NDC.html#a617f0612ff8cc91d0bad7ea77aa7c0c2">pop</a>();</div>
-<div class="line"> </div>
-<div class="line">            <span class="comment">// Add diagnostic context for the current thread.</span></div>
-<div class="line">            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1NDC.html#a6d9c7d1f558df31213bb4d7781643419">push</a>(<span class="keyword">const</span> std::string&amp; message);</div>
-<div class="line">            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1NDC.html#a6d9c7d1f558df31213bb4d7781643419">push</a>(<span class="keyword">const</span> std::wstring&amp; message);</div>
-<div class="line">    }</div>
-<div class="line">}</div>
-<div class="ttc" id="aclasslog4cxx_1_1NDC_html_a617f0612ff8cc91d0bad7ea77aa7c0c2"><div class="ttname"><a href="classlog4cxx_1_1NDC.html#a617f0612ff8cc91d0bad7ea77aa7c0c2">log4cxx::NDC::pop</a></div><div class="ttdeci">static LogString pop()</div><div class="ttdoc">Pop top value off stack.</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1NDC_html_a6d9c7d1f558df31213bb4d7781643419"><div class="ttname"><a href="classlog4cxx_1_1NDC.html#a6d9c7d1f558df31213bb4d7781643419">log4cxx::NDC::push</a></div><div class="ttdeci">static void push(const std::string &amp;message)</div><div class="ttdoc">Push new diagnostic context information for the current thread.</div></div>
-<div class="ttc" id="anamespacelog4cxx_html_aa2308ed05fef2a1366066cb38b177e94"><div class="ttname"><a href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a></div><div class="ttdeci">std::basic_string&lt; logchar &gt; LogString</div><div class="ttdef"><b>Definition:</b> logstring.h:60</div></div>
-</div><!-- fragment --><p>The NDC is managed per thread as a <em>stack</em> of contextual information. Note that all methods of the <em><a class="el" href="classlog4cxx_1_1NDC.html" title="the ndc class implements nested diagnostic contexts as defined by neil harrison in the article &quot;patte...">log4cxx::NDC</a></em> class are static. Assuming that NDC printing is turned on, every time a log request is made, the appropriate Log4cxx component will include the <em>entire</em> NDC stack for the current thread in the log output. This is done without the intervention of the user, who is responsible only for placing the correct information in the NDC by using the <em>push</em> and <em>pop</em> methods at a few well-defined points in the code. In contrast, the per-client logger approach commands extensive changes in the code.</p>
-<p>To illustrate this point, let us take the example of a servlet delivering content to numerous clients. The servlet can build the NDC at the very beginning of the request before executing other code. The contextual information can be the client's host name and other information inherent to the request, typically information contained in cookies. Hence, even if the servlet is serving multiple clients simultaneously, the logs initiated by the same code, i.e. belonging to the same logger, can still be distinguished because each client request will have a different NDC stack. Contrast this with the complexity of passing a freshly instantiated logger to all code exercised during the client's request.</p>
-<p>Nevertheless, some sophisticated applications, such as virtual hosting web servers, must log differently depending on the virtual host context and also depending on the software component issuing the request. Recent Log4cxx releases support multiple hierarchy trees. This enhancement allows each virtual host to possess its own copy of the logger hierarchy.</p>
 <h1><a class="anchor" id="custom-types"></a>
 Logging Custom Types</h1>
 <p>Often, the data that needs to be logged is not just standard data types (such as int, string, etc), but amalgamations of those types in a data structure such as a class or struct. In order to log these custom types, simply override an <code>operator&lt;&lt;</code> function, the same as if you would print the custom type to <code>std::cout</code>. This can be accomplished by doing the following:</p>
@@ -677,7 +650,7 @@ Conclusions</h1>
     <li class="navelem"><a class="el" href="usage-overview.html">Usage</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

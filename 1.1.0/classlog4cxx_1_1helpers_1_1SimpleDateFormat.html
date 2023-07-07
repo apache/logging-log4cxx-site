@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classlog4cxx_1_1helpers_1_1SimpleDateF
 </div><!--header-->
 <div class="contents">
 
-<p>Concrete class for formatting and parsing dates in a locale-sensitive manner.  
+<p>Concrete class for converting and formatting a date/time in a locale-sensitive manner.  
  <a href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="simpledateformat_8h_source.html">simpledateformat.h</a>&gt;</code></p>
@@ -118,9 +118,10 @@ Inheritance diagram for log4cxx::helpers::SimpleDateFormat:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad9390aecf82949a4c8d1698e3fd1694f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#ad9390aecf82949a4c8d1698e3fd1694f">SimpleDateFormat</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;pattern)</td></tr>
-<tr class="memdesc:ad9390aecf82949a4c8d1698e3fd1694f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classlog4cxx_1_1helpers_1_1DateFormat.html" title="DateFormat is an abstract class for date/time formatting patterned after java.text....">DateFormat</a> using the given pattern and the default time zone.  <br /></td></tr>
+<tr class="memdesc:ad9390aecf82949a4c8d1698e3fd1694f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time converter and formatter using <code>pattern</code> and the default std::locale.  <br /></td></tr>
 <tr class="separator:ad9390aecf82949a4c8d1698e3fd1694f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa288211d4c86b15c2ec054719ee5a68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#aaa288211d4c86b15c2ec054719ee5a68">SimpleDateFormat</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;pattern, const std::locale *locale)</td></tr>
+<tr class="memdesc:aaa288211d4c86b15c2ec054719ee5a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time converter and formatter using <code>pattern</code> and <code>locale</code>.  <br /></td></tr>
 <tr class="separator:aaa288211d4c86b15c2ec054719ee5a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9216db89bdca93ddce4815e956037601"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#a9216db89bdca93ddce4815e956037601">~SimpleDateFormat</a> ()</td></tr>
 <tr class="separator:a9216db89bdca93ddce4815e956037601"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,7 +162,53 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a5caed86bbc026955f0c5510942aca556 inherit pro_methods_classlog4cxx_1_1helpers_1_1DateFormat"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Concrete class for formatting and parsing dates in a locale-sensitive manner. </p>
+<div class="textblock"><p>Concrete class for converting and formatting a date/time in a locale-sensitive manner. </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Specifier   </th><th class="markdownTableHeadNone">Date/time component    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">G   </td><td class="markdownTableBodyNone">era    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">y   </td><td class="markdownTableBodyNone">year    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">M   </td><td class="markdownTableBodyNone">month number    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">MMM   </td><td class="markdownTableBodyNone">abbreviated month name    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">MMMM   </td><td class="markdownTableBodyNone">full month name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">w   </td><td class="markdownTableBodyNone">week in year    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">W   </td><td class="markdownTableBodyNone">week in month    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">D   </td><td class="markdownTableBodyNone">day in year    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">d   </td><td class="markdownTableBodyNone">day in month    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">EEE   </td><td class="markdownTableBodyNone">abbreviated day name    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">EEEE   </td><td class="markdownTableBodyNone">full day name    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">a   </td><td class="markdownTableBodyNone">AM or PM    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">H   </td><td class="markdownTableBodyNone">hour 0 - 23    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">k   </td><td class="markdownTableBodyNone">hour 1 - 24    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">K   </td><td class="markdownTableBodyNone">hour 0 - 11    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">h   </td><td class="markdownTableBodyNone">hour 1 - 12    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">m   </td><td class="markdownTableBodyNone">minute    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">s   </td><td class="markdownTableBodyNone">second    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">S   </td><td class="markdownTableBodyNone">millisecond    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">z   </td><td class="markdownTableBodyNone">time zone identifier    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Z   </td><td class="markdownTableBodyNone">RFC822 time zone   </td></tr>
+</table>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad9390aecf82949a4c8d1698e3fd1694f" name="ad9390aecf82949a4c8d1698e3fd1694f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9390aecf82949a4c8d1698e3fd1694f">&#9670;&#160;</a></span>SimpleDateFormat() <span class="overload">[1/2]</span></h2>
@@ -179,10 +226,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classlog4cxx_1_1helpers_1_1DateFormat.html" title="DateFormat is an abstract class for date/time formatting patterned after java.text....">DateFormat</a> using the given pattern and the default time zone. </p>
+<p>A time converter and formatter using <code>pattern</code> and the default std::locale. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pattern</td><td>the pattern describing the date and time format </td></tr>
+    <tr><td class="paramname">pattern</td><td>the specifiers describing the date and time format </td></tr>
   </table>
   </dd>
 </dl>
@@ -214,6 +261,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A time converter and formatter using <code>pattern</code> and <code>locale</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pattern</td><td>the specifiers describing the date and time format </td></tr>
+    <tr><td class="paramname">locale</td><td>the user-preferred set of immutable facets </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -337,7 +393,7 @@ Additional Inherited Members</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="namespacelog4cxx_1_1helpers.html">helpers</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html">SimpleDateFormat</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

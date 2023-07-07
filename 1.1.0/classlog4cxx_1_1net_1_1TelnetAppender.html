@@ -128,10 +128,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a90bce24b5449af06cd03d2d18c81d32a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html#a90bce24b5449af06cd03d2d18c81d32a">setEncoding</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value)</td></tr>
 <tr class="separator:a90bce24b5449af06cd03d2d18c81d32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09edfb59842af09ebd26f1aa37d5186d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html#a09edfb59842af09ebd26f1aa37d5186d">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) override</td></tr>
-<tr class="memdesc:a09edfb59842af09ebd26f1aa37d5186d"><td class="mdescLeft">&#160;</td><td class="mdescRight">all of the options have been set, create the socket handler and wait for connections.  <br /></td></tr>
+<tr class="memdesc:a09edfb59842af09ebd26f1aa37d5186d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.      <br /></td></tr>
 <tr class="separator:a09edfb59842af09ebd26f1aa37d5186d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82baa915d3520f409f3f16b351014b2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html#a82baa915d3520f409f3f16b351014b2d">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a82baa915d3520f409f3f16b351014b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set options.  <br /></td></tr>
+<tr class="memdesc:a82baa915d3520f409f3f16b351014b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.      <br /></td></tr>
 <tr class="separator:a82baa915d3520f409f3f16b351014b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c0dd98a183021f805798de542c9e5b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html#a8c0dd98a183021f805798de542c9e5b1">getPort</a> () const</td></tr>
 <tr class="memdesc:a8c0dd98a183021f805798de542c9e5b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns value of the <b>Port</b> option.  <br /></td></tr>
@@ -153,10 +153,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af6d1ab262b89bbea3a1e90b571dd844f inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize this appender by calling the derived class' <code>close</code> method.  <br /></td></tr>
 <tr class="separator:af6d1ab262b89bbea3a1e90b571dd844f inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a748043d02b71acad6205444ebeb6a75c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a748043d02b71acad6205444ebeb6a75c">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;) override</td></tr>
-<tr class="memdesc:a748043d02b71acad6205444ebeb6a75c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived appenders should override this method if option structure requires it.  <br /></td></tr>
+<tr class="memdesc:a748043d02b71acad6205444ebeb6a75c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.    <br /></td></tr>
 <tr class="separator:a748043d02b71acad6205444ebeb6a75c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79c778323e79f6b9a2df5b0e54de0337 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a79c778323e79f6b9a2df5b0e54de0337 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.  <br /></td></tr>
+<tr class="memdesc:a79c778323e79f6b9a2df5b0e54de0337 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.    <br /></td></tr>
 <tr class="separator:a79c778323e79f6b9a2df5b0e54de0337 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c1444922c46ebfee546b6486531491 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aa4c1444922c46ebfee546b6486531491">addFilter</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a> newFilter) override</td></tr>
 <tr class="memdesc:aa4c1444922c46ebfee546b6486531491 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a filter to end of the filter list.  <br /></td></tr>
@@ -342,7 +342,8 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>all of the options have been set, create the socket handler and wait for connections. </p>
+<p>Activate the options that were previously set with calls to option setters.     </p>
+<p>Create the socket handler and wait for connections. </p>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a748043d02b71acad6205444ebeb6a75c">log4cxx::AppenderSkeleton</a>.</p>
 
@@ -536,7 +537,16 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set options. </p>
+<p>Set <code>option</code> to <code>value</code>.     </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Supported options   </th><th class="markdownTableHeadNone">Supported values   </th><th class="markdownTableHeadNone">Default value    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Port   </td><td class="markdownTableBodyNone">{int}   </td><td class="markdownTableBodyNone">23    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Encoding   </td><td class="markdownTableBodyNone">C,UTF-8,UTF-16,UTF-16BE,UTF-16LE,646,US-ASCII,ISO646-US,ANSI_X3.4-1968,ISO-8859-1,ISO-LATIN-1   </td><td class="markdownTableBodyNone">UTF-8   </td></tr>
+</table>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337">log4cxx::AppenderSkeleton</a>.</p>
 
@@ -597,7 +607,7 @@ Friends</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="namespacelog4cxx_1_1net.html">net</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html">TelnetAppender</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

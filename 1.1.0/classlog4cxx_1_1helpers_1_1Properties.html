@@ -240,48 +240,23 @@ Public Member Functions</h2></td></tr>
 <p>The stream is assumed to be using the ISO 8859-1 character encoding.</p>
 <p>Every property occupies one line of the input stream. Each line is terminated by a line terminator (<code>\n</code> or <code>\r</code> or <code>\r\n</code>). Lines from the input stream are processed until end of file is reached on the input stream.</p>
 <p>A line that contains only whitespace or whose first non-whitespace character is an ASCII <code>#</code> or <code>!</code> is ignored (thus, <code>#</code> or <code>!</code> indicate comment lines).</p>
-<p>Every line other than a blank line or a comment line describes one property to be added to the table (except that if a line ends with \, then the following line, if it exists, is treated as a continuation line, as described below). The key consists of all the characters in the line starting with the first non-whitespace character and up to, but not including, the first ASCII <code>=</code>, <code>:</code>, or whitespace character. All of the key termination characters may be included in the key by preceding them with a <code>\</code>. Any whitespace after the key is skipped; if the first non-whitespace character after the key is <code>=</code> or <code>:</code>, then it is ignored and any whitespace characters after it are also skipped. All remaining characters on the line become part of the associated element string. Within the element string, the ASCII escape sequences <code>\t</code>, <code>\n</code>, <code>\r</code>, <code>\</code>, <code>\"&lt;/code&gt;,
-&lt;code&gt;\\'&lt;/code&gt;, &lt;code&gt;\\&lt;/code&gt; (a backslash and a space), and
-&lt;code&gt;\\uxxxx&lt;/code&gt; are recognized
-and converted to single characters. Moreover, if the last character on
-the line is &lt;code&gt;\\&lt;/code&gt;, then the next line is treated as a
-continuation of the
-current line; the &lt;code&gt;\\&lt;/code&gt; and line terminator are simply
-discarded, and any
-leading whitespace characters on the continuation line are also
-discarded and are not part of the element string.
-
-&lt;p&gt;As an example, each of the following four lines specifies the key
-"Truth" and the associated element value "Beauty":
-
-&lt;pre&gt;
+<p>Every line other than a blank line or a comment line describes one property to be added to the table (except that if a line ends with \, then the following line, if it exists, is treated as a continuation line, as described below). The key consists of all the characters in the line starting with the first non-whitespace character and up to, but not including, the first ASCII <code>=</code>, <code>:</code>, or whitespace character. All of the key termination characters may be included in the key by preceding them with a <code>\</code>. Any whitespace after the key is skipped; if the first non-whitespace character after the key is <code>=</code> or <code>:</code>, then it is ignored and any whitespace characters after it are also skipped. All remaining characters on the line become part of the associated element string. Within the element string, the ASCII escape sequences <code>\t</code>, <code>\n</code>, <code>\r</code>, <code>\ </code>, <code>\"</code>, <code>\'</code>, <code>\</code> (a backslash and a space), and <code>\uxxxx</code> are recognized and converted to single characters. Moreover, if the last character on the line is <code>\</code>, then the next line is treated as a continuation of the current line; the <code>\</code> and line terminator are simply discarded, and any leading whitespace characters on the continuation line are also discarded and are not part of the element string.</p>
+<p>As an example, each of the following four lines specifies the key "Truth" and the associated element value "Beauty":</p>
+<pre>
 Truth = Beauty
 Truth:Beauty
 Truth         :Beauty
-&lt;/pre&gt;
-
-As another example, the following three lines specify a single
-property:
-&lt;pre&gt;
+</pre><p>As another example, the following three lines specify a single property: </p><pre>
 fruits           apple, banana, pear, \
           cantaloupe, watermelon, \
           kiwi, mango
-&lt;/pre&gt;
-The key is "<code>fruits</code>" and the associated element is:
-&lt;pre&gt;
+</pre><p> The key is <code>"fruits"</code> and the associated element is: </p><pre>
 "apple, banana, pear, cantaloupe, watermelon, kiwi, mango"
-&lt;/pre&gt;
-Note that a space appears before each \ so that a space will appear
-after each comma in the final result; the \, line terminator, and
-leading whitespace on the continuation line are merely discarded and are
-not replaced by one or more other characters.
-
-&lt;p&gt;As a third example, the line:
-&lt;pre&gt;
+</pre><p> Note that a space appears before each \ so that a space will appear after each comma in the final result; the \, line terminator, and leading whitespace on the continuation line are merely discarded and are not replaced by one or more other characters.</p>
+<p>As a third example, the line: </p><pre>
 cheeses
-&lt;/pre&gt;
-specifies that the key is "<code>cheeses</code>" and the associated element is the empty string.</code></p>
-<p><code></p><dl class="params"><dt>Parameters</dt><dd>
+</pre><p> specifies that the key is <code>"cheeses"</code> and the associated element is the empty string.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inStream</td><td>the input stream.</td></tr>
   </table>
@@ -293,7 +268,6 @@ specifies that the key is "<code>cheeses</code>" and the associated element is t
   </table>
   </dd>
 </dl>
-<p></code></p>
 
 </div>
 </div>
@@ -405,7 +379,7 @@ specifies that the key is "<code>cheeses</code>" and the associated element is t
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="namespacelog4cxx_1_1helpers.html">helpers</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

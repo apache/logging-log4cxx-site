@@ -141,34 +141,34 @@ $(document).ready(function(){initNavTree('patternlayout_8h_source.html',''); ini
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span> </div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#af47e2ebe41682481236264429c4d475e">  467</a></span>        ~<a class="code hl_class" href="classlog4cxx_1_1PatternLayout.html">PatternLayout</a>();</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span> </div>
-<div class="line"><a id="l00474" name="l00474"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#ae7b9d3bd277f4bc03000ad6f533339ba">  474</a></span>        <span class="keywordtype">void</span> setConversionPattern(const <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; conversionPattern);</div>
-<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span> </div>
-<div class="line"><a id="l00479" name="l00479"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#ac9d462fd91a2a480c1fce00e897e3c37">  479</a></span>        <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> getConversionPattern() const;</div>
-<div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span> </div>
-<div class="line"><a id="l00484" name="l00484"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#aadbbda63d2bb49d96bbe8ef4a0eb53ab">  484</a></span>        <span class="keywordtype">void</span> activateOptions(helpers::Pool&amp; p) override;</div>
-<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span> </div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#a68433bfbfdec4ff87f1d3e98d22a98f5">  486</a></span>        <span class="keywordtype">void</span> setOption(const <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; option, const <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; value) override;</div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span> </div>
-<div class="line"><a id="l00493" name="l00493"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#a77e94bdad33a7260989db9316ba1b482">  493</a></span>        <span class="keywordtype">bool</span> ignoresThrowable()<span class="keyword"> const override</span></div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span><span class="keyword">        </span>{</div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>        }</div>
-<div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span> </div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#abe427b07962e5d99cd7d48728e99c57c">  501</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1PatternLayout.html#abe427b07962e5d99cd7d48728e99c57c">format</a>(    <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; output,</div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a>&amp; event,</div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>            <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a>&amp; pool) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span> </div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#a88fc2fd8db5f3d09409b6342f9fc3618">  506</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacelog4cxx_1_1pattern.html#a46412c36b812db386d71ed0321e7ab05">log4cxx::pattern::PatternMap</a> <a class="code hl_function" href="classlog4cxx_1_1PatternLayout.html#a88fc2fd8db5f3d09409b6342f9fc3618">getFormatSpecifiers</a>();</div>
-<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span> </div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        pattern::PatternConverterPtr createColorStartPatternConverter(<span class="keyword">const</span> std::vector&lt;LogString&gt;&amp; options);</div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>};</div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span> </div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno"><a class="line" href="namespacelog4cxx.html#a915a2895559f016b2728e0c1fb02e6fd">  512</a></span><a class="code hl_function" href="namespacelog4cxx.html#ac860424200b65dc9449d08dc539068b2">LOG4CXX_PTR_DEF</a>(<a class="code hl_class" href="classlog4cxx_1_1PatternLayout.html">PatternLayout</a>);</div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>} <span class="comment">// namespace log4cxx</span></div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#ae7b9d3bd277f4bc03000ad6f533339ba">  475</a></span>        <span class="keywordtype">void</span> setConversionPattern(const <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; conversionPattern);</div>
+<div class="line"><a id="l00476" name="l00476"></a><span class="lineno">  476</span> </div>
+<div class="line"><a id="l00480" name="l00480"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#ac9d462fd91a2a480c1fce00e897e3c37">  480</a></span>        <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> getConversionPattern() const;</div>
+<div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span> </div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#aadbbda63d2bb49d96bbe8ef4a0eb53ab">  487</a></span>        <span class="keywordtype">void</span> activateOptions(helpers::Pool&amp; p) override;</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span> </div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#a68433bfbfdec4ff87f1d3e98d22a98f5">  513</a></span>        <span class="keywordtype">void</span> setOption(const <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; option, const <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; value) override;</div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="preprocessor">#endif </span><span class="comment">//_LOG4CXX_PATTERN_LAYOUT_H</span></div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#a77e94bdad33a7260989db9316ba1b482">  520</a></span>        <span class="keywordtype">bool</span> ignoresThrowable()<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span><span class="keyword">        </span>{</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        }</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#abe427b07962e5d99cd7d48728e99c57c">  528</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1PatternLayout.html#abe427b07962e5d99cd7d48728e99c57c">format</a>(    <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; output,</div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a>&amp; event,</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>            <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a>&amp; pool) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span> </div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1PatternLayout.html#a88fc2fd8db5f3d09409b6342f9fc3618">  533</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacelog4cxx_1_1pattern.html#a46412c36b812db386d71ed0321e7ab05">log4cxx::pattern::PatternMap</a> <a class="code hl_function" href="classlog4cxx_1_1PatternLayout.html#a88fc2fd8db5f3d09409b6342f9fc3618">getFormatSpecifiers</a>();</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span> </div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>        pattern::PatternConverterPtr createColorStartPatternConverter(<span class="keyword">const</span> std::vector&lt;LogString&gt;&amp; options);</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>};</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno"><a class="line" href="namespacelog4cxx.html#a915a2895559f016b2728e0c1fb02e6fd">  539</a></span><a class="code hl_function" href="namespacelog4cxx.html#ac860424200b65dc9449d08dc539068b2">LOG4CXX_PTR_DEF</a>(<a class="code hl_class" href="classlog4cxx_1_1PatternLayout.html">PatternLayout</a>);</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>} <span class="comment">// namespace log4cxx</span></div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span> </div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span><span class="preprocessor">#endif </span><span class="comment">//_LOG4CXX_PATTERN_LAYOUT_H</span></div>
 <div class="ttc" id="aclasslog4cxx_1_1Layout_html"><div class="ttname"><a href="classlog4cxx_1_1Layout.html">log4cxx::Layout</a></div><div class="ttdoc">Extend this abstract class to create your own log layout format.</div><div class="ttdef"><b>Definition:</b> layout.h:34</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1PatternLayout_html"><div class="ttname"><a href="classlog4cxx_1_1PatternLayout.html">log4cxx::PatternLayout</a></div><div class="ttdoc">A flexible layout configurable with pattern string.</div><div class="ttdef"><b>Definition:</b> patternlayout.h:447</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1PatternLayout_html_a88fc2fd8db5f3d09409b6342f9fc3618"><div class="ttname"><a href="classlog4cxx_1_1PatternLayout.html#a88fc2fd8db5f3d09409b6342f9fc3618">log4cxx::PatternLayout::getFormatSpecifiers</a></div><div class="ttdeci">virtual log4cxx::pattern::PatternMap getFormatSpecifiers()</div></div>
@@ -196,10 +196,10 @@ $(document).ready(function(){initNavTree('patternlayout_8h_source.html',''); ini
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5eb159725f84c66aafd839904a4acdd0.html">main</a></li><li class="navelem"><a class="el" href="dir_df3bee86fdbfb464c3a94507855b0bdc.html">include</a></li><li class="navelem"><a class="el" href="dir_7be30a74690c85c659aa4940da9d1914.html">log4cxx</a></li><li class="navelem"><a class="el" href="patternlayout_8h.html">patternlayout.h</a></li>
+    <li class="navelem"><a class="el" href="dir_8f91b758b065bd819ee8f7dc3f677aaf.html">src</a></li><li class="navelem"><a class="el" href="dir_1b5b2ce64a57900ce45e762cd4aeb527.html">main</a></li><li class="navelem"><a class="el" href="dir_ab306221cab606ae77d28622ae23b6e8.html">include</a></li><li class="navelem"><a class="el" href="dir_d6ab321c53270d8e494d88f6a7352018.html">log4cxx</a></li><li class="navelem"><a class="el" href="patternlayout_8h.html">patternlayout.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

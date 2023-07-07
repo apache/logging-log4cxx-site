@@ -19,7 +19,6 @@ var usage_overview =
         [ "Runtime Configuration", "usage.html#configuration", null ]
       ] ],
       [ "Default Initialization", "usage.html#default-initialization", null ],
-      [ "Nested Diagnostic Contexts", "usage.html#nested-diagnostic-contexts", null ],
       [ "Logging Custom Types", "usage.html#custom-types", null ],
       [ "Logging with {fmt}", "usage.html#logging-with-fmt", null ],
       [ "Internal Debugging", "usage.html#internal-debugging", null ],
@@ -29,6 +28,7 @@ var usage_overview =
       ] ],
       [ "Conclusions", "usage.html#conclusions", null ]
     ] ],
+    [ "Nested Diagnostic Contexts", "nested-diagnostic-contexts.html", null ],
     [ "Filtering Log Messages", "filters.html", "filters" ],
     [ "Threading", "threading.html", [
       [ "Threading Notes with Log4cxx", "threading.html#threading-notes", [

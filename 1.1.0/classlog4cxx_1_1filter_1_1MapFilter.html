@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classlog4cxx_1_1filter_1_1MapFilter.ht
 </div><!--header-->
 <div class="contents">
 
-<p>A Filter that operates on a Map and can be used like in the following example:  
+<p>A Filter that operates on the current thread's <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> map.  
  <a href="classlog4cxx_1_1filter_1_1MapFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mapfilter_8h_source.html">mapfilter.h</a>&gt;</code></p>
@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac1eb6a0fba850c60780133c7982198f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1filter_1_1MapFilter.html#ac1eb6a0fba850c60780133c7982198f7">~MapFilter</a> ()</td></tr>
 <tr class="separator:ac1eb6a0fba850c60780133c7982198f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf7d12e3380cb03d6f44cfde8964e105"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1filter_1_1MapFilter.html#aaf7d12e3380cb03d6f44cfde8964e105">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:aaf7d12e3380cb03d6f44cfde8964e105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set options.  <br /></td></tr>
+<tr class="memdesc:aaf7d12e3380cb03d6f44cfde8964e105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.    <br /></td></tr>
 <tr class="separator:aaf7d12e3380cb03d6f44cfde8964e105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2387e3cda8f3716fcac0eeee96c6a788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1filter_1_1MapFilter.html#a2387e3cda8f3716fcac0eeee96c6a788">setKeyValue</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;strKey, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;strValue)</td></tr>
 <tr class="separator:a2387e3cda8f3716fcac0eeee96c6a788"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,10 +149,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abb49a7ccff8b3faf2004f0003d0b4cd0 inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1Filter.html#abb49a7ccff8b3faf2004f0003d0b4cd0">setNext</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">log4cxx::spi::FilterPtr</a> &amp;newNext)</td></tr>
 <tr class="separator:abb49a7ccff8b3faf2004f0003d0b4cd0 inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16700bfef799493ba798aa896e884ce3 inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1Filter.html#a16700bfef799493ba798aa896e884ce3">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) override</td></tr>
-<tr class="memdesc:a16700bfef799493ba798aa896e884ce3 inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usually filters options become active when set.  <br /></td></tr>
+<tr class="memdesc:a16700bfef799493ba798aa896e884ce3 inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.    <br /></td></tr>
 <tr class="separator:a16700bfef799493ba798aa896e884ce3 inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c43817f2c01efdf5b17408ae50e2d2 inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1Filter.html#a82c43817f2c01efdf5b17408ae50e2d2">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a82c43817f2c01efdf5b17408ae50e2d2 inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.  <br /></td></tr>
+<tr class="memdesc:a82c43817f2c01efdf5b17408ae50e2d2 inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.    <br /></td></tr>
 <tr class="separator:a82c43817f2c01efdf5b17408ae50e2d2 inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a3337f691982f4d81b242abc177c7ba inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlog4cxx_1_1spi_1_1Filter.html#aa59a54ffa01e4cc1635734a251afd5ee">FilterDecision</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1Filter.html#a6a3337f691982f4d81b242abc177c7ba">decide</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">LoggingEventPtr</a> &amp;event) const =0</td></tr>
 <tr class="separator:a6a3337f691982f4d81b242abc177c7ba inherit pub_methods_classlog4cxx_1_1spi_1_1Filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,15 +185,15 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aa59a54ffa01e4cc1635734a251afd5ee inherit pub_types_classlog4cxx_1_1spi_1_1Filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A Filter that operates on a Map and can be used like in the following example: </p>
-<pre>
-&lt;filter class="MapFilter"&gt;
-    &lt;param name="user.ip"       value="127.0.0.1" /&gt;
-    &lt;param name="user.name"     value="test2"     /&gt;
-    &lt;param name="Operator"      value="AND"       /&gt;
-    &lt;param name="AcceptOnMatch" value="false"     /&gt;
-&lt;/filter&gt;
-</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>A Filter that operates on the current thread's <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> map. </p>
+<p>For example, to exclude entries from the log where the context has "user.name" set to "test2" and "user.ip" is "127.0.0.1": </p><pre>
+  &lt;filter class="MapFilter"&gt;
+      &lt;param name="user.ip"       value="127.0.0.1" /&gt;
+      &lt;param name="user.name"     value="test2"     /&gt;
+      &lt;param name="Operator"      value="AND"       /&gt;
+      &lt;param name="AcceptOnMatch" value="false"     /&gt;
+  &lt;/filter&gt;
+  </pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afbb29156323f90edb324f90cdcc90b25" name="afbb29156323f90edb324f90cdcc90b25"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbb29156323f90edb324f90cdcc90b25">&#9670;&#160;</a></span>MapFilter()</h2>
 
@@ -409,7 +409,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set options. </p>
+<p>Set <code>option</code> to <code>value</code>.   </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Supported options   </th><th class="markdownTableHeadNone">Supported values   </th><th class="markdownTableHeadNone">Default value    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Operator   </td><td class="markdownTableBodyNone">(<a class="el" href="classlog4cxx_1_1filter_1_1MapFilter.html#andOrOne">1</a>)   </td><td class="markdownTableBodyNone">Or    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">AcceptOnMatch   </td><td class="markdownTableBodyNone">True,False   </td><td class="markdownTableBodyNone">True    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">{anyKey}   </td><td class="markdownTableBodyNone">{anyValue}   </td><td class="markdownTableBodyNone">-   </td></tr>
+</table>
+<p><a class="anchor" id="andOrOne"></a>(1). If "And", the <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> must contain all configured key-value pairs, otherwise only one configured key-value pair needs to match. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a42037043a55afcaf6f824fcb950f18d2">log4cxx::spi::OptionHandler</a>.</p>
 
@@ -427,7 +438,7 @@ Additional Inherited Members</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="namespacelog4cxx_1_1filter.html">filter</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1filter_1_1MapFilter.html">MapFilter</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

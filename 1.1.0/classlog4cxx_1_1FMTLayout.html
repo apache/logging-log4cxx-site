@@ -135,10 +135,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a013f20db781711947f83143fa5087f93"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the layout handles the throwable object contained within <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html">LoggingEvent</a></code>, then the layout should return <code>false</code>.  <br /></td></tr>
 <tr class="separator:a013f20db781711947f83143fa5087f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8128eb8ca407afd20232048322154e7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1FMTLayout.html#a8128eb8ca407afd20232048322154e7a">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;) override</td></tr>
-<tr class="memdesc:a8128eb8ca407afd20232048322154e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.  <br /></td></tr>
+<tr class="memdesc:a8128eb8ca407afd20232048322154e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.    <br /></td></tr>
 <tr class="separator:a8128eb8ca407afd20232048322154e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a184d8379c56ca7e55fa4ae35f0859809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1FMTLayout.html#a184d8379c56ca7e55fa4ae35f0859809">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;) override</td></tr>
-<tr class="memdesc:a184d8379c56ca7e55fa4ae35f0859809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.  <br /></td></tr>
+<tr class="memdesc:a184d8379c56ca7e55fa4ae35f0859809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.    <br /></td></tr>
 <tr class="separator:a184d8379c56ca7e55fa4ae35f0859809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1Layout"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlog4cxx_1_1Layout')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1Layout.html">log4cxx::Layout</a></td></tr>
 <tr class="memitem:ac4649c3faf730f066c8a88bb059077bc inherit pub_methods_classlog4cxx_1_1Layout"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Layout.html#ac4649c3faf730f066c8a88bb059077bc">~Layout</a> ()</td></tr>
@@ -287,12 +287,12 @@ Public Member Functions</h2></td></tr>
 <p class="intertd"></p>
 <p class="intertd"><b>ndc</b></p>
 <p class="endtd"></p>
-</td><td>Used to output the <a class="el" href="classlog4cxx_1_1NDC.html" title="the ndc class implements nested diagnostic contexts as defined by neil harrison in the article &quot;patte...">NDC</a> (nested diagnostic context) associated with the thread that generated the logging event.   </td></tr>
+</td><td>Used to output the <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">NDC</a> (nested diagnostic context) associated with the thread that generated the logging event.   </td></tr>
 <tr>
 <td align="center"><p class="starttd"></p>
 <p class="intertd"><b>mdc[1-6]</b></p>
 <p class="endtd"></p>
-</td><td>Used to output the <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> (mapped diagnostic context) associated with the thread that generated the logging event. The keys must be specified in the configuration for the layout. A maximum of 6 <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> keys are available to be output(mdc1, mdc2, ..., mdc6)   </td></tr>
+</td><td>Used to output the <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> (mapped diagnostic context) associated with the thread that generated the logging event. The keys must be specified in the configuration for the layout. A maximum of 6 <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> keys are available to be output(mdc1, mdc2, ..., mdc6)   </td></tr>
 </table>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6187b3135fc872bb1d6c261409043b55" name="a6187b3135fc872bb1d6c261409043b55"></a>
@@ -361,7 +361,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void log4cxx::FMTLayout::activateOptions </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -372,9 +372,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Activate the options that were previously set with calls to option setters. </p>
-<p>This allows to defer activiation of the options until all options have been set. This is required for components which have related options that remain ambigous until all are set.</p>
-<p>For example, the <a class="el" href="classlog4cxx_1_1FileAppender.html" title="FileAppender appends log events to a file.">FileAppender</a> has the <code><a class="el" href="classlog4cxx_1_1File.html" title="An abstract representation of file and directory path names.">File</a></code> and <b>Append</b> options both of which are ambigous until the other is also set. </p>
+<p>Activate the options that were previously set with calls to option setters.   </p>
+<p>No action is performed in this implementation. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#ad06d4f5c6d414fcb421bc2a35c9593fe">log4cxx::spi::OptionHandler</a>.</p>
 
@@ -422,8 +421,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the log statement in a format consisting of the <code>level</code>, followed by " - " and then the <code>message</code>. </p>
 <p>For example, </p><pre> INFO - "A message"
-</pre><dl class="section return"><dt>Returns</dt><dd>A byte array in <a class="el" href="classlog4cxx_1_1SimpleLayout.html" title="SimpleLayout consists of the level of the log statement, followed by &quot; - &quot; and then the log message i...">SimpleLayout</a> format. </dd></dl>
-
+</pre> 
 <p>Implements <a class="el" href="classlog4cxx_1_1Layout.html#a66cf66d30ddbb839c8ab668021b428fa">log4cxx::Layout</a>.</p>
 
 </div>
@@ -472,7 +470,7 @@ Public Member Functions</h2></td></tr>
 
 <p>If the layout handles the throwable object contained within <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html">LoggingEvent</a></code>, then the layout should return <code>false</code>. </p>
 <p>Otherwise, if the layout ignores throwable object, then the layout should return <code>true</code>.</p>
-<p>The <a class="el" href="classlog4cxx_1_1SimpleLayout.html" title="SimpleLayout consists of the level of the log statement, followed by &quot; - &quot; and then the log message i...">SimpleLayout</a>, TTCCLayout, <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> all return <code>true</code>. The <code><a class="el" href="classlog4cxx_1_1xml_1_1XMLLayout.html">XMLLayout</a></code> returns <code>false</code>. </p>
+<p>The <a class="el" href="classlog4cxx_1_1SimpleLayout.html" title="SimpleLayout consists of the level of the log statement, followed by &quot; - &quot; and then the log message i...">SimpleLayout</a>, <a class="el" href="classlog4cxx_1_1FMTLayout.html" title="The FMTLayout class uses libfmt to layout messages.">FMTLayout</a> and <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> return <code>true</code>. The other layouts return <code>false</code>. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1Layout.html#a52cd5ea0f3d4f875b87488229e06d82e">log4cxx::Layout</a>.</p>
 
@@ -512,13 +510,13 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void log4cxx::FMTLayout::setOption </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;&#160;</td>
-          <td class="paramname"><em>option</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -533,8 +531,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>. </p>
-<p>The handling of each option depends on the OptionHandler instance. Some options may become active immediately whereas other may be activated only when <a class="el" href="classlog4cxx_1_1FMTLayout.html#a8128eb8ca407afd20232048322154e7a" title="Activate the options that were previously set with calls to option setters.">activateOptions</a> is called. </p>
+<p>Set <code>option</code> to <code>value</code>.   </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Supported options   </th><th class="markdownTableHeadNone">Supported values   </th><th class="markdownTableHeadNone">Default value    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ConversionPattern   </td><td class="markdownTableBodyNone">{any}   </td><td class="markdownTableBodyNone">-   </td></tr>
+</table>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a42037043a55afcaf6f824fcb950f18d2">log4cxx::spi::OptionHandler</a>.</p>
 
@@ -552,7 +555,7 @@ Public Member Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1FMTLayout.html">FMTLayout</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

@@ -105,10 +105,10 @@ $(document).ready(function(){initNavTree('classlog4cxx_1_1helpers_1_1Transform.h
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad7022c3f67df0a28a8f4e1cc2c79e213"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Transform.html#ad7022c3f67df0a28a8f4e1cc2c79e213">appendEscapingTags</a> (<a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;buf, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;input)</td></tr>
-<tr class="memdesc:ad7022c3f67df0a28a8f4e1cc2c79e213"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method takes a string which may contain HTML tags (ie, &lt;b&gt;, &lt;table&gt;, etc) and replaces any '&lt;' and '&gt;' characters with respective predefined entity references.  <br /></td></tr>
+<tr class="memdesc:ad7022c3f67df0a28a8f4e1cc2c79e213"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>input</code>, which may contain HTML tags (ie, &lt;b&gt;, &lt;table&gt;, etc) to <code>buf</code> while replacing any '&lt;' and '&gt;' characters with respective predefined entity references.  <br /></td></tr>
 <tr class="separator:ad7022c3f67df0a28a8f4e1cc2c79e213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae5a1eb9a52f31f04381d264057bb6ee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Transform.html#aae5a1eb9a52f31f04381d264057bb6ee">appendEscapingCDATA</a> (<a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;buf, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;input)</td></tr>
-<tr class="memdesc:aae5a1eb9a52f31f04381d264057bb6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that embeded CDEnd strings (]]&gt;) are handled properly within message, <a class="el" href="classlog4cxx_1_1NDC.html" title="the ndc class implements nested diagnostic contexts as defined by neil harrison in the article &quot;patte...">NDC</a> and throwable tag text.  <br /></td></tr>
+<tr class="memdesc:aae5a1eb9a52f31f04381d264057bb6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>input</code> to <code>buf</code> while ensuring embeded CDEnd strings (]]&gt;) are handled properly within the message, <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">NDC</a> and throwable tag text.  <br /></td></tr>
 <tr class="separator:aae5a1eb9a52f31f04381d264057bb6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -148,7 +148,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Ensures that embeded CDEnd strings (]]&gt;) are handled properly within message, <a class="el" href="classlog4cxx_1_1NDC.html" title="the ndc class implements nested diagnostic contexts as defined by neil harrison in the article &quot;patte...">NDC</a> and throwable tag text. </p>
+<p>Add <code>input</code> to <code>buf</code> while ensuring embeded CDEnd strings (]]&gt;) are handled properly within the message, <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">NDC</a> and throwable tag text. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buf</td><td>output stream holding the XML data to this point. The initial CDStart () and final CDEnd () of the CDATA section are the responsibility of the calling method. </td></tr>
@@ -193,7 +193,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>This method takes a string which may contain HTML tags (ie, &lt;b&gt;, &lt;table&gt;, etc) and replaces any '&lt;' and '&gt;' characters with respective predefined entity references. </p>
+<p>Add <code>input</code>, which may contain HTML tags (ie, &lt;b&gt;, &lt;table&gt;, etc) to <code>buf</code> while replacing any '&lt;' and '&gt;' characters with respective predefined entity references. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buf</td><td>output stream where to write the modified string. </td></tr>
@@ -201,7 +201,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The input string with the characters '&lt;' and '&gt;' replaced with &amp;lt; and &amp;gt; respectively. </dd></dl>
 
 </div>
 </div>
@@ -217,7 +216,7 @@ Static Public Member Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="namespacelog4cxx_1_1helpers.html">helpers</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1helpers_1_1Transform.html">Transform</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

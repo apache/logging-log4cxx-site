@@ -1,8 +1,7 @@
 var NAVTREEINDEX15 =
 {
-"functions_f.html":[7,3,0,5],
-"functions_func.html":[7,3,1],
 "functions_func.html":[7,3,1,0],
+"functions_func.html":[7,3,1],
 "functions_func_b.html":[7,3,1,1],
 "functions_func_c.html":[7,3,1,2],
 "functions_func_d.html":[7,3,1,3],
@@ -149,7 +148,7 @@ var NAVTREEINDEX15 =
 "loader_8h_source.html":[8,0,1,0,0,0,3,27],
 "locale_8h.html":[8,0,1,0,0,0,3,28],
 "locale_8h_source.html":[8,0,1,0,0,0,3,28],
-"location-info-filter.html":[2,1,2],
+"location-info-filter.html":[2,2,2],
 "locationinfo_8h.html":[8,0,1,0,0,0,8,0,0],
 "locationinfo_8h.html#abf76e600dece2b35d60545bb40930cbc":[8,0,1,0,0,0,8,0,0,3],
 "locationinfo_8h.html#addb632a87b7bbddd3574e772dca97da1":[8,0,1,0,0,0,8,0,0,2],
@@ -196,12 +195,12 @@ var NAVTREEINDEX15 =
 "logstring_8h.html#aa2308ed05fef2a1366066cb38b177e94":[8,0,1,0,0,0,28,2],
 "logstring_8h.html#ac5e4b220857602c21b6a1850263005ff":[8,0,1,0,0,0,28,3],
 "logstring_8h_source.html":[8,0,1,0,0,0,28],
-"macros-influencing-log4cxx.html":[2,11],
-"macros-influencing-log4cxx.html#autotoc_md51":[2,11,0],
+"macros-influencing-log4cxx.html":[2,12],
+"macros-influencing-log4cxx.html#autotoc_md51":[2,12,0],
 "mailing-lists.html":[1,1],
 "manualtriggeringpolicy_8h.html":[8,0,1,0,0,0,7,5],
 "manualtriggeringpolicy_8h_source.html":[8,0,1,0,0,0,7,5],
-"map-filter.html":[2,1,1],
+"map-filter.html":[2,2,1],
 "mapfilter_8h.html":[8,0,1,0,0,0,2,7],
 "mapfilter_8h.html#a7407d48ec94123744ba2725fd738ae80":[8,0,1,0,0,0,2,7,1],
 "mapfilter_8h_source.html":[8,0,1,0,0,0,2,7],
@@ -224,8 +223,8 @@ var NAVTREEINDEX15 =
 "methodlocationpatternconverter_8h.html":[8,0,1,0,0,0,6,17],
 "methodlocationpatternconverter_8h_source.html":[8,0,1,0,0,0,6,17],
 "modules.html":[5],
-"multiprocess-logging.html":[2,9],
-"multiprocess-logging.html#autotoc_md52":[2,9,0],
+"multiprocess-logging.html":[2,10],
+"multiprocess-logging.html#autotoc_md52":[2,10,0],
 "multiprocessrollingfileappender_8h.html":[8,0,1,0,0,0,7,6],
 "multiprocessrollingfileappender_8h.html#a53e4ea3794f527acf18edd8d2ec48268":[8,0,1,0,0,0,7,6,1],
 "multiprocessrollingfileappender_8h_source.html":[8,0,1,0,0,0,7,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "namespacelog4cxx.html#a915a2895559f016b2728e0c1fb02e6fd":[6,0,0,65],
 "namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94":[6,0,0,46],
 "namespacelog4cxx.html#aa8fd541156d3d0d766d0bfe724dd3e54":[6,0,0,58],
-"namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e":[6,0,0,42]
+"namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e":[6,0,0,42],
+"namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86":[6,0,0,41]
 };

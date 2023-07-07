@@ -123,10 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7f4809a03b8ffb2c1f1d8b1d8fc9d752"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classlog4cxx_1_1SimpleLayout.html" title="SimpleLayout consists of the level of the log statement, followed by &quot; - &quot; and then the log message i...">SimpleLayout</a> does not handle the throwable contained within <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html">LoggingEvents</a></code>.  <br /></td></tr>
 <tr class="separator:a7f4809a03b8ffb2c1f1d8b1d8fc9d752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71c4061c320ab170a8b57adb5d8bc289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1SimpleLayout.html#a71c4061c320ab170a8b57adb5d8bc289">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;) override</td></tr>
-<tr class="memdesc:a71c4061c320ab170a8b57adb5d8bc289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.  <br /></td></tr>
+<tr class="memdesc:a71c4061c320ab170a8b57adb5d8bc289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.    <br /></td></tr>
 <tr class="separator:a71c4061c320ab170a8b57adb5d8bc289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306170f966a1b9a05bdeb0d5725ab607"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1SimpleLayout.html#a306170f966a1b9a05bdeb0d5725ab607">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;) override</td></tr>
-<tr class="memdesc:a306170f966a1b9a05bdeb0d5725ab607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.  <br /></td></tr>
+<tr class="memdesc:a306170f966a1b9a05bdeb0d5725ab607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.    <br /></td></tr>
 <tr class="separator:a306170f966a1b9a05bdeb0d5725ab607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1Layout"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlog4cxx_1_1Layout')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1Layout.html">log4cxx::Layout</a></td></tr>
 <tr class="memitem:ac4649c3faf730f066c8a88bb059077bc inherit pub_methods_classlog4cxx_1_1Layout"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Layout.html#ac4649c3faf730f066c8a88bb059077bc">~Layout</a> ()</td></tr>
@@ -185,7 +185,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void log4cxx::SimpleLayout::activateOptions </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -196,9 +196,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Activate the options that were previously set with calls to option setters. </p>
-<p>This allows to defer activiation of the options until all options have been set. This is required for components which have related options that remain ambigous until all are set.</p>
-<p>For example, the <a class="el" href="classlog4cxx_1_1FileAppender.html" title="FileAppender appends log events to a file.">FileAppender</a> has the <code><a class="el" href="classlog4cxx_1_1File.html" title="An abstract representation of file and directory path names.">File</a></code> and <b>Append</b> options both of which are ambigous until the other is also set. </p>
+<p>Activate the options that were previously set with calls to option setters.   </p>
+<p>No action is performed in this implementation. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#ad06d4f5c6d414fcb421bc2a35c9593fe">log4cxx::spi::OptionHandler</a>.</p>
 
@@ -246,8 +245,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns the log statement in a format consisting of the <code>level</code>, followed by " - " and then the <code>message</code>. </p>
 <p>For example, </p><pre> INFO - "A message"
-</pre><dl class="section return"><dt>Returns</dt><dd>A byte array in <a class="el" href="classlog4cxx_1_1SimpleLayout.html" title="SimpleLayout consists of the level of the log statement, followed by &quot; - &quot; and then the log message i...">SimpleLayout</a> format. </dd></dl>
-
+</pre> 
 <p>Implements <a class="el" href="classlog4cxx_1_1Layout.html#a66cf66d30ddbb839c8ab668021b428fa">log4cxx::Layout</a>.</p>
 
 </div>
@@ -295,13 +293,13 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void log4cxx::SimpleLayout::setOption </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;&#160;</td>
-          <td class="paramname"><em>option</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -316,8 +314,13 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>. </p>
-<p>The handling of each option depends on the OptionHandler instance. Some options may become active immediately whereas other may be activated only when <a class="el" href="classlog4cxx_1_1SimpleLayout.html#a71c4061c320ab170a8b57adb5d8bc289" title="Activate the options that were previously set with calls to option setters.">activateOptions</a> is called. </p>
+<p>Set <code>option</code> to <code>value</code>.   </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Supported options   </th><th class="markdownTableHeadNone">Supported values   </th><th class="markdownTableHeadNone">Default value    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone">-   </td><td class="markdownTableBodyNone">-   </td></tr>
+</table>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a42037043a55afcaf6f824fcb950f18d2">log4cxx::spi::OptionHandler</a>.</p>
 
@@ -335,7 +338,7 @@ Public Member Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1SimpleLayout.html">SimpleLayout</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

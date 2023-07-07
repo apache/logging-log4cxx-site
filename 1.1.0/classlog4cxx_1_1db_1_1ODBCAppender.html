@@ -135,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad64ec638194e019b247c9f0c781d8c5d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#ad64ec638194e019b247c9f0c781d8c5d">~ODBCAppender</a> ()</td></tr>
 <tr class="separator:ad64ec638194e019b247c9f0c781d8c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85e6fa461f2db789f3fa9321278b12c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a85e6fa461f2db789f3fa9321278b12c0">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a85e6fa461f2db789f3fa9321278b12c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set options.  <br /></td></tr>
+<tr class="memdesc:a85e6fa461f2db789f3fa9321278b12c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.      <br /></td></tr>
 <tr class="separator:a85e6fa461f2db789f3fa9321278b12c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31efbacf9f68a473fcb1e1a0966f1b22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a31efbacf9f68a473fcb1e1a0966f1b22">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) override</td></tr>
 <tr class="memdesc:a31efbacf9f68a473fcb1e1a0966f1b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the specified options.  <br /></td></tr>
@@ -185,10 +185,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af6d1ab262b89bbea3a1e90b571dd844f inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize this appender by calling the derived class' <code>close</code> method.  <br /></td></tr>
 <tr class="separator:af6d1ab262b89bbea3a1e90b571dd844f inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a748043d02b71acad6205444ebeb6a75c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a748043d02b71acad6205444ebeb6a75c">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;) override</td></tr>
-<tr class="memdesc:a748043d02b71acad6205444ebeb6a75c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived appenders should override this method if option structure requires it.  <br /></td></tr>
+<tr class="memdesc:a748043d02b71acad6205444ebeb6a75c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.    <br /></td></tr>
 <tr class="separator:a748043d02b71acad6205444ebeb6a75c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79c778323e79f6b9a2df5b0e54de0337 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a79c778323e79f6b9a2df5b0e54de0337 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.  <br /></td></tr>
+<tr class="memdesc:a79c778323e79f6b9a2df5b0e54de0337 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.    <br /></td></tr>
 <tr class="separator:a79c778323e79f6b9a2df5b0e54de0337 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c1444922c46ebfee546b6486531491 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aa4c1444922c46ebfee546b6486531491">addFilter</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a> newFilter) override</td></tr>
 <tr class="memdesc:aa4c1444922c46ebfee546b6486531491 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a filter to end of the filter list.  <br /></td></tr>
@@ -903,7 +903,29 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set options. </p>
+<p>Set <code>option</code> to <code>value</code>.     </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Supported options   </th><th class="markdownTableHeadCenter">Supported values   </th><th class="markdownTableHeadCenter">Default value    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">BufferSize   </td><td class="markdownTableBodyCenter">{int}   </td><td class="markdownTableBodyCenter">1    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ConnectionString   </td><td class="markdownTableBodyCenter">{any}   </td><td class="markdownTableBodyCenter">-    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">URL   </td><td class="markdownTableBodyCenter">{any}   </td><td class="markdownTableBodyCenter">-    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">DSN   </td><td class="markdownTableBodyCenter">{any}   </td><td class="markdownTableBodyCenter">-    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">User   </td><td class="markdownTableBodyCenter">{any}   </td><td class="markdownTableBodyCenter">-    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Password   </td><td class="markdownTableBodyCenter">{any}   </td><td class="markdownTableBodyCenter">-    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">SQL   </td><td class="markdownTableBodyCenter">{any}   </td><td class="markdownTableBodyCenter">-    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ColumnMapping   </td><td class="markdownTableBodyCenter">(<a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#colName">^</a>)   </td><td class="markdownTableBodyCenter">-   </td></tr>
+</table>
+<p><a class="anchor" id="colName"></a>^. One value for each '?' character in the SQL value.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337">log4cxx::AppenderSkeleton</a>.</p>
 
@@ -995,7 +1017,7 @@ Protected Member Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="namespacelog4cxx_1_1db.html">db</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html">ODBCAppender</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

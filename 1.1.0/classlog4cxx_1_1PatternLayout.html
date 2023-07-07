@@ -126,16 +126,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af47e2ebe41682481236264429c4d475e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PatternLayout.html#af47e2ebe41682481236264429c4d475e">~PatternLayout</a> ()</td></tr>
 <tr class="separator:af47e2ebe41682481236264429c4d475e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7b9d3bd277f4bc03000ad6f533339ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PatternLayout.html#ae7b9d3bd277f4bc03000ad6f533339ba">setConversionPattern</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;conversionPattern)</td></tr>
-<tr class="memdesc:ae7b9d3bd277f4bc03000ad6f533339ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <b>ConversionPattern</b> option.  <br /></td></tr>
+<tr class="memdesc:ae7b9d3bd277f4bc03000ad6f533339ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>conversionPattern</code> as to control formatting.  <br /></td></tr>
 <tr class="separator:ae7b9d3bd277f4bc03000ad6f533339ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9d462fd91a2a480c1fce00e897e3c37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PatternLayout.html#ac9d462fd91a2a480c1fce00e897e3c37">getConversionPattern</a> () const</td></tr>
 <tr class="memdesc:ac9d462fd91a2a480c1fce00e897e3c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the <b>ConversionPattern</b> option.  <br /></td></tr>
 <tr class="separator:ac9d462fd91a2a480c1fce00e897e3c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadbbda63d2bb49d96bbe8ef4a0eb53ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PatternLayout.html#aadbbda63d2bb49d96bbe8ef4a0eb53ab">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) override</td></tr>
-<tr class="memdesc:aadbbda63d2bb49d96bbe8ef4a0eb53ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call createPatternParser.  <br /></td></tr>
+<tr class="memdesc:aadbbda63d2bb49d96bbe8ef4a0eb53ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.    <br /></td></tr>
 <tr class="separator:aadbbda63d2bb49d96bbe8ef4a0eb53ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68433bfbfdec4ff87f1d3e98d22a98f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PatternLayout.html#a68433bfbfdec4ff87f1d3e98d22a98f5">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a68433bfbfdec4ff87f1d3e98d22a98f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.  <br /></td></tr>
+<tr class="memdesc:a68433bfbfdec4ff87f1d3e98d22a98f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.    <br /></td></tr>
 <tr class="separator:a68433bfbfdec4ff87f1d3e98d22a98f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77e94bdad33a7260989db9316ba1b482"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PatternLayout.html#a77e94bdad33a7260989db9316ba1b482">ignoresThrowable</a> () const override</td></tr>
 <tr class="memdesc:a77e94bdad33a7260989db9316ba1b482"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> does not handle the throwable contained within <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html">LoggingEvents</a></code>.  <br /></td></tr>
@@ -260,15 +260,15 @@ Protected Member Functions</h2></td></tr>
 <p class="endtd"></p>
 </td><td>Used to output the name of the thread that generated the logging event. May not be available on all platforms.  </td></tr>
 <tr>
-<td align="center"><b>x</b> </td><td>Used to output the <a class="el" href="classlog4cxx_1_1NDC.html" title="the ndc class implements nested diagnostic contexts as defined by neil harrison in the article &quot;patte...">NDC</a> (nested diagnostic context) associated with the thread that generated the logging event.   </td></tr>
+<td align="center"><b>x</b> </td><td>Used to output the <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">NDC</a> (nested diagnostic context) associated with the thread that generated the logging event.   </td></tr>
 <tr>
-<td align="center"><b>X</b> </td><td><p class="starttd">Used to output the <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> (mapped diagnostic context) associated with the thread that generated the logging event. All key/value pairs are output, each inside <b>{}</b> unless the <b>X</b> is followed by a key placed between braces, as in <b>X{clientNumber}</b> where <code>clientNumber</code> is the key. In this case the value in the <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> corresponding to the key will be output. </p>
-<p class="intertd">See <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> class for more details.</p>
+<td align="center"><b>X</b> </td><td><p class="starttd">Used to output the <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> (mapped diagnostic context) associated with the thread that generated the logging event. All key/value pairs are output, each inside <b>{}</b> unless the <b>X</b> is followed by a key placed between braces, as in <b>X{clientNumber}</b> where <code>clientNumber</code> is the key. In this case the value in the <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> corresponding to the key will be output. </p>
+<p class="intertd">See <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> class for more details.</p>
 <p class="endtd"></p>
 </td></tr>
 <tr>
-<td align="center"><b>J</b> </td><td><p class="starttd">Used to output JSON key/value pairs of all <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> (mapped diagnostic context) entries associated with the thread that generated the logging event. To output in a quoted context, add set of braces containing the quote character. Any quote character in the message is augmented with a second quote character. For example, use J{'} in an SQL insert statement. </p>
-<p class="intertd">See <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> class for more details.</p>
+<td align="center"><b>J</b> </td><td><p class="starttd">Used to output JSON key/value pairs of all <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> (mapped diagnostic context) entries associated with the thread that generated the logging event. To output in a quoted context, add set of braces containing the quote character. Any quote character in the message is augmented with a second quote character. For example, use J{'} in an SQL insert statement. </p>
+<p class="intertd">See <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> class for more details.</p>
 <p class="endtd"></p>
 </td></tr>
 <tr>
@@ -459,7 +459,8 @@ Strikethrough </li>
 </table>
 </div><div class="memdoc">
 
-<p>Call createPatternParser. </p>
+<p>Activate the options that were previously set with calls to option setters.   </p>
+<p>Calls createPatternParser </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#ad06d4f5c6d414fcb421bc2a35c9593fe">log4cxx::spi::OptionHandler</a>.</p>
 
@@ -601,8 +602,8 @@ Strikethrough </li>
       </table>
 </div><div class="memdoc">
 
-<p>Set the <b>ConversionPattern</b> option. </p>
-<p>This is the string which controls formatting and consists of a mix of literal content and conversion specifiers. </p>
+<p>Use <code>conversionPattern</code> as to control formatting. </p>
+<p>The pattern can be a mix of literal content and conversion specifiers. </p>
 
 </div>
 </div>
@@ -640,8 +641,27 @@ Strikethrough </li>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>. </p>
-<p>The handling of each option depends on the OptionHandler instance. Some options may become active immediately whereas other may be activated only when <a class="el" href="classlog4cxx_1_1PatternLayout.html#aadbbda63d2bb49d96bbe8ef4a0eb53ab" title="Call createPatternParser.">activateOptions</a> is called. </p>
+<p>Set <code>option</code> to <code>value</code>.   </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Supported options   </th><th class="markdownTableHeadNone">Supported values   </th><th class="markdownTableHeadNone">Default value    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ConversionPattern   </td><td class="markdownTableBodyNone">{any}   </td><td class="markdownTableBodyNone">%m%n    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">FatalColor   </td><td class="markdownTableBodyNone">(<a class="el" href="classlog4cxx_1_1PatternLayout.html#validColors">1</a>)   </td><td class="markdownTableBodyNone">magenta    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ErrorColor   </td><td class="markdownTableBodyNone">(<a class="el" href="classlog4cxx_1_1PatternLayout.html#validColors">1</a>)   </td><td class="markdownTableBodyNone">red    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">WarnColor   </td><td class="markdownTableBodyNone">(<a class="el" href="classlog4cxx_1_1PatternLayout.html#validColors">1</a>)   </td><td class="markdownTableBodyNone">yellow    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">InfoColor   </td><td class="markdownTableBodyNone">(<a class="el" href="classlog4cxx_1_1PatternLayout.html#validColors">1</a>)   </td><td class="markdownTableBodyNone">green    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DebugColor   </td><td class="markdownTableBodyNone">(<a class="el" href="classlog4cxx_1_1PatternLayout.html#validColors">1</a>)   </td><td class="markdownTableBodyNone">cyan    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">TraceColor   </td><td class="markdownTableBodyNone">(<a class="el" href="classlog4cxx_1_1PatternLayout.html#validColors">1</a>)   </td><td class="markdownTableBodyNone">blue   </td></tr>
+</table>
+<p><a class="anchor" id="validColors"></a>"1". The word <code>None</code> or <a href="https://en.wikipedia.org/wiki/ANSI_escape_code">valid ANSI escape sequence</a>. A prefix of <code>\x1b</code> will be replaced with the <code>ESC</code> character. The character prefix <code>ESC</code> and suffix <code>m</code> will be added to the value if it does not begin with <code>\x1b</code>. Color names can be combined with graphic modes using a <code>|</code> separator. Enclose the color name in <code>bg()</code> to set the background. Enclose the color name in <code>fg()</code> to set the foreground.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1PatternLayout.html#ae7b9d3bd277f4bc03000ad6f533339ba" title="Use conversionPattern as to control formatting.">setConversionPattern</a> </dd></dl>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a42037043a55afcaf6f824fcb950f18d2">log4cxx::spi::OptionHandler</a>.</p>
 
@@ -659,7 +679,7 @@ Strikethrough </li>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1PatternLayout.html">PatternLayout</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

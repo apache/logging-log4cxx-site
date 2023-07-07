@@ -154,16 +154,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afd5ab88d2f9230d982d8a191b379fec9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">log4cxx::spi::LocationInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html#afd5ab88d2f9230d982d8a191b379fec9">getLocationInformation</a> () const</td></tr>
 <tr class="separator:afd5ab88d2f9230d982d8a191b379fec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b93881d5af0d773082c9c7411fc1415"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html#a4b93881d5af0d773082c9c7411fc1415">getNDC</a> (<a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;dest) const</td></tr>
-<tr class="memdesc:a4b93881d5af0d773082c9c7411fc1415"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method appends the <a class="el" href="classlog4cxx_1_1NDC.html" title="the ndc class implements nested diagnostic contexts as defined by neil harrison in the article &quot;patte...">NDC</a> for this event to passed string.  <br /></td></tr>
+<tr class="memdesc:a4b93881d5af0d773082c9c7411fc1415"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method appends the <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">NDC</a> for this event to passed string.  <br /></td></tr>
 <tr class="separator:a4b93881d5af0d773082c9c7411fc1415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b6024dfa1d591428f54410971cb205b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html#a4b6024dfa1d591428f54410971cb205b">getMDC</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;key, <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;dest) const</td></tr>
 <tr class="memdesc:a4b6024dfa1d591428f54410971cb205b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends the the context corresponding to the <code>key</code> parameter.  <br /></td></tr>
 <tr class="separator:a4b6024dfa1d591428f54410971cb205b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7cb57f6a6e10b35d1fe76ddf7fed507"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html#acfef4d01c51dad67bcad27e05b6d7985">KeySet</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html#ad7cb57f6a6e10b35d1fe76ddf7fed507">getMDCKeySet</a> () const</td></tr>
-<tr class="memdesc:ad7cb57f6a6e10b35d1fe76ddf7fed507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the set of of the key values in the <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> for the event.  <br /></td></tr>
+<tr class="memdesc:ad7cb57f6a6e10b35d1fe76ddf7fed507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the set of of the key values in the <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> for the event.  <br /></td></tr>
 <tr class="separator:ad7cb57f6a6e10b35d1fe76ddf7fed507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a883c0b327ac73ecd20b85f7e3e7af185"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html#a883c0b327ac73ecd20b85f7e3e7af185">getMDCCopy</a> () const</td></tr>
-<tr class="memdesc:a883c0b327ac73ecd20b85f7e3e7af185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a copy of this thread's <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> prior to serialization or asynchronous logging.  <br /></td></tr>
+<tr class="memdesc:a883c0b327ac73ecd20b85f7e3e7af185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a copy of this thread's <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> prior to serialization or asynchronous logging.  <br /></td></tr>
 <tr class="separator:a883c0b327ac73ecd20b85f7e3e7af185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3d62fdf0f74285a26af5e2e7c685967"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html#ae3d62fdf0f74285a26af5e2e7c685967">getProperty</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;key, <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;dest) const</td></tr>
 <tr class="memdesc:ae3d62fdf0f74285a26af5e2e7c685967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a previously set property.  <br /></td></tr>
@@ -398,8 +398,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Appends the the context corresponding to the <code>key</code> parameter. </p>
-<p>If there is a local <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> copy, possibly because we are in a logging server or running inside <a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender lets users log events asynchronously.">AsyncAppender</a>, then we search for the key in <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> copy, if a value is found it is returned. Otherwise, if the search in <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> copy returns an empty result, then the current thread's <code><a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a></code> is used.</p>
-<p>Note that <em>both</em> the local <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> copy and the current thread's <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> are searched. </p>
+<p>If there is a local <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> copy, possibly because we are in a logging server or running inside <a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender lets users log events asynchronously.">AsyncAppender</a>, then we search for the key in <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> copy, if a value is found it is returned. Otherwise, if the search in <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> copy returns an empty result, then the current thread's <code><a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a></code> is used.</p>
+<p>Note that <em>both</em> the local <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> copy and the current thread's <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> are searched. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>key. </td></tr>
@@ -426,7 +426,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Obtain a copy of this thread's <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> prior to serialization or asynchronous logging. </p>
+<p>Obtain a copy of this thread's <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> prior to serialization or asynchronous logging. </p>
 
 </div>
 </div>
@@ -445,9 +445,9 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the set of of the key values in the <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> for the event. </p>
+<p>Returns the set of of the key values in the <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> for the event. </p>
 <p>The returned set is unmodifiable by the caller.</p>
-<dl class="section return"><dt>Returns</dt><dd>Set an unmodifiable set of the <a class="el" href="classlog4cxx_1_1MDC.html" title="The MDC class is similar to the NDC class except that it is based on a map instead of a stack.">MDC</a> keys. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Set an unmodifiable set of the <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> keys. </dd></dl>
 
 </div>
 </div>
@@ -486,15 +486,15 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This method appends the <a class="el" href="classlog4cxx_1_1NDC.html" title="the ndc class implements nested diagnostic contexts as defined by neil harrison in the article &quot;patte...">NDC</a> for this event to passed string. </p>
+<p>This method appends the <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">NDC</a> for this event to passed string. </p>
 <p>It will return the correct content even if the event was generated in a different thread or even on a different machine. The <a class="el" href="classlog4cxx_1_1NDC.html#af2fee47e3f7db53866a64fc5abbff30b" title="Get the current value of the NDC of the currrent thread.">NDC::get</a> method should <em>never</em> be called directly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dest</td><td>destination for <a class="el" href="classlog4cxx_1_1NDC.html" title="the ndc class implements nested diagnostic contexts as defined by neil harrison in the article &quot;patte...">NDC</a>, unchanged if <a class="el" href="classlog4cxx_1_1NDC.html" title="the ndc class implements nested diagnostic contexts as defined by neil harrison in the article &quot;patte...">NDC</a> is not set. </td></tr>
+    <tr><td class="paramname">dest</td><td>destination for <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">NDC</a>, unchanged if <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">NDC</a> is not set. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if <a class="el" href="classlog4cxx_1_1NDC.html" title="the ndc class implements nested diagnostic contexts as defined by neil harrison in the article &quot;patte...">NDC</a> is set. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">NDC</a> is set. </dd></dl>
 
 </div>
 </div>
@@ -704,7 +704,7 @@ Static Public Member Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="namespacelog4cxx_1_1spi.html">spi</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html">LoggingEvent</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.6 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

@@ -12,7 +12,7 @@ var indexSectionsWithContent =
   9: "chs",
   10: "_bdeils",
   11: "l",
-  12: "#abcdefgilmqstu"
+  12: "#abcdefgilmnqstu"
 };
 
 var indexSectionNames =
