@@ -1,6 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"repositoryselector_8h_source.html":[8,0,1,0,0,0,8,11],
 "resourcebundle_8h.html":[8,0,1,0,0,0,3,41],
 "resourcebundle_8h.html#ad52e031613784a412d689be243435053":[8,0,1,0,0,0,3,41,1],
 "resourcebundle_8h_source.html":[8,0,1,0,0,0,3,41],
@@ -54,8 +53,8 @@ var NAVTREEINDEX17 =
 "source-repository.html#autotoc_md36":[4,0,0,1],
 "source-repository.html#autotoc_md37":[4,0,0,2],
 "stacktrace-support.html":[2,5],
-"stacktrace-support.html#autotoc_md54":[2,5,0],
-"stacktrace-support.html#autotoc_md55":[2,5,0,0],
+"stacktrace-support.html#autotoc_md50":[2,5,0],
+"stacktrace-support.html#autotoc_md51":[2,5,0,0],
 "stream_8h.html":[8,0,1,0,0,0,35],
 "stream_8h.html#a4af7d0bc66fb5c5ff6da1b97e065652f":[8,0,1,0,0,0,35,4],
 "stream_8h.html#a52717feca3ae327f1ed1ec3c117cf9f6":[8,0,1,0,0,0,35,5],

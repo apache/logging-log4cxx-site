@@ -1,6 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"namespacelog4cxx.html#abe6393af314024e7ab6e6fad84343572":[6,0,0,49],
 "namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff":[6,0,0,48],
 "namespacelog4cxx.html#ac7a1618f0d84c53886bfaa1d88dd946b":[6,0,0,61],
 "namespacelog4cxx.html#ac860424200b65dc9449d08dc539068b2":[6,0,0,55],
@@ -219,7 +218,7 @@ var NAVTREEINDEX16 =
 "patternparser_8h.html#a46412c36b812db386d71ed0321e7ab05":[8,0,1,0,0,0,6,22,2],
 "patternparser_8h_source.html":[8,0,1,0,0,0,6,22],
 "performance.html":[2,9],
-"performance.html#autotoc_md53":[2,9,0],
+"performance.html#autotoc_md49":[2,9,0],
 "pool_8h.html":[8,0,1,0,0,0,3,36],
 "pool_8h_source.html":[8,0,1,0,0,0,3,36],
 "properties_8h.html":[8,0,1,0,0,0,3,37],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "relativetimepatternconverter_8h.html":[8,0,1,0,0,0,6,24],
 "relativetimepatternconverter_8h_source.html":[8,0,1,0,0,0,6,24],
 "repositoryselector_8h.html":[8,0,1,0,0,0,8,11],
-"repositoryselector_8h.html#af9f264bce01afa0cf9fff33dda293d8a":[8,0,1,0,0,0,8,11,1]
+"repositoryselector_8h.html#af9f264bce01afa0cf9fff33dda293d8a":[8,0,1,0,0,0,8,11,1],
+"repositoryselector_8h_source.html":[8,0,1,0,0,0,8,11]
 };

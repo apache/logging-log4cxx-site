@@ -1,8 +1,8 @@
 var get =
 [
     [ "Download", "download.html", [
-      [ "Download Apache Log4cxx 1.1.0", "download.html#autotoc_md56", [
-        [ "Previous Releases", "download.html#autotoc_md57", null ]
+      [ "Download Apache Log4cxx 1.1.0", "download.html#autotoc_md52", [
+        [ "Previous Releases", "download.html#autotoc_md53", null ]
       ] ]
     ] ],
     [ "Changelog", "changelog.html", [
@@ -39,8 +39,8 @@ var get =
       ] ]
     ] ],
     [ "License", "license.html", [
-      [ "Overview", "license.html#autotoc_md49", [
-        [ "Project License", "license.html#autotoc_md50", null ]
+      [ "Overview", "license.html#autotoc_md45", [
+        [ "Project License", "license.html#autotoc_md46", null ]
       ] ]
     ] ]
 ];

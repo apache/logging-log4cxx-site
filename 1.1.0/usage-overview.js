@@ -40,16 +40,15 @@ var usage_overview =
     ] ],
     [ "Extending Log4cxx", "extending-log4cxx.html", null ],
     [ "Stacktrace Support", "stacktrace-support.html", [
-      [ "Stacktrace Support", "stacktrace-support.html#autotoc_md54", [
-        [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md55", null ]
+      [ "Stacktrace Support", "stacktrace-support.html#autotoc_md50", [
+        [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md51", null ]
       ] ]
     ] ],
     [ "FAQ", "faq.html", [
       [ "Frequently Asked Technical Questions", "faq.html#autotoc_md39", [
-        [ "<a name=\"table_of_contents\"></a>Table of contents", "faq.html#autotoc_md40", null ],
-        [ "<a name=\"custom_levels\"></a>How do I add a custom level to Apache Log4cxx?", "faq.html#autotoc_md41", null ],
-        [ "<a name=\"msvc_crash\"></a>My application on Windows crashes on shutdown?", "faq.html#autotoc_md42", null ],
-        [ "<a name=\"unicode_supported\"></a>Does Apache Log4cxx support Unicode?", "faq.html#autotoc_md43", null ]
+        [ "How do I add a custom level to Apache Log4cxx?", "faq.html#custom_levels", null ],
+        [ "My application on Windows crashes on shutdown?", "faq.html#msvc_crash", null ],
+        [ "Does Apache Log4cxx support Unicode?", "faq.html#unicode_supported", null ]
       ] ]
     ] ],
     [ "Configuration Samples", "configuration-samples.html", [
@@ -68,15 +67,15 @@ var usage_overview =
     ] ],
     [ "Qt Support", "qt-support.html", null ],
     [ "Log4cxx Performance", "performance.html", [
-      [ "Log4cxx Performance", "performance.html#autotoc_md53", null ]
+      [ "Log4cxx Performance", "performance.html#autotoc_md49", null ]
     ] ],
     [ "Multiprocess Logging", "multiprocess-logging.html", [
-      [ "Logging With Multiple Processes", "multiprocess-logging.html#autotoc_md52", null ]
+      [ "Logging With Multiple Processes", "multiprocess-logging.html#autotoc_md48", null ]
     ] ],
     [ "Environment Variables", "environment-variables.html", [
       [ "Environment Variables Used by Log4cxx", "environment-variables.html#autotoc_md38", null ]
     ] ],
     [ "Macros Influencing Log4cxx", "macros-influencing-log4cxx.html", [
-      [ "Macros that influence Log4cxx", "macros-influencing-log4cxx.html#autotoc_md51", null ]
+      [ "Macros that influence Log4cxx", "macros-influencing-log4cxx.html#autotoc_md47", null ]
     ] ]
 ];

@@ -93,28 +93,26 @@ $(document).ready(function(){initNavTree('faq.html',''); initResizable(); });
   <div class="headertitle"><div class="title">FAQ </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#autotoc_md39">Frequently Asked Technical Questions</a><ul><li class="level2"><a href="#custom_levels">How do I add a custom level to Apache Log4cxx?</a></li>
+<li class="level2"><a href="#msvc_crash">My application on Windows crashes on shutdown?</a></li>
+<li class="level2"><a href="#unicode_supported">Does Apache Log4cxx support Unicode?</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="textblock"><p><a class="anchor" id="md_src_site_markdown_faq"></a></p>
 <h1><a class="anchor" id="autotoc_md39"></a>
 Frequently Asked Technical Questions</h1>
-<h2><a class="anchor" id="autotoc_md40"></a>
-&lt;a name="table_of_contents"&gt;&lt;/a&gt;Table of contents</h2>
-<ol>
-<li>
-<a href="#custom_levels">How do I add a custom level to Apache Log4cxx?</a> </li>
-<li>
-<a href="#msvc_crash">My application on Windows crashes on shutdown?</a> </li>
-<li>
-<a href="#unicode_supported">Does Apache Log4cxx support Unicode?</a> </li>
-</ol>
-<h2><a class="anchor" id="autotoc_md41"></a>
-&lt;a name="custom_levels"&gt;&lt;/a&gt;How do I add a custom level to Apache Log4cxx?</h2>
+<h2><a class="anchor" id="custom_levels"></a>
+How do I add a custom level to Apache Log4cxx?</h2>
 <p>This is a common topic for all the Apache logging frameworks and typically motivated to try to categorize events by functionality or audience. An common request is to add an AUDIT level so that the user can configure AUDIT level messages to go to a specific appender. However, the logger name was designed explicitly to support routing of messages by topic or audience. The common pattern of using classnames for logger names obscures the more general capability of logger name to represent the topic or audience of the logging request. The easiest approach to solve the underlying issue is to use a logger names like "AUDIT.com.example.MyPackage.MyClass" that allow all AUDIT messages to be routed to a particular appender. If you attempted to use a level for that then you would lose the ability to distinguish between different significances within the audit messages.</p>
-<h2><a class="anchor" id="autotoc_md42"></a>
-&lt;a name="msvc_crash"&gt;&lt;/a&gt;My application on Windows crashes on shutdown?</h2>
+<h2><a class="anchor" id="msvc_crash"></a>
+My application on Windows crashes on shutdown?</h2>
 <p>Apache Log4cxx API calls use C++ Standard Template Library string parameters. If the caller is using a different instance or type of the C Runtime Library that Log4cxx, then it is very likely that some memory that was originally allocated by Log4cxx would be freed by the caller. If <a class="el" href="namespacelog4cxx.html">log4cxx</a> and the caller are using different C RTL's, the program will likely crash at the point. Use "Multithread
 DLL" with release builds of Log4cxx and "Multithread DLL Debug" with debug builds.</p>
-<h2><a class="anchor" id="autotoc_md43"></a>
-&lt;a name="unicode_supported"&gt;&lt;/a&gt;Does Apache Log4cxx support Unicode?</h2>
+<h2><a class="anchor" id="unicode_supported"></a>
+Does Apache Log4cxx support Unicode?</h2>
 <p>Yes. Apache Log4cxx exposes API methods in multiple string flavors supporting differently encoded textual content, like <code>char*</code>, <code>std::string</code>, <code>wchar_t*</code>, <code>std::wstring</code>, <code>CFStringRef</code> et al. All provided texts will be converted to the <code>LogString</code> type before further processing, which is one of several supported Unicode representations selected by the <code>--with-logchar</code> option. If methods are used that take <code>LogString</code> as arguments, the macro <code>LOG4CXX_STR()</code> can be used to convert literals to the current <code>LogString</code> type. FileAppenders support an encoding property as well, which should be explicitly specified to <code>UTF-8</code> or <code>UTF-16</code> for e.g. XML files. The important point is to get the chain of input, internal processing and output correct and that might need some additional setup in the app using Log4cxx:</p>
 <p>According to the <a href="https://www.gnu.org/software/libc/manual/html_node/Setting-the-Locale.html">libc documentation</a>, all programs start in the <code>C</code> locale by default, which is the <a href="https://stackoverflow.com/questions/48743106/whats-ansi-x3-4-1968-encoding">same as ANSI_X3.4-1968</a> and what's commonly known as the encoding <code>US-ASCII</code>. That encoding supports a very limited set of characters only, so inputting Unicode with that encoding in effect to output characters can't work properly. For example, here is some Hebrew text which says "People with disabilities": </p><pre class="fragment">נשים עם מוגבלות
 </pre><p> If you are to log this information, output on some console might be like the following, simply because the app uses <code>US-ASCII</code> by default and that can't map those characters:</p>
@@ -133,7 +131,7 @@ DLL" with release builds of Log4cxx and "Multithread DLL Debug" with debug build
     <li class="navelem"><a class="el" href="usage-overview.html">Usage</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Jul 7 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Tue Jul 11 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

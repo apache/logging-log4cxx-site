@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Apache Log4cxx", "index.html", [
-    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md44", null ],
+    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md40", null ],
     [ "Community", "community.html", "community" ],
     [ "Usage", "usage-overview.html", "usage-overview" ],
     [ "Get", "get.html", "get" ],
@@ -87,8 +87,8 @@ var NAVTREEINDEX =
 "classlog4cxx_1_1spi_1_1Filter.html#a20cf9ae893ad38a1a8e87c780b2d9a95",
 "classlog4cxx_1_1wlogstream.html#ad996ac174cf468275323c75ac46bdcce",
 "functions_func.html",
-"namespacelog4cxx.html#abe6393af314024e7ab6e6fad84343572",
-"repositoryselector_8h_source.html"
+"namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff",
+"resourcebundle_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
