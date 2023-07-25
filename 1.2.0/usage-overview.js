@@ -1,33 +1,33 @@
 var usage_overview =
 [
-    [ "Loggers, Appenders and Layouts", "usage.html", [
-      [ "Loggers", "usage.html#loggers", [
-        [ "Requests", "usage.html#requests", [
-          [ "Logging Custom Types", "usage.html#custom-types", null ],
-          [ "Using {fmt} style requests", "usage.html#logging-with-fmt", null ],
-          [ "Overhead", "usage.html#request-cost", null ],
-          [ "Removing log requests", "usage.html#removing-log-statements", null ],
-          [ "Removing location information", "usage.html#removing-location-information", null ]
+    [ "Quick Start", "quick-start.html", [
+      [ "A Simple Example", "quick-start.html#example1", null ],
+      [ "A Less Simple Example", "quick-start.html#example2", null ],
+      [ "Runtime Configuration", "quick-start.html#configuration", null ]
+    ] ],
+    [ "Loggers, Appenders and Layouts", "concepts.html", [
+      [ "Loggers", "concepts.html#loggers", [
+        [ "Requests", "concepts.html#requests", [
+          [ "Logging Custom Types", "concepts.html#custom-types", null ],
+          [ "Using {fmt} style requests", "concepts.html#logging-with-fmt", null ],
+          [ "Overhead", "concepts.html#request-cost", null ],
+          [ "Removing log requests", "concepts.html#removing-log-statements", null ],
+          [ "Removing location information", "concepts.html#removing-location-information", null ]
         ] ],
-        [ "Levels", "usage.html#levels", [
-          [ "Level Inheritance", "usage.html#level-inheritance", null ],
-          [ "Basic Selection Rule", "usage.html#selection-rule", null ]
+        [ "Levels", "concepts.html#levels", [
+          [ "Level Inheritance", "concepts.html#level-inheritance", null ],
+          [ "Basic Selection Rule", "concepts.html#selection-rule", null ]
         ] ]
       ] ],
-      [ "Appenders", "usage.html#appenders", [
-        [ "Additivity", "usage.html#appender-additivity", null ]
+      [ "Appenders", "concepts.html#appenders", [
+        [ "Additivity", "concepts.html#appender-additivity", null ]
       ] ],
-      [ "Layouts", "usage.html#layouts", [
-        [ "Pattern 1", "usage.html#pattern1", null ],
-        [ "Pattern 2", "usage.html#pattern2", null ],
-        [ "Pattern 3", "usage.html#pattern3", null ],
-        [ "Pattern 4", "usage.html#pattern4", null ]
+      [ "Layouts", "concepts.html#layouts", [
+        [ "Pattern 1", "concepts.html#pattern1", null ],
+        [ "Pattern 2", "concepts.html#pattern2", null ],
+        [ "Pattern 3", "concepts.html#pattern3", null ],
+        [ "Pattern 4", "concepts.html#pattern4", null ]
       ] ]
-    ] ],
-    [ "Example Programs", "coding.html", [
-      [ "A Simple Example", "coding.html#example1", null ],
-      [ "A Less Simple Example", "coding.html#example2", null ],
-      [ "Runtime Configuration", "coding.html#configuration", null ]
     ] ],
     [ "Configuration Samples", "configuration-samples.html", [
       [ "Default Initialization Behaviour", "configuration-samples.html#default-initialization", null ],
@@ -41,7 +41,7 @@ var usage_overview =
     [ "Filtering Log Messages", "filters.html", "filters" ],
     [ "Qt Support", "qt-support.html", null ],
     [ "Stacktrace Support", "stacktrace-support.html", [
-      [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md47", null ]
+      [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md45", null ]
     ] ],
     [ "Extending Log4cxx", "extending-log4cxx.html", null ],
     [ "Threading", "threading.html", [

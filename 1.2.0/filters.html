@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Apache Log4cxx<span id="projectnumber">&#160;Version 1.1.0</span>
+   <div id="projectname">Apache Log4cxx<span id="projectnumber">&#160;Version 1.2.0</span>
    </div>
   </td>
  </tr>
@@ -94,18 +94,18 @@ $(document).ready(function(){initNavTree('filters.html',''); initResizable(); })
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md38">Labelling Log Output</a></li>
-<li class="level1"><a href="#autotoc_md39">Excluding Log Output</a></li>
+<ul><li class="level1"><a href="#labeling-log-output">Labeling Log Output</a></li>
+<li class="level1"><a href="#excluding-log-output">Excluding Log Output</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_src_site_markdown_filters_filters"></a></p>
-<h1><a class="anchor" id="autotoc_md38"></a>
-Labelling Log Output</h1>
-<p>To uniquely stamp each request which realtes to a different source, you can push contextual information into the <em>Nested Diagnostic Context</em> (NDC) using the <em><a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">log4cxx::NDC</a></em> class or the <em>Mapped Diagnostic Context</em> provided by <em><a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">log4cxx::MDC</a></em> class. For an example using <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">log4cxx::NDC</a> refer to <a class="el" href="trivial_8cpp-example.html">trivial.cpp</a>.</p>
+<h1><a class="anchor" id="labeling-log-output"></a>
+Labeling Log Output</h1>
+<p>To uniquely stamp each request to relate it to a particular source, you can push contextual information into the <em>Nested Diagnostic Context</em> (NDC) using the <em><a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">log4cxx::NDC</a></em> class or the <em>Mapped Diagnostic Context</em> provided by <em><a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">log4cxx::MDC</a></em> class. For an example using <a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">log4cxx::NDC</a> refer to <a class="el" href="trivial_8cpp-example.html">trivial.cpp</a>.</p>
 <p>The NDC is managed per thread as a <em>stack</em> of contextual information. When the layout specifies that the NDC is to be included, each log entry will include the entire stack for the current thread. A <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">log4cxx::PatternLayout</a> allows named entries of the MDC to be included in the log message. The user is responsible for placing the correct information in the NDC/MDC by creating a <em><a class="el" href="classlog4cxx_1_1NDC.html" title="A Nested Diagnostic Context, or NDC in short, is an instrument to distinguish interleaved log output ...">log4cxx::NDC</a></em> or <em><a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">log4cxx::MDC</a></em> stack variable at a few well-defined points in the code. In contrast, the per-client logger approach commands extensive changes in the code.</p>
 <p>To illustrate this point, let us take the example of a servlet delivering content to numerous clients. The servlet can build the NDC at the very beginning of the request before executing other code. The contextual information can be the client's host name and other information inherent to the request, typically information contained in cookies. Hence, even if the servlet is serving multiple clients simultaneously, the logs initiated by the same code, i.e. belonging to the same logger, can still be distinguished because each client request will have a different NDC stack. Contrast this with the complexity of passing a freshly instantiated logger to all code exercised during the client's request.</p>
 <p>Nevertheless, some sophisticated applications, such as virtual hosting web servers, must log differently depending on the virtual host context and also depending on the software component issuing the request. Recent Log4cxx releases support multiple hierarchy trees. This enhancement allows each virtual host to possess its own copy of the logger hierarchy.</p>
-<h1><a class="anchor" id="autotoc_md39"></a>
+<h1><a class="anchor" id="excluding-log-output"></a>
 Excluding Log Output</h1>
 <p>When dealing with large amounts of logging information, it can be useful to filter on messages that we are interested in. This filtering only takes places after determining that the level of the current logger would log the message in the first place. When defining filters, note that they can only be defined on a per-appender basis, they do not globally affect anything.</p>
 <p>The filtering system is similar in concept to Linux iptables rules, in that there is a chain of filters that can accept a log message, deny the log message, or pass the message on to the next filter. Accepting a log message means that the message will be logged immediately without consulting other filters. Denying has the opposite affect, immediately dropping the log message and not consulting any other filters.</p>
@@ -135,7 +135,7 @@ Excluding Log Output</h1>
     <li class="navelem"><a class="el" href="usage-overview.html">Usage</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Mon Jul 24 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Tue Jul 25 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

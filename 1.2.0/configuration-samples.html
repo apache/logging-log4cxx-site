@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Apache Log4cxx<span id="projectnumber">&#160;Version 1.1.0</span>
+   <div id="projectname">Apache Log4cxx<span id="projectnumber">&#160;Version 1.2.0</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,7 @@ XML Example 1</h2>
 </div><!-- fragment --><p>Sample output: </p><div class="fragment"><div class="line">Hello there!</div>
 </div><!-- fragment --><h2><a class="anchor" id="xml-example-2"></a>
 XML Example 2</h2>
-<p>This example sends data to both stdout, as well as to a file. In this case, the file will be in our working directory. The pattern has also been updated to match with pattern example 1</p>
+<p>This example sends data to both stdout, as well as to a file. With this configuration the "example.log" file will be created in our working directory.</p>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">log4j:configuration</span> <span class="keyword">xmlns:log4j</span>=<span class="stringliteral">&quot;http://jakarta.apache.org/log4j/&quot;</span>&gt;</div>
 <div class="line"> </div>
@@ -180,7 +180,7 @@ XML Example 3</h2>
 <div class="ttc" id="agroup__LoggingMacros_html_ga806900dd7eafb458d0472d9c8f84594b"><div class="ttname"><a href="group__LoggingMacros.html#ga806900dd7eafb458d0472d9c8f84594b">LOG4CXX_TRACE</a></div><div class="ttdeci">#define LOG4CXX_TRACE(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for TRACE eve...</div><div class="ttdef"><b>Definition:</b> logger.h:2105</div></div>
 <div class="ttc" id="agroup__LoggingMacros_html_gae1bc2ab20d5f2d7660995ea8244d3a26"><div class="ttname"><a href="group__LoggingMacros.html#gae1bc2ab20d5f2d7660995ea8244d3a26">LOG4CXX_DEBUG</a></div><div class="ttdeci">#define LOG4CXX_DEBUG(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for DEBUG eve...</div><div class="ttdef"><b>Definition:</b> logger.h:2073</div></div>
 <div class="ttc" id="anamespacelog4cxx_html_acd073adf77cc8545b10ac024a474be0d"><div class="ttname"><a href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Logger &gt; LoggerPtr</div><div class="ttdef"><b>Definition:</b> defaultloggerfactory.h:27</div></div>
-</div><!-- fragment --><p>For this configuration, we have set any logger that is at the <code>com</code> level or below to be debug. However, we have also set the logger <code>com.example</code> to have a more verbose <code>trace</code> level to see more information from that particular logger.</p>
+</div><!-- fragment --><p>For this configuration, we have set any logger that is at the <code>com</code> level or below to be debug. However, we have also set the logger <code>com.example</code> to have a more verbose <code>trace</code> level to see more information from that particular logger. The "example.log" file will be created in our temporary directory.</p>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">log4j:configuration</span> <span class="keyword">xmlns:log4j</span>=<span class="stringliteral">&quot;http://jakarta.apache.org/log4j/&quot;</span>&gt;</div>
 <div class="line"> </div>
@@ -192,7 +192,7 @@ XML Example 3</h2>
 <div class="line">  &lt;/<span class="keywordtype">appender</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FileAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.FileAppender&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;file&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;example.log&quot;</span> /&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;file&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;${TMP}/example.log&quot;</span> /&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">layout</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.PatternLayout&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[%d{yyyy-MM-dd HH:mm:ss}] %c %-5p - %m%n&quot;</span> /&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">layout</span>&gt;</div>
@@ -266,7 +266,7 @@ XML Example 4</h2>
     <li class="navelem"><a class="el" href="usage-overview.html">Usage</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Mon Jul 24 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Tue Jul 25 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

@@ -1,7 +1,7 @@
 var filters =
 [
-    [ "Labelling Log Output", "filters.html#autotoc_md38", null ],
-    [ "Excluding Log Output", "filters.html#autotoc_md39", null ],
+    [ "Labeling Log Output", "filters.html#labeling-log-output", null ],
+    [ "Excluding Log Output", "filters.html#excluding-log-output", null ],
     [ "MapFilter", "map-filter.html", null ],
     [ "LocationInfoFilter", "location-info-filter.html", null ]
 ];

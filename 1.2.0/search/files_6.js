@@ -9,10 +9,11 @@ var searchData=
   ['classregistration_2eh_6',['classregistration.h',['../classregistration_8h.html',1,'']]],
   ['colorendpatternconverter_2eh_7',['colorendpatternconverter.h',['../colorendpatternconverter_8h.html',1,'']]],
   ['colorstartpatternconverter_2eh_8',['colorstartpatternconverter.h',['../colorstartpatternconverter_8h.html',1,'']]],
-  ['conclusions_2emd_9',['conclusions.md',['../conclusions_8md.html',1,'']]],
-  ['configuration_2dsamples_2emd_10',['configuration-samples.md',['../configuration-samples_8md.html',1,'']]],
-  ['configuration_2eh_11',['configuration.h',['../configuration_8h.html',1,'']]],
-  ['configurator_2eh_12',['configurator.h',['../configurator_8h.html',1,'']]],
-  ['consoleappender_2eh_13',['consoleappender.h',['../consoleappender_8h.html',1,'']]],
-  ['cyclicbuffer_2eh_14',['cyclicbuffer.h',['../cyclicbuffer_8h.html',1,'']]]
+  ['concepts_2emd_9',['concepts.md',['../concepts_8md.html',1,'']]],
+  ['conclusions_2emd_10',['conclusions.md',['../conclusions_8md.html',1,'']]],
+  ['configuration_2dsamples_2emd_11',['configuration-samples.md',['../configuration-samples_8md.html',1,'']]],
+  ['configuration_2eh_12',['configuration.h',['../configuration_8h.html',1,'']]],
+  ['configurator_2eh_13',['configurator.h',['../configurator_8h.html',1,'']]],
+  ['consoleappender_2eh_14',['consoleappender.h',['../consoleappender_8h.html',1,'']]],
+  ['cyclicbuffer_2eh_15',['cyclicbuffer.h',['../cyclicbuffer_8h.html',1,'']]]
 ];
