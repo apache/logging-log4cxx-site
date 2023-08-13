@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classlog4cxx_1_1db_1_1ODBCAppender.html#ad64ec638194e019b247c9f0c781d8c5d":[8,0,0,1,1,5],
 "classlog4cxx_1_1db_1_1ODBCAppender.html#afd4a8005bf5545f70ab4e81418fbcadf":[8,0,0,1,1,17],
 "classlog4cxx_1_1db_1_1ODBCAppender.html#afd4a8005bf5545f70ab4e81418fbcadf":[7,0,0,1,1,17],
 "classlog4cxx_1_1db_1_1ODBCAppender.html#afdb0963e7491d745d51a1957930bf922":[8,0,0,1,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classlog4cxx_1_1helpers_1_1BufferedWriter.html#adc484d804e921d861252460aa27326e7":[7,0,0,3,5,2],
 "classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html":[7,0,0,3,6],
 "classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html":[8,0,0,3,5],
-"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#a24ed6b62e7e3ec162d6fb4d654623b38":[8,0,0,3,5,2],
-"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#a24ed6b62e7e3ec162d6fb4d654623b38":[7,0,0,3,6,2]
+"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#a24ed6b62e7e3ec162d6fb4d654623b38":[8,0,0,3,5,2]
 };

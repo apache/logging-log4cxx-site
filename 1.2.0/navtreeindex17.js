@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"namespacemembers.html":[7,1,0],
 "namespacemembers_enum.html":[7,1,3],
 "namespacemembers_func.html":[7,1,1],
 "namespacemembers_type.html":[7,1,2],
@@ -147,12 +148,12 @@ var NAVTREEINDEX17 =
 "socketoutputstream_8h.html#a70e3731bbed8760be043377647d4c6b2":[9,0,1,0,0,0,3,45,2],
 "socketoutputstream_8h_source.html":[9,0,1,0,0,0,3,45],
 "source-repository.html":[5,0],
-"source-repository.html#autotoc_md32":[5,0,0],
-"source-repository.html#autotoc_md33":[5,0,0,0],
-"source-repository.html#autotoc_md34":[5,0,0,1],
-"source-repository.html#autotoc_md35":[5,0,0,2],
+"source-repository.html#autotoc_md33":[5,0,0],
+"source-repository.html#autotoc_md34":[5,0,0,0],
+"source-repository.html#autotoc_md35":[5,0,0,1],
+"source-repository.html#autotoc_md36":[5,0,0,2],
 "stacktrace-support.html":[2,5],
-"stacktrace-support.html#autotoc_md43":[2,5,0],
+"stacktrace-support.html#autotoc_md44":[2,5,0],
 "stream_8h.html":[9,0,1,0,0,0,36],
 "stream_8h.html#a4af7d0bc66fb5c5ff6da1b97e065652f":[9,0,1,0,0,0,36,4],
 "stream_8h.html#a52717feca3ae327f1ed1ec3c117cf9f6":[9,0,1,0,0,0,36,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "xmllayout_8h_source.html":[9,0,1,0,0,0,10,1],
 "xmlsocketappender_8h.html":[9,0,1,0,0,0,4,4],
 "xmlsocketappender_8h.html#a8d0b6f1839a292186d15f8e17c8e27c1":[9,0,1,0,0,0,4,4,1],
-"xmlsocketappender_8h_source.html":[9,0,1,0,0,0,4,4],
-"zipcompressaction_8h.html":[9,0,1,0,0,0,7,14]
+"xmlsocketappender_8h_source.html":[9,0,1,0,0,0,4,4]
 };

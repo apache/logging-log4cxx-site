@@ -10,5 +10,5 @@ var searchData=
   ['uostream_7',['uostream',['../classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html#a3022c040866aeaf740b50ad1e2e2eecd',1,'log4cxx::helpers::UniCharMessageBuffer']]],
   ['updatechildren_8',['updateChildren',['../classlog4cxx_1_1Hierarchy.html#a9836b2763eb49d6bb67639feb93e5ab8',1,'log4cxx::Hierarchy']]],
   ['updatethreshold_9',['updateThreshold',['../classlog4cxx_1_1Logger.html#ad5b0374c9cff962f0d070882d3b01fa2',1,'log4cxx::Logger']]],
-  ['usage_10',['Usage',['../usage-overview.html',1,'']]]
+  ['use_10',['Use',['../usage-overview.html',1,'']]]
 ];

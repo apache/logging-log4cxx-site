@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a055742e047425d3fa77beded7f9c67ff":[8,0,0,3,83,11],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a09d1b5cd785253f8ee979022586cb7c6":[8,0,0,3,83,8],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a09d1b5cd785253f8ee979022586cb7c6":[7,0,0,3,84,8],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a0d99398da448294453a7ece7160c6013":[8,0,0,3,83,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a00d271ebc45fdfac9ee0031f23a6d5ad":[7,0,0,4,1,6],
 "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a06ab5cd0948038816b702e149aef82a3":[8,0,0,4,1,7],
 "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a06ab5cd0948038816b702e149aef82a3":[7,0,0,4,1,7],
-"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a1619368e92552b4bc3c386b91359ad96":[7,0,0,4,1,8],
-"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a1619368e92552b4bc3c386b91359ad96":[8,0,0,4,1,8]
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a1619368e92552b4bc3c386b91359ad96":[7,0,0,4,1,8]
 };

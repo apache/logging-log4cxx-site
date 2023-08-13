@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"fallbackerrorhandler_8h_source.html":[9,0,1,0,0,0,9,0],
 "faq.html":[2,14],
 "faq.html#custom_levels":[2,14,0],
 "faq.html#msvc_crash":[2,14,1],
@@ -157,7 +158,7 @@ var NAVTREEINDEX15 =
 "htmllayout_8h.html#ac7a1618f0d84c53886bfaa1d88dd946b":[9,0,1,0,0,0,23,1],
 "htmllayout_8h_source.html":[9,0,1,0,0,0,23],
 "index.html":[],
-"index.html#autotoc_md36":[0],
+"index.html#autotoc_md37":[0],
 "inetaddress_8h.html":[9,0,1,0,0,0,3,22],
 "inetaddress_8h.html#a606a9429af6676c952edf3666ed21e7b":[9,0,1,0,0,0,3,22,3],
 "inetaddress_8h.html#af4f7ff8a19160c01d739720a38e07769":[9,0,1,0,0,0,3,22,2],
@@ -201,13 +202,13 @@ var NAVTREEINDEX15 =
 "levelrangefilter_8h.html#ad09ae2833e8a5e3bbc713b2ce607fc8f":[9,0,1,0,0,0,2,4,1],
 "levelrangefilter_8h_source.html":[9,0,1,0,0,0,2,4],
 "library-design.html":[5,1],
-"library-design.html#autotoc_md37":[5,1,0],
-"library-design.html#autotoc_md38":[5,1,1],
-"library-design.html#autotoc_md39":[5,1,1,0],
-"library-design.html#autotoc_md40":[5,1,2],
+"library-design.html#autotoc_md38":[5,1,0],
+"library-design.html#autotoc_md39":[5,1,1],
+"library-design.html#autotoc_md40":[5,1,1,0],
+"library-design.html#autotoc_md41":[5,1,2],
 "license.html":[3,2],
-"license.html#autotoc_md41":[3,2,0],
-"license.html#autotoc_md42":[3,2,0,0],
+"license.html#autotoc_md42":[3,2,0],
+"license.html#autotoc_md43":[3,2,0,0],
 "linelocationpatternconverter_8h.html":[9,0,1,0,0,0,6,10],
 "linelocationpatternconverter_8h_source.html":[9,0,1,0,0,0,6,10],
 "lineseparatorpatternconverter_8h.html":[9,0,1,0,0,0,6,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "log4cxx_2helpers_2transcoder_8h.html#a1f6b0ab969efb622f7ceb7302b6b41ca":[9,0,1,0,0,0,3,59,7],
 "log4cxx_2helpers_2transcoder_8h.html#a51ab971d5cce0a6118dab86d60ac2708":[9,0,1,0,0,0,3,59,6],
 "log4cxx_2helpers_2transcoder_8h.html#a72a1ddbd726775eae44dfc5ca7246994":[9,0,1,0,0,0,3,59,5],
-"log4cxx_2helpers_2transcoder_8h.html#a7d7f1af9ce61c6191c761f5df4ecc2f1":[9,0,1,0,0,0,3,59,3],
-"log4cxx_2helpers_2transcoder_8h.html#aaac580d817eed963aabdcf58325bbdb4":[9,0,1,0,0,0,3,59,2]
+"log4cxx_2helpers_2transcoder_8h.html#a7d7f1af9ce61c6191c761f5df4ecc2f1":[9,0,1,0,0,0,3,59,3]
 };

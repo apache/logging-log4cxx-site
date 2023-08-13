@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"classlog4cxx_1_1spi_1_1AppenderAttachable.html#af9a793dd93782be7455e2219e7d3097a":[8,0,0,9,0,7],
 "classlog4cxx_1_1spi_1_1Configurator.html":[8,0,0,9,1],
 "classlog4cxx_1_1spi_1_1Configurator.html":[7,0,0,10,1],
 "classlog4cxx_1_1spi_1_1Configurator.html#a1846aeae7dc6d44774b1bafd6a6ee6d7":[7,0,0,10,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a396482cbb6e06c1eeca92177d07c168f":[8,0,0,10,0,6],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a4abb365f55664e32adb7b19e8d2e0ec1":[8,0,0,10,0,4],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a4abb365f55664e32adb7b19e8d2e0ec1":[7,0,0,11,0,4],
-"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a62470dc2bd6adfa67ddb84ce0a23d437":[7,0,0,11,0,9],
-"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a62470dc2bd6adfa67ddb84ce0a23d437":[8,0,0,10,0,9]
+"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a62470dc2bd6adfa67ddb84ce0a23d437":[7,0,0,11,0,9]
 };

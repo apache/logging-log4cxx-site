@@ -25,9 +25,9 @@
 var NAVTREE =
 [
   [ "Apache Log4cxx", "index.html", [
-    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md36", null ],
+    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md37", null ],
     [ "Community", "community.html", "community" ],
-    [ "Usage", "usage-overview.html", "usage-overview" ],
+    [ "Use", "usage-overview.html", "usage-overview" ],
     [ "Get", "get.html", "get" ],
     [ "Build", "build.html", "build" ],
     [ "Develop", "development-overview.html", "development-overview" ],
@@ -74,24 +74,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "MyApp-qt_8cpp-example.html",
-"classlog4cxx_1_1DefaultLoggerFactory.html#ab1a63896e9c8299d82881db2ca3c225d",
-"classlog4cxx_1_1Level.html#a93cc433f2ba2c433a008946484e2471e",
-"classlog4cxx_1_1Logger.html#adf4916f818281f48ee3fd33576635c23",
-"classlog4cxx_1_1db_1_1ODBCAppender.html#afd4a8005bf5545f70ab4e81418fbcadf",
-"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#ac987962aac5a1308fc92fca01400bcaa",
-"classlog4cxx_1_1helpers_1_1Date.html#a43f0a4e7fae4310660099d3e2dc42a40",
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d61d6bbd39b2868c5a4e101e9b19f05",
-"classlog4cxx_1_1helpers_1_1ServerSocket.html#ace7f93d6a0a5d3ba7fc54b168b9b1a22",
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a09d1b5cd785253f8ee979022586cb7c6",
-"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a4d0ae245c2a87e8168e85bd9f242e7a9",
-"classlog4cxx_1_1pattern_1_1FormattingInfo.html#aebc72da9194a065adc90f72946642da4",
-"classlog4cxx_1_1rolling_1_1FilterBasedTriggeringPolicy.html#abdb5fc06c4a42940d44fdd2acee37e06",
-"classlog4cxx_1_1spi_1_1Configurator.html",
-"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a69d8bbc93046e806a40167f1dc414499",
-"faq.html",
-"log4cxx_2helpers_2transcoder_8h.html#aac849c16f5bc8917cb4b00d4ccf96138",
-"namespacemembers_enum.html",
-"zipcompressaction_8h.html#a3ae9758f32a53380e836008f8367b4a4"
+"classlog4cxx_1_1DefaultLoggerFactory.html",
+"classlog4cxx_1_1Level.html#a7824acf2f3cd05835fff84b8f2cf4f3a",
+"classlog4cxx_1_1Logger.html#adf2ebc4abc9c5dc20bc9fdeeac6125fb",
+"classlog4cxx_1_1db_1_1ODBCAppender.html#ad64ec638194e019b247c9f0c781d8c5d",
+"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#a24ed6b62e7e3ec162d6fb4d654623b38",
+"classlog4cxx_1_1helpers_1_1Date.html#a35e0612658cb65250e1ad837621ce43d",
+"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d5dc1c5e2767df2ed944ff909515457",
+"classlog4cxx_1_1helpers_1_1ServerSocket.html#abb37037491ee288a484336ff353a92e7",
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a055742e047425d3fa77beded7f9c67ff",
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a1619368e92552b4bc3c386b91359ad96",
+"classlog4cxx_1_1pattern_1_1FormattingInfo.html#aa5c770465b2ee9766f93ab0643ffc37c",
+"classlog4cxx_1_1rolling_1_1FilterBasedTriggeringPolicy.html#a9fa8e27ea602866c49bcec8ee5d0a2d3",
+"classlog4cxx_1_1spi_1_1AppenderAttachable.html#af9a793dd93782be7455e2219e7d3097a",
+"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a62470dc2bd6adfa67ddb84ce0a23d437",
+"fallbackerrorhandler_8h_source.html",
+"log4cxx_2helpers_2transcoder_8h.html#aaac580d817eed963aabdcf58325bbdb4",
+"namespacemembers.html",
+"zipcompressaction_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

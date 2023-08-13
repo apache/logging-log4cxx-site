@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"log4cxx_2helpers_2transcoder_8h.html#aaac580d817eed963aabdcf58325bbdb4":[9,0,1,0,0,0,3,59,2],
 "log4cxx_2helpers_2transcoder_8h.html#aac849c16f5bc8917cb4b00d4ccf96138":[9,0,1,0,0,0,3,59,1],
 "log4cxx_2helpers_2transcoder_8h.html#ae8550440a926bfc13a1da543fc470486":[9,0,1,0,0,0,3,59,8],
 "log4cxx_2helpers_2transcoder_8h_source.html":[9,0,1,0,0,0,3,59],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "namespacelog4cxx_1_1varia.html#a21e84e9c01801ddd4aa0bac68ea0dccd":[7,0,0,11,1],
 "namespacelog4cxx_1_1xml.html":[7,0,0,12],
 "namespacelog4cxx_1_1xml.html#a8c724e6a90b0fad8729d13a67203be1f":[7,0,0,12,2],
-"namespacelog4cxx_1_1xml.html#af420738a279fb56cff87297ae2bcd2b0":[7,0,0,12,3],
-"namespacemembers.html":[7,1,0]
+"namespacelog4cxx_1_1xml.html#af420738a279fb56cff87297ae2bcd2b0":[7,0,0,12,3]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classlog4cxx_1_1helpers_1_1Date.html#a35e0612658cb65250e1ad837621ce43d":[8,0,0,3,19,2],
 "classlog4cxx_1_1helpers_1_1Date.html#a43f0a4e7fae4310660099d3e2dc42a40":[7,0,0,3,20,3],
 "classlog4cxx_1_1helpers_1_1Date.html#a43f0a4e7fae4310660099d3e2dc42a40":[8,0,0,3,19,3],
 "classlog4cxx_1_1helpers_1_1Date.html#a551746cad7712e8355aa2903fd367396":[7,0,0,3,20,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classlog4cxx_1_1helpers_1_1MessageBuffer.html#a3bc63ed5a947ca7f85393db8a97cb8bd":[7,0,0,3,43,13],
 "classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d0b0e0192715677927a3e1611c71464":[8,0,0,3,42,23],
 "classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d0b0e0192715677927a3e1611c71464":[7,0,0,3,43,23],
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d5dc1c5e2767df2ed944ff909515457":[8,0,0,3,42,17],
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d5dc1c5e2767df2ed944ff909515457":[7,0,0,3,43,17]
+"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d5dc1c5e2767df2ed944ff909515457":[8,0,0,3,42,17]
 };

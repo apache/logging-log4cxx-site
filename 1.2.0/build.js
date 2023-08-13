@@ -2,16 +2,17 @@ var build =
 [
     [ "Building", "building.html", [
       [ "Building Apache Log4cxx", "building.html#autotoc_md25", [
-        [ "Covered by the team", "building.html#autotoc_md26", null ]
+        [ "Covered by Github", "building.html#autotoc_md26", null ],
+        [ "Covered by the team", "building.html#autotoc_md27", null ]
       ] ]
     ] ],
     [ "Log4cxx Dependencies", "dependencies.html", [
-      [ "APR+APR-Util", "dependencies.html#autotoc_md27", null ],
-      [ "sed+gzip+zip", "dependencies.html#autotoc_md28", null ],
-      [ "Optional Dependencies", "dependencies.html#autotoc_md29", [
-        [ "A note on C++ version and Boost", "dependencies.html#autotoc_md30", null ]
+      [ "APR+APR-Util", "dependencies.html#autotoc_md28", null ],
+      [ "sed+gzip+zip", "dependencies.html#autotoc_md29", null ],
+      [ "Optional Dependencies", "dependencies.html#autotoc_md30", [
+        [ "A note on C++ version and Boost", "dependencies.html#autotoc_md31", null ]
       ] ],
-      [ "Licenses(direct dependencies only)", "dependencies.html#autotoc_md31", null ]
+      [ "Licenses(direct dependencies only)", "dependencies.html#autotoc_md32", null ]
     ] ],
     [ "Building with CMake", "build-cmake.html", [
       [ "Quick start:", "build-cmake.html#autotoc_md14", null ],

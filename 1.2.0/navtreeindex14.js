@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a62470dc2bd6adfa67ddb84ce0a23d437":[8,0,0,10,0,9],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a69d8bbc93046e806a40167f1dc414499":[7,0,0,11,0,8],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a69d8bbc93046e806a40167f1dc414499":[8,0,0,10,0,8],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a6dd226545293d94e7b13cc5a9d0ee07d":[7,0,0,11,0,2],
@@ -197,11 +198,11 @@ var NAVTREEINDEX14 =
 "denyallfilter_8h.html#a05e1940b32acea2490a1e889e4f27a24":[9,0,1,0,0,0,2,1,1],
 "denyallfilter_8h_source.html":[9,0,1,0,0,0,2,1],
 "dependencies.html":[4,1],
-"dependencies.html#autotoc_md27":[4,1,0],
-"dependencies.html#autotoc_md28":[4,1,1],
-"dependencies.html#autotoc_md29":[4,1,2],
-"dependencies.html#autotoc_md30":[4,1,2,0],
-"dependencies.html#autotoc_md31":[4,1,3],
+"dependencies.html#autotoc_md28":[4,1,0],
+"dependencies.html#autotoc_md29":[4,1,1],
+"dependencies.html#autotoc_md30":[4,1,2],
+"dependencies.html#autotoc_md31":[4,1,2,0],
+"dependencies.html#autotoc_md32":[4,1,3],
 "development-overview.html":[5],
 "dir_1a13fd6c0bb5076ce505a0fac2f7fcdb.html":[9,0,1,0,0,0,0],
 "dir_1b5b2ce64a57900ce45e762cd4aeb527.html":[9,0,1,0],
@@ -234,8 +235,8 @@ var NAVTREEINDEX14 =
 "domconfigurator_8h.html#a8c724e6a90b0fad8729d13a67203be1f":[9,0,1,0,0,0,10,0,1],
 "domconfigurator_8h_source.html":[9,0,1,0,0,0,10,0],
 "download.html":[3,0],
-"download.html#autotoc_md44":[3,0,0],
-"download.html#autotoc_md45":[3,0,0,0],
+"download.html#autotoc_md45":[3,0,0],
+"download.html#autotoc_md46":[3,0,0,0],
 "environment-variables.html":[2,9],
 "errorhandler_8h.html":[9,0,1,0,0,0,8,4],
 "errorhandler_8h.html#ae74ff32b33a28bff40dd6fd324061b02":[9,0,1,0,0,0,8,4,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "expressionfilter_8h_source.html":[9,0,1,0,0,0,2,2],
 "extending-log4cxx.html":[2,6],
 "fallbackerrorhandler_8h.html":[9,0,1,0,0,0,9,0],
-"fallbackerrorhandler_8h.html#a21e84e9c01801ddd4aa0bac68ea0dccd":[9,0,1,0,0,0,9,0,1],
-"fallbackerrorhandler_8h_source.html":[9,0,1,0,0,0,9,0]
+"fallbackerrorhandler_8h.html#a21e84e9c01801ddd4aa0bac68ea0dccd":[9,0,1,0,0,0,9,0,1]
 };
