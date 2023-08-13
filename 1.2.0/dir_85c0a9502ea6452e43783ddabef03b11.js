@@ -30,7 +30,7 @@ var dir_85c0a9502ea6452e43783ddabef03b11 =
     [ "loader.h", "loader_8h.html", "loader_8h" ],
     [ "locale.h", "locale_8h.html", "locale_8h" ],
     [ "loglog.h", "loglog_8h.html", "loglog_8h" ],
-    [ "messagebuffer.h", "messagebuffer_8h.html", "messagebuffer_8h" ],
+    [ "log4cxx/helpers/messagebuffer.h", "log4cxx_2helpers_2messagebuffer_8h.html", "log4cxx_2helpers_2messagebuffer_8h" ],
     [ "object.h", "object_8h.html", "object_8h" ],
     [ "onlyonceerrorhandler.h", "onlyonceerrorhandler_8h.html", "onlyonceerrorhandler_8h" ],
     [ "optionconverter.h", "optionconverter_8h.html", "optionconverter_8h" ],
@@ -59,7 +59,7 @@ var dir_85c0a9502ea6452e43783ddabef03b11 =
     [ "threadspecificdata.h", "threadspecificdata_8h.html", "threadspecificdata_8h" ],
     [ "threadutility.h", "threadutility_8h.html", "threadutility_8h" ],
     [ "timezone.h", "timezone_8h.html", "timezone_8h" ],
-    [ "transcoder.h", "transcoder_8h.html", "transcoder_8h" ],
+    [ "log4cxx/helpers/transcoder.h", "log4cxx_2helpers_2transcoder_8h.html", "log4cxx_2helpers_2transcoder_8h" ],
     [ "transform.h", "transform_8h.html", "transform_8h" ],
     [ "writer.h", "writer_8h.html", "writer_8h" ],
     [ "xml.h", "xml_8h.html", "xml_8h" ]

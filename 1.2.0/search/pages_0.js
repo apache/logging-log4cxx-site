@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_23_20library_20design_20notes_0',['# Library Design Notes',['../library-design.html',1,'development-overview']]]
+  ['apache_20log4cxx_0',['Apache Log4cxx',['../index.html',1,'']]]
 ];

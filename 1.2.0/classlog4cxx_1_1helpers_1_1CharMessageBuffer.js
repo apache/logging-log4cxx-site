@@ -8,6 +8,7 @@ var classlog4cxx_1_1helpers_1_1CharMessageBuffer =
     [ "operator std::basic_ostream< char > &", "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#adbae4391c7b17538da4ac7dd28593bd9", null ],
     [ "operator<<", "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#a1c21dec1e4061a5825a53301cbb11635", null ],
     [ "operator<<", "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#a0287f96a31863e373af94f6dda4a537b", null ],
+    [ "operator<<", "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#a057198d46f31a15a7a1c555140e0cbe1", null ],
     [ "operator<<", "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#a7601829000c866a5946916ef85bb478c", null ],
     [ "operator<<", "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#aba22fc9175e693672c9b5bc75ace9fc1", null ],
     [ "operator<<", "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#a2508b01a5e28327582c532df472f88bd", null ],

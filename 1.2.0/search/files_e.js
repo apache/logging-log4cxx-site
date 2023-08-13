@@ -1,28 +1,4 @@
 var searchData=
 [
-  ['layout_2eh_0',['layout.h',['../layout_8h.html',1,'']]],
-  ['level_2eh_1',['level.h',['../level_8h.html',1,'']]],
-  ['levelmatchfilter_2eh_2',['levelmatchfilter.h',['../levelmatchfilter_8h.html',1,'']]],
-  ['levelpatternconverter_2eh_3',['levelpatternconverter.h',['../levelpatternconverter_8h.html',1,'']]],
-  ['levelrangefilter_2eh_4',['levelrangefilter.h',['../levelrangefilter_8h.html',1,'']]],
-  ['library_2ddesign_2emd_5',['library-design.md',['../library-design_8md.html',1,'']]],
-  ['license_2emd_6',['license.md',['../license_8md.html',1,'']]],
-  ['linelocationpatternconverter_2eh_7',['linelocationpatternconverter.h',['../linelocationpatternconverter_8h.html',1,'']]],
-  ['lineseparatorpatternconverter_2eh_8',['lineseparatorpatternconverter.h',['../lineseparatorpatternconverter_8h.html',1,'']]],
-  ['literalpatternconverter_2eh_9',['literalpatternconverter.h',['../literalpatternconverter_8h.html',1,'']]],
-  ['loader_2eh_10',['loader.h',['../loader_8h.html',1,'']]],
-  ['locale_2eh_11',['locale.h',['../locale_8h.html',1,'']]],
-  ['locationinfo_2eh_12',['locationinfo.h',['../locationinfo_8h.html',1,'']]],
-  ['locationinfofilter_2eh_13',['locationinfofilter.h',['../locationinfofilter_8h.html',1,'']]],
-  ['locationinfofilter_2emd_14',['LocationInfoFilter.md',['../LocationInfoFilter_8md.html',1,'']]],
-  ['logger_2eh_15',['logger.h',['../logger_8h.html',1,'']]],
-  ['loggerfactory_2eh_16',['loggerfactory.h',['../loggerfactory_8h.html',1,'']]],
-  ['loggermatchfilter_2eh_17',['loggermatchfilter.h',['../loggermatchfilter_8h.html',1,'']]],
-  ['loggerpatternconverter_2eh_18',['loggerpatternconverter.h',['../loggerpatternconverter_8h.html',1,'']]],
-  ['loggerrepository_2eh_19',['loggerrepository.h',['../loggerrepository_8h.html',1,'']]],
-  ['loggingevent_2eh_20',['loggingevent.h',['../loggingevent_8h.html',1,'']]],
-  ['loggingeventpatternconverter_2eh_21',['loggingeventpatternconverter.h',['../loggingeventpatternconverter_8h.html',1,'']]],
-  ['loglog_2eh_22',['loglog.h',['../loglog_8h.html',1,'']]],
-  ['logmanager_2eh_23',['logmanager.h',['../logmanager_8h.html',1,'']]],
-  ['logstring_2eh_24',['logstring.h',['../logstring_8h.html',1,'']]]
+  ['jsonlayout_2eh_0',['jsonlayout.h',['../jsonlayout_8h.html',1,'']]]
 ];

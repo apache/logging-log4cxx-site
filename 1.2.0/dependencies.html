@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Apache Log4cxx: Dependencies</title>
+<title>Apache Log4cxx: Log4cxx Dependencies</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,14 +90,21 @@ $(document).ready(function(){initNavTree('dependencies.html',''); initResizable(
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Dependencies </div></div>
+  <div class="headertitle"><div class="title">Log4cxx Dependencies </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#autotoc_md27">APR+APR-Util</a></li>
+<li class="level1"><a href="#autotoc_md28">sed+gzip+zip</a></li>
+<li class="level1"><a href="#autotoc_md29">Optional Dependencies</a><ul><li class="level2"><a href="#autotoc_md30">A note on C++ version and Boost</a></li>
+</ul>
+</li>
+<li class="level1"><a href="#autotoc_md31">Licenses(direct dependencies only)</a></li>
+</ul>
+</div>
 <div class="textblock"><p><a class="anchor" id="md_src_site_markdown_development_dependencies"></a></p>
-<h1><a class="anchor" id="autotoc_md29"></a>
-Log4cxx Dependencies</h1>
-<p>As of version 0.12.0, Log4cxx requires a minimum C++ version of C++11. If C++17 is not available, then Log4cxx requires Boost Thread in order to build, which in turn requires chrono and date_time.</p>
-<p><a class="el" href="namespacelog4cxx.html">log4cxx</a> requires the following software to build and/or run correctly:</p>
+<p>As of version 0.12.0, Log4cxx requires a minimum C++ version of C++11.</p>
+<p>Log4cxx requires the following software to build and/or run correctly:</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Dependency Name   </th><th class="markdownTableHeadNone">Version   </th><th class="markdownTableHeadNone">Dependency Type   </th><th class="markdownTableHeadNone">Homepage    </th></tr>
@@ -106,32 +113,59 @@ Log4cxx Dependencies</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">APR-Util   </td><td class="markdownTableBodyNone">&gt;=1.5.4   </td><td class="markdownTableBodyNone">Compile/Runtime   </td><td class="markdownTableBodyNone"><a href="https://apr.apache.org">https://apr.apache.org</a>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Boost   </td><td class="markdownTableBodyNone">any?   </td><td class="markdownTableBodyNone">Compile/runtime. Not required if your compiler supports C++17   </td><td class="markdownTableBodyNone"><a href="https://boost.org">https://boost.org</a>    </td></tr>
-<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">gzip   </td><td class="markdownTableBodyNone">any   </td><td class="markdownTableBodyNone">Test/Runtime(optional)   </td><td class="markdownTableBodyNone"><a href="https://gzip.org">https://gzip.org</a>    </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">sed   </td><td class="markdownTableBodyNone">any   </td><td class="markdownTableBodyNone">Test   </td><td class="markdownTableBodyNone">N/A    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">zip   </td><td class="markdownTableBodyNone">any   </td><td class="markdownTableBodyNone">Test/Runtime(optional)   </td><td class="markdownTableBodyNone">N/A    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">log4j   </td><td class="markdownTableBodyNone">1.2.14   </td><td class="markdownTableBodyNone">Test   </td><td class="markdownTableBodyNone"><a href="https://http://logging.apache.org/log4j/2.x/">https://http://logging.apache.org/log4j/2.x/</a>    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">java   </td><td class="markdownTableBodyNone">&gt;=6   </td><td class="markdownTableBodyNone">Test   </td><td class="markdownTableBodyNone"><a href="https://adoptopenjdk.net">https://adoptopenjdk.net</a>   </td></tr>
+<td class="markdownTableBodyNone">zip   </td><td class="markdownTableBodyNone">any   </td><td class="markdownTableBodyNone">Test/Runtime(optional)   </td><td class="markdownTableBodyNone">N/A   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md30"></a>
-APR+APR-Util</h2>
+<h1><a class="anchor" id="autotoc_md27"></a>
+APR+APR-Util</h1>
 <p>The Apache Portable Runtime(APR) provides the cross-platform backend for <a class="el" href="namespacelog4cxx.html">log4cxx</a>. Both APR and APR-util need to be installed and available on your system.</p>
-<h2><a class="anchor" id="autotoc_md31"></a>
-sed+gzip+zip</h2>
+<h1><a class="anchor" id="autotoc_md28"></a>
+sed+gzip+zip</h1>
 <p>These applications are needed during test of <a class="el" href="namespacelog4cxx.html">log4cxx</a>. <code>gzip</code>and <code>sed</code> are generally installed by default on Linux. <code>zip</code> may not be installed by default; check your distribution's documentation for information on how to install these applications.</p>
 <p>For Windows, you will have to install those tools through a system such as MinGW, cygwin, or MSYS2.</p>
 <p><code>gzip</code> and <code>zip</code> only needed during runtime if you are compressing the log files, for example by setting a rollover policy which ends in <code>.gz</code> or <code>.zip</code>.</p>
-<h2><a class="anchor" id="autotoc_md32"></a>
-log4j+Java</h2>
-<p>log4j and Java are needed to run some tests to ensure that <a class="el" href="namespacelog4cxx.html">log4cxx</a> has binary compatability with log4j. Note that the correct binary for log4j will be downloaded and used automatically if CMAKE is used to build the project, otherwise one needs to get that manually. Java needs to be installed on the system already in all cases, but with CMAKE again, if it's not, the corresponding tests are skipped entirely automatically.</p>
-<h1><a class="anchor" id="autotoc_md33"></a>
+<h1><a class="anchor" id="autotoc_md29"></a>
+Optional Dependencies</h1>
+<p>The following table lists CMake options that require additional dependencies.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">CMake option   </th><th class="markdownTableHeadNone">Dependency Name   </th><th class="markdownTableHeadCenter">Version   </th><th class="markdownTableHeadNone">Dependency Type   </th><th class="markdownTableHeadNone">Homepage    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LOG4CXX_MULTIPROCESS_ROLLING_FILE_APPENDER   </td><td class="markdownTableBodyNone">Boost   </td><td class="markdownTableBodyCenter">any   </td><td class="markdownTableBodyNone">Compile/runtime. Not required if your compiler supports C++17   </td><td class="markdownTableBodyNone"><a href="https://boost.org">https://boost.org</a>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ENABLE_FMT_LAYOUT   </td><td class="markdownTableBodyNone">{fmt}   </td><td class="markdownTableBodyCenter">9+   </td><td class="markdownTableBodyNone">Compile/runtime   </td><td class="markdownTableBodyNone"><a href="https://github.com/fmtlib/fmt">https://github.com/fmtlib/fmt</a>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LOG4CXX_ENABLE_ODBC   </td><td class="markdownTableBodyNone">unixodbc   </td><td class="markdownTableBodyCenter">any   </td><td class="markdownTableBodyNone">Compile/runtime (not on Windows)   </td><td class="markdownTableBodyNone"><a href="https://www.unixodbc.org/">https://www.unixodbc.org/</a>   </td></tr>
+</table>
+<p>|LOG4CXX_ENABLE_ESMTP | libesmtp | any | Compile/runtime (not on Windows) | |LOG4CXX_QT_SUPPORT |Qt | 5 | Compile/runtime | <a href="https://www.qt.io/download">https://www.qt.io/download</a> |LOG4CXX_CFSTRING | Mac OS/X Core Foundation | any | Compile/runtime | <a href="https://developer.apple.com/documentation/corefoundation">https://developer.apple.com/documentation/corefoundation</a></p>
+<h2><a class="anchor" id="autotoc_md30"></a>
+A note on C++ version and Boost</h2>
+<p>By default, Log4cxx requests C++20 features. This is to avoid 3rd party dependencies as much as possible. If C++17 is not available, a search for Boost will be taken and those libraries will be used instead. If you would prefer to use Boost, there are two options you have:</p>
+<ol type="1">
+<li>Pass <code>-DPREFER_BOOST=ON</code> to CMake when compiling. This will ignore the results of the tests that check for the standard version of components that are required. Note that this will switch all components, regardless of the C++ version in effect at compile time.</li>
+<li>Revert to an earlier standard using <code>-DCMAKE_CXX_STANDARD=11</code> for example. This will still to check for standard versions of required components, but it will fall back to using Boost for newer components added in C++17.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md31"></a>
 Licenses(direct dependencies only)</h1>
-<p><b>Apache License, Version 2.0</b>: <a class="el" href="namespacelog4cxx.html">log4cxx</a>, APR, APR-util <b>Boost License, Version 1.0</b>: boost </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Dependency   </th><th class="markdownTableHeadNone">License    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">APR, APR-util   </td><td class="markdownTableBodyNone"><b>Apache License, Version 2.0</b>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Boost   </td><td class="markdownTableBodyNone"><b>Boost License, Version 1.0</b>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">{fmt}   </td><td class="markdownTableBodyNone"><b>MIT</b>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">unixodbc   </td><td class="markdownTableBodyNone"><b>LGPL</b>    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Qt   </td><td class="markdownTableBodyNone">Refer <a href="https://www.qt.io/licensing/">https://www.qt.io/licensing/</a>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Mac OS/X Core Foundation   </td><td class="markdownTableBodyNone"><b>APSL 2.0</b>   </td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -139,10 +173,10 @@ Licenses(direct dependencies only)</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="development-overview.html">Development</a></li>
+    <li class="navelem"><a class="el" href="build.html">Build</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Jul 26 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Sun Aug 13 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

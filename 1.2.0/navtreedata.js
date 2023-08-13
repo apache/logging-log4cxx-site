@@ -25,11 +25,12 @@
 var NAVTREE =
 [
   [ "Apache Log4cxx", "index.html", [
-    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md38", null ],
+    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md36", null ],
     [ "Community", "community.html", "community" ],
     [ "Usage", "usage-overview.html", "usage-overview" ],
     [ "Get", "get.html", "get" ],
-    [ "Development", "development-overview.html", "development-overview" ],
+    [ "Build", "build.html", "build" ],
+    [ "Develop", "development-overview.html", "development-overview" ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -58,6 +59,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
@@ -71,24 +73,25 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"absolutetimedateformat_8h.html",
+"MyApp-qt_8cpp-example.html",
 "classlog4cxx_1_1DefaultLoggerFactory.html#ab1a63896e9c8299d82881db2ca3c225d",
-"classlog4cxx_1_1Level.html#ac4ac70f89979b37482baa482d6191ad4",
-"classlog4cxx_1_1Logger.html#ae0752912c98368ecdb6726bd0fd53a98",
-"classlog4cxx_1_1db_1_1ODBCAppender.html#afffb749ec2572027f23f0ac41ff74b4f",
-"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#af009964a34ba5afeb3b685462116a591",
-"classlog4cxx_1_1helpers_1_1Date.html#a5db304859ae436dda9db8313fcac2b0d",
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a6b33e48275dcc0332639f2f53565990c",
-"classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#aaa288211d4c86b15c2ec054719ee5a68",
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a428c5ce2b6cc3e17658e7233de1a1fd6",
-"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a95cf7d3097a6727b45562bf47f993eeb",
-"classlog4cxx_1_1pattern_1_1FullLocationPatternConverter.html#a504f06380cbca3781a83ce032238e0f3",
-"classlog4cxx_1_1rolling_1_1FixedWindowRollingPolicy.html#a3b785d839579c7316b169ff7ce263a50",
-"classlog4cxx_1_1spi_1_1DefaultRepositorySelector.html#a28dbf8760786a41ae1b3bffa58eebfab",
-"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#abed0d6aa5ae069e2c619bfdf32092cc1",
-"fileinputstream_8h_source.html",
-"macros-influencing-log4cxx.html",
-"optionconverter_8h.html#afd85348ac51f52a1e065d249c7b1e3a7"
+"classlog4cxx_1_1Level.html#a93cc433f2ba2c433a008946484e2471e",
+"classlog4cxx_1_1Logger.html#adf4916f818281f48ee3fd33576635c23",
+"classlog4cxx_1_1db_1_1ODBCAppender.html#afd4a8005bf5545f70ab4e81418fbcadf",
+"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#ac987962aac5a1308fc92fca01400bcaa",
+"classlog4cxx_1_1helpers_1_1Date.html#a43f0a4e7fae4310660099d3e2dc42a40",
+"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d61d6bbd39b2868c5a4e101e9b19f05",
+"classlog4cxx_1_1helpers_1_1ServerSocket.html#ace7f93d6a0a5d3ba7fc54b168b9b1a22",
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a09d1b5cd785253f8ee979022586cb7c6",
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a4d0ae245c2a87e8168e85bd9f242e7a9",
+"classlog4cxx_1_1pattern_1_1FormattingInfo.html#aebc72da9194a065adc90f72946642da4",
+"classlog4cxx_1_1rolling_1_1FilterBasedTriggeringPolicy.html#abdb5fc06c4a42940d44fdd2acee37e06",
+"classlog4cxx_1_1spi_1_1Configurator.html",
+"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a69d8bbc93046e806a40167f1dc414499",
+"faq.html",
+"log4cxx_2helpers_2transcoder_8h.html#aac849c16f5bc8917cb4b00d4ccf96138",
+"namespacemembers_enum.html",
+"zipcompressaction_8h.html#a3ae9758f32a53380e836008f8367b4a4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

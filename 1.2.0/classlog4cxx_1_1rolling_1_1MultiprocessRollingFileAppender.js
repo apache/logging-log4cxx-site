@@ -8,7 +8,7 @@ var classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender =
     [ "getRollingPolicy", "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#aa8f356ebc13e979a7bddd50293d17009", null ],
     [ "getTriggeringPolicy", "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#af7edf5ab6f32365298d1ce9a6500885d", null ],
     [ "incrementFileLength", "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a46faf408c43a0e33784b36e3c5979705", null ],
-    [ "rollover", "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#ae2c73cd87f3fc87113d651ee26ab0c01", null ],
+    [ "rollover", "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#adcc9d0204390488b57354e6705cfce8f", null ],
     [ "rolloverInternal", "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a964511b4ed922f6428d00c83283c49cb", null ],
     [ "setRollingPolicy", "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#aa095ef8a01019cfc0eff2dd0eea5d94d", null ],
     [ "setTriggeringPolicy", "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#aae813e6e15c18d4f6815abf4aea6d582", null ],

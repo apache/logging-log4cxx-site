@@ -1,20 +1,9 @@
 var searchData=
 [
-  ['fallbackerrorhandler_2eh_0',['fallbackerrorhandler.h',['../fallbackerrorhandler_8h.html',1,'']]],
-  ['faq_2emd_1',['faq.md',['../faq_8md.html',1,'']]],
-  ['file_2eh_2',['file.h',['../file_8h.html',1,'']]],
-  ['fileappender_2eh_3',['fileappender.h',['../fileappender_8h.html',1,'']]],
-  ['filedatepatternconverter_2eh_4',['filedatepatternconverter.h',['../filedatepatternconverter_8h.html',1,'']]],
-  ['fileinputstream_2eh_5',['fileinputstream.h',['../fileinputstream_8h.html',1,'']]],
-  ['filelocationpatternconverter_2eh_6',['filelocationpatternconverter.h',['../filelocationpatternconverter_8h.html',1,'']]],
-  ['fileoutputstream_2eh_7',['fileoutputstream.h',['../fileoutputstream_8h.html',1,'']]],
-  ['filerenameaction_2eh_8',['filerenameaction.h',['../filerenameaction_8h.html',1,'']]],
-  ['filewatchdog_2eh_9',['filewatchdog.h',['../filewatchdog_8h.html',1,'']]],
-  ['filter_2eh_10',['filter.h',['../filter_8h.html',1,'']]],
-  ['filterbasedtriggeringpolicy_2eh_11',['filterbasedtriggeringpolicy.h',['../filterbasedtriggeringpolicy_8h.html',1,'']]],
-  ['filters_2emd_12',['filters.md',['../filters_8md.html',1,'']]],
-  ['fixedwindowrollingpolicy_2eh_13',['fixedwindowrollingpolicy.h',['../fixedwindowrollingpolicy_8h.html',1,'']]],
-  ['fmtlayout_2eh_14',['fmtlayout.h',['../fmtlayout_8h.html',1,'']]],
-  ['formattinginfo_2eh_15',['formattinginfo.h',['../formattinginfo_8h.html',1,'']]],
-  ['fulllocationpatternconverter_2eh_16',['fulllocationpatternconverter.h',['../fulllocationpatternconverter_8h.html',1,'']]]
+  ['environment_2dvariables_2emd_0',['environment-variables.md',['../environment-variables_8md.html',1,'']]],
+  ['errorhandler_2eh_1',['errorhandler.h',['../errorhandler_8h.html',1,'']]],
+  ['example_2dprograms_2emd_2',['example-programs.md',['../example-programs_8md.html',1,'']]],
+  ['exception_2eh_3',['exception.h',['../exception_8h.html',1,'']]],
+  ['expressionfilter_2eh_4',['expressionfilter.h',['../expressionfilter_8h.html',1,'']]],
+  ['extending_2emd_5',['extending.md',['../extending_8md.html',1,'']]]
 ];

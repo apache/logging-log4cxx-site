@@ -17,6 +17,7 @@ var classlog4cxx_1_1Hierarchy =
     [ "getThreshold", "classlog4cxx_1_1Hierarchy.html#a57ad15e850836ed445f211d256e11ecb", null ],
     [ "isConfigured", "classlog4cxx_1_1Hierarchy.html#ab3274a017a533e6dd3b637896efdeef0", null ],
     [ "isDisabled", "classlog4cxx_1_1Hierarchy.html#a92a51c5b6942af9fb838924e2bd0df3a", null ],
+    [ "removeHierarchyEventListener", "classlog4cxx_1_1Hierarchy.html#a56a49ebb026babefa6c7652f7eb5bc87", null ],
     [ "resetConfiguration", "classlog4cxx_1_1Hierarchy.html#a50388a7cb84a6330f319591794bebeb0", null ],
     [ "setConfigured", "classlog4cxx_1_1Hierarchy.html#a7968560d9f9754f5e5e6894db02f9a8d", null ],
     [ "setThreshold", "classlog4cxx_1_1Hierarchy.html#a8a92cc98f27ee65fb41d4881f34a747f", null ],

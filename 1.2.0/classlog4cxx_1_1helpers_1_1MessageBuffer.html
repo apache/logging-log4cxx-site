@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('classlog4cxx_1_1helpers_1_1MessageBuff
 <p>This class is used by the LOG4CXX_INFO and similar macros to support insertion operators in the message parameter.  
  <a href="classlog4cxx_1_1helpers_1_1MessageBuffer.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="messagebuffer_8h_source.html">messagebuffer.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="log4cxx_2helpers_2messagebuffer_8h_source.html">messagebuffer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -161,6 +161,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f20de48d34e8a46b65fb1f51d83d5c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html">UniCharMessageBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1MessageBuffer.html#a6f20de48d34e8a46b65fb1f51d83d5c0">operator&lt;&lt;</a> (const <a class="el" href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">UniChar</a> msg)</td></tr>
 <tr class="memdesc:a6f20de48d34e8a46b65fb1f51d83d5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a string into the buffer and fixes the buffer to use char characters.  <br /></td></tr>
 <tr class="separator:a6f20de48d34e8a46b65fb1f51d83d5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2fce0dd79f63a84de54320ab346b7cf"><td class="memItemLeft" align="right" valign="top">std::basic_string&lt; <a class="el" href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">UniChar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1MessageBuffer.html#ad2fce0dd79f63a84de54320ab346b7cf">extract_str</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html">UniCharMessageBuffer</a> &amp;buf)</td></tr>
+<tr class="memdesc:ad2fce0dd79f63a84de54320ab346b7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the constructed string.  <br /></td></tr>
+<tr class="separator:ad2fce0dd79f63a84de54320ab346b7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71da594b8fda60e3367a9475be61bb10"><td class="memItemLeft" align="right" valign="top">std::basic_string&lt; <a class="el" href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">UniChar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1MessageBuffer.html#a71da594b8fda60e3367a9475be61bb10">extract_str</a> (std::basic_ostream&lt; <a class="el" href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">UniChar</a> &gt; &amp;os)</td></tr>
+<tr class="memdesc:a71da594b8fda60e3367a9475be61bb10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the constructed string.  <br /></td></tr>
+<tr class="separator:a71da594b8fda60e3367a9475be61bb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabefcd8c33c6f5d3698f3951b441ce00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html">UniCharMessageBuffer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1MessageBuffer.html#aabefcd8c33c6f5d3698f3951b441ce00">operator&lt;&lt;</a> (const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;msg)</td></tr>
 <tr class="memdesc:aabefcd8c33c6f5d3698f3951b441ce00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a string into the buffer and fixes the buffer to use char characters.  <br /></td></tr>
 <tr class="separator:aabefcd8c33c6f5d3698f3951b441ce00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,7 +269,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a29b1883678da3673eea797695b87b68f" name="a29b1883678da3673eea797695b87b68f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29b1883678da3673eea797695b87b68f">&#9670;&#160;</a></span>extract_str() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a29b1883678da3673eea797695b87b68f">&#9670;&#160;</a></span>extract_str() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,8 +294,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a71da594b8fda60e3367a9475be61bb10" name="a71da594b8fda60e3367a9475be61bb10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71da594b8fda60e3367a9475be61bb10">&#9670;&#160;</a></span>extract_str() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::basic_string&lt; <a class="el" href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">UniChar</a> &gt; log4cxx::helpers::MessageBuffer::extract_str </td>
+          <td>(</td>
+          <td class="paramtype">std::basic_ostream&lt; <a class="el" href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">UniChar</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>os</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the constructed string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>used only to signal that the embedded stream was not used. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2cd387a5ae873e9696834909f75b0cef" name="a2cd387a5ae873e9696834909f75b0cef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cd387a5ae873e9696834909f75b0cef">&#9670;&#160;</a></span>extract_str() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd387a5ae873e9696834909f75b0cef">&#9670;&#160;</a></span>extract_str() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,7 +347,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad2d94bd660999d28de9bf9adacca3a7b" name="ad2d94bd660999d28de9bf9adacca3a7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2d94bd660999d28de9bf9adacca3a7b">&#9670;&#160;</a></span>extract_str() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d94bd660999d28de9bf9adacca3a7b">&#9670;&#160;</a></span>extract_str() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,8 +372,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad2fce0dd79f63a84de54320ab346b7cf" name="ad2fce0dd79f63a84de54320ab346b7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2fce0dd79f63a84de54320ab346b7cf">&#9670;&#160;</a></span>extract_str() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::basic_string&lt; <a class="el" href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">UniChar</a> &gt; log4cxx::helpers::MessageBuffer::extract_str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html">UniCharMessageBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the constructed string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>used only to signal that the embedded stream was not used. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a773e9b6442134f6e9edc08753f1aa359" name="a773e9b6442134f6e9edc08753f1aa359"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a773e9b6442134f6e9edc08753f1aa359">&#9670;&#160;</a></span>extract_str() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a773e9b6442134f6e9edc08753f1aa359">&#9670;&#160;</a></span>extract_str() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1210,7 +1268,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="messagebuffer_8h_source.html">messagebuffer.h</a></li>
+<li><a class="el" href="log4cxx_2helpers_2messagebuffer_8h_source.html">log4cxx/helpers/messagebuffer.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1221,7 +1279,7 @@ Public Member Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="namespacelog4cxx_1_1helpers.html">helpers</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1helpers_1_1MessageBuffer.html">MessageBuffer</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Jul 26 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Sun Aug 13 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>
