@@ -138,9 +138,14 @@ Optional Dependencies</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">ENABLE_FMT_LAYOUT   </td><td class="markdownTableBodyNone">{fmt}   </td><td class="markdownTableBodyCenter">9+   </td><td class="markdownTableBodyNone">Compile/runtime   </td><td class="markdownTableBodyNone"><a href="https://github.com/fmtlib/fmt">https://github.com/fmtlib/fmt</a>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">LOG4CXX_ENABLE_ODBC   </td><td class="markdownTableBodyNone">unixodbc   </td><td class="markdownTableBodyCenter">any   </td><td class="markdownTableBodyNone">Compile/runtime (not on Windows)   </td><td class="markdownTableBodyNone"><a href="https://www.unixodbc.org/">https://www.unixodbc.org/</a>   </td></tr>
+<td class="markdownTableBodyNone">LOG4CXX_ENABLE_ODBC   </td><td class="markdownTableBodyNone">unixodbc   </td><td class="markdownTableBodyCenter">any   </td><td class="markdownTableBodyNone">Compile/runtime (not on Windows)   </td><td class="markdownTableBodyNone"><a href="https://www.unixodbc.org/">https://www.unixodbc.org/</a>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LOG4CXX_ENABLE_ESMTP   </td><td class="markdownTableBodyNone">libesmtp   </td><td class="markdownTableBodyCenter">any   </td><td class="markdownTableBodyNone">Compile/runtime (not on Windows)   </td><td class="markdownTableBodyNone"></td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">LOG4CXX_QT_SUPPORT   </td><td class="markdownTableBodyNone">Qt   </td><td class="markdownTableBodyCenter">5   </td><td class="markdownTableBodyNone">Compile/runtime   </td><td class="markdownTableBodyNone"><a href="https://www.qt.io/download">https://www.qt.io/download</a>    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LOG4CXX_CFSTRING   </td><td class="markdownTableBodyNone">Mac OS/X Core Foundation   </td><td class="markdownTableBodyCenter">any   </td><td class="markdownTableBodyNone">Compile/runtime   </td><td class="markdownTableBodyNone"><a href="https://developer.apple.com/documentation/corefoundation">https://developer.apple.com/documentation/corefoundation</a>   </td></tr>
 </table>
-<p>|LOG4CXX_ENABLE_ESMTP | libesmtp | any | Compile/runtime (not on Windows) | |LOG4CXX_QT_SUPPORT |Qt | 5 | Compile/runtime | <a href="https://www.qt.io/download">https://www.qt.io/download</a> |LOG4CXX_CFSTRING | Mac OS/X Core Foundation | any | Compile/runtime | <a href="https://developer.apple.com/documentation/corefoundation">https://developer.apple.com/documentation/corefoundation</a></p>
 <h2><a class="anchor" id="autotoc_md30"></a>
 A note on C++ version and Boost</h2>
 <p>By default, Log4cxx requests C++20 features. This is to avoid 3rd party dependencies as much as possible. If C++17 is not available, a search for Boost will be taken and those libraries will be used instead. If you would prefer to use Boost, there are two options you have:</p>
