@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d5dc1c5e2767df2ed944ff909515457":[8,0,0,3,42,17],
 "classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d5dc1c5e2767df2ed944ff909515457":[7,0,0,3,43,17],
 "classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d61d6bbd39b2868c5a4e101e9b19f05":[7,0,0,3,43,31],
 "classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d61d6bbd39b2868c5a4e101e9b19f05":[8,0,0,3,42,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "classlog4cxx_1_1helpers_1_1ServerSocket.html#a4f24f45a095f1dc3102c5a2f19794c1a":[7,0,0,3,60,4],
 "classlog4cxx_1_1helpers_1_1ServerSocket.html#a4f24f45a095f1dc3102c5a2f19794c1a":[8,0,0,3,59,4],
 "classlog4cxx_1_1helpers_1_1ServerSocket.html#a8d5873a35f4debb144c66b45b829ff64":[7,0,0,3,60,5],
-"classlog4cxx_1_1helpers_1_1ServerSocket.html#a8d5873a35f4debb144c66b45b829ff64":[8,0,0,3,59,5],
-"classlog4cxx_1_1helpers_1_1ServerSocket.html#abb37037491ee288a484336ff353a92e7":[7,0,0,3,60,2]
+"classlog4cxx_1_1helpers_1_1ServerSocket.html#a8d5873a35f4debb144c66b45b829ff64":[8,0,0,3,59,5]
 };

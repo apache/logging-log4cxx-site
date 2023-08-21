@@ -7,6 +7,7 @@ var get =
     ] ],
     [ "Changelog", "changelog.html", [
       [ "Release History", "changelog.html#autotoc_md0", [
+        [ "Release 1.2.0 - 2023-XX-01", "changelog.html#rel_1_2_0", null ],
         [ "Release 1.1.0 - 2023-05-01", "changelog.html#rel_1_1_0", null ],
         [ "Release 1.0.0 - 2023-01-01", "changelog.html#rel_1_0_0", null ],
         [ "Bug", "changelog.html#autotoc_md1", null ],

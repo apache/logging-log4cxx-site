@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"classlog4cxx_1_1helpers_1_1ServerSocket.html#abb37037491ee288a484336ff353a92e7":[7,0,0,3,60,2],
 "classlog4cxx_1_1helpers_1_1ServerSocket.html#abb37037491ee288a484336ff353a92e7":[8,0,0,3,59,2],
 "classlog4cxx_1_1helpers_1_1ServerSocket.html#ace7f93d6a0a5d3ba7fc54b168b9b1a22":[7,0,0,3,60,3],
 "classlog4cxx_1_1helpers_1_1ServerSocket.html#ace7f93d6a0a5d3ba7fc54b168b9b1a22":[8,0,0,3,59,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html":[8,0,0,3,83],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html":[7,0,0,3,84],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a044532ad318d9624157ec6068669083e":[8,0,0,3,83,14],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a044532ad318d9624157ec6068669083e":[7,0,0,3,84,14],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a055742e047425d3fa77beded7f9c67ff":[7,0,0,3,84,11]
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a044532ad318d9624157ec6068669083e":[7,0,0,3,84,14]
 };

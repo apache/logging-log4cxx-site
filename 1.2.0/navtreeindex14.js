@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a62470dc2bd6adfa67ddb84ce0a23d437":[7,0,0,11,0,9],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a62470dc2bd6adfa67ddb84ce0a23d437":[8,0,0,10,0,9],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a69d8bbc93046e806a40167f1dc414499":[7,0,0,11,0,8],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a69d8bbc93046e806a40167f1dc414499":[8,0,0,10,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "expressionfilter_8h.html#ab5d5d9c27682b7504c756530f9cf151c":[9,0,1,0,0,0,2,2,1],
 "expressionfilter_8h_source.html":[9,0,1,0,0,0,2,2],
 "extending-log4cxx.html":[2,6],
-"fallbackerrorhandler_8h.html":[9,0,1,0,0,0,9,0],
-"fallbackerrorhandler_8h.html#a21e84e9c01801ddd4aa0bac68ea0dccd":[9,0,1,0,0,0,9,0,1]
+"fallbackerrorhandler_8h.html":[9,0,1,0,0,0,9,0]
 };

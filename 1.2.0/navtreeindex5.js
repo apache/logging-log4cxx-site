@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#a24ed6b62e7e3ec162d6fb4d654623b38":[8,0,0,3,5,2],
 "classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#a24ed6b62e7e3ec162d6fb4d654623b38":[7,0,0,3,6,2],
 "classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#ac987962aac5a1308fc92fca01400bcaa":[8,0,0,3,5,3],
 "classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#ac987962aac5a1308fc92fca01400bcaa":[7,0,0,3,6,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classlog4cxx_1_1helpers_1_1DatagramSocket.html#aedf87f2fee446ac3a9a69edce2863c8d":[8,0,0,3,18,9],
 "classlog4cxx_1_1helpers_1_1DatagramSocket.html#aedf87f2fee446ac3a9a69edce2863c8d":[7,0,0,3,19,9],
 "classlog4cxx_1_1helpers_1_1Date.html":[7,0,0,3,20],
-"classlog4cxx_1_1helpers_1_1Date.html":[8,0,0,3,19],
-"classlog4cxx_1_1helpers_1_1Date.html#a35e0612658cb65250e1ad837621ce43d":[7,0,0,3,20,2]
+"classlog4cxx_1_1helpers_1_1Date.html":[8,0,0,3,19]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a1619368e92552b4bc3c386b91359ad96":[7,0,0,4,1,8],
 "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a1619368e92552b4bc3c386b91359ad96":[8,0,0,4,1,8],
 "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a4d0ae245c2a87e8168e85bd9f242e7a9":[7,0,0,4,1,0],
 "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a4d0ae245c2a87e8168e85bd9f242e7a9":[8,0,0,4,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "classlog4cxx_1_1pattern_1_1FormattingInfo.html#a4e93d1448ee0a4641dfbb4466900a225":[8,0,0,6,7,3],
 "classlog4cxx_1_1pattern_1_1FormattingInfo.html#a4e93d1448ee0a4641dfbb4466900a225":[7,0,0,6,7,3],
 "classlog4cxx_1_1pattern_1_1FormattingInfo.html#a8e203cddad47be1da81a14867c9699a4":[7,0,0,6,7,5],
-"classlog4cxx_1_1pattern_1_1FormattingInfo.html#a8e203cddad47be1da81a14867c9699a4":[8,0,0,6,7,5],
-"classlog4cxx_1_1pattern_1_1FormattingInfo.html#aa5c770465b2ee9766f93ab0643ffc37c":[8,0,0,6,7,2]
+"classlog4cxx_1_1pattern_1_1FormattingInfo.html#a8e203cddad47be1da81a14867c9699a4":[8,0,0,6,7,5]
 };
