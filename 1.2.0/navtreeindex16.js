@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"log4cxx_2helpers_2transcoder_8h.html#a0641c409bbae9ea69891bece13de8d8c":[9,0,1,0,0,0,3,59,4],
+"log4cxx_2helpers_2transcoder_8h.html#a1f6b0ab969efb622f7ceb7302b6b41ca":[9,0,1,0,0,0,3,59,7],
+"log4cxx_2helpers_2transcoder_8h.html#a51ab971d5cce0a6118dab86d60ac2708":[9,0,1,0,0,0,3,59,6],
+"log4cxx_2helpers_2transcoder_8h.html#a72a1ddbd726775eae44dfc5ca7246994":[9,0,1,0,0,0,3,59,5],
 "log4cxx_2helpers_2transcoder_8h.html#a7d7f1af9ce61c6191c761f5df4ecc2f1":[9,0,1,0,0,0,3,59,3],
 "log4cxx_2helpers_2transcoder_8h.html#aaac580d817eed963aabdcf58325bbdb4":[9,0,1,0,0,0,3,59,2],
 "log4cxx_2helpers_2transcoder_8h.html#aac849c16f5bc8917cb4b00d4ccf96138":[9,0,1,0,0,0,3,59,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "namespacelog4cxx_1_1spi.html#ae6645c8147c8fd33fb55c52f5dbe680a":[7,0,0,10,17],
 "namespacelog4cxx_1_1spi.html#ae74ff32b33a28bff40dd6fd324061b02":[7,0,0,10,27],
 "namespacelog4cxx_1_1spi.html#af9f264bce01afa0cf9fff33dda293d8a":[7,0,0,10,33],
-"namespacelog4cxx_1_1spi.html#aff48fc766c5f87e68ab46e2555d2eddf":[7,0,0,10,23],
-"namespacelog4cxx_1_1varia.html":[7,0,0,11],
-"namespacelog4cxx_1_1varia.html#a21e84e9c01801ddd4aa0bac68ea0dccd":[7,0,0,11,1],
-"namespacelog4cxx_1_1xml.html":[7,0,0,12],
-"namespacelog4cxx_1_1xml.html#a8c724e6a90b0fad8729d13a67203be1f":[7,0,0,12,2]
+"namespacelog4cxx_1_1spi.html#aff48fc766c5f87e68ab46e2555d2eddf":[7,0,0,10,23]
 };

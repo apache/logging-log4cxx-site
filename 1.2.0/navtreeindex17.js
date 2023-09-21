@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"namespacelog4cxx_1_1varia.html":[7,0,0,11],
+"namespacelog4cxx_1_1varia.html#a21e84e9c01801ddd4aa0bac68ea0dccd":[7,0,0,11,1],
+"namespacelog4cxx_1_1xml.html":[7,0,0,12],
+"namespacelog4cxx_1_1xml.html#a8c724e6a90b0fad8729d13a67203be1f":[7,0,0,12,2],
 "namespacelog4cxx_1_1xml.html#af420738a279fb56cff87297ae2bcd2b0":[7,0,0,12,3],
 "namespacemembers.html":[7,1,0],
 "namespacemembers_enum.html":[7,1,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "xml_8h.html#a9e520aa9a3712a995f42c5219ead0e16":[9,0,1,0,0,0,3,62,7],
 "xml_8h.html#aed30bd9304d3acb48683a4c93e88b24d":[9,0,1,0,0,0,3,62,8],
 "xml_8h_source.html":[9,0,1,0,0,0,3,62],
-"xmllayout_8h.html":[9,0,1,0,0,0,10,1],
-"xmllayout_8h.html#af420738a279fb56cff87297ae2bcd2b0":[9,0,1,0,0,0,10,1,1],
-"xmllayout_8h_source.html":[9,0,1,0,0,0,10,1],
-"xmlsocketappender_8h.html":[9,0,1,0,0,0,4,4],
-"xmlsocketappender_8h.html#a8d0b6f1839a292186d15f8e17c8e27c1":[9,0,1,0,0,0,4,4,1]
+"xmllayout_8h.html":[9,0,1,0,0,0,10,1]
 };

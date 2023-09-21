@@ -1,5 +1,9 @@
 var NAVTREEINDEX15 =
 {
+"expressionfilter_8h.html#ab5d5d9c27682b7504c756530f9cf151c":[9,0,1,0,0,0,2,2,1],
+"expressionfilter_8h_source.html":[9,0,1,0,0,0,2,2],
+"extending-log4cxx.html":[2,6],
+"fallbackerrorhandler_8h.html":[9,0,1,0,0,0,9,0],
 "fallbackerrorhandler_8h.html#a21e84e9c01801ddd4aa0bac68ea0dccd":[9,0,1,0,0,0,9,0,1],
 "fallbackerrorhandler_8h_source.html":[9,0,1,0,0,0,9,0],
 "faq.html":[2,14],
@@ -245,9 +249,5 @@ var NAVTREEINDEX15 =
 "log4cxx_2helpers_2messagebuffer_8h.html#a8198a92a2f69037365e30ba39c7687ef":[9,0,1,0,0,0,3,30,5],
 "log4cxx_2helpers_2messagebuffer_8h.html#aa49a9dd3aa56788aabbf121e7b391da7":[9,0,1,0,0,0,3,30,4],
 "log4cxx_2helpers_2messagebuffer_8h_source.html":[9,0,1,0,0,0,3,30],
-"log4cxx_2helpers_2transcoder_8h.html":[9,0,1,0,0,0,3,59],
-"log4cxx_2helpers_2transcoder_8h.html#a0641c409bbae9ea69891bece13de8d8c":[9,0,1,0,0,0,3,59,4],
-"log4cxx_2helpers_2transcoder_8h.html#a1f6b0ab969efb622f7ceb7302b6b41ca":[9,0,1,0,0,0,3,59,7],
-"log4cxx_2helpers_2transcoder_8h.html#a51ab971d5cce0a6118dab86d60ac2708":[9,0,1,0,0,0,3,59,6],
-"log4cxx_2helpers_2transcoder_8h.html#a72a1ddbd726775eae44dfc5ca7246994":[9,0,1,0,0,0,3,59,5]
+"log4cxx_2helpers_2transcoder_8h.html":[9,0,1,0,0,0,3,59]
 };

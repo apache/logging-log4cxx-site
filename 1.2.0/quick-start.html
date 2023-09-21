@@ -200,6 +200,7 @@ A Less Simple Example</h1>
 Runtime Configuration</h1>
 <p>The Log4cxx environment is fully configurable programmatically. However, it is far more flexible to configure Log4cxx using configuration files. Currently, configuration files can be written in XML or in Java properties (key=value) format.</p>
 <p>The previous example always outputs the same log information. Fortunately, it is easy to modify <em>config.cpp</em> so that the log output can be controlled at runtime. Here is a slightly modified version. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;com/foo/config.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="basicconfigurator_8h.html">log4cxx/basicconfigurator.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="propertyconfigurator_8h.html">log4cxx/propertyconfigurator.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="logmanager_8h.html">log4cxx/logmanager.h</a>&gt;</span></div>
 <div class="line"> </div>
@@ -208,7 +209,8 @@ Runtime Configuration</h1>
 <div class="line"><span class="keyword">auto</span> getLogger(<span class="keyword">const</span> std::string&amp; name) -&gt; LoggerPtr {</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">struct </span>log4cxx_initializer {</div>
 <div class="line">        log4cxx_initializer() {</div>
-<div class="line">            <a class="code hl_function" href="classlog4cxx_1_1PropertyConfigurator.html#af9559ce6a84ed4b556b14171a8736a53">log4cxx::PropertyConfigurator::configure</a>(<span class="stringliteral">&quot;MyApp.properties&quot;</span>);</div>
+<div class="line">            <span class="keywordflow">if</span> (<a class="code hl_function" href="classlog4cxx_1_1PropertyConfigurator.html#af9559ce6a84ed4b556b14171a8736a53">log4cxx::PropertyConfigurator::configure</a>(<span class="stringliteral">&quot;MyApp.properties&quot;</span>) == <a class="code hl_enumvalue" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815">log4cxx::spi::ConfigurationStatus::NotConfigured</a>)</div>
+<div class="line">                <a class="code hl_function" href="classlog4cxx_1_1BasicConfigurator.html#a3fa54f4589f908a886576c1bba3f113d">log4cxx::BasicConfigurator::configure</a>(); <span class="comment">// Send events to the console</span></div>
 <div class="line">        }</div>
 <div class="line">        ~log4cxx_initializer() {</div>
 <div class="line">            <a class="code hl_function" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c">log4cxx::LogManager::shutdown</a>();</div>
@@ -224,6 +226,7 @@ Runtime Configuration</h1>
 <div class="ttc" id="aclasslog4cxx_1_1LogManager_html_ad8845f4e8c6c840c7825bde2c9ce7e7c"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c">log4cxx::LogManager::shutdown</a></div><div class="ttdeci">static void shutdown()</div><div class="ttdoc">Safely close and remove all appenders in all loggers including the root logger.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1PropertyConfigurator_html_af9559ce6a84ed4b556b14171a8736a53"><div class="ttname"><a href="classlog4cxx_1_1PropertyConfigurator.html#af9559ce6a84ed4b556b14171a8736a53">log4cxx::PropertyConfigurator::configure</a></div><div class="ttdeci">static spi::ConfigurationStatus configure(const File &amp;configFilename)</div><div class="ttdoc">Read configuration options from file configFilename.</div></div>
 <div class="ttc" id="alogmanager_8h_html"><div class="ttname"><a href="logmanager_8h.html">logmanager.h</a></div></div>
+<div class="ttc" id="anamespacelog4cxx_1_1spi_html_a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815"><div class="ttname"><a href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815">log4cxx::spi::ConfigurationStatus::NotConfigured</a></div><div class="ttdeci">@ NotConfigured</div></div>
 <div class="ttc" id="anamespacelog4cxx_html"><div class="ttname"><a href="namespacelog4cxx.html">log4cxx</a></div><div class="ttdef"><b>Definition:</b> configuration.h:25</div></div>
 <div class="ttc" id="apropertyconfigurator_8h_html"><div class="ttname"><a href="propertyconfigurator_8h.html">propertyconfigurator.h</a></div></div>
 </div><!-- fragment --><p>This version of <em>config.cpp</em> instructs <a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#af9559ce6a84ed4b556b14171a8736a53">PropertyConfigurator</a> to use the <em>MyApp.properties</em> file to configure Log4cxx. A more realistic approach would (for example) use the current module name to select the configuration file (see the <a class="el" href="com_2foo_2config3_8cpp-example.html">com/foo/config3.cpp</a> file for how to do this).</p>
@@ -287,7 +290,7 @@ Runtime Configuration</h1>
     <li class="navelem"><a class="el" href="usage-overview.html">Use</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Mon Aug 21 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Thu Sep 21 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>
