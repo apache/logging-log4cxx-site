@@ -7,7 +7,7 @@ notifications:
 staging:
   profile: ~
   whoami: asf-staging
-  subdir: output/log4cxx
+  subdir: content/log4cxx
 
 publish:
   profile: ~
