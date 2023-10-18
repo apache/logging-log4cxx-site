@@ -134,6 +134,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a14374f3c76de1df2b75223fb495f3337"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1JSONLayout.html#a14374f3c76de1df2b75223fb495f3337">getPrettyPrint</a> () const</td></tr>
 <tr class="memdesc:a14374f3c76de1df2b75223fb495f3337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current value of the <b>PrettyPrint</b> option.  <br /></td></tr>
 <tr class="separator:a14374f3c76de1df2b75223fb495f3337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0926149f71cd4963167b3f3a5a70cb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1JSONLayout.html#ac0926149f71cd4963167b3f3a5a70cb3">setThreadInfo</a> (bool newValue)</td></tr>
+<tr class="memdesc:ac0926149f71cd4963167b3f3a5a70cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set thread info output mode to <code>newValue</code>.  <br /></td></tr>
+<tr class="separator:ac0926149f71cd4963167b3f3a5a70cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa85131ede047b140b8fe26edfd97f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1JSONLayout.html#a6aa85131ede047b140b8fe26edfd97f1">getThreadInfo</a> () const</td></tr>
+<tr class="memdesc:a6aa85131ede047b140b8fe26edfd97f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is a thread identifier included in the output?  <br /></td></tr>
+<tr class="separator:a6aa85131ede047b140b8fe26edfd97f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e81599c299d559f02a736b89e74933b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1JSONLayout.html#a2e81599c299d559f02a736b89e74933b">getContentType</a> () const override</td></tr>
 <tr class="memdesc:a2e81599c299d559f02a736b89e74933b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the content type output by this layout, i.e "application/json".  <br /></td></tr>
 <tr class="separator:a2e81599c299d559f02a736b89e74933b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -574,6 +580,25 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6aa85131ede047b140b8fe26edfd97f1" name="a6aa85131ede047b140b8fe26edfd97f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa85131ede047b140b8fe26edfd97f1">&#9670;&#160;</a></span>getThreadInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool log4cxx::JSONLayout::getThreadInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is a thread identifier included in the output? </p>
+
+</div>
+</div>
 <a id="a7a9c838e85d588be32803cbbf302504c" name="a7a9c838e85d588be32803cbbf302504c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a9c838e85d588be32803cbbf302504c">&#9670;&#160;</a></span>ignoresThrowable()</h2>
 
@@ -667,6 +692,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">LocationInfo   </td><td class="markdownTableBodyNone">True,False   </td><td class="markdownTableBodyNone">false    </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ThreadInfo   </td><td class="markdownTableBodyNone">True,False   </td><td class="markdownTableBodyNone">false    </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">PrettyPrint   </td><td class="markdownTableBodyNone">True,False   </td><td class="markdownTableBodyNone">false   </td></tr>
 </table>
 
@@ -695,6 +722,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac0926149f71cd4963167b3f3a5a70cb3" name="ac0926149f71cd4963167b3f3a5a70cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0926149f71cd4963167b3f3a5a70cb3">&#9670;&#160;</a></span>setThreadInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::JSONLayout::setThreadInfo </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>newValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set thread info output mode to <code>newValue</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newValue</td><td><code>true</code> to include a thread identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="jsonlayout_8h_source.html">jsonlayout.h</a></li>
 </ul>
@@ -707,7 +760,7 @@ Protected Member Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1JSONLayout.html">JSONLayout</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Thu Oct 12 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Oct 18 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

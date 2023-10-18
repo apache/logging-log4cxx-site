@@ -41,7 +41,7 @@ var usage_overview =
     [ "Filtering Log Messages", "filters.html", "filters" ],
     [ "Qt Support", "qt-support.html", null ],
     [ "Stacktrace Support", "stacktrace-support.html", [
-      [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md44", null ]
+      [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md45", null ]
     ] ],
     [ "Extending Log4cxx", "extending-log4cxx.html", null ],
     [ "Threading", "threading.html", [
@@ -59,6 +59,7 @@ var usage_overview =
     [ "Frequently Asked Technical Questions", "faq.html", [
       [ "How do I add a custom level to Apache Log4cxx?", "faq.html#custom_levels", null ],
       [ "My application on Windows crashes on shutdown?", "faq.html#msvc_crash", null ],
-      [ "Does Apache Log4cxx support Unicode?", "faq.html#unicode_supported", null ]
+      [ "Does Apache Log4cxx support Unicode?", "faq.html#unicode_supported", null ],
+      [ "Does Log4cxx support logging at process termination?(#atexit_events)", "faq.html#autotoc_md37", null ]
     ] ]
 ];

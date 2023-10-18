@@ -1,5 +1,10 @@
 var NAVTREEINDEX17 =
 {
+"namespacelog4cxx_1_1spi.html#a1d969c8e32b6c5b1dcbfbdab6f88df71":[7,0,0,10,20],
+"namespacelog4cxx_1_1spi.html#a205e4c0cc1ca84c82a43382433134125":[7,0,0,10,25],
+"namespacelog4cxx_1_1spi.html#a38a7dc69832e0647515f643f01be6fa5":[7,0,0,10,18],
+"namespacelog4cxx_1_1spi.html#a3c35d3e407c765d271b3bfc943038d61":[7,0,0,10,30],
+"namespacelog4cxx_1_1spi.html#a499039308bf624c907892022691032f7":[7,0,0,10,31],
 "namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648":[7,0,0,10,15],
 "namespacelog4cxx_1_1spi.html#a651bbed7f67d4c1609d460ec594d92b3":[7,0,0,10,34],
 "namespacelog4cxx_1_1spi.html#a6ab25986d504e55b9c149bb64675db23":[7,0,0,10,22],
@@ -174,7 +179,7 @@ var NAVTREEINDEX17 =
 "source-repository.html#autotoc_md35":[5,0,0,1],
 "source-repository.html#autotoc_md36":[5,0,0,2],
 "stacktrace-support.html":[2,5],
-"stacktrace-support.html#autotoc_md44":[2,5,0],
+"stacktrace-support.html#autotoc_md45":[2,5,0],
 "stream_8h.html":[9,0,1,0,0,0,36],
 "stream_8h.html#a4af7d0bc66fb5c5ff6da1b97e065652f":[9,0,1,0,0,0,36,4],
 "stream_8h.html#a52717feca3ae327f1ed1ec3c117cf9f6":[9,0,1,0,0,0,36,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX17 =
 "transform_8h.html":[9,0,1,0,0,0,3,60],
 "transform_8h_source.html":[9,0,1,0,0,0,3,60],
 "triggeringeventevaluator_8h.html":[9,0,1,0,0,0,8,13],
-"triggeringeventevaluator_8h.html#a651bbed7f67d4c1609d460ec594d92b3":[9,0,1,0,0,0,8,13,1],
-"triggeringeventevaluator_8h_source.html":[9,0,1,0,0,0,8,13],
-"triggeringpolicy_8h.html":[9,0,1,0,0,0,7,13],
-"triggeringpolicy_8h.html#a18dabbed6db8575b969ce430b319d05a":[9,0,1,0,0,0,7,13,1],
-"triggeringpolicy_8h_source.html":[9,0,1,0,0,0,7,13],
-"usage-overview.html":[2]
+"triggeringeventevaluator_8h.html#a651bbed7f67d4c1609d460ec594d92b3":[9,0,1,0,0,0,8,13,1]
 };
