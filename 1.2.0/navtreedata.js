@@ -82,16 +82,16 @@ var NAVTREEINDEX =
 "classlog4cxx_1_1helpers_1_1Date.html#a35e0612658cb65250e1ad837621ce43d",
 "classlog4cxx_1_1helpers_1_1MessageBuffer.html#a3bc63ed5a947ca7f85393db8a97cb8bd",
 "classlog4cxx_1_1helpers_1_1ServerSocket.html#a4f24f45a095f1dc3102c5a2f19794c1a",
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html",
-"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a00d271ebc45fdfac9ee0031f23a6d5ad",
-"classlog4cxx_1_1pattern_1_1FormattingInfo.html#a4e93d1448ee0a4641dfbb4466900a225",
-"classlog4cxx_1_1rolling_1_1FilterBasedTriggeringPolicy.html#a4eea386ac2c2c42c906d3b92a1a5015a",
-"classlog4cxx_1_1spi_1_1AppenderAttachable.html#acc6083fb0d08ca3b62a9f4a1bf08717c",
-"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a396482cbb6e06c1eeca92177d07c168f",
-"expressionfilter_8h.html#ab5d5d9c27682b7504c756530f9cf151c",
-"log4cxx_2helpers_2transcoder_8h.html#a0641c409bbae9ea69891bece13de8d8c",
-"namespacelog4cxx_1_1varia.html",
-"xmllayout_8h.html#af420738a279fb56cff87297ae2bcd2b0"
+"classlog4cxx_1_1helpers_1_1WideLife.html",
+"classlog4cxx_1_1net_1_1SMTPAppender.html#addf38cf415a9a211238a4349e0973bd5",
+"classlog4cxx_1_1pattern_1_1FileDatePatternConverter.html",
+"classlog4cxx_1_1rolling_1_1Action.html#add5afe799b91b44a82213fd9f523e00b",
+"classlog4cxx_1_1rolling_1_1ZipCompressAction.html#abec2d181eaad482524ea19a7160ffe35",
+"classlog4cxx_1_1ulogstream.html#ac11ca7201524730cc43b20b1247e0e7e",
+"domconfigurator_8h.html",
+"log4cxx-qt_2logger_8h_source.html",
+"namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648",
+"widelife_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

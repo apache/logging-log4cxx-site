@@ -84,6 +84,7 @@ var namespacelog4cxx_1_1helpers =
     [ "Transform", "classlog4cxx_1_1helpers_1_1Transform.html", null ],
     [ "UniCharMessageBuffer", "classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html", "classlog4cxx_1_1helpers_1_1UniCharMessageBuffer" ],
     [ "UnknownHostException", "classlog4cxx_1_1helpers_1_1UnknownHostException.html", "classlog4cxx_1_1helpers_1_1UnknownHostException" ],
+    [ "WideLife", "classlog4cxx_1_1helpers_1_1WideLife.html", "classlog4cxx_1_1helpers_1_1WideLife" ],
     [ "WideMessageBuffer", "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html", "classlog4cxx_1_1helpers_1_1WideMessageBuffer" ],
     [ "Writer", "classlog4cxx_1_1helpers_1_1Writer.html", "classlog4cxx_1_1helpers_1_1Writer" ],
     [ "XMLDOMDocument", "classlog4cxx_1_1helpers_1_1XMLDOMDocument.html", "classlog4cxx_1_1helpers_1_1XMLDOMDocument" ],

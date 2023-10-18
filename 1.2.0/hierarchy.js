@@ -251,5 +251,6 @@ var hierarchy =
     [ "log4cxx::helpers::Transcoder", "classlog4cxx_1_1helpers_1_1Transcoder.html", null ],
     [ "log4cxx::helpers::Transform", "classlog4cxx_1_1helpers_1_1Transform.html", null ],
     [ "log4cxx::helpers::UniCharMessageBuffer", "classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html", null ],
+    [ "log4cxx::helpers::WideLife< T >", "classlog4cxx_1_1helpers_1_1WideLife.html", null ],
     [ "log4cxx::helpers::WideMessageBuffer", "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html", null ]
 ];

@@ -61,6 +61,7 @@ var dir_85c0a9502ea6452e43783ddabef03b11 =
     [ "timezone.h", "timezone_8h.html", "timezone_8h" ],
     [ "log4cxx/helpers/transcoder.h", "log4cxx_2helpers_2transcoder_8h.html", "log4cxx_2helpers_2transcoder_8h" ],
     [ "transform.h", "transform_8h.html", "transform_8h" ],
+    [ "widelife.h", "widelife_8h.html", "widelife_8h" ],
     [ "writer.h", "writer_8h.html", "writer_8h" ],
     [ "xml.h", "xml_8h.html", "xml_8h" ]
 ];
