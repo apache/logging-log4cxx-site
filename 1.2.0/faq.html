@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('faq.html',''); initResizable(); });
 <ul><li class="level1"><a href="#custom_levels">How do I add a custom level to Apache Log4cxx?</a></li>
 <li class="level1"><a href="#msvc_crash">My application on Windows crashes on shutdown?</a></li>
 <li class="level1"><a href="#unicode_supported">Does Apache Log4cxx support Unicode?</a></li>
-<li class="level1"><a href="#autotoc_md37">Does Log4cxx support logging at process termination?(#atexit_events)</a></li>
+<li class="level1"><a href="#atexit_events">Does Log4cxx support logging at process termination?</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_src_site_markdown_faq"></a></p>
@@ -119,8 +119,8 @@ Does Apache Log4cxx support Unicode?</h1>
 </pre><p> If you are to log this information, output on some console might be like the following, simply because the app uses <code>US-ASCII</code> by default and that can't map those characters:</p>
 <div class="fragment"><div class="line">loggername - ?????????? ???? ??????????????</div>
 </div><!-- fragment --><p>The important thing to understand is that this is some always applied, backwards compatible default behaviour and even the case when the current environment sets a locale like <code>en_US.UTF-8</code>.</p>
-<h1><a class="anchor" id="autotoc_md37"></a>
-Does Log4cxx support logging at process termination?(#atexit_events)</h1>
+<h1><a class="anchor" id="atexit_events"></a>
+Does Log4cxx support logging at process termination?</h1>
 <p>Log4cxx must be built with -DLOG4CXX_EVENTS_AT_EXIT=ON to use logging during the application termination (i.e. in static destuctors and other atexit() functions) . When this option is used, the dynamic memory deallocation, buffer flushing and file handle closing normally done in destructors is not performed. Do not set the "BufferedIO" option of any <a class="el" href="classlog4cxx_1_1FileAppender.html" title="FileAppender appends log events to a file.">log4cxx::FileAppender</a> to true when using this option. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

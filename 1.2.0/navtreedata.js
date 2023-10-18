@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Apache Log4cxx", "index.html", [
-    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md38", null ],
+    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md37", null ],
     [ "Community", "community.html", "community" ],
     [ "Use", "usage-overview.html", "usage-overview" ],
     [ "Get", "get.html", "get" ],

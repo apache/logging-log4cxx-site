@@ -8,10 +8,10 @@ var development_overview =
       ] ]
     ] ],
     [ "Library Design Notes", "library-design.html", [
-      [ "Use of class-specific structs to hold data.", "library-design.html#autotoc_md39", null ],
-      [ "Inheriting classes with private data", "library-design.html#autotoc_md40", [
-        [ "Example", "library-design.html#autotoc_md41", null ]
+      [ "Use of class-specific structs to hold data.", "library-design.html#autotoc_md38", null ],
+      [ "Inheriting classes with private data", "library-design.html#autotoc_md39", [
+        [ "Example", "library-design.html#autotoc_md40", null ]
       ] ],
-      [ "See Also", "library-design.html#autotoc_md42", null ]
+      [ "See Also", "library-design.html#autotoc_md41", null ]
     ] ]
 ];

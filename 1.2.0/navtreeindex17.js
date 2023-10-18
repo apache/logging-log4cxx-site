@@ -179,7 +179,7 @@ var NAVTREEINDEX17 =
 "source-repository.html#autotoc_md35":[5,0,0,1],
 "source-repository.html#autotoc_md36":[5,0,0,2],
 "stacktrace-support.html":[2,5],
-"stacktrace-support.html#autotoc_md45":[2,5,0],
+"stacktrace-support.html#autotoc_md44":[2,5,0],
 "stream_8h.html":[9,0,1,0,0,0,36],
 "stream_8h.html#a4af7d0bc66fb5c5ff6da1b97e065652f":[9,0,1,0,0,0,36,4],
 "stream_8h.html#a52717feca3ae327f1ed1ec3c117cf9f6":[9,0,1,0,0,0,36,5],
