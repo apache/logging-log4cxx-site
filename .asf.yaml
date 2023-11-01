@@ -4,9 +4,8 @@ notifications:
   pullrequests: notifications@logging.apache.org
   jira_options: link label comment 
 
-
 staging:
-  profile: log4cxx
+  profile: ~
   whoami: asf-staging
   subdir: content/log4cxx
 
