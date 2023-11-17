@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('defaultconfigurator_8h_source.html',''
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="loggerrepository_8h.html">log4cxx/spi/loggerrepository.h</a>&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;tuple&gt;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>LOG4CXX_NS</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1DefaultConfigurator.html">   32</a></span><span class="keyword">class </span>LOG4CXX_EXPORT <a class="code hl_class" href="classlog4cxx_1_1DefaultConfigurator.html">DefaultConfigurator</a></div>
@@ -132,14 +132,14 @@ $(document).ready(function(){initNavTree('defaultconfigurator_8h_source.html',''
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1DefaultConfigurator.html#aa19bd82d66d292615969db6ef930dff0">   72</a></span>        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1DefaultConfigurator.html#aa19bd82d66d292615969db6ef930dff0">setConfigurationWatchSeconds</a>(<span class="keywordtype">int</span> seconds);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1DefaultConfigurator.html#aed3781e508caa36e85dc17020707ce8e">   99</a></span>        <span class="keyword">static</span> std::tuple&lt;log4cxx::spi::ConfigurationStatus,LogString&gt; <a class="code hl_function" href="classlog4cxx_1_1DefaultConfigurator.html#aed3781e508caa36e85dc17020707ce8e">configureFromFile</a>(<span class="keyword">const</span> std::vector&lt;LogString&gt;&amp; directories,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1DefaultConfigurator.html#aed3781e508caa36e85dc17020707ce8e">   99</a></span>        <span class="keyword">static</span> std::tuple&lt;LOG4CXX_NS::spi::ConfigurationStatus,LogString&gt; <a class="code hl_function" href="classlog4cxx_1_1DefaultConfigurator.html#aed3781e508caa36e85dc17020707ce8e">configureFromFile</a>(<span class="keyword">const</span> std::vector&lt;LogString&gt;&amp; directories,</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                                                                                         <span class="keyword">const</span> std::vector&lt;LogString&gt;&amp; filenames);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> getConfigurationFileName();</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> getConfiguratorClass();</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keyword">static</span> <span class="keywordtype">int</span> getConfigurationWatchDelay();</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keyword">static</span> <a class="code hl_enumeration" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">log4cxx::spi::ConfigurationStatus</a> tryLoadFile(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; filename);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keyword">static</span> LOG4CXX_NS::spi::ConfigurationStatus tryLoadFile(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; filename);</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>};   <span class="comment">// class DefaultConfigurator</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}  <span class="comment">// namespace log4cxx</span></div>
@@ -153,8 +153,6 @@ $(document).ready(function(){initNavTree('defaultconfigurator_8h_source.html',''
 <div class="ttc" id="aconfigurator_8h_html"><div class="ttname"><a href="configurator_8h.html">configurator.h</a></div></div>
 <div class="ttc" id="aloggerrepository_8h_html"><div class="ttname"><a href="loggerrepository_8h.html">loggerrepository.h</a></div></div>
 <div class="ttc" id="anamespacelog4cxx_1_1spi_html_a38a7dc69832e0647515f643f01be6fa5"><div class="ttname"><a href="namespacelog4cxx_1_1spi.html#a38a7dc69832e0647515f643f01be6fa5">log4cxx::spi::LoggerRepositoryPtr</a></div><div class="ttdeci">std::shared_ptr&lt; LoggerRepository &gt; LoggerRepositoryPtr</div><div class="ttdef"><b>Definition:</b> optionconverter.h:33</div></div>
-<div class="ttc" id="anamespacelog4cxx_1_1spi_html_a923765e65a08eea7c6b417a2525226ab"><div class="ttname"><a href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">log4cxx::spi::ConfigurationStatus</a></div><div class="ttdeci">ConfigurationStatus</div><div class="ttdef"><b>Definition:</b> configurator.h:30</div></div>
-<div class="ttc" id="anamespacelog4cxx_html"><div class="ttname"><a href="namespacelog4cxx.html">log4cxx</a></div><div class="ttdef"><b>Definition:</b> configuration.h:25</div></div>
 <div class="ttc" id="anamespacelog4cxx_html_aa2308ed05fef2a1366066cb38b177e94"><div class="ttname"><a href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a></div><div class="ttdeci">std::basic_string&lt; logchar &gt; LogString</div><div class="ttdef"><b>Definition:</b> logstring.h:60</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -165,7 +163,7 @@ $(document).ready(function(){initNavTree('defaultconfigurator_8h_source.html',''
     <li class="navelem"><a class="el" href="dir_8f91b758b065bd819ee8f7dc3f677aaf.html">src</a></li><li class="navelem"><a class="el" href="dir_1b5b2ce64a57900ce45e762cd4aeb527.html">main</a></li><li class="navelem"><a class="el" href="dir_ab306221cab606ae77d28622ae23b6e8.html">include</a></li><li class="navelem"><a class="el" href="dir_d6ab321c53270d8e494d88f6a7352018.html">log4cxx</a></li><li class="navelem"><a class="el" href="defaultconfigurator_8h.html">defaultconfigurator.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Oct 18 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Nov 17 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

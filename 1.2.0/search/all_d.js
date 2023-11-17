@@ -12,5 +12,6 @@ var searchData=
   ['hierarchyeventlistener_9',['HierarchyEventListener',['../classlog4cxx_1_1spi_1_1HierarchyEventListener.html',1,'log4cxx::spi']]],
   ['hierarchyeventlistener_2eh_10',['hierarchyeventlistener.h',['../hierarchyeventlistener_8h.html',1,'']]],
   ['htmllayout_11',['HTMLLayout',['../classlog4cxx_1_1HTMLLayout.html#a40604ca7e4deab6bdca95c098d2b46c4',1,'log4cxx::HTMLLayout::HTMLLayout()'],['../classlog4cxx_1_1HTMLLayout.html',1,'log4cxx::HTMLLayout']]],
-  ['htmllayout_2eh_12',['htmllayout.h',['../htmllayout_8h.html',1,'']]]
+  ['htmllayout_2eh_12',['htmllayout.h',['../htmllayout_8h.html',1,'']]],
+  ['widelife_3c_20aprinitializer_20_3e_13',['WideLife&lt; APRInitializer &gt;',['../classlog4cxx_1_1helpers_1_1APRInitializer.html#a2d966458f82fb4484e55665dbcb41195',1,'log4cxx::helpers::APRInitializer']]]
 ];

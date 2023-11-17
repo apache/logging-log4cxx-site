@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('simpledateformat_8h_source.html',''); 
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">using </span>std::locale;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span>LOG4CXX_NS</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span>helpers</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('simpledateformat_8h_source.html',''); 
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">class </span>PatternToken;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespacelog4cxx_1_1helpers.html#a095bc296152ff935f181d9b67c5cd0c2">   38</a></span><a class="code hl_function" href="namespacelog4cxx_1_1helpers.html#a5dcc73cec8dde9c69b41b0403b034e80">LOG4CXX_LIST_DEF</a>(PatternTokenList, log4cxx::helpers::SimpleDateFormatImpl::PatternToken*);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespacelog4cxx_1_1helpers.html#a095bc296152ff935f181d9b67c5cd0c2">   38</a></span><a class="code hl_function" href="namespacelog4cxx.html#a856b6c83ec575993bb85276eda2729a7">LOG4CXX_LIST_DEF</a>(PatternTokenList, LOG4CXX_NS::helpers::SimpleDateFormatImpl::PatternToken*);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html">   69</a></span><span class="keyword">class </span>LOG4CXX_EXPORT <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html">SimpleDateFormat</a> : <span class="keyword">public</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1DateFormat.html">DateFormat</a></div>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('simpledateformat_8h_source.html',''); 
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#a73728bb4ccd0d663832d1675ebbdf7b3">   87</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#a73728bb4ccd0d663832d1675ebbdf7b3">format</a>(<a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; s,</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            log4cxx_time_t tm,</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a>&amp; p) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            LOG4CXX_NS::helpers::Pool&amp; p) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#a31677f4141f775a441fcf0b9e10e437b">   95</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#a31677f4141f775a441fcf0b9e10e437b">setTimeZone</a>(<span class="keyword">const</span> TimeZonePtr&amp; zone);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
@@ -159,7 +159,6 @@ $(document).ready(function(){initNavTree('simpledateformat_8h_source.html',''); 
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif </span><span class="comment">// _LOG4CXX_HELPERS_SIMPLE_DATE_FORMAT_H</span></div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1DateFormat_html"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1DateFormat.html">log4cxx::helpers::DateFormat</a></div><div class="ttdoc">DateFormat is an abstract class for date/time formatting patterned after java.text....</div><div class="ttdef"><b>Definition:</b> dateformat.h:34</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1helpers_1_1Pool_html"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a></div><div class="ttdef"><b>Definition:</b> pool.h:33</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1SimpleDateFormat_html"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html">log4cxx::helpers::SimpleDateFormat</a></div><div class="ttdoc">Concrete class for converting and formatting a date/time in a locale-sensitive manner.</div><div class="ttdef"><b>Definition:</b> simpledateformat.h:70</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1SimpleDateFormat_html_a31677f4141f775a441fcf0b9e10e437b"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#a31677f4141f775a441fcf0b9e10e437b">log4cxx::helpers::SimpleDateFormat::setTimeZone</a></div><div class="ttdeci">void setTimeZone(const TimeZonePtr &amp;zone)</div><div class="ttdoc">Set time zone.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1SimpleDateFormat_html_a73728bb4ccd0d663832d1675ebbdf7b3"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#a73728bb4ccd0d663832d1675ebbdf7b3">log4cxx::helpers::SimpleDateFormat::format</a></div><div class="ttdeci">virtual void format(LogString &amp;s, log4cxx_time_t tm, log4cxx::helpers::Pool &amp;p) const</div><div class="ttdoc">Formats an log4cxx_time_t into a date/time string.</div></div>
@@ -167,8 +166,7 @@ $(document).ready(function(){initNavTree('simpledateformat_8h_source.html',''); 
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1SimpleDateFormat_html_aaa288211d4c86b15c2ec054719ee5a68"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#aaa288211d4c86b15c2ec054719ee5a68">log4cxx::helpers::SimpleDateFormat::SimpleDateFormat</a></div><div class="ttdeci">SimpleDateFormat(const LogString &amp;pattern, const std::locale *locale)</div><div class="ttdoc">A time converter and formatter using pattern and locale.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1SimpleDateFormat_html_ad9390aecf82949a4c8d1698e3fd1694f"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#ad9390aecf82949a4c8d1698e3fd1694f">log4cxx::helpers::SimpleDateFormat::SimpleDateFormat</a></div><div class="ttdeci">SimpleDateFormat(const LogString &amp;pattern)</div><div class="ttdoc">A time converter and formatter using pattern and the default std::locale.</div></div>
 <div class="ttc" id="adateformat_8h_html"><div class="ttname"><a href="dateformat_8h.html">dateformat.h</a></div></div>
-<div class="ttc" id="anamespacelog4cxx_1_1helpers_html_a5dcc73cec8dde9c69b41b0403b034e80"><div class="ttname"><a href="namespacelog4cxx_1_1helpers.html#a5dcc73cec8dde9c69b41b0403b034e80">log4cxx::helpers::LOG4CXX_LIST_DEF</a></div><div class="ttdeci">LOG4CXX_LIST_DEF(ByteList, unsigned char)</div></div>
-<div class="ttc" id="anamespacelog4cxx_html"><div class="ttname"><a href="namespacelog4cxx.html">log4cxx</a></div><div class="ttdef"><b>Definition:</b> configuration.h:25</div></div>
+<div class="ttc" id="anamespacelog4cxx_html_a856b6c83ec575993bb85276eda2729a7"><div class="ttname"><a href="namespacelog4cxx.html#a856b6c83ec575993bb85276eda2729a7">log4cxx::LOG4CXX_LIST_DEF</a></div><div class="ttdeci">LOG4CXX_LIST_DEF(AppenderList, AppenderPtr)</div></div>
 <div class="ttc" id="anamespacelog4cxx_html_aa2308ed05fef2a1366066cb38b177e94"><div class="ttname"><a href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a></div><div class="ttdeci">std::basic_string&lt; logchar &gt; LogString</div><div class="ttdef"><b>Definition:</b> logstring.h:60</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -179,7 +177,7 @@ $(document).ready(function(){initNavTree('simpledateformat_8h_source.html',''); 
     <li class="navelem"><a class="el" href="dir_8f91b758b065bd819ee8f7dc3f677aaf.html">src</a></li><li class="navelem"><a class="el" href="dir_1b5b2ce64a57900ce45e762cd4aeb527.html">main</a></li><li class="navelem"><a class="el" href="dir_ab306221cab606ae77d28622ae23b6e8.html">include</a></li><li class="navelem"><a class="el" href="dir_d6ab321c53270d8e494d88f6a7352018.html">log4cxx</a></li><li class="navelem"><a class="el" href="dir_85c0a9502ea6452e43783ddabef03b11.html">helpers</a></li><li class="navelem"><a class="el" href="simpledateformat_8h.html">simpledateformat.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Oct 18 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Nov 17 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

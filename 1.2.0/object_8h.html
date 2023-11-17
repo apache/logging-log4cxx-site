@@ -218,12 +218,10 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keyword">public</span>:\</div>
 <div class="line">            Clazz##object() : helpers::Class() {}\</div>
 <div class="line">            <span class="keyword">virtual</span> ~Clazz##object() {}\</div>
-<div class="line">            <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> getName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> LOG4CXX_STR(#<span class="keywordtype">object</span>); } \</div>
+<div class="line">            <span class="keyword">virtual</span> LOG4CXX_NS::LogString getName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> LOG4CXX_STR(#<span class="keywordtype">object</span>); } \</div>
 <div class="line">    };\</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> helpers::Class&amp; getStaticClass(); \</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1ClassRegistration.html">log4cxx::helpers::ClassRegistration</a>&amp; registerClass();</div>
-<div class="ttc" id="aclasslog4cxx_1_1helpers_1_1ClassRegistration_html"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1ClassRegistration.html">log4cxx::helpers::ClassRegistration</a></div><div class="ttdef"><b>Definition:</b> classregistration.h:29</div></div>
-<div class="ttc" id="anamespacelog4cxx_html_aa2308ed05fef2a1366066cb38b177e94"><div class="ttname"><a href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a></div><div class="ttdeci">std::basic_string&lt; logchar &gt; LogString</div><div class="ttdef"><b>Definition:</b> logstring.h:60</div></div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> LOG4CXX_NS::helpers::ClassRegistration&amp; registerClass();</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -248,7 +246,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keyword">public</span>:\</div>
 <div class="line">            Clazz##object() : helpers::Class() {}\</div>
 <div class="line">            <span class="keyword">virtual</span> ~Clazz##object() {}\</div>
-<div class="line">            <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> getName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> LOG4CXX_STR(#<span class="keywordtype">object</span>); } \</div>
+<div class="line">            <span class="keyword">virtual</span> LOG4CXX_NS::LogString getName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> LOG4CXX_STR(#<span class="keywordtype">object</span>); } \</div>
 <div class="line">            <span class="keyword">virtual</span> <span class="keywordtype">object</span>* newInstance() const\</div>
 <div class="line">            {\</div>
 <div class="line">                <span class="keywordflow">return</span> <span class="keyword">new</span> object();\</div>
@@ -256,7 +254,7 @@ Functions</h2></td></tr>
 <div class="line">    };\</div>
 <div class="line">    <span class="keyword">const</span> helpers::Class&amp; getClass() <span class="keyword">const override</span>;\</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> helpers::Class&amp; getStaticClass(); \</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1ClassRegistration.html">log4cxx::helpers::ClassRegistration</a>&amp; registerClass();</div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> LOG4CXX_NS::helpers::ClassRegistration&amp; registerClass();</div>
 </div><!-- fragment --><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="custom-appender_8cpp-example.html#a1">custom-appender.cpp</a>.</dd>
 </dl>
 
@@ -290,7 +288,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">public</span>:\</div>
 <div class="line">    <span class="keyword">const</span> helpers::Class&amp; getClass() <span class="keyword">const override</span>;\</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> helpers::Class&amp; getStaticClass();\</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1ClassRegistration.html">log4cxx::helpers::ClassRegistration</a>&amp;  registerClass();</div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> LOG4CXX_NS::helpers::ClassRegistration&amp;  registerClass();</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -332,19 +330,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    const ::log4cxx::helpers::Class&amp; object::getClass()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> getStaticClass(); }\</div>
-<div class="line">    const ::log4cxx::helpers::Class&amp; object::getStaticClass() { \</div>
-<div class="line">        static ::log4cxx::helpers::WideLife&lt;Clazz##object&gt; theClass; \</div>
+<b>Value:</b><div class="fragment"><div class="line">    const ::LOG4CXX_NS::helpers::Class&amp; object::getClass()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> getStaticClass(); }\</div>
+<div class="line">    const ::LOG4CXX_NS::helpers::Class&amp; object::getStaticClass() { \</div>
+<div class="line">        static ::LOG4CXX_NS::helpers::WideLife&lt;Clazz##object&gt; theClass; \</div>
 <div class="line">        <span class="keywordflow">return</span> theClass;                                       \</div>
 <div class="line">    }                                                                      \</div>
-<div class="line">    <span class="keyword">const</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1ClassRegistration.html">log4cxx::helpers::ClassRegistration</a>&amp; object::registerClass() {   \</div>
-<div class="line">        static ::log4cxx::helpers::WideLife&lt;::log4cxx::helpers::ClassRegistration&gt; classReg(object::getStaticClass); \</div>
+<div class="line">    <span class="keyword">const</span> LOG4CXX_NS::helpers::ClassRegistration&amp; object::registerClass() {   \</div>
+<div class="line">        static ::LOG4CXX_NS::helpers::WideLife&lt;::LOG4CXX_NS::helpers::ClassRegistration&gt; classReg(object::getStaticClass); \</div>
 <div class="line">        <span class="keywordflow">return</span> classReg; \</div>
 <div class="line">    }\</div>
-<div class="line">    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a> { <span class="keyword">namespace </span>classes { \</div>
-<div class="line">    const ::log4cxx::helpers::ClassRegistration&amp; <span class="keywordtype">object</span>##Registration = object::registerClass(); \</div>
+<div class="line">    <span class="keyword">namespace </span>LOG4CXX_NS { <span class="keyword">namespace </span>classes { \</div>
+<div class="line">    const ::LOG4CXX_NS::helpers::ClassRegistration&amp; <span class="keywordtype">object</span>##Registration = object::registerClass(); \</div>
 <div class="line">    } }</div>
-<div class="ttc" id="anamespacelog4cxx_html"><div class="ttname"><a href="namespacelog4cxx.html">log4cxx</a></div><div class="ttdef"><b>Definition:</b> configuration.h:25</div></div>
 </div><!-- fragment --><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="custom-appender_8cpp-example.html#a7">custom-appender.cpp</a>.</dd>
 </dl>
 
@@ -375,20 +372,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">const</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1Class.html">log4cxx::helpers::Class</a>&amp; object::getClass()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> getStaticClass(); }\</div>
-<div class="line">    <span class="keyword">const</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1Class.html">log4cxx::helpers::Class</a>&amp; object::getStaticClass() { \</div>
-<div class="line">        <span class="keyword">static</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1WideLife.html">log4cxx::helpers::WideLife&lt;class&gt;</a> theClass; \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">const</span> LOG4CXX_NS::helpers::Class&amp; object::getClass()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> getStaticClass(); }\</div>
+<div class="line">    <span class="keyword">const</span> LOG4CXX_NS::helpers::Class&amp; object::getStaticClass() { \</div>
+<div class="line">        <span class="keyword">static</span> LOG4CXX_NS::helpers::WideLife&lt;class&gt; theClass; \</div>
 <div class="line">        <span class="keywordflow">return</span> theClass;                                       \</div>
 <div class="line">    }                                                         \</div>
-<div class="line">    <span class="keyword">const</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1ClassRegistration.html">log4cxx::helpers::ClassRegistration</a>&amp; object::registerClass() {   \</div>
-<div class="line">        <span class="keyword">static</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1WideLife.html">log4cxx::helpers::WideLife&lt;log4cxx::helpers::ClassRegistration&gt;</a> classReg(object::getStaticClass); \</div>
+<div class="line">    <span class="keyword">const</span> LOG4CXX_NS::helpers::ClassRegistration&amp; object::registerClass() {   \</div>
+<div class="line">        <span class="keyword">static</span> LOG4CXX_NS::helpers::WideLife&lt;LOG4CXX_NS::helpers::ClassRegistration&gt; classReg(object::getStaticClass); \</div>
 <div class="line">        <span class="keywordflow">return</span> classReg; \</div>
 <div class="line">    }\</div>
-<div class="line">    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a> { <span class="keyword">namespace </span>classes { \</div>
-<div class="line">    <span class="keyword">const</span> <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1ClassRegistration.html">log4cxx::helpers::ClassRegistration</a>&amp; <span class="keywordtype">object</span>##Registration = object::registerClass(); \</div>
+<div class="line">    <span class="keyword">namespace </span>LOG4CXX_NS { <span class="keyword">namespace </span>classes { \</div>
+<div class="line">    <span class="keyword">const</span> LOG4CXX_NS::helpers::ClassRegistration&amp; <span class="keywordtype">object</span>##Registration = object::registerClass(); \</div>
 <div class="line">    } }</div>
-<div class="ttc" id="aclasslog4cxx_1_1helpers_1_1Class_html"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1Class.html">log4cxx::helpers::Class</a></div><div class="ttdef"><b>Definition:</b> class.h:32</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1helpers_1_1WideLife_html"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1WideLife.html">log4cxx::helpers::WideLife</a></div><div class="ttdoc">The WideLife wrapper is destined to prolongate the runtime logger state lifetime from static duration...</div><div class="ttdef"><b>Definition:</b> widelife.h:34</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -471,7 +466,7 @@ Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="dir_8f91b758b065bd819ee8f7dc3f677aaf.html">src</a></li><li class="navelem"><a class="el" href="dir_1b5b2ce64a57900ce45e762cd4aeb527.html">main</a></li><li class="navelem"><a class="el" href="dir_ab306221cab606ae77d28622ae23b6e8.html">include</a></li><li class="navelem"><a class="el" href="dir_d6ab321c53270d8e494d88f6a7352018.html">log4cxx</a></li><li class="navelem"><a class="el" href="dir_85c0a9502ea6452e43783ddabef03b11.html">helpers</a></li><li class="navelem"><a class="el" href="object_8h.html">object.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Oct 18 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Nov 17 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

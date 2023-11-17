@@ -125,7 +125,7 @@ Macros</h2></td></tr>
 <tr class="memitem:aac849c16f5bc8917cb4b00d4ccf96138"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log4cxx_2helpers_2transcoder_8h.html#aac849c16f5bc8917cb4b00d4ccf96138">LOG4CXX_DECODE_CFSTRING</a>(var,  src)</td></tr>
 <tr class="memdesc:aac849c16f5bc8917cb4b00d4ccf96138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> equivalent of <code>src</code>.  <br /></td></tr>
 <tr class="separator:aac849c16f5bc8917cb4b00d4ccf96138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a1ddbd726775eae44dfc5ca7246994"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log4cxx_2helpers_2transcoder_8h.html#a72a1ddbd726775eae44dfc5ca7246994">LOG4CXX_ENCODE_CFSTRING</a>(var,  src)&#160;&#160;&#160;	<a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> var = <a class="el" href="classlog4cxx_1_1helpers_1_1Transcoder.html#abb874dc4d00940e67d66600e311ec7b9">log4cxx::helpers::Transcoder::encode</a>(src)</td></tr>
+<tr class="memitem:a72a1ddbd726775eae44dfc5ca7246994"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log4cxx_2helpers_2transcoder_8h.html#a72a1ddbd726775eae44dfc5ca7246994">LOG4CXX_ENCODE_CFSTRING</a>(var,  src)&#160;&#160;&#160;	<a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> var = LOG4CXX_NS::helpers::Transcoder::encode(src)</td></tr>
 <tr class="memdesc:a72a1ddbd726775eae44dfc5ca7246994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a CFStringRef equivalent of <code>src</code>.  <br /></td></tr>
 <tr class="separator:a72a1ddbd726775eae44dfc5ca7246994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8550440a926bfc13a1da543fc470486"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="log4cxx_2helpers_2transcoder_8h.html#ae8550440a926bfc13a1da543fc470486">LOG4CXX_ENCODE_WCHAR</a>(var,  src)</td></tr>
@@ -167,9 +167,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> var;                      \</div>
-<div class="line">    log4cxx::helpers::Transcoder::decode(src, var)</div>
-<div class="ttc" id="anamespacelog4cxx_html_aa2308ed05fef2a1366066cb38b177e94"><div class="ttname"><a href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a></div><div class="ttdeci">std::basic_string&lt; logchar &gt; LogString</div><div class="ttdef"><b>Definition:</b> logstring.h:60</div></div>
+<b>Value:</b><div class="fragment"><div class="line">    LOG4CXX_NS::LogString var;                      \</div>
+<div class="line">    LOG4CXX_NS::helpers::Transcoder::decode(src, var)</div>
 </div><!-- fragment -->
 <p>Create a <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> equivalent of <code>src</code>. </p>
 <p>Defines a <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> variable <code>var</code> initialized with characters equivalent to the CFStringRef <code>src</code> contents.</p>
@@ -208,8 +207,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> var;                      \</div>
-<div class="line">    log4cxx::helpers::Transcoder::decode(src, var)</div>
+<b>Value:</b><div class="fragment"><div class="line">    LOG4CXX_NS::LogString var;                      \</div>
+<div class="line">    LOG4CXX_NS::helpers::Transcoder::decode(src, var)</div>
 </div><!-- fragment -->
 <p>Create a <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> equivalent of <code>src</code>. </p>
 <p>Defines a <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> variable <code>var</code> initialized with characters equivalent to the std::string <code>src</code> contents.</p>
@@ -248,8 +247,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> var;                      \</div>
-<div class="line">    log4cxx::helpers::Transcoder::decode(src, var)</div>
+<b>Value:</b><div class="fragment"><div class="line">    LOG4CXX_NS::LogString var;                      \</div>
+<div class="line">    LOG4CXX_NS::helpers::Transcoder::decode(src, var)</div>
 </div><!-- fragment -->
 <p>Create a <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> equivalent of <code>src</code>. </p>
 <p>Defines a <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> variable <code>var</code> initialized with characters equivalent to the std::basic_string&lt;UniChar&gt; <code>src</code> contents.</p>
@@ -288,8 +287,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> var;                      \</div>
-<div class="line">    log4cxx::helpers::Transcoder::decode(src, var)</div>
+<b>Value:</b><div class="fragment"><div class="line">    LOG4CXX_NS::LogString var;                      \</div>
+<div class="line">    LOG4CXX_NS::helpers::Transcoder::decode(src, var)</div>
 </div><!-- fragment -->
 <p>Create a <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> equivalent of <code>src</code>. </p>
 <p>Defines a <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> variable <code>var</code> initialized with characters equivalent to the std::wstring <code>src</code> contents.</p>
@@ -324,7 +323,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;	<a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> var = <a class="el" href="classlog4cxx_1_1helpers_1_1Transcoder.html#abb874dc4d00940e67d66600e311ec7b9">log4cxx::helpers::Transcoder::encode</a>(src)</td>
+          <td></td><td>&#160;&#160;&#160;	<a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> var = LOG4CXX_NS::helpers::Transcoder::encode(src)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -367,7 +366,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    std::string var;                      \</div>
-<div class="line">    log4cxx::helpers::Transcoder::encode(src, var)</div>
+<div class="line">    LOG4CXX_NS::helpers::Transcoder::encode(src, var)</div>
 </div><!-- fragment -->
 <p>Create a std::string equivalent of <code>src</code>. </p>
 <p>Defines a std::string variable <code>var</code> initialized with characters equivalent to the <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> <code>src</code> contents.</p>
@@ -407,7 +406,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    std::basic_string&lt;UniChar&gt; var;          \</div>
-<div class="line">    log4cxx::helpers::Transcoder::encode(src, var)</div>
+<div class="line">    LOG4CXX_NS::helpers::Transcoder::encode(src, var)</div>
 </div><!-- fragment -->
 <p>Create a std::basic_string&lt;UniChar&gt; equivalent of <code>src</code>. </p>
 <p>Defines a std::basic_string&lt;UniChar&gt; variable <code>var</code> initialized with characters equivalent to the <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> <code>src</code> contents.</p>
@@ -447,7 +446,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    std::wstring var;                      \</div>
-<div class="line">    log4cxx::helpers::Transcoder::encode(src, var)</div>
+<div class="line">    LOG4CXX_NS::helpers::Transcoder::encode(src, var)</div>
 </div><!-- fragment -->
 <p>Create a std::wstring equivalent of <code>src</code>. </p>
 <p>Defines a std::wstring variable <code>var</code> initialized with characters equivalent to the <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a> <code>src</code> contents.</p>
@@ -470,7 +469,7 @@ Macros</h2></td></tr>
     <li class="navelem"><a class="el" href="dir_8f91b758b065bd819ee8f7dc3f677aaf.html">src</a></li><li class="navelem"><a class="el" href="dir_1b5b2ce64a57900ce45e762cd4aeb527.html">main</a></li><li class="navelem"><a class="el" href="dir_ab306221cab606ae77d28622ae23b6e8.html">include</a></li><li class="navelem"><a class="el" href="dir_d6ab321c53270d8e494d88f6a7352018.html">log4cxx</a></li><li class="navelem"><a class="el" href="dir_85c0a9502ea6452e43783ddabef03b11.html">helpers</a></li><li class="navelem"><a class="el" href="log4cxx_2helpers_2transcoder_8h.html">transcoder.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Oct 18 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Nov 17 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

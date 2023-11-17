@@ -114,9 +114,13 @@ $(document).ready(function(){initNavTree('format-string_8cpp-example.html',''); 
 <div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="basicconfigurator_8h.html">log4cxx/basicconfigurator.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="locale_8h.html">locale.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#if LOG4CXX_USING_STD_FORMAT</span></div>
+<div class="line"><span class="preprocessor">#include &lt;format&gt;</span></div>
+<div class="line"><span class="preprocessor">#else</span></div>
 <div class="line"><span class="preprocessor">#include &lt;fmt/core.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;fmt/color.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;fmt/ostream.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a>;</div>
@@ -130,7 +134,22 @@ $(document).ready(function(){initNavTree('format-string_8cpp-example.html',''); 
 <div class="line">        stream &lt;&lt; <span class="stringliteral">&quot;[MyStruct x:&quot;</span> &lt;&lt; mystruct.x &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
 <div class="line">        <span class="keywordflow">return</span> stream;</div>
 <div class="line">}</div>
-<div class="line"><span class="preprocessor">#if FMT_VERSION &gt;= (9 * 10000)</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#if LOG4CXX_USING_STD_FORMAT</span></div>
+<div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Char&gt;</div>
+<div class="line"><span class="keyword">struct </span>basic_ostream_formatter</div>
+<div class="line">    : std::formatter&lt;std::basic_string_view&lt;Char&gt;, Char&gt;</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> OutputIt&gt;</div>
+<div class="line">    <span class="keyword">auto</span> format(<span class="keyword">const</span> T&amp; value, std::basic_format_context&lt;OutputIt, Char&gt;&amp; ctx) <span class="keyword">const</span> -&gt; OutputIt</div>
+<div class="line">    {</div>
+<div class="line">        std::basic_stringstream&lt;Char&gt; ss;</div>
+<div class="line">        ss &lt;&lt; value;</div>
+<div class="line">        <span class="keywordflow">return</span> std::formatter&lt;std::basic_string_view&lt;Char&gt;, Char&gt;::format(ss.view(), ctx);</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"><span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span>std::formatter&lt;MyStruct&gt; : basic_ostream_formatter&lt;char&gt; {};</div>
+<div class="line"><span class="preprocessor">#elif FMT_VERSION &gt;= (9 * 10000)</span></div>
 <div class="line"><span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span>fmt::formatter&lt;MyStruct&gt; : ostream_formatter {};</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
@@ -141,24 +160,26 @@ $(document).ready(function(){initNavTree('format-string_8cpp-example.html',''); 
 <div class="line">    BasicConfigurator::configure();</div>
 <div class="line">    <a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> rootLogger = Logger::getRootLogger();</div>
 <div class="line"> </div>
-<div class="line">    <a id="a1" name="a1"></a><a class="code hl_define" href="group__LoggingMacros.html#gae6c9cdbeef01d237af37a897beda825e">LOG4CXX_INFO_FMT</a>( rootLogger, <span class="stringliteral">&quot;This is a {} mesage&quot;</span>, <span class="stringliteral">&quot;test&quot;</span> );</div>
-<div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#gae6c9cdbeef01d237af37a897beda825e">LOG4CXX_INFO_FMT</a>( rootLogger, fmt::fg(fmt::color::red), <span class="stringliteral">&quot;Messages can be colored&quot;</span> );</div>
-<div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#gae6c9cdbeef01d237af37a897beda825e">LOG4CXX_INFO_FMT</a>( rootLogger, <span class="stringliteral">&quot;We can also align text to the {:&lt;10} or {:&gt;10}&quot;</span>, <span class="stringliteral">&quot;left&quot;</span>, <span class="stringliteral">&quot;right&quot;</span> );</div>
+<div class="line">    <a id="a1" name="a1"></a><a class="code hl_define" href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a>( rootLogger, <span class="stringliteral">&quot;This is a {} mesage&quot;</span>, <span class="stringliteral">&quot;test&quot;</span> );</div>
+<div class="line"><span class="preprocessor">#if !LOG4CXX_USING_STD_FORMAT</span></div>
+<div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a>( rootLogger, fmt::fg(fmt::color::red), <span class="stringliteral">&quot;Messages can be colored&quot;</span> );</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a>( rootLogger, <span class="stringliteral">&quot;We can also align text to the {:&lt;10} or {:&gt;10}&quot;</span>, <span class="stringliteral">&quot;left&quot;</span>, <span class="stringliteral">&quot;right&quot;</span> );</div>
 <div class="line"> </div>
-<div class="line">    MyStruct mine;</div>
-<div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#gae6c9cdbeef01d237af37a897beda825e">LOG4CXX_INFO_FMT</a>( rootLogger, <span class="stringliteral">&quot;This custom type {} can also be logged, since it implements operator&lt;&lt;&quot;</span>, mine );</div>
+<div class="line">    MyStruct mine{ 42 };</div>
+<div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a>( rootLogger, <span class="stringliteral">&quot;This custom type {} can also be logged, since it implements operator&lt;&lt;&quot;</span>, mine );</div>
 <div class="line"> </div>
 <div class="line">    <a id="a2" name="a2"></a><a class="code hl_define" href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a>( rootLogger, <span class="stringliteral">&quot;Numbers can be formatted with excessive operator&lt;&lt;: &quot;</span></div>
 <div class="line">                  &lt;&lt; std::setprecision(3) &lt;&lt; 22.456</div>
 <div class="line">                  &lt;&lt; <span class="stringliteral">&quot; And as hex: &quot;</span></div>
 <div class="line">                  &lt;&lt; std::setbase( 16 ) &lt;&lt; 123 );</div>
-<div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#gae6c9cdbeef01d237af37a897beda825e">LOG4CXX_INFO_FMT</a>( rootLogger, <span class="stringliteral">&quot;Numbers can be formatted with a format string {:.1f} and as hex: {:x}&quot;</span>, 22.456, 123 );</div>
+<div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a>( rootLogger, <span class="stringliteral">&quot;Numbers can be formatted with a format string {:.1f} and as hex: {:x}&quot;</span>, 22.456, 123 );</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="abasicconfigurator_8h_html"><div class="ttname"><a href="basicconfigurator_8h.html">basicconfigurator.h</a></div></div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga61dfed4f5eca82725a90a331f37857d3"><div class="ttname"><a href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a></div><div class="ttdeci">#define LOG4CXX_INFO(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2141</div></div>
-<div class="ttc" id="agroup__LoggingMacros_html_gae6c9cdbeef01d237af37a897beda825e"><div class="ttname"><a href="group__LoggingMacros.html#gae6c9cdbeef01d237af37a897beda825e">LOG4CXX_INFO_FMT</a></div><div class="ttdeci">#define LOG4CXX_INFO_FMT(logger,...)</div><div class="ttdoc">Add a new logging event containing libfmt formatted ... to attached appender(s) if logger is enabled ...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2152</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga08bbfedb425d706e674fc92a7bcf9b0c"><div class="ttname"><a href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a></div><div class="ttdeci">#define LOG4CXX_INFO_FMT(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2164</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga61dfed4f5eca82725a90a331f37857d3"><div class="ttname"><a href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a></div><div class="ttdeci">#define LOG4CXX_INFO(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2144</div></div>
 <div class="ttc" id="alocale_8h_html"><div class="ttname"><a href="locale_8h.html">locale.h</a></div></div>
 <div class="ttc" id="alog4cxx-qt_2messagebuffer_8h_html_a2d945a50e5af4bdba2fd330159650dec"><div class="ttname"><a href="log4cxx-qt_2messagebuffer_8h.html#a2d945a50e5af4bdba2fd330159650dec">operator&lt;&lt;</a></div><div class="ttdeci">log4cxx::helpers::UniCharMessageBuffer &amp; operator&lt;&lt;(log4cxx::helpers::UniCharMessageBuffer &amp;mb, const QString &amp;msg)</div><div class="ttdef"><b>Definition:</b> log4cxx-qt/messagebuffer.h:24</div></div>
 <div class="ttc" id="anamespacelog4cxx_1_1helpers_html"><div class="ttname"><a href="namespacelog4cxx_1_1helpers.html">log4cxx::helpers</a></div><div class="ttdef"><b>Definition:</b> propertysetter.h:27</div></div>
@@ -172,7 +193,7 @@ $(document).ready(function(){initNavTree('format-string_8cpp-example.html',''); 
   <ul>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Oct 18 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Nov 17 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

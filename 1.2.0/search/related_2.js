@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sockethandler_0',['SocketHandler',['../classlog4cxx_1_1net_1_1TelnetAppender.html#aa3a167a015ca337769b3873aba4e8fdb',1,'log4cxx::net::TelnetAppender']]]
+  ['widelife_3c_20threadutility_20_3e_0',['WideLife&lt; ThreadUtility &gt;',['../classlog4cxx_1_1helpers_1_1ThreadUtility.html#ad069b1b73d4a701f63f3409ee3a366b9',1,'log4cxx::helpers::ThreadUtility']]]
 ];

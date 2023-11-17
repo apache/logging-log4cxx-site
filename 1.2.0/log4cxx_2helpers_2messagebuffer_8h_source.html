@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('log4cxx_2helpers_2messagebuffer_8h_sou
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="logstring_8h.html">log4cxx/logstring.h</a>&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>LOG4CXX_NS</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('log4cxx_2helpers_2messagebuffer_8h_sou
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>};</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> V&gt;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>std::basic_ostream&lt;char&gt;&amp; <a class="code hl_function" href="namespacelog4cxx_1_1helpers.html#a8198a92a2f69037365e30ba39c7687ef">operator&lt;&lt;</a>(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1CharMessageBuffer.html">CharMessageBuffer</a>&amp; os, <span class="keyword">const</span> V&amp; val)</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>std::basic_ostream&lt;char&gt;&amp; <a class="code hl_function" href="log4cxx-qt_2messagebuffer_8h.html#a2d945a50e5af4bdba2fd330159650dec">operator&lt;&lt;</a>(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1CharMessageBuffer.html">CharMessageBuffer</a>&amp; os, <span class="keyword">const</span> V&amp; val)</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>{</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordflow">return</span> ((std::basic_ostream&lt;char&gt;&amp;) os) &lt;&lt; val;</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>}</div>
@@ -234,7 +234,7 @@ $(document).ready(function(){initNavTree('log4cxx_2helpers_2messagebuffer_8h_sou
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>};</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> V&gt;</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno"><a class="line" href="namespacelog4cxx_1_1helpers.html#a7519208bb8b106c7fb8e04ca8abac007">  392</a></span><a class="code hl_typedef" href="classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html#a3022c040866aeaf740b50ad1e2e2eecd">UniCharMessageBuffer::uostream</a>&amp; <a class="code hl_function" href="namespacelog4cxx_1_1helpers.html#a8198a92a2f69037365e30ba39c7687ef">operator&lt;&lt;</a>(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html">UniCharMessageBuffer</a>&amp; os, <span class="keyword">const</span> V&amp; val)</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno"><a class="line" href="namespacelog4cxx_1_1helpers.html#a7519208bb8b106c7fb8e04ca8abac007">  392</a></span><a class="code hl_typedef" href="classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html#a3022c040866aeaf740b50ad1e2e2eecd">UniCharMessageBuffer::uostream</a>&amp; <a class="code hl_function" href="log4cxx-qt_2messagebuffer_8h.html#a2d945a50e5af4bdba2fd330159650dec">operator&lt;&lt;</a>(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html">UniCharMessageBuffer</a>&amp; os, <span class="keyword">const</span> V&amp; val)</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>{</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    <span class="keywordflow">return</span> ((<a class="code hl_typedef" href="classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html#a3022c040866aeaf740b50ad1e2e2eecd">UniCharMessageBuffer::uostream</a>&amp;) os) &lt;&lt; val;</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>}</div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('log4cxx_2helpers_2messagebuffer_8h_sou
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>};</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span> </div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> V&gt;</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>std::basic_ostream&lt;wchar_t&gt;&amp; <a class="code hl_function" href="namespacelog4cxx_1_1helpers.html#a8198a92a2f69037365e30ba39c7687ef">operator&lt;&lt;</a>(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1WideMessageBuffer.html">WideMessageBuffer</a>&amp; os, <span class="keyword">const</span> V&amp; val)</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>std::basic_ostream&lt;wchar_t&gt;&amp; <a class="code hl_function" href="log4cxx-qt_2messagebuffer_8h.html#a2d945a50e5af4bdba2fd330159650dec">operator&lt;&lt;</a>(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1WideMessageBuffer.html">WideMessageBuffer</a>&amp; os, <span class="keyword">const</span> V&amp; val)</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>{</div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    <span class="keywordflow">return</span> ((std::basic_ostream&lt;wchar_t&gt;&amp;) os) &lt;&lt; val;</div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>}</div>
@@ -375,7 +375,7 @@ $(document).ready(function(){initNavTree('log4cxx_2helpers_2messagebuffer_8h_sou
 <div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>};</div>
 <div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span> </div>
 <div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> V&gt;</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno"><a class="line" href="namespacelog4cxx_1_1helpers.html#a604fb2cdc990d3eea9bc7ff3dddd39a1">  885</a></span>std::ostream&amp; <a class="code hl_function" href="namespacelog4cxx_1_1helpers.html#a8198a92a2f69037365e30ba39c7687ef">operator&lt;&lt;</a>(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1MessageBuffer.html">MessageBuffer</a>&amp; os, <span class="keyword">const</span> V&amp; val)</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno"><a class="line" href="namespacelog4cxx_1_1helpers.html#a604fb2cdc990d3eea9bc7ff3dddd39a1">  885</a></span>std::ostream&amp; <a class="code hl_function" href="log4cxx-qt_2messagebuffer_8h.html#a2d945a50e5af4bdba2fd330159650dec">operator&lt;&lt;</a>(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1MessageBuffer.html">MessageBuffer</a>&amp; os, <span class="keyword">const</span> V&amp; val)</div>
 <div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>{</div>
 <div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>    <span class="keywordflow">return</span> ((std::ostream&amp;) os) &lt;&lt; val;</div>
 <div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>}</div>
@@ -506,8 +506,6 @@ $(document).ready(function(){initNavTree('log4cxx_2helpers_2messagebuffer_8h_sou
 <div class="ttc" id="alog4cxx-qt_2messagebuffer_8h_html_a2d945a50e5af4bdba2fd330159650dec"><div class="ttname"><a href="log4cxx-qt_2messagebuffer_8h.html#a2d945a50e5af4bdba2fd330159650dec">operator&lt;&lt;</a></div><div class="ttdeci">log4cxx::helpers::UniCharMessageBuffer &amp; operator&lt;&lt;(log4cxx::helpers::UniCharMessageBuffer &amp;mb, const QString &amp;msg)</div><div class="ttdef"><b>Definition:</b> log4cxx-qt/messagebuffer.h:24</div></div>
 <div class="ttc" id="alogstring_8h_html"><div class="ttname"><a href="logstring_8h.html">logstring.h</a></div></div>
 <div class="ttc" id="alogstring_8h_html_a782e95610ad4dd24aee670f3b5846a3b"><div class="ttname"><a href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a></div><div class="ttdeci">const struct __CFString * CFStringRef</div><div class="ttdef"><b>Definition:</b> logstring.h:30</div></div>
-<div class="ttc" id="anamespacelog4cxx_1_1helpers_html_a8198a92a2f69037365e30ba39c7687ef"><div class="ttname"><a href="namespacelog4cxx_1_1helpers.html#a8198a92a2f69037365e30ba39c7687ef">log4cxx::helpers::operator&lt;&lt;</a></div><div class="ttdeci">std::basic_ostream&lt; char &gt; &amp; operator&lt;&lt;(CharMessageBuffer &amp;os, const V &amp;val)</div><div class="ttdef"><b>Definition:</b> log4cxx/helpers/messagebuffer.h:208</div></div>
-<div class="ttc" id="anamespacelog4cxx_html"><div class="ttname"><a href="namespacelog4cxx.html">log4cxx</a></div><div class="ttdef"><b>Definition:</b> configuration.h:25</div></div>
 <div class="ttc" id="anamespacelog4cxx_html_ac5e4b220857602c21b6a1850263005ff"><div class="ttname"><a href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">log4cxx::UniChar</a></div><div class="ttdeci">unsigned short UniChar</div><div class="ttdef"><b>Definition:</b> logstring.h:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -518,7 +516,7 @@ $(document).ready(function(){initNavTree('log4cxx_2helpers_2messagebuffer_8h_sou
     <li class="navelem"><a class="el" href="dir_8f91b758b065bd819ee8f7dc3f677aaf.html">src</a></li><li class="navelem"><a class="el" href="dir_1b5b2ce64a57900ce45e762cd4aeb527.html">main</a></li><li class="navelem"><a class="el" href="dir_ab306221cab606ae77d28622ae23b6e8.html">include</a></li><li class="navelem"><a class="el" href="dir_d6ab321c53270d8e494d88f6a7352018.html">log4cxx</a></li><li class="navelem"><a class="el" href="dir_85c0a9502ea6452e43783ddabef03b11.html">helpers</a></li><li class="navelem"><a class="el" href="log4cxx_2helpers_2messagebuffer_8h.html">messagebuffer.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Oct 18 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Nov 17 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

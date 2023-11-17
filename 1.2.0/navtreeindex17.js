@@ -1,5 +1,11 @@
 var NAVTREEINDEX17 =
 {
+"namespacelog4cxx_1_1rolling.html#ad8942d89bac32b7a4637cda0bc08cf38":[7,0,0,8,25],
+"namespacelog4cxx_1_1rolling.html#ae1da7a316736f775041b10c1b2dc5f56":[7,0,0,8,26],
+"namespacelog4cxx_1_1rule.html":[7,0,0,9],
+"namespacelog4cxx_1_1rule.html#ab5d5d9c27682b7504c756530f9cf151c":[7,0,0,9,0],
+"namespacelog4cxx_1_1spi.html":[7,0,0,10],
+"namespacelog4cxx_1_1spi.html#a0edefdfe977131797fddaec3be9552cc":[7,0,0,10,26],
 "namespacelog4cxx_1_1spi.html#a1d969c8e32b6c5b1dcbfbdab6f88df71":[7,0,0,10,20],
 "namespacelog4cxx_1_1spi.html#a205e4c0cc1ca84c82a43382433134125":[7,0,0,10,25],
 "namespacelog4cxx_1_1spi.html#a38a7dc69832e0647515f643f01be6fa5":[7,0,0,10,18],
@@ -243,11 +249,5 @@ var NAVTREEINDEX17 =
 "timebasedrollingpolicy_8h.html":[9,0,1,0,0,0,7,12],
 "timebasedrollingpolicy_8h.html#ad6bb9162cb1727ab4b9e4aeac499bf7c":[9,0,1,0,0,0,7,12,1],
 "timebasedrollingpolicy_8h_source.html":[9,0,1,0,0,0,7,12],
-"timezone_8h.html":[9,0,1,0,0,0,3,58],
-"timezone_8h.html#a7d8906c247b9196e056c2337bd0c0628":[9,0,1,0,0,0,3,58,1],
-"timezone_8h_source.html":[9,0,1,0,0,0,3,58],
-"transform_8h.html":[9,0,1,0,0,0,3,60],
-"transform_8h_source.html":[9,0,1,0,0,0,3,60],
-"triggeringeventevaluator_8h.html":[9,0,1,0,0,0,8,13],
-"triggeringeventevaluator_8h.html#a651bbed7f67d4c1609d460ec594d92b3":[9,0,1,0,0,0,8,13,1]
+"timezone_8h.html":[9,0,1,0,0,0,3,58]
 };
