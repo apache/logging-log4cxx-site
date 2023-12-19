@@ -17,10 +17,11 @@ var searchData=
   ['building_20with_20cmake_14',['Building with CMake',['../build-cmake.html',1,'build']]],
   ['building_20with_20vcpkg_15',['Building with vcpkg',['../build-vcpkg.html',1,'build']]],
   ['building_2emd_16',['building.md',['../building_8md.html',1,'']]],
-  ['bytearrayinputstream_17',['ByteArrayInputStream',['../classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#aec073e4e37aec58c87c020f0d9c92996',1,'log4cxx::helpers::ByteArrayInputStream::ByteArrayInputStream()'],['../classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html',1,'log4cxx::helpers::ByteArrayInputStream']]],
-  ['bytearrayinputstream_2eh_18',['bytearrayinputstream.h',['../bytearrayinputstream_8h.html',1,'']]],
-  ['bytearrayoutputstream_19',['ByteArrayOutputStream',['../classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a2b6d9c725578d00024381f011045df9c',1,'log4cxx::helpers::ByteArrayOutputStream::ByteArrayOutputStream()'],['../classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html',1,'log4cxx::helpers::ByteArrayOutputStream']]],
-  ['bytearrayoutputstream_2eh_20',['bytearrayoutputstream.h',['../bytearrayoutputstream_8h.html',1,'']]],
-  ['bytebuffer_21',['ByteBuffer',['../classlog4cxx_1_1helpers_1_1ByteBuffer.html#ac55e6cb23371ab259e8e763a61a8abad',1,'log4cxx::helpers::ByteBuffer::ByteBuffer()'],['../classlog4cxx_1_1helpers_1_1ByteBuffer.html',1,'log4cxx::helpers::ByteBuffer']]],
-  ['bytebuffer_2eh_22',['bytebuffer.h',['../bytebuffer_8h.html',1,'']]]
+  ['buildsystems_2emd_17',['buildsystems.md',['../buildsystems_8md.html',1,'']]],
+  ['bytearrayinputstream_18',['ByteArrayInputStream',['../classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#aec073e4e37aec58c87c020f0d9c92996',1,'log4cxx::helpers::ByteArrayInputStream::ByteArrayInputStream()'],['../classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html',1,'log4cxx::helpers::ByteArrayInputStream']]],
+  ['bytearrayinputstream_2eh_19',['bytearrayinputstream.h',['../bytearrayinputstream_8h.html',1,'']]],
+  ['bytearrayoutputstream_20',['ByteArrayOutputStream',['../classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a2b6d9c725578d00024381f011045df9c',1,'log4cxx::helpers::ByteArrayOutputStream::ByteArrayOutputStream()'],['../classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html',1,'log4cxx::helpers::ByteArrayOutputStream']]],
+  ['bytearrayoutputstream_2eh_21',['bytearrayoutputstream.h',['../bytearrayoutputstream_8h.html',1,'']]],
+  ['bytebuffer_22',['ByteBuffer',['../classlog4cxx_1_1helpers_1_1ByteBuffer.html#ac55e6cb23371ab259e8e763a61a8abad',1,'log4cxx::helpers::ByteBuffer::ByteBuffer()'],['../classlog4cxx_1_1helpers_1_1ByteBuffer.html',1,'log4cxx::helpers::ByteBuffer']]],
+  ['bytebuffer_2eh_23',['bytebuffer.h',['../bytebuffer_8h.html',1,'']]]
 ];

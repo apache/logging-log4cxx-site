@@ -1,8 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!-- HTML header for doxygen 1.8.13-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Apache Log4cxx: Loggers, Appenders and Layouts</title>
@@ -18,15 +19,31 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.apache.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '42']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
-   <div id="projectname">Apache Log4cxx<span id="projectnumber">&#160;Version 1.2.0</span>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Apache Log4cxx
+   &#160;<span id="projectnumber">Version 1.2.0</span>
    </div>
   </td>
  </tr>
@@ -94,7 +111,9 @@ $(document).ready(function(){initNavTree('concepts.html',''); initResizable(); }
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#loggers">Loggers</a><ul><li class="level2"><a href="#requests">Requests</a><ul><li class="level3"><a href="#custom-types">Logging Custom Types</a></li>
+<ul><li class="level1"><a href="#loggers">Loggers</a><ul><li class="level2"><a href="#naming">Naming</a></li>
+<li class="level2"><a href="#getLogger">Instantiation</a></li>
+<li class="level2"><a href="#requests">Requests</a><ul><li class="level3"><a href="#custom-types">Logging Custom Types</a></li>
 <li class="level3"><a href="#logging-with-fmt">Using {fmt} style requests</a></li>
 <li class="level3"><a href="#request-cost">Overhead</a></li>
 <li class="level3"><a href="#removing-log-statements">Removing log requests</a></li>
@@ -124,10 +143,15 @@ $(document).ready(function(){initNavTree('concepts.html',''); initResizable(); }
 <h1><a class="anchor" id="loggers"></a>
 Loggers</h1>
 <p>The first and foremost advantage of any logging API over plain <code>std::cout</code> resides in its ability to disable certain log statements while allowing others to print unhindered. This capability is provided by assigning each logging request to a category. A Log4cxx category is a name and it is held by a <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">log4cxx::Logger</a> instance. The name of the class in which the logging request appears is a commonly used naming scheme but any category naming scheme may be used. Logging category names (or equivalently logger name) are case-sensitive.</p>
+<h2><a class="anchor" id="naming"></a>
+Naming</h2>
 <p>Log4cxx makes it easy to name loggers by <em>software component</em>. This can be accomplished by statically instantiating a logger in each class, with the logger name equal to the fully qualified name of the class. This is a useful and straightforward method of defining loggers. As the log output bears the name of the generating logger, this naming strategy makes it easy to identify the origin of a log message. However, this is only one possible, albeit common, strategy for naming loggers. Log4cxx does not restrict the possible set of loggers. The developer is free to name the loggers as desired.</p>
 <p>Nevertheless, naming loggers after the class where they are located seems to be the best strategy known so far.</p>
 <p>Logger names follow a hierarchical naming rule. A logger is said to be an <em>ancestor</em> of another logger if its name followed by a dot is a prefix of the <em>descendant</em> logger name. A logger is said to be a <em>parent</em> of a <em>child</em> logger if there are no ancestors between itself and the descendant logger.</p>
 <p>For example, the logger named <code>com.foo</code> is a parent of the logger named <code>com.foo.Bar</code>. Similarly, <code>java</code> is a parent of <code>java.util</code> and an ancestor of <code>java.util.Vector</code>. This naming scheme should be familiar to most developers.</p>
+<p>Sometimes a per object logger is useful. When each class instance has a identifiable name (e.g. when it is instantiated from configuration data) add a member variable to hold a <a class="el" href="classlog4cxx_1_1LoggerInstancePtr.html" title="A smart pointer (implicity convertable to LoggerPtr) that conditionally removes a Logger from the spi...">log4cxx::LoggerInstancePtr</a> and initialize it with a name that makes it a <em>descendant</em> of the class. This allows activation of DEBUG logging for a single object or all objects of that class.</p>
+<h2><a class="anchor" id="getLogger"></a>
+Instantiation</h2>
 <p>The root logger resides at the top of the hierarchy. It is exceptional in two ways:</p>
 <ol type="1">
 <li>it always exists,</li>
@@ -181,9 +205,9 @@ Requests</h2>
 <div class="line"><span class="comment">// Use a wchar_t first operand to force use of wchar_t based stream.</span></div>
 <div class="line"><span class="comment">//</span></div>
 <div class="line"><a class="code hl_define" href="group__LoggingMacros.html#ga530190bc1766b89d1f69ad572509aed2">LOG4CXX_WARN</a>(logger, L<span class="stringliteral">&quot;&quot;</span> &lt;&lt; i &lt;&lt; L<span class="stringliteral">&quot; is the number of the iteration.&quot;</span>);</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga530190bc1766b89d1f69ad572509aed2"><div class="ttname"><a href="group__LoggingMacros.html#ga530190bc1766b89d1f69ad572509aed2">LOG4CXX_WARN</a></div><div class="ttdeci">#define LOG4CXX_WARN(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for WARN even...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2186</div></div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga61dfed4f5eca82725a90a331f37857d3"><div class="ttname"><a href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a></div><div class="ttdeci">#define LOG4CXX_INFO(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2144</div></div>
-<div class="ttc" id="agroup__LoggingMacros_html_gae1bc2ab20d5f2d7660995ea8244d3a26"><div class="ttname"><a href="group__LoggingMacros.html#gae1bc2ab20d5f2d7660995ea8244d3a26">LOG4CXX_DEBUG</a></div><div class="ttdeci">#define LOG4CXX_DEBUG(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for DEBUG eve...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2073</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga530190bc1766b89d1f69ad572509aed2"><div class="ttname"><a href="group__LoggingMacros.html#ga530190bc1766b89d1f69ad572509aed2">LOG4CXX_WARN</a></div><div class="ttdeci">#define LOG4CXX_WARN(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for WARN even...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2205</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga61dfed4f5eca82725a90a331f37857d3"><div class="ttname"><a href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a></div><div class="ttdeci">#define LOG4CXX_INFO(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2161</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_gae1bc2ab20d5f2d7660995ea8244d3a26"><div class="ttname"><a href="group__LoggingMacros.html#gae1bc2ab20d5f2d7660995ea8244d3a26">LOG4CXX_DEBUG</a></div><div class="ttdeci">#define LOG4CXX_DEBUG(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for DEBUG eve...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2075</div></div>
 </div><!-- fragment --><h3><a class="anchor" id="custom-types"></a>
 Logging Custom Types</h3>
 <p>Often, the data that needs to be logged is not just standard data types (such as int, string, etc), but amalgamations of those types in a data structure such as a class or struct. In order to log these custom types, simply override an <code>operator&lt;&lt;</code> function, the same as if you would print the custom type to <code>std::cout</code>. This can be accomplished by doing the following:</p>
@@ -214,7 +238,7 @@ Using {fmt} style requests</h3>
 </div><!-- fragment --><p>This leads to very awkward code to read and write, especially as iostreams don't support positional arguments at all.</p>
 <p>In order to get around this, Log4cxx provides a family of macros that support positional arguments and printf-like formatting, which makes for much clearer (and more efficient) code like the following:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a>( rootLogger, <span class="stringliteral">&quot;Numbers can be formatted with a format string {:.1f} and as hex: {:x}&quot;</span>, 22.456, 123 );</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga08bbfedb425d706e674fc92a7bcf9b0c"><div class="ttname"><a href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a></div><div class="ttdeci">#define LOG4CXX_INFO_FMT(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2164</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga08bbfedb425d706e674fc92a7bcf9b0c"><div class="ttname"><a href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a></div><div class="ttdeci">#define LOG4CXX_INFO_FMT(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:2182</div></div>
 </div><!-- fragment --><p>The <code>LOG4CXX_[level]_FMT</code> macros use the <a href="https://fmt.dev/latest/index.html">{fmt}</a> library by default. Note that Log4cxx does not include a copy of {fmt}, so you must include the correct headers and linker flags in order to use the <code>LOG4CXX_[level]_FMT</code> family of macros. Provide <code>LOG4CXX_FORMAT_NS=std</code> to the preprocessor to have the <code>LOG4CXX_[level]_FMT</code> macros use the standard library version of <a href="https://en.cppreference.com/w/cpp/utility/format/format">format</a>.</p>
 <p>As with the standard logger macros, these macros will also be compiled out if the <code>LOG4CXX_THRESHOLD</code> macro is set to a level that will compile out the non-FMT macros.</p>
 <p>A full example can be seen in the <a class="el" href="format-string_8cpp-example.html">format-string.cpp</a> file.</p>
@@ -444,7 +468,7 @@ Pattern 4</h2>
     <li class="navelem"><a class="el" href="usage-overview.html">Use</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Nov 17 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Tue Dec 19 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

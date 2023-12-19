@@ -1,8 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!-- HTML header for doxygen 1.8.13-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Apache Log4cxx: com/foo/config3.cpp</title>
@@ -18,15 +19,31 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.apache.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '42']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
-   <div id="projectname">Apache Log4cxx<span id="projectnumber">&#160;Version 1.2.0</span>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Apache Log4cxx
+   &#160;<span id="projectnumber">Version 1.2.0</span>
    </div>
   </td>
  </tr>
@@ -124,8 +141,10 @@ $(document).ready(function(){initNavTree('com_2foo_2config3_8cpp-example.html','
 <div class="line"><span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#elif __APPLE__</span></div>
 <div class="line"><span class="preprocessor">#include &lt;mach-o/dyld.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#elif (defined(_XOPEN_SOURCE) &amp;&amp; _XOPEN_SOURCE &gt;= 500) || (defined(_POSIX_C_SOURCE) &amp;&amp; _POSIX_C_SOURCE &gt;= 200112L)</span></div>
+<div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span> <span class="comment">// getpid</span></div>
 <div class="line"><span class="preprocessor">#else</span></div>
-<div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span>     <span class="comment">/* getpid */</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cstring&gt;</span> <span class="comment">// strncpy</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"> </div>
@@ -147,12 +166,14 @@ $(document).ready(function(){initNavTree('com_2foo_2config3_8cpp-example.html','
 <div class="line">    pathSepar = <span class="charliteral">&#39;\\&#39;</span>;</div>
 <div class="line"><span class="preprocessor">#elif defined(__APPLE__)</span></div>
 <div class="line">    _NSGetExecutablePath(buf, &amp;bufCount);</div>
-<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor">#elif (defined(_XOPEN_SOURCE) &amp;&amp; _XOPEN_SOURCE &gt;= 500) || (defined(_POSIX_C_SOURCE) &amp;&amp; _POSIX_C_SOURCE &gt;= 200112L)</span></div>
 <div class="line">    std::ostringstream exeLink;</div>
 <div class="line">    exeLink &lt;&lt; <span class="stringliteral">&quot;/proc/&quot;</span> &lt;&lt; getpid() &lt;&lt; <span class="stringliteral">&quot;/exe&quot;</span>;</div>
 <div class="line">    bufCount = readlink(exeLink.str().c_str(), buf, bufSize);</div>
 <div class="line">    <span class="keywordflow">if</span> (0 &lt; bufCount)</div>
 <div class="line">        buf[bufCount] = 0;</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line">    strncpy(buf, <span class="stringliteral">&quot;auto-configured&quot;</span>, bufSize);</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line">    std::string programFileName(buf);</div>
 <div class="line">    <span class="keyword">auto</span> slashIndex = programFileName.rfind(pathSepar);</div>
@@ -246,17 +267,18 @@ $(document).ready(function(){initNavTree('com_2foo_2config3_8cpp-example.html','
 <div class="line"><span class="comment">// Retrieve the \c name logger pointer.</span></div>
 <div class="line"><span class="comment">// Configure Log4cxx on the first call.</span></div>
 <div class="line"><span class="keyword">auto</span> getLogger(<span class="keyword">const</span> std::string&amp; name) -&gt; <a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> {</div>
+<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a>;</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">struct </span>log4cxx_initializer {</div>
 <div class="line">        log4cxx_initializer() {</div>
 <div class="line">            SelectConfigurationFile();</div>
 <div class="line">        }</div>
 <div class="line">        ~log4cxx_initializer() {</div>
-<div class="line">            <a id="a4" name="a4"></a><a class="code hl_function" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c">log4cxx::LogManager::shutdown</a>();</div>
+<div class="line">            LogManager::shutdown();</div>
 <div class="line">        }</div>
 <div class="line">    } initialiser;</div>
 <div class="line">    <span class="keywordflow">return</span> name.empty()</div>
-<div class="line">        ? <a id="a5" name="a5"></a><a class="code hl_function" href="classlog4cxx_1_1LogManager.html#a653a8b4b1548f75d9e12615dd4a677f7">log4cxx::LogManager::getRootLogger</a>()</div>
-<div class="line">        : <a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a>::<a id="_a6" name="_a6"></a><a class="code hl_class" href="classlog4cxx_1_1LogManager.html">LogManager</a>::getLogger(name);</div>
+<div class="line">        ? LogManager::getRootLogger()</div>
+<div class="line">        : <a id="_a4" name="_a4"></a><a class="code hl_class" href="classlog4cxx_1_1LogManager.html">LogManager</a>::getLogger(name);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">} } <span class="comment">// namespace com::foo</span></div>
@@ -265,8 +287,6 @@ $(document).ready(function(){initNavTree('com_2foo_2config3_8cpp-example.html','
 <div class="ttc" id="aclasslog4cxx_1_1File_html_a5767b2ad500f0c74134e9f7b05a9f340"><div class="ttname"><a href="classlog4cxx_1_1File.html#a5767b2ad500f0c74134e9f7b05a9f340">log4cxx::File::exists</a></div><div class="ttdeci">bool exists(log4cxx::helpers::Pool &amp;p) const</div><div class="ttdoc">Determines if file exists.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1File_html_ad1b4f9ddc03b479af34a49eca3657f5a"><div class="ttname"><a href="classlog4cxx_1_1File.html#ad1b4f9ddc03b479af34a49eca3657f5a">log4cxx::File::getPath</a></div><div class="ttdeci">LogString getPath() const</div><div class="ttdoc">Get file path.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1LogManager_html"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html">log4cxx::LogManager</a></div><div class="ttdoc">Use the LogManager class to retreive Logger instances or to operate on the current LoggerRepository.</div><div class="ttdef"><b>Definition:</b> logmanager.h:45</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1LogManager_html_a653a8b4b1548f75d9e12615dd4a677f7"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html#a653a8b4b1548f75d9e12615dd4a677f7">log4cxx::LogManager::getRootLogger</a></div><div class="ttdeci">static LoggerPtr getRootLogger()</div><div class="ttdoc">Retrieve the root logger from the LoggerRepository.</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1LogManager_html_ad8845f4e8c6c840c7825bde2c9ce7e7c"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c">log4cxx::LogManager::shutdown</a></div><div class="ttdeci">static void shutdown()</div><div class="ttdoc">Safely close and remove all appenders in all loggers including the root logger.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1Pool_html"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a></div><div class="ttdef"><b>Definition:</b> pool.h:33</div></div>
 <div class="ttc" id="adefaultconfigurator_8h_html"><div class="ttname"><a href="defaultconfigurator_8h.html">defaultconfigurator.h</a></div></div>
 <div class="ttc" id="afile_8h_html"><div class="ttname"><a href="file_8h.html">file.h</a></div></div>
@@ -286,7 +306,7 @@ $(document).ready(function(){initNavTree('com_2foo_2config3_8cpp-example.html','
   <ul>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Nov 17 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Tue Dec 19 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

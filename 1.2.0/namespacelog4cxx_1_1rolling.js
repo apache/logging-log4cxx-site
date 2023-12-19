@@ -15,7 +15,6 @@ var namespacelog4cxx_1_1rolling =
     [ "TimeBasedRollingPolicy", "classlog4cxx_1_1rolling_1_1TimeBasedRollingPolicy.html", "classlog4cxx_1_1rolling_1_1TimeBasedRollingPolicy" ],
     [ "TriggeringPolicy", "classlog4cxx_1_1rolling_1_1TriggeringPolicy.html", "classlog4cxx_1_1rolling_1_1TriggeringPolicy" ],
     [ "ZipCompressAction", "classlog4cxx_1_1rolling_1_1ZipCompressAction.html", "classlog4cxx_1_1rolling_1_1ZipCompressAction" ],
-    [ "LOG4CXX_INSTANTIATE_EXPORTED_PTR", "namespacelog4cxx_1_1rolling.html#ab1c7de85c2ee73a8363d914900bae3fc", null ],
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx_1_1rolling.html#a4978d6410cb1e7423191df11a3aa67e3", null ],
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx_1_1rolling.html#a4bed2a8936c1a4a6ba022586ef638d6e", null ],
     [ "LOG4CXX_PTR_DEF", "namespacelog4cxx_1_1rolling.html#a349aa89f172bd1dbdc80b2683c916849", null ],

@@ -7,6 +7,8 @@ var usage_overview =
     ] ],
     [ "Loggers, Appenders and Layouts", "concepts.html", [
       [ "Loggers", "concepts.html#loggers", [
+        [ "Naming", "concepts.html#naming", null ],
+        [ "Instantiation", "concepts.html#getLogger", null ],
         [ "Requests", "concepts.html#requests", [
           [ "Logging Custom Types", "concepts.html#custom-types", null ],
           [ "Using {fmt} style requests", "concepts.html#logging-with-fmt", null ],
@@ -61,5 +63,12 @@ var usage_overview =
       [ "My application on Windows crashes on shutdown?", "faq.html#msvc_crash", null ],
       [ "Does Apache Log4cxx support Unicode?", "faq.html#unicode_supported", null ],
       [ "Does Log4cxx support logging at process termination?", "faq.html#atexit_events", null ]
-    ] ]
+    ] ],
+    [ "Usage with your build system", "buildsystems.html", [
+      [ "How do I use Log4cxx with CMake?", "buildsystems.html#use_with_cmake", null ],
+      [ "How do I use Log4cxx with CMake and pkg-config?", "buildsystems.html#use_with_cmake_pkgconfig", null ],
+      [ "How do I use Log4cxx with QMake?", "buildsystems.html#use_with_qmake", null ],
+      [ "How do I use Log4cxx with plain Make?", "buildsystems.html#use_with_make", null ]
+    ] ],
+    [ "Log Flow", "log-flow.html", null ]
 ];

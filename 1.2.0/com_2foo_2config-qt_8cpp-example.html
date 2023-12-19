@@ -1,8 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!-- HTML header for doxygen 1.8.13-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Apache Log4cxx: com/foo/config-qt.cpp</title>
@@ -18,15 +19,31 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.apache.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '42']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr id="projectrow">
-  <td id="projectalign">
-   <div id="projectname">Apache Log4cxx<span id="projectnumber">&#160;Version 1.2.0</span>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Apache Log4cxx
+   &#160;<span id="projectnumber">Version 1.2.0</span>
    </div>
   </td>
  </tr>
@@ -125,9 +142,10 @@ $(document).ready(function(){initNavTree('com_2foo_2config-qt_8cpp-example.html'
 <div class="line"><span class="comment">// Provide the name of the configuration file to Log4cxx.</span></div>
 <div class="line"><span class="comment">// Reload the configuration on a QFileSystemWatcher::fileChanged event.</span></div>
 <div class="line"><span class="keywordtype">void</span> ConfigureLogging() {</div>
+<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a>;</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">struct </span>log4cxx_finalizer {</div>
 <div class="line">        ~log4cxx_finalizer() {</div>
-<div class="line">            <a id="a0" name="a0"></a><a class="code hl_function" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c">log4cxx::LogManager::shutdown</a>();</div>
+<div class="line">            LogManager::shutdown();</div>
 <div class="line">        }</div>
 <div class="line">    } finaliser;</div>
 <div class="line">    QFileInfo app{QCoreApplication::applicationFilePath()};</div>
@@ -146,41 +164,38 @@ $(document).ready(function(){initNavTree('com_2foo_2config-qt_8cpp-example.html'
 <div class="line">        , QString(<span class="stringliteral">&quot;log4j.properties&quot;</span>)</div>
 <div class="line">    };</div>
 <div class="line"><span class="preprocessor">#if defined(_DEBUG)</span></div>
-<div class="line">    <a id="a1" name="a1"></a><a class="code hl_function" href="classlog4cxx_1_1helpers_1_1LogLog.html#a4a9ff479866ace05c88c8a167ff2c2fa">log4cxx::helpers::LogLog::setInternalDebugging</a>(<span class="keyword">true</span>);</div>
+<div class="line">    helpers::LogLog::setInternalDebugging(<span class="keyword">true</span>);</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line">    <span class="keyword">auto</span> status       = <a id="a2" name="a2"></a><a class="code hl_enumvalue" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815">log4cxx::spi::ConfigurationStatus::NotConfigured</a>;</div>
+<div class="line">    <span class="keyword">auto</span> status       = spi::ConfigurationStatus::NotConfigured;</div>
 <div class="line">    <span class="keyword">auto</span> selectedPath = QString();</div>
-<div class="line">    std::tie(status, selectedPath) = <a id="a3" name="a3"></a><a class="code hl_function" href="classlog4cxx_1_1qt_1_1Configuration.html#a8b65e56d883a45a44b2b2cb790f5d463">log4cxx::qt::Configuration::configureFromFileAndWatch</a>(paths, names);</div>
-<div class="line">    <span class="keywordflow">if</span> (status == <a class="code hl_enumvalue" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815">log4cxx::spi::ConfigurationStatus::NotConfigured</a>)</div>
-<div class="line">        <a id="a4" name="a4"></a><a class="code hl_function" href="classlog4cxx_1_1BasicConfigurator.html#a3fa54f4589f908a886576c1bba3f113d">log4cxx::BasicConfigurator::configure</a>(); <span class="comment">// Send events to the console</span></div>
+<div class="line">    std::tie(status, selectedPath) = qt::Configuration::configureFromFileAndWatch(paths, names);</div>
+<div class="line">    <span class="keywordflow">if</span> (status == spi::ConfigurationStatus::NotConfigured)</div>
+<div class="line">        BasicConfigurator::configure(); <span class="comment">// Send events to the console</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Retrieve the \c name logger pointer.</span></div>
-<div class="line"><span class="keyword">auto</span> getLogger(<span class="keyword">const</span> QString&amp; name) -&gt; LoggerPtr {</div>
+<div class="line"><span class="keyword">auto</span> getLogger(<span class="keyword">const</span> QString&amp; name) -&gt; <a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> {</div>
+<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> name.isEmpty()</div>
-<div class="line">        ? <a id="a5" name="a5"></a><a class="code hl_function" href="classlog4cxx_1_1LogManager.html#a653a8b4b1548f75d9e12615dd4a677f7">log4cxx::LogManager::getRootLogger</a>()</div>
-<div class="line">        : <a id="a6" name="a6"></a><a class="code hl_function" href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">log4cxx::LogManager::getLogger</a>(name.toStdString());</div>
+<div class="line">        ? LogManager::getRootLogger()</div>
+<div class="line">        : LogManager::getLogger(name.toStdString());</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Retrieve the \c name logger pointer.</span></div>
-<div class="line"><span class="keyword">auto</span> getLogger(<span class="keyword">const</span> <span class="keywordtype">char</span>* name) -&gt; LoggerPtr {</div>
+<div class="line"><span class="keyword">auto</span> getLogger(<span class="keyword">const</span> <span class="keywordtype">char</span>* name) -&gt; <a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> {</div>
+<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a>;</div>
 <div class="line">    <span class="keywordflow">return</span> name</div>
-<div class="line">        ? <a class="code hl_function" href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">log4cxx::LogManager::getLogger</a>(name)</div>
-<div class="line">        : <a class="code hl_function" href="classlog4cxx_1_1LogManager.html#a653a8b4b1548f75d9e12615dd4a677f7">log4cxx::LogManager::getRootLogger</a>();</div>
+<div class="line">        ? LogManager::getLogger(name)</div>
+<div class="line">        : LogManager::getRootLogger();</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">} } <span class="comment">// namespace com::foo</span></div>
 <div class="ttc" id="abasicconfigurator_8h_html"><div class="ttname"><a href="basicconfigurator_8h.html">basicconfigurator.h</a></div></div>
-<div class="ttc" id="aclasslog4cxx_1_1BasicConfigurator_html_a3fa54f4589f908a886576c1bba3f113d"><div class="ttname"><a href="classlog4cxx_1_1BasicConfigurator.html#a3fa54f4589f908a886576c1bba3f113d">log4cxx::BasicConfigurator::configure</a></div><div class="ttdeci">static void configure(const LayoutPtr &amp;layout=LayoutPtr())</div><div class="ttdoc">Add a ConsoleAppender to the root logger that formats output using layout.</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1LogManager_html_a653a8b4b1548f75d9e12615dd4a677f7"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html#a653a8b4b1548f75d9e12615dd4a677f7">log4cxx::LogManager::getRootLogger</a></div><div class="ttdeci">static LoggerPtr getRootLogger()</div><div class="ttdoc">Retrieve the root logger from the LoggerRepository.</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1LogManager_html_ac1c64a1bd2c15d3018f3a022a059074e"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">log4cxx::LogManager::getLogger</a></div><div class="ttdeci">static LoggerPtr getLogger(const std::string &amp;name)</div><div class="ttdoc">Retrieve the name Logger instance from the LoggerRepository using DefaultLoggerFactory to create it i...</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1LogManager_html_ad8845f4e8c6c840c7825bde2c9ce7e7c"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c">log4cxx::LogManager::shutdown</a></div><div class="ttdeci">static void shutdown()</div><div class="ttdoc">Safely close and remove all appenders in all loggers including the root logger.</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1helpers_1_1LogLog_html_a4a9ff479866ace05c88c8a167ff2c2fa"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1LogLog.html#a4a9ff479866ace05c88c8a167ff2c2fa">log4cxx::helpers::LogLog::setInternalDebugging</a></div><div class="ttdeci">static void setInternalDebugging(bool enabled)</div><div class="ttdoc">Use the value of enabled as the new internal debug logging state.</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1qt_1_1Configuration_html_a8b65e56d883a45a44b2b2cb790f5d463"><div class="ttname"><a href="classlog4cxx_1_1qt_1_1Configuration.html#a8b65e56d883a45a44b2b2cb790f5d463">log4cxx::qt::Configuration::configureFromFileAndWatch</a></div><div class="ttdeci">static std::tuple&lt; log4cxx::spi::ConfigurationStatus, QString &gt; configureFromFileAndWatch(const QVector&lt; QString &gt; &amp;directories, const QVector&lt; QString &gt; &amp;filenames)</div><div class="ttdoc">Configure Log4cxx and watch the file for changes.</div></div>
 <div class="ttc" id="aconfiguration_8h_html"><div class="ttname"><a href="configuration_8h.html">configuration.h</a></div></div>
 <div class="ttc" id="aloglog_8h_html"><div class="ttname"><a href="loglog_8h.html">loglog.h</a></div></div>
 <div class="ttc" id="alogmanager_8h_html"><div class="ttname"><a href="logmanager_8h.html">logmanager.h</a></div></div>
-<div class="ttc" id="anamespacelog4cxx_1_1spi_html_a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815"><div class="ttname"><a href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815">log4cxx::spi::ConfigurationStatus::NotConfigured</a></div><div class="ttdeci">@ NotConfigured</div></div>
+<div class="ttc" id="anamespacelog4cxx_html"><div class="ttname"><a href="namespacelog4cxx.html">log4cxx</a></div><div class="ttdef"><b>Definition:</b> configuration.h:25</div></div>
+<div class="ttc" id="anamespacelog4cxx_html_acd073adf77cc8545b10ac024a474be0d"><div class="ttname"><a href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Logger &gt; LoggerPtr</div><div class="ttdef"><b>Definition:</b> defaultloggerfactory.h:27</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
@@ -189,7 +204,7 @@ $(document).ready(function(){initNavTree('com_2foo_2config-qt_8cpp-example.html'
   <ul>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Nov 17 2023 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Tue Dec 19 2023 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

@@ -1,7 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"timezone_8h.html#a7d8906c247b9196e056c2337bd0c0628":[9,0,1,0,0,0,3,58,1],
-"timezone_8h_source.html":[9,0,1,0,0,0,3,58],
 "transform_8h.html":[9,0,1,0,0,0,3,60],
 "transform_8h_source.html":[9,0,1,0,0,0,3,60],
 "triggeringeventevaluator_8h.html":[9,0,1,0,0,0,8,13],
@@ -16,9 +14,9 @@ var NAVTREEINDEX18 =
 "writer_8h.html":[9,0,1,0,0,0,3,62],
 "writer_8h.html#afece62256472f52c5ded7fc891d12044":[9,0,1,0,0,0,3,62,1],
 "writer_8h_source.html":[9,0,1,0,0,0,3,62],
-"writerappender_8h.html":[9,0,1,0,0,0,37],
-"writerappender_8h.html#a30f3aa72b838cb70faa606b2d53b87ca":[9,0,1,0,0,0,37,1],
-"writerappender_8h_source.html":[9,0,1,0,0,0,37],
+"writerappender_8h.html":[9,0,1,0,0,0,39],
+"writerappender_8h.html#a30f3aa72b838cb70faa606b2d53b87ca":[9,0,1,0,0,0,39,1],
+"writerappender_8h_source.html":[9,0,1,0,0,0,39],
 "xml_8h.html":[9,0,1,0,0,0,3,63],
 "xml_8h.html#a018814451d16ec57ac35e06e16161945":[9,0,1,0,0,0,3,63,9],
 "xml_8h.html#a05287f2d189ad3fc0cccf6802b7903ab":[9,0,1,0,0,0,3,63,5],

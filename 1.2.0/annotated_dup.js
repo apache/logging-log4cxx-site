@@ -197,7 +197,6 @@ var annotated_dup =
         [ "FallbackErrorHandler", "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html", "classlog4cxx_1_1varia_1_1FallbackErrorHandler" ]
       ] ],
       [ "xml", "namespacelog4cxx_1_1xml.html", [
-        [ "DOMConfigurator", "classlog4cxx_1_1xml_1_1DOMConfigurator.html", "classlog4cxx_1_1xml_1_1DOMConfigurator" ],
         [ "XMLLayout", "classlog4cxx_1_1xml_1_1XMLLayout.html", "classlog4cxx_1_1xml_1_1XMLLayout" ]
       ] ],
       [ "Appender", "classlog4cxx_1_1Appender.html", "classlog4cxx_1_1Appender" ],
@@ -215,7 +214,9 @@ var annotated_dup =
       [ "JSONLayout", "classlog4cxx_1_1JSONLayout.html", "classlog4cxx_1_1JSONLayout" ],
       [ "Layout", "classlog4cxx_1_1Layout.html", "classlog4cxx_1_1Layout" ],
       [ "Level", "classlog4cxx_1_1Level.html", "classlog4cxx_1_1Level" ],
+      [ "LevelChange", "classlog4cxx_1_1LevelChange.html", "classlog4cxx_1_1LevelChange" ],
       [ "Logger", "classlog4cxx_1_1Logger.html", "classlog4cxx_1_1Logger" ],
+      [ "LoggerInstancePtr", "classlog4cxx_1_1LoggerInstancePtr.html", "classlog4cxx_1_1LoggerInstancePtr" ],
       [ "LogManager", "classlog4cxx_1_1LogManager.html", null ],
       [ "logstream", "classlog4cxx_1_1logstream.html", "classlog4cxx_1_1logstream" ],
       [ "logstream_base", "classlog4cxx_1_1logstream__base.html", "classlog4cxx_1_1logstream__base" ],

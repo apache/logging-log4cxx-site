@@ -46,9 +46,11 @@ var hierarchy =
     [ "log4cxx::File", "classlog4cxx_1_1File.html", null ],
     [ "log4cxx::pattern::FileDatePatternConverter", "classlog4cxx_1_1pattern_1_1FileDatePatternConverter.html", null ],
     [ "log4cxx::helpers::FileWatchdog", "classlog4cxx_1_1helpers_1_1FileWatchdog.html", null ],
+    [ "log4cxx::LevelChange", "classlog4cxx_1_1LevelChange.html", null ],
     [ "log4cxx::helpers::Loader", "classlog4cxx_1_1helpers_1_1Loader.html", null ],
     [ "log4cxx::helpers::Locale", "classlog4cxx_1_1helpers_1_1Locale.html", null ],
     [ "log4cxx::spi::LocationInfo", "classlog4cxx_1_1spi_1_1LocationInfo.html", null ],
+    [ "log4cxx::LoggerInstancePtr", "classlog4cxx_1_1LoggerInstancePtr.html", null ],
     [ "log4cxx::helpers::LogLog", "classlog4cxx_1_1helpers_1_1LogLog.html", null ],
     [ "log4cxx::LogManager", "classlog4cxx_1_1LogManager.html", null ],
     [ "log4cxx::logstream_base", "classlog4cxx_1_1logstream__base.html", [
@@ -191,8 +193,7 @@ var hierarchy =
         [ "log4cxx::helpers::AppenderAttachableImpl", "classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html", null ]
       ] ],
       [ "log4cxx::spi::Configurator", "classlog4cxx_1_1spi_1_1Configurator.html", [
-        [ "log4cxx::PropertyConfigurator", "classlog4cxx_1_1PropertyConfigurator.html", null ],
-        [ "log4cxx::xml::DOMConfigurator", "classlog4cxx_1_1xml_1_1DOMConfigurator.html", null ]
+        [ "log4cxx::PropertyConfigurator", "classlog4cxx_1_1PropertyConfigurator.html", null ]
       ] ],
       [ "log4cxx::spi::DefaultRepositorySelector", "classlog4cxx_1_1spi_1_1DefaultRepositorySelector.html", null ],
       [ "log4cxx::spi::HierarchyEventListener", "classlog4cxx_1_1spi_1_1HierarchyEventListener.html", null ],

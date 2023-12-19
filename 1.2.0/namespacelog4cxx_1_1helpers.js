@@ -105,9 +105,6 @@ var namespacelog4cxx_1_1helpers =
       [ "NameThreadOnly", "namespacelog4cxx_1_1helpers.html#a84bb84c01710854af8519e70d8a548d4ae63069f8afeeedaa2919a4528094bcaf", null ],
       [ "BlockSignalsAndNameThread", "namespacelog4cxx_1_1helpers.html#a84bb84c01710854af8519e70d8a548d4ace3cf34390ba5c8471c51d27d58a8456", null ]
     ] ],
-    [ "LOG4CXX_INSTANTIATE_EXPORTED_PTR", "namespacelog4cxx_1_1helpers.html#a47b3d4db7e3a2084a377b3e00d33b1bf", null ],
-    [ "LOG4CXX_INSTANTIATE_EXPORTED_PTR", "namespacelog4cxx_1_1helpers.html#a2fc1295b3499711272013a8b766df664", null ],
-    [ "LOG4CXX_INSTANTIATE_EXPORTED_PTR", "namespacelog4cxx_1_1helpers.html#ace9a889c7d888cfebf05a460385da926", null ],
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx_1_1helpers.html#a5dcc73cec8dde9c69b41b0403b034e80", null ],
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx_1_1helpers.html#af4f7ff8a19160c01d739720a38e07769", null ],
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx_1_1helpers.html#a095bc296152ff935f181d9b67c5cd0c2", null ],
