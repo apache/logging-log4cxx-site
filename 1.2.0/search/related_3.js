@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sockethandler_0',['SocketHandler',['../classlog4cxx_1_1net_1_1TelnetAppender.html#aa3a167a015ca337769b3873aba4e8fdb',1,'log4cxx::net::TelnetAppender']]]
+  ['implicitproducer_0',['ImplicitProducer',['../classmoodycamel_1_1ConcurrentQueue.html#ab79e82aa1a04eb71ff8297700ff94d58',1,'moodycamel::ConcurrentQueue']]]
 ];

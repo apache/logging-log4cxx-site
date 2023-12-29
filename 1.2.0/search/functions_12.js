@@ -5,6 +5,7 @@ var searchData=
   ['unknownhostexception_2',['UnknownHostException',['../classlog4cxx_1_1helpers_1_1UnknownHostException.html#a3acb5c1f30ac3b244a7b3b2831f51792',1,'log4cxx::helpers::UnknownHostException::UnknownHostException(const LogString &amp;msg)'],['../classlog4cxx_1_1helpers_1_1UnknownHostException.html#a96216d487abc8c97b8137442bc2da284',1,'log4cxx::helpers::UnknownHostException::UnknownHostException(const UnknownHostException &amp;src)']]],
   ['unregisterall_3',['unregisterAll',['../classlog4cxx_1_1helpers_1_1APRInitializer.html#a0a0656ba0443dc68cc24eeb2973505f0',1,'log4cxx::helpers::APRInitializer']]],
   ['unregistercleanup_4',['unregisterCleanup',['../classlog4cxx_1_1helpers_1_1APRInitializer.html#adf9ce4d6debaea0b929e55db4cf2cb23',1,'log4cxx::helpers::APRInitializer']]],
-  ['updatechildren_5',['updateChildren',['../classlog4cxx_1_1Hierarchy.html#a9836b2763eb49d6bb67639feb93e5ab8',1,'log4cxx::Hierarchy']]],
-  ['updatethreshold_6',['updateThreshold',['../classlog4cxx_1_1Logger.html#ad5b0374c9cff962f0d070882d3b01fa2',1,'log4cxx::Logger']]]
+  ['unsubscribe_5',['unsubscribe',['../classmoodycamel_1_1details_1_1ThreadExitNotifier.html#a75d86f4f47adcf30091647566496ece9',1,'moodycamel::details::ThreadExitNotifier']]],
+  ['updatechildren_6',['updateChildren',['../classlog4cxx_1_1Hierarchy.html#a9836b2763eb49d6bb67639feb93e5ab8',1,'log4cxx::Hierarchy']]],
+  ['updatethreshold_7',['updateThreshold',['../classlog4cxx_1_1Logger.html#ad5b0374c9cff962f0d070882d3b01fa2',1,'log4cxx::Logger']]]
 ];

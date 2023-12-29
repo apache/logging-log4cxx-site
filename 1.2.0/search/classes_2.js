@@ -1,19 +1,10 @@
 var searchData=
 [
-  ['cacheddateformat_0',['CachedDateFormat',['../classlog4cxx_1_1pattern_1_1CachedDateFormat.html',1,'log4cxx::pattern']]],
-  ['charmessagebuffer_1',['CharMessageBuffer',['../classlog4cxx_1_1helpers_1_1CharMessageBuffer.html',1,'log4cxx::helpers']]],
-  ['charsetdecoder_2',['CharsetDecoder',['../classlog4cxx_1_1helpers_1_1CharsetDecoder.html',1,'log4cxx::helpers']]],
-  ['charsetencoder_3',['CharsetEncoder',['../classlog4cxx_1_1helpers_1_1CharsetEncoder.html',1,'log4cxx::helpers']]],
-  ['class_4',['Class',['../classlog4cxx_1_1helpers_1_1Class.html',1,'log4cxx::helpers']]],
-  ['classnamepatternconverter_5',['ClassNamePatternConverter',['../classlog4cxx_1_1pattern_1_1ClassNamePatternConverter.html',1,'log4cxx::pattern']]],
-  ['classnotfoundexception_6',['ClassNotFoundException',['../classlog4cxx_1_1helpers_1_1ClassNotFoundException.html',1,'log4cxx::helpers']]],
-  ['classregistration_7',['ClassRegistration',['../classlog4cxx_1_1helpers_1_1ClassRegistration.html',1,'log4cxx::helpers']]],
-  ['closedchannelexception_8',['ClosedChannelException',['../classlog4cxx_1_1helpers_1_1ClosedChannelException.html',1,'log4cxx::helpers']]],
-  ['colorendpatternconverter_9',['ColorEndPatternConverter',['../classlog4cxx_1_1pattern_1_1ColorEndPatternConverter.html',1,'log4cxx::pattern']]],
-  ['colorstartpatternconverter_10',['ColorStartPatternConverter',['../classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html',1,'log4cxx::pattern']]],
-  ['configuration_11',['Configuration',['../classlog4cxx_1_1qt_1_1Configuration.html',1,'log4cxx::qt']]],
-  ['configurator_12',['Configurator',['../classlog4cxx_1_1spi_1_1Configurator.html',1,'log4cxx::spi']]],
-  ['connectexception_13',['ConnectException',['../classlog4cxx_1_1helpers_1_1ConnectException.html',1,'log4cxx::helpers']]],
-  ['consoleappender_14',['ConsoleAppender',['../classlog4cxx_1_1ConsoleAppender.html',1,'log4cxx']]],
-  ['cyclicbuffer_15',['CyclicBuffer',['../classlog4cxx_1_1helpers_1_1CyclicBuffer.html',1,'log4cxx::helpers']]]
+  ['basicconfigurator_0',['BasicConfigurator',['../classlog4cxx_1_1BasicConfigurator.html',1,'log4cxx']]],
+  ['bindexception_1',['BindException',['../classlog4cxx_1_1helpers_1_1BindException.html',1,'log4cxx::helpers']]],
+  ['blockingconcurrentqueue_2',['BlockingConcurrentQueue',['../classmoodycamel_1_1BlockingConcurrentQueue.html',1,'moodycamel']]],
+  ['bufferedwriter_3',['BufferedWriter',['../classlog4cxx_1_1helpers_1_1BufferedWriter.html',1,'log4cxx::helpers']]],
+  ['bytearrayinputstream_4',['ByteArrayInputStream',['../classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html',1,'log4cxx::helpers']]],
+  ['bytearrayoutputstream_5',['ByteArrayOutputStream',['../classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html',1,'log4cxx::helpers']]],
+  ['bytebuffer_6',['ByteBuffer',['../classlog4cxx_1_1helpers_1_1ByteBuffer.html',1,'log4cxx::helpers']]]
 ];

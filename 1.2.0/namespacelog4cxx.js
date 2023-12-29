@@ -64,7 +64,7 @@ var namespacelog4cxx =
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx.html#a856b6c83ec575993bb85276eda2729a7", null ],
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx.html#a765ee41060e7c6800758ec4731bb59a3", null ],
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx.html#ae273fb0f54f87928855e6e11e8d5297c", null ],
-    [ "LOG4CXX_LIST_DEF", "namespacelog4cxx.html#a4b2aa3d8f6ebdb7590483bfe9b822ebb", null ],
+    [ "LOG4CXX_LIST_DEF", "namespacelog4cxx.html#a08e1af5ede117431a42107b3eb5fd32c", null ],
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx.html#a493864da208cf35303fceb83d74443a3", null ],
     [ "LOG4CXX_PTR_DEF", "namespacelog4cxx.html#ac860424200b65dc9449d08dc539068b2", null ],
     [ "LOG4CXX_PTR_DEF", "namespacelog4cxx.html#a4dd14bbff1ee5f5aa9af0472d9125112", null ],

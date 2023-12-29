@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['patternconverter_0',['PatternConverter',['../classlog4cxx_1_1pattern_1_1PatternConverter.html',1,'log4cxx::pattern']]],
-  ['patternlayout_1',['PatternLayout',['../classlog4cxx_1_1PatternLayout.html',1,'log4cxx']]],
-  ['patternparser_2',['PatternParser',['../classlog4cxx_1_1pattern_1_1PatternParser.html',1,'log4cxx::pattern']]],
-  ['pool_3',['Pool',['../classlog4cxx_1_1helpers_1_1Pool.html',1,'log4cxx::helpers']]],
-  ['poolexception_4',['PoolException',['../classlog4cxx_1_1helpers_1_1PoolException.html',1,'log4cxx::helpers']]],
-  ['properties_5',['Properties',['../classlog4cxx_1_1helpers_1_1Properties.html',1,'log4cxx::helpers']]],
-  ['propertiespatternconverter_6',['PropertiesPatternConverter',['../classlog4cxx_1_1pattern_1_1PropertiesPatternConverter.html',1,'log4cxx::pattern']]],
-  ['propertyconfigurator_7',['PropertyConfigurator',['../classlog4cxx_1_1PropertyConfigurator.html',1,'log4cxx']]],
-  ['propertyfilter_8',['PropertyFilter',['../classlog4cxx_1_1filter_1_1PropertyFilter.html',1,'log4cxx::filter']]],
-  ['propertyresourcebundle_9',['PropertyResourceBundle',['../classlog4cxx_1_1helpers_1_1PropertyResourceBundle.html',1,'log4cxx::helpers']]],
-  ['propertysetter_10',['PropertySetter',['../classlog4cxx_1_1config_1_1PropertySetter.html',1,'log4cxx::config']]]
+  ['object_0',['Object',['../classlog4cxx_1_1helpers_1_1Object.html',1,'log4cxx::helpers']]],
+  ['odbcappender_1',['ODBCAppender',['../classlog4cxx_1_1db_1_1ODBCAppender.html',1,'log4cxx::db']]],
+  ['onlyonceerrorhandler_2',['OnlyOnceErrorHandler',['../classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html',1,'log4cxx::helpers']]],
+  ['optionconverter_3',['OptionConverter',['../classlog4cxx_1_1helpers_1_1OptionConverter.html',1,'log4cxx::helpers']]],
+  ['optionhandler_4',['OptionHandler',['../classlog4cxx_1_1spi_1_1OptionHandler.html',1,'log4cxx::spi']]],
+  ['outputdebugstringappender_5',['OutputDebugStringAppender',['../classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html',1,'log4cxx::nt']]],
+  ['outputstream_6',['OutputStream',['../classlog4cxx_1_1helpers_1_1OutputStream.html',1,'log4cxx::helpers']]],
+  ['outputstreamwriter_7',['OutputStreamWriter',['../classlog4cxx_1_1helpers_1_1OutputStreamWriter.html',1,'log4cxx::helpers']]]
 ];
