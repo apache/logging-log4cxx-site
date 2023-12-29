@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['default_5fdelay_0',['DEFAULT_DELAY',['../classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a',1,'log4cxx::helpers::FileWatchdog']]],
-  ['default_5fport_1',['DEFAULT_PORT',['../classlog4cxx_1_1net_1_1XMLSocketAppender.html#aa37b5dff33a045a853e847531283adc5',1,'log4cxx::net::XMLSocketAppender']]],
-  ['default_5freconnection_5fdelay_2',['DEFAULT_RECONNECTION_DELAY',['../classlog4cxx_1_1net_1_1XMLSocketAppender.html#a0f9dee42f58794461c51986e50578848',1,'log4cxx::net::XMLSocketAppender']]]
+  ['max_5fevent_5flen_0',['MAX_EVENT_LEN',['../classlog4cxx_1_1net_1_1XMLSocketAppender.html#ae55c61d140913dcd3e824353e8409c0c',1,'log4cxx::net::XMLSocketAppender']]],
+  ['maxfilesize_1',['maxFileSize',['../classlog4cxx_1_1rolling_1_1SizeBasedTriggeringPolicy.html#ab8d88af4ab8bc9a14ac6fd46e90bf427',1,'log4cxx::rolling::SizeBasedTriggeringPolicy']]]
 ];

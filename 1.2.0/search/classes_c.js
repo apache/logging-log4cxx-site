@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['manualtriggeringpolicy_0',['ManualTriggeringPolicy',['../classlog4cxx_1_1rolling_1_1ManualTriggeringPolicy.html',1,'log4cxx::rolling']]],
-  ['mapfilter_1',['MapFilter',['../classlog4cxx_1_1filter_1_1MapFilter.html',1,'log4cxx::filter']]],
-  ['max_5falign_5ft_2',['max_align_t',['../unionmoodycamel_1_1details_1_1max__align__t.html',1,'moodycamel::details']]],
-  ['mdc_3',['MDC',['../classlog4cxx_1_1MDC.html',1,'log4cxx']]],
-  ['mdcpatternconverter_4',['MDCPatternConverter',['../classlog4cxx_1_1pattern_1_1MDCPatternConverter.html',1,'log4cxx::pattern']]],
-  ['messagebuffer_5',['MessageBuffer',['../classlog4cxx_1_1helpers_1_1MessageBuffer.html',1,'log4cxx::helpers']]],
-  ['messagepatternconverter_6',['MessagePatternConverter',['../classlog4cxx_1_1pattern_1_1MessagePatternConverter.html',1,'log4cxx::pattern']]],
-  ['methodlocationpatternconverter_7',['MethodLocationPatternConverter',['../classlog4cxx_1_1pattern_1_1MethodLocationPatternConverter.html',1,'log4cxx::pattern']]],
-  ['missingresourceexception_8',['MissingResourceException',['../classlog4cxx_1_1helpers_1_1MissingResourceException.html',1,'log4cxx::helpers']]],
-  ['multiprocessrollingfileappender_9',['MultiprocessRollingFileAppender',['../classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html',1,'log4cxx::rolling']]]
+  ['nameabbreviator_0',['NameAbbreviator',['../classlog4cxx_1_1pattern_1_1NameAbbreviator.html',1,'log4cxx::pattern']]],
+  ['namepatternconverter_1',['NamePatternConverter',['../classlog4cxx_1_1pattern_1_1NamePatternConverter.html',1,'log4cxx::pattern']]],
+  ['ndc_2',['NDC',['../classlog4cxx_1_1NDC.html',1,'log4cxx']]],
+  ['ndcpatternconverter_3',['NDCPatternConverter',['../classlog4cxx_1_1pattern_1_1NDCPatternConverter.html',1,'log4cxx::pattern']]],
+  ['nosuchelementexception_4',['NoSuchElementException',['../classlog4cxx_1_1helpers_1_1NoSuchElementException.html',1,'log4cxx::helpers']]],
+  ['nteventlogappender_5',['NTEventLogAppender',['../classlog4cxx_1_1nt_1_1NTEventLogAppender.html',1,'log4cxx::nt']]],
+  ['nullpointerexception_6',['NullPointerException',['../classlog4cxx_1_1helpers_1_1NullPointerException.html',1,'log4cxx::helpers']]]
 ];

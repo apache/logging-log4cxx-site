@@ -1,21 +1,6 @@
 var searchData=
 [
-  ['telnetappender_0',['TelnetAppender',['../classlog4cxx_1_1net_1_1TelnetAppender.html',1,'log4cxx::net']]],
-  ['thread_5fid_5fconverter_1',['thread_id_converter',['../structmoodycamel_1_1details_1_1thread__id__converter.html',1,'moodycamel::details']]],
-  ['threadexception_2',['ThreadException',['../classlog4cxx_1_1helpers_1_1ThreadException.html',1,'log4cxx::helpers']]],
-  ['threadexitlistener_3',['ThreadExitListener',['../structmoodycamel_1_1details_1_1ThreadExitListener.html',1,'moodycamel::details']]],
-  ['threadexitnotifier_4',['ThreadExitNotifier',['../classmoodycamel_1_1details_1_1ThreadExitNotifier.html',1,'moodycamel::details']]],
-  ['threadlocal_5',['ThreadLocal',['../classlog4cxx_1_1helpers_1_1ThreadLocal.html',1,'log4cxx::helpers']]],
-  ['threadpatternconverter_6',['ThreadPatternConverter',['../classlog4cxx_1_1pattern_1_1ThreadPatternConverter.html',1,'log4cxx::pattern']]],
-  ['threadspecificdata_7',['ThreadSpecificData',['../classlog4cxx_1_1helpers_1_1ThreadSpecificData.html',1,'log4cxx::helpers']]],
-  ['threadusernamepatternconverter_8',['ThreadUsernamePatternConverter',['../classlog4cxx_1_1pattern_1_1ThreadUsernamePatternConverter.html',1,'log4cxx::pattern']]],
-  ['threadutility_9',['ThreadUtility',['../classlog4cxx_1_1helpers_1_1ThreadUtility.html',1,'log4cxx::helpers']]],
-  ['throwableinformationpatternconverter_10',['ThrowableInformationPatternConverter',['../classlog4cxx_1_1pattern_1_1ThrowableInformationPatternConverter.html',1,'log4cxx::pattern']]],
-  ['timebasedrollingpolicy_11',['TimeBasedRollingPolicy',['../classlog4cxx_1_1rolling_1_1TimeBasedRollingPolicy.html',1,'log4cxx::rolling']]],
-  ['timezone_12',['TimeZone',['../classlog4cxx_1_1helpers_1_1TimeZone.html',1,'log4cxx::helpers']]],
-  ['transcoder_13',['Transcoder',['../classlog4cxx_1_1helpers_1_1Transcoder.html',1,'log4cxx::helpers']]],
-  ['transcoderexception_14',['TranscoderException',['../classlog4cxx_1_1helpers_1_1TranscoderException.html',1,'log4cxx::helpers']]],
-  ['transform_15',['Transform',['../classlog4cxx_1_1helpers_1_1Transform.html',1,'log4cxx::helpers']]],
-  ['triggeringeventevaluator_16',['TriggeringEventEvaluator',['../classlog4cxx_1_1spi_1_1TriggeringEventEvaluator.html',1,'log4cxx::spi']]],
-  ['triggeringpolicy_17',['TriggeringPolicy',['../classlog4cxx_1_1rolling_1_1TriggeringPolicy.html',1,'log4cxx::rolling']]]
+  ['ulogstream_0',['ulogstream',['../classlog4cxx_1_1ulogstream.html',1,'log4cxx']]],
+  ['unicharmessagebuffer_1',['UniCharMessageBuffer',['../classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html',1,'log4cxx::helpers']]],
+  ['unknownhostexception_2',['UnknownHostException',['../classlog4cxx_1_1helpers_1_1UnknownHostException.html',1,'log4cxx::helpers']]]
 ];

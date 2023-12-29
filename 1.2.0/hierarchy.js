@@ -1,25 +1,14 @@
 var hierarchy =
 [
-    [ "moodycamel::details::_hash_32_or_64< use32 >", "structmoodycamel_1_1details_1_1__hash__32__or__64.html", null ],
-    [ "moodycamel::details::_hash_32_or_64< 1 >", "structmoodycamel_1_1details_1_1__hash__32__or__64_3_011_01_4.html", null ],
-    [ "_hash_32_or_64<(size > 4)>", null, [
-      [ "moodycamel::details::hash_32_or_64< size >", "structmoodycamel_1_1details_1_1hash__32__or__64.html", null ]
-    ] ],
     [ "log4cxx::helpers::APRInitializer", "classlog4cxx_1_1helpers_1_1APRInitializer.html", null ],
     [ "log4cxx::BasicConfigurator", "classlog4cxx_1_1BasicConfigurator.html", null ],
-    [ "moodycamel::BlockingConcurrentQueue< T, Traits >", "classmoodycamel_1_1BlockingConcurrentQueue.html", null ],
     [ "log4cxx::helpers::ByteBuffer", "classlog4cxx_1_1helpers_1_1ByteBuffer.html", null ],
     [ "log4cxx::helpers::CharMessageBuffer", "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html", null ],
     [ "log4cxx::helpers::Class", "classlog4cxx_1_1helpers_1_1Class.html", [
       [ "log4cxx::Level::LevelClass", "classlog4cxx_1_1Level_1_1LevelClass.html", null ]
     ] ],
     [ "log4cxx::helpers::ClassRegistration", "classlog4cxx_1_1helpers_1_1ClassRegistration.html", null ],
-    [ "moodycamel::ConcurrentQueue< T, Traits >", "classmoodycamel_1_1ConcurrentQueue.html", null ],
-    [ "moodycamel::ConcurrentQueueDefaultTraits", "structmoodycamel_1_1ConcurrentQueueDefaultTraits.html", null ],
-    [ "moodycamel::details::ConcurrentQueueProducerTypelessBase", "structmoodycamel_1_1details_1_1ConcurrentQueueProducerTypelessBase.html", null ],
     [ "log4cxx::qt::Configuration", "classlog4cxx_1_1qt_1_1Configuration.html", null ],
-    [ "moodycamel::details::const_numeric_max< T >", "structmoodycamel_1_1details_1_1const__numeric__max.html", null ],
-    [ "moodycamel::ConsumerToken", "structmoodycamel_1_1ConsumerToken.html", null ],
     [ "log4cxx::helpers::CyclicBuffer", "classlog4cxx_1_1helpers_1_1CyclicBuffer.html", null ],
     [ "log4cxx::DefaultConfigurator", "classlog4cxx_1_1DefaultConfigurator.html", null ],
     [ "log4cxx::spi::ErrorCode", "classlog4cxx_1_1spi_1_1ErrorCode.html", null ],
@@ -57,10 +46,6 @@ var hierarchy =
     [ "log4cxx::File", "classlog4cxx_1_1File.html", null ],
     [ "log4cxx::pattern::FileDatePatternConverter", "classlog4cxx_1_1pattern_1_1FileDatePatternConverter.html", null ],
     [ "log4cxx::helpers::FileWatchdog", "classlog4cxx_1_1helpers_1_1FileWatchdog.html", null ],
-    [ "moodycamel::details::identity< T >", "structmoodycamel_1_1details_1_1identity.html", null ],
-    [ "std::is_trivially_destructible", null, [
-      [ "moodycamel::details::is_trivially_destructible< T >", "structmoodycamel_1_1details_1_1is__trivially__destructible.html", null ]
-    ] ],
     [ "log4cxx::LevelChange", "classlog4cxx_1_1LevelChange.html", null ],
     [ "log4cxx::helpers::Loader", "classlog4cxx_1_1helpers_1_1Loader.html", null ],
     [ "log4cxx::helpers::Locale", "classlog4cxx_1_1helpers_1_1Locale.html", null ],
@@ -73,12 +58,9 @@ var hierarchy =
       [ "log4cxx::ulogstream", "classlog4cxx_1_1ulogstream.html", null ],
       [ "log4cxx::wlogstream", "classlog4cxx_1_1wlogstream.html", null ]
     ] ],
-    [ "moodycamel::details::max_align_t", "unionmoodycamel_1_1details_1_1max__align__t.html", null ],
     [ "log4cxx::MDC", "classlog4cxx_1_1MDC.html", null ],
     [ "log4cxx::helpers::MessageBuffer", "classlog4cxx_1_1helpers_1_1MessageBuffer.html", null ],
     [ "log4cxx::NDC", "classlog4cxx_1_1NDC.html", null ],
-    [ "moodycamel::details::nomove_if< Enable >", "structmoodycamel_1_1details_1_1nomove__if.html", null ],
-    [ "moodycamel::details::nomove_if< false >", "structmoodycamel_1_1details_1_1nomove__if_3_01false_01_4.html", null ],
     [ "log4cxx::helpers::Object", "classlog4cxx_1_1helpers_1_1Object.html", [
       [ "log4cxx::AppenderSkeleton", "classlog4cxx_1_1AppenderSkeleton.html", [
         [ "log4cxx::AsyncAppender", "classlog4cxx_1_1AsyncAppender.html", null ],
@@ -256,29 +238,14 @@ var hierarchy =
     [ "log4cxx::helpers::OptionConverter", "classlog4cxx_1_1helpers_1_1OptionConverter.html", null ],
     [ "log4cxx::pattern::PatternParser", "classlog4cxx_1_1pattern_1_1PatternParser.html", null ],
     [ "log4cxx::helpers::Pool", "classlog4cxx_1_1helpers_1_1Pool.html", null ],
-    [ "moodycamel::ProducerToken", "structmoodycamel_1_1ProducerToken.html", null ],
     [ "log4cxx::helpers::Properties", "classlog4cxx_1_1helpers_1_1Properties.html", null ],
     [ "log4cxx::config::PropertySetter", "classlog4cxx_1_1config_1_1PropertySetter.html", null ],
     [ "log4cxx::helpers::ServerSocket", "classlog4cxx_1_1helpers_1_1ServerSocket.html", null ],
-    [ "moodycamel::details::static_is_lock_free< bool >", "structmoodycamel_1_1details_1_1static__is__lock__free_3_01bool_01_4.html", null ],
-    [ "moodycamel::details::static_is_lock_free< U * >", "structmoodycamel_1_1details_1_1static__is__lock__free_3_01U_01_5_01_4.html", null ],
-    [ "moodycamel::details::static_is_lock_free_num< T >", "structmoodycamel_1_1details_1_1static__is__lock__free__num.html", null ],
-    [ "moodycamel::details::static_is_lock_free_num< int >", "structmoodycamel_1_1details_1_1static__is__lock__free__num_3_01int_01_4.html", null ],
-    [ "moodycamel::details::static_is_lock_free_num< long >", "structmoodycamel_1_1details_1_1static__is__lock__free__num_3_01long_01_4.html", null ],
-    [ "moodycamel::details::static_is_lock_free_num< long long >", "structmoodycamel_1_1details_1_1static__is__lock__free__num_3_01long_01long_01_4.html", null ],
-    [ "moodycamel::details::static_is_lock_free_num< short >", "structmoodycamel_1_1details_1_1static__is__lock__free__num_3_01short_01_4.html", null ],
-    [ "moodycamel::details::static_is_lock_free_num< signed char >", "structmoodycamel_1_1details_1_1static__is__lock__free__num_3_01signed_01char_01_4.html", null ],
-    [ "moodycamel::details::static_is_lock_free_num< std::make_signed< T >::type >", "structmoodycamel_1_1details_1_1static__is__lock__free__num.html", [
-      [ "moodycamel::details::static_is_lock_free< T >", "structmoodycamel_1_1details_1_1static__is__lock__free.html", null ]
-    ] ],
     [ "log4cxx::helpers::StrictMath", "classlog4cxx_1_1helpers_1_1StrictMath.html", null ],
     [ "log4cxx::helpers::StringHelper", "classlog4cxx_1_1helpers_1_1StringHelper.html", null ],
     [ "log4cxx::helpers::StringTokenizer", "classlog4cxx_1_1helpers_1_1StringTokenizer.html", null ],
     [ "log4cxx::helpers::SyslogWriter", "classlog4cxx_1_1helpers_1_1SyslogWriter.html", null ],
     [ "log4cxx::helpers::System", "classlog4cxx_1_1helpers_1_1System.html", null ],
-    [ "moodycamel::details::thread_id_converter< thread_id_t >", "structmoodycamel_1_1details_1_1thread__id__converter.html", null ],
-    [ "moodycamel::details::ThreadExitListener", "structmoodycamel_1_1details_1_1ThreadExitListener.html", null ],
-    [ "moodycamel::details::ThreadExitNotifier", "classmoodycamel_1_1details_1_1ThreadExitNotifier.html", null ],
     [ "log4cxx::helpers::ThreadLocal", "classlog4cxx_1_1helpers_1_1ThreadLocal.html", null ],
     [ "log4cxx::helpers::ThreadSpecificData", "classlog4cxx_1_1helpers_1_1ThreadSpecificData.html", null ],
     [ "log4cxx::helpers::ThreadUtility", "classlog4cxx_1_1helpers_1_1ThreadUtility.html", null ],

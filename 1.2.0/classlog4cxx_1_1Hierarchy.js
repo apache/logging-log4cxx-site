@@ -21,7 +21,7 @@ var classlog4cxx_1_1Hierarchy =
     [ "removeLogger", "classlog4cxx_1_1Hierarchy.html#a74d8179cfd8c94596c842839fe8f11d7", null ],
     [ "resetConfiguration", "classlog4cxx_1_1Hierarchy.html#a50388a7cb84a6330f319591794bebeb0", null ],
     [ "setConfigured", "classlog4cxx_1_1Hierarchy.html#a7968560d9f9754f5e5e6894db02f9a8d", null ],
-    [ "setThreshold", "classlog4cxx_1_1Hierarchy.html#a8a92cc98f27ee65fb41d4881f34a747f", null ],
+    [ "setThreshold", "classlog4cxx_1_1Hierarchy.html#a6a80bc2f5fdab4ababc731224952d8ab", null ],
     [ "setThreshold", "classlog4cxx_1_1Hierarchy.html#ae9972356bd2073ec1c4fcf24ccc21771", null ],
     [ "shutdown", "classlog4cxx_1_1Hierarchy.html#afd118ef62597d91a08f3a31e6d75c6e9", null ],
     [ "updateChildren", "classlog4cxx_1_1Hierarchy.html#a9836b2763eb49d6bb67639feb93e5ab8", null ]

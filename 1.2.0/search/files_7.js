@@ -11,10 +11,9 @@ var searchData=
   ['colorstartpatternconverter_2eh_8',['colorstartpatternconverter.h',['../colorstartpatternconverter_8h.html',1,'']]],
   ['concepts_2emd_9',['concepts.md',['../concepts_8md.html',1,'']]],
   ['conclusions_2emd_10',['conclusions.md',['../conclusions_8md.html',1,'']]],
-  ['concurrentqueue_2eh_11',['concurrentqueue.h',['../concurrentqueue_8h.html',1,'']]],
-  ['configuration_2dsamples_2emd_12',['configuration-samples.md',['../configuration-samples_8md.html',1,'']]],
-  ['configuration_2eh_13',['configuration.h',['../configuration_8h.html',1,'']]],
-  ['configurator_2eh_14',['configurator.h',['../configurator_8h.html',1,'']]],
-  ['consoleappender_2eh_15',['consoleappender.h',['../consoleappender_8h.html',1,'']]],
-  ['cyclicbuffer_2eh_16',['cyclicbuffer.h',['../cyclicbuffer_8h.html',1,'']]]
+  ['configuration_2dsamples_2emd_11',['configuration-samples.md',['../configuration-samples_8md.html',1,'']]],
+  ['configuration_2eh_12',['configuration.h',['../configuration_8h.html',1,'']]],
+  ['configurator_2eh_13',['configurator.h',['../configurator_8h.html',1,'']]],
+  ['consoleappender_2eh_14',['consoleappender.h',['../consoleappender_8h.html',1,'']]],
+  ['cyclicbuffer_2eh_15',['cyclicbuffer.h',['../cyclicbuffer_8h.html',1,'']]]
 ];

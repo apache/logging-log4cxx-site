@@ -132,7 +132,7 @@ var searchData=
   ['logstream_5fmanipulator_129',['logstream_manipulator',['../namespacelog4cxx.html#a52717feca3ae327f1ed1ec3c117cf9f6',1,'log4cxx']]],
   ['logstring_130',['LogString',['../namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94',1,'log4cxx']]],
   ['logstring_2eh_131',['logstring.h',['../logstring_8h.html',1,'']]],
-  ['losschar_132',['LOSSCHAR',['../classlog4cxx_1_1helpers_1_1Transcoder.html#a32f07ed078a84544bd92f0d583540c6ca6e59fd31486f70518f6841c5a9bc3d83',1,'log4cxx::helpers::Transcoder']]],
+  ['losschar_132',['LOSSCHAR',['../classlog4cxx_1_1helpers_1_1Transcoder.html#ab934d47ba4d76fb94252b0694883c7cda6e59fd31486f70518f6841c5a9bc3d83',1,'log4cxx::helpers::Transcoder']]],
   ['messagebuffer_2eh_133',['messagebuffer.h',['../log4cxx-qt_2messagebuffer_8h.html',1,'(Global Namespace)'],['../log4cxx_2helpers_2messagebuffer_8h.html',1,'(Global Namespace)']]],
   ['net_134',['net',['../namespacelog4cxx_1_1net.html',1,'log4cxx']]],
   ['nt_135',['nt',['../namespacelog4cxx_1_1nt.html',1,'log4cxx']]],

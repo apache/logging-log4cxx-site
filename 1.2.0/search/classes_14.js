@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['widelife_0',['WideLife',['../classlog4cxx_1_1helpers_1_1WideLife.html',1,'log4cxx::helpers']]],
-  ['widemessagebuffer_1',['WideMessageBuffer',['../classlog4cxx_1_1helpers_1_1WideMessageBuffer.html',1,'log4cxx::helpers']]],
-  ['wlogstream_2',['wlogstream',['../classlog4cxx_1_1wlogstream.html',1,'log4cxx']]],
-  ['writer_3',['Writer',['../classlog4cxx_1_1helpers_1_1Writer.html',1,'log4cxx::helpers']]],
-  ['writerappender_4',['WriterAppender',['../classlog4cxx_1_1WriterAppender.html',1,'log4cxx']]]
+  ['xmldomdocument_0',['XMLDOMDocument',['../classlog4cxx_1_1helpers_1_1XMLDOMDocument.html',1,'log4cxx::helpers']]],
+  ['xmldomelement_1',['XMLDOMElement',['../classlog4cxx_1_1helpers_1_1XMLDOMElement.html',1,'log4cxx::helpers']]],
+  ['xmldomnode_2',['XMLDOMNode',['../classlog4cxx_1_1helpers_1_1XMLDOMNode.html',1,'log4cxx::helpers']]],
+  ['xmldomnodelist_3',['XMLDOMNodeList',['../classlog4cxx_1_1helpers_1_1XMLDOMNodeList.html',1,'log4cxx::helpers']]],
+  ['xmllayout_4',['XMLLayout',['../classlog4cxx_1_1xml_1_1XMLLayout.html',1,'log4cxx::xml']]],
+  ['xmlsocketappender_5',['XMLSocketAppender',['../classlog4cxx_1_1net_1_1XMLSocketAppender.html',1,'log4cxx::net']]]
 ];

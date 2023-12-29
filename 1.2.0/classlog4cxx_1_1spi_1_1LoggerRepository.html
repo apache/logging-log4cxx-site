@@ -154,8 +154,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af847a82cafb2b2a45f841012e0ade360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the repository-wide threshold.  <br /></td></tr>
 <tr class="separator:af847a82cafb2b2a45f841012e0ade360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2593262c074af2493bc4988189deab"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a2c2593262c074af2493bc4988189deab">getLogger</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name)=0</td></tr>
+<tr class="memdesc:a2c2593262c074af2493bc4988189deab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance.  <br /></td></tr>
 <tr class="separator:a2c2593262c074af2493bc4988189deab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af218670cba71f6a713ac8353e1e7bb7a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#af218670cba71f6a713ac8353e1e7bb7a">getLogger</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name, const <a class="el" href="namespacelog4cxx_1_1spi.html#ae6645c8147c8fd33fb55c52f5dbe680a">spi::LoggerFactoryPtr</a> &amp;factory)=0</td></tr>
+<tr class="memdesc:af218670cba71f6a713ac8353e1e7bb7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance.  <br /></td></tr>
 <tr class="separator:af218670cba71f6a713ac8353e1e7bb7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fb0e21aa687b83b3dd909c19346c4e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a0fb0e21aa687b83b3dd909c19346c4e3">getRootLogger</a> () const =0</td></tr>
 <tr class="separator:a0fb0e21aa687b83b3dd909c19346c4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -457,6 +459,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance. </p>
+
 <p>Implemented in <a class="el" href="classlog4cxx_1_1Hierarchy.html#a620aa936bbdfc1636970dc357ecf57c8">log4cxx::Hierarchy</a>.</p>
 
 </div>
@@ -494,6 +498,16 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance. </p>
+<p>If a logger of that name already exists, then it will be returned. Otherwise, a new logger will be instantiated by the provided <code>factory</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the logger to retrieve. </td></tr>
+    <tr><td class="paramname">factory</td><td>The factory that will make the new logger instance. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classlog4cxx_1_1Hierarchy.html#af3f382ffa3df79b5acbf88ff11e9d898">log4cxx::Hierarchy</a>.</p>
 
@@ -698,7 +712,7 @@ Public Member Functions</h2></td></tr>
 <p>All logging requests below the threshold are immediately dropped. By default, the threshold is set to <code><a class="el" href="classlog4cxx_1_1Level.html#a17165f1a2ffae195b6de57c2ef4f5e91">Level::getAll()</a></code> which has the lowest possible rank. <br  />
  </p>
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1Hierarchy.html#a8a92cc98f27ee65fb41d4881f34a747f">log4cxx::Hierarchy</a>.</p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1Hierarchy.html#a6a80bc2f5fdab4ababc731224952d8ab">log4cxx::Hierarchy</a>.</p>
 
 </div>
 </div>

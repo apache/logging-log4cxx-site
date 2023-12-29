@@ -160,7 +160,7 @@ Release 1.2.0 - 2023-XX-01</h2>
 <p>The following issues have been addressed:</p>
 <ul>
 <li>The <code>locale</code> external character encoding option reverting to US-ASCII [<a href="https://issues.apache.org/jira/browse/LOGCXX-483">LOGCXX-483</a>]</li>
-<li>A segfault during process exit when <a class="el" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c" title="Safely close and remove all appenders in all loggers including the root logger.">log4cxx::LogManager::shutdown</a> is not called</li>
+<li>A segfault during process exit when <a class="el" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c" title="Safely close and remove all appenders in all loggers including the root logger.">log4cxx::LogManager::shutdown</a> is not called [<a href="https://github.com/apache/logging-log4cxx/pull/268">#268</a>] [<a href="https://github.com/apache/logging-log4cxx/pull/219">#219</a>]</li>
 <li>The cmake option to include a MultiprocessRollingFileAppender did not work</li>
 <li>Build failure in a MSYS2 environment</li>
 <li>Format settings (e.g. std::hex) were retained across LOG4CXX_XXXXX macro logging requests</li>
@@ -169,6 +169,7 @@ Release 1.2.0 - 2023-XX-01</h2>
 <li>a single nested/mapped diagnostic context (NDC/MDC) would be used and updated (without synchronization)</li>
 </ul>
 </li>
+<li>On Windows, GetThreadDescription() called for each logging event when the thread name was empty [<a href="https://github.com/apache/logging-log4cxx/pull/321">#321</a>]</li>
 </ul>
 <p>Release 1.2.0 includes the following new features:</p>
 <ul>
@@ -176,10 +177,12 @@ Release 1.2.0 - 2023-XX-01</h2>
 <li><a class="el" href="namespacelog4cxx.html#a665e2dfa292d69e4f8071c0785fc0834" title="Hexdump the given bytes and return a LogString with the dumped bytes.">log4cxx::hexdump</a> function that returns a string of hexadecimal byte values</li>
 <li>Ability to remove a HierarchyEventListener [<a href="https://github.com/apache/logging-log4cxx/issues/233">#233</a>]</li>
 <li>Less string copying when sending a logging event to an appender</li>
+<li>Less frequent mutex contention when logging from multiple threads concurrently [<a href="https://github.com/apache/logging-log4cxx/pull/320">#320</a>]</li>
 <li>Allow thread information to be included in JSON formatted output</li>
 <li>Optional support for logging during process termination [<a href="https://github.com/apache/logging-log4cxx/pull/271">#271</a>]</li>
 <li>A cmake option to place Log4cxx functions in a different namespace [<a href="https://github.com/apache/logging-log4cxx/pull/277">#277</a>]</li>
 <li>Optionally use std::format in LOG4CXX_XXXX_FMT macros instead of fmt::format [<a href="https://github.com/apache/logging-log4cxx/pull/291">#291</a>]</li>
+<li>Support for per object enabling/disabling of logging requests (see <a class="el" href="classlog4cxx_1_1LoggerInstancePtr.html" title="A smart pointer (implicity convertable to LoggerPtr) that conditionally removes a Logger from the spi...">log4cxx::LoggerInstancePtr</a>)</li>
 </ul>
 <p>Note: the <code>LOG4CXX_CHARSET</code> cmake option (external character encoding) default value has changed to <code>utf-8</code></p>
 <h2><a class="anchor" id="rel_1_1_0"></a>
