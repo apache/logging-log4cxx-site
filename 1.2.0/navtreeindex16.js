@@ -1,6 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"locale_8h_source.html":[9,0,1,0,0,0,3,28],
 "location-info-filter.html":[2,3,3],
 "locationinfo_8h.html":[9,0,1,0,0,0,8,0,0],
 "locationinfo_8h.html#abf76e600dece2b35d60545bb40930cbc":[9,0,1,0,0,0,8,0,0,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "namespacelog4cxx_1_1rolling.html#ab1bed295bc774b5f00d2855dfab2d857":[7,0,0,8,20],
 "namespacelog4cxx_1_1rolling.html#ad52ca9dc507f224091e57ac17d68c171":[7,0,0,8,21],
 "namespacelog4cxx_1_1rolling.html#ad6bb9162cb1727ab4b9e4aeac499bf7c":[7,0,0,8,28],
-"namespacelog4cxx_1_1rolling.html#ad8942d89bac32b7a4637cda0bc08cf38":[7,0,0,8,24]
+"namespacelog4cxx_1_1rolling.html#ad8942d89bac32b7a4637cda0bc08cf38":[7,0,0,8,24],
+"namespacelog4cxx_1_1rolling.html#ae1da7a316736f775041b10c1b2dc5f56":[7,0,0,8,25]
 };
