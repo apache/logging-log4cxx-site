@@ -197,6 +197,7 @@ var annotated_dup =
         [ "FallbackErrorHandler", "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html", "classlog4cxx_1_1varia_1_1FallbackErrorHandler" ]
       ] ],
       [ "xml", "namespacelog4cxx_1_1xml.html", [
+        [ "DOMConfigurator", "classlog4cxx_1_1xml_1_1DOMConfigurator.html", "classlog4cxx_1_1xml_1_1DOMConfigurator" ],
         [ "XMLLayout", "classlog4cxx_1_1xml_1_1XMLLayout.html", "classlog4cxx_1_1xml_1_1XMLLayout" ]
       ] ],
       [ "Appender", "classlog4cxx_1_1Appender.html", "classlog4cxx_1_1Appender" ],
