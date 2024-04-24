@@ -1,0 +1,27 @@
+var group__LoggingMacros =
+[
+    [ "LOG4CXX_ASSERT", "group__LoggingMacros.html#ga1aff240314ce7e27034be68f6591745d", null ],
+    [ "LOG4CXX_ASSERT_FMT", "group__LoggingMacros.html#ga59b0594a3c74d04e4fc197a235fd9191", null ],
+    [ "LOG4CXX_DEBUG", "group__LoggingMacros.html#gae1bc2ab20d5f2d7660995ea8244d3a26", null ],
+    [ "LOG4CXX_DEBUG_FMT", "group__LoggingMacros.html#gaefcc58251ac4c8483c335e3d2f8b000a", null ],
+    [ "LOG4CXX_ERROR", "group__LoggingMacros.html#gaa2dd8d775aa30be2d9a51df615918b50", null ],
+    [ "LOG4CXX_ERROR_FMT", "group__LoggingMacros.html#ga1def839d02a7cfe840038cfb02caca04", null ],
+    [ "LOG4CXX_FATAL", "group__LoggingMacros.html#ga7aca8ae1ffa1cf893f1e8f362c53fc01", null ],
+    [ "LOG4CXX_FATAL_FMT", "group__LoggingMacros.html#ga6322bb3e6c52bcc6130d8ce499d5b960", null ],
+    [ "LOG4CXX_FMT_VA_ARG", "group__LoggingMacros.html#gae051d162ecb0d1e9c585451ff1dd3465", null ],
+    [ "LOG4CXX_INFO", "group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3", null ],
+    [ "LOG4CXX_INFO_FMT", "group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c", null ],
+    [ "LOG4CXX_L7DLOG", "group__LoggingMacros.html#ga63d440667d6a71382119cb60de924245", null ],
+    [ "LOG4CXX_L7DLOG1", "group__LoggingMacros.html#ga9536127974b613d5411cdfaee117c3ef", null ],
+    [ "LOG4CXX_L7DLOG2", "group__LoggingMacros.html#gafe923e6c519eb1b2f9694b5d42d64f97", null ],
+    [ "LOG4CXX_L7DLOG3", "group__LoggingMacros.html#ga325a73a18c32d1aaf399805566e0b3e2", null ],
+    [ "LOG4CXX_LOG", "group__LoggingMacros.html#ga13557a4dfa1e87ae893398d800e2171a", null ],
+    [ "LOG4CXX_LOG_FMT", "group__LoggingMacros.html#gab32457c745bdd3cfb234a6126f25f500", null ],
+    [ "LOG4CXX_LOGLS", "group__LoggingMacros.html#gaf0c56ecb6dd14e76107317ce85e7ae92", null ],
+    [ "LOG4CXX_STACKTRACE", "group__LoggingMacros.html#gaf9a81c1daa47e4b94306b950cf573b1e", null ],
+    [ "LOG4CXX_TRACE", "group__LoggingMacros.html#ga806900dd7eafb458d0472d9c8f84594b", null ],
+    [ "LOG4CXX_TRACE_FMT", "group__LoggingMacros.html#ga757fc489c7ad2e8d4666745f3d2cef7f", null ],
+    [ "LOG4CXX_UNLIKELY", "group__LoggingMacros.html#gac5e26fe3436dd75332ed99f748918b7a", null ],
+    [ "LOG4CXX_WARN", "group__LoggingMacros.html#ga530190bc1766b89d1f69ad572509aed2", null ],
+    [ "LOG4CXX_WARN_FMT", "group__LoggingMacros.html#ga5840868d932bd2af1d65a40cdc345137", null ]
+];
