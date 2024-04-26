@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"classlog4cxx_1_1spi_1_1LoggingEvent.html#acfef4d01c51dad67bcad27e05b6d7985":[7,0,0,10,10,0],
 "classlog4cxx_1_1spi_1_1LoggingEvent.html#ad7cb57f6a6e10b35d1fe76ddf7fed507":[8,0,0,9,10,11],
 "classlog4cxx_1_1spi_1_1LoggingEvent.html#ad7cb57f6a6e10b35d1fe76ddf7fed507":[7,0,0,10,10,11],
 "classlog4cxx_1_1spi_1_1LoggingEvent.html#ae3d62fdf0f74285a26af5e2e7c685967":[7,0,0,10,10,14],
@@ -211,9 +210,9 @@ var NAVTREEINDEX14 =
 "com_2foo_2config3_8cpp-example.html":[10,5],
 "com_2foo_2config_8h-example.html":[10,3],
 "community.html":[1],
-"community.html#autotoc_md0":[1,0],
-"community.html#autotoc_md1":[1,1],
-"community.html#autotoc_md2":[1,2],
+"community.html#artifacts":[1,2],
+"community.html#security":[1,1],
+"community.html#support":[1,0],
 "concepts.html":[2,1],
 "concepts.html#appender-additivity":[2,1,1,0],
 "concepts.html#appenders":[2,1,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "configurator_8h.html#a923765e65a08eea7c6b417a2525226ab":[9,0,1,0,0,0,8,2,1],
 "configurator_8h.html#a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815":[9,0,1,0,0,0,8,2,1,1],
 "configurator_8h.html#a923765e65a08eea7c6b417a2525226aba61aa63eb3ac1c3408640463ee5fe8aa3":[9,0,1,0,0,0,8,2,1,0],
-"configurator_8h_source.html":[9,0,1,0,0,0,8,2]
+"configurator_8h_source.html":[9,0,1,0,0,0,8,2],
+"consoleappender_8h.html":[9,0,1,0,0,0,15]
 };

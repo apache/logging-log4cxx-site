@@ -1,6 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"classlog4cxx_1_1helpers_1_1Properties.html#a070ef1ddd695bc17fb4186403b3c16a3":[8,0,0,3,53,5],
 "classlog4cxx_1_1helpers_1_1Properties.html#a18ee4173de0b1e6c82e5415818f2f0e3":[7,0,0,3,54,7],
 "classlog4cxx_1_1helpers_1_1Properties.html#a18ee4173de0b1e6c82e5415818f2f0e3":[8,0,0,3,53,7],
 "classlog4cxx_1_1helpers_1_1Properties.html#a447a79b111a046058d0c2d955511c2ad":[8,0,0,3,53,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX8 =
 "classlog4cxx_1_1helpers_1_1TranscoderException.html#a380ffdb023cca056938434351550622d":[7,0,0,3,80,1],
 "classlog4cxx_1_1helpers_1_1TranscoderException.html#a9481b14180d4ac05513cdab22389c520":[8,0,0,3,79,0],
 "classlog4cxx_1_1helpers_1_1TranscoderException.html#a9481b14180d4ac05513cdab22389c520":[7,0,0,3,80,0],
-"classlog4cxx_1_1helpers_1_1TranscoderException.html#ab2b5eaaa898a64582346fe66ccdfaf5a":[7,0,0,3,80,2]
+"classlog4cxx_1_1helpers_1_1TranscoderException.html#ab2b5eaaa898a64582346fe66ccdfaf5a":[7,0,0,3,80,2],
+"classlog4cxx_1_1helpers_1_1TranscoderException.html#ab2b5eaaa898a64582346fe66ccdfaf5a":[8,0,0,3,79,2]
 };

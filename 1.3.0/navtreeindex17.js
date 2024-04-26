@@ -1,6 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"namespacelog4cxx_1_1filter.html":[7,0,0,2],
 "namespacelog4cxx_1_1filter.html#a05e1940b32acea2490a1e889e4f27a24":[7,0,0,2,11],
 "namespacelog4cxx_1_1filter.html#a2c735785a6c4370e169a8318b386d512":[7,0,0,2,17],
 "namespacelog4cxx_1_1filter.html#a4cf4069e6c5fb389509d09582204d2f3":[7,0,0,2,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX17 =
 "rollingpolicybase_8h.html#ae1da7a316736f775041b10c1b2dc5f56":[9,0,1,0,0,0,7,9,3],
 "rollingpolicybase_8h_source.html":[9,0,1,0,0,0,7,9],
 "rolloverdescription_8h.html":[9,0,1,0,0,0,7,10],
-"rolloverdescription_8h.html#a05e89cb41fbf594f12ff06dcd0b115d9":[9,0,1,0,0,0,7,10,1]
+"rolloverdescription_8h.html#a05e89cb41fbf594f12ff06dcd0b115d9":[9,0,1,0,0,0,7,10,1],
+"rolloverdescription_8h_source.html":[9,0,1,0,0,0,7,10]
 };

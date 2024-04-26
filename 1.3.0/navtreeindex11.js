@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html#a65e3ea80791c7216be0f9a71371b1c0f":[8,0,0,5,1,2],
 "classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html#ab8a50af3bcd3805189f70dab16bd7bc9":[7,0,0,5,1,1],
 "classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html#ab8a50af3bcd3805189f70dab16bd7bc9":[8,0,0,5,1,1],
 "classlog4cxx_1_1pattern_1_1CachedDateFormat.html":[7,0,0,6,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "classlog4cxx_1_1pattern_1_1PropertiesPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[7,0,0,6,24,1],
 "classlog4cxx_1_1pattern_1_1PropertiesPatternConverter.html#ab3cdf12e9db615d2110d0223e9742629":[8,0,0,6,24,0],
 "classlog4cxx_1_1pattern_1_1PropertiesPatternConverter.html#ab3cdf12e9db615d2110d0223e9742629":[7,0,0,6,24,0],
-"classlog4cxx_1_1pattern_1_1PropertiesPatternConverter.html#aea57d232f6ee5bee9ea50b20f44616f0":[8,0,0,6,24,3]
+"classlog4cxx_1_1pattern_1_1PropertiesPatternConverter.html#aea57d232f6ee5bee9ea50b20f44616f0":[8,0,0,6,24,3],
+"classlog4cxx_1_1pattern_1_1PropertiesPatternConverter.html#aea57d232f6ee5bee9ea50b20f44616f0":[7,0,0,6,24,3]
 };

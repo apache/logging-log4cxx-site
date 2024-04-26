@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classlog4cxx_1_1pattern_1_1PropertiesPatternConverter.html#aea57d232f6ee5bee9ea50b20f44616f0":[7,0,0,6,24,3],
 "classlog4cxx_1_1pattern_1_1RelativeTimePatternConverter.html":[8,0,0,6,25],
 "classlog4cxx_1_1pattern_1_1RelativeTimePatternConverter.html":[7,0,0,6,25],
 "classlog4cxx_1_1pattern_1_1RelativeTimePatternConverter.html#a396d6dfb470ffd51a8bf38795cafd3fd":[8,0,0,6,25,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#aa6dcdfed35ee70b9a7ea5015613e4e56":[8,0,0,8,9,3],
 "classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#ac48bde3bfb010cb910a1c3aaab17c4d8":[8,0,0,8,9,5],
 "classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#ac48bde3bfb010cb910a1c3aaab17c4d8":[7,0,0,8,9,5],
-"classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#ae4ca3165dd1fd696534178ef72f266df":[7,0,0,8,9,1]
+"classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#ae4ca3165dd1fd696534178ef72f266df":[7,0,0,8,9,1],
+"classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#ae4ca3165dd1fd696534178ef72f266df":[8,0,0,8,9,1]
 };

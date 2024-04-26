@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#ae4ca3165dd1fd696534178ef72f266df":[8,0,0,8,9,1],
 "classlog4cxx_1_1rolling_1_1RolloverDescription.html":[8,0,0,8,10],
 "classlog4cxx_1_1rolling_1_1RolloverDescription.html":[7,0,0,8,10],
 "classlog4cxx_1_1rolling_1_1RolloverDescription.html#a0c1aa29d6558a8d2305abe70691990c5":[7,0,0,8,10,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "classlog4cxx_1_1spi_1_1LoggingEvent.html#ac2b8ae768008fceb6e926c77c44e1d28":[8,0,0,9,10,3],
 "classlog4cxx_1_1spi_1_1LoggingEvent.html#ac4bbc9bffef46e7b27cac8b15a5d6ad0":[7,0,0,10,10,1],
 "classlog4cxx_1_1spi_1_1LoggingEvent.html#ac4bbc9bffef46e7b27cac8b15a5d6ad0":[8,0,0,9,10,1],
-"classlog4cxx_1_1spi_1_1LoggingEvent.html#acfef4d01c51dad67bcad27e05b6d7985":[8,0,0,9,10,0]
+"classlog4cxx_1_1spi_1_1LoggingEvent.html#acfef4d01c51dad67bcad27e05b6d7985":[8,0,0,9,10,0],
+"classlog4cxx_1_1spi_1_1LoggingEvent.html#acfef4d01c51dad67bcad27e05b6d7985":[7,0,0,10,10,0]
 };

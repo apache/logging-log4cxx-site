@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classlog4cxx_1_1db_1_1DBAppender.html#a563db5a008fe5c8877fa8cb0d27d47cc":[7,0,0,1,0,8],
 "classlog4cxx_1_1db_1_1DBAppender.html#a5ef06427b346152e107c87e69b658dee":[8,0,0,1,0,7],
 "classlog4cxx_1_1db_1_1DBAppender.html#a5ef06427b346152e107c87e69b658dee":[7,0,0,1,0,7],
 "classlog4cxx_1_1db_1_1DBAppender.html#a7dfc7960eeb001c222619cb1cfb9eb1f":[8,0,0,1,0,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "classlog4cxx_1_1filter_1_1StringMatchFilter.html#ace88350fee03fa47ad58771369a4197a":[8,0,0,2,9,0],
 "classlog4cxx_1_1filter_1_1StringMatchFilter.html#aced04debb7cfc7425698dc753811f26a":[8,0,0,2,9,5],
 "classlog4cxx_1_1filter_1_1StringMatchFilter.html#aced04debb7cfc7425698dc753811f26a":[7,0,0,2,9,5],
-"classlog4cxx_1_1filter_1_1StringMatchFilter.html#ae0534b9d4b3abe3f43fddfdba6d5ac90":[8,0,0,2,9,6]
+"classlog4cxx_1_1filter_1_1StringMatchFilter.html#ae0534b9d4b3abe3f43fddfdba6d5ac90":[8,0,0,2,9,6],
+"classlog4cxx_1_1filter_1_1StringMatchFilter.html#ae0534b9d4b3abe3f43fddfdba6d5ac90":[7,0,0,2,9,6]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"classlog4cxx_1_1helpers_1_1TranscoderException.html#ab2b5eaaa898a64582346fe66ccdfaf5a":[8,0,0,3,79,2],
 "classlog4cxx_1_1helpers_1_1Transform.html":[7,0,0,3,81],
 "classlog4cxx_1_1helpers_1_1Transform.html":[8,0,0,3,80],
 "classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html":[7,0,0,3,82],
@@ -249,5 +248,6 @@ var NAVTREEINDEX9 =
 "classlog4cxx_1_1logstream__base.html#ade41f2d66276f3ed9ea455dfc0892952":[8,0,0,32,7],
 "classlog4cxx_1_1logstream__base.html#adfb899f06a4821f6d528071f646075ac":[8,0,0,32,15],
 "classlog4cxx_1_1logstream__base.html#adfb899f06a4821f6d528071f646075ac":[7,0,0,33,15],
-"classlog4cxx_1_1logstream__base.html#ae485dfa38b477756d5201a082da46c77":[7,0,0,33,9]
+"classlog4cxx_1_1logstream__base.html#ae485dfa38b477756d5201a082da46c77":[7,0,0,33,9],
+"classlog4cxx_1_1logstream__base.html#ae485dfa38b477756d5201a082da46c77":[8,0,0,32,9]
 };

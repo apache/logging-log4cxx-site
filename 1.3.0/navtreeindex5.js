@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classlog4cxx_1_1filter_1_1StringMatchFilter.html#ae0534b9d4b3abe3f43fddfdba6d5ac90":[7,0,0,2,9,6],
 "classlog4cxx_1_1helpers_1_1APRInitializer.html":[8,0,0,3,2],
 "classlog4cxx_1_1helpers_1_1APRInitializer.html":[7,0,0,3,3],
 "classlog4cxx_1_1helpers_1_1APRInitializer.html#a04f9b0aec9935a7e0574d8e497ed726a":[8,0,0,3,2,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "classlog4cxx_1_1helpers_1_1DatagramPacket.html":[8,0,0,3,17],
 "classlog4cxx_1_1helpers_1_1DatagramPacket.html#a093d647013f5780c53e621b5caaf8482":[7,0,0,3,18,13],
 "classlog4cxx_1_1helpers_1_1DatagramPacket.html#a093d647013f5780c53e621b5caaf8482":[8,0,0,3,17,13],
-"classlog4cxx_1_1helpers_1_1DatagramPacket.html#a0d3f3ae04ab1783eb5c67a84d19e87b6":[7,0,0,3,18,3]
+"classlog4cxx_1_1helpers_1_1DatagramPacket.html#a0d3f3ae04ab1783eb5c67a84d19e87b6":[7,0,0,3,18,3],
+"classlog4cxx_1_1helpers_1_1DatagramPacket.html#a0d3f3ae04ab1783eb5c67a84d19e87b6":[8,0,0,3,17,3]
 };
