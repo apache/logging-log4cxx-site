@@ -43,7 +43,7 @@ var usage_overview =
     [ "Filtering Log Messages", "filters.html", "filters" ],
     [ "Qt Support", "qt-support.html", null ],
     [ "Stacktrace Support", "stacktrace-support.html", [
-      [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md41", null ]
+      [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md26", null ]
     ] ],
     [ "Extending Log4cxx", "extending-log4cxx.html", null ],
     [ "Threading", "threading.html", [

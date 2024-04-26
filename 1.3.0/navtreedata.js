@@ -25,11 +25,11 @@
 var NAVTREE =
 [
   [ "Apache Log4cxx", "index.html", [
-    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md34", null ],
+    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md19", null ],
     [ "Community", "community.html", [
-      [ "Getting help", "community.html#autotoc_md0", null ],
-      [ "Reporting a security issue", "community.html#autotoc_md1", null ],
-      [ "Official releases", "community.html#autotoc_md2", null ]
+      [ "Getting help", "community.html#support", null ],
+      [ "Reporting a security issue", "community.html#security", null ],
+      [ "Official releases", "community.html#artifacts", null ]
     ] ],
     [ "Use", "usage-overview.html", "usage-overview" ],
     [ "Get", "get.html", "get" ],
@@ -78,24 +78,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "MyApp-qt_8cpp-example.html",
-"classlog4cxx_1_1DefaultLoggerFactory.html#ab1a63896e9c8299d82881db2ca3c225d",
-"classlog4cxx_1_1Level.html#a5f60eac2a630c3cae157229b50422e2a",
-"classlog4cxx_1_1Logger.html#ac3ea6f5f3a626bed7e3056f5b891e341",
-"classlog4cxx_1_1db_1_1DBAppender.html#a563db5a008fe5c8877fa8cb0d27d47cc",
-"classlog4cxx_1_1filter_1_1StringMatchFilter.html#ae0534b9d4b3abe3f43fddfdba6d5ac90",
-"classlog4cxx_1_1helpers_1_1DatagramPacket.html#a0d3f3ae04ab1783eb5c67a84d19e87b6",
-"classlog4cxx_1_1helpers_1_1InterruptedException.html#a941ffb29946af818c8c6fea3a2c81d08",
-"classlog4cxx_1_1helpers_1_1Properties.html#a070ef1ddd695bc17fb4186403b3c16a3",
-"classlog4cxx_1_1helpers_1_1TranscoderException.html#ab2b5eaaa898a64582346fe66ccdfaf5a",
-"classlog4cxx_1_1logstream__base.html#ae485dfa38b477756d5201a082da46c77",
-"classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html#a65e3ea80791c7216be0f9a71371b1c0f",
-"classlog4cxx_1_1pattern_1_1PropertiesPatternConverter.html#aea57d232f6ee5bee9ea50b20f44616f0",
-"classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#ae4ca3165dd1fd696534178ef72f266df",
-"classlog4cxx_1_1spi_1_1LoggingEvent.html#acfef4d01c51dad67bcad27e05b6d7985",
-"consoleappender_8h.html",
-"htmllayout_8h_source.html",
-"namespacelog4cxx_1_1filter.html",
-"rolloverdescription_8h_source.html"
+"classlog4cxx_1_1FMTLayout.html",
+"classlog4cxx_1_1Level.html#a69757dfbc7ff19b29043db1db8612d28",
+"classlog4cxx_1_1Logger.html#ac466584a8c1c32a55a88575134238f30",
+"classlog4cxx_1_1db_1_1DBAppender.html#a5ef06427b346152e107c87e69b658dee",
+"classlog4cxx_1_1helpers_1_1APRInitializer.html",
+"classlog4cxx_1_1helpers_1_1DatagramPacket.html#a1770c0dffc3a3f349af96e3e430653fd",
+"classlog4cxx_1_1helpers_1_1InterruptedException.html#aa10a8ccd6c4d93b5744c6e0acd97bc0e",
+"classlog4cxx_1_1helpers_1_1Properties.html#a18ee4173de0b1e6c82e5415818f2f0e3",
+"classlog4cxx_1_1helpers_1_1Transform.html",
+"classlog4cxx_1_1logstream__base.html#af09208b29323f65d08b6bbfd334e8038",
+"classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html#ab8a50af3bcd3805189f70dab16bd7bc9",
+"classlog4cxx_1_1pattern_1_1RelativeTimePatternConverter.html",
+"classlog4cxx_1_1rolling_1_1RolloverDescription.html",
+"classlog4cxx_1_1spi_1_1LoggingEvent.html#ad7cb57f6a6e10b35d1fe76ddf7fed507",
+"consoleappender_8h.html#ad12a1c2ca749cb6c6a05b9f09fc8ec43",
+"index.html",
+"namespacelog4cxx_1_1filter.html#a05e1940b32acea2490a1e889e4f27a24",
+"rootlogger_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
