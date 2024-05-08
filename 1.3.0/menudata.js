@@ -23,10 +23,11 @@
  @licend  The above is the entire license notice for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Related Pages",url:"pages.html"},
-{text:"Modules",url:"modules.html"},
-{text:"Namespaces",url:"namespaces.html",children:[
+{text:"Introduction",url:"index.html"},
+{text:"Usage Guide",url:"pages.html"},
+{text:"Reference Material",url:"usergroup0.html",children:[
+{text:"Logging macros",url:"group__LoggingMacros.html"},
+{text:"Namespace List",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"},
 {text:"Namespace Members",url:"namespacemembers.html",children:[
 {text:"All",url:"namespacemembers.html",children:[
@@ -64,7 +65,7 @@ var menudata={children:[
 {text:"u",url:"namespacemembers_type.html#index_u"},
 {text:"x",url:"namespacemembers_type.html#index_x"}]},
 {text:"Enumerations",url:"namespacemembers_enum.html"}]}]},
-{text:"Classes",url:"annotated.html",children:[
+{text:"Class List",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},
 {text:"Class Hierarchy",url:"hierarchy.html"},
@@ -125,7 +126,7 @@ var menudata={children:[
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html"},
 {text:"Related Functions",url:"functions_rela.html"}]}]},
-{text:"Files",url:"files.html",children:[
+{text:"File List",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
@@ -148,7 +149,11 @@ var menudata={children:[
 {text:"i",url:"globals_defs.html#index_i"},
 {text:"l",url:"globals_defs.html#index_l"},
 {text:"s",url:"globals_defs.html#index_s"}]}]}]},
-{text:"Examples",url:"examples.html"},
+{text:"Examples",url:"examples.html"}]},
+{text:"Other Information",url:"usergroup1.html",children:[
+{text:"Source code repository",url:"^https://github.com/apache/logging-log4cxx"},
 {text:"Apache",url:"^https://www.apache.org"},
-{text:"Logging Services",url:"^https://logging.apache.org"},
-{text:"Github",url:"^https://github.com/apache/logging-log4cxx"}]}
+{text:"Logging Services",url:"^https://logging.apache.org",children:[
+{text:"Security",url:"^https://logging.apache.org/security.html"},
+{text:"Support",url:"^https://logging.apache.org/support.html"},
+{text:"Downloads",url:"^https://logging.apache.org/download.html"}]}]}]}

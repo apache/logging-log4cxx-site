@@ -548,173 +548,172 @@ $(document).ready(function(){initNavTree('log4cxx_2logger_8h_source.html',''); i
 <div class="line"><a id="l02042" name="l02042"></a><span class="lineno"> 2042</span><a class="code hl_define" href="log4cxx_8h.html#a459c677367111ab5a7c5e663f11c579e">LOG4CXX_LIST_DEF</a>(<a class="code hl_typedef" href="namespacelog4cxx.html#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a>, <a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>);</div>
 <div class="line"><a id="l02043" name="l02043"></a><span class="lineno"> 2043</span>}</div>
 <div class="line"><a id="l02044" name="l02044"></a><span class="lineno"> 2044</span> </div>
-<div class="line"><a id="l02049" name="l02049"></a><span class="lineno"> 2049</span><span class="preprocessor">#if !defined(LOG4CXX_UNLIKELY)</span></div>
-<div class="line"><a id="l02050" name="l02050"></a><span class="lineno"> 2050</span><span class="preprocessor">    #if __GNUC__ &gt;= 3</span></div>
-<div class="line"><a id="l02057" name="l02057"></a><span class="lineno"> 2057</span><span class="preprocessor">        #define LOG4CXX_UNLIKELY(expr) __builtin_expect(expr, 0)</span></div>
-<div class="line"><a id="l02058" name="l02058"></a><span class="lineno"> 2058</span><span class="preprocessor">    #else</span></div>
-<div class="line"><a id="l02065" name="l02065"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gac5e26fe3436dd75332ed99f748918b7a"> 2065</a></span><span class="preprocessor">        #define LOG4CXX_UNLIKELY(expr) expr</span></div>
-<div class="line"><a id="l02066" name="l02066"></a><span class="lineno"> 2066</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><a id="l02067" name="l02067"></a><span class="lineno"> 2067</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02068" name="l02068"></a><span class="lineno"> 2068</span> </div>
-<div class="line"><a id="l02069" name="l02069"></a><span class="lineno"> 2069</span><span class="preprocessor">#if defined(LOG4CXX_ENABLE_STACKTRACE) &amp;&amp; !defined(LOG4CXX_STACKTRACE)</span></div>
-<div class="line"><a id="l02070" name="l02070"></a><span class="lineno"> 2070</span><span class="preprocessor">    #ifndef __has_include</span></div>
-<div class="line"><a id="l02071" name="l02071"></a><span class="lineno"> 2071</span><span class="preprocessor">        #include &lt;boost/stacktrace.hpp&gt;</span></div>
-<div class="line"><a id="l02072" name="l02072"></a><span class="lineno"> 2072</span><span class="preprocessor">        #define LOG4CXX_STACKTRACE ::LOG4CXX_NS::MDC mdc_(&quot;stacktrace&quot;</span>, LOG4CXX_EOL + boost::stacktrace::to_string(boost::stacktrace::stacktrace()));</div>
-<div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span><span class="preprocessor">    #elif __has_include(&lt;stacktrace&gt;)</span></div>
-<div class="line"><a id="l02074" name="l02074"></a><span class="lineno"> 2074</span><span class="preprocessor">        #include &lt;stacktrace&gt;</span></div>
-<div class="line"><a id="l02075" name="l02075"></a><span class="lineno"> 2075</span><span class="preprocessor">        #define LOG4CXX_STACKTRACE ::LOG4CXX_NS::MDC mdc_(&quot;stacktrace&quot;</span>, LOG4CXX_EOL + std::stacktrace::to_string(std::stacktrace::stacktrace()));</div>
-<div class="line"><a id="l02076" name="l02076"></a><span class="lineno"> 2076</span><span class="preprocessor">    #elif __has_include(&lt;boost/stacktrace.hpp&gt;)</span></div>
-<div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span><span class="preprocessor">        #include &lt;boost/stacktrace.hpp&gt;</span></div>
-<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span><span class="preprocessor">        #define LOG4CXX_STACKTRACE ::LOG4CXX_NS::MDC mdc_(&quot;stacktrace&quot;</span>, LOG4CXX_EOL + boost::stacktrace::to_string(boost::stacktrace::stacktrace()));</div>
-<div class="line"><a id="l02079" name="l02079"></a><span class="lineno"> 2079</span><span class="preprocessor">    #else</span></div>
-<div class="line"><a id="l02080" name="l02080"></a><span class="lineno"> 2080</span><span class="preprocessor">        #warning &quot;Stacktrace requested but no implementation found&quot;</span></div>
-<div class="line"><a id="l02081" name="l02081"></a><span class="lineno"> 2081</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><a id="l02082" name="l02082"></a><span class="lineno"> 2082</span><span class="preprocessor">#endif </span><span class="comment">/* LOG4CXX_ENABLE_STACKTRACE */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l02045" name="l02045"></a><span class="lineno"> 2045</span><span class="preprocessor">#if !defined(LOG4CXX_UNLIKELY)</span></div>
+<div class="line"><a id="l02046" name="l02046"></a><span class="lineno"> 2046</span><span class="preprocessor">    #if __GNUC__ &gt;= 3</span></div>
+<div class="line"><a id="l02053" name="l02053"></a><span class="lineno"> 2053</span><span class="preprocessor">        #define LOG4CXX_UNLIKELY(expr) __builtin_expect(expr, 0)</span></div>
+<div class="line"><a id="l02054" name="l02054"></a><span class="lineno"> 2054</span><span class="preprocessor">    #else</span></div>
+<div class="line"><a id="l02061" name="l02061"></a><span class="lineno"><a class="line" href="log4cxx_2logger_8h.html#ac5e26fe3436dd75332ed99f748918b7a"> 2061</a></span><span class="preprocessor">        #define LOG4CXX_UNLIKELY(expr) expr</span></div>
+<div class="line"><a id="l02062" name="l02062"></a><span class="lineno"> 2062</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><a id="l02063" name="l02063"></a><span class="lineno"> 2063</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02064" name="l02064"></a><span class="lineno"> 2064</span> </div>
+<div class="line"><a id="l02065" name="l02065"></a><span class="lineno"> 2065</span><span class="preprocessor">#if defined(LOG4CXX_ENABLE_STACKTRACE) &amp;&amp; !defined(LOG4CXX_STACKTRACE)</span></div>
+<div class="line"><a id="l02066" name="l02066"></a><span class="lineno"> 2066</span><span class="preprocessor">    #ifndef __has_include</span></div>
+<div class="line"><a id="l02067" name="l02067"></a><span class="lineno"> 2067</span><span class="preprocessor">        #include &lt;boost/stacktrace.hpp&gt;</span></div>
+<div class="line"><a id="l02068" name="l02068"></a><span class="lineno"> 2068</span><span class="preprocessor">        #define LOG4CXX_STACKTRACE ::LOG4CXX_NS::MDC mdc_(&quot;stacktrace&quot;</span>, LOG4CXX_EOL + boost::stacktrace::to_string(boost::stacktrace::stacktrace()));</div>
+<div class="line"><a id="l02069" name="l02069"></a><span class="lineno"> 2069</span><span class="preprocessor">    #elif __has_include(&lt;stacktrace&gt;)</span></div>
+<div class="line"><a id="l02070" name="l02070"></a><span class="lineno"> 2070</span><span class="preprocessor">        #include &lt;stacktrace&gt;</span></div>
+<div class="line"><a id="l02071" name="l02071"></a><span class="lineno"> 2071</span><span class="preprocessor">        #define LOG4CXX_STACKTRACE ::LOG4CXX_NS::MDC mdc_(&quot;stacktrace&quot;</span>, LOG4CXX_EOL + std::stacktrace::to_string(std::stacktrace::stacktrace()));</div>
+<div class="line"><a id="l02072" name="l02072"></a><span class="lineno"> 2072</span><span class="preprocessor">    #elif __has_include(&lt;boost/stacktrace.hpp&gt;)</span></div>
+<div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span><span class="preprocessor">        #include &lt;boost/stacktrace.hpp&gt;</span></div>
+<div class="line"><a id="l02074" name="l02074"></a><span class="lineno"> 2074</span><span class="preprocessor">        #define LOG4CXX_STACKTRACE ::LOG4CXX_NS::MDC mdc_(&quot;stacktrace&quot;</span>, LOG4CXX_EOL + boost::stacktrace::to_string(boost::stacktrace::stacktrace()));</div>
+<div class="line"><a id="l02075" name="l02075"></a><span class="lineno"> 2075</span><span class="preprocessor">    #else</span></div>
+<div class="line"><a id="l02076" name="l02076"></a><span class="lineno"> 2076</span><span class="preprocessor">        #warning &quot;Stacktrace requested but no implementation found&quot;</span></div>
+<div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span><span class="preprocessor">#endif </span><span class="comment">/* LOG4CXX_ENABLE_STACKTRACE */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l02079" name="l02079"></a><span class="lineno"> 2079</span> </div>
+<div class="line"><a id="l02080" name="l02080"></a><span class="lineno"> 2080</span><span class="preprocessor">#if !defined(LOG4CXX_STACKTRACE)</span></div>
+<div class="line"><a id="l02081" name="l02081"></a><span class="lineno"><a class="line" href="log4cxx_2logger_8h.html#af9a81c1daa47e4b94306b950cf573b1e"> 2081</a></span><span class="preprocessor">#define LOG4CXX_STACKTRACE</span></div>
+<div class="line"><a id="l02082" name="l02082"></a><span class="lineno"> 2082</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l02083" name="l02083"></a><span class="lineno"> 2083</span> </div>
-<div class="line"><a id="l02084" name="l02084"></a><span class="lineno"> 2084</span><span class="preprocessor">#if !defined(LOG4CXX_STACKTRACE)</span></div>
-<div class="line"><a id="l02085" name="l02085"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gaf9a81c1daa47e4b94306b950cf573b1e"> 2085</a></span><span class="preprocessor">#define LOG4CXX_STACKTRACE</span></div>
-<div class="line"><a id="l02086" name="l02086"></a><span class="lineno"> 2086</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02087" name="l02087"></a><span class="lineno"> 2087</span> </div>
-<div class="line"><a id="l02088" name="l02088"></a><span class="lineno"> 2088</span><span class="preprocessor">#ifndef LOG4CXX_FMT_VA_ARG</span></div>
-<div class="line"><a id="l02089" name="l02089"></a><span class="lineno"> 2089</span><span class="preprocessor">#if __cplusplus &gt;= 202002L</span></div>
-<div class="line"><a id="l02090" name="l02090"></a><span class="lineno"> 2090</span><span class="preprocessor">    #define LOG4CXX_FMT_VA_ARG(...) __VA_OPT__(,) __VA_ARGS__</span></div>
-<div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l02092" name="l02092"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gae051d162ecb0d1e9c585451ff1dd3465"> 2092</a></span><span class="preprocessor">    #define LOG4CXX_FMT_VA_ARG(...) , __VA_ARGS__</span></div>
-<div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02095" name="l02095"></a><span class="lineno"> 2095</span> </div>
-<div class="line"><a id="l02096" name="l02096"></a><span class="lineno"> 2096</span> </div>
-<div class="line"><a id="l02104" name="l02104"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga13557a4dfa1e87ae893398d800e2171a"> 2104</a></span><span class="preprocessor">#define LOG4CXX_LOG(logger, level, message) do { \</span></div>
-<div class="line"><a id="l02105" name="l02105"></a><span class="lineno"> 2105</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
-<div class="line"><a id="l02106" name="l02106"></a><span class="lineno"> 2106</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
-<div class="line"><a id="l02107" name="l02107"></a><span class="lineno"> 2107</span><span class="preprocessor">            logger-&gt;addEvent(level, oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02108" name="l02108"></a><span class="lineno"> 2108</span> </div>
-<div class="line"><a id="l02117" name="l02117"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gab32457c745bdd3cfb234a6126f25f500"> 2117</a></span><span class="preprocessor">#define LOG4CXX_LOG_FMT(logger, level, fmt, ...) do { \</span></div>
-<div class="line"><a id="l02118" name="l02118"></a><span class="lineno"> 2118</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
-<div class="line"><a id="l02119" name="l02119"></a><span class="lineno"> 2119</span><span class="preprocessor">            logger-&gt;addEvent(level, ::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__) ), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02120" name="l02120"></a><span class="lineno"> 2120</span> </div>
-<div class="line"><a id="l02128" name="l02128"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gaf0c56ecb6dd14e76107317ce85e7ae92"> 2128</a></span><span class="preprocessor">#define LOG4CXX_LOGLS(logger, level, message) do { \</span></div>
-<div class="line"><a id="l02129" name="l02129"></a><span class="lineno"> 2129</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
-<div class="line"><a id="l02130" name="l02130"></a><span class="lineno"> 2130</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::LogCharMessageBuffer oss_; \</span></div>
-<div class="line"><a id="l02131" name="l02131"></a><span class="lineno"> 2131</span><span class="preprocessor">            logger-&gt;addEvent(level, oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02132" name="l02132"></a><span class="lineno"> 2132</span> </div>
-<div class="line"><a id="l02133" name="l02133"></a><span class="lineno"> 2133</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 10000</span></div>
-<div class="line"><a id="l02153" name="l02153"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gae1bc2ab20d5f2d7660995ea8244d3a26"> 2153</a></span><span class="preprocessor">#define LOG4CXX_DEBUG(logger, message) do { \</span></div>
-<div class="line"><a id="l02154" name="l02154"></a><span class="lineno"> 2154</span><span class="preprocessor">        if (LOG4CXX_UNLIKELY(::LOG4CXX_NS::Logger::isDebugEnabledFor(logger))) {\</span></div>
-<div class="line"><a id="l02155" name="l02155"></a><span class="lineno"> 2155</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
-<div class="line"><a id="l02156" name="l02156"></a><span class="lineno"> 2156</span><span class="preprocessor">            logger-&gt;addDebugEvent(oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02157" name="l02157"></a><span class="lineno"> 2157</span> </div>
-<div class="line"><a id="l02177" name="l02177"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gaefcc58251ac4c8483c335e3d2f8b000a"> 2177</a></span><span class="preprocessor">#define LOG4CXX_DEBUG_FMT(logger, fmt, ...) do { \</span></div>
-<div class="line"><a id="l02178" name="l02178"></a><span class="lineno"> 2178</span><span class="preprocessor">        if (LOG4CXX_UNLIKELY(::LOG4CXX_NS::Logger::isDebugEnabledFor(logger))) {\</span></div>
-<div class="line"><a id="l02179" name="l02179"></a><span class="lineno"> 2179</span><span class="preprocessor">            logger-&gt;addDebugEvent(::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__) ), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02180" name="l02180"></a><span class="lineno"> 2180</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l02181" name="l02181"></a><span class="lineno"> 2181</span><span class="preprocessor">#define LOG4CXX_DEBUG(logger, message)</span></div>
-<div class="line"><a id="l02182" name="l02182"></a><span class="lineno"> 2182</span><span class="preprocessor">#define LOG4CXX_DEBUG_FMT(logger, fmt, ...)</span></div>
-<div class="line"><a id="l02183" name="l02183"></a><span class="lineno"> 2183</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02184" name="l02184"></a><span class="lineno"> 2184</span> </div>
-<div class="line"><a id="l02185" name="l02185"></a><span class="lineno"> 2185</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 5000</span></div>
-<div class="line"><a id="l02197" name="l02197"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga806900dd7eafb458d0472d9c8f84594b"> 2197</a></span><span class="preprocessor">#define LOG4CXX_TRACE(logger, message) do { \</span></div>
-<div class="line"><a id="l02198" name="l02198"></a><span class="lineno"> 2198</span><span class="preprocessor">        if (LOG4CXX_UNLIKELY(::LOG4CXX_NS::Logger::isTraceEnabledFor(logger))) {\</span></div>
-<div class="line"><a id="l02199" name="l02199"></a><span class="lineno"> 2199</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
-<div class="line"><a id="l02200" name="l02200"></a><span class="lineno"> 2200</span><span class="preprocessor">            logger-&gt;addTraceEvent(oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02201" name="l02201"></a><span class="lineno"> 2201</span> </div>
-<div class="line"><a id="l02214" name="l02214"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga757fc489c7ad2e8d4666745f3d2cef7f"> 2214</a></span><span class="preprocessor">#define LOG4CXX_TRACE_FMT(logger, fmt, ...) do { \</span></div>
-<div class="line"><a id="l02215" name="l02215"></a><span class="lineno"> 2215</span><span class="preprocessor">        if (LOG4CXX_UNLIKELY(::LOG4CXX_NS::Logger::isTraceEnabledFor(logger))) {\</span></div>
-<div class="line"><a id="l02216" name="l02216"></a><span class="lineno"> 2216</span><span class="preprocessor">            logger-&gt;addTraceEvent(::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02217" name="l02217"></a><span class="lineno"> 2217</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l02218" name="l02218"></a><span class="lineno"> 2218</span><span class="preprocessor">#define LOG4CXX_TRACE(logger, message)</span></div>
-<div class="line"><a id="l02219" name="l02219"></a><span class="lineno"> 2219</span><span class="preprocessor">#define LOG4CXX_TRACE_FMT(logger, fmt, ...)</span></div>
-<div class="line"><a id="l02220" name="l02220"></a><span class="lineno"> 2220</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02221" name="l02221"></a><span class="lineno"> 2221</span> </div>
-<div class="line"><a id="l02222" name="l02222"></a><span class="lineno"> 2222</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 20000</span></div>
-<div class="line"><a id="l02239" name="l02239"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3"> 2239</a></span><span class="preprocessor">#define LOG4CXX_INFO(logger, message) do { \</span></div>
-<div class="line"><a id="l02240" name="l02240"></a><span class="lineno"> 2240</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isInfoEnabledFor(logger)) {\</span></div>
-<div class="line"><a id="l02241" name="l02241"></a><span class="lineno"> 2241</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
-<div class="line"><a id="l02242" name="l02242"></a><span class="lineno"> 2242</span><span class="preprocessor">            logger-&gt;addInfoEvent(oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02243" name="l02243"></a><span class="lineno"> 2243</span> </div>
-<div class="line"><a id="l02260" name="l02260"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c"> 2260</a></span><span class="preprocessor">#define LOG4CXX_INFO_FMT(logger, fmt, ...) do { \</span></div>
-<div class="line"><a id="l02261" name="l02261"></a><span class="lineno"> 2261</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isInfoEnabledFor(logger)) {\</span></div>
-<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"> 2262</span><span class="preprocessor">            logger-&gt;addInfoEvent(::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02263" name="l02263"></a><span class="lineno"> 2263</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l02264" name="l02264"></a><span class="lineno"> 2264</span><span class="preprocessor">#define LOG4CXX_INFO(logger, message)</span></div>
-<div class="line"><a id="l02265" name="l02265"></a><span class="lineno"> 2265</span><span class="preprocessor">#define LOG4CXX_INFO_FMT(logger, fmt, ...)</span></div>
-<div class="line"><a id="l02266" name="l02266"></a><span class="lineno"> 2266</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02267" name="l02267"></a><span class="lineno"> 2267</span> </div>
-<div class="line"><a id="l02268" name="l02268"></a><span class="lineno"> 2268</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 30000</span></div>
-<div class="line"><a id="l02283" name="l02283"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga530190bc1766b89d1f69ad572509aed2"> 2283</a></span><span class="preprocessor">#define LOG4CXX_WARN(logger, message) do { \</span></div>
-<div class="line"><a id="l02284" name="l02284"></a><span class="lineno"> 2284</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isWarnEnabledFor(logger)) {\</span></div>
-<div class="line"><a id="l02285" name="l02285"></a><span class="lineno"> 2285</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
-<div class="line"><a id="l02286" name="l02286"></a><span class="lineno"> 2286</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getWarn(), oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02287" name="l02287"></a><span class="lineno"> 2287</span> </div>
-<div class="line"><a id="l02303" name="l02303"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga5840868d932bd2af1d65a40cdc345137"> 2303</a></span><span class="preprocessor">#define LOG4CXX_WARN_FMT(logger, fmt, ...) do { \</span></div>
-<div class="line"><a id="l02304" name="l02304"></a><span class="lineno"> 2304</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isWarnEnabledFor(logger)) {\</span></div>
-<div class="line"><a id="l02305" name="l02305"></a><span class="lineno"> 2305</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getWarn(), ::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02306" name="l02306"></a><span class="lineno"> 2306</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l02307" name="l02307"></a><span class="lineno"> 2307</span><span class="preprocessor">#define LOG4CXX_WARN(logger, message)</span></div>
-<div class="line"><a id="l02308" name="l02308"></a><span class="lineno"> 2308</span><span class="preprocessor">#define LOG4CXX_WARN_FMT(logger, fmt, ...)</span></div>
-<div class="line"><a id="l02309" name="l02309"></a><span class="lineno"> 2309</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02310" name="l02310"></a><span class="lineno"> 2310</span> </div>
-<div class="line"><a id="l02311" name="l02311"></a><span class="lineno"> 2311</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 40000</span></div>
-<div class="line"><a id="l02326" name="l02326"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gaa2dd8d775aa30be2d9a51df615918b50"> 2326</a></span><span class="preprocessor">#define LOG4CXX_ERROR(logger, message) do { \</span></div>
-<div class="line"><a id="l02327" name="l02327"></a><span class="lineno"> 2327</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isErrorEnabledFor(logger)) {\</span></div>
-<div class="line"><a id="l02328" name="l02328"></a><span class="lineno"> 2328</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
-<div class="line"><a id="l02329" name="l02329"></a><span class="lineno"> 2329</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getError(), oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02330" name="l02330"></a><span class="lineno"> 2330</span> </div>
-<div class="line"><a id="l02346" name="l02346"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga1def839d02a7cfe840038cfb02caca04"> 2346</a></span><span class="preprocessor">#define LOG4CXX_ERROR_FMT(logger, fmt, ...) do { \</span></div>
-<div class="line"><a id="l02347" name="l02347"></a><span class="lineno"> 2347</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isErrorEnabledFor(logger)) {\</span></div>
-<div class="line"><a id="l02348" name="l02348"></a><span class="lineno"> 2348</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getError(), ::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02349" name="l02349"></a><span class="lineno"> 2349</span> </div>
-<div class="line"><a id="l02357" name="l02357"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga1aff240314ce7e27034be68f6591745d"> 2357</a></span><span class="preprocessor">#define LOG4CXX_ASSERT(logger, condition, message) do { \</span></div>
-<div class="line"><a id="l02358" name="l02358"></a><span class="lineno"> 2358</span><span class="preprocessor">        if (!(condition) &amp;&amp; ::LOG4CXX_NS::Logger::isErrorEnabledFor(logger)) {\</span></div>
-<div class="line"><a id="l02359" name="l02359"></a><span class="lineno"> 2359</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
-<div class="line"><a id="l02360" name="l02360"></a><span class="lineno"> 2360</span><span class="preprocessor">            LOG4CXX_STACKTRACE \</span></div>
-<div class="line"><a id="l02361" name="l02361"></a><span class="lineno"> 2361</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getError(), oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02362" name="l02362"></a><span class="lineno"> 2362</span> </div>
-<div class="line"><a id="l02373" name="l02373"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga59b0594a3c74d04e4fc197a235fd9191"> 2373</a></span><span class="preprocessor">#define LOG4CXX_ASSERT_FMT(logger, condition, fmt, ...) do { \</span></div>
-<div class="line"><a id="l02374" name="l02374"></a><span class="lineno"> 2374</span><span class="preprocessor">        if (!(condition) &amp;&amp; ::LOG4CXX_NS::Logger::isErrorEnabledFor(logger)) {\</span></div>
-<div class="line"><a id="l02375" name="l02375"></a><span class="lineno"> 2375</span><span class="preprocessor">            LOG4CXX_STACKTRACE \</span></div>
-<div class="line"><a id="l02376" name="l02376"></a><span class="lineno"> 2376</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getError(), ::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02377" name="l02377"></a><span class="lineno"> 2377</span> </div>
-<div class="line"><a id="l02378" name="l02378"></a><span class="lineno"> 2378</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l02379" name="l02379"></a><span class="lineno"> 2379</span><span class="preprocessor">#define LOG4CXX_ERROR(logger, message)</span></div>
-<div class="line"><a id="l02380" name="l02380"></a><span class="lineno"> 2380</span><span class="preprocessor">#define LOG4CXX_ERROR_FMT(logger, fmt, ...)</span></div>
-<div class="line"><a id="l02381" name="l02381"></a><span class="lineno"> 2381</span><span class="preprocessor">#define LOG4CXX_ASSERT(logger, condition, message)</span></div>
-<div class="line"><a id="l02382" name="l02382"></a><span class="lineno"> 2382</span><span class="preprocessor">#define LOG4CXX_ASSERT_FMT(logger, condition, fmt, ...)</span></div>
-<div class="line"><a id="l02383" name="l02383"></a><span class="lineno"> 2383</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02384" name="l02384"></a><span class="lineno"> 2384</span> </div>
-<div class="line"><a id="l02385" name="l02385"></a><span class="lineno"> 2385</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 50000</span></div>
-<div class="line"><a id="l02397" name="l02397"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga7aca8ae1ffa1cf893f1e8f362c53fc01"> 2397</a></span><span class="preprocessor">#define LOG4CXX_FATAL(logger, message) do { \</span></div>
-<div class="line"><a id="l02398" name="l02398"></a><span class="lineno"> 2398</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isFatalEnabledFor(logger)) {\</span></div>
-<div class="line"><a id="l02399" name="l02399"></a><span class="lineno"> 2399</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
-<div class="line"><a id="l02400" name="l02400"></a><span class="lineno"> 2400</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getFatal(), oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02401" name="l02401"></a><span class="lineno"> 2401</span> </div>
-<div class="line"><a id="l02414" name="l02414"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga6322bb3e6c52bcc6130d8ce499d5b960"> 2414</a></span><span class="preprocessor">#define LOG4CXX_FATAL_FMT(logger, fmt, ...) do { \</span></div>
-<div class="line"><a id="l02415" name="l02415"></a><span class="lineno"> 2415</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isFatalEnabledFor(logger)) {\</span></div>
-<div class="line"><a id="l02416" name="l02416"></a><span class="lineno"> 2416</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getFatal(), ::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02417" name="l02417"></a><span class="lineno"> 2417</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l02418" name="l02418"></a><span class="lineno"> 2418</span><span class="preprocessor">#define LOG4CXX_FATAL(logger, message)</span></div>
-<div class="line"><a id="l02419" name="l02419"></a><span class="lineno"> 2419</span><span class="preprocessor">#define LOG4CXX_FATAL_FMT(logger, fmt, ...)</span></div>
-<div class="line"><a id="l02420" name="l02420"></a><span class="lineno"> 2420</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l02421" name="l02421"></a><span class="lineno"> 2421</span> </div>
-<div class="line"><a id="l02429" name="l02429"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga63d440667d6a71382119cb60de924245"> 2429</a></span><span class="preprocessor">#define LOG4CXX_L7DLOG(logger, level, key) do { \</span></div>
-<div class="line"><a id="l02430" name="l02430"></a><span class="lineno"> 2430</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
-<div class="line"><a id="l02431" name="l02431"></a><span class="lineno"> 2431</span><span class="preprocessor">            logger-&gt;l7dlog(level, key, LOG4CXX_LOCATION); }} while (0)</span></div>
-<div class="line"><a id="l02432" name="l02432"></a><span class="lineno"> 2432</span> </div>
-<div class="line"><a id="l02441" name="l02441"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga9536127974b613d5411cdfaee117c3ef"> 2441</a></span><span class="preprocessor">#define LOG4CXX_L7DLOG1(logger, level, key, p1) do { \</span></div>
-<div class="line"><a id="l02442" name="l02442"></a><span class="lineno"> 2442</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
-<div class="line"><a id="l02443" name="l02443"></a><span class="lineno"> 2443</span><span class="preprocessor">            logger-&gt;l7dlog(level, key, LOG4CXX_LOCATION, p1); }} while (0)</span></div>
-<div class="line"><a id="l02444" name="l02444"></a><span class="lineno"> 2444</span> </div>
-<div class="line"><a id="l02454" name="l02454"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gafe923e6c519eb1b2f9694b5d42d64f97"> 2454</a></span><span class="preprocessor">#define LOG4CXX_L7DLOG2(logger, level, key, p1, p2) do { \</span></div>
-<div class="line"><a id="l02455" name="l02455"></a><span class="lineno"> 2455</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
-<div class="line"><a id="l02456" name="l02456"></a><span class="lineno"> 2456</span><span class="preprocessor">            logger-&gt;l7dlog(level, key, LOG4CXX_LOCATION, p1, p2); }} while (0)</span></div>
-<div class="line"><a id="l02457" name="l02457"></a><span class="lineno"> 2457</span> </div>
-<div class="line"><a id="l02468" name="l02468"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga325a73a18c32d1aaf399805566e0b3e2"> 2468</a></span><span class="preprocessor">#define LOG4CXX_L7DLOG3(logger, level, key, p1, p2, p3) do { \</span></div>
-<div class="line"><a id="l02469" name="l02469"></a><span class="lineno"> 2469</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
-<div class="line"><a id="l02470" name="l02470"></a><span class="lineno"> 2470</span><span class="preprocessor">            logger-&gt;l7dlog(level, key, LOG4CXX_LOCATION, p1, p2, p3); }} while (0)</span></div>
-<div class="line"><a id="l02471" name="l02471"></a><span class="lineno"> 2471</span> </div>
-<div class="line"><a id="l02474" name="l02474"></a><span class="lineno"> 2474</span><span class="preprocessor">#include &lt;<a class="code" href="loggerrepository_8h.html">log4cxx/spi/loggerrepository.h</a>&gt;</span></div>
-<div class="line"><a id="l02475" name="l02475"></a><span class="lineno"> 2475</span> </div>
-<div class="line"><a id="l02476" name="l02476"></a><span class="lineno"> 2476</span><span class="preprocessor">#endif </span><span class="comment">//_LOG4CXX_LOGGER_H</span></div>
+<div class="line"><a id="l02084" name="l02084"></a><span class="lineno"> 2084</span><span class="preprocessor">#ifndef LOG4CXX_FMT_VA_ARG</span></div>
+<div class="line"><a id="l02085" name="l02085"></a><span class="lineno"> 2085</span><span class="preprocessor">#if __cplusplus &gt;= 202002L</span></div>
+<div class="line"><a id="l02086" name="l02086"></a><span class="lineno"> 2086</span><span class="preprocessor">    #define LOG4CXX_FMT_VA_ARG(...) __VA_OPT__(,) __VA_ARGS__</span></div>
+<div class="line"><a id="l02087" name="l02087"></a><span class="lineno"> 2087</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l02088" name="l02088"></a><span class="lineno"><a class="line" href="log4cxx_2logger_8h.html#ae051d162ecb0d1e9c585451ff1dd3465"> 2088</a></span><span class="preprocessor">    #define LOG4CXX_FMT_VA_ARG(...) , __VA_ARGS__</span></div>
+<div class="line"><a id="l02089" name="l02089"></a><span class="lineno"> 2089</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02090" name="l02090"></a><span class="lineno"> 2090</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span> </div>
+<div class="line"><a id="l02103" name="l02103"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga13557a4dfa1e87ae893398d800e2171a"> 2103</a></span><span class="preprocessor">#define LOG4CXX_LOG(logger, level, message) do { \</span></div>
+<div class="line"><a id="l02104" name="l02104"></a><span class="lineno"> 2104</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
+<div class="line"><a id="l02105" name="l02105"></a><span class="lineno"> 2105</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
+<div class="line"><a id="l02106" name="l02106"></a><span class="lineno"> 2106</span><span class="preprocessor">            logger-&gt;addEvent(level, oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02107" name="l02107"></a><span class="lineno"> 2107</span> </div>
+<div class="line"><a id="l02116" name="l02116"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gab32457c745bdd3cfb234a6126f25f500"> 2116</a></span><span class="preprocessor">#define LOG4CXX_LOG_FMT(logger, level, fmt, ...) do { \</span></div>
+<div class="line"><a id="l02117" name="l02117"></a><span class="lineno"> 2117</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
+<div class="line"><a id="l02118" name="l02118"></a><span class="lineno"> 2118</span><span class="preprocessor">            logger-&gt;addEvent(level, ::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__) ), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02119" name="l02119"></a><span class="lineno"> 2119</span> </div>
+<div class="line"><a id="l02127" name="l02127"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gaf0c56ecb6dd14e76107317ce85e7ae92"> 2127</a></span><span class="preprocessor">#define LOG4CXX_LOGLS(logger, level, message) do { \</span></div>
+<div class="line"><a id="l02128" name="l02128"></a><span class="lineno"> 2128</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
+<div class="line"><a id="l02129" name="l02129"></a><span class="lineno"> 2129</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::LogCharMessageBuffer oss_; \</span></div>
+<div class="line"><a id="l02130" name="l02130"></a><span class="lineno"> 2130</span><span class="preprocessor">            logger-&gt;addEvent(level, oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02131" name="l02131"></a><span class="lineno"> 2131</span> </div>
+<div class="line"><a id="l02132" name="l02132"></a><span class="lineno"> 2132</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 10000</span></div>
+<div class="line"><a id="l02152" name="l02152"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gae1bc2ab20d5f2d7660995ea8244d3a26"> 2152</a></span><span class="preprocessor">#define LOG4CXX_DEBUG(logger, message) do { \</span></div>
+<div class="line"><a id="l02153" name="l02153"></a><span class="lineno"> 2153</span><span class="preprocessor">        if (LOG4CXX_UNLIKELY(::LOG4CXX_NS::Logger::isDebugEnabledFor(logger))) {\</span></div>
+<div class="line"><a id="l02154" name="l02154"></a><span class="lineno"> 2154</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
+<div class="line"><a id="l02155" name="l02155"></a><span class="lineno"> 2155</span><span class="preprocessor">            logger-&gt;addDebugEvent(oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02156" name="l02156"></a><span class="lineno"> 2156</span> </div>
+<div class="line"><a id="l02176" name="l02176"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gaefcc58251ac4c8483c335e3d2f8b000a"> 2176</a></span><span class="preprocessor">#define LOG4CXX_DEBUG_FMT(logger, fmt, ...) do { \</span></div>
+<div class="line"><a id="l02177" name="l02177"></a><span class="lineno"> 2177</span><span class="preprocessor">        if (LOG4CXX_UNLIKELY(::LOG4CXX_NS::Logger::isDebugEnabledFor(logger))) {\</span></div>
+<div class="line"><a id="l02178" name="l02178"></a><span class="lineno"> 2178</span><span class="preprocessor">            logger-&gt;addDebugEvent(::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__) ), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02179" name="l02179"></a><span class="lineno"> 2179</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l02180" name="l02180"></a><span class="lineno"> 2180</span><span class="preprocessor">#define LOG4CXX_DEBUG(logger, message)</span></div>
+<div class="line"><a id="l02181" name="l02181"></a><span class="lineno"> 2181</span><span class="preprocessor">#define LOG4CXX_DEBUG_FMT(logger, fmt, ...)</span></div>
+<div class="line"><a id="l02182" name="l02182"></a><span class="lineno"> 2182</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02183" name="l02183"></a><span class="lineno"> 2183</span> </div>
+<div class="line"><a id="l02184" name="l02184"></a><span class="lineno"> 2184</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 5000</span></div>
+<div class="line"><a id="l02196" name="l02196"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga806900dd7eafb458d0472d9c8f84594b"> 2196</a></span><span class="preprocessor">#define LOG4CXX_TRACE(logger, message) do { \</span></div>
+<div class="line"><a id="l02197" name="l02197"></a><span class="lineno"> 2197</span><span class="preprocessor">        if (LOG4CXX_UNLIKELY(::LOG4CXX_NS::Logger::isTraceEnabledFor(logger))) {\</span></div>
+<div class="line"><a id="l02198" name="l02198"></a><span class="lineno"> 2198</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
+<div class="line"><a id="l02199" name="l02199"></a><span class="lineno"> 2199</span><span class="preprocessor">            logger-&gt;addTraceEvent(oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02200" name="l02200"></a><span class="lineno"> 2200</span> </div>
+<div class="line"><a id="l02213" name="l02213"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga757fc489c7ad2e8d4666745f3d2cef7f"> 2213</a></span><span class="preprocessor">#define LOG4CXX_TRACE_FMT(logger, fmt, ...) do { \</span></div>
+<div class="line"><a id="l02214" name="l02214"></a><span class="lineno"> 2214</span><span class="preprocessor">        if (LOG4CXX_UNLIKELY(::LOG4CXX_NS::Logger::isTraceEnabledFor(logger))) {\</span></div>
+<div class="line"><a id="l02215" name="l02215"></a><span class="lineno"> 2215</span><span class="preprocessor">            logger-&gt;addTraceEvent(::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02216" name="l02216"></a><span class="lineno"> 2216</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l02217" name="l02217"></a><span class="lineno"> 2217</span><span class="preprocessor">#define LOG4CXX_TRACE(logger, message)</span></div>
+<div class="line"><a id="l02218" name="l02218"></a><span class="lineno"> 2218</span><span class="preprocessor">#define LOG4CXX_TRACE_FMT(logger, fmt, ...)</span></div>
+<div class="line"><a id="l02219" name="l02219"></a><span class="lineno"> 2219</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02220" name="l02220"></a><span class="lineno"> 2220</span> </div>
+<div class="line"><a id="l02221" name="l02221"></a><span class="lineno"> 2221</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 20000</span></div>
+<div class="line"><a id="l02238" name="l02238"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3"> 2238</a></span><span class="preprocessor">#define LOG4CXX_INFO(logger, message) do { \</span></div>
+<div class="line"><a id="l02239" name="l02239"></a><span class="lineno"> 2239</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isInfoEnabledFor(logger)) {\</span></div>
+<div class="line"><a id="l02240" name="l02240"></a><span class="lineno"> 2240</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
+<div class="line"><a id="l02241" name="l02241"></a><span class="lineno"> 2241</span><span class="preprocessor">            logger-&gt;addInfoEvent(oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02242" name="l02242"></a><span class="lineno"> 2242</span> </div>
+<div class="line"><a id="l02259" name="l02259"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c"> 2259</a></span><span class="preprocessor">#define LOG4CXX_INFO_FMT(logger, fmt, ...) do { \</span></div>
+<div class="line"><a id="l02260" name="l02260"></a><span class="lineno"> 2260</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isInfoEnabledFor(logger)) {\</span></div>
+<div class="line"><a id="l02261" name="l02261"></a><span class="lineno"> 2261</span><span class="preprocessor">            logger-&gt;addInfoEvent(::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"> 2262</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l02263" name="l02263"></a><span class="lineno"> 2263</span><span class="preprocessor">#define LOG4CXX_INFO(logger, message)</span></div>
+<div class="line"><a id="l02264" name="l02264"></a><span class="lineno"> 2264</span><span class="preprocessor">#define LOG4CXX_INFO_FMT(logger, fmt, ...)</span></div>
+<div class="line"><a id="l02265" name="l02265"></a><span class="lineno"> 2265</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02266" name="l02266"></a><span class="lineno"> 2266</span> </div>
+<div class="line"><a id="l02267" name="l02267"></a><span class="lineno"> 2267</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 30000</span></div>
+<div class="line"><a id="l02282" name="l02282"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga530190bc1766b89d1f69ad572509aed2"> 2282</a></span><span class="preprocessor">#define LOG4CXX_WARN(logger, message) do { \</span></div>
+<div class="line"><a id="l02283" name="l02283"></a><span class="lineno"> 2283</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isWarnEnabledFor(logger)) {\</span></div>
+<div class="line"><a id="l02284" name="l02284"></a><span class="lineno"> 2284</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
+<div class="line"><a id="l02285" name="l02285"></a><span class="lineno"> 2285</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getWarn(), oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02286" name="l02286"></a><span class="lineno"> 2286</span> </div>
+<div class="line"><a id="l02302" name="l02302"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga5840868d932bd2af1d65a40cdc345137"> 2302</a></span><span class="preprocessor">#define LOG4CXX_WARN_FMT(logger, fmt, ...) do { \</span></div>
+<div class="line"><a id="l02303" name="l02303"></a><span class="lineno"> 2303</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isWarnEnabledFor(logger)) {\</span></div>
+<div class="line"><a id="l02304" name="l02304"></a><span class="lineno"> 2304</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getWarn(), ::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02305" name="l02305"></a><span class="lineno"> 2305</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l02306" name="l02306"></a><span class="lineno"> 2306</span><span class="preprocessor">#define LOG4CXX_WARN(logger, message)</span></div>
+<div class="line"><a id="l02307" name="l02307"></a><span class="lineno"> 2307</span><span class="preprocessor">#define LOG4CXX_WARN_FMT(logger, fmt, ...)</span></div>
+<div class="line"><a id="l02308" name="l02308"></a><span class="lineno"> 2308</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02309" name="l02309"></a><span class="lineno"> 2309</span> </div>
+<div class="line"><a id="l02310" name="l02310"></a><span class="lineno"> 2310</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 40000</span></div>
+<div class="line"><a id="l02325" name="l02325"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gaa2dd8d775aa30be2d9a51df615918b50"> 2325</a></span><span class="preprocessor">#define LOG4CXX_ERROR(logger, message) do { \</span></div>
+<div class="line"><a id="l02326" name="l02326"></a><span class="lineno"> 2326</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isErrorEnabledFor(logger)) {\</span></div>
+<div class="line"><a id="l02327" name="l02327"></a><span class="lineno"> 2327</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
+<div class="line"><a id="l02328" name="l02328"></a><span class="lineno"> 2328</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getError(), oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02329" name="l02329"></a><span class="lineno"> 2329</span> </div>
+<div class="line"><a id="l02345" name="l02345"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga1def839d02a7cfe840038cfb02caca04"> 2345</a></span><span class="preprocessor">#define LOG4CXX_ERROR_FMT(logger, fmt, ...) do { \</span></div>
+<div class="line"><a id="l02346" name="l02346"></a><span class="lineno"> 2346</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isErrorEnabledFor(logger)) {\</span></div>
+<div class="line"><a id="l02347" name="l02347"></a><span class="lineno"> 2347</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getError(), ::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02348" name="l02348"></a><span class="lineno"> 2348</span> </div>
+<div class="line"><a id="l02356" name="l02356"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga1aff240314ce7e27034be68f6591745d"> 2356</a></span><span class="preprocessor">#define LOG4CXX_ASSERT(logger, condition, message) do { \</span></div>
+<div class="line"><a id="l02357" name="l02357"></a><span class="lineno"> 2357</span><span class="preprocessor">        if (!(condition) &amp;&amp; ::LOG4CXX_NS::Logger::isErrorEnabledFor(logger)) {\</span></div>
+<div class="line"><a id="l02358" name="l02358"></a><span class="lineno"> 2358</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
+<div class="line"><a id="l02359" name="l02359"></a><span class="lineno"> 2359</span><span class="preprocessor">            LOG4CXX_STACKTRACE \</span></div>
+<div class="line"><a id="l02360" name="l02360"></a><span class="lineno"> 2360</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getError(), oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02361" name="l02361"></a><span class="lineno"> 2361</span> </div>
+<div class="line"><a id="l02372" name="l02372"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga59b0594a3c74d04e4fc197a235fd9191"> 2372</a></span><span class="preprocessor">#define LOG4CXX_ASSERT_FMT(logger, condition, fmt, ...) do { \</span></div>
+<div class="line"><a id="l02373" name="l02373"></a><span class="lineno"> 2373</span><span class="preprocessor">        if (!(condition) &amp;&amp; ::LOG4CXX_NS::Logger::isErrorEnabledFor(logger)) {\</span></div>
+<div class="line"><a id="l02374" name="l02374"></a><span class="lineno"> 2374</span><span class="preprocessor">            LOG4CXX_STACKTRACE \</span></div>
+<div class="line"><a id="l02375" name="l02375"></a><span class="lineno"> 2375</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getError(), ::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02376" name="l02376"></a><span class="lineno"> 2376</span> </div>
+<div class="line"><a id="l02377" name="l02377"></a><span class="lineno"> 2377</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l02378" name="l02378"></a><span class="lineno"> 2378</span><span class="preprocessor">#define LOG4CXX_ERROR(logger, message)</span></div>
+<div class="line"><a id="l02379" name="l02379"></a><span class="lineno"> 2379</span><span class="preprocessor">#define LOG4CXX_ERROR_FMT(logger, fmt, ...)</span></div>
+<div class="line"><a id="l02380" name="l02380"></a><span class="lineno"> 2380</span><span class="preprocessor">#define LOG4CXX_ASSERT(logger, condition, message)</span></div>
+<div class="line"><a id="l02381" name="l02381"></a><span class="lineno"> 2381</span><span class="preprocessor">#define LOG4CXX_ASSERT_FMT(logger, condition, fmt, ...)</span></div>
+<div class="line"><a id="l02382" name="l02382"></a><span class="lineno"> 2382</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02383" name="l02383"></a><span class="lineno"> 2383</span> </div>
+<div class="line"><a id="l02384" name="l02384"></a><span class="lineno"> 2384</span><span class="preprocessor">#if !defined(LOG4CXX_THRESHOLD) || LOG4CXX_THRESHOLD &lt;= 50000</span></div>
+<div class="line"><a id="l02396" name="l02396"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga7aca8ae1ffa1cf893f1e8f362c53fc01"> 2396</a></span><span class="preprocessor">#define LOG4CXX_FATAL(logger, message) do { \</span></div>
+<div class="line"><a id="l02397" name="l02397"></a><span class="lineno"> 2397</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isFatalEnabledFor(logger)) {\</span></div>
+<div class="line"><a id="l02398" name="l02398"></a><span class="lineno"> 2398</span><span class="preprocessor">            ::LOG4CXX_NS::helpers::MessageBuffer oss_; \</span></div>
+<div class="line"><a id="l02399" name="l02399"></a><span class="lineno"> 2399</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getFatal(), oss_.extract_str(oss_ &lt;&lt; message), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02400" name="l02400"></a><span class="lineno"> 2400</span> </div>
+<div class="line"><a id="l02413" name="l02413"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga6322bb3e6c52bcc6130d8ce499d5b960"> 2413</a></span><span class="preprocessor">#define LOG4CXX_FATAL_FMT(logger, fmt, ...) do { \</span></div>
+<div class="line"><a id="l02414" name="l02414"></a><span class="lineno"> 2414</span><span class="preprocessor">        if (::LOG4CXX_NS::Logger::isFatalEnabledFor(logger)) {\</span></div>
+<div class="line"><a id="l02415" name="l02415"></a><span class="lineno"> 2415</span><span class="preprocessor">            logger-&gt;addEvent(::LOG4CXX_NS::Level::getFatal(), ::LOG4CXX_FORMAT_NS::format(fmt LOG4CXX_FMT_VA_ARG(__VA_ARGS__)), LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02416" name="l02416"></a><span class="lineno"> 2416</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l02417" name="l02417"></a><span class="lineno"> 2417</span><span class="preprocessor">#define LOG4CXX_FATAL(logger, message)</span></div>
+<div class="line"><a id="l02418" name="l02418"></a><span class="lineno"> 2418</span><span class="preprocessor">#define LOG4CXX_FATAL_FMT(logger, fmt, ...)</span></div>
+<div class="line"><a id="l02419" name="l02419"></a><span class="lineno"> 2419</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l02420" name="l02420"></a><span class="lineno"> 2420</span> </div>
+<div class="line"><a id="l02428" name="l02428"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga63d440667d6a71382119cb60de924245"> 2428</a></span><span class="preprocessor">#define LOG4CXX_L7DLOG(logger, level, key) do { \</span></div>
+<div class="line"><a id="l02429" name="l02429"></a><span class="lineno"> 2429</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
+<div class="line"><a id="l02430" name="l02430"></a><span class="lineno"> 2430</span><span class="preprocessor">            logger-&gt;l7dlog(level, key, LOG4CXX_LOCATION); }} while (0)</span></div>
+<div class="line"><a id="l02431" name="l02431"></a><span class="lineno"> 2431</span> </div>
+<div class="line"><a id="l02440" name="l02440"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga9536127974b613d5411cdfaee117c3ef"> 2440</a></span><span class="preprocessor">#define LOG4CXX_L7DLOG1(logger, level, key, p1) do { \</span></div>
+<div class="line"><a id="l02441" name="l02441"></a><span class="lineno"> 2441</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
+<div class="line"><a id="l02442" name="l02442"></a><span class="lineno"> 2442</span><span class="preprocessor">            logger-&gt;l7dlog(level, key, LOG4CXX_LOCATION, p1); }} while (0)</span></div>
+<div class="line"><a id="l02443" name="l02443"></a><span class="lineno"> 2443</span> </div>
+<div class="line"><a id="l02453" name="l02453"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#gafe923e6c519eb1b2f9694b5d42d64f97"> 2453</a></span><span class="preprocessor">#define LOG4CXX_L7DLOG2(logger, level, key, p1, p2) do { \</span></div>
+<div class="line"><a id="l02454" name="l02454"></a><span class="lineno"> 2454</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
+<div class="line"><a id="l02455" name="l02455"></a><span class="lineno"> 2455</span><span class="preprocessor">            logger-&gt;l7dlog(level, key, LOG4CXX_LOCATION, p1, p2); }} while (0)</span></div>
+<div class="line"><a id="l02456" name="l02456"></a><span class="lineno"> 2456</span> </div>
+<div class="line"><a id="l02467" name="l02467"></a><span class="lineno"><a class="line" href="group__LoggingMacros.html#ga325a73a18c32d1aaf399805566e0b3e2"> 2467</a></span><span class="preprocessor">#define LOG4CXX_L7DLOG3(logger, level, key, p1, p2, p3) do { \</span></div>
+<div class="line"><a id="l02468" name="l02468"></a><span class="lineno"> 2468</span><span class="preprocessor">        if (logger-&gt;isEnabledFor(level)) {\</span></div>
+<div class="line"><a id="l02469" name="l02469"></a><span class="lineno"> 2469</span><span class="preprocessor">            logger-&gt;l7dlog(level, key, LOG4CXX_LOCATION, p1, p2, p3); }} while (0)</span></div>
+<div class="line"><a id="l02470" name="l02470"></a><span class="lineno"> 2470</span> </div>
+<div class="line"><a id="l02473" name="l02473"></a><span class="lineno"> 2473</span><span class="preprocessor">#include &lt;<a class="code" href="loggerrepository_8h.html">log4cxx/spi/loggerrepository.h</a>&gt;</span></div>
+<div class="line"><a id="l02474" name="l02474"></a><span class="lineno"> 2474</span> </div>
+<div class="line"><a id="l02475" name="l02475"></a><span class="lineno"> 2475</span><span class="preprocessor">#endif </span><span class="comment">//_LOG4CXX_LOGGER_H</span></div>
 <div class="ttc" id="aappenderattachableimpl_8h_html"><div class="ttname"><a href="appenderattachableimpl_8h.html">appenderattachableimpl.h</a></div></div>
 <div class="ttc" id="aclasslog4cxx_1_1Hierarchy_html"><div class="ttname"><a href="classlog4cxx_1_1Hierarchy.html">log4cxx::Hierarchy</a></div><div class="ttdoc">This class is specialized in retrieving loggers by name and also maintaining the logger hierarchy.</div><div class="ttdef"><b>Definition:</b> hierarchy.h:56</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1Logger_html"><div class="ttname"><a href="classlog4cxx_1_1Logger.html">log4cxx::Logger</a></div><div class="ttdoc">This is the central class in the log4cxx package.</div><div class="ttdef"><b>Definition:</b> log4cxx/logger.h:51</div></div>
@@ -906,7 +905,7 @@ $(document).ready(function(){initNavTree('log4cxx_2logger_8h_source.html',''); i
     <li class="navelem"><a class="el" href="dir_8f91b758b065bd819ee8f7dc3f677aaf.html">src</a></li><li class="navelem"><a class="el" href="dir_1b5b2ce64a57900ce45e762cd4aeb527.html">main</a></li><li class="navelem"><a class="el" href="dir_ab306221cab606ae77d28622ae23b6e8.html">include</a></li><li class="navelem"><a class="el" href="dir_d6ab321c53270d8e494d88f6a7352018.html">log4cxx</a></li><li class="navelem"><a class="el" href="log4cxx_2logger_8h.html">logger.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri Apr 26 2024 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed May 8 2024 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

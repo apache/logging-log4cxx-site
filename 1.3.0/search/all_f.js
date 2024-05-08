@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['jsonlayout_0',['JSONLayout',['../classlog4cxx_1_1JSONLayout.html#a8d260eb3e05d2b25498ec37deee12454',1,'log4cxx::JSONLayout::JSONLayout()'],['../classlog4cxx_1_1JSONLayout.html',1,'log4cxx::JSONLayout']]],
-  ['jsonlayout_2eh_1',['jsonlayout.h',['../jsonlayout_8h.html',1,'']]]
+  ['keyset_0',['KeySet',['../classlog4cxx_1_1spi_1_1LoggingEvent.html#acfef4d01c51dad67bcad27e05b6d7985',1,'log4cxx::spi::LoggingEvent']]]
 ];
