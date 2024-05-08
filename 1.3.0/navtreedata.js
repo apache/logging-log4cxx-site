@@ -25,53 +25,60 @@
 var NAVTREE =
 [
   [ "Apache Log4cxx", "index.html", [
-    [ "Short introduction to Apache Log4cxx", "index.html#autotoc_md19", null ],
+    [ "Introduction", "index.html", null ],
+    [ "Use", "usage-overview.html", "usage-overview" ],
+    [ "Get", "get.html", "get" ],
+    [ "Build", "build.html", "build" ],
+    [ "Develop", "development-overview.html", "development-overview" ],
     [ "Community", "community.html", [
       [ "Getting help", "community.html#support", null ],
       [ "Reporting a security issue", "community.html#security", null ],
       [ "Official releases", "community.html#artifacts", null ]
     ] ],
-    [ "Use", "usage-overview.html", "usage-overview" ],
-    [ "Get", "get.html", "get" ],
-    [ "Build", "build.html", "build" ],
-    [ "Develop", "development-overview.html", "development-overview" ],
-    [ "Modules", "modules.html", "modules" ],
-    [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ]
-      ] ]
+    [ "Reference Material", "usergroup0.html", [
+      [ "Logging macros", "group__LoggingMacros.html", null ],
+      [ "Namespace List", "namespaces.html", [
+        [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+        [ "Namespace Members", "namespacemembers.html", [
+          [ "All", "namespacemembers.html", null ],
+          [ "Functions", "namespacemembers_func.html", null ],
+          [ "Typedefs", "namespacemembers_type.html", null ],
+          [ "Enumerations", "namespacemembers_enum.html", null ]
+        ] ]
+      ] ],
+      [ "Class List", "annotated.html", [
+        [ "Class List", "annotated.html", "annotated_dup" ],
+        [ "Class Index", "classes.html", null ],
+        [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+        [ "Class Members", "functions.html", [
+          [ "All", "functions.html", "functions_dup" ],
+          [ "Functions", "functions_func.html", "functions_func" ],
+          [ "Variables", "functions_vars.html", null ],
+          [ "Typedefs", "functions_type.html", null ],
+          [ "Enumerations", "functions_enum.html", null ],
+          [ "Enumerator", "functions_eval.html", null ],
+          [ "Related Functions", "functions_rela.html", null ]
+        ] ]
+      ] ],
+      [ "File List", "files.html", [
+        [ "File List", "files.html", "files_dup" ],
+        [ "File Members", "globals.html", [
+          [ "All", "globals.html", null ],
+          [ "Functions", "globals_func.html", null ],
+          [ "Typedefs", "globals_type.html", null ],
+          [ "Macros", "globals_defs.html", null ]
+        ] ]
+      ] ],
+      [ "Examples", "examples.html", "examples" ]
     ] ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ],
-        [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
-      ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
-    ] ],
-    [ "Examples", "examples.html", "examples" ],
-    [ "Apache", "^https://www.apache.org", null ],
-    [ "Logging Services", "^https://logging.apache.org", null ],
-    [ "Github", "^https://github.com/apache/logging-log4cxx", null ]
+    [ "Other Information", "usergroup1.html", [
+      [ "Source code repository", "^https://github.com/apache/logging-log4cxx", null ],
+      [ "Apache", "^https://www.apache.org", null ],
+      [ "Logging Services", "^https://logging.apache.org", null ],
+      [ "Security", "^https://logging.apache.org/security.html", null ],
+      [ "Support", "^https://logging.apache.org/support.html", null ],
+      [ "Downloads", "^https://logging.apache.org/download.html", null ]
+    ] ]
   ] ]
 ];
 
@@ -93,9 +100,9 @@ var NAVTREEINDEX =
 "classlog4cxx_1_1rolling_1_1RolloverDescription.html",
 "classlog4cxx_1_1spi_1_1LoggingEvent.html#ad7cb57f6a6e10b35d1fe76ddf7fed507",
 "consoleappender_8h.html#ad12a1c2ca749cb6c6a05b9f09fc8ec43",
-"index.html",
-"namespacelog4cxx_1_1filter.html#a05e1940b32acea2490a1e889e4f27a24",
-"rootlogger_8h.html"
+"jsonlayout_8h.html#a8ddef2f817a835cbf4596e525fe7a76b",
+"namespacelog4cxx_1_1helpers.html#a3786cf3e0c3d55955d25114ae2c273f8",
+"socket_8h.html#a431a32c5bb14526119a4ae8e8f8a77b0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

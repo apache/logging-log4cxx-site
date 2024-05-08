@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['qt_20support_0',['Qt Support',['../qt-support.html',1,'usage-overview']]],
-  ['quick_20start_1',['Quick Start',['../quick-start.html',1,'usage-overview']]]
+  ['source_20repository_0',['Source Repository',['../source-repository.html',1,'development-overview']]],
+  ['stacktrace_20support_1',['Stacktrace Support',['../stacktrace-support.html',1,'usage-overview']]]
 ];

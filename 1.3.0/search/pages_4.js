@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['environment_20variables_20used_20by_20log4cxx_0',['Environment Variables Used by Log4cxx',['../environment-variables.html',1,'usage-overview']]],
-  ['extending_20log4cxx_1',['Extending Log4cxx',['../extending-log4cxx.html',1,'usage-overview']]]
+  ['filtering_20log_20messages_0',['Filtering Log Messages',['../filters.html',1,'usage-overview']]],
+  ['frequently_20asked_20technical_20questions_1',['Frequently Asked Technical Questions',['../faq.html',1,'usage-overview']]]
 ];

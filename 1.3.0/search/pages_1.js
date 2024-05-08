@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['build_0',['Build',['../build.html',1,'']]],
-  ['building_20with_20cmake_1',['Building with CMake',['../build-cmake.html',1,'build']]],
-  ['building_20with_20vcpkg_2',['Building with vcpkg',['../build-vcpkg.html',1,'build']]]
+  ['change_20log_0',['Change Log',['../changelog.html',1,'get']]],
+  ['community_1',['Community',['../community.html',1,'']]],
+  ['conclusions_2',['Conclusions',['../conclusions.html',1,'usage-overview']]],
+  ['configuration_20samples_3',['Configuration Samples',['../configuration-samples.html',1,'usage-overview']]]
 ];
