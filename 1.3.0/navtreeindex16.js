@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"internal-debugging.html":[1,11],
 "iso8601dateformat_8h.html":[6,3,0,1,0,0,0,3,26],
 "iso8601dateformat_8h_source.html":[6,3,0,1,0,0,0,3,26],
 "jsonlayout_8h.html":[6,3,0,1,0,0,0,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "namespacelog4cxx_1_1helpers.html#a0f62d572694580f4a5247622a146dcd2":[6,1,0,0,3,103],
 "namespacelog4cxx_1_1helpers.html#a12fa2d08e5002f9bc482b2f8b280a6c9":[6,1,0,0,3,112],
 "namespacelog4cxx_1_1helpers.html#a1d71ce798777ebf6da590d70c39d8c45":[6,1,0,0,3,94],
-"namespacelog4cxx_1_1helpers.html#a20757a6d7f8077b3a668d90c2a855356":[6,1,0,0,3,108],
-"namespacelog4cxx_1_1helpers.html#a2425c2fa083387daaa3b217cce4508c3":[6,1,0,0,3,136]
+"namespacelog4cxx_1_1helpers.html#a20757a6d7f8077b3a668d90c2a855356":[6,1,0,0,3,108]
 };

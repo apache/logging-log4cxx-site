@@ -42,9 +42,10 @@ var usage_overview =
     ] ],
     [ "Filtering Log Messages", "filters.html", [
       [ "Labeling Log Output", "filters.html#labeling-log-output", null ],
-      [ "Excluding Log Output", "filters.html#excluding-log-output", [
-        [ "MDC Filter Configuration", "filters.html#map-filter", null ],
-        [ "Log Statement Location Filter Configuration", "filters.html#location-info-filter", null ]
+      [ "Excluding Log Output", "filters.html#excluding-log-output", null ],
+      [ "Runtime Configuration", "filters.html#configure-filter", [
+        [ "Using MDC Values", "filters.html#map-filter", null ],
+        [ "Using the Request Location", "filters.html#location-info-filter", null ]
       ] ]
     ] ],
     [ "Qt Support", "qt-support.html", null ],
