@@ -112,8 +112,9 @@ $(document).ready(function(){initNavTree('filters.html',''); initResizable(); })
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#labeling-log-output">Labeling Log Output</a></li>
-<li class="level1"><a href="#excluding-log-output">Excluding Log Output</a><ul><li class="level2"><a href="#map-filter">MDC Filter Configuration</a></li>
-<li class="level2"><a href="#location-info-filter">Log Statement Location Filter Configuration</a></li>
+<li class="level1"><a href="#excluding-log-output">Excluding Log Output</a></li>
+<li class="level1"><a href="#configure-filter">Runtime Configuration</a><ul><li class="level2"><a href="#map-filter">Using MDC Values</a></li>
+<li class="level2"><a href="#location-info-filter">Using the Request Location</a></li>
 </ul>
 </li>
 </ul>
@@ -140,8 +141,10 @@ Excluding Log Output</h1>
 <li><a class="el" href="classlog4cxx_1_1filter_1_1MapFilter.html">MapFilter</a> - Based off of the log messages MDC, accept or deny the message</li>
 <li><a class="el" href="classlog4cxx_1_1filter_1_1StringMatchFilter.html">StringMatchFilter</a> - If the given substring is found in the message, accept or deny</li>
 </ul>
+<h1><a class="anchor" id="configure-filter"></a>
+Runtime Configuration</h1>
 <h2><a class="anchor" id="map-filter"></a>
-MDC Filter Configuration</h2>
+Using MDC Values</h2>
 <p>The <a class="el" href="classlog4cxx_1_1filter_1_1MapFilter.html">MapFilter</a> allows filtering against data elements that are in the <em>Mapped Diagnostic Context</em> (<em><a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">log4cxx::MDC</a></em>).</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -260,7 +263,7 @@ MDC Filter Configuration</h2>
 <div class="line">    &lt;/<span class="keywordtype">root</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">log4j:configuration</span>&gt;</div>
 </div><!-- fragment --><h2><a class="anchor" id="location-info-filter"></a>
-Log Statement Location Filter Configuration</h2>
+Using the Request Location</h2>
 <p>The <a class="el" href="classlog4cxx_1_1filter_1_1LocationInfoFilter.html">LocationInfoFilter</a> allows filtering against the location in the file that the log statement was made. Location information must not be disabled in order for this filter to be effective. Location information is disabled with the <code>LOG4CXX_DISABLE_LOCATION_INFO</code> macro.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">

@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"socket_8h.html#a431a32c5bb14526119a4ae8e8f8a77b0":[6,3,0,1,0,0,0,3,44,1],
 "socket_8h_source.html":[6,3,0,1,0,0,0,3,44],
 "socketappenderskeleton_8h.html":[6,3,0,1,0,0,0,4,1],
 "socketappenderskeleton_8h_source.html":[6,3,0,1,0,0,0,4,1],
