@@ -40,7 +40,13 @@ var usage_overview =
         [ "XML Example 4", "configuration-samples.html#xml-example-4", null ]
       ] ]
     ] ],
-    [ "Filtering Log Messages", "filters.html", "filters" ],
+    [ "Filtering Log Messages", "filters.html", [
+      [ "Labeling Log Output", "filters.html#labeling-log-output", null ],
+      [ "Excluding Log Output", "filters.html#excluding-log-output", [
+        [ "MDC Filter Configuration", "filters.html#map-filter", null ],
+        [ "Log Statement Location Filter Configuration", "filters.html#location-info-filter", null ]
+      ] ]
+    ] ],
     [ "Qt Support", "qt-support.html", null ],
     [ "Stacktrace Support", "stacktrace-support.html", [
       [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md25", null ]

@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"iso8601dateformat_8h.html":[6,3,0,1,0,0,0,3,26],
 "iso8601dateformat_8h_source.html":[6,3,0,1,0,0,0,3,26],
 "jsonlayout_8h.html":[6,3,0,1,0,0,0,24],
 "jsonlayout_8h.html#a8ddef2f817a835cbf4596e525fe7a76b":[6,3,0,1,0,0,0,24,1],
@@ -39,7 +40,6 @@ var NAVTREEINDEX16 =
 "loader_8h_source.html":[6,3,0,1,0,0,0,3,27],
 "locale_8h.html":[6,3,0,1,0,0,0,3,28],
 "locale_8h_source.html":[6,3,0,1,0,0,0,3,28],
-"location-info-filter.html":[1,3,3],
 "locationinfo_8h.html":[6,3,0,1,0,0,0,8,0,0],
 "locationinfo_8h.html#abf76e600dece2b35d60545bb40930cbc":[6,3,0,1,0,0,0,8,0,0,3],
 "locationinfo_8h.html#addb632a87b7bbddd3574e772dca97da1":[6,3,0,1,0,0,0,8,0,0,2],
@@ -161,7 +161,6 @@ var NAVTREEINDEX16 =
 "macros-influencing-log4cxx.html":[1,10],
 "manualtriggeringpolicy_8h.html":[6,3,0,1,0,0,0,7,5],
 "manualtriggeringpolicy_8h_source.html":[6,3,0,1,0,0,0,7,5],
-"map-filter.html":[1,3,2],
 "mapfilter_8h.html":[6,3,0,1,0,0,0,2,7],
 "mapfilter_8h.html#a7407d48ec94123744ba2725fd738ae80":[6,3,0,1,0,0,0,2,7,1],
 "mapfilter_8h_source.html":[6,3,0,1,0,0,0,2,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "namespacelog4cxx_1_1helpers.html#a0f62d572694580f4a5247622a146dcd2":[6,1,0,0,3,103],
 "namespacelog4cxx_1_1helpers.html#a12fa2d08e5002f9bc482b2f8b280a6c9":[6,1,0,0,3,112],
 "namespacelog4cxx_1_1helpers.html#a1d71ce798777ebf6da590d70c39d8c45":[6,1,0,0,3,94],
-"namespacelog4cxx_1_1helpers.html#a20757a6d7f8077b3a668d90c2a855356":[6,1,0,0,3,108]
+"namespacelog4cxx_1_1helpers.html#a20757a6d7f8077b3a668d90c2a855356":[6,1,0,0,3,108],
+"namespacelog4cxx_1_1helpers.html#a2425c2fa083387daaa3b217cce4508c3":[6,1,0,0,3,136]
 };
