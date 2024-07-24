@@ -137,8 +137,8 @@ $(document).ready(function(){initNavTree('com_2foo_2config3_8cpp-example.html','
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="loglog_8h.html">log4cxx/helpers/loglog.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="log4cxx_2helpers_2transcoder_8h.html">log4cxx/helpers/transcoder.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><span class="preprocessor">#include &lt;windows.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#elif __APPLE__</span></div>
 <div class="line"><span class="preprocessor">#include &lt;mach-o/dyld.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#elif (defined(_XOPEN_SOURCE) &amp;&amp; _XOPEN_SOURCE &gt;= 500) || (defined(_POSIX_C_SOURCE) &amp;&amp; _POSIX_C_SOURCE &gt;= 200112L)</span></div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('com_2foo_2config3_8cpp-example.html','
 <div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> bufSize = 4096;</div>
 <div class="line">    <span class="keywordtype">char</span> buf[bufSize+1] = {0}, pathSepar = <span class="charliteral">&#39;/&#39;</span>;</div>
 <div class="line">    uint32_t bufCount = 0;</div>
-<div class="line"><span class="preprocessor">#if defined(WIN32)</span></div>
+<div class="line"><span class="preprocessor">#if defined(_WIN32)</span></div>
 <div class="line">    GetModuleFileName(NULL, buf, bufSize);</div>
 <div class="line">    pathSepar = <span class="charliteral">&#39;\\&#39;</span>;</div>
 <div class="line"><span class="preprocessor">#elif defined(__APPLE__)</span></div>
@@ -180,31 +180,35 @@ $(document).ready(function(){initNavTree('com_2foo_2config3_8cpp-example.html','
 <div class="line">    <span class="keywordflow">if</span> (std::string::npos != slashIndex) {</div>
 <div class="line">        <span class="comment">// Extract the path</span></div>
 <div class="line">        altPrefix = programFileName.substr(0, slashIndex + 1);</div>
-<div class="line"><span class="preprocessor">#if defined(_DEBUG)</span></div>
-<div class="line">        <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> msg1 = LOG4CXX_STR(<span class="stringliteral">&quot;Alternate prefix [&quot;</span>);</div>
-<div class="line">        helpers::Transcoder::decode(altPrefix, msg1);</div>
-<div class="line">        msg1 += LOG4CXX_STR(<span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line">        helpers::LogLog::debug(msg1);</div>
-<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line">        <span class="keywordflow">if</span> (helpers::LogLog::isDebugEnabled())</div>
+<div class="line">        {</div>
+<div class="line">            <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> msg = LOG4CXX_STR(<span class="stringliteral">&quot;Alternate prefix [&quot;</span>);</div>
+<div class="line">            helpers::Transcoder::decode(altPrefix, msg);</div>
+<div class="line">            msg += LOG4CXX_STR(<span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line">            helpers::LogLog::debug(msg);</div>
+<div class="line">        }</div>
 <div class="line">        <span class="comment">// Add a local directory relative name</span></div>
 <div class="line">        result.push_back(programFileName.substr(slashIndex + 1));</div>
-<div class="line"><span class="preprocessor">#if defined(_DEBUG)</span></div>
-<div class="line">        <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> msg2(LOG4CXX_STR(<span class="stringliteral">&quot;Alternate configuration file name [&quot;</span>));</div>
-<div class="line">        helpers::Transcoder::decode(result.back(), msg2);</div>
-<div class="line">        msg2 += LOG4CXX_STR(<span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line">        helpers::LogLog::debug(msg2);</div>
-<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line">        <span class="keywordflow">if</span> (helpers::LogLog::isDebugEnabled())</div>
+<div class="line">        {</div>
+<div class="line">            <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> msg(LOG4CXX_STR(<span class="stringliteral">&quot;Alternate configuration file name [&quot;</span>));</div>
+<div class="line">            helpers::Transcoder::decode(result.back(), msg);</div>
+<div class="line">            msg += LOG4CXX_STR(<span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line">            helpers::LogLog::debug(msg);</div>
+<div class="line">        }</div>
 <div class="line">        <span class="comment">// Add a local directory relative name without any extension</span></div>
 <div class="line">        <span class="keyword">auto</span> dotIndex = result.back().rfind(<span class="charliteral">&#39;.&#39;</span>);</div>
-<div class="line">        <span class="keywordflow">if</span> (std::string::npos != dotIndex) {</div>
+<div class="line">        <span class="keywordflow">if</span> (std::string::npos != dotIndex)</div>
+<div class="line">        {</div>
 <div class="line">            result.push_back(result.back());</div>
 <div class="line">            result.back().erase(dotIndex);</div>
-<div class="line"><span class="preprocessor">#if defined(_DEBUG)</span></div>
-<div class="line">            <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> msg3(LOG4CXX_STR(<span class="stringliteral">&quot;Alternate configuration file name [&quot;</span>));</div>
-<div class="line">            helpers::Transcoder::decode(result.back(), msg3);</div>
-<div class="line">            msg3 += LOG4CXX_STR(<span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line">            helpers::LogLog::debug(msg3);</div>
-<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line">            <span class="keywordflow">if</span> (helpers::LogLog::isDebugEnabled())</div>
+<div class="line">            {</div>
+<div class="line">                <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> msg(LOG4CXX_STR(<span class="stringliteral">&quot;Alternate configuration file name [&quot;</span>));</div>
+<div class="line">                helpers::Transcoder::decode(result.back(), msg);</div>
+<div class="line">                msg += LOG4CXX_STR(<span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line">                helpers::LogLog::debug(msg);</div>
+<div class="line">            }</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!programFileName.empty()) {</div>
@@ -212,12 +216,13 @@ $(document).ready(function(){initNavTree('com_2foo_2config3_8cpp-example.html','
 <div class="line">        <span class="keywordflow">if</span> (std::string::npos != dotIndex) {</div>
 <div class="line">            programFileName.erase(dotIndex);</div>
 <div class="line">            result.push_back(programFileName);</div>
-<div class="line"><span class="preprocessor">#if defined(_DEBUG)</span></div>
-<div class="line">            <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> msg(LOG4CXX_STR(<span class="stringliteral">&quot;Alternate configuration file name [&quot;</span>));</div>
-<div class="line">            helpers::Transcoder::decode(result.back(), msg);</div>
-<div class="line">            msg += LOG4CXX_STR(<span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line">            helpers::LogLog::debug(msg);</div>
-<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line">            <span class="keywordflow">if</span> (helpers::LogLog::isDebugEnabled())</div>
+<div class="line">            {</div>
+<div class="line">                <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> msg(LOG4CXX_STR(<span class="stringliteral">&quot;Alternate configuration file name [&quot;</span>));</div>
+<div class="line">                helpers::Transcoder::decode(result.back(), msg);</div>
+<div class="line">                msg += LOG4CXX_STR(<span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line">                helpers::LogLog::debug(msg);</div>
+<div class="line">            }</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">    result.push_back(<span class="stringliteral">&quot;log4cxx&quot;</span>);</div>
@@ -306,7 +311,7 @@ $(document).ready(function(){initNavTree('com_2foo_2config3_8cpp-example.html','
   <ul>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri May 10 2024 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Jul 24 2024 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

@@ -38,6 +38,7 @@ var namespacelog4cxx =
     [ "logstream_base", "classlog4cxx_1_1logstream__base.html", "classlog4cxx_1_1logstream__base" ],
     [ "MDC", "classlog4cxx_1_1MDC.html", "classlog4cxx_1_1MDC" ],
     [ "NDC", "classlog4cxx_1_1NDC.html", "classlog4cxx_1_1NDC" ],
+    [ "Optional", "classlog4cxx_1_1Optional.html", "classlog4cxx_1_1Optional" ],
     [ "PatternLayout", "classlog4cxx_1_1PatternLayout.html", "classlog4cxx_1_1PatternLayout" ],
     [ "PropertyConfigurator", "classlog4cxx_1_1PropertyConfigurator.html", "classlog4cxx_1_1PropertyConfigurator" ],
     [ "SimpleLayout", "classlog4cxx_1_1SimpleLayout.html", "classlog4cxx_1_1SimpleLayout" ],

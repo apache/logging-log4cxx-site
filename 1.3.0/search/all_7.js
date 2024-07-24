@@ -3,7 +3,7 @@ var searchData=
   ['cacheddateformat_0',['CachedDateFormat',['../classlog4cxx_1_1pattern_1_1CachedDateFormat.html#a01cd11e7e992aba46941064c9652042a',1,'log4cxx::pattern::CachedDateFormat::CachedDateFormat()'],['../classlog4cxx_1_1pattern_1_1CachedDateFormat.html',1,'log4cxx::pattern::CachedDateFormat']]],
   ['cacheddateformat_2eh_1',['cacheddateformat.h',['../cacheddateformat_8h.html',1,'']]],
   ['calcshortfilename_2',['calcShortFileName',['../classlog4cxx_1_1spi_1_1LocationInfo.html#a5fca73503468b4d2909e0969881ba772',1,'log4cxx::spi::LocationInfo']]],
-  ['callappenders_3',['callAppenders',['../classlog4cxx_1_1Logger.html#a18091296a86cfd46160fdcc8ff46a3f8',1,'log4cxx::Logger']]],
+  ['callappenders_3',['callAppenders',['../classlog4cxx_1_1Logger.html#a9c4c6d2fe258529ad6a9456b77e76d93',1,'log4cxx::Logger']]],
   ['cast_4',['cast',['../classlog4cxx_1_1helpers_1_1Object.html#a92a4c098274758a7b989be642b495d55',1,'log4cxx::helpers::Object::cast()'],['../namespacelog4cxx.html#abe6393af314024e7ab6e6fad84343572',1,'log4cxx::cast()']]],
   ['cfstringref_5',['CFStringRef',['../logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b',1,'logstring.h']]],
   ['change_20log_6',['Change Log',['../changelog.html',1,'get']]],

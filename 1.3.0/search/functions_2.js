@@ -2,7 +2,7 @@ var searchData=
 [
   ['cacheddateformat_0',['CachedDateFormat',['../classlog4cxx_1_1pattern_1_1CachedDateFormat.html#a01cd11e7e992aba46941064c9652042a',1,'log4cxx::pattern::CachedDateFormat']]],
   ['calcshortfilename_1',['calcShortFileName',['../classlog4cxx_1_1spi_1_1LocationInfo.html#a5fca73503468b4d2909e0969881ba772',1,'log4cxx::spi::LocationInfo']]],
-  ['callappenders_2',['callAppenders',['../classlog4cxx_1_1Logger.html#a18091296a86cfd46160fdcc8ff46a3f8',1,'log4cxx::Logger']]],
+  ['callappenders_2',['callAppenders',['../classlog4cxx_1_1Logger.html#a9c4c6d2fe258529ad6a9456b77e76d93',1,'log4cxx::Logger']]],
   ['cast_3',['cast',['../namespacelog4cxx.html#abe6393af314024e7ab6e6fad84343572',1,'log4cxx::cast()'],['../classlog4cxx_1_1helpers_1_1Object.html#a92a4c098274758a7b989be642b495d55',1,'log4cxx::helpers::Object::cast()']]],
   ['charmessagebuffer_4',['CharMessageBuffer',['../classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#a46fe39476fe3406c9d7c44538bb63018',1,'log4cxx::helpers::CharMessageBuffer']]],
   ['charsetdecoder_5',['CharsetDecoder',['../classlog4cxx_1_1helpers_1_1CharsetDecoder.html#a9c8bb23534365af98b78999a9e4d0592',1,'log4cxx::helpers::CharsetDecoder']]],

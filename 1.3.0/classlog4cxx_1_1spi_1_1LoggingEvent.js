@@ -2,12 +2,12 @@ var classlog4cxx_1_1spi_1_1LoggingEvent =
 [
     [ "KeySet", "classlog4cxx_1_1spi_1_1LoggingEvent.html#acfef4d01c51dad67bcad27e05b6d7985", null ],
     [ "LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#ac4bbc9bffef46e7b27cac8b15a5d6ad0", null ],
-    [ "LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a13824daf1f8df92bd023d36f5003603c", null ],
-    [ "LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#ac2b8ae768008fceb6e926c77c44e1d28", null ],
+    [ "LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#ad11706d034f9d361606af25227375a0d", null ],
+    [ "LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a1ff9c1cce022bb313e497525412f8a2b", null ],
     [ "~LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a87d59e35e5fcabd87bfa3b7d5b265526", null ],
     [ "getChronoTimeStamp", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a39d5755b3b58e782eda62984dbfe01e9", null ],
     [ "getLevel", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a1af3e5820c5904e5bfb28f20ea82bfd7", null ],
-    [ "getLocationInformation", "classlog4cxx_1_1spi_1_1LoggingEvent.html#afd5ab88d2f9230d982d8a191b379fec9", null ],
+    [ "getLocationInformation", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a26d417569c074f8e7ea2c727089d5280", null ],
     [ "getLoggerName", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a6fd63ac6f07b08e7bd3c882645281505", null ],
     [ "getMDC", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a4b6024dfa1d591428f54410971cb205b", null ],
     [ "getMDCCopy", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a883c0b327ac73ecd20b85f7e3e7af185", null ],
@@ -20,5 +20,6 @@ var classlog4cxx_1_1spi_1_1LoggingEvent =
     [ "getThreadName", "classlog4cxx_1_1spi_1_1LoggingEvent.html#af3c4dcaafc9c0c73669f12408de7a2e1", null ],
     [ "getThreadUserName", "classlog4cxx_1_1spi_1_1LoggingEvent.html#afd4d0f25c89379a4110bdaa0826062fc", null ],
     [ "getTimeStamp", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a40242809f432a8061634d68cdb3439b1", null ],
+    [ "LoadDC", "classlog4cxx_1_1spi_1_1LoggingEvent.html#af40b425b02893936c0b562a283f36130", null ],
     [ "setProperty", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a9798cc82493f7e0113f349c9d46a9f05", null ]
 ];

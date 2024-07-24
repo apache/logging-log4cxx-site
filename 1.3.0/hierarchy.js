@@ -61,6 +61,7 @@ var hierarchy =
     ] ],
     [ "log4cxx::MDC", "classlog4cxx_1_1MDC.html", null ],
     [ "log4cxx::helpers::MessageBuffer", "classlog4cxx_1_1helpers_1_1MessageBuffer.html", null ],
+    [ "log4cxx::helpers::ThreadSpecificData::NamePair", "structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html", null ],
     [ "log4cxx::NDC", "classlog4cxx_1_1NDC.html", null ],
     [ "log4cxx::helpers::Object", "classlog4cxx_1_1helpers_1_1Object.html", [
       [ "log4cxx::AppenderSkeleton", "classlog4cxx_1_1AppenderSkeleton.html", [
@@ -238,6 +239,9 @@ var hierarchy =
       [ "log4cxx::spi::TriggeringEventEvaluator", "classlog4cxx_1_1spi_1_1TriggeringEventEvaluator.html", null ]
     ] ],
     [ "log4cxx::helpers::OptionConverter", "classlog4cxx_1_1helpers_1_1OptionConverter.html", null ],
+    [ "std::pair", null, [
+      [ "log4cxx::Optional< T >", "classlog4cxx_1_1Optional.html", null ]
+    ] ],
     [ "log4cxx::pattern::PatternParser", "classlog4cxx_1_1pattern_1_1PatternParser.html", null ],
     [ "log4cxx::helpers::Pool", "classlog4cxx_1_1helpers_1_1Pool.html", null ],
     [ "log4cxx::helpers::Properties", "classlog4cxx_1_1helpers_1_1Properties.html", null ],

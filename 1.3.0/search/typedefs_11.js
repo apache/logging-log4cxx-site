@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['unichar_0',['UniChar',['../namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff',1,'log4cxx']]],
-  ['uostream_1',['uostream',['../classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html#a3022c040866aeaf740b50ad1e2e2eecd',1,'log4cxx::helpers::UniCharMessageBuffer']]]
+  ['threadstarted_0',['ThreadStarted',['../namespacelog4cxx_1_1helpers.html#a97fabbcd266481fd111bab2694c262e7',1,'log4cxx::helpers']]],
+  ['threadstartpost_1',['ThreadStartPost',['../namespacelog4cxx_1_1helpers.html#a1d71ce798777ebf6da590d70c39d8c45',1,'log4cxx::helpers']]],
+  ['threadstartpre_2',['ThreadStartPre',['../namespacelog4cxx_1_1helpers.html#a9ce3a9949c6c3a658ba595315403cc96',1,'log4cxx::helpers']]]
 ];
