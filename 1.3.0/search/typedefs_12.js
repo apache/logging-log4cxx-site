@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['xmldomdocumentptr_0',['XMLDOMDocumentPtr',['../namespacelog4cxx_1_1helpers.html#a05287f2d189ad3fc0cccf6802b7903ab',1,'log4cxx::helpers']]],
-  ['xmldomnodelistptr_1',['XMLDOMNodeListPtr',['../namespacelog4cxx_1_1helpers.html#a9d5cef818fe8afbcd50a2a7f44fbc6a9',1,'log4cxx::helpers']]],
-  ['xmldomnodeptr_2',['XMLDOMNodePtr',['../namespacelog4cxx_1_1helpers.html#a9e520aa9a3712a995f42c5219ead0e16',1,'log4cxx::helpers']]]
+  ['unichar_0',['UniChar',['../namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff',1,'log4cxx']]],
+  ['uostream_1',['uostream',['../classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html#a3022c040866aeaf740b50ad1e2e2eecd',1,'log4cxx::helpers::UniCharMessageBuffer']]]
 ];

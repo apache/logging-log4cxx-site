@@ -1,5 +1,6 @@
 var classlog4cxx_1_1helpers_1_1AppenderAttachableImpl =
 [
+    [ "AppenderAttachableImpl", "classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a63fc9b7c9a5b13b8ffc89284598c330e", null ],
     [ "AppenderAttachableImpl", "classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a42325563c11dc22bb143d404feba74a5", null ],
     [ "~AppenderAttachableImpl", "classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#afa16d23898b71b87500174e28975b47f", null ],
     [ "addAppender", "classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a34648d972e80273548f19246f15985fa", null ],

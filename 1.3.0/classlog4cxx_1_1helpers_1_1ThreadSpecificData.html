@@ -108,6 +108,8 @@ $(document).ready(function(){initNavTree('classlog4cxx_1_1helpers_1_1ThreadSpeci
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classlog4cxx_1_1helpers_1_1ThreadSpecificData-members.html">List of all members</a>  </div>
@@ -120,19 +122,34 @@ $(document).ready(function(){initNavTree('classlog4cxx_1_1helpers_1_1ThreadSpeci
 
 <p><code>#include &lt;<a class="el" href="threadspecificdata_8h_source.html">threadspecificdata.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html">NamePair</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The names assigned to the current thread.  <a href="structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a001ab3165ec622ca2b3c6c78f061a95e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a001ab3165ec622ca2b3c6c78f061a95e">NamePairPtr</a> = std::shared_ptr&lt; <a class="el" href="structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html">NamePair</a> &gt;</td></tr>
+<tr class="separator:a001ab3165ec622ca2b3c6c78f061a95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b5640f09443ce8fa6982fd16d000c1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a6b5640f09443ce8fa6982fd16d000c1e">ThreadSpecificData</a> ()</td></tr>
 <tr class="separator:a6b5640f09443ce8fa6982fd16d000c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a6784f9a7e44fe252c94da5bb90cc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a78a6784f9a7e44fe252c94da5bb90cc7">ThreadSpecificData</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html">ThreadSpecificData</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a78a6784f9a7e44fe252c94da5bb90cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a479d765ad6c6ecb3ca7be771ccf59355"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a479d765ad6c6ecb3ca7be771ccf59355">~ThreadSpecificData</a> ()</td></tr>
 <tr class="separator:a479d765ad6c6ecb3ca7be771ccf59355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4f81b97cab0ec530670485c110551d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#ad4f81b97cab0ec530670485c110551d4">recycle</a> ()</td></tr>
-<tr class="memdesc:ad4f81b97cab0ec530670485c110551d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release this ThreadSpecficData if empty.  <br /></td></tr>
+<tr class="memdesc:ad4f81b97cab0ec530670485c110551d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove current thread data from APR if the diagnostic context is empty.  <br /></td></tr>
 <tr class="separator:ad4f81b97cab0ec530670485c110551d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c21b3b9792e7fb1ac58f4451dfe4eac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlog4cxx_1_1NDC.html#a2421df1f87e35c7c03d46afe23f7cfbd">log4cxx::NDC::Stack</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a9c21b3b9792e7fb1ac58f4451dfe4eac">getStack</a> ()</td></tr>
-<tr class="separator:a9c21b3b9792e7fb1ac58f4451dfe4eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac841073d099ebf49e1a966ba4cf084da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlog4cxx_1_1MDC.html#afc1b9ecb08d6983d2647ff510d8d1e31">log4cxx::MDC::Map</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#ac841073d099ebf49e1a966ba4cf084da">getMap</a> ()</td></tr>
-<tr class="separator:ac841073d099ebf49e1a966ba4cf084da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e71badb6b3476061a30a9f98e61b9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlog4cxx_1_1NDC.html#a2421df1f87e35c7c03d46afe23f7cfbd">NDC::Stack</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a94e71badb6b3476061a30a9f98e61b9b">getStack</a> ()</td></tr>
+<tr class="memdesc:a94e71badb6b3476061a30a9f98e61b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The nested diagnostic context of the current thread.  <br /></td></tr>
+<tr class="separator:a94e71badb6b3476061a30a9f98e61b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadce6d53c8609115348c0300bf3143f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlog4cxx_1_1MDC.html#afc1b9ecb08d6983d2647ff510d8d1e31">MDC::Map</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#aadce6d53c8609115348c0300bf3143f9">getMap</a> ()</td></tr>
+<tr class="memdesc:aadce6d53c8609115348c0300bf3143f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mapped diagnostic context of the current thread.  <br /></td></tr>
+<tr class="separator:aadce6d53c8609115348c0300bf3143f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -140,17 +157,42 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7eb4fd103efb6d52d196ac8990487259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets current thread specific data.  <br /></td></tr>
 <tr class="separator:a7eb4fd103efb6d52d196ac8990487259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96cecd493096437d856c9f7c269498a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a96cecd493096437d856c9f7c269498a2">put</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;key, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;val)</td></tr>
+<tr class="memdesc:a96cecd493096437d856c9f7c269498a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the <code>key</code> <code>val</code> pair to the mapped diagnostic context of the current thread.  <br /></td></tr>
 <tr class="separator:a96cecd493096437d856c9f7c269498a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a316722fb6acaca39ba5fb6ed0251fe6a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a316722fb6acaca39ba5fb6ed0251fe6a">push</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;val)</td></tr>
+<tr class="memdesc:a316722fb6acaca39ba5fb6ed0251fe6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>val</code> to the nested diagnostic context of the current thread.  <br /></td></tr>
 <tr class="separator:a316722fb6acaca39ba5fb6ed0251fe6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd3ce681febbaa3a56b784123861dc7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a4cd3ce681febbaa3a56b784123861dc7">inherit</a> (const <a class="el" href="classlog4cxx_1_1NDC.html#a2421df1f87e35c7c03d46afe23f7cfbd">log4cxx::NDC::Stack</a> &amp;stack)</td></tr>
-<tr class="separator:a4cd3ce681febbaa3a56b784123861dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98777d725ec16d887f46c10320e9562e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a98777d725ec16d887f46c10320e9562e">inherit</a> (const <a class="el" href="classlog4cxx_1_1NDC.html#a2421df1f87e35c7c03d46afe23f7cfbd">NDC::Stack</a> &amp;stack)</td></tr>
+<tr class="memdesc:a98777d725ec16d887f46c10320e9562e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>stack</code> as the nested diagnostic context of the current thread.  <br /></td></tr>
+<tr class="separator:a98777d725ec16d887f46c10320e9562e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666ac17516a85d9adc2591646180e079"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a666ac17516a85d9adc2591646180e079"><td class="memTemplItemLeft" align="right" valign="top">static std::basic_ostringstream&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a666ac17516a85d9adc2591646180e079">getStringStream</a> ()</td></tr>
+<tr class="memdesc:a666ac17516a85d9adc2591646180e079"><td class="mdescLeft">&#160;</td><td class="mdescRight">A character outpur stream only assessable to the current thread.  <br /></td></tr>
+<tr class="separator:a666ac17516a85d9adc2591646180e079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8335449f95b688b163f86f9708195719"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a001ab3165ec622ca2b3c6c78f061a95e">NamePairPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a8335449f95b688b163f86f9708195719">getNames</a> ()</td></tr>
+<tr class="memdesc:a8335449f95b688b163f86f9708195719"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference counted pointer to the names of the current thread.  <br /></td></tr>
+<tr class="separator:a8335449f95b688b163f86f9708195719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class contains all the thread-specific data in use by <a class="el" href="namespacelog4cxx.html">log4cxx</a>. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a001ab3165ec622ca2b3c6c78f061a95e" name="a001ab3165ec622ca2b3c6c78f061a95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a001ab3165ec622ca2b3c6c78f061a95e">&#9670;&#160;</a></span>NamePairPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a001ab3165ec622ca2b3c6c78f061a95e">log4cxx::helpers::ThreadSpecificData::NamePairPtr</a> =  std::shared_ptr&lt;<a class="el" href="structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html">NamePair</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6b5640f09443ce8fa6982fd16d000c1e" name="a6b5640f09443ce8fa6982fd16d000c1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b5640f09443ce8fa6982fd16d000c1e">&#9670;&#160;</a></span>ThreadSpecificData()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b5640f09443ce8fa6982fd16d000c1e">&#9670;&#160;</a></span>ThreadSpecificData() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,6 +201,24 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">log4cxx::helpers::ThreadSpecificData::ThreadSpecificData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78a6784f9a7e44fe252c94da5bb90cc7" name="a78a6784f9a7e44fe252c94da5bb90cc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a6784f9a7e44fe252c94da5bb90cc7">&#9670;&#160;</a></span>ThreadSpecificData() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">log4cxx::helpers::ThreadSpecificData::ThreadSpecificData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html">ThreadSpecificData</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -208,18 +268,18 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets current thread specific data. </p>
-<dl class="section return"><dt>Returns</dt><dd>thread specific data, may be null. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer that is never null. </dd></dl>
 
 </div>
 </div>
-<a id="ac841073d099ebf49e1a966ba4cf084da" name="ac841073d099ebf49e1a966ba4cf084da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac841073d099ebf49e1a966ba4cf084da">&#9670;&#160;</a></span>getMap()</h2>
+<a id="aadce6d53c8609115348c0300bf3143f9" name="aadce6d53c8609115348c0300bf3143f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadce6d53c8609115348c0300bf3143f9">&#9670;&#160;</a></span>getMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlog4cxx_1_1MDC.html#afc1b9ecb08d6983d2647ff510d8d1e31">log4cxx::MDC::Map</a> &amp; log4cxx::helpers::ThreadSpecificData::getMap </td>
+          <td class="memname"><a class="el" href="classlog4cxx_1_1MDC.html#afc1b9ecb08d6983d2647ff510d8d1e31">MDC::Map</a> &amp; log4cxx::helpers::ThreadSpecificData::getMap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -227,16 +287,46 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The mapped diagnostic context of the current thread. </p>
+
 </div>
 </div>
-<a id="a9c21b3b9792e7fb1ac58f4451dfe4eac" name="a9c21b3b9792e7fb1ac58f4451dfe4eac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c21b3b9792e7fb1ac58f4451dfe4eac">&#9670;&#160;</a></span>getStack()</h2>
+<a id="a8335449f95b688b163f86f9708195719" name="a8335449f95b688b163f86f9708195719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8335449f95b688b163f86f9708195719">&#9670;&#160;</a></span>getNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html#a001ab3165ec622ca2b3c6c78f061a95e">NamePairPtr</a> log4cxx::helpers::ThreadSpecificData::getNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A reference counted pointer to the names of the current thread. </p>
+<p>String references will remain valid for the lifetime of this pointer (i.e. even after thread termination). </p>
+
+</div>
+</div>
+<a id="a94e71badb6b3476061a30a9f98e61b9b" name="a94e71badb6b3476061a30a9f98e61b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e71badb6b3476061a30a9f98e61b9b">&#9670;&#160;</a></span>getStack()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlog4cxx_1_1NDC.html#a2421df1f87e35c7c03d46afe23f7cfbd">log4cxx::NDC::Stack</a> &amp; log4cxx::helpers::ThreadSpecificData::getStack </td>
+          <td class="memname"><a class="el" href="classlog4cxx_1_1NDC.html#a2421df1f87e35c7c03d46afe23f7cfbd">NDC::Stack</a> &amp; log4cxx::helpers::ThreadSpecificData::getStack </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -244,10 +334,41 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The nested diagnostic context of the current thread. </p>
+
 </div>
 </div>
-<a id="a4cd3ce681febbaa3a56b784123861dc7" name="a4cd3ce681febbaa3a56b784123861dc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cd3ce681febbaa3a56b784123861dc7">&#9670;&#160;</a></span>inherit()</h2>
+<a id="a666ac17516a85d9adc2591646180e079" name="a666ac17516a85d9adc2591646180e079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a666ac17516a85d9adc2591646180e079">&#9670;&#160;</a></span>getStringStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::basic_ostringstream&lt; T &gt; &amp; log4cxx::helpers::ThreadSpecificData::getStringStream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A character outpur stream only assessable to the current thread. </p>
+
+</div>
+</div>
+<a id="a98777d725ec16d887f46c10320e9562e" name="a98777d725ec16d887f46c10320e9562e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98777d725ec16d887f46c10320e9562e">&#9670;&#160;</a></span>inherit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +379,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static void log4cxx::helpers::ThreadSpecificData::inherit </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1NDC.html#a2421df1f87e35c7c03d46afe23f7cfbd">log4cxx::NDC::Stack</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1NDC.html#a2421df1f87e35c7c03d46afe23f7cfbd">NDC::Stack</a> &amp;&#160;</td>
           <td class="paramname"><em>stack</em></td><td>)</td>
           <td></td>
         </tr>
@@ -269,6 +390,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Use <code>stack</code> as the nested diagnostic context of the current thread. </p>
 
 </div>
 </div>
@@ -295,6 +418,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Add <code>val</code> to the nested diagnostic context of the current thread. </p>
 
 </div>
 </div>
@@ -332,6 +457,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Add the <code>key</code> <code>val</code> pair to the mapped diagnostic context of the current thread. </p>
+
 </div>
 </div>
 <a id="ad4f81b97cab0ec530670485c110551d4" name="ad4f81b97cab0ec530670485c110551d4"></a>
@@ -349,7 +476,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Release this ThreadSpecficData if empty. </p>
+<p>Remove current thread data from APR if the diagnostic context is empty. </p>
 
 </div>
 </div>
@@ -365,7 +492,7 @@ Static Public Member Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="namespacelog4cxx_1_1helpers.html">helpers</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1helpers_1_1ThreadSpecificData.html">ThreadSpecificData</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Fri May 10 2024 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Jul 24 2024 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>

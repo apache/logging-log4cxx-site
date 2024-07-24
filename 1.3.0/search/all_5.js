@@ -35,7 +35,7 @@ var searchData=
   ['appender_2eh_32',['appender.h',['../appender_8h.html',1,'']]],
   ['appenderattachable_33',['AppenderAttachable',['../classlog4cxx_1_1spi_1_1AppenderAttachable.html',1,'log4cxx::spi']]],
   ['appenderattachable_2eh_34',['appenderattachable.h',['../appenderattachable_8h.html',1,'']]],
-  ['appenderattachableimpl_35',['AppenderAttachableImpl',['../classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a42325563c11dc22bb143d404feba74a5',1,'log4cxx::helpers::AppenderAttachableImpl::AppenderAttachableImpl()'],['../classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html',1,'log4cxx::helpers::AppenderAttachableImpl']]],
+  ['appenderattachableimpl_35',['AppenderAttachableImpl',['../classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a63fc9b7c9a5b13b8ffc89284598c330e',1,'log4cxx::helpers::AppenderAttachableImpl::AppenderAttachableImpl()'],['../classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a42325563c11dc22bb143d404feba74a5',1,'log4cxx::helpers::AppenderAttachableImpl::AppenderAttachableImpl(Pool &amp;pool)'],['../classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html',1,'log4cxx::helpers::AppenderAttachableImpl']]],
   ['appenderattachableimpl_2eh_36',['appenderattachableimpl.h',['../appenderattachableimpl_8h.html',1,'']]],
   ['appenderlist_37',['appenderList',['../classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a7cc80a1da44d9e472f027cf2579c68ee',1,'log4cxx::helpers::AppenderAttachableImpl']]],
   ['appendermap_38',['AppenderMap',['../classlog4cxx_1_1xml_1_1DOMConfigurator.html#a8bed79fd5c7635ae588037b7b32a65cc',1,'log4cxx::xml::DOMConfigurator']]],

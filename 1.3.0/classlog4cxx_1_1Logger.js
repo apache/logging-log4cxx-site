@@ -1,5 +1,6 @@
 var classlog4cxx_1_1Logger =
 [
+    [ "Logger", "classlog4cxx_1_1Logger.html#aae2098bec35d63d8a4a417aa890618e0", null ],
     [ "Logger", "classlog4cxx_1_1Logger.html#a1fa40199a7028d383f08b9ad1380bdb9", null ],
     [ "~Logger", "classlog4cxx_1_1Logger.html#a98f7cfe59217d268c4935e1c37bae28d", null ],
     [ "addAppender", "classlog4cxx_1_1Logger.html#afb398258ec8033737ed95aed016daf6c", null ],
@@ -16,7 +17,7 @@ var classlog4cxx_1_1Logger =
     [ "addTraceEvent", "classlog4cxx_1_1Logger.html#acd938a3d5ad624d6e13ef4e40b21ec79", null ],
     [ "addTraceEvent", "classlog4cxx_1_1Logger.html#afcfec4904bb6180344568336bd8a5a66", null ],
     [ "addTraceEvent", "classlog4cxx_1_1Logger.html#a4df178bf0f320d856a0fa5aebe97933f", null ],
-    [ "callAppenders", "classlog4cxx_1_1Logger.html#a18091296a86cfd46160fdcc8ff46a3f8", null ],
+    [ "callAppenders", "classlog4cxx_1_1Logger.html#a9c4c6d2fe258529ad6a9456b77e76d93", null ],
     [ "closeNestedAppenders", "classlog4cxx_1_1Logger.html#adf4916f818281f48ee3fd33576635c23", null ],
     [ "debug", "classlog4cxx_1_1Logger.html#a1bae58e2f29a4b149cf1a1ec19ee4f77", null ],
     [ "debug", "classlog4cxx_1_1Logger.html#a76e14fdf49faca8f68bd7502e8cb736d", null ],

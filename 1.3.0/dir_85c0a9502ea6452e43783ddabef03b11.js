@@ -33,6 +33,7 @@ var dir_85c0a9502ea6452e43783ddabef03b11 =
     [ "log4cxx/helpers/messagebuffer.h", "log4cxx_2helpers_2messagebuffer_8h.html", "log4cxx_2helpers_2messagebuffer_8h" ],
     [ "object.h", "object_8h.html", "object_8h" ],
     [ "onlyonceerrorhandler.h", "onlyonceerrorhandler_8h.html", "onlyonceerrorhandler_8h" ],
+    [ "optional.h", "optional_8h.html", "optional_8h" ],
     [ "optionconverter.h", "optionconverter_8h.html", "optionconverter_8h" ],
     [ "outputstream.h", "outputstream_8h.html", "outputstream_8h" ],
     [ "outputstreamwriter.h", "outputstreamwriter_8h.html", "outputstreamwriter_8h" ],
