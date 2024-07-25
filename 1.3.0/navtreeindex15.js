@@ -111,7 +111,7 @@ var NAVTREEINDEX15 =
 "expressionfilter_8h.html":[6,3,0,1,0,0,0,2,2],
 "expressionfilter_8h.html#ab5d5d9c27682b7504c756530f9cf151c":[6,3,0,1,0,0,0,2,2,1],
 "expressionfilter_8h_source.html":[6,3,0,1,0,0,0,2,2],
-"extending-log4cxx.html":[1,6],
+"extending-log4cxx.html":[1,4],
 "fallbackerrorhandler_8h.html":[6,3,0,1,0,0,0,9,0],
 "fallbackerrorhandler_8h.html#a21e84e9c01801ddd4aa0bac68ea0dccd":[6,3,0,1,0,0,0,9,0,1],
 "fallbackerrorhandler_8h_source.html":[6,3,0,1,0,0,0,9,0],
