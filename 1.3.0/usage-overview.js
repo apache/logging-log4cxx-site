@@ -48,11 +48,11 @@ var usage_overview =
         [ "Using the Request Location", "filters.html#location-info-filter", null ]
       ] ]
     ] ],
+    [ "Extending Log4cxx", "extending-log4cxx.html", null ],
     [ "Qt Support", "qt-support.html", null ],
     [ "Stacktrace Support", "stacktrace-support.html", [
       [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md25", null ]
     ] ],
-    [ "Extending Log4cxx", "extending-log4cxx.html", null ],
     [ "Threading", "threading.html", [
       [ "Unexpected Exit", "threading.html#unexpected-exit", null ],
       [ "Signal Handling with Log4cxx", "threading.html#signal-handling", [

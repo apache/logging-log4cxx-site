@@ -114,22 +114,27 @@ $(document).ready(function(){initNavTree('extending-log4cxx.html',''); initResiz
 <p>Sometimes, you may want to extend Log4cxx, for example by creating a new appender to write out data in a new format. The following guide shows how you can extend Log4cxx in order to add a new appender.</p>
 <p>The full sample application can be found at <a class="el" href="custom-appender_8cpp-example.html">custom-appender.cpp</a> and <a class="el" href="custom-appender_8xml-example.html">custom-appender.xml</a> .</p>
 <p>The first thing for our example is to create a class that extends <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders.">log4cxx.AppenderSkeleton</a> so that we don't need to implement all of the virtual methods that are defined in <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">log4cxx.Appender</a>:</p>
-<div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a> {</div>
+<div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">class </span>NullWriterAppender : <span class="keyword">public</span> AppenderSkeleton {</div>
+<div class="line"><span class="keyword">namespace </span>com::foo {</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span>NullWriterAppender : <span class="keyword">public</span> <a class="code hl_class" href="classlog4cxx_1_1AppenderSkeleton.html">AppenderSkeleton</a> {</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line">}</div>
+<div class="ttc" id="aclasslog4cxx_1_1AppenderSkeleton_html"><div class="ttname"><a href="classlog4cxx_1_1AppenderSkeleton.html">log4cxx::AppenderSkeleton</a></div><div class="ttdoc">Implementation base class for all appenders.</div><div class="ttdef"><b>Definition:</b> appenderskeleton.h:41</div></div>
 <div class="ttc" id="anamespacelog4cxx_html"><div class="ttname"><a href="namespacelog4cxx.html">log4cxx</a></div><div class="ttdef"><b>Definition:</b> configuration.h:25</div></div>
 </div><!-- fragment --><p>Next, we need to add in a few macros in order to properly register our new appender with Log4cxx:</p>
-<div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a> {</div>
+<div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">class </span>NullWriterAppender : <span class="keyword">public</span> AppenderSkeleton {</div>
+<div class="line"><span class="keyword">namespace </span>com::foo {</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">class </span>NullWriterAppender : <span class="keyword">public</span> <a class="code hl_class" href="classlog4cxx_1_1AppenderSkeleton.html">AppenderSkeleton</a> {</div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <a class="code hl_define" href="object_8h.html#a9e129ec12609d98bb2a10d15b46709ba">DECLARE_LOG4CXX_OBJECT</a>(NullWriterAppender)</div>
 <div class="line">    <a class="code hl_define" href="object_8h.html#ac8ff8f70159e03fe7d8c4aa743cc9cda">BEGIN_LOG4CXX_CAST_MAP</a>()</div>
 <div class="line">    <a class="code hl_define" href="object_8h.html#a642180530328ec0378468edda5bc94e2">LOG4CXX_CAST_ENTRY</a>(NullWriterAppender)</div>
-<div class="line">    <a class="code hl_define" href="object_8h.html#ab14dc1a75d63a11359c8861a59786abc">LOG4CXX_CAST_ENTRY_CHAIN</a>(AppenderSkeleton)</div>
+<div class="line">    <a class="code hl_define" href="object_8h.html#ab14dc1a75d63a11359c8861a59786abc">LOG4CXX_CAST_ENTRY_CHAIN</a>(<a class="code hl_class" href="classlog4cxx_1_1AppenderSkeleton.html">AppenderSkeleton</a>)</div>
 <div class="line">    <a class="code hl_define" href="object_8h.html#a917a7d053853b1ffdf45a3d91aeca4f1">END_LOG4CXX_CAST_MAP</a>()</div>
 <div class="line"> </div>
 <div class="line">};</div>
@@ -143,7 +148,8 @@ $(document).ready(function(){initNavTree('extending-log4cxx.html',''); initResiz
 <div class="ttc" id="aobject_8h_html_a9e129ec12609d98bb2a10d15b46709ba"><div class="ttname"><a href="object_8h.html#a9e129ec12609d98bb2a10d15b46709ba">DECLARE_LOG4CXX_OBJECT</a></div><div class="ttdeci">#define DECLARE_LOG4CXX_OBJECT(object)</div><div class="ttdef"><b>Definition:</b> object.h:43</div></div>
 <div class="ttc" id="aobject_8h_html_ab14dc1a75d63a11359c8861a59786abc"><div class="ttname"><a href="object_8h.html#ab14dc1a75d63a11359c8861a59786abc">LOG4CXX_CAST_ENTRY_CHAIN</a></div><div class="ttdeci">#define LOG4CXX_CAST_ENTRY_CHAIN(Interface)</div><div class="ttdef"><b>Definition:</b> object.h:164</div></div>
 <div class="ttc" id="aobject_8h_html_ac8ff8f70159e03fe7d8c4aa743cc9cda"><div class="ttname"><a href="object_8h.html#ac8ff8f70159e03fe7d8c4aa743cc9cda">BEGIN_LOG4CXX_CAST_MAP</a></div><div class="ttdeci">#define BEGIN_LOG4CXX_CAST_MAP()</div><div class="ttdef"><b>Definition:</b> object.h:146</div></div>
-</div><!-- fragment --><p>These macros tell Log4cxx what the name of our class is, as well as giving Log4cxx a way of instansiating our class. Without these macros, the custom class will not work.</p>
+</div><!-- fragment --><p>These macros allow Log4cxx to instantiate your class and provide <a class="el" href="namespacelog4cxx.html#abe6393af314024e7ab6e6fad84343572" title="Attempt to cast one Object to another kind of Object.">log4cxx::cast</a>. The <code>DECLARE_LOG4CXX_OBJECT</code> macro adds method declarations and the <code>IMPLEMENT_LOG4CXX_OBJECT</code> macro adds implementations. The <code>IMPLEMENT_LOG4CXX_OBJECT</code> also adds a static reference value which is initialized during program startup by calling, for example, <code>NullWriterAppender::registerClass()</code>.</p>
+<p>To avoid <a href="https://en.cppreference.com/w/cpp/language/siof">Static Initialization Order Fiasco</a> when configuring Log4cxx during static initialization (as in <a href="quick-start.html#configuration">the recommended runtime configuration technique</a>) you should put your extension classes (and the <code>IMPLEMENT_LOG4CXX_OBJECT</code> macro) in a dynamic library (DSO/DLL) that is loaded before loading the Log4cxx configuration. Alternatively, you could call <code>NullWriterAppender::registerClass()</code> before loading the configuration. Multiple <code>registerClass()</code> calls do no harm.</p>
 <p>Now, let's add some basic functionality to our class. As the name of our class implies, we are going to do nothing with our appender here, as this is just an example. To that end, we need to implement the following:</p><ol type="1">
 <li>Default constructor</li>
 <li><code>close</code> method</li>
@@ -161,15 +167,15 @@ $(document).ready(function(){initNavTree('extending-log4cxx.html',''); initResiz
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> append(<span class="keyword">const</span> spi::LoggingEventPtr&amp; event, helpers::Pool&amp; p)<span class="keyword"> override </span>{</div>
+<div class="line"><span class="keywordtype">void</span> append(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a>&amp; event, <a class="code hl_class" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a>&amp; p)<span class="keyword"> override </span>{</div>
 <div class="line">    <span class="comment">// This gets called whenever there is a valid event for our appender.</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> activateOptions(helpers::Pool&amp; pool)<span class="keyword"> override </span>{</div>
+<div class="line"><span class="keywordtype">void</span> activateOptions(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a>&amp; pool)<span class="keyword"> override </span>{</div>
 <div class="line">    <span class="comment">// Given all of our options, do something useful(e.g. open a file)</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> setOption(<span class="keyword">const</span> LogString&amp; option, <span class="keyword">const</span> LogString&amp; value)<span class="keyword"> override </span>{</div>
+<div class="line"><span class="keywordtype">void</span> setOption(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; option, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&amp; value)<span class="keyword"> override </span>{</div>
 <div class="line">    <span class="keywordflow">if</span> (helpers::StringHelper::equalsIgnoreCase</div>
 <div class="line">        ( option</div>
 <div class="line">        , LOG4CXX_STR(<span class="stringliteral">&quot;SOMEVALUE&quot;</span>)</div>
@@ -180,6 +186,9 @@ $(document).ready(function(){initNavTree('extending-log4cxx.html',''); initResiz
 <div class="line">        <span class="comment">// Do something with the &#39;value&#39; here.</span></div>
 <div class="line">    }</div>
 <div class="line">}</div>
+<div class="ttc" id="aclasslog4cxx_1_1helpers_1_1Pool_html"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a></div><div class="ttdef"><b>Definition:</b> pool.h:33</div></div>
+<div class="ttc" id="anamespacelog4cxx_1_1spi_html_aae6992e1b33222c26bdc1173b6aedc6c"><div class="ttname"><a href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">log4cxx::spi::LoggingEventPtr</a></div><div class="ttdeci">std::shared_ptr&lt; LoggingEvent &gt; LoggingEventPtr</div><div class="ttdef"><b>Definition:</b> appender.h:32</div></div>
+<div class="ttc" id="anamespacelog4cxx_html_aa2308ed05fef2a1366066cb38b177e94"><div class="ttname"><a href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a></div><div class="ttdeci">std::basic_string&lt; logchar &gt; LogString</div><div class="ttdef"><b>Definition:</b> logstring.h:60</div></div>
 </div><!-- fragment --><p>At this point, we now have a fully functioning(if useless) custom appender. We can now refer to this appender in our configuration file like so:</p>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">log4j:configuration</span> <span class="keyword">xmlns:log4j</span>=<span class="stringliteral">&quot;http://jakarta.apache.org/log4j/&quot;</span>&gt;</div>
@@ -219,7 +228,7 @@ $(document).ready(function(){initNavTree('extending-log4cxx.html',''); initResiz
     <li class="navelem"><a class="el" href="usage-overview.html">Use</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Wed Jul 24 2024 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Thu Jul 25 2024 </li>
     <li class="center">
 Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
 Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>
