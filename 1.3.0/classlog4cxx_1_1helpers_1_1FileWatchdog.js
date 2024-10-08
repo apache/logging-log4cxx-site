@@ -6,7 +6,7 @@ var classlog4cxx_1_1helpers_1_1FileWatchdog =
     [ "doOnChange", "classlog4cxx_1_1helpers_1_1FileWatchdog.html#abeb9f087164abff7fc66b1e8888fa102", null ],
     [ "file", "classlog4cxx_1_1helpers_1_1FileWatchdog.html#a44c38e1ebb57f9b34f01efa8a05ea788", null ],
     [ "is_active", "classlog4cxx_1_1helpers_1_1FileWatchdog.html#a4dd4abbc3b985ea9a3d894ca1d8323b4", null ],
-    [ "setDelay", "classlog4cxx_1_1helpers_1_1FileWatchdog.html#a12bcdb79f9fc8569fcca7521dea0c04f", null ],
+    [ "setDelay", "classlog4cxx_1_1helpers_1_1FileWatchdog.html#a2c6a1f89db637b550575c5b8a9d38351", null ],
     [ "start", "classlog4cxx_1_1helpers_1_1FileWatchdog.html#a77a2070d54facb5059e38562c44f845d", null ],
     [ "stop", "classlog4cxx_1_1helpers_1_1FileWatchdog.html#a99d8215df24f486a520103b6927f26e8", null ]
 ];

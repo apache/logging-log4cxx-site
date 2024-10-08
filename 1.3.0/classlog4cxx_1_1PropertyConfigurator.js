@@ -4,7 +4,7 @@ var classlog4cxx_1_1PropertyConfigurator =
     [ "~PropertyConfigurator", "classlog4cxx_1_1PropertyConfigurator.html#a7c5a1eb166c4189e95412d8d28b8d410", null ],
     [ "configureLoggerFactory", "classlog4cxx_1_1PropertyConfigurator.html#a2f28b1a2b12a129e3f84095ba7475282", null ],
     [ "configureRootLogger", "classlog4cxx_1_1PropertyConfigurator.html#a8c78f5fe0f04458326625c225bc6c98a", null ],
-    [ "doConfigure", "classlog4cxx_1_1PropertyConfigurator.html#af6a6a91b064539aaee99db5fb54122eb", null ],
+    [ "doConfigure", "classlog4cxx_1_1PropertyConfigurator.html#a47ef64a0181895806090dad3f9dcfea3", null ],
     [ "doConfigure", "classlog4cxx_1_1PropertyConfigurator.html#a07d41a7308190de308aceacc5d12e0e2", null ],
     [ "parseAdditivityForLogger", "classlog4cxx_1_1PropertyConfigurator.html#a52e236a23cae2be0e6b46a9ccef8e307", null ],
     [ "parseAppender", "classlog4cxx_1_1PropertyConfigurator.html#a9e33baa25735731802831f1cde998823", null ],

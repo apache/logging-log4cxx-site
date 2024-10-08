@@ -21,8 +21,5 @@ var build =
       [ "Preparation", "build-vcpkg.html#autotoc_md6", null ],
       [ "Building log4cxx.dll", "build-vcpkg.html#autotoc_md7", null ]
     ] ],
-    [ "Testing coverage", "supported-systems.html", [
-      [ "Covered by Github", "supported-systems.html#autotoc_md17", null ],
-      [ "Covered by the team", "supported-systems.html#autotoc_md18", null ]
-    ] ]
+    [ "Testing coverage", "supported-systems.html", null ]
 ];

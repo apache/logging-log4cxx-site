@@ -28,7 +28,7 @@ var searchData=
   ['setdata_25',['setData',['../classlog4cxx_1_1helpers_1_1DatagramPacket.html#ad17234d48be2b3846ec908ea56d56146',1,'log4cxx::helpers::DatagramPacket::setData(void *buf1)'],['../classlog4cxx_1_1helpers_1_1DatagramPacket.html#aee10363ade1bb6277a9542a8f5952207',1,'log4cxx::helpers::DatagramPacket::setData(void *buf1, int offset1, int length1)']]],
   ['setdatepattern_26',['setDatePattern',['../classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ae839a8809b8396b02c8da98d9367abb1',1,'log4cxx::rolling::RollingFileAppender']]],
   ['setdebugcolor_27',['setDebugColor',['../classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html#a8e05b924dc3a02c72849167af6ad94e6',1,'log4cxx::pattern::ColorStartPatternConverter']]],
-  ['setdelay_28',['setDelay',['../classlog4cxx_1_1helpers_1_1FileWatchdog.html#a12bcdb79f9fc8569fcca7521dea0c04f',1,'log4cxx::helpers::FileWatchdog']]],
+  ['setdelay_28',['setDelay',['../classlog4cxx_1_1helpers_1_1FileWatchdog.html#a2c6a1f89db637b550575c5b8a9d38351',1,'log4cxx::helpers::FileWatchdog']]],
   ['setencoding_29',['setEncoding',['../classlog4cxx_1_1net_1_1TelnetAppender.html#a90bce24b5449af06cd03d2d18c81d32a',1,'log4cxx::net::TelnetAppender::setEncoding()'],['../classlog4cxx_1_1WriterAppender.html#aeff6257f4e8b1fc972c9260a93529b0a',1,'log4cxx::WriterAppender::setEncoding()']]],
   ['seterrorcolor_30',['setErrorColor',['../classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html#af017dabb6f63a73ad044ed607e2237f2',1,'log4cxx::pattern::ColorStartPatternConverter']]],
   ['seterrorhandler_31',['setErrorHandler',['../classlog4cxx_1_1AppenderSkeleton.html#a0eb836f2944163f9afbcbc52437dd3a4',1,'log4cxx::AppenderSkeleton']]],

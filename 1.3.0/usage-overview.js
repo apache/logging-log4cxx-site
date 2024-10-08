@@ -51,7 +51,7 @@ var usage_overview =
     [ "Extending Log4cxx", "extending-log4cxx.html", null ],
     [ "Qt Support", "qt-support.html", null ],
     [ "Stacktrace Support", "stacktrace-support.html", [
-      [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md25", null ]
+      [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md23", null ]
     ] ],
     [ "Threading", "threading.html", [
       [ "Unexpected Exit", "threading.html#unexpected-exit", null ],

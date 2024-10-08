@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a75077af3e7985c1ab9e5e4e7a230d803"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a75077af3e7985c1ab9e5e4e7a230d803">DOMConfigurator</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p)</td></tr>
 <tr class="separator:a75077af3e7985c1ab9e5e4e7a230d803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0262bacc14b262b7ca4ccf90a5e83091"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091">doConfigure</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;filename, <a class="el" href="namespacelog4cxx_1_1spi.html#a38a7dc69832e0647515f643f01be6fa5">spi::LoggerRepositoryPtr</a> repository) override</td></tr>
-<tr class="memdesc:a0262bacc14b262b7ca4ccf90a5e83091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpret the XML file pointed by <code>filename</code> and set up <a class="el" href="namespacelog4cxx.html">log4cxx</a> accordingly.  <br /></td></tr>
+<tr class="memdesc:a0262bacc14b262b7ca4ccf90a5e83091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpret <code>filename</code> as an XML file and set up Log4cxx accordingly.  <br /></td></tr>
 <tr class="separator:a0262bacc14b262b7ca4ccf90a5e83091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1846aeae7dc6d44774b1bafd6a6ee6d7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a1846aeae7dc6d44774b1bafd6a6ee6d7">doConfigure</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFileName, <a class="el" href="namespacelog4cxx_1_1spi.html#a38a7dc69832e0647515f643f01be6fa5">spi::LoggerRepositoryPtr</a> repository)=0</td></tr>
 <tr class="memdesc:a1846aeae7dc6d44774b1bafd6a6ee6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpret a resource pointed by a URL and set up log4j accordingly.  <br /></td></tr>
@@ -159,42 +159,54 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a45fdef525e4c59adab96d902f8a0290e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a45fdef525e4c59adab96d902f8a0290e">configure</a> (const char *filename)</td></tr>
+<tr class="memdesc:a45fdef525e4c59adab96d902f8a0290e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>.  <br /></td></tr>
+<tr class="separator:a45fdef525e4c59adab96d902f8a0290e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac11013f451d4db8aa5b876f191d8ccec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#ac11013f451d4db8aa5b876f191d8ccec">configure</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:ac11013f451d4db8aa5b876f191d8ccec"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret the XML file pointed by filename and set up log4cxx accordingly.">doConfigure</a>.  <br /></td></tr>
+<tr class="memdesc:ac11013f451d4db8aa5b876f191d8ccec"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>.  <br /></td></tr>
 <tr class="separator:ac11013f451d4db8aa5b876f191d8ccec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5fa59009503b367cbbd33d9d3986ee"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a7a5fa59009503b367cbbd33d9d3986ee">configure</a> (const wchar_t *filename)</td></tr>
+<tr class="memdesc:a7a5fa59009503b367cbbd33d9d3986ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>.  <br /></td></tr>
+<tr class="separator:a7a5fa59009503b367cbbd33d9d3986ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bcfadb80c8d2ebd0df564b4cae05bad"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a2bcfadb80c8d2ebd0df564b4cae05bad">configure</a> (const std::wstring &amp;filename)</td></tr>
-<tr class="memdesc:a2bcfadb80c8d2ebd0df564b4cae05bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret the XML file pointed by filename and set up log4cxx accordingly.">doConfigure</a>.  <br /></td></tr>
+<tr class="memdesc:a2bcfadb80c8d2ebd0df564b4cae05bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>.  <br /></td></tr>
 <tr class="separator:a2bcfadb80c8d2ebd0df564b4cae05bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12f8efc0aa4c905973b5e5521b0da1ad"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a12f8efc0aa4c905973b5e5521b0da1ad">configure</a> (const std::basic_string&lt; <a class="el" href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">UniChar</a> &gt; &amp;filename)</td></tr>
-<tr class="memdesc:a12f8efc0aa4c905973b5e5521b0da1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret the XML file pointed by filename and set up log4cxx accordingly.">doConfigure</a>.  <br /></td></tr>
+<tr class="memdesc:a12f8efc0aa4c905973b5e5521b0da1ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>.  <br /></td></tr>
 <tr class="separator:a12f8efc0aa4c905973b5e5521b0da1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a637a815ccf7c42843e5d7f71597eea48"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a637a815ccf7c42843e5d7f71597eea48">configure</a> (const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;filename)</td></tr>
-<tr class="memdesc:a637a815ccf7c42843e5d7f71597eea48"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret the XML file pointed by filename and set up log4cxx accordingly.">doConfigure</a>.  <br /></td></tr>
+<tr class="memdesc:a637a815ccf7c42843e5d7f71597eea48"><td class="mdescLeft">&#160;</td><td class="mdescRight">A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>.  <br /></td></tr>
 <tr class="separator:a637a815ccf7c42843e5d7f71597eea48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa23a785eb1ab09ba85cbbef3eb2751d5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa23a785eb1ab09ba85cbbef3eb2751d5">configureAndWatch</a> (const std::string &amp;configFilename)</td></tr>
-<tr class="memdesc:aa23a785eb1ab09ba85cbbef3eb2751d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used.  <br /></td></tr>
+<tr class="memdesc:aa23a785eb1ab09ba85cbbef3eb2751d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used.  <br /></td></tr>
 <tr class="separator:aa23a785eb1ab09ba85cbbef3eb2751d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa497d4d9007f24f0cea551f5dc2eb42"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#afa497d4d9007f24f0cea551f5dc2eb42">configureAndWatch</a> (const std::wstring &amp;configFilename)</td></tr>
-<tr class="memdesc:afa497d4d9007f24f0cea551f5dc2eb42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used.  <br /></td></tr>
+<tr class="memdesc:afa497d4d9007f24f0cea551f5dc2eb42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used.  <br /></td></tr>
 <tr class="separator:afa497d4d9007f24f0cea551f5dc2eb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88dde3ae45c8cd518e518baa84cf2050"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a88dde3ae45c8cd518e518baa84cf2050">configureAndWatch</a> (const std::basic_string&lt; <a class="el" href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">UniChar</a> &gt; &amp;configFilename)</td></tr>
-<tr class="memdesc:a88dde3ae45c8cd518e518baa84cf2050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used.  <br /></td></tr>
+<tr class="memdesc:a88dde3ae45c8cd518e518baa84cf2050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used.  <br /></td></tr>
 <tr class="separator:a88dde3ae45c8cd518e518baa84cf2050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a738da0a9200ec93d8bf4bd8fd96426c4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a738da0a9200ec93d8bf4bd8fd96426c4">configureAndWatch</a> (const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;configFilename)</td></tr>
-<tr class="memdesc:a738da0a9200ec93d8bf4bd8fd96426c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used.  <br /></td></tr>
+<tr class="memdesc:a738da0a9200ec93d8bf4bd8fd96426c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used.  <br /></td></tr>
 <tr class="separator:a738da0a9200ec93d8bf4bd8fd96426c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa43bad8986af74d6661cd30305104a1d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d">configureAndWatch</a> (const std::string &amp;configFilename, long delay)</td></tr>
 <tr class="memdesc:aa43bad8986af74d6661cd30305104a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the configuration file <code>configFilename</code> if it exists.  <br /></td></tr>
 <tr class="separator:aa43bad8986af74d6661cd30305104a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6031e4ea1ab00170a3c9f64223e9c4b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#ae6031e4ea1ab00170a3c9f64223e9c4b">configureAndWatch</a> (const std::wstring &amp;configFilename, long delay)</td></tr>
-<tr class="memdesc:ae6031e4ea1ab00170a3c9f64223e9c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a>  <br /></td></tr>
+<tr class="memdesc:ae6031e4ea1ab00170a3c9f64223e9c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a>  <br /></td></tr>
 <tr class="separator:ae6031e4ea1ab00170a3c9f64223e9c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb9b6c7af29f792aa78ab1ba5f37256f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aeb9b6c7af29f792aa78ab1ba5f37256f">configureAndWatch</a> (const std::basic_string&lt; <a class="el" href="namespacelog4cxx.html#ac5e4b220857602c21b6a1850263005ff">UniChar</a> &gt; &amp;configFilename, long delay)</td></tr>
-<tr class="memdesc:aeb9b6c7af29f792aa78ab1ba5f37256f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a>  <br /></td></tr>
+<tr class="memdesc:aeb9b6c7af29f792aa78ab1ba5f37256f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a>  <br /></td></tr>
 <tr class="separator:aeb9b6c7af29f792aa78ab1ba5f37256f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a1125a440a5a0e1c2190d4f16d35529"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a6a1125a440a5a0e1c2190d4f16d35529">configureAndWatch</a> (const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;configFilename, long delay)</td></tr>
-<tr class="memdesc:a6a1125a440a5a0e1c2190d4f16d35529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a>  <br /></td></tr>
+<tr class="memdesc:a6a1125a440a5a0e1c2190d4f16d35529"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a>  <br /></td></tr>
 <tr class="separator:a6a1125a440a5a0e1c2190d4f16d35529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d56b0130a95b29ad8ea9ed66805f10b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a9d56b0130a95b29ad8ea9ed66805f10b">configure</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFilename)</td></tr>
+<tr class="memdesc:a9d56b0130a95b29ad8ea9ed66805f10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read configuration options from <code>configFilename</code>.  <br /></td></tr>
+<tr class="separator:a9d56b0130a95b29ad8ea9ed66805f10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f128070cddecfff04c39eab0eda2ac7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7">configureAndWatch</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFilename, long delay=0)</td></tr>
+<tr class="memdesc:a3f128070cddecfff04c39eab0eda2ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read configuration options from <code>configFilename</code> (if it exists).  <br /></td></tr>
+<tr class="separator:a3f128070cddecfff04c39eab0eda2ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -343,7 +355,7 @@ Static Protected Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a637a815ccf7c42843e5d7f71597eea48" name="a637a815ccf7c42843e5d7f71597eea48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a637a815ccf7c42843e5d7f71597eea48">&#9670;&#160;</a></span>configure() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a637a815ccf7c42843e5d7f71597eea48">&#9670;&#160;</a></span>configure() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,12 +378,69 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret the XML file pointed by filename and set up log4cxx accordingly.">doConfigure</a>. </p>
+<p>A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>. </p>
+
+</div>
+</div>
+<a id="a45fdef525e4c59adab96d902f8a0290e" name="a45fdef525e4c59adab96d902f8a0290e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45fdef525e4c59adab96d902f8a0290e">&#9670;&#160;</a></span>configure() <span class="overload">[2/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a> log4cxx::xml::DOMConfigurator::configure </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>. </p>
+
+</div>
+</div>
+<a id="a9d56b0130a95b29ad8ea9ed66805f10b" name="a9d56b0130a95b29ad8ea9ed66805f10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d56b0130a95b29ad8ea9ed66805f10b">&#9670;&#160;</a></span>configure() <span class="overload">[3/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a> log4cxx::xml::DOMConfigurator::configure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>configFilename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read configuration options from <code>configFilename</code>. </p>
+<p>Stores <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instances in the <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html" title="A LoggerRepository is used to create and retrieve Loggers.">spi::LoggerRepository</a> held by <a class="el" href="classlog4cxx_1_1LogManager.html" title="Use the LogManager class to retreive Logger instances or to operate on the current LoggerRepository.">LogManager</a>. </p>
 
 </div>
 </div>
 <a id="a12f8efc0aa4c905973b5e5521b0da1ad" name="a12f8efc0aa4c905973b5e5521b0da1ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12f8efc0aa4c905973b5e5521b0da1ad">&#9670;&#160;</a></span>configure() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f8efc0aa4c905973b5e5521b0da1ad">&#9670;&#160;</a></span>configure() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -394,12 +463,12 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret the XML file pointed by filename and set up log4cxx accordingly.">doConfigure</a>. </p>
+<p>A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>. </p>
 
 </div>
 </div>
 <a id="ac11013f451d4db8aa5b876f191d8ccec" name="ac11013f451d4db8aa5b876f191d8ccec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac11013f451d4db8aa5b876f191d8ccec">&#9670;&#160;</a></span>configure() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac11013f451d4db8aa5b876f191d8ccec">&#9670;&#160;</a></span>configure() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,12 +491,12 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret the XML file pointed by filename and set up log4cxx accordingly.">doConfigure</a>. </p>
+<p>A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>. </p>
 
 </div>
 </div>
 <a id="a2bcfadb80c8d2ebd0df564b4cae05bad" name="a2bcfadb80c8d2ebd0df564b4cae05bad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bcfadb80c8d2ebd0df564b4cae05bad">&#9670;&#160;</a></span>configure() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bcfadb80c8d2ebd0df564b4cae05bad">&#9670;&#160;</a></span>configure() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,12 +519,40 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret the XML file pointed by filename and set up log4cxx accordingly.">doConfigure</a>. </p>
+<p>A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>. </p>
+
+</div>
+</div>
+<a id="a7a5fa59009503b367cbbd33d9d3986ee" name="a7a5fa59009503b367cbbd33d9d3986ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a5fa59009503b367cbbd33d9d3986ee">&#9670;&#160;</a></span>configure() <span class="overload">[7/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a> log4cxx::xml::DOMConfigurator::configure </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A static version of <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a0262bacc14b262b7ca4ccf90a5e83091" title="Interpret filename as an XML file and set up Log4cxx accordingly.">doConfigure</a>. </p>
 
 </div>
 </div>
 <a id="a738da0a9200ec93d8bf4bd8fd96426c4" name="a738da0a9200ec93d8bf4bd8fd96426c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a738da0a9200ec93d8bf4bd8fd96426c4">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a738da0a9200ec93d8bf4bd8fd96426c4">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,7 +575,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used. </p>
+<p>Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">configFilename</td><td>A configuration file in XML format. </td></tr>
@@ -489,7 +586,7 @@ Static Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6a1125a440a5a0e1c2190d4f16d35529" name="a6a1125a440a5a0e1c2190d4f16d35529"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a1125a440a5a0e1c2190d4f16d35529">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a1125a440a5a0e1c2190d4f16d35529">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -522,12 +619,59 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> </p>
+<p>Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> </p>
+
+</div>
+</div>
+<a id="a3f128070cddecfff04c39eab0eda2ac7" name="a3f128070cddecfff04c39eab0eda2ac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f128070cddecfff04c39eab0eda2ac7">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a> log4cxx::xml::DOMConfigurator::configureAndWatch </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>configFilename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>delay</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read configuration options from <code>configFilename</code> (if it exists). </p>
+<p>A thread will be created that periodically checks whether <code>configFilename</code> has been created or modified. A period of <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used if <code>delay</code> is not a positive number. If a change or file creation is detected, then <code>configFilename</code> is read to configure Log4cxx.</p>
+<p>The thread will be stopped by a <a class="el" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c" title="Safely close and remove all appenders in all loggers including the root logger.">LogManager::shutdown</a> call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">configFilename</td><td>A XML format file. </td></tr>
+    <tr><td class="paramname">delay</td><td>The delay in milliseconds to wait between each check. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <a id="a88dde3ae45c8cd518e518baa84cf2050" name="a88dde3ae45c8cd518e518baa84cf2050"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88dde3ae45c8cd518e518baa84cf2050">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dde3ae45c8cd518e518baa84cf2050">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[4/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,7 +694,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used. </p>
+<p>Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">configFilename</td><td>A configuration file in XML format. </td></tr>
@@ -561,7 +705,7 @@ Static Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aeb9b6c7af29f792aa78ab1ba5f37256f" name="aeb9b6c7af29f792aa78ab1ba5f37256f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb9b6c7af29f792aa78ab1ba5f37256f">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9b6c7af29f792aa78ab1ba5f37256f">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[5/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -594,12 +738,12 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> </p>
+<p>Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> </p>
 
 </div>
 </div>
 <a id="aa23a785eb1ab09ba85cbbef3eb2751d5" name="aa23a785eb1ab09ba85cbbef3eb2751d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa23a785eb1ab09ba85cbbef3eb2751d5">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23a785eb1ab09ba85cbbef3eb2751d5">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[6/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,7 +766,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used. </p>
+<p>Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">configFilename</td><td>A configuration file in XML format. </td></tr>
@@ -633,7 +777,7 @@ Static Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa43bad8986af74d6661cd30305104a1d" name="aa43bad8986af74d6661cd30305104a1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa43bad8986af74d6661cd30305104a1d">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa43bad8986af74d6661cd30305104a1d">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[7/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -668,7 +812,7 @@ Static Protected Member Functions</h2></td></tr>
 
 <p>Read the configuration file <code>configFilename</code> if it exists. </p>
 <p>Moreover, a thread will be created that will periodically check if <code>configFilename</code> has been created or modified. The period is determined by the <code>delay</code> argument. If a change or file creation is detected, then <code>configFilename</code> is read to configure <a class="el" href="namespacelog4cxx.html">log4cxx</a>.</p>
-<p>The thread will be stopped by a <a class="el" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c" title="Safely close and remove all appenders in all loggers including the root logger.">LogManager::shutdown</a> call. Failure to call <a class="el" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c" title="Safely close and remove all appenders in all loggers including the root logger.">LogManager::shutdown</a> may result in a fault when the process exits.</p>
+<p>The thread will be stopped by a <a class="el" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c" title="Safely close and remove all appenders in all loggers including the root logger.">LogManager::shutdown</a> call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">configFilename</td><td>A configuration file in XML format. </td></tr>
@@ -680,7 +824,7 @@ Static Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="afa497d4d9007f24f0cea551f5dc2eb42" name="afa497d4d9007f24f0cea551f5dc2eb42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa497d4d9007f24f0cea551f5dc2eb42">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afa497d4d9007f24f0cea551f5dc2eb42">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[8/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -703,7 +847,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used. </p>
+<p>Like <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">configFilename</td><td>A configuration file in XML format. </td></tr>
@@ -714,7 +858,7 @@ Static Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae6031e4ea1ab00170a3c9f64223e9c4b" name="ae6031e4ea1ab00170a3c9f64223e9c4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6031e4ea1ab00170a3c9f64223e9c4b">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6031e4ea1ab00170a3c9f64223e9c4b">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[9/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -747,7 +891,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aa43bad8986af74d6661cd30305104a1d" title="Read the configuration file configFilename if it exists.">configureAndWatch(const std::string&amp; configFilename, long delay)</a> </p>
+<p>Refer <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a3f128070cddecfff04c39eab0eda2ac7" title="Read configuration options from configFilename (if it exists).">configureAndWatch(const File&amp; filename, long delay)</a> </p>
 
 </div>
 </div>
@@ -785,11 +929,12 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Interpret the XML file pointed by <code>filename</code> and set up <a class="el" href="namespacelog4cxx.html">log4cxx</a> accordingly. </p>
-<p>The configuration is done relative to the hierarchy parameter. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Interpret <code>filename</code> as an XML file and set up Log4cxx accordingly. </p>
+<p>If <code>repository</code> is not provided, the <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html" title="A LoggerRepository is used to create and retrieve Loggers.">spi::LoggerRepository</a> held by <a class="el" href="classlog4cxx_1_1LogManager.html" title="Use the LogManager class to retreive Logger instances or to operate on the current LoggerRepository.">LogManager</a> is used. <b>The existing configuration is not cleared nor reset.</b> If you require a different behavior, call <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#ab2a31a195a5c82793805a16417b1a387">resetConfiguration</a></code> before calling <code>doConfigure</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td>The file to parse. </td></tr>
-    <tr><td class="paramname">repository</td><td>The hierarchy to operation upon. </td></tr>
+    <tr><td class="paramname">repository</td><td>Where the <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instances reside. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1680,10 +1825,15 @@ Static Protected Member Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="namespacelog4cxx_1_1xml.html">xml</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html">DOMConfigurator</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Thu Jul 25 2024 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Tue Oct 8 2024 </li>
     <li class="center">
-Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
-Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>
+Copyright &copy; 2017-2024 <a href="https://www.apache.org/">Apache Software Foundation</a>.
+Apache, Chainsaw, log4cxx, Log4j, Log4net, log4php and the Apache feather logo are
+<a href="https://www.apache.org/foundation/marks/list/">trademarks or registered trademarks</a>
+of The Apache Software Foundation.<br/>
+Oracle and Java are registered trademarks of Oracle and/or its affiliates.
+Other names may be trademarks of their respective owners.
+<a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a>.<br/>
     </li>
   </ul>
 </div>
