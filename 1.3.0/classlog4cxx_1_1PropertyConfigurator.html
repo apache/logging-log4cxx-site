@@ -140,9 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab7f2057232e18bf38d02323e86820109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c5a1eb166c4189e95412d8d28b8d410"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a7c5a1eb166c4189e95412d8d28b8d410">~PropertyConfigurator</a> ()</td></tr>
 <tr class="separator:a7c5a1eb166c4189e95412d8d28b8d410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6a6a91b064539aaee99db5fb54122eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#af6a6a91b064539aaee99db5fb54122eb">doConfigure</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFileName, <a class="el" href="namespacelog4cxx_1_1spi.html#a38a7dc69832e0647515f643f01be6fa5">spi::LoggerRepositoryPtr</a> hierarchy) override</td></tr>
-<tr class="memdesc:af6a6a91b064539aaee99db5fb54122eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read configuration from a file.  <br /></td></tr>
-<tr class="separator:af6a6a91b064539aaee99db5fb54122eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ef64a0181895806090dad3f9dcfea3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a47ef64a0181895806090dad3f9dcfea3">doConfigure</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFileName, <a class="el" href="namespacelog4cxx_1_1spi.html#a38a7dc69832e0647515f643f01be6fa5">spi::LoggerRepositoryPtr</a> repository) override</td></tr>
+<tr class="memdesc:a47ef64a0181895806090dad3f9dcfea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read configuration from <code>configFileName</code>.  <br /></td></tr>
+<tr class="separator:a47ef64a0181895806090dad3f9dcfea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07d41a7308190de308aceacc5d12e0e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a07d41a7308190de308aceacc5d12e0e2">doConfigure</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">helpers::Properties</a> &amp;properties, <a class="el" href="namespacelog4cxx_1_1spi.html#a38a7dc69832e0647515f643f01be6fa5">spi::LoggerRepositoryPtr</a> hierarchy)</td></tr>
 <tr class="memdesc:a07d41a7308190de308aceacc5d12e0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read configuration options from <code>properties</code>.  <br /></td></tr>
 <tr class="separator:a07d41a7308190de308aceacc5d12e0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,11 +165,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:af9559ce6a84ed4b556b14171a8736a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read configuration options from file <code>configFilename</code>.  <br /></td></tr>
 <tr class="separator:af9559ce6a84ed4b556b14171a8736a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b20a17146b896227687c61482038b58"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a2b20a17146b896227687c61482038b58">configureAndWatch</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFilename)</td></tr>
-<tr class="memdesc:a2b20a17146b896227687c61482038b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <code><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a0d1cc172a330e65db78f313904579008">configureAndWatch(const File&amp; configFilename, long delay)</a></code> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">helpers::FileWatchdog::DEFAULT_DELAY</a> is used.  <br /></td></tr>
+<tr class="memdesc:a2b20a17146b896227687c61482038b58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <code><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a56c79e94109feb9a00c5ab7a2d53aee0">configureAndWatch(const File&amp; configFilename, long delay)</a></code> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">helpers::FileWatchdog::DEFAULT_DELAY</a> is used.  <br /></td></tr>
 <tr class="separator:a2b20a17146b896227687c61482038b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d1cc172a330e65db78f313904579008"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a0d1cc172a330e65db78f313904579008">configureAndWatch</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFilename, long delay)</td></tr>
-<tr class="memdesc:a0d1cc172a330e65db78f313904579008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the configuration file <code>configFilename</code> if it exists.  <br /></td></tr>
-<tr class="separator:a0d1cc172a330e65db78f313904579008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c79e94109feb9a00c5ab7a2d53aee0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a56c79e94109feb9a00c5ab7a2d53aee0">configureAndWatch</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFilename, long delay=0)</td></tr>
+<tr class="memdesc:a56c79e94109feb9a00c5ab7a2d53aee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read configuration options from <code>configFilename</code> (if it exists).  <br /></td></tr>
+<tr class="separator:a56c79e94109feb9a00c5ab7a2d53aee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c5d21403d539ab4aca6d27414d43571"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a1c5d21403d539ab4aca6d27414d43571">configure</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">helpers::Properties</a> &amp;properties)</td></tr>
 <tr class="memdesc:a1c5d21403d539ab4aca6d27414d43571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read configuration options from <code>properties</code>.  <br /></td></tr>
 <tr class="separator:a1c5d21403d539ab4aca6d27414d43571"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,6 +377,7 @@ log4j.debug=true
 </div><div class="memdoc">
 
 <p>Read configuration options from file <code>configFilename</code>. </p>
+<p>Stores <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instances in the <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html" title="A LoggerRepository is used to create and retrieve Loggers.">spi::LoggerRepository</a> held by <a class="el" href="classlog4cxx_1_1LogManager.html" title="Use the LogManager class to retreive Logger instances or to operate on the current LoggerRepository.">LogManager</a>. </p>
 
 </div>
 </div>
@@ -405,7 +406,7 @@ log4j.debug=true
 </div><div class="memdoc">
 
 <p>Read configuration options from <code>properties</code>. </p>
-<p>See the <a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#PropertyConfigurator_details">detailed description</a> for the expected format. </p>
+<p>Stores <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instances in the <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html" title="A LoggerRepository is used to create and retrieve Loggers.">spi::LoggerRepository</a> held by <a class="el" href="classlog4cxx_1_1LogManager.html" title="Use the LogManager class to retreive Logger instances or to operate on the current LoggerRepository.">LogManager</a>. See the <a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#PropertyConfigurator_details">detailed description</a> for the expected format. </p>
 
 </div>
 </div>
@@ -433,7 +434,7 @@ log4j.debug=true
 </table>
 </div><div class="memdoc">
 
-<p>Like <code><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a0d1cc172a330e65db78f313904579008">configureAndWatch(const File&amp; configFilename, long delay)</a></code> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">helpers::FileWatchdog::DEFAULT_DELAY</a> is used. </p>
+<p>Like <code><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a56c79e94109feb9a00c5ab7a2d53aee0">configureAndWatch(const File&amp; configFilename, long delay)</a></code> except that the default delay as defined by <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">helpers::FileWatchdog::DEFAULT_DELAY</a> is used. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">configFilename</td><td>A file in key=value format. </td></tr>
@@ -443,8 +444,8 @@ log4j.debug=true
 
 </div>
 </div>
-<a id="a0d1cc172a330e65db78f313904579008" name="a0d1cc172a330e65db78f313904579008"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d1cc172a330e65db78f313904579008">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[2/2]</span></h2>
+<a id="a56c79e94109feb9a00c5ab7a2d53aee0" name="a56c79e94109feb9a00c5ab7a2d53aee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c79e94109feb9a00c5ab7a2d53aee0">&#9670;&#160;</a></span>configureAndWatch() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +463,7 @@ log4j.debug=true
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">long&#160;</td>
-          <td class="paramname"><em>delay</em>&#160;</td>
+          <td class="paramname"><em>delay</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -477,9 +478,9 @@ log4j.debug=true
 </table>
 </div><div class="memdoc">
 
-<p>Read the configuration file <code>configFilename</code> if it exists. </p>
-<p>Moreover, a thread will be created that will periodically check if <code>configFilename</code> has been created or modified. The period is determined by the <code>delay</code> argument. If a change or file creation is detected, then <code>configFilename</code> is read to configure Log4cxx.</p>
-<p>The thread will be stopped by a <a class="el" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c" title="Safely close and remove all appenders in all loggers including the root logger.">LogManager::shutdown</a> call. Failure to call <a class="el" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c" title="Safely close and remove all appenders in all loggers including the root logger.">LogManager::shutdown</a> may result in a fault when the process exits.</p>
+<p>Read configuration options from <code>configFilename</code> (if it exists). </p>
+<p>Stores <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instances in the <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html" title="A LoggerRepository is used to create and retrieve Loggers.">spi::LoggerRepository</a> held by <a class="el" href="classlog4cxx_1_1LogManager.html" title="Use the LogManager class to retreive Logger instances or to operate on the current LoggerRepository.">LogManager</a>. A thread will be created that periodically checks whether <code>configFilename</code> has been created or modified. A period of <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a0fb3b69cb4ffc4c2642235a065dfd34a" title="The default delay between every file modification check, set to 60 seconds.">log4cxx::helpers::FileWatchdog::DEFAULT_DELAY</a> is used if <code>delay</code> is not a positive number. If a change or file creation is detected, then <code>configFilename</code> is read to configure Log4cxx.</p>
+<p>The thread will be stopped by a <a class="el" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c" title="Safely close and remove all appenders in all loggers including the root logger.">LogManager::shutdown</a> call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">configFilename</td><td>A file in key=value format. </td></tr>
@@ -555,8 +556,8 @@ log4j.debug=true
 
 </div>
 </div>
-<a id="af6a6a91b064539aaee99db5fb54122eb" name="af6a6a91b064539aaee99db5fb54122eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6a6a91b064539aaee99db5fb54122eb">&#9670;&#160;</a></span>doConfigure() <span class="overload">[1/2]</span></h2>
+<a id="a47ef64a0181895806090dad3f9dcfea3" name="a47ef64a0181895806090dad3f9dcfea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ef64a0181895806090dad3f9dcfea3">&#9670;&#160;</a></span>doConfigure() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -574,7 +575,7 @@ log4j.debug=true
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacelog4cxx_1_1spi.html#a38a7dc69832e0647515f643f01be6fa5">spi::LoggerRepositoryPtr</a>&#160;</td>
-          <td class="paramname"><em>hierarchy</em>&#160;</td>
+          <td class="paramname"><em>repository</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -589,12 +590,12 @@ log4j.debug=true
 </table>
 </div><div class="memdoc">
 
-<p>Read configuration from a file. </p>
-<p><b>The existing configuration is not cleared nor reset.</b> If you require a different behavior, then call <code><a class="el" href="classlog4cxx_1_1LogManager.html#ab2a8789c02074af6a409fa00d82d43eb">resetConfiguration</a></code> method before calling <code>doConfigure</code>.</p>
+<p>Read configuration from <code>configFileName</code>. </p>
+<p>If <code>repository</code> is not provided, the <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html" title="A LoggerRepository is used to create and retrieve Loggers.">spi::LoggerRepository</a> held by <a class="el" href="classlog4cxx_1_1LogManager.html" title="Use the LogManager class to retreive Logger instances or to operate on the current LoggerRepository.">LogManager</a> is used. <b>The existing configuration is not cleared nor reset.</b> If you require a different behavior, call <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#ab2a31a195a5c82793805a16417b1a387">resetConfiguration</a></code> before calling <code>doConfigure</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">configFileName</td><td>The name of the configuration file where the configuration information is stored. </td></tr>
-    <tr><td class="paramname">hierarchy</td><td>The hierarchy to operation upon. </td></tr>
+    <tr><td class="paramname">configFileName</td><td>The file to parse. </td></tr>
+    <tr><td class="paramname">repository</td><td>Where the <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instances reside. </td></tr>
   </table>
   </dd>
 </dl>
@@ -903,10 +904,15 @@ log4j.debug=true
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1PropertyConfigurator.html">PropertyConfigurator</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Thu Jul 25 2024 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Tue Oct 8 2024 </li>
     <li class="center">
-Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
-Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>
+Copyright &copy; 2017-2024 <a href="https://www.apache.org/">Apache Software Foundation</a>.
+Apache, Chainsaw, log4cxx, Log4j, Log4net, log4php and the Apache feather logo are
+<a href="https://www.apache.org/foundation/marks/list/">trademarks or registered trademarks</a>
+of The Apache Software Foundation.<br/>
+Oracle and Java are registered trademarks of Oracle and/or its affiliates.
+Other names may be trademarks of their respective owners.
+<a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a>.<br/>
     </li>
   </ul>
 </div>

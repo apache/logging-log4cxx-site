@@ -153,6 +153,8 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a41540825cb207b6666fbe8bdc429b48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb363a85c54d93c335ed044bdf09632"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Level.html#aafb363a85c54d93c335ed044bdf09632">DataPtr</a> = std::shared_ptr&lt; <a class="el" href="structlog4cxx_1_1Level_1_1Data.html">Data</a> &gt;</td></tr>
+<tr class="separator:aafb363a85c54d93c335ed044bdf09632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -238,8 +240,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6dab5bf5c1fc84329526aebfaec70153"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Level.html#a6dab5bf5c1fc84329526aebfaec70153">toLevel</a> (int val, const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;defaultLevel)</td></tr>
 <tr class="memdesc:a6dab5bf5c1fc84329526aebfaec70153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an integer passed as argument to a level.  <br /></td></tr>
 <tr class="separator:a6dab5bf5c1fc84329526aebfaec70153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca3720c1877f4e9cbdd7586d0cdd2b40"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="structlog4cxx_1_1Level_1_1Data.html">Data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Level.html#aca3720c1877f4e9cbdd7586d0cdd2b40">getData</a> ()</td></tr>
-<tr class="separator:aca3720c1877f4e9cbdd7586d0cdd2b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff0f7d139f777fae447e6a6b80f0257"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classlog4cxx_1_1Level.html#aafb363a85c54d93c335ed044bdf09632">DataPtr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Level.html#a1ff0f7d139f777fae447e6a6b80f0257">getData</a> ()</td></tr>
+<tr class="separator:a1ff0f7d139f777fae447e6a6b80f0257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17165f1a2ffae195b6de57c2ef4f5e91"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Level.html#a17165f1a2ffae195b6de57c2ef4f5e91">getAll</a> ()</td></tr>
 <tr class="separator:a17165f1a2ffae195b6de57c2ef4f5e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae646c9e41c622600023df5a988eace07"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Level.html#ae646c9e41c622600023df5a988eace07">getFatal</a> ()</td></tr>
@@ -260,7 +262,22 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines the minimum set of levels recognized by the system, that is <code>OFF</code>, <code>FATAL</code>, <code>ERROR</code>, <code>WARN</code>, <code>INFO</code>, <code>DEBUG</code> and <code>ALL</code>. </p>
 <p>The <code><a class="el" href="classlog4cxx_1_1Level.html" title="Defines the minimum set of levels recognized by the system, that is OFF, FATAL, ERROR,...">Level</a></code> class may be subclassed to define a larger level set. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aafb363a85c54d93c335ed044bdf09632" name="aafb363a85c54d93c335ed044bdf09632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafb363a85c54d93c335ed044bdf09632">&#9670;&#160;</a></span>DataPtr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classlog4cxx_1_1Level.html#aafb363a85c54d93c335ed044bdf09632">log4cxx::Level::DataPtr</a> =  std::shared_ptr&lt;<a class="el" href="structlog4cxx_1_1Level_1_1Data.html">Data</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a41540825cb207b6666fbe8bdc429b48e" name="a41540825cb207b6666fbe8bdc429b48e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41540825cb207b6666fbe8bdc429b48e">&#9670;&#160;</a></span>anonymous enum</h2>
 
@@ -376,8 +393,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aca3720c1877f4e9cbdd7586d0cdd2b40" name="aca3720c1877f4e9cbdd7586d0cdd2b40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca3720c1877f4e9cbdd7586d0cdd2b40">&#9670;&#160;</a></span>getData()</h2>
+<a id="a1ff0f7d139f777fae447e6a6b80f0257" name="a1ff0f7d139f777fae447e6a6b80f0257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff0f7d139f777fae447e6a6b80f0257">&#9670;&#160;</a></span>getData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,7 +403,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const <a class="el" href="structlog4cxx_1_1Level_1_1Data.html">Data</a> &amp; log4cxx::Level::getData </td>
+          <td class="memname">static const <a class="el" href="classlog4cxx_1_1Level.html#aafb363a85c54d93c335ed044bdf09632">DataPtr</a> &amp; log4cxx::Level::getData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1315,10 +1332,15 @@ Static Public Member Functions</h2></td></tr>
     <li class="navelem"><a class="el" href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a class="el" href="classlog4cxx_1_1Level.html">Level</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Thu Jul 25 2024 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Tue Oct 8 2024 </li>
     <li class="center">
-Copyright &copy; 2003-2023 <a href="https://www.apache.org/">Apache Software Foundation</a>. All Rights Reserved.  <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a><br/>
-Apache Logging, Apache Log4j, Log4j, Apache, the Apache feather logo, and the Apache Logging project logo are trademarks of The Apache Software Foundation.<br/>
+Copyright &copy; 2017-2024 <a href="https://www.apache.org/">Apache Software Foundation</a>.
+Apache, Chainsaw, log4cxx, Log4j, Log4net, log4php and the Apache feather logo are
+<a href="https://www.apache.org/foundation/marks/list/">trademarks or registered trademarks</a>
+of The Apache Software Foundation.<br/>
+Oracle and Java are registered trademarks of Oracle and/or its affiliates.
+Other names may be trademarks of their respective owners.
+<a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a>.<br/>
     </li>
   </ul>
 </div>

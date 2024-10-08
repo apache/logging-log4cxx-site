@@ -2,6 +2,7 @@ var classlog4cxx_1_1Level =
 [
     [ "Data", "structlog4cxx_1_1Level_1_1Data.html", "structlog4cxx_1_1Level_1_1Data" ],
     [ "LevelClass", "classlog4cxx_1_1Level_1_1LevelClass.html", "classlog4cxx_1_1Level_1_1LevelClass" ],
+    [ "DataPtr", "classlog4cxx_1_1Level.html#aafb363a85c54d93c335ed044bdf09632", null ],
     [ "Level", "classlog4cxx_1_1Level.html#af9fd1f21f6843d64fe10b574aaf88fb1", null ],
     [ "equals", "classlog4cxx_1_1Level.html#a5f60eac2a630c3cae157229b50422e2a", null ],
     [ "getSyslogEquivalent", "classlog4cxx_1_1Level.html#ac7d7d4e7f13549c1d967bee06b47fc27", null ],
