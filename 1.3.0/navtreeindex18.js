@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"quick-start.html":[1,0],
+"quick-start.html#configuration":[1,0,2],
 "quick-start.html#example1":[1,0,0],
 "quick-start.html#example2":[1,0,1],
 "reader_8h.html":[6,3,0,1,0,0,0,3,40],

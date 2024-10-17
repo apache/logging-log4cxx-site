@@ -100,9 +100,9 @@ var NAVTREEINDEX =
 "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#afea833c3991489f584834c080e533e4e",
 "classlog4cxx_1_1spi_1_1LoggerRepository.html#ab3a9683775f74c84b13a4aa09cb4e530",
 "colorstartpatternconverter_8h.html",
-"globals.html",
-"namespacelog4cxx.html#a856b6c83ec575993bb85276eda2729a7",
-"quick-start.html#example1"
+"fuzzing.html#view",
+"namespacelog4cxx.html#a756fe33f36a5b1cda9010e2d48965f95",
+"quick-start.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
