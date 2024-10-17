@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"fuzzing.html#view":[4,2,2],
+"get.html":[2],
 "globals.html":[6,3,1,0],
 "globals_defs.html":[6,3,1,3],
 "globals_func.html":[6,3,1,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "namespacelog4cxx.html#a4dd14bbff1ee5f5aa9af0472d9125112":[6,1,0,0,64],
 "namespacelog4cxx.html#a52717feca3ae327f1ed1ec3c117cf9f6":[6,1,0,0,50],
 "namespacelog4cxx.html#a5db518d86dc7275a6089ae3eba49da6c":[6,1,0,0,71],
-"namespacelog4cxx.html#a665e2dfa292d69e4f8071c0785fc0834":[6,1,0,0,56],
-"namespacelog4cxx.html#a756fe33f36a5b1cda9010e2d48965f95":[6,1,0,0,52],
-"namespacelog4cxx.html#a765ee41060e7c6800758ec4731bb59a3":[6,1,0,0,59]
+"namespacelog4cxx.html#a665e2dfa292d69e4f8071c0785fc0834":[6,1,0,0,56]
 };

@@ -113,6 +113,8 @@ $(document).ready(function(){initNavTree('fuzzing.html',''); initResizable(); })
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#oss-fuzz">Google OSS-Fuzz</a></li>
 <li class="level1"><a href="#running">Running tests locally</a></li>
+<li class="level1"><a href="#view">Viewing fuzzing failures detected by OSS-Fuzz</a></li>
+<li class="level1"><a href="#reproduce">Reproducing fuzzing failures detected by OSS-Fuzz</a></li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md_src_site_markdown_development_fuzzing"></a></p>
@@ -145,22 +147,26 @@ Running tests locally</h1>
 </div><!-- fragment --></li>
 </ol>
 <ol type="1">
-<li>Check one of the generated runner scripts:</li>
+<li>Check one of the generated runner scripts: <div class="fragment"><div class="line">python infra/helper.py check_build \</div>
+<div class="line">  --sanitizer address --engine libfuzzer --architecture x86_64 \</div>
+<div class="line">  apache-logging-log4cxx PatternLayoutFuzzer</div>
+</div><!-- fragment --></li>
 </ol>
 <ol type="1">
-<li>~~~~ python infra/helper.py check_build \ &ndash;sanitizer address &ndash;engine libfuzzer &ndash;architecture x86_64 \ apache-logging-log4cxx PatternLayoutFuzzer <div class="fragment"><div class="line">1. Execute one of the generated runner scripts:</div>
-</div><!-- fragment --> python infra/helper.py run_fuzzer \ &ndash;sanitizer address &ndash;engine libfuzzer &ndash;architecture x86_64 \ apache-logging-log4cxx PatternLayoutFuzzer <div class="fragment"><div class="line">## Viewing fuzzing failures detected by OSS-Fuzz {#view}</div>
-<div class="line"> </div>
-<div class="line">The system running fuzzers registered to OSS-Fuzz is called **ClusterFuzz**, which provides [a web interface](https://oss-fuzz.com) for maintainers to monitor the fuzzing results.</div>
-<div class="line">Tests outputs and [reproduction](#reproduce) inputs for failed tests are stored in [a Google Cloud Storage bucket](https://console.cloud.google.com/storage/browser/apache-logging-log4cxx-logs.clusterfuzz-external.appspot.com).</div>
-<div class="line">Access to both the web interface and the bucket is restricted, and only allowed to [those configured for the project](https://github.com/google/oss-fuzz/blob/master/projects/apache-logging-log4cxx/project.yaml).</div>
-<div class="line"> </div>
-<div class="line">## Reproducing fuzzing failures detected by OSS-Fuzz {#reproduce}</div>
-<div class="line"> </div>
-<div class="line">Download the associated `.testcase` file from [the Google Cloud Storage bucket](https://console.cloud.google.com/storage/browser/apache-logging-log4cxx-logs.clusterfuzz-external.appspot.com), and run the following command:</div>
-</div><!-- fragment --> python infra/helper.py reproduce \ apache-logging-log4cxx &lt;FUZZ-TARGET-NAME&gt; &lt;TESTCASE-FILE-PATH&gt; ~~~~</li>
+<li>Execute one of the generated runner scripts: <div class="fragment"><div class="line">python infra/helper.py run_fuzzer \</div>
+<div class="line">  --sanitizer address --engine libfuzzer --architecture x86_64 \</div>
+<div class="line">  apache-logging-log4cxx PatternLayoutFuzzer</div>
+</div><!-- fragment --></li>
 </ol>
-<p>Refer to <a href="https://google.github.io/oss-fuzz/advanced-topics/reproducing/">https://google.github.io/oss-fuzz/advanced-topics/reproducing/</a>[the related OSS-Fuzz documentation] for details. </p>
+<h1><a class="anchor" id="view"></a>
+Viewing fuzzing failures detected by OSS-Fuzz</h1>
+<p>The system running fuzzers registered to OSS-Fuzz is called <b>ClusterFuzz</b>, which provides <a href="https://oss-fuzz.com">a web interface</a> for maintainers to monitor the fuzzing results. Tests outputs and <a class="el" href="fuzzing.html#reproduce">reproduction</a> inputs for failed tests are stored in <a href="https://console.cloud.google.com/storage/browser/apache-logging-log4cxx-logs.clusterfuzz-external.appspot.com">a Google Cloud Storage bucket</a>. Access to both the web interface and the bucket is restricted, and only allowed to <a href="https://github.com/google/oss-fuzz/blob/master/projects/apache-logging-log4cxx/project.yaml">those configured for the project</a>.</p>
+<h1><a class="anchor" id="reproduce"></a>
+Reproducing fuzzing failures detected by OSS-Fuzz</h1>
+<p>Download the associated <code>.testcase</code> file from <a href="https://console.cloud.google.com/storage/browser/apache-logging-log4cxx-logs.clusterfuzz-external.appspot.com">the Google Cloud Storage bucket</a>, and run the following command:</p>
+<div class="fragment"><div class="line">python infra/helper.py reproduce \</div>
+<div class="line">  apache-logging-log4cxx &lt;FUZZ-TARGET-NAME&gt; &lt;TESTCASE-FILE-PATH&gt;</div>
+</div><!-- fragment --><p>Refer to <a href="https://google.github.io/oss-fuzz/advanced-topics/reproducing/">https://google.github.io/oss-fuzz/advanced-topics/reproducing/</a>[the related OSS-Fuzz documentation] for details. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -171,7 +177,7 @@ Running tests locally</h1>
     <li class="navelem"><a class="el" href="development-overview.html">Develop</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Tue Oct 8 2024 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.9.6 on Thu Oct 17 2024 </li>
     <li class="center">
 Copyright &copy; 2017-2024 <a href="https://www.apache.org/">Apache Software Foundation</a>.
 Apache, Chainsaw, log4cxx, Log4j, Log4net, log4php and the Apache feather logo are

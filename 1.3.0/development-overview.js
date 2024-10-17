@@ -16,6 +16,8 @@ var development_overview =
     ] ],
     [ "Fuzzing", "fuzzing.html", [
       [ "Google OSS-Fuzz", "fuzzing.html#oss-fuzz", null ],
-      [ "Running tests locally", "fuzzing.html#running", null ]
+      [ "Running tests locally", "fuzzing.html#running", null ],
+      [ "Viewing fuzzing failures detected by OSS-Fuzz", "fuzzing.html#view", null ],
+      [ "Reproducing fuzzing failures detected by OSS-Fuzz", "fuzzing.html#reproduce", null ]
     ] ]
 ];

@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"namespacelog4cxx.html#a756fe33f36a5b1cda9010e2d48965f95":[6,1,0,0,52],
+"namespacelog4cxx.html#a765ee41060e7c6800758ec4731bb59a3":[6,1,0,0,59],
 "namespacelog4cxx.html#a856b6c83ec575993bb85276eda2729a7":[6,1,0,0,58],
 "namespacelog4cxx.html#a8ddef2f817a835cbf4596e525fe7a76b":[6,1,0,0,70],
 "namespacelog4cxx.html#a9101da4c7c39eb96a57660db568fa602":[6,1,0,0,57],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "provisionnode_8h.html":[6,3,0,1,0,0,0,37],
 "provisionnode_8h.html#a756fe33f36a5b1cda9010e2d48965f95":[6,3,0,1,0,0,0,37,0],
 "provisionnode_8h_source.html":[6,3,0,1,0,0,0,37],
-"qt-support.html":[1,5],
-"quick-start.html":[1,0],
-"quick-start.html#configuration":[1,0,2]
+"qt-support.html":[1,5]
 };
