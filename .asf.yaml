@@ -10,6 +10,5 @@ staging:
   subdir: content/log4cxx
 
 publish:
-  profile: ~
   whoami: asf-site
   subdir: content/log4cxx
