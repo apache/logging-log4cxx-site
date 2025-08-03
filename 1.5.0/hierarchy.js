@@ -64,6 +64,7 @@ var hierarchy =
     [ "log4cxx::helpers::ThreadSpecificData::NamePair", "structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html", null ],
     [ "log4cxx::NDC", "classlog4cxx_1_1NDC.html", null ],
     [ "log4cxx::helpers::Object", "classlog4cxx_1_1helpers_1_1Object.html", [
+      [ "log4cxx::helpers::SingletonHolder< ThreadUtility >", "classlog4cxx_1_1helpers_1_1SingletonHolder.html", null ],
       [ "log4cxx::AppenderSkeleton", "classlog4cxx_1_1AppenderSkeleton.html", [
         [ "log4cxx::AsyncAppender", "classlog4cxx_1_1AsyncAppender.html", null ],
         [ "log4cxx::WriterAppender", "classlog4cxx_1_1WriterAppender.html", [
