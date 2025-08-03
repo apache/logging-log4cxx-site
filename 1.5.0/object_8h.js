@@ -12,6 +12,6 @@ var object_8h =
     [ "LOG4CXX_CAST_ENTRY", "object_8h.html#a642180530328ec0378468edda5bc94e2", null ],
     [ "LOG4CXX_CAST_ENTRY2", "object_8h.html#a148aec9f47f8af8058c7b476b08a7802", null ],
     [ "LOG4CXX_CAST_ENTRY_CHAIN", "object_8h.html#ab14dc1a75d63a11359c8861a59786abc", null ],
-    [ "cast", "object_8h.html#abe6393af314024e7ab6e6fad84343572", null ],
-    [ "LOG4CXX_PTR_DEF", "object_8h.html#a3786cf3e0c3d55955d25114ae2c273f8", null ]
+    [ "log4cxx::cast", "namespacelog4cxx.html#abe6393af314024e7ab6e6fad84343572", null ],
+    [ "log4cxx::helpers::LOG4CXX_PTR_DEF", "namespacelog4cxx_1_1helpers.html#a3786cf3e0c3d55955d25114ae2c273f8", null ]
 ];

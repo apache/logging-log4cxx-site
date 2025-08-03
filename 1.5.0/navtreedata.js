@@ -57,7 +57,7 @@ var NAVTREE =
           [ "Typedefs", "functions_type.html", null ],
           [ "Enumerations", "functions_enum.html", null ],
           [ "Enumerator", "functions_eval.html", null ],
-          [ "Related Functions", "functions_rela.html", null ]
+          [ "Related Symbols", "functions_rela.html", null ]
         ] ]
       ] ],
       [ "File List", "files.html", [
@@ -85,25 +85,26 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "MyApp-qt_8cpp-example.html",
-"classlog4cxx_1_1ConsoleAppender.html#ac3b33d5beae0b90fe6488367041654e3",
-"classlog4cxx_1_1Layout.html#a66cf66d30ddbb839c8ab668021b428fa",
-"classlog4cxx_1_1Logger.html#aae0b3bba09619abff4da161d86ca8140",
-"classlog4cxx_1_1WriterAppender.html#a56518505baf553fe96902f9b25b58ca4",
-"classlog4cxx_1_1filter_1_1MapFilter.html",
-"classlog4cxx_1_1helpers_1_1Class.html#a9a044675ff2dd58ea24e3810286f0253",
-"classlog4cxx_1_1helpers_1_1IllegalStateException.html#a7c0a268a5f3a3692aa707d139173d050",
-"classlog4cxx_1_1helpers_1_1OutputStream.html#a5a8bbe944f27becf2ddda0a8320cc42a",
-"classlog4cxx_1_1helpers_1_1SystemOutWriter.html#a01b75977b23b491d809c238b6126a0f1",
-"classlog4cxx_1_1helpers_1_1XMLDOMNode.html",
-"classlog4cxx_1_1net_1_1SyslogAppender.html#aa3ecf9ece5ececa872f0b4fbc08942e1",
-"classlog4cxx_1_1pattern_1_1LiteralPatternConverter.html#a4fa63955a1c0ce0c5ee73f542965a261",
-"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#ae67688da6bffadcb13d3fbf285f3e547",
-"classlog4cxx_1_1spi_1_1LocationInfo.html#a57a9aadfeb014edbdeae3518bc4c6969",
-"classlog4cxx_1_1xml_1_1DOMConfigurator.html#a75077af3e7985c1ab9e5e4e7a230d803",
-"functions_func.html",
-"namespacelog4cxx.html#a01e366bb431da3b770d2ae4bcd23573da6016f51a22e23d6b8f9c163c88bbcfc1",
-"propertysetter_8h.html#a83b9176eef64ad42b9929460b84dc8d6"
+"classlog4cxx_1_1FMTLayout.html#a4e7441a520aebb5bebdea681deefe624",
+"classlog4cxx_1_1Level.html#a94139c8e95415db4747cf5987594ee71",
+"classlog4cxx_1_1Logger.html#ab8f22791311c33cfa48233a394c997e1",
+"classlog4cxx_1_1WriterAppender.html#ac650decade2f024c978aca17f94339b2",
+"classlog4cxx_1_1filter_1_1MapFilter.html#afbb29156323f90edb324f90cdcc90b25",
+"classlog4cxx_1_1helpers_1_1ClosedChannelException.html#a633a72880b38e8d8fe3e453823c1d556",
+"classlog4cxx_1_1helpers_1_1InputStream.html#a8267e18dc587ba9762444ddc2b4ab015",
+"classlog4cxx_1_1helpers_1_1OutputStreamWriter.html#af28e4fe50700bbd633046a709a6e9d7d",
+"classlog4cxx_1_1helpers_1_1ThreadLocal.html",
+"classlog4cxx_1_1helpers_1_1XMLDOMNodeList.html#a6f8de4b4591194cb4950b2de9202b51d",
+"classlog4cxx_1_1net_1_1TelnetAppender.html#a4c4a06a26d4b895f0a063d621ef87820",
+"classlog4cxx_1_1pattern_1_1MessagePatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a",
+"classlog4cxx_1_1rolling_1_1RollingPolicyBase.html",
+"classlog4cxx_1_1spi_1_1LoggerRepository.html#ae85f14ee09d7433e38cae4d8b9d39981",
+"com_2foo_2config_8h-example.html",
+"iso8601dateformat_8h.html",
+"namespacelog4cxx_1_1rolling.html#a4bed2a8936c1a4a6ba022586ef638d6e",
+"xmllayout_8h_source.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

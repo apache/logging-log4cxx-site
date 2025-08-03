@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['internal_20debugging_0',['Internal Debugging',['../internal-debugging.html',1,'usage-overview']]],
-  ['introduction_1',['Introduction',['../index.html',1,'']]]
+  ['6_202004_2004_2011_0',['Release 0.9.6 - 2004-04-11',['../changelog.html#rel_9_6',1,'']]]
 ];

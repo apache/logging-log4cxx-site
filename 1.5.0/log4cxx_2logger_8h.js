@@ -25,8 +25,8 @@ var log4cxx_2logger_8h =
     [ "LOG4CXX_UNLIKELY", "log4cxx_2logger_8h.html#ac5e26fe3436dd75332ed99f748918b7a", null ],
     [ "LOG4CXX_WARN", "group__LoggingMacros.html#ga530190bc1766b89d1f69ad572509aed2", null ],
     [ "LOG4CXX_WARN_FMT", "group__LoggingMacros.html#ga5840868d932bd2af1d65a40cdc345137", null ],
-    [ "LOG4CXX_LIST_DEF", "log4cxx_2logger_8h.html#ae273fb0f54f87928855e6e11e8d5297c", null ],
-    [ "LOG4CXX_PTR_DEF", "log4cxx_2logger_8h.html#aefd002553075ef58ba2c92c5dc152fb1", null ],
-    [ "LOG4CXX_PTR_DEF", "log4cxx_2logger_8h.html#a3c35d3e407c765d271b3bfc943038d61", null ],
-    [ "LOG4CXX_PTR_DEF", "log4cxx_2logger_8h.html#a499039308bf624c907892022691032f7", null ]
+    [ "log4cxx::LOG4CXX_LIST_DEF", "namespacelog4cxx.html#ae273fb0f54f87928855e6e11e8d5297c", null ],
+    [ "log4cxx::LOG4CXX_PTR_DEF", "namespacelog4cxx.html#aefd002553075ef58ba2c92c5dc152fb1", null ],
+    [ "log4cxx::spi::LOG4CXX_PTR_DEF", "namespacelog4cxx_1_1spi.html#a3c35d3e407c765d271b3bfc943038d61", null ],
+    [ "log4cxx::spi::LOG4CXX_PTR_DEF", "namespacelog4cxx_1_1spi.html#a499039308bf624c907892022691032f7", null ]
 ];
