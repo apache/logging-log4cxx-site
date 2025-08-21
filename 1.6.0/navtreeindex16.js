@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"htmllayout_8h_source.html":[6,3,0,1,0,0,0,23],
 "index.html":[],
 "index.html":[0],
 "inetaddress_8h.html":[6,3,0,1,0,0,0,3,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "namespacelog4cxx_1_1pattern.html#a2fad04316e4c4616a3a40cc15920f751":[6,1,0,0,6,36],
 "namespacelog4cxx_1_1pattern.html#a3283117b3c661902f395b8e89b5589f7":[6,1,0,0,6,32],
 "namespacelog4cxx_1_1pattern.html#a35986ee877b4d8f91c8aa963f66ac3be":[6,1,0,0,6,37],
-"namespacelog4cxx_1_1pattern.html#a46412c36b812db386d71ed0321e7ab05":[6,1,0,0,6,33],
-"namespacelog4cxx_1_1pattern.html#a4d14ca204640ad02ec036a1e31df9c40":[6,1,0,0,6,31]
+"namespacelog4cxx_1_1pattern.html#a46412c36b812db386d71ed0321e7ab05":[6,1,0,0,6,33]
 };

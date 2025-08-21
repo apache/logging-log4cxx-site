@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"namespacelog4cxx_1_1pattern.html#a4d14ca204640ad02ec036a1e31df9c40":[6,1,0,0,6,31],
 "namespacelog4cxx_1_1pattern.html#a649a4a8c3440bc72f57c2f8061abac8c":[6,1,0,0,6,30],
 "namespacelog4cxx_1_1pattern.html#a716fcb331afe8569b6b72587e2b17055":[6,1,0,0,6,38],
 "namespacelog4cxx_1_1pattern.html#afb2fd4c92aefcad8672b9138f278be07":[6,1,0,0,6,34],
@@ -58,7 +59,7 @@ var NAVTREEINDEX17 =
 "namespacemembers_func.html":[6,1,1,1],
 "namespacemembers_type.html":[6,1,1,2],
 "namespaces.html":[6,1,0],
-"ndc-example_8cpp-example.html":[6,4,9],
+"ndc-example_8cpp-example.html":[6,4,10],
 "ndc_8h.html":[6,3,0,1,0,0,0,33],
 "ndc_8h_source.html":[6,3,0,1,0,0,0,33],
 "ndcpatternconverter_8h.html":[6,3,0,1,0,0,0,6,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "timezone_8h.html":[6,3,0,1,0,0,0,3,61],
 "timezone_8h_source.html":[6,3,0,1,0,0,0,3,61],
 "transform_8h.html":[6,3,0,1,0,0,0,3,63],
-"transform_8h_source.html":[6,3,0,1,0,0,0,3,63],
-"triggeringeventevaluator_8h.html":[6,3,0,1,0,0,0,8,13]
+"transform_8h_source.html":[6,3,0,1,0,0,0,3,63]
 };

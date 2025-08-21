@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"classlog4cxx_1_1helpers_1_1XMLDOMNode.html#a9d5c4273517009feb5814eb8a52ac5c7aecb06473b314825f15ecb5cfc18532bd":[6,1,0,0,3,90,0,2],
 "classlog4cxx_1_1helpers_1_1XMLDOMNode.html#a9d5c4273517009feb5814eb8a52ac5c7aecb06473b314825f15ecb5cfc18532bd":[6,2,0,0,3,89,0,2],
 "classlog4cxx_1_1helpers_1_1XMLDOMNode.html#a9d5c4273517009feb5814eb8a52ac5c7af47b8678e9fe391db1cb75e5cbbcaf74":[6,1,0,0,3,90,0,1],
 "classlog4cxx_1_1helpers_1_1XMLDOMNode.html#a9d5c4273517009feb5814eb8a52ac5c7af47b8678e9fe391db1cb75e5cbbcaf74":[6,2,0,0,3,89,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "classlog4cxx_1_1net_1_1SyslogAppender.html#ab478d5f8a5b1a07f7ec05753915c7da6":[6,1,0,0,4,2,1],
 "classlog4cxx_1_1net_1_1SyslogAppender.html#ab478d5f8a5b1a07f7ec05753915c7da6":[6,2,0,0,4,2,1],
 "classlog4cxx_1_1net_1_1SyslogAppender.html#ad7754ec984d14cc799e8501c3461a0ba":[6,1,0,0,4,2,7],
-"classlog4cxx_1_1net_1_1SyslogAppender.html#ad7754ec984d14cc799e8501c3461a0ba":[6,2,0,0,4,2,7],
-"classlog4cxx_1_1net_1_1TelnetAppender.html":[6,1,0,0,4,3]
+"classlog4cxx_1_1net_1_1SyslogAppender.html#ad7754ec984d14cc799e8501c3461a0ba":[6,2,0,0,4,2,7]
 };

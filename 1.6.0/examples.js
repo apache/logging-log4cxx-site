@@ -3,6 +3,7 @@ var examples =
     [ "format-string.cpp", "format-string_8cpp-example.html", null ],
     [ "async-example.xml", "async-example_8xml-example.html", null ],
     [ "auto-configured.cpp", "auto-configured_8cpp-example.html", null ],
+    [ "auto-configured.xml", "auto-configured_8xml-example.html", null ],
     [ "com/foo/config.h", "com_2foo_2config_8h-example.html", null ],
     [ "com/foo/config1.cpp", "com_2foo_2config1_8cpp-example.html", null ],
     [ "com/foo/config3.cpp", "com_2foo_2config3_8cpp-example.html", null ],

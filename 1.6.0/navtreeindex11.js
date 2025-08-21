@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"classlog4cxx_1_1net_1_1TelnetAppender.html":[6,1,0,0,4,3],
 "classlog4cxx_1_1net_1_1TelnetAppender.html":[6,2,0,0,4,3],
 "classlog4cxx_1_1net_1_1TelnetAppender.html#a02d35f0ee49a7689e076863797af3835":[6,1,0,0,4,3,4],
 "classlog4cxx_1_1net_1_1TelnetAppender.html#a02d35f0ee49a7689e076863797af3835":[6,2,0,0,4,3,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#af5f46da7371a1ebb868375134ad83477":[6,1,0,0,6,15,4],
 "classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#af5f46da7371a1ebb868375134ad83477":[6,2,0,0,6,15,4],
 "classlog4cxx_1_1pattern_1_1MDCPatternConverter.html":[6,1,0,0,6,16],
-"classlog4cxx_1_1pattern_1_1MDCPatternConverter.html":[6,2,0,0,6,16],
-"classlog4cxx_1_1pattern_1_1MDCPatternConverter.html#a40cd385d603fafd3377d0ff6c6f0f26b":[6,1,0,0,6,16,0]
+"classlog4cxx_1_1pattern_1_1MDCPatternConverter.html":[6,2,0,0,6,16]
 };

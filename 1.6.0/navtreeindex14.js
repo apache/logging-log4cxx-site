@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"classlog4cxx_1_1spi_1_1LoggerRepository.html#a95c2f05f1c30dd684a5bfd1015d5d746":[6,1,0,0,10,9,4],
 "classlog4cxx_1_1spi_1_1LoggerRepository.html#a95c2f05f1c30dd684a5bfd1015d5d746":[6,2,0,0,9,9,4],
 "classlog4cxx_1_1spi_1_1LoggerRepository.html#aa9e3c90be74472e94ba6c463ed819a84":[6,1,0,0,10,9,12],
 "classlog4cxx_1_1spi_1_1LoggerRepository.html#aa9e3c90be74472e94ba6c463ed819a84":[6,2,0,0,9,9,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "classlog4cxx_1_1xml_1_1XMLLayout.html#aeb60706a15ad1cca3ebcc9c403f7985e":[6,1,0,0,12,1,0],
 "classlog4cxx_1_1xml_1_1XMLLayout.html#aeb60706a15ad1cca3ebcc9c403f7985e":[6,2,0,0,11,1,0],
 "classlog4cxx_1_1xml_1_1XMLLayout.html#af665821af142acdb574f8e6967738425":[6,1,0,0,12,1,3],
-"classlog4cxx_1_1xml_1_1XMLLayout.html#af665821af142acdb574f8e6967738425":[6,2,0,0,11,1,3],
-"classnamepatternconverter_8h.html":[6,3,0,1,0,0,0,6,0]
+"classlog4cxx_1_1xml_1_1XMLLayout.html#af665821af142acdb574f8e6967738425":[6,2,0,0,11,1,3]
 };

@@ -1,6 +1,6 @@
 var NAVTREEINDEX0 =
 {
-"MyApp-qt_8cpp-example.html":[6,4,10],
+"MyApp-qt_8cpp-example.html":[6,4,11],
 "absolutetimedateformat_8h.html":[6,3,0,1,0,0,0,3,0],
 "absolutetimedateformat_8h_source.html":[6,3,0,1,0,0,0,3,0],
 "action_8h.html":[6,3,0,1,0,0,0,7,0],
@@ -23,6 +23,7 @@ var NAVTREEINDEX0 =
 "asyncappender_8h.html":[6,3,0,1,0,0,0,13],
 "asyncappender_8h_source.html":[6,3,0,1,0,0,0,13],
 "auto-configured_8cpp-example.html":[6,4,2],
+"auto-configured_8xml-example.html":[6,4,3],
 "basicconfigurator_8h.html":[6,3,0,1,0,0,0,14],
 "basicconfigurator_8h_source.html":[6,3,0,1,0,0,0,14],
 "bufferedwriter_8h.html":[6,3,0,1,0,0,0,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classlog4cxx_1_1FMTLayout.html#a184d8379c56ca7e55fa4ae35f0859809":[6,1,0,0,22,8],
 "classlog4cxx_1_1FMTLayout.html#a184d8379c56ca7e55fa4ae35f0859809":[6,2,0,0,21,8],
 "classlog4cxx_1_1FMTLayout.html#a2079685b53ab28a7b780777ed152a171":[6,1,0,0,22,5],
-"classlog4cxx_1_1FMTLayout.html#a2079685b53ab28a7b780777ed152a171":[6,2,0,0,21,5],
-"classlog4cxx_1_1FMTLayout.html#a3f4e6ec493ffe05ea8e31d1c736a79d3":[6,1,0,0,22,4]
+"classlog4cxx_1_1FMTLayout.html#a2079685b53ab28a7b780777ed152a171":[6,2,0,0,21,5]
 };
