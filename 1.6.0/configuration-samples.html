@@ -117,11 +117,12 @@ Default Initialization Behaviour</h1>
 <p>To use automatic configuration with a non-standard file name create and use your own wrapper for <a class="el" href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">getLogger</a>. A full example can be seen in the <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a> file.</p>
 <h1 class="doxsection"><a class="anchor" id="runtime-property-values"></a>
 Runtime Property Values</h1>
-<p>The value of an enviroment variable can be used in a property value. Instances of the form <b>${VarName}</b> will be replaced with the value of the environment variable <b>VarName</b>.</p>
+<p>The value of an enviroment variable can be used in a property value. Instances of the form <b>${VarName}</b> will be replaced with the value of the environment variable <b>VarName</b>. A warning message is output to stderr if the closing brace is absent.</p>
 <p>As of version 1.6, Log4cxx allows you to define configuration variables programmatically. Extra key value pairs may be added prior to loading a configuration file using code such as: </p><div class="fragment"><div class="line"><span class="keyword">auto</span>&amp; props = <a class="code hl_function" href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727">log4cxx::spi::Configurator::properties</a>();</div>
 <div class="line">props.setProperty(LOG4CXX_STR(<span class="stringliteral">&quot;VarName&quot;</span>), LOG4CXX_STR(<span class="stringliteral">&quot;my-varname-value&quot;</span>));</div>
 <div class="ttc" id="aclasslog4cxx_1_1spi_1_1Configurator_html_a34fef1dc93e7b44cfb601f30100a3727"><div class="ttname"><a href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727">log4cxx::spi::Configurator::properties</a></div><div class="ttdeci">static helpers::Properties &amp; properties()</div><div class="ttdoc">The key value pairs used when expanding ${varname} instances in a configuration file.</div></div>
 </div><!-- fragment --><p>Also available in Log4cxx 1.6 are variables that hold the currently executing program file path and the <a href="https://en.cppreference.com/w/cpp/filesystem/path.html">std::filesystem::path</a> decomposition of the currently executing program file path. These allow you to specify a log file location relative to the executable location, not just the current working directory. The variable names are <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727">documented here</a>.</p>
+<p>To check the corrent values are used when your configuration file is loaded, use <a href="internal-debugging.html#internal-debugging">Log4cxx internal debugging</a>.</p>
 <h1 class="doxsection"><a class="anchor" id="properties"></a>
 Properties Files</h1>
 <p>Log4cxx may be configured using a Java properties (key=value) type file.</p>
@@ -162,12 +163,15 @@ Properties Files</h1>
 <div class="line">#log4j.logger.MockArm=DEBUG</div>
 <div class="line">#log4j.logger.MockURController=DEBUG</div>
 <div class="line">#log4j.logger.URCommunicationPort=DEBUG</div>
+<div class="line"> </div>
+<div class="line"># Log4cxx internal debugging</div>
+<div class="line">#log4j.debug=true</div>
 </div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="xmlfiles"></a>
 XML Files</h1>
 <p>Another way of configuring Log4cxx is with an XML file. The following are some XML configuration examples.</p>
 <h2 class="doxsection"><a class="anchor" id="xml-example-1"></a>
 XML Example 1</h2>
-<p>This simple example simply writes messages to stdout. If you want to send messages to stderr instead, simply change the 'Target' value to <span class="tt">System.err</span>.</p>
+<p>This simple example writes messages to stdout. If you want to send messages to stderr instead, change the 'Target' value to <span class="tt">System.err</span>.</p>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">log4j:configuration</span> <span class="keyword">xmlns:log4j</span>=<span class="stringliteral">&quot;http://jakarta.apache.org/log4j/&quot;</span>&gt;</div>
 <div class="line"> </div>
@@ -236,6 +240,7 @@ XML Example 3</h2>
 </div><!-- fragment --><p>For this configuration, we have set any logger that is at the <span class="tt">com</span> level or below to be debug. However, we have also set the logger <span class="tt">com.example</span> to have a more verbose <span class="tt">trace</span> level to see more information from that particular logger. The log file will be created in a program data directory where the path uses the program vendor and product name.</p>
 <p>The following Log4cxx 1.6 configuration file uses the variables added in the <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a> example.</p>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
+<div class="line"><span class="comment">&lt;!--log4j:configuration xmlns:log4j=&quot;http://jakarta.apache.org/log4j/&quot; debug=&quot;true&quot; --&gt;</span></div>
 <div class="line">&lt;<span class="keywordtype">log4j:configuration</span> <span class="keyword">xmlns:log4j</span>=<span class="stringliteral">&quot;http://jakarta.apache.org/log4j/&quot;</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConsoleAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.ConsoleAppender&quot;</span>&gt;</div>

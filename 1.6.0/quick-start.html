@@ -288,7 +288,8 @@ Runtime Configuration</h1>
 <div class="line">DEBUG [12345] (bar.cpp:8) - Did it again!</div>
 <div class="line"> INFO [12345] (MyApp.cpp:11) - Exiting application.</div>
 </div><!-- fragment --><p>In addition, as the root logger has been allocated a second appender, output will also be directed to the <em>example.log</em> file. This file will be rolled over when it reaches 100KB. When roll-over occurs, the old version of <em>example.log</em> is automatically moved to <em>example.log.1</em>.</p>
-<p>Note that to obtain these different logging behaviors we did not need to recompile code. We could just as easily have logged to a UNIX Syslog daemon, redirected all <em>com.foo</em> output to an NT Event logger, or forwarded logging events to a remote Log4cxx server, which would log according to local server policy, for example by forwarding the log event to a second Log4cxx server. </p>
+<p>Note that to obtain these different logging behaviors we did not need to recompile code. We could just as easily have logged to a UNIX Syslog daemon, redirected all <em>com.foo</em> output to an NT Event logger, or forwarded logging events to a remote Log4cxx server, which would log according to local server policy, for example by forwarding the log event to a second Log4cxx server.</p>
+<p>For more runtime configuration examples, see <a href="configuration-samples.html">Configuration Samples</a>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

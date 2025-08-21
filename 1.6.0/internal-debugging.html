@@ -109,14 +109,15 @@ $(function(){initNavTree('internal-debugging.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_src_2site_2markdown_2internal-debugging"></a></p>
-<p>Because Log4cxx is a logging library, we can't use it to output errors from the library itself. There are several ways to activate internal logging:</p>
-<ol type="1">
-<li>Configure the library directly by calling the <a class="el" href="classlog4cxx_1_1helpers_1_1LogLog.html#a4a9ff479866ace05c88c8a167ff2c2fa">LogLog::setInternalDebugging</a> method</li>
-<li>If using a properties file, set the value <span class="tt">log4j.debug=true</span> in your configuration file</li>
-<li>If using an XML file, set the attribute <span class="tt">internalDebug=true</span> in the root node</li>
-<li>From the environment: <span class="tt">LOG4CXX_DEBUG=true</span></li>
+<p>Because Log4cxx is a logging library, we can't use it to output errors from the library itself.</p>
+<p>There are several ways to activate internal debug logging:</p><ol type="1">
+<li>Setting the environment variable <code>LOG4CXX_DEBUG</code> to the value <code>true</code></li>
+<li>If using a properties file, add the line <code>log4j.debug=true</code> to your file</li>
+<li>If using an XML file, add the <code>debug="true"</code> attribute in the <code>log4j.configuration</code> element</li>
+<li>Configure the library programmatically by calling <a class="el" href="classlog4cxx_1_1helpers_1_1LogLog.html#a4a9ff479866ace05c88c8a167ff2c2fa">LogLog::setInternalDebugging</a></li>
 </ol>
-<p>All error and warning messages are sent to stderr. </p>
+<p>To disable all messages, including error and warning messages, call <a class="el" href="classlog4cxx_1_1helpers_1_1LogLog.html#afb245a915971f9daac986b6115390083">LogLog::setQuietMode(true)</a>.</p>
+<p>All Log4cxx internal logging messages are sent to stderr, with each line prefixed by <code><a class="el" href="namespacelog4cxx.html">log4cxx</a>:</code>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
