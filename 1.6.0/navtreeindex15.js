@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classnamepatternconverter_8h.html":[6,3,0,1,0,0,0,6,0],
 "classnamepatternconverter_8h_source.html":[6,3,0,1,0,0,0,6,0],
 "classregistration_8h.html":[6,3,0,1,0,0,0,3,11],
 "classregistration_8h_source.html":[6,3,0,1,0,0,0,3,11],
@@ -7,12 +8,12 @@ var NAVTREEINDEX15 =
 "colorendpatternconverter_8h_source.html":[6,3,0,1,0,0,0,6,1],
 "colorstartpatternconverter_8h.html":[6,3,0,1,0,0,0,6,2],
 "colorstartpatternconverter_8h_source.html":[6,3,0,1,0,0,0,6,2],
-"com_2foo_2config-qt_8cpp-example.html":[6,4,12],
-"com_2foo_2config-qt_8h-example.html":[6,4,11],
-"com_2foo_2config1_8cpp-example.html":[6,4,4],
-"com_2foo_2config3_8cpp-example.html":[6,4,5],
-"com_2foo_2config4_8cpp-example.html":[6,4,6],
-"com_2foo_2config_8h-example.html":[6,4,3],
+"com_2foo_2config-qt_8cpp-example.html":[6,4,13],
+"com_2foo_2config-qt_8h-example.html":[6,4,12],
+"com_2foo_2config1_8cpp-example.html":[6,4,5],
+"com_2foo_2config3_8cpp-example.html":[6,4,6],
+"com_2foo_2config4_8cpp-example.html":[6,4,7],
+"com_2foo_2config_8h-example.html":[6,4,4],
 "community.html":[5],
 "community.html#artifacts":[5,2],
 "community.html#security":[5,1],
@@ -53,8 +54,8 @@ var NAVTREEINDEX15 =
 "configurator_8h_source.html":[6,3,0,1,0,0,0,8,2],
 "consoleappender_8h.html":[6,3,0,1,0,0,0,15],
 "consoleappender_8h_source.html":[6,3,0,1,0,0,0,15],
-"custom-appender_8cpp-example.html":[6,4,7],
-"custom-appender_8xml-example.html":[6,4,8],
+"custom-appender_8cpp-example.html":[6,4,8],
+"custom-appender_8xml-example.html":[6,4,9],
 "cyclicbuffer_8h.html":[6,3,0,1,0,0,0,3,12],
 "cyclicbuffer_8h_source.html":[6,3,0,1,0,0,0,3,12],
 "datagrampacket_8h.html":[6,3,0,1,0,0,0,3,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "hierarchy_8h_source.html":[6,3,0,1,0,0,0,22],
 "hierarchyeventlistener_8h.html":[6,3,0,1,0,0,0,8,6],
 "hierarchyeventlistener_8h_source.html":[6,3,0,1,0,0,0,8,6],
-"htmllayout_8h.html":[6,3,0,1,0,0,0,23],
-"htmllayout_8h_source.html":[6,3,0,1,0,0,0,23]
+"htmllayout_8h.html":[6,3,0,1,0,0,0,23]
 };
