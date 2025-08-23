@@ -34,7 +34,10 @@ var usage_overview =
     [ "Configuration Samples", "configuration-samples.html", [
       [ "Default Initialization Behaviour", "configuration-samples.html#default-initialization", null ],
       [ "Runtime Property Values", "configuration-samples.html#runtime-property-values", null ],
-      [ "Properties Files", "configuration-samples.html#properties", null ],
+      [ "Properties Files", "configuration-samples.html#properties", [
+        [ "Properties Example 1", "configuration-samples.html#properties-example-1", null ],
+        [ "Properties Example 2", "configuration-samples.html#properties-example-2", null ]
+      ] ],
       [ "XML Files", "configuration-samples.html#xmlfiles", [
         [ "XML Example 1", "configuration-samples.html#xml-example-1", null ],
         [ "XML Example 2", "configuration-samples.html#xml-example-2", null ],
