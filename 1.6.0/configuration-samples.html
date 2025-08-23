@@ -126,7 +126,26 @@ Runtime Property Values</h1>
 <h1 class="doxsection"><a class="anchor" id="properties"></a>
 Properties Files</h1>
 <p>Log4cxx may be configured using a Java properties (key=value) type file.</p>
-<p>The following Log4cxx 1.6 configuration file uses the variables added in the <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a> example. </p><div class="fragment"><div class="line"># Uncomment a line to enable debugging for a category</div>
+<h2 class="doxsection"><a class="anchor" id="properties-example-1"></a>
+Properties Example 1</h2>
+<p>This simple example writes messages to stdout. If you want to send messages to stderr instead, change the 'Target' value to <span class="tt">System.err</span>.</p>
+<div class="fragment"><div class="line"># Set root logger level to DEBUG and its only appender to A1.</div>
+<div class="line">log4j.rootLogger=DEBUG, A1</div>
+<div class="line"> </div>
+<div class="line"># A1 is set to be a ConsoleAppender.</div>
+<div class="line">log4j.appender.A1=org.apache.log4j.ConsoleAppender</div>
+<div class="line">log4j.appender.A1.Target=System.out</div>
+<div class="line"> </div>
+<div class="line"># The color of the message text shows the logging level.</div>
+<div class="line">log4j.appender.A1.layout=org.apache.log4j.PatternLayout</div>
+<div class="line">log4j.appender.A1.layout.ConversionPattern=%.30c - %Y%m%y%n</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="properties-example-2"></a>
+Properties Example 2</h2>
+<p>The following Log4cxx 1.6 configuration file uses the variables added in the <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a> example to store a log file per executable in a product related logs directory:</p><ul>
+<li>Windows, "C:\ProgramData\CompanyName\ProductName\Logs"</li>
+<li>Non-Windows, "/var/local/companyName/productName/Logs"</li>
+</ul>
+<div class="fragment"><div class="line"># Uncomment a line to enable debugging for a category</div>
 <div class="line">log4j.rootCategory=INFO, A1</div>
 <div class="line"> </div>
 <div class="line">log4j.appender.A1=org.apache.log4j.RollingFileAppender</div>
@@ -139,7 +158,7 @@ Properties Files</h1>
 <div class="line"> </div>
 <div class="line">log4j.appender.console=org.apache.log4j.ConsoleAppender</div>
 <div class="line">log4j.appender.console.layout=org.apache.log4j.PatternLayout</div>
-<div class="line">log4j.appender.console.layout.ConversionPattern=%.30c - %m%n</div>
+<div class="line">log4j.appender.console.layout.ConversionPattern=%.30c - %Y%m%y%n</div>
 <div class="line"> </div>
 <div class="line">log4j.appender.csvData=org.apache.log4j.FileAppender</div>
 <div class="line">log4j.appender.csvData.File=${LocalAppData}/${CURRENT_VENDOR_FOLDER}/${CURRENT_PRODUCT_FOLDER}/MessageData.csv</div>
@@ -171,14 +190,13 @@ XML Files</h1>
 <p>Another way of configuring Log4cxx is with an XML file. The following are some XML configuration examples.</p>
 <h2 class="doxsection"><a class="anchor" id="xml-example-1"></a>
 XML Example 1</h2>
-<p>This simple example writes messages to stdout. If you want to send messages to stderr instead, change the 'Target' value to <span class="tt">System.err</span>.</p>
-<div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
+<p>This simple example writes messages to stdout. If you want to send messages to stderr instead, change the 'Target' value to <span class="tt">System.err</span>. The color of the message text shows the logging level. </p><div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">log4j:configuration</span> <span class="keyword">xmlns:log4j</span>=<span class="stringliteral">&quot;http://jakarta.apache.org/log4j/&quot;</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConsoleAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.ConsoleAppender&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Target&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;System.out&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">layout</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.PatternLayout&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;%m%n&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;%.30c - %Y%m%y%n&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">layout</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">appender</span>&gt;</div>
 <div class="line"> </div>
@@ -199,14 +217,14 @@ XML Example 2</h2>
 <div class="line">  &lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConsoleAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.ConsoleAppender&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Target&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;System.out&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">layout</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.PatternLayout&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[%d{yyyy-MM-dd HH:mm:ss}] %c %-5p - %m%n&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;%c - %Y%m%y%n&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">layout</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">appender</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FileAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.FileAppender&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;file&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;example.log&quot;</span> /&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">layout</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.PatternLayout&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[%d{yyyy-MM-dd HH:mm:ss}] %c %-5p - %m%n&quot;</span> /&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[%d{yyyy-MM-dd HH:mm:ss.SSS}] %c %-5p - %m%n&quot;</span> /&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">layout</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">appender</span>&gt;</div>
 <div class="line"> </div>
@@ -238,7 +256,10 @@ XML Example 3</h2>
 <div class="ttc" id="agroup__LoggingMacros_html_gae1bc2ab20d5f2d7660995ea8244d3a26"><div class="ttname"><a href="group__LoggingMacros.html#gae1bc2ab20d5f2d7660995ea8244d3a26">LOG4CXX_DEBUG</a></div><div class="ttdeci">#define LOG4CXX_DEBUG(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for DEBUG eve...</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:2232</div></div>
 <div class="ttc" id="anamespacelog4cxx_html_acd073adf77cc8545b10ac024a474be0d"><div class="ttname"><a href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Logger &gt; LoggerPtr</div><div class="ttdef"><b>Definition</b> defaultloggerfactory.h:27</div></div>
 </div><!-- fragment --><p>For this configuration, we have set any logger that is at the <span class="tt">com</span> level or below to be debug. However, we have also set the logger <span class="tt">com.example</span> to have a more verbose <span class="tt">trace</span> level to see more information from that particular logger. The log file will be created in a program data directory where the path uses the program vendor and product name.</p>
-<p>The following Log4cxx 1.6 configuration file uses the variables added in the <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a> example.</p>
+<p>The following Log4cxx 1.6 configuration file uses the variables added in the <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a> example to store a log file per executable in a product related logs directory:</p><ul>
+<li>Windows, "C:\ProgramData\CompanyName\ProductName\Logs"</li>
+<li>Non-Windows, "/var/local/companyName/productName/Logs"</li>
+</ul>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
 <div class="line"><span class="comment">&lt;!--log4j:configuration xmlns:log4j=&quot;http://jakarta.apache.org/log4j/&quot; debug=&quot;true&quot; --&gt;</span></div>
 <div class="line">&lt;<span class="keywordtype">log4j:configuration</span> <span class="keyword">xmlns:log4j</span>=<span class="stringliteral">&quot;http://jakarta.apache.org/log4j/&quot;</span>&gt;</div>
@@ -246,14 +267,14 @@ XML Example 3</h2>
 <div class="line">  &lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConsoleAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.ConsoleAppender&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Target&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;System.out&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">layout</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.PatternLayout&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[%d{yyyy-MM-dd HH:mm:ss}] %c %-5p - %m%n&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;%c - %Y%m%y%n&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">layout</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">appender</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FileAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.FileAppender&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;file&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;${LocalAppData}/${CURRENT_VENDOR_FOLDER}/${CURRENT_PRODUCT_FOLDER}/Logs/${PROGRAM_FILE_PATH.STEM}.log&quot;</span> /&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">layout</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.PatternLayout&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[%d{yyyy-MM-dd HH:mm:ss}] %c %-5p - %m%n&quot;</span> /&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[%d{yyyy-MM-dd HH:mm:ss.SSS}] %c %-5p - %m%n&quot;</span> /&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">layout</span>&gt;</div>
 <div class="line">  &lt;/<span class="keywordtype">appender</span>&gt;</div>
 <div class="line"> </div>
@@ -294,7 +315,7 @@ XML Example 4</h2>
 <div class="line">  &lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConsoleAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.ConsoleAppender&quot;</span>&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;Target&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;System.out&quot;</span>/&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">layout</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.PatternLayout&quot;</span>&gt;</div>
-<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[%d{yyyy-MM-dd HH:mm:ss}] %c %-5p - %m%n&quot;</span>/&gt;</div>
+<div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[%c - %Y%m%y%n&quot;</span>/&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">layout</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">    &lt;<span class="keywordtype">filter</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.varia.StringMatchFilter&quot;</span>&gt;</div>
@@ -333,7 +354,7 @@ XML Example 4</h2>
     <li class="navelem"><a href="usage-overview.html">Use</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Thu Aug 21 2025 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Sat Aug 23 2025 </li>
     <li class="center">
 Copyright &copy; 2017-2024 <a href="https://www.apache.org/">Apache Software Foundation</a>.
 Apache, Chainsaw, log4cxx, Log4j, Log4net, log4php and the Apache feather logo are

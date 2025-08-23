@@ -15,8 +15,10 @@ var searchData=
   ['processes_12',['Logging With Multiple Processes',['../multiprocess-logging.html',1,'usage-overview']]],
   ['project_20license_13',['Project License',['../license.html#autotoc_md17',1,'']]],
   ['properties_14',['Configurable properties',['../classlog4cxx_1_1AsyncAppender.html#autotoc_md0',1,'']]],
-  ['properties_20files_15',['Properties Files',['../configuration-samples.html#properties',1,'']]],
-  ['property_20values_16',['Runtime Property Values',['../configuration-samples.html#runtime-property-values',1,'']]],
-  ['pull_20requests_17',['Pull Requests',['../source-repository.html#autotoc_md11',1,'']]],
-  ['putting_20the_20stacktrace_20into_20the_20mdc_18',['Putting the stacktrace into the MDC',['../stacktrace-support.html#autotoc_md18',1,'']]]
+  ['properties_20example_201_15',['Properties Example 1',['../configuration-samples.html#properties-example-1',1,'']]],
+  ['properties_20example_202_16',['Properties Example 2',['../configuration-samples.html#properties-example-2',1,'']]],
+  ['properties_20files_17',['Properties Files',['../configuration-samples.html#properties',1,'']]],
+  ['property_20values_18',['Runtime Property Values',['../configuration-samples.html#runtime-property-values',1,'']]],
+  ['pull_20requests_19',['Pull Requests',['../source-repository.html#autotoc_md11',1,'']]],
+  ['putting_20the_20stacktrace_20into_20the_20mdc_20',['Putting the stacktrace into the MDC',['../stacktrace-support.html#autotoc_md18',1,'']]]
 ];

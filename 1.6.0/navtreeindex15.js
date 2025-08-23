@@ -42,6 +42,8 @@ var NAVTREEINDEX15 =
 "configuration-samples.html":[1,2],
 "configuration-samples.html#default-initialization":[1,2,0],
 "configuration-samples.html#properties":[1,2,2],
+"configuration-samples.html#properties-example-1":[1,2,2,0],
+"configuration-samples.html#properties-example-2":[1,2,2,1],
 "configuration-samples.html#runtime-property-values":[1,2,1],
 "configuration-samples.html#xml-example-1":[1,2,3,0],
 "configuration-samples.html#xml-example-2":[1,2,3,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "hierarchy.html":[6,2,2],
 "hierarchy_8h.html":[6,3,0,1,0,0,0,22],
 "hierarchy_8h_source.html":[6,3,0,1,0,0,0,22],
-"hierarchyeventlistener_8h.html":[6,3,0,1,0,0,0,8,6],
-"hierarchyeventlistener_8h_source.html":[6,3,0,1,0,0,0,8,6],
-"htmllayout_8h.html":[6,3,0,1,0,0,0,23]
+"hierarchyeventlistener_8h.html":[6,3,0,1,0,0,0,8,6]
 };
