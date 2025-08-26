@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['2_0',['2',['../concepts.html#pattern2',1,'Pattern 2'],['../configuration-samples.html#properties-example-2',1,'Properties Example 2'],['../configuration-samples.html#xml-example-2',1,'XML Example 2']]],
+  ['2_0',['2',['../concepts.html#pattern2',1,'Pattern 2'],['../configuration-files.html#properties-example-2',1,'Properties Example 2'],['../configuration-files.html#xml-example-2',1,'XML Example 2']]],
   ['2_200_202024_2001_2001_1',['Release 1.2.0 - 2024-01-01',['../changelog.html#rel_1_2_0',1,'']]],
   ['2_202003_2008_2010_2',['Release 0.9.2 - 2003-08-10',['../changelog.html#rel_9_2',1,'']]],
   ['2_2dget_2emd_3',['2-get.md',['../2-get_8md.html',1,'']]],

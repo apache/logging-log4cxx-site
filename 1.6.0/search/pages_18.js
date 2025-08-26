@@ -38,5 +38,5 @@ var searchData=
   ['rule_35',['Basic Selection Rule',['../concepts.html#selection-rule',1,'']]],
   ['running_20tests_20locally_36',['Running tests locally',['../fuzzing.html#running',1,'']]],
   ['runtime_20configuration_37',['Runtime Configuration',['../quick-start.html#configuration',1,'Runtime Configuration'],['../filters.html#configure-filter',1,'Runtime Configuration']]],
-  ['runtime_20property_20values_38',['Runtime Property Values',['../configuration-samples.html#runtime-property-values',1,'']]]
+  ['runtime_20property_20values_38',['Runtime Property Values',['../configuration-files.html#runtime-property-values',1,'']]]
 ];

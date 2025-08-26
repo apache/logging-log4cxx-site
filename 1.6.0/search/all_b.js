@@ -5,7 +5,7 @@ var searchData=
   ['basicconfigurator_2',['BasicConfigurator',['../classlog4cxx_1_1BasicConfigurator.html',1,'log4cxx::BasicConfigurator'],['../classlog4cxx_1_1BasicConfigurator.html#aa51873bc76876a303c6a960fbf7ef179',1,'log4cxx::BasicConfigurator::BasicConfigurator()']]],
   ['basicconfigurator_2eh_3',['basicconfigurator.h',['../basicconfigurator_8h.html',1,'']]],
   ['begin_5flog4cxx_5fcast_5fmap_4',['BEGIN_LOG4CXX_CAST_MAP',['../object_8h.html#ac8ff8f70159e03fe7d8c4aa743cc9cda',1,'object.h']]],
-  ['behaviour_5',['Default Initialization Behaviour',['../configuration-samples.html#default-initialization',1,'']]],
+  ['behaviour_5',['Default Initialization Behaviour',['../configuration-files.html#default-initialization',1,'']]],
   ['bind_6',['bind',['../classlog4cxx_1_1helpers_1_1DatagramSocket.html#a83d3688987ae1a33f8904d15eba9284a',1,'log4cxx::helpers::DatagramSocket']]],
   ['bindexception_7',['BindException',['../classlog4cxx_1_1helpers_1_1BindException.html',1,'log4cxx::helpers::BindException'],['../classlog4cxx_1_1helpers_1_1BindException.html#adc1f0c3172080849ca0c07ee1b2df55c',1,'log4cxx::helpers::BindException::BindException(log4cxx_status_t status)'],['../classlog4cxx_1_1helpers_1_1BindException.html#a121699592a2f2ff474ef6fab8bbecaec',1,'log4cxx::helpers::BindException::BindException(const BindException &amp;)']]],
   ['blocksignalsandnamethread_8',['BlockSignalsAndNameThread',['../namespacelog4cxx_1_1helpers.html#a84bb84c01710854af8519e70d8a548d4ace3cf34390ba5c8471c51d27d58a8456',1,'log4cxx::helpers']]],
