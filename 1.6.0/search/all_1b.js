@@ -92,6 +92,6 @@ var searchData=
   ['run_89',['run',['../classlog4cxx_1_1rolling_1_1Action.html#a4d8ffbcc9979287e164e824ad4e6904e',1,'log4cxx::rolling::Action']]],
   ['running_20tests_20locally_90',['Running tests locally',['../fuzzing.html#running',1,'']]],
   ['runtime_20configuration_91',['Runtime Configuration',['../quick-start.html#configuration',1,'Runtime Configuration'],['../filters.html#configure-filter',1,'Runtime Configuration']]],
-  ['runtime_20property_20values_92',['Runtime Property Values',['../configuration-samples.html#runtime-property-values',1,'']]],
+  ['runtime_20property_20values_92',['Runtime Property Values',['../configuration-files.html#runtime-property-values',1,'']]],
   ['runtimeexception_93',['RuntimeException',['../classlog4cxx_1_1helpers_1_1RuntimeException.html',1,'log4cxx::helpers::RuntimeException'],['../classlog4cxx_1_1helpers_1_1RuntimeException.html#adacaf5bb4d445ebb9272dac7269f4e2e',1,'log4cxx::helpers::RuntimeException::RuntimeException(log4cxx_status_t stat)'],['../classlog4cxx_1_1helpers_1_1RuntimeException.html#ae404b20946976880353fa3916d389c37',1,'log4cxx::helpers::RuntimeException::RuntimeException(const LogString &amp;msg)'],['../classlog4cxx_1_1helpers_1_1RuntimeException.html#a42c33566da43eed9f1e72fdb2388b183',1,'log4cxx::helpers::RuntimeException::RuntimeException(const RuntimeException &amp;msg)']]]
 ];

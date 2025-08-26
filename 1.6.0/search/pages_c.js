@@ -2,7 +2,7 @@ var searchData=
 [
   ['data_0',['data',['../library-design.html#autotoc_md13',1,'Inheriting classes with private data'],['../library-design.html#autotoc_md12',1,'Use of class-specific structs to hold data.']]],
   ['debugging_1',['Internal Debugging',['../internal-debugging.html',1,'usage-overview']]],
-  ['default_20initialization_20behaviour_2',['Default Initialization Behaviour',['../configuration-samples.html#default-initialization',1,'']]],
+  ['default_20initialization_20behaviour_2',['Default Initialization Behaviour',['../configuration-files.html#default-initialization',1,'']]],
   ['dependencies_3',['Dependencies',['../dependencies.html',1,'Log4cxx Dependencies'],['../dependencies.html#autotoc_md5',1,'Optional Dependencies']]],
   ['dependencies_20only_4',['Licenses(direct dependencies only)',['../dependencies.html#autotoc_md7',1,'']]],
   ['design_20notes_5',['Library Design Notes',['../library-design.html',1,'development-overview']]],

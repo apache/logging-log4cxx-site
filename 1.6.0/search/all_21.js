@@ -1,11 +1,11 @@
 var searchData=
 [
   ['x_0',['Mac OS/X',['../build-cmake.html#MacOS',1,'']]],
-  ['xml_20example_201_1',['XML Example 1',['../configuration-samples.html#xml-example-1',1,'']]],
-  ['xml_20example_202_2',['XML Example 2',['../configuration-samples.html#xml-example-2',1,'']]],
-  ['xml_20example_203_3',['XML Example 3',['../configuration-samples.html#xml-example-3',1,'']]],
-  ['xml_20example_204_4',['XML Example 4',['../configuration-samples.html#xml-example-4',1,'']]],
-  ['xml_20files_5',['XML Files',['../configuration-samples.html#xmlfiles',1,'']]],
+  ['xml_20example_201_1',['XML Example 1',['../configuration-files.html#xml-example-1',1,'']]],
+  ['xml_20example_202_2',['XML Example 2',['../configuration-files.html#xml-example-2',1,'']]],
+  ['xml_20example_203_3',['XML Example 3',['../configuration-files.html#xml-example-3',1,'']]],
+  ['xml_20example_204_4',['XML Example 4',['../configuration-files.html#xml-example-4',1,'']]],
+  ['xml_20files_5',['XML Files',['../configuration-files.html#xmlfiles',1,'']]],
   ['xml_2eh_6',['xml.h',['../xml_8h.html',1,'']]],
   ['xmldomdocument_7',['XMLDOMDocument',['../classlog4cxx_1_1helpers_1_1XMLDOMDocument.html',1,'log4cxx::helpers']]],
   ['xmldomdocumentptr_8',['XMLDOMDocumentPtr',['../namespacelog4cxx_1_1helpers.html#a05287f2d189ad3fc0cccf6802b7903ab',1,'log4cxx::helpers']]],

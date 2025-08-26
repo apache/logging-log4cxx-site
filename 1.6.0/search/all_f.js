@@ -24,7 +24,7 @@ var searchData=
   ['fileoutputstream_2eh_21',['fileoutputstream.h',['../fileoutputstream_8h.html',1,'']]],
   ['filerenameaction_22',['FileRenameAction',['../classlog4cxx_1_1rolling_1_1FileRenameAction.html',1,'log4cxx::rolling::FileRenameAction'],['../classlog4cxx_1_1rolling_1_1FileRenameAction.html#aead08fe47f6e4e8ed3feacb6ae87d16d',1,'log4cxx::rolling::FileRenameAction::FileRenameAction()']]],
   ['filerenameaction_2eh_23',['filerenameaction.h',['../filerenameaction_8h.html',1,'']]],
-  ['files_24',['Files',['../configuration-samples.html#properties',1,'Properties Files'],['../configuration-samples.html#xmlfiles',1,'XML Files']]],
+  ['files_24',['Files',['../configuration-files.html',1,'Configuration Files'],['../configuration-files.html#properties',1,'Properties Files'],['../configuration-files.html#xmlfiles',1,'XML Files']]],
   ['filesystempath_2eh_25',['filesystempath.h',['../filesystempath_8h.html',1,'']]],
   ['filewatchdog_26',['FileWatchdog',['../classlog4cxx_1_1helpers_1_1FileWatchdog.html',1,'log4cxx::helpers::FileWatchdog'],['../classlog4cxx_1_1helpers_1_1FileWatchdog.html#aa0466eec11be10f365feb21cf49db3f9',1,'log4cxx::helpers::FileWatchdog::FileWatchdog()']]],
   ['filewatchdog_2eh_27',['filewatchdog.h',['../filewatchdog_8h.html',1,'']]],

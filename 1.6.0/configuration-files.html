@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Apache Log4cxx: Configuration Samples</title>
+<title>Apache Log4cxx: Configuration Files</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('configuration-samples.html','',''); });
+$(function(){initNavTree('configuration-files.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -105,15 +105,15 @@ $(function(){initNavTree('configuration-samples.html','',''); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Configuration Samples </div></div>
+  <div class="headertitle"><div class="title">Configuration Files </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_src_2site_2markdown_2configuration-samples"></a></p>
-<p>The following snippets show various ways of configuring Log4cxx.</p>
+<p>As Log4cxx was designed to be extendable, option names are not constrained by the core library. The configuration file parsers, <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html">DOMConfigurator</a> and <a class="el" href="classlog4cxx_1_1PropertyConfigurator.html">PropertyConfigurator</a>, just send the key/value pair to an instance of the named appender/layout/filter class. Refer to the <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a42037043a55afcaf6f824fcb950f18d2">setOption method documentation</a> for configurable option names and supported values. Note that a base class may implement some options while the concrete class implements others. Check the full class hierarchy when looking for a configuration option.</p>
 <h1 class="doxsection"><a class="anchor" id="default-initialization"></a>
 Default Initialization Behaviour</h1>
 <p>The Log4cxx library does not make any assumptions about its environment. In particular, when initially created the root <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> has no appender. However the library will attempt automatic configuration.</p>
-<p>If the LoggerRepositoy is not yet configured on the first call to <a class="el" href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">getLogger</a> of <a class="el" href="classlog4cxx_1_1LogManager.html">LogManager</a>, the <a class="el" href="classlog4cxx_1_1DefaultConfigurator.html#a1114a17958c8c8383b11d6fef1e8e727">configure</a> method of <a class="el" href="classlog4cxx_1_1DefaultConfigurator.html">DefaultConfigurator</a> is called via <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1">ensureIsConfigured</a> method of <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a>.</p>
+<p>If the LoggerRepositoy is not yet configured on the first call to <a class="el" href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">getLogger</a> of <a class="el" href="classlog4cxx_1_1LogManager.html">LogManager</a>, the <a class="el" href="classlog4cxx_1_1DefaultConfigurator.html#a1114a17958c8c8383b11d6fef1e8e727">configure</a> method of <a class="el" href="classlog4cxx_1_1DefaultConfigurator.html">DefaultConfigurator</a> is called via <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1">ensureIsConfigured</a> method of <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a>. Unless the environment variable "LOG4CXX_CONFIGURATION" (or "log4j.configuration") has a value, the current directory is examined for a file with extension ".xml" or ".properties" with a base name "log4cxx" or "log4j".</p>
 <p>To use automatic configuration with a non-standard file name create and use your own wrapper for <a class="el" href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">getLogger</a>. A full example can be seen in the <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a> file.</p>
 <h1 class="doxsection"><a class="anchor" id="runtime-property-values"></a>
 Runtime Property Values</h1>
@@ -122,13 +122,16 @@ Runtime Property Values</h1>
 <div class="line">props.setProperty(LOG4CXX_STR(<span class="stringliteral">&quot;VarName&quot;</span>), LOG4CXX_STR(<span class="stringliteral">&quot;my-varname-value&quot;</span>));</div>
 <div class="ttc" id="aclasslog4cxx_1_1spi_1_1Configurator_html_a34fef1dc93e7b44cfb601f30100a3727"><div class="ttname"><a href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727">log4cxx::spi::Configurator::properties</a></div><div class="ttdeci">static helpers::Properties &amp; properties()</div><div class="ttdoc">The key value pairs used when expanding ${varname} instances in a configuration file.</div></div>
 </div><!-- fragment --><p>Also available in Log4cxx 1.6 are variables that hold the currently executing program file path and the <a href="https://en.cppreference.com/w/cpp/filesystem/path.html">std::filesystem::path</a> decomposition of the currently executing program file path. These allow you to specify a log file location relative to the executable location, not just the current working directory. The variable names are <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727">documented here</a>.</p>
-<p>To check the corrent values are used when your configuration file is loaded, use <a href="internal-debugging.html#internal-debugging">Log4cxx internal debugging</a>.</p>
-<h1 class="doxsection"><a class="anchor" id="properties"></a>
-Properties Files</h1>
+<p>To check the correct values are used when your configuration file is loaded, use <a href="internal-debugging.html#internal-debugging">Log4cxx internal debugging</a>.</p>
+<h1 class="doxsection"><a class="anchor" id="configuration-samples"></a>
+Configuration Samples</h1>
+<p>The following snippets show various ways of configuring Log4cxx.</p>
+<h2 class="doxsection"><a class="anchor" id="properties"></a>
+Properties Files</h2>
 <p>Log4cxx may be configured using a Java properties (key=value) type file.</p>
-<h2 class="doxsection"><a class="anchor" id="properties-example-1"></a>
-Properties Example 1</h2>
-<p>This simple example writes messages to stdout. If you want to send messages to stderr instead, change the 'Target' value to <span class="tt">System.err</span>.</p>
+<h3 class="doxsection"><a class="anchor" id="properties-example-1"></a>
+Properties Example 1</h3>
+<p>This simple example writes colored messages (a color per logging level) to stdout. If you want to send messages to stderr instead, change the 'Target' value to <span class="tt">System.err</span>.</p>
 <div class="fragment"><div class="line"># Set root logger level to DEBUG and its only appender to A1.</div>
 <div class="line">log4j.rootLogger=DEBUG, A1</div>
 <div class="line"> </div>
@@ -139,8 +142,8 @@ Properties Example 1</h2>
 <div class="line"># The color of the message text shows the logging level.</div>
 <div class="line">log4j.appender.A1.layout=org.apache.log4j.PatternLayout</div>
 <div class="line">log4j.appender.A1.layout.ConversionPattern=%.30c - %Y%m%y%n</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="properties-example-2"></a>
-Properties Example 2</h2>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="properties-example-2"></a>
+Properties Example 2</h3>
 <p>The following Log4cxx 1.6 configuration file uses the variables added in the <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a> example to store a log file per executable in a product related logs directory:</p><ul>
 <li>Windows, "C:\ProgramData\CompanyName\ProductName\Logs"</li>
 <li>Non-Windows, "/var/local/companyName/productName/Logs"</li>
@@ -185,12 +188,12 @@ Properties Example 2</h2>
 <div class="line"> </div>
 <div class="line"># Log4cxx internal debugging</div>
 <div class="line">#log4j.debug=true</div>
-</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="xmlfiles"></a>
-XML Files</h1>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="xmlfiles"></a>
+XML Files</h2>
 <p>Another way of configuring Log4cxx is with an XML file. The following are some XML configuration examples.</p>
-<h2 class="doxsection"><a class="anchor" id="xml-example-1"></a>
-XML Example 1</h2>
-<p>This simple example writes messages to stdout. If you want to send messages to stderr instead, change the 'Target' value to <span class="tt">System.err</span>. The color of the message text shows the logging level. </p><div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
+<h3 class="doxsection"><a class="anchor" id="xml-example-1"></a>
+XML Example 1</h3>
+<p>This simple example writes colored messages (a color per logging level) to stdout. If you want to send messages to stderr instead, change the 'Target' value to <span class="tt">System.err</span>. The color of the message text shows the logging level. </p><div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">log4j:configuration</span> <span class="keyword">xmlns:log4j</span>=<span class="stringliteral">&quot;http://jakarta.apache.org/log4j/&quot;</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConsoleAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.ConsoleAppender&quot;</span>&gt;</div>
@@ -207,8 +210,8 @@ XML Example 1</h2>
 <div class="line"> </div>
 <div class="line">&lt;/<span class="keywordtype">log4j:configuration</span>&gt;</div>
 </div><!-- fragment --><p>Sample output: </p><div class="fragment"><div class="line">Hello there!</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="xml-example-2"></a>
-XML Example 2</h2>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="xml-example-2"></a>
+XML Example 2</h3>
 <p>This example sends data to both stdout, as well as to a file.</p>
 <p>With this configuration the "example.log" file will be created in our working directory.</p>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
@@ -236,8 +239,8 @@ XML Example 2</h2>
 <div class="line"> </div>
 <div class="line">&lt;/<span class="keywordtype">log4j:configuration</span>&gt;</div>
 </div><!-- fragment --><p>Sample output: </p><div class="fragment"><div class="line">[2020-12-24 15:57:35] root INFO  - Hello there!</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="xml-example-3"></a>
-XML Example 3</h2>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="xml-example-3"></a>
+XML Example 3</h3>
 <p>This example shows how you can configure logging for a particular category.</p>
 <p>Assume that our loggers are in our code as such:</p>
 <div class="fragment"><div class="line"><a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a> root = <a class="code hl_function" href="classlog4cxx_1_1Logger.html#ac53c8f83b37b20ff4b18ee87b772be25">log4cxx::Logger::getRootLogger</a>();</div>
@@ -298,8 +301,8 @@ XML Example 3</h2>
 <div class="line">[2020-12-24 16:05:48] com DEBUG - com logger debug</div>
 <div class="line">[2020-12-24 16:05:48] com.example DEBUG - com.example debug message</div>
 <div class="line">[2020-12-24 16:05:48] com.example TRACE - com.example trace message</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="xml-example-4"></a>
-XML Example 4</h2>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="xml-example-4"></a>
+XML Example 4</h3>
 <p>This example shows how to add a filter to an appender that will accept messages that match a certain string. If our loggers are configured as such:</p>
 <div class="fragment"><div class="line"><a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a> root = <a class="code hl_function" href="classlog4cxx_1_1Logger.html#ac53c8f83b37b20ff4b18ee87b772be25">log4cxx::Logger::getRootLogger</a>();</div>
 <div class="line"><a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a> com  = <a class="code hl_function" href="classlog4cxx_1_1Logger.html#ab2d1e6be52dbe1bc81e01fd70a755a63">log4cxx::Logger::getLogger</a>( <span class="stringliteral">&quot;com&quot;</span> );</div>
@@ -354,7 +357,7 @@ XML Example 4</h2>
     <li class="navelem"><a href="usage-overview.html">Use</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Sat Aug 23 2025 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Tue Aug 26 2025 </li>
     <li class="center">
 Copyright &copy; 2017-2024 <a href="https://www.apache.org/">Apache Software Foundation</a>.
 Apache, Chainsaw, log4cxx, Log4j, Log4net, log4php and the Apache feather logo are

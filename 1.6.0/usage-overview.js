@@ -31,18 +31,20 @@ var usage_overview =
         [ "Pattern 4", "concepts.html#pattern4", null ]
       ] ]
     ] ],
-    [ "Configuration Samples", "configuration-samples.html", [
-      [ "Default Initialization Behaviour", "configuration-samples.html#default-initialization", null ],
-      [ "Runtime Property Values", "configuration-samples.html#runtime-property-values", null ],
-      [ "Properties Files", "configuration-samples.html#properties", [
-        [ "Properties Example 1", "configuration-samples.html#properties-example-1", null ],
-        [ "Properties Example 2", "configuration-samples.html#properties-example-2", null ]
-      ] ],
-      [ "XML Files", "configuration-samples.html#xmlfiles", [
-        [ "XML Example 1", "configuration-samples.html#xml-example-1", null ],
-        [ "XML Example 2", "configuration-samples.html#xml-example-2", null ],
-        [ "XML Example 3", "configuration-samples.html#xml-example-3", null ],
-        [ "XML Example 4", "configuration-samples.html#xml-example-4", null ]
+    [ "Configuration Files", "configuration-files.html", [
+      [ "Default Initialization Behaviour", "configuration-files.html#default-initialization", null ],
+      [ "Runtime Property Values", "configuration-files.html#runtime-property-values", null ],
+      [ "Configuration Samples", "configuration-files.html#configuration-samples", [
+        [ "Properties Files", "configuration-files.html#properties", [
+          [ "Properties Example 1", "configuration-files.html#properties-example-1", null ],
+          [ "Properties Example 2", "configuration-files.html#properties-example-2", null ]
+        ] ],
+        [ "XML Files", "configuration-files.html#xmlfiles", [
+          [ "XML Example 1", "configuration-files.html#xml-example-1", null ],
+          [ "XML Example 2", "configuration-files.html#xml-example-2", null ],
+          [ "XML Example 3", "configuration-files.html#xml-example-3", null ],
+          [ "XML Example 4", "configuration-files.html#xml-example-4", null ]
+        ] ]
       ] ]
     ] ],
     [ "Filtering Log Messages", "filters.html", [

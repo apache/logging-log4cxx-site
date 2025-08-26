@@ -11,10 +11,11 @@ var searchData=
   ['config_8',['How do I use Log4cxx with CMake and pkg-config?',['../buildsystems.html#use_with_cmake_pkgconfig',1,'']]],
   ['configurable_20properties_9',['Configurable properties',['../classlog4cxx_1_1AsyncAppender.html#autotoc_md0',1,'']]],
   ['configuration_10',['Configuration',['../quick-start.html#configuration',1,'Runtime Configuration'],['../filters.html#configure-filter',1,'Runtime Configuration']]],
-  ['configuration_20samples_11',['Configuration Samples',['../configuration-samples.html',1,'usage-overview']]],
-  ['configuring_20thread_12',['Configuring Thread',['../threading.html#configuring',1,'']]],
-  ['coverage_13',['Testing coverage',['../supported-systems.html',1,'build']]],
-  ['crashes_20on_20shutdown_14',['My application on Windows crashes on shutdown?',['../faq.html#msvc_crash',1,'']]],
-  ['custom_20level_20to_20apache_20log4cxx_15',['How do I add a custom level to Apache Log4cxx?',['../faq.html#custom_levels',1,'']]],
-  ['custom_20types_16',['Logging Custom Types',['../concepts.html#custom-types',1,'']]]
+  ['configuration_20files_11',['Configuration Files',['../configuration-files.html',1,'usage-overview']]],
+  ['configuration_20samples_12',['Configuration Samples',['../configuration-files.html#configuration-samples',1,'']]],
+  ['configuring_20thread_13',['Configuring Thread',['../threading.html#configuring',1,'']]],
+  ['coverage_14',['Testing coverage',['../supported-systems.html',1,'build']]],
+  ['crashes_20on_20shutdown_15',['My application on Windows crashes on shutdown?',['../faq.html#msvc_crash',1,'']]],
+  ['custom_20level_20to_20apache_20log4cxx_16',['How do I add a custom level to Apache Log4cxx?',['../faq.html#custom_levels',1,'']]],
+  ['custom_20types_17',['Logging Custom Types',['../concepts.html#custom-types',1,'']]]
 ];

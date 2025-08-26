@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['samples_0',['Configuration Samples',['../configuration-samples.html',1,'usage-overview']]],
+  ['samples_0',['Configuration Samples',['../configuration-files.html#configuration-samples',1,'']]],
   ['security_20issue_1',['Reporting a security issue',['../community.html#security',1,'']]],
   ['sed_20gzip_20zip_2',['sed+gzip+zip',['../dependencies.html#autotoc_md4',1,'']]],
   ['see_20also_3',['See Also',['../library-design.html#autotoc_md15',1,'']]],
