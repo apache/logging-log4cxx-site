@@ -1,5 +1,8 @@
 var NAVTREEINDEX17 =
 {
+"namespacelog4cxx_1_1pattern.html":[6,1,0,0,6],
+"namespacelog4cxx_1_1pattern.html#a026695e13b7de19fd505c85bbb4173e1":[6,1,0,0,6,39],
+"namespacelog4cxx_1_1pattern.html#a2fad04316e4c4616a3a40cc15920f751":[6,1,0,0,6,36],
 "namespacelog4cxx_1_1pattern.html#a3283117b3c661902f395b8e89b5589f7":[6,1,0,0,6,32],
 "namespacelog4cxx_1_1pattern.html#a35986ee877b4d8f91c8aa963f66ac3be":[6,1,0,0,6,37],
 "namespacelog4cxx_1_1pattern.html#a46412c36b812db386d71ed0321e7ab05":[6,1,0,0,6,33],
@@ -107,7 +110,7 @@ var NAVTREEINDEX17 =
 "patternlayout_8h_source.html":[6,3,0,1,0,0,0,34],
 "patternparser_8h.html":[6,3,0,1,0,0,0,6,22],
 "patternparser_8h_source.html":[6,3,0,1,0,0,0,6,22],
-"performance.html":[1,12],
+"performance.html":[1,13],
 "pool_8h.html":[6,3,0,1,0,0,0,3,38],
 "pool_8h_source.html":[6,3,0,1,0,0,0,3,38],
 "properties_8h.html":[6,3,0,1,0,0,0,3,39],
@@ -246,8 +249,5 @@ var NAVTREEINDEX17 =
 "threadutility_8h.html":[6,3,0,1,0,0,0,3,60],
 "threadutility_8h_source.html":[6,3,0,1,0,0,0,3,60],
 "throwableinformationpatternconverter_8h.html":[6,3,0,1,0,0,0,6,28],
-"throwableinformationpatternconverter_8h_source.html":[6,3,0,1,0,0,0,6,28],
-"timebasedrollingpolicy_8h.html":[6,3,0,1,0,0,0,7,12],
-"timebasedrollingpolicy_8h_source.html":[6,3,0,1,0,0,0,7,12],
-"timezone_8h.html":[6,3,0,1,0,0,0,3,61]
+"throwableinformationpatternconverter_8h_source.html":[6,3,0,1,0,0,0,6,28]
 };

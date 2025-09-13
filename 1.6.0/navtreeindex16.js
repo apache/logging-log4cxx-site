@@ -1,5 +1,8 @@
 var NAVTREEINDEX16 =
 {
+"hierarchy.html":[6,2,2],
+"hierarchy_8h.html":[6,3,0,1,0,0,0,22],
+"hierarchy_8h_source.html":[6,3,0,1,0,0,0,22],
 "hierarchyeventlistener_8h.html":[6,3,0,1,0,0,0,8,6],
 "hierarchyeventlistener_8h_source.html":[6,3,0,1,0,0,0,8,6],
 "htmllayout_8h.html":[6,3,0,1,0,0,0,23],
@@ -62,7 +65,7 @@ var NAVTREEINDEX16 =
 "locationinfo_8h_source.html":[6,3,0,1,0,0,0,8,0,0],
 "locationinfofilter_8h.html":[6,3,0,1,0,0,0,2,5],
 "locationinfofilter_8h_source.html":[6,3,0,1,0,0,0,2,5],
-"log-flow.html":[1,16],
+"log-flow.html":[1,17],
 "log4cxx-qt_2logger_8h.html":[6,3,0,1,0,0,1,1],
 "log4cxx-qt_2logger_8h_source.html":[6,3,0,1,0,0,1,1],
 "log4cxx-qt_2messagebuffer_8h.html":[6,3,0,1,0,0,1,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX16 =
 "namespacelog4cxx_1_1net.html#a9d28e829aadb20c53054d6bdf2acda3c":[6,1,0,0,4,5],
 "namespacelog4cxx_1_1net.html#aa23e5d05e078eaf1c599b5ffa696c63f":[6,1,0,0,4,6],
 "namespacelog4cxx_1_1nt.html":[6,1,0,0,5],
-"namespacelog4cxx_1_1nt.html#a5f70675c75408dabddd1c24d3265e5b4":[6,1,0,0,5,2],
-"namespacelog4cxx_1_1pattern.html":[6,1,0,0,6],
-"namespacelog4cxx_1_1pattern.html#a026695e13b7de19fd505c85bbb4173e1":[6,1,0,0,6,39],
-"namespacelog4cxx_1_1pattern.html#a2fad04316e4c4616a3a40cc15920f751":[6,1,0,0,6,36]
+"namespacelog4cxx_1_1nt.html#a5f70675c75408dabddd1c24d3265e5b4":[6,1,0,0,5,2]
 };

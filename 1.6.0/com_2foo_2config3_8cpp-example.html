@@ -233,7 +233,7 @@ $(function(){initNavTree('com_2foo_2config3_8cpp-example.html','',''); });
 <div class="line"><span class="comment">// Set up a background thread that will check for changes every 5 seconds and reload the configuration</span></div>
 <div class="line"><span class="keywordtype">void</span> SelectConfigurationFile() {</div>
 <div class="line"><span class="preprocessor">#if defined(_DEBUG)</span></div>
-<div class="line">    <a id="_a4" name="_a4"></a><a class="code hl_function" href="classlog4cxx_1_1helpers_1_1LogLog.html#a4a9ff479866ace05c88c8a167ff2c2fa">helpers::LogLog::setInternalDebugging</a>(<span class="keyword">true</span>);</div>
+<div class="line">    <a id="_a4" name="_a4"></a><a class="code hl_function" href="classlog4cxx_1_1helpers_1_1LogLog.html#a0ddea3c29ad7192b37942cc6f31f5704">helpers::LogLog::setInternalDebugging</a>(<span class="keyword">true</span>);</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span>* extension[] = { <span class="stringliteral">&quot;.xml&quot;</span>, <span class="stringliteral">&quot;.properties&quot;</span>, 0 };</div>
 <div class="line">    std::string altPrefix;</div>
@@ -293,8 +293,8 @@ $(function(){initNavTree('com_2foo_2config3_8cpp-example.html','',''); });
 <div class="ttc" id="aclasslog4cxx_1_1File_html"><div class="ttname"><a href="classlog4cxx_1_1File.html">log4cxx::File</a></div><div class="ttdoc">An abstract representation of file and directory path names.</div><div class="ttdef"><b>Definition</b> file.h:41</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1File_html_a5767b2ad500f0c74134e9f7b05a9f340"><div class="ttname"><a href="classlog4cxx_1_1File.html#a5767b2ad500f0c74134e9f7b05a9f340">log4cxx::File::exists</a></div><div class="ttdeci">bool exists(log4cxx::helpers::Pool &amp;p) const</div><div class="ttdoc">Determines if file exists.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1File_html_ad1b4f9ddc03b479af34a49eca3657f5a"><div class="ttname"><a href="classlog4cxx_1_1File.html#ad1b4f9ddc03b479af34a49eca3657f5a">log4cxx::File::getPath</a></div><div class="ttdeci">LogString getPath() const</div><div class="ttdoc">Get file path.</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1helpers_1_1LogLog_html_a4a9ff479866ace05c88c8a167ff2c2fa"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1LogLog.html#a4a9ff479866ace05c88c8a167ff2c2fa">log4cxx::helpers::LogLog::setInternalDebugging</a></div><div class="ttdeci">static void setInternalDebugging(bool enabled)</div><div class="ttdoc">Use the value of enabled as the new internal debug logging state.</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1helpers_1_1LogLog_html_a7e963136d6cc678d193c20e58a7dd0e6"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1LogLog.html#a7e963136d6cc678d193c20e58a7dd0e6">log4cxx::helpers::LogLog::isDebugEnabled</a></div><div class="ttdeci">static bool isDebugEnabled()</div><div class="ttdoc">Is internal debugging enabled?</div></div>
+<div class="ttc" id="aclasslog4cxx_1_1helpers_1_1LogLog_html_a0ddea3c29ad7192b37942cc6f31f5704"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1LogLog.html#a0ddea3c29ad7192b37942cc6f31f5704">log4cxx::helpers::LogLog::setInternalDebugging</a></div><div class="ttdeci">static void setInternalDebugging(bool newValue)</div><div class="ttdoc">Start/stop outputing debug messages if newValue is true/false respectively.</div></div>
+<div class="ttc" id="aclasslog4cxx_1_1helpers_1_1LogLog_html_a7e963136d6cc678d193c20e58a7dd0e6"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1LogLog.html#a7e963136d6cc678d193c20e58a7dd0e6">log4cxx::helpers::LogLog::isDebugEnabled</a></div><div class="ttdeci">static bool isDebugEnabled()</div><div class="ttdoc">Are debug messages sent to SystemErrWriter?</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1LogLog_html_aeae91a1024822e48a681d3b95cffd8f3"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1LogLog.html#aeae91a1024822e48a681d3b95cffd8f3">log4cxx::helpers::LogLog::debug</a></div><div class="ttdeci">static void debug(const LogString &amp;msg)</div><div class="ttdoc">Output msg to SystemErrWriter if internal debug logging is enabled.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1Pool_html"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a></div><div class="ttdef"><b>Definition</b> pool.h:33</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1Transcoder_html_a13d32c95909093f32e19bd7d4d4e633c"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1Transcoder.html#a13d32c95909093f32e19bd7d4d4e633c">log4cxx::helpers::Transcoder::decode</a></div><div class="ttdeci">static unsigned int decode(const std::string &amp;in, std::string::const_iterator &amp;iter)</div><div class="ttdoc">Decodes next character from a UTF-8 string.</div></div>
@@ -317,7 +317,7 @@ $(function(){initNavTree('com_2foo_2config3_8cpp-example.html','',''); });
   <ul>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Tue Aug 26 2025 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Sat Sep 13 2025 </li>
     <li class="center">
 Copyright &copy; 2017-2024 <a href="https://www.apache.org/">Apache Software Foundation</a>.
 Apache, Chainsaw, log4cxx, Log4j, Log4net, log4php and the Apache feather logo are

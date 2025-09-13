@@ -70,6 +70,7 @@ var usage_overview =
     [ "Environment Variables Used by Log4cxx", "environment-variables.html", null ],
     [ "Preprocessor Macros Influencing Log4cxx", "macros-influencing-log4cxx.html", null ],
     [ "Internal Debugging", "internal-debugging.html", null ],
+    [ "Disabling Console Color", "disabling-color.html", null ],
     [ "Log4cxx Performance", "performance.html", null ],
     [ "Conclusions", "conclusions.html", null ],
     [ "Frequently Asked Technical Questions", "faq.html", [

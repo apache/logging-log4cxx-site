@@ -121,9 +121,13 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e963136d6cc678d193c20e58a7dd0e6" id="r_a7e963136d6cc678d193c20e58a7dd0e6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e963136d6cc678d193c20e58a7dd0e6">isDebugEnabled</a> ()</td></tr>
-<tr class="memdesc:a7e963136d6cc678d193c20e58a7dd0e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is internal debugging enabled?  <br /></td></tr>
-<tr class="memitem:a4a9ff479866ace05c88c8a167ff2c2fa" id="r_a4a9ff479866ace05c88c8a167ff2c2fa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a9ff479866ace05c88c8a167ff2c2fa">setInternalDebugging</a> (bool enabled)</td></tr>
-<tr class="memdesc:a4a9ff479866ace05c88c8a167ff2c2fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the value of <code>enabled</code> as the new internal debug logging state.  <br /></td></tr>
+<tr class="memdesc:a7e963136d6cc678d193c20e58a7dd0e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are debug messages sent to <a class="el" href="classlog4cxx_1_1helpers_1_1SystemErrWriter.html" title="Sends output to stderr.">SystemErrWriter</a>?  <br /></td></tr>
+<tr class="memitem:a0ddea3c29ad7192b37942cc6f31f5704" id="r_a0ddea3c29ad7192b37942cc6f31f5704"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ddea3c29ad7192b37942cc6f31f5704">setInternalDebugging</a> (bool newValue)</td></tr>
+<tr class="memdesc:a0ddea3c29ad7192b37942cc6f31f5704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start/stop outputing debug messages if <code>newValue</code> is true/false respectively.  <br /></td></tr>
+<tr class="memitem:af4eac2db478b99b8887ea03e7cb9758b" id="r_af4eac2db478b99b8887ea03e7cb9758b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4eac2db478b99b8887ea03e7cb9758b">isColorEnabled</a> ()</td></tr>
+<tr class="memdesc:af4eac2db478b99b8887ea03e7cb9758b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are messages output in color?  <br /></td></tr>
+<tr class="memitem:a2bef0b7e71b96190cba9549d9105689a" id="r_a2bef0b7e71b96190cba9549d9105689a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bef0b7e71b96190cba9549d9105689a">setColorEnabled</a> (bool newValue)</td></tr>
+<tr class="memdesc:a2bef0b7e71b96190cba9549d9105689a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start/stop coloring message text if <code>newValue</code> is true/false respectively.  <br /></td></tr>
 <tr class="memitem:aeae91a1024822e48a681d3b95cffd8f3" id="r_aeae91a1024822e48a681d3b95cffd8f3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeae91a1024822e48a681d3b95cffd8f3">debug</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;msg)</td></tr>
 <tr class="memdesc:aeae91a1024822e48a681d3b95cffd8f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output <code>msg</code> to <a class="el" href="classlog4cxx_1_1helpers_1_1SystemErrWriter.html" title="Sends output to stderr.">SystemErrWriter</a> if internal debug logging is enabled.  <br /></td></tr>
 <tr class="memitem:a24354f8f0a26d3fb7736dce40ae9b1b3" id="r_a24354f8f0a26d3fb7736dce40ae9b1b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24354f8f0a26d3fb7736dce40ae9b1b3">debug</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;msg, const std::exception &amp;e)</td></tr>
@@ -141,7 +145,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class used to output log statements from within the <a class="el" href="namespacelog4cxx.html">log4cxx</a> package. </p>
-<p>Log4cxx components cannot make <a class="el" href="namespacelog4cxx.html">log4cxx</a> logging calls. However, it is sometimes useful for the user to learn about what <a class="el" href="namespacelog4cxx.html">log4cxx</a> is doing. You can enable <a class="el" href="namespacelog4cxx.html">log4cxx</a> internal debug logging by calling the <b><a class="el" href="#a4a9ff479866ace05c88c8a167ff2c2fa" title="Use the value of enabled as the new internal debug logging state.">setInternalDebugging</a></b> method.</p>
+<p>Log4cxx components cannot make <a class="el" href="namespacelog4cxx.html">log4cxx</a> logging calls. However, it is sometimes useful for the user to learn about what <a class="el" href="namespacelog4cxx.html">log4cxx</a> is doing. You can enable <a class="el" href="namespacelog4cxx.html">log4cxx</a> internal debug logging by calling the <b><a class="el" href="#a0ddea3c29ad7192b37942cc6f31f5704" title="Start/stop outputing debug messages if newValue is true/false respectively.">setInternalDebugging</a></b> method.</p>
 <p>All <a class="el" href="classlog4cxx_1_1helpers_1_1LogLog.html" title="This class used to output log statements from within the log4cxx package.">LogLog</a> messages are written to <a class="el" href="classlog4cxx_1_1helpers_1_1SystemErrWriter.html" title="Sends output to stderr.">SystemErrWriter</a> prepended with the string "log4cxx: ". </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a931f6d7bbfd7995e9db42ee89abbee1e" name="a931f6d7bbfd7995e9db42ee89abbee1e"></a>
@@ -280,6 +284,33 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af4eac2db478b99b8887ea03e7cb9758b" name="af4eac2db478b99b8887ea03e7cb9758b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4eac2db478b99b8887ea03e7cb9758b">&#9670;&#160;</a></span>isColorEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool log4cxx::helpers::LogLog::isColorEnabled </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Are messages output in color? </p>
+
+</div>
+</div>
 <a id="a7e963136d6cc678d193c20e58a7dd0e6" name="a7e963136d6cc678d193c20e58a7dd0e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e963136d6cc678d193c20e58a7dd0e6">&#9670;&#160;</a></span>isDebugEnabled()</h2>
 
@@ -303,14 +334,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Is internal debugging enabled? </p>
+<p>Are debug messages sent to <a class="el" href="classlog4cxx_1_1helpers_1_1SystemErrWriter.html" title="Sends output to stderr.">SystemErrWriter</a>? </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="com_2foo_2config3_8cpp-example.html#_a0">com/foo/config3.cpp</a>.</dd>
 </dl>
 
 </div>
 </div>
-<a id="a4a9ff479866ace05c88c8a167ff2c2fa" name="a4a9ff479866ace05c88c8a167ff2c2fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a9ff479866ace05c88c8a167ff2c2fa">&#9670;&#160;</a></span>setInternalDebugging()</h2>
+<a id="a2bef0b7e71b96190cba9549d9105689a" name="a2bef0b7e71b96190cba9549d9105689a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bef0b7e71b96190cba9549d9105689a">&#9670;&#160;</a></span>setColorEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,9 +350,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void log4cxx::helpers::LogLog::setInternalDebugging </td>
+          <td class="memname">void log4cxx::helpers::LogLog::setColorEnabled </td>
           <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enabled</em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>newValue</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -332,7 +363,34 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Use the value of <code>enabled</code> as the new internal debug logging state. </p>
+<p>Start/stop coloring message text if <code>newValue</code> is true/false respectively. </p>
+
+</div>
+</div>
+<a id="a0ddea3c29ad7192b37942cc6f31f5704" name="a0ddea3c29ad7192b37942cc6f31f5704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddea3c29ad7192b37942cc6f31f5704">&#9670;&#160;</a></span>setInternalDebugging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::helpers::LogLog::setInternalDebugging </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>newValue</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start/stop outputing debug messages if <code>newValue</code> is true/false respectively. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="com_2foo_2config-qt_8cpp-example.html#_a1">com/foo/config-qt.cpp</a>, and <a class="el" href="com_2foo_2config3_8cpp-example.html#_a4">com/foo/config3.cpp</a>.</dd>
 </dl>
 
@@ -450,7 +508,7 @@ Static Public Member Functions</h2></td></tr>
     <li class="navelem"><a href="namespacelog4cxx.html">log4cxx</a></li><li class="navelem"><a href="namespacelog4cxx_1_1helpers.html">helpers</a></li><li class="navelem"><a href="classlog4cxx_1_1helpers_1_1LogLog.html">LogLog</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Tue Aug 26 2025 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Sat Sep 13 2025 </li>
     <li class="center">
 Copyright &copy; 2017-2024 <a href="https://www.apache.org/">Apache Software Foundation</a>.
 Apache, Chainsaw, log4cxx, Log4j, Log4net, log4php and the Apache feather logo are

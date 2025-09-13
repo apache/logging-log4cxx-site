@@ -204,6 +204,8 @@ var NAVTREEINDEX5 =
 "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#af9288567a90ccf416fb3bb5a5a4051e4":[6,2,0,0,3,8,23],
 "classlog4cxx_1_1helpers_1_1CharsetDecoder.html":[6,1,0,0,3,10],
 "classlog4cxx_1_1helpers_1_1CharsetDecoder.html":[6,2,0,0,3,9],
+"classlog4cxx_1_1helpers_1_1CharsetDecoder.html#a6d00aef2473475a4792f4e2b56318f60":[6,1,0,0,3,10,3],
+"classlog4cxx_1_1helpers_1_1CharsetDecoder.html#a6d00aef2473475a4792f4e2b56318f60":[6,2,0,0,3,9,3],
 "classlog4cxx_1_1helpers_1_1CharsetDecoder.html#a70cfdeb0e4597096d5de4dc9e7f7225f":[6,1,0,0,3,10,2],
 "classlog4cxx_1_1helpers_1_1CharsetDecoder.html#a70cfdeb0e4597096d5de4dc9e7f7225f":[6,2,0,0,3,9,2],
 "classlog4cxx_1_1helpers_1_1CharsetDecoder.html#a9c8bb23534365af98b78999a9e4d0592":[6,1,0,0,3,10,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "classlog4cxx_1_1helpers_1_1ClassRegistration.html#a57fb1d9f4cdf346976b20fe28c2e7e91":[6,1,0,0,3,14,1],
 "classlog4cxx_1_1helpers_1_1ClassRegistration.html#a57fb1d9f4cdf346976b20fe28c2e7e91":[6,2,0,0,3,13,1],
 "classlog4cxx_1_1helpers_1_1ClassRegistration.html#ab97cb498abfa71e74254330549332137":[6,1,0,0,3,14,0],
-"classlog4cxx_1_1helpers_1_1ClassRegistration.html#ab97cb498abfa71e74254330549332137":[6,2,0,0,3,13,0],
-"classlog4cxx_1_1helpers_1_1ClosedChannelException.html":[6,1,0,0,3,15],
-"classlog4cxx_1_1helpers_1_1ClosedChannelException.html":[6,2,0,0,3,14]
+"classlog4cxx_1_1helpers_1_1ClassRegistration.html#ab97cb498abfa71e74254330549332137":[6,2,0,0,3,13,0]
 };
