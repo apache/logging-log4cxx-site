@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"classlog4cxx_1_1pattern_1_1MDCPatternConverter.html":[6,1,0,0,6,16],
+"classlog4cxx_1_1pattern_1_1MDCPatternConverter.html":[6,2,0,0,6,16],
 "classlog4cxx_1_1pattern_1_1MDCPatternConverter.html#a40cd385d603fafd3377d0ff6c6f0f26b":[6,1,0,0,6,16,0],
 "classlog4cxx_1_1pattern_1_1MDCPatternConverter.html#a40cd385d603fafd3377d0ff6c6f0f26b":[6,2,0,0,6,16,0],
 "classlog4cxx_1_1pattern_1_1MDCPatternConverter.html#a94dcf86a42f9693caf5d1a119cfdfb6f":[6,1,0,0,6,16,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ad07983333c7b467c5ba2302d7f34162f":[6,1,0,0,8,7,16],
 "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ad07983333c7b467c5ba2302d7f34162f":[6,2,0,0,8,7,16],
 "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#adc143e550e3ed25c462a73a0280fe51e":[6,1,0,0,8,7,18],
-"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#adc143e550e3ed25c462a73a0280fe51e":[6,2,0,0,8,7,18],
-"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ae839a8809b8396b02c8da98d9367abb1":[6,1,0,0,8,7,14],
-"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ae839a8809b8396b02c8da98d9367abb1":[6,2,0,0,8,7,14]
+"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#adc143e550e3ed25c462a73a0280fe51e":[6,2,0,0,8,7,18]
 };

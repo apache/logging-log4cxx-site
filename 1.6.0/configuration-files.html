@@ -145,8 +145,8 @@ Properties Example 1</h3>
 </div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="properties-example-2"></a>
 Properties Example 2</h3>
 <p>The following Log4cxx 1.6 configuration file uses the variables added in the <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a> example to store a log file per executable in a product related logs directory:</p><ul>
-<li>Windows, "C:\ProgramData\CompanyName\ProductName\Logs"</li>
-<li>Non-Windows, "/var/local/companyName/productName/Logs"</li>
+<li>Windows, "C:\Users\XXXXX\AppData\Local\companyName\productName\logs"</li>
+<li>Non-Windows, "/var/local/companyName/productName/logs"</li>
 </ul>
 <div class="fragment"><div class="line"># Uncomment a line to enable debugging for a category</div>
 <div class="line">log4j.rootCategory=INFO, A1</div>
@@ -154,7 +154,7 @@ Properties Example 2</h3>
 <div class="line">log4j.appender.A1=org.apache.log4j.RollingFileAppender</div>
 <div class="line">log4j.appender.A1.MaxFileSize=5MB</div>
 <div class="line">log4j.appender.A1.MaxBackupIndex=12</div>
-<div class="line">log4j.appender.A1.File=${LocalAppData}/${CURRENT_VENDOR_FOLDER}/${CURRENT_PRODUCT_FOLDER}/Logs/${PROGRAM_FILE_PATH.STEM}.log</div>
+<div class="line">log4j.appender.A1.File=${LocalAppData}/${CURRENT_VENDOR_FOLDER}/${CURRENT_PRODUCT_FOLDER}/logs/${PROGRAM_FILE_PATH.STEM}.log</div>
 <div class="line">log4j.appender.A1.Append=true</div>
 <div class="line">log4j.appender.A1.layout=org.apache.log4j.PatternLayout</div>
 <div class="line">log4j.appender.A1.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %.30c - %m%n</div>
@@ -164,13 +164,13 @@ Properties Example 2</h3>
 <div class="line">log4j.appender.console.layout.ConversionPattern=%.30c - %Y%m%y%n</div>
 <div class="line"> </div>
 <div class="line">log4j.appender.csvData=org.apache.log4j.FileAppender</div>
-<div class="line">log4j.appender.csvData.File=${LocalAppData}/${CURRENT_VENDOR_FOLDER}/${CURRENT_PRODUCT_FOLDER}/MessageData.csv</div>
+<div class="line">log4j.appender.csvData.File=${LocalAppData}/${CURRENT_VENDOR_FOLDER}/${CURRENT_PRODUCT_FOLDER}/GraphableData.csv</div>
 <div class="line">log4j.appender.csvData.Append=false</div>
 <div class="line">log4j.appender.csvData.layout=org.apache.log4j.PatternLayout</div>
 <div class="line">log4j.appender.csvData.layout.ConversionPattern=%m,%d{yyyy-MM-dd,HH:mm,ss.SSS}%n</div>
 <div class="line"> </div>
 <div class="line">#log4j.logger.csv.URCommunicationPort=DEBUG, csvData</div>
-<div class="line">#log4j.logger.csv.URCommunicationPort.additivity=false</div>
+<div class="line">#log4j.additivity.csv.URCommunicationPort=false</div>
 <div class="line"> </div>
 <div class="line"># UnitTests</div>
 <div class="line">#log4j.logger.MockArmTests=DEBUG</div>
@@ -260,8 +260,8 @@ XML Example 3</h3>
 <div class="ttc" id="anamespacelog4cxx_html_acd073adf77cc8545b10ac024a474be0d"><div class="ttname"><a href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Logger &gt; LoggerPtr</div><div class="ttdef"><b>Definition</b> defaultloggerfactory.h:27</div></div>
 </div><!-- fragment --><p>For this configuration, we have set any logger that is at the <span class="tt">com</span> level or below to be debug. However, we have also set the logger <span class="tt">com.example</span> to have a more verbose <span class="tt">trace</span> level to see more information from that particular logger. The log file will be created in a program data directory where the path uses the program vendor and product name.</p>
 <p>The following Log4cxx 1.6 configuration file uses the variables added in the <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a> example to store a log file per executable in a product related logs directory:</p><ul>
-<li>Windows, "C:\ProgramData\CompanyName\ProductName\Logs"</li>
-<li>Non-Windows, "/var/local/companyName/productName/Logs"</li>
+<li>Windows, "C:\Users\XXXXX\AppData\Local\companyName\productName\logs"</li>
+<li>Non-Windows, "/var/local/companyName/productName/logs"</li>
 </ul>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span> ?&gt;</div>
 <div class="line"><span class="comment">&lt;!--log4j:configuration xmlns:log4j=&quot;http://jakarta.apache.org/log4j/&quot; debug=&quot;true&quot; --&gt;</span></div>
@@ -275,7 +275,7 @@ XML Example 3</h3>
 <div class="line">  &lt;/<span class="keywordtype">appender</span>&gt;</div>
 <div class="line"> </div>
 <div class="line">  &lt;<span class="keywordtype">appender</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;FileAppender&quot;</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.FileAppender&quot;</span>&gt;</div>
-<div class="line">    &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;file&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;${LocalAppData}/${CURRENT_VENDOR_FOLDER}/${CURRENT_PRODUCT_FOLDER}/Logs/${PROGRAM_FILE_PATH.STEM}.log&quot;</span> /&gt;</div>
+<div class="line">    &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;file&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;${LocalAppData}/${CURRENT_VENDOR_FOLDER}/${CURRENT_PRODUCT_FOLDER}/logs/${PROGRAM_FILE_PATH.STEM}.log&quot;</span> /&gt;</div>
 <div class="line">    &lt;<span class="keywordtype">layout</span> <span class="keyword">class</span>=<span class="stringliteral">&quot;org.apache.log4j.PatternLayout&quot;</span>&gt;</div>
 <div class="line">      &lt;<span class="keywordtype">param</span> <span class="keyword">name</span>=<span class="stringliteral">&quot;ConversionPattern&quot;</span> <span class="keyword">value</span>=<span class="stringliteral">&quot;[%d{yyyy-MM-dd HH:mm:ss.SSS}] %c %-5p - %m%n&quot;</span> /&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">layout</span>&gt;</div>
@@ -357,7 +357,7 @@ XML Example 4</h3>
     <li class="navelem"><a href="usage-overview.html">Use</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Tue Aug 26 2025 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Sat Sep 13 2025 </li>
     <li class="center">
 Copyright &copy; 2017-2024 <a href="https://www.apache.org/">Apache Software Foundation</a>.
 Apache, Chainsaw, log4cxx, Log4j, Log4net, log4php and the Apache feather logo are

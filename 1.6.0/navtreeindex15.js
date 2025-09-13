@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"classlog4cxx_1_1xml_1_1XMLLayout.html#af665821af142acdb574f8e6967738425":[6,1,0,0,12,1,3],
+"classlog4cxx_1_1xml_1_1XMLLayout.html#af665821af142acdb574f8e6967738425":[6,2,0,0,11,1,3],
 "classnamepatternconverter_8h.html":[6,3,0,1,0,0,0,6,0],
 "classnamepatternconverter_8h_source.html":[6,3,0,1,0,0,0,6,0],
 "classregistration_8h.html":[6,3,0,1,0,0,0,3,11],
@@ -38,7 +40,7 @@ var NAVTREEINDEX15 =
 "concepts.html#request-cost":[1,1,0,2,2],
 "concepts.html#requests":[1,1,0,2],
 "concepts.html#selection-rule":[1,1,0,3,1],
-"conclusions.html":[1,13],
+"conclusions.html":[1,14],
 "configuration-files.html":[1,2],
 "configuration-files.html#configuration-samples":[1,2,2],
 "configuration-files.html#default-initialization":[1,2,0],
@@ -115,6 +117,7 @@ var NAVTREEINDEX15 =
 "dir_e5f8bc67e21486c58170cfeecc3023bd.html":[6,3,0,0,0,0,0,0],
 "dir_f3227811c5fb502bbb4a5fff6a0c937f.html":[6,3,0,1,0,0,0,3],
 "dir_f9d6f396262954d9b8058b8ecc9cf518.html":[6,3,0,1,0,0,1],
+"disabling-color.html":[1,12],
 "domconfigurator_8h.html":[6,3,0,1,0,0,0,10,0],
 "domconfigurator_8h_source.html":[6,3,0,1,0,0,0,10,0],
 "download.html":[2,0],
@@ -131,11 +134,11 @@ var NAVTREEINDEX15 =
 "extending-log4cxx.html":[1,4],
 "fallbackerrorhandler_8h.html":[6,3,0,1,0,0,0,9,0],
 "fallbackerrorhandler_8h_source.html":[6,3,0,1,0,0,0,9,0],
-"faq.html":[1,14],
-"faq.html#atexit_events":[1,14,3],
-"faq.html#custom_levels":[1,14,0],
-"faq.html#msvc_crash":[1,14,1],
-"faq.html#unicode_supported":[1,14,2],
+"faq.html":[1,15],
+"faq.html#atexit_events":[1,15,3],
+"faq.html#custom_levels":[1,15,0],
+"faq.html#msvc_crash":[1,15,1],
+"faq.html#unicode_supported":[1,15,2],
 "file_8h.html":[6,3,0,1,0,0,0,18],
 "file_8h.html#a13fef5c2efdc3a96d25afa2ea6059dc6":[6,3,0,1,0,0,0,18,1],
 "file_8h_source.html":[6,3,0,1,0,0,0,18],
@@ -246,8 +249,5 @@ var NAVTREEINDEX15 =
 "gzcompressaction_8h.html":[6,3,0,1,0,0,0,7,4],
 "gzcompressaction_8h_source.html":[6,3,0,1,0,0,0,7,4],
 "hexdump_8h.html":[6,3,0,1,0,0,0,21],
-"hexdump_8h_source.html":[6,3,0,1,0,0,0,21],
-"hierarchy.html":[6,2,2],
-"hierarchy_8h.html":[6,3,0,1,0,0,0,22],
-"hierarchy_8h_source.html":[6,3,0,1,0,0,0,22]
+"hexdump_8h_source.html":[6,3,0,1,0,0,0,21]
 };
