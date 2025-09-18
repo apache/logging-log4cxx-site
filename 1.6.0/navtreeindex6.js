@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"classlog4cxx_1_1helpers_1_1ClassRegistration.html#ab97cb498abfa71e74254330549332137":[6,1,0,0,3,14,0],
+"classlog4cxx_1_1helpers_1_1ClassRegistration.html#ab97cb498abfa71e74254330549332137":[6,2,0,0,3,13,0],
 "classlog4cxx_1_1helpers_1_1ClosedChannelException.html":[6,1,0,0,3,15],
 "classlog4cxx_1_1helpers_1_1ClosedChannelException.html":[6,2,0,0,3,14],
 "classlog4cxx_1_1helpers_1_1ClosedChannelException.html#a41634966e7cb3ad7ff1eff793e1c91ad":[6,1,0,0,3,15,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "classlog4cxx_1_1helpers_1_1InetAddress.html#ab34e3948858b5dff92d343fc9b6e683e":[6,1,0,0,3,31,2],
 "classlog4cxx_1_1helpers_1_1InetAddress.html#ab34e3948858b5dff92d343fc9b6e683e":[6,2,0,0,3,30,2],
 "classlog4cxx_1_1helpers_1_1InetAddress.html#ae9362be91aba46b1bf1531e67fcc8d6b":[6,1,0,0,3,31,1],
-"classlog4cxx_1_1helpers_1_1InetAddress.html#ae9362be91aba46b1bf1531e67fcc8d6b":[6,2,0,0,3,30,1],
-"classlog4cxx_1_1helpers_1_1InetAddress.html#af03cf772e36f56ddf8bc6ddf57d67cfe":[6,1,0,0,3,31,4],
-"classlog4cxx_1_1helpers_1_1InetAddress.html#af03cf772e36f56ddf8bc6ddf57d67cfe":[6,2,0,0,3,30,4]
+"classlog4cxx_1_1helpers_1_1InetAddress.html#ae9362be91aba46b1bf1531e67fcc8d6b":[6,2,0,0,3,30,1]
 };

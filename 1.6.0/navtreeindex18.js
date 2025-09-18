@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"throwableinformationpatternconverter_8h.html":[6,3,0,1,0,0,0,6,28],
+"throwableinformationpatternconverter_8h_source.html":[6,3,0,1,0,0,0,6,28],
 "timebasedrollingpolicy_8h.html":[6,3,0,1,0,0,0,7,12],
 "timebasedrollingpolicy_8h_source.html":[6,3,0,1,0,0,0,7,12],
 "timezone_8h.html":[6,3,0,1,0,0,0,3,61],

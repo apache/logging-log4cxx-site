@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"namespacelog4cxx_1_1nt.html":[6,1,0,0,5],
+"namespacelog4cxx_1_1nt.html#a5f70675c75408dabddd1c24d3265e5b4":[6,1,0,0,5,2],
 "namespacelog4cxx_1_1pattern.html":[6,1,0,0,6],
 "namespacelog4cxx_1_1pattern.html#a026695e13b7de19fd505c85bbb4173e1":[6,1,0,0,6,39],
 "namespacelog4cxx_1_1pattern.html#a2fad04316e4c4616a3a40cc15920f751":[6,1,0,0,6,36],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "threadusernamepatternconverter_8h.html":[6,3,0,1,0,0,0,6,27],
 "threadusernamepatternconverter_8h_source.html":[6,3,0,1,0,0,0,6,27],
 "threadutility_8h.html":[6,3,0,1,0,0,0,3,60],
-"threadutility_8h_source.html":[6,3,0,1,0,0,0,3,60],
-"throwableinformationpatternconverter_8h.html":[6,3,0,1,0,0,0,6,28],
-"throwableinformationpatternconverter_8h_source.html":[6,3,0,1,0,0,0,6,28]
+"threadutility_8h_source.html":[6,3,0,1,0,0,0,3,60]
 };

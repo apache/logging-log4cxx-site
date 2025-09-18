@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"classlog4cxx_1_1net_1_1SyslogAppender.html#ab478d5f8a5b1a07f7ec05753915c7da6":[6,1,0,0,4,2,1],
+"classlog4cxx_1_1net_1_1SyslogAppender.html#ab478d5f8a5b1a07f7ec05753915c7da6":[6,2,0,0,4,2,1],
 "classlog4cxx_1_1net_1_1SyslogAppender.html#ad7754ec984d14cc799e8501c3461a0ba":[6,1,0,0,4,2,7],
 "classlog4cxx_1_1net_1_1SyslogAppender.html#ad7754ec984d14cc799e8501c3461a0ba":[6,2,0,0,4,2,7],
 "classlog4cxx_1_1net_1_1TelnetAppender.html":[6,1,0,0,4,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#a9918b5ce175ce0be96255ac2f84af59a":[6,1,0,0,6,15,0],
 "classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#a9918b5ce175ce0be96255ac2f84af59a":[6,2,0,0,6,15,0],
 "classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,1,0,0,6,15,2],
-"classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,2,0,0,6,15,2],
-"classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#af5f46da7371a1ebb868375134ad83477":[6,1,0,0,6,15,4],
-"classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#af5f46da7371a1ebb868375134ad83477":[6,2,0,0,6,15,4]
+"classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,2,0,0,6,15,2]
 };
