@@ -1,5 +1,7 @@
 var NAVTREEINDEX13 =
 {
+"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#adc143e550e3ed25c462a73a0280fe51e":[6,1,0,0,8,7,18],
+"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#adc143e550e3ed25c462a73a0280fe51e":[6,2,0,0,8,7,18],
 "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ae839a8809b8396b02c8da98d9367abb1":[6,1,0,0,8,7,14],
 "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ae839a8809b8396b02c8da98d9367abb1":[6,2,0,0,8,7,14],
 "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#af748ad0314b771f71a3aaa7c24da3fd9":[6,1,0,0,8,7,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX13 =
 "classlog4cxx_1_1spi_1_1LoggerRepository.html#a6e1d9fe80e31da57c414ebf8f23f5514":[6,1,0,0,10,9,18],
 "classlog4cxx_1_1spi_1_1LoggerRepository.html#a6e1d9fe80e31da57c414ebf8f23f5514":[6,2,0,0,9,9,18],
 "classlog4cxx_1_1spi_1_1LoggerRepository.html#a9119ad23e026f881cb59a93e4ed11a46":[6,1,0,0,10,9,2],
-"classlog4cxx_1_1spi_1_1LoggerRepository.html#a9119ad23e026f881cb59a93e4ed11a46":[6,2,0,0,9,9,2],
-"classlog4cxx_1_1spi_1_1LoggerRepository.html#a936b2812e0fb3ca695ceb644b422f1e9":[6,1,0,0,10,9,0],
-"classlog4cxx_1_1spi_1_1LoggerRepository.html#a936b2812e0fb3ca695ceb644b422f1e9":[6,2,0,0,9,9,0]
+"classlog4cxx_1_1spi_1_1LoggerRepository.html#a9119ad23e026f881cb59a93e4ed11a46":[6,2,0,0,9,9,2]
 };

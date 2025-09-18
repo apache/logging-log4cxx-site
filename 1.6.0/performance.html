@@ -110,9 +110,8 @@ $(function(){initNavTree('performance.html','',''); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_src_2site_2markdown_2performance"></a></p>
 <p>One important question with a logging library is: is it fast enough? While Log4cxx may not be the fastest logging implementation, it is more than fast enough for the vast majority of cases.</p>
-<p>In performance testing done on a developer's system(utilising an Intel i5-8400 processor and a virtual machine), it is possible for Log4cxx to handle over 2,000,000 messages/second in a single-threaded application. Since Log4cxx is designed to be multithread-safe, logging from multiple threads makes this throughput much lower. Delays in writing messages to disk can also greatly decrease performance, depending on how much data is being logged.</p>
-<p>If the logging of a particular level is disabled, performance can also be a lot better. While Log4cxx can generate 2,000,000 log messages/second, skipping a disabled logging request requires only a few nano-seconds, so application performance is not affected when logging requests are not removed from the release build.</p>
-<p>For the best performance, use the <span class="tt">LOG4CXX_[level]_FMT</span> series of macros, as the <a href="https://fmt.dev/latest/index.html">{fmt}</a> library they use is significantly faster (up to twice as fast as <span class="tt">operator&lt;&lt;</span>). Note that you must include the headers from {fmt} manually.</p>
+<p>While Log4cxx can generate 2,000,000 log messages/second, skipping a disabled logging request requires only a few nano-seconds, so application performance is not affected when logging requests are not removed from the release build.</p>
+<p>Benchmark testing shows MessageBuffer (i.e. std::stringstream) filling consumes the majority of CPU time when the logging request is not disabled. For the best performance, use the <span class="tt">LOG4CXX_[level]_FMT</span> series of macros, as the <a href="https://fmt.dev/latest/index.html">{fmt}</a> library they use is significantly faster (up to twice as fast as <span class="tt">operator&lt;&lt;</span>). Note that you must include the headers from {fmt} manually.</p>
 <p>These two pieces of logging code are logically equivalent(printing out the same
 values), however the one utilizing fmt is close to 2x as fast on some systems.</p>
 <div class="fragment"><div class="line"><span class="keywordflow">for</span>( <span class="keywordtype">int</span> x = 0; x &lt; howmany; x++ ){</div>
@@ -123,7 +122,76 @@ values), however the one utilizing fmt is close to 2x as fast on some systems.</
 <div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a>( logger, <span class="stringliteral">&quot;Hello logger: msg number {}&quot;</span>, x);</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__LoggingMacros_html_ga08bbfedb425d706e674fc92a7bcf9b0c"><div class="ttname"><a href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a></div><div class="ttdeci">#define LOG4CXX_INFO_FMT(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:2339</div></div>
-</div><!-- fragment --><p>If you wish to benchmark Log4cxx on your own system, have a look at the tools under the src/test/cpp/throughput and src/test/cpp/benchmark directories. The throughput tests may be built by specifying <span class="tt">BUILD_THROUGHPUT</span> with CMake when building Log4cxx. The benckmark tests require Google's <a href="https://github.com/google/benchmark">Benchmark</a> library and may be built by specifying <span class="tt">BUILD_BENCHMARK_CHECKS</span> with CMake when building Log4cxx. </p>
+</div><!-- fragment --><p>If you wish to benchmark Log4cxx on your own system, have a look at the tools under the src/test/cpp/throughput and src/test/cpp/benchmark directories. The throughput tests may be built by specifying <span class="tt">BUILD_THROUGHPUT</span> with CMake when building Log4cxx. The benckmark tests require Google's <a href="https://github.com/google/benchmark">Benchmark</a> library and may be built by specifying <span class="tt">BUILD_BENCHMARK_CHECKS</span> with CMake when building Log4cxx.</p>
+<p>The following table shows some timing tests using Google's benchmarking library. The "Time" column shows the average elapsed time, i.e real_accumulated_time / iteration_count. The "CPU" column is also an average, the cpu_accumulated_time / iteration_count. The "Iterations" column derivation is explained in <a href="https://google.github.io/benchmark/user_guide.html#runtime-and-reporting-considerations">Google Benchmark documentation</a>. </p><pre class="fragment">g++ (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
+Run on (8 X 2328.61 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x4)
+  L1 Instruction 32 KiB (x4)
+  L2 Unified 256 KiB (x4)
+  L3 Unified 6144 KiB (x1)
+Load Average: 0.07, 0.03, 0.01
+</pre><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Benchmark  </th><th class="markdownTableHeadRight">Time  </th><th class="markdownTableHeadRight">CPU  </th><th class="markdownTableHeadRight">Iterations  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Testing disabled logging request  </td><td class="markdownTableBodyRight">0.473 ns  </td><td class="markdownTableBodyRight">0.473 ns  </td><td class="markdownTableBodyRight">1000000000  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Testing disabled logging request/threads:6  </td><td class="markdownTableBodyRight">0.130 ns  </td><td class="markdownTableBodyRight">0.777 ns  </td><td class="markdownTableBodyRight">816416202  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Appending 5 char string using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">346 ns  </td><td class="markdownTableBodyRight">346 ns  </td><td class="markdownTableBodyRight">2014476  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Appending 5 char string using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">450 ns  </td><td class="markdownTableBodyRight">2522 ns  </td><td class="markdownTableBodyRight">287886  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Appending 49 char string using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">387 ns  </td><td class="markdownTableBodyRight">387 ns  </td><td class="markdownTableBodyRight">1805660  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Appending 49 char string using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">490 ns  </td><td class="markdownTableBodyRight">2691 ns  </td><td class="markdownTableBodyRight">235698  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Appending int value using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">538 ns  </td><td class="markdownTableBodyRight">538 ns  </td><td class="markdownTableBodyRight">1301436  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Appending int value using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">496 ns  </td><td class="markdownTableBodyRight">2775 ns  </td><td class="markdownTableBodyRight">238962  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Appending int+float using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">921 ns  </td><td class="markdownTableBodyRight">921 ns  </td><td class="markdownTableBodyRight">762785  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Appending int+float using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">576 ns  </td><td class="markdownTableBodyRight">3324 ns  </td><td class="markdownTableBodyRight">201900  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Appending int value using MessageBuffer, pattern: [%d] %m%n  </td><td class="markdownTableBodyRight">566 ns  </td><td class="markdownTableBodyRight">566 ns  </td><td class="markdownTableBodyRight">1233924  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Appending int value using MessageBuffer, pattern: [%d] [%c] [%p] %m%n  </td><td class="markdownTableBodyRight">624 ns  </td><td class="markdownTableBodyRight">624 ns  </td><td class="markdownTableBodyRight">1122040  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Appending 49 char string using FMT, pattern: %m%n  </td><td class="markdownTableBodyRight">360 ns  </td><td class="markdownTableBodyRight">360 ns  </td><td class="markdownTableBodyRight">1945236  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Appending 49 char string using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">489 ns  </td><td class="markdownTableBodyRight">2666 ns  </td><td class="markdownTableBodyRight">248046  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Appending int value using FMT, pattern: %m%n  </td><td class="markdownTableBodyRight">388 ns  </td><td class="markdownTableBodyRight">388 ns  </td><td class="markdownTableBodyRight">1804423  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Appending int value using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">496 ns  </td><td class="markdownTableBodyRight">2720 ns  </td><td class="markdownTableBodyRight">253938  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Appending int+float using FMT, pattern: %m%n  </td><td class="markdownTableBodyRight">519 ns  </td><td class="markdownTableBodyRight">519 ns  </td><td class="markdownTableBodyRight">1352503  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Appending int+float using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">515 ns  </td><td class="markdownTableBodyRight">2900 ns  </td><td class="markdownTableBodyRight">229374  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Async, Sending int+float using MessageBuffer  </td><td class="markdownTableBodyRight">1113 ns  </td><td class="markdownTableBodyRight">1113 ns  </td><td class="markdownTableBodyRight">633889  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Async, Sending int+float using MessageBuffer/threads:6  </td><td class="markdownTableBodyRight">545 ns  </td><td class="markdownTableBodyRight">3254 ns  </td><td class="markdownTableBodyRight">211344  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Logging int+float using MessageBuffer, pattern: %d %m%n  </td><td class="markdownTableBodyRight">1079 ns  </td><td class="markdownTableBodyRight">1078 ns  </td><td class="markdownTableBodyRight">641626  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Logging int+float using MessageBuffer, pattern: %d %m%n/threads:6  </td><td class="markdownTableBodyRight">1036 ns  </td><td class="markdownTableBodyRight">4715 ns  </td><td class="markdownTableBodyRight">144528  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Logging int+float using MessageBuffer, JSON  </td><td class="markdownTableBodyRight">1446 ns  </td><td class="markdownTableBodyRight">1446 ns  </td><td class="markdownTableBodyRight">487967  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">Logging int+float using MessageBuffer, JSON/threads:6  </td><td class="markdownTableBodyRight">2181 ns  </td><td class="markdownTableBodyRight">7102 ns  </td><td class="markdownTableBodyRight">85848  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Multiprocess logging int+float using MessageBuffer, pattern: %d %m%n  </td><td class="markdownTableBodyRight">3456 ns  </td><td class="markdownTableBodyRight">3456 ns  </td><td class="markdownTableBodyRight">203235  </td></tr>
+</table>
+<ol type="1">
+<li>The "Appending" benchmarks just format the message (using PatternLayout) then discard the result.</li>
+<li>The "Async" benchmarks test AsyncAppender throughput, with logging events discarded in the background thread.</li>
+<li>The "Logging" benchmarks write to a file using buffered output. Overhead is 2-3 times more when not using buffered output.</li>
+</ol>
+<p>The above table shows that the overhead of an enabled logging request varies greatly with the message content. A single operations-per-second number is not meaningful. Most importantly note that <a class="el" href="classlog4cxx_1_1FileAppender.html#a0126112f63df5a5c5e8adfb72c091d64">using buffered output</a> reduces overhead more than any other detail.</p>
+<p>Note also that logging from multiple threads concurrently to a common appender does not increase throughput due to lock contention. To simplify the work of an appender implementator, the <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a5a60fc1789ef646d689c9ec517d3b90b">doAppend method</a> currently prevents multiple threads concurrently entering <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a26bfb021038290769331e5e8c3f86d0a">the append method</a>, which is the method required to be implemented by a concrete appender class. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -142,7 +210,7 @@ values), however the one utilizing fmt is close to 2x as fast on some systems.</
     <li class="navelem"><a href="usage-overview.html">Use</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Mon Sep 15 2025 </li>
+    <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on Thu Sep 18 2025 </li>
     <li class="center">
 Copyright &copy; 2017-2024 <a href="https://www.apache.org/">Apache Software Foundation</a>.
 Apache, Chainsaw, log4cxx, Log4j, Log4net, log4php and the Apache feather logo are

@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"classlog4cxx_1_1xml_1_1XMLLayout.html#aeb60706a15ad1cca3ebcc9c403f7985e":[6,1,0,0,12,1,0],
+"classlog4cxx_1_1xml_1_1XMLLayout.html#aeb60706a15ad1cca3ebcc9c403f7985e":[6,2,0,0,11,1,0],
 "classlog4cxx_1_1xml_1_1XMLLayout.html#af665821af142acdb574f8e6967738425":[6,1,0,0,12,1,3],
 "classlog4cxx_1_1xml_1_1XMLLayout.html#af665821af142acdb574f8e6967738425":[6,2,0,0,11,1,3],
 "classnamepatternconverter_8h.html":[6,3,0,1,0,0,0,6,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "globals_type.html":[6,3,1,2],
 "group__LoggingMacros.html":[6,0],
 "gzcompressaction_8h.html":[6,3,0,1,0,0,0,7,4],
-"gzcompressaction_8h_source.html":[6,3,0,1,0,0,0,7,4],
-"hexdump_8h.html":[6,3,0,1,0,0,0,21],
-"hexdump_8h_source.html":[6,3,0,1,0,0,0,21]
+"gzcompressaction_8h_source.html":[6,3,0,1,0,0,0,7,4]
 };
