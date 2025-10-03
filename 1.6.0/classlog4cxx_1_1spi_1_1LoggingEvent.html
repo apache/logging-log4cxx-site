@@ -135,6 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad11706d034f9d361606af25227375a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event composed using the supplied parameters.  <br /></td></tr>
 <tr class="memitem:a1ff9c1cce022bb313e497525412f8a2b" id="r_a1ff9c1cce022bb313e497525412f8a2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ff9c1cce022bb313e497525412f8a2b">LoggingEvent</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;logger, const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">LocationInfo</a> &amp;location)</td></tr>
 <tr class="memdesc:a1ff9c1cce022bb313e497525412f8a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event composed using the supplied parameters.  <br /></td></tr>
+<tr class="memitem:a4435d0e6ed656d77b69edababf6aa69b" id="r_a4435d0e6ed656d77b69edababf6aa69b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4435d0e6ed656d77b69edababf6aa69b">LoggingEvent</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;logger, const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">LocationInfo</a> &amp;location, <a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender)</td></tr>
+<tr class="memdesc:a4435d0e6ed656d77b69edababf6aa69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event composed using the supplied parameters.  <br /></td></tr>
 <tr class="memitem:a87d59e35e5fcabd87bfa3b7d5b265526" id="r_a87d59e35e5fcabd87bfa3b7d5b265526"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87d59e35e5fcabd87bfa3b7d5b265526">~LoggingEvent</a> ()</td></tr>
 <tr class="memitem:a1af3e5820c5904e5bfb28f20ea82bfd7" id="r_a1af3e5820c5904e5bfb28f20ea82bfd7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1af3e5820c5904e5bfb28f20ea82bfd7">getLevel</a> () const</td></tr>
 <tr class="memdesc:a1af3e5820c5904e5bfb28f20ea82bfd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The severity level of the logging request that generated this event.  <br /></td></tr>
@@ -170,6 +172,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8442544000661e85d175f6c4ad3d2474"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of of the key values in the properties for the event.  <br /></td></tr>
 <tr class="memitem:a9798cc82493f7e0113f349c9d46a9f05" id="r_a9798cc82493f7e0113f349c9d46a9f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9798cc82493f7e0113f349c9d46a9f05">setProperty</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;key, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value)</td></tr>
 <tr class="memdesc:a9798cc82493f7e0113f349c9d46a9f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate <code>value</code> with the property <code>key</code>.  <br /></td></tr>
+<tr class="memitem:a5253c089ae3be2e541230e84248184c8" id="r_a5253c089ae3be2e541230e84248184c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5253c089ae3be2e541230e84248184c8">renderMessage</a> ()</td></tr>
+<tr class="memdesc:a5253c089ae3be2e541230e84248184c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the renderers to construct the message.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1helpers_1_1Object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
 <tr class="memitem:a8ba23411233a652fac44a619e6356115 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a8ba23411233a652fac44a619e6356115"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a8ba23411233a652fac44a619e6356115">~Object</a> ()</td></tr>
 <tr class="memitem:a581992e532894891e83b9afd605ca492 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a581992e532894891e83b9afd605ca492"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">helpers::Class</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a581992e532894891e83b9afd605ca492">getClass</a> () const =0</td></tr>
@@ -202,7 +206,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac4bbc9bffef46e7b27cac8b15a5d6ad0" name="ac4bbc9bffef46e7b27cac8b15a5d6ad0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4bbc9bffef46e7b27cac8b15a5d6ad0">&#9670;&#160;</a></span>LoggingEvent() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4bbc9bffef46e7b27cac8b15a5d6ad0">&#9670;&#160;</a></span>LoggingEvent() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +225,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad11706d034f9d361606af25227375a0d" name="ad11706d034f9d361606af25227375a0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad11706d034f9d361606af25227375a0d">&#9670;&#160;</a></span>LoggingEvent() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad11706d034f9d361606af25227375a0d">&#9670;&#160;</a></span>LoggingEvent() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +267,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1ff9c1cce022bb313e497525412f8a2b" name="a1ff9c1cce022bb313e497525412f8a2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ff9c1cce022bb313e497525412f8a2b">&#9670;&#160;</a></span>LoggingEvent() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ff9c1cce022bb313e497525412f8a2b">&#9670;&#160;</a></span>LoggingEvent() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,6 +302,48 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">level</td><td>The severity of this event. </td></tr>
     <tr><td class="paramname">message</td><td>The text to add to this event. </td></tr>
     <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4435d0e6ed656d77b69edababf6aa69b" name="a4435d0e6ed656d77b69edababf6aa69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4435d0e6ed656d77b69edababf6aa69b">&#9670;&#160;</a></span>LoggingEvent() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">log4cxx::spi::LoggingEvent::LoggingEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>logger</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">LocationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>location</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>messageAppender</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An event composed using the supplied parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">logger</td><td>The logger used to make the logging request. </td></tr>
+    <tr><td class="paramname">level</td><td>The severity of this event. </td></tr>
+    <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
+    <tr><td class="paramname">messageAppender</td><td>Builds the message text to add to this event. </td></tr>
   </table>
   </dd>
 </dl>
@@ -687,6 +733,25 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Obtain a copy of the current thread's diagnostic context data. </p>
 <p>The diagnostic context must be loaded to ensure the correct diagnostic context data is available when the event is stored for later use (for example, when the appender uses a different thread to process this event). </p>
+
+</div>
+</div>
+<a id="a5253c089ae3be2e541230e84248184c8" name="a5253c089ae3be2e541230e84248184c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5253c089ae3be2e541230e84248184c8">&#9670;&#160;</a></span>renderMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::spi::LoggingEvent::renderMessage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use the renderers to construct the message. </p>
 
 </div>
 </div>

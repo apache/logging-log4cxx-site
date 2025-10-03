@@ -85,24 +85,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "MyApp-qt_8cpp-example.html",
-"classlog4cxx_1_1FMTLayout.html#a2079685b53ab28a7b780777ed152a171",
-"classlog4cxx_1_1Level.html#a7824acf2f3cd05835fff84b8f2cf4f3a",
-"classlog4cxx_1_1Logger.html#ab7d87d2ccad97ca2ffd2d8045f34174c",
-"classlog4cxx_1_1WriterAppender.html#aae5371a7fe9a44743bd1f36190a2e036",
-"classlog4cxx_1_1filter_1_1MapFilter.html#ad4304853079db095159883c2b6c9acca",
-"classlog4cxx_1_1helpers_1_1ClassRegistration.html#ab97cb498abfa71e74254330549332137",
-"classlog4cxx_1_1helpers_1_1InetAddress.html#af03cf772e36f56ddf8bc6ddf57d67cfe",
-"classlog4cxx_1_1helpers_1_1OutputStreamWriter.html#a9ee6f6e190e9cf9eeafb48802f568166",
-"classlog4cxx_1_1helpers_1_1SystemOutWriter.html#a70d1348a6f14f2b156751e2f15edd464",
-"classlog4cxx_1_1helpers_1_1XMLDOMNode.html#a9d5c4273517009feb5814eb8a52ac5c7",
-"classlog4cxx_1_1net_1_1SyslogAppender.html#ab478d5f8a5b1a07f7ec05753915c7da6",
-"classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#af5f46da7371a1ebb868375134ad83477",
-"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#adc143e550e3ed25c462a73a0280fe51e",
-"classlog4cxx_1_1spi_1_1LoggerRepository.html#a936b2812e0fb3ca695ceb644b422f1e9",
-"classlog4cxx_1_1xml_1_1XMLLayout.html#aeb60706a15ad1cca3ebcc9c403f7985e",
-"hexdump_8h.html",
-"namespacelog4cxx_1_1nt.html",
-"throwableinformationpatternconverter_8h.html"
+"classlog4cxx_1_1FMTLayout.html#a184d8379c56ca7e55fa4ae35f0859809",
+"classlog4cxx_1_1Level.html#a69757dfbc7ff19b29043db1db8612d28",
+"classlog4cxx_1_1Logger.html#aaf9681fab36fd96207cc4a424c8d64a5",
+"classlog4cxx_1_1WriterAppender.html#a56518505baf553fe96902f9b25b58ca4",
+"classlog4cxx_1_1filter_1_1MapFilter.html",
+"classlog4cxx_1_1helpers_1_1CharsetEncoder.html#a19fa2005ef146b114fb5f3056b1b8212",
+"classlog4cxx_1_1helpers_1_1IllegalArgumentException.html#a8d092d79d1834c8fc5256363ad626a67",
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#ab891b9d8cd61af9c42c756a0b0eed289",
+"classlog4cxx_1_1helpers_1_1StringTokenizer.html#a27e11e16a87ed00d20dd289c4744af7e",
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#aec85d802ab39fbe75bcbbe195cc94140",
+"classlog4cxx_1_1net_1_1SyslogAppender.html#a04d9cb5e765acce3b78bc6b7d3c1521a",
+"classlog4cxx_1_1pattern_1_1LineSeparatorPatternConverter.html",
+"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a287c7bdf3d47902c68f780a9eae50e7e",
+"classlog4cxx_1_1spi_1_1LocationInfo.html#aae47b1d6f4a8c192a3d4084f6258d5db",
+"classlog4cxx_1_1xml_1_1DOMConfigurator.html#a93a50c8907020332e2267b9de8b8f61b",
+"functions_func_~.html",
+"namespacelog4cxx_1_1helpers.html#a606a9429af6676c952edf3666ed21e7b",
+"structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

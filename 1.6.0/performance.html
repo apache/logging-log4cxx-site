@@ -117,11 +117,11 @@ values), however the one utilizing fmt is close to 2x as fast on some systems.</
 <div class="fragment"><div class="line"><span class="keywordflow">for</span>( <span class="keywordtype">int</span> x = 0; x &lt; howmany; x++ ){</div>
 <div class="line">         <a class="code hl_define" href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a>( logger, <span class="stringliteral">&quot;Hello logger: msg number &quot;</span> &lt;&lt; x);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga61dfed4f5eca82725a90a331f37857d3"><div class="ttname"><a href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a></div><div class="ttdeci">#define LOG4CXX_INFO(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:2318</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga61dfed4f5eca82725a90a331f37857d3"><div class="ttname"><a href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a></div><div class="ttdeci">#define LOG4CXX_INFO(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:2377</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="keywordflow">for</span>( <span class="keywordtype">int</span> x = 0; x &lt; howmany; x++ ){</div>
 <div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a>( logger, <span class="stringliteral">&quot;Hello logger: msg number {}&quot;</span>, x);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga08bbfedb425d706e674fc92a7bcf9b0c"><div class="ttname"><a href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a></div><div class="ttdeci">#define LOG4CXX_INFO_FMT(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:2339</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga08bbfedb425d706e674fc92a7bcf9b0c"><div class="ttname"><a href="group__LoggingMacros.html#ga08bbfedb425d706e674fc92a7bcf9b0c">LOG4CXX_INFO_FMT</a></div><div class="ttdeci">#define LOG4CXX_INFO_FMT(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:2398</div></div>
 </div><!-- fragment --><p>If you wish to benchmark Log4cxx on your own system, have a look at the tools under the src/test/cpp/throughput and src/test/cpp/benchmark directories. The throughput tests may be built by specifying <span class="tt">BUILD_THROUGHPUT</span> with CMake when building Log4cxx. The benckmark tests require Google's <a href="https://github.com/google/benchmark">Benchmark</a> library and may be built by specifying <span class="tt">BUILD_BENCHMARK_CHECKS</span> with CMake when building Log4cxx.</p>
 <p>The following table shows some timing tests using Google's benchmarking library. The "Time" column shows the average elapsed time, i.e real_accumulated_time / iteration_count. The "CPU" column is also an average, the cpu_accumulated_time / iteration_count. The "Iterations" column derivation is explained in <a href="https://google.github.io/benchmark/user_guide.html#runtime-and-reporting-considerations">Google Benchmark documentation</a>. </p><pre class="fragment">g++ (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0
 Run on (8 X 2328.61 MHz CPU s)
@@ -133,57 +133,69 @@ CPU Caches:
 Load Average: 0.07, 0.03, 0.01
 </pre><table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadLeft">Benchmark  </th><th class="markdownTableHeadRight">Time  </th><th class="markdownTableHeadRight">CPU  </th><th class="markdownTableHeadRight">Iterations  </th></tr>
+<th class="markdownTableHeadNone">Benchmark  </th><th class="markdownTableHeadRight">Time  </th><th class="markdownTableHeadRight">CPU  </th><th class="markdownTableHeadRight">Iterations  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Testing disabled logging request  </td><td class="markdownTableBodyRight">0.473 ns  </td><td class="markdownTableBodyRight">0.473 ns  </td><td class="markdownTableBodyRight">1000000000  </td></tr>
+<td class="markdownTableBodyNone">Testing disabled logging request  </td><td class="markdownTableBodyRight">0.472 ns  </td><td class="markdownTableBodyRight">0.472 ns  </td><td class="markdownTableBodyRight">1000000000  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Testing disabled logging request/threads:6  </td><td class="markdownTableBodyRight">0.130 ns  </td><td class="markdownTableBodyRight">0.777 ns  </td><td class="markdownTableBodyRight">816416202  </td></tr>
+<td class="markdownTableBodyNone">Testing disabled logging request/threads:6  </td><td class="markdownTableBodyRight">0.128 ns  </td><td class="markdownTableBodyRight">0.766 ns  </td><td class="markdownTableBodyRight">816161856  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Appending 5 char string using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">346 ns  </td><td class="markdownTableBodyRight">346 ns  </td><td class="markdownTableBodyRight">2014476  </td></tr>
+<td class="markdownTableBodyNone">Appending 5 char string using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">334 ns  </td><td class="markdownTableBodyRight">334 ns  </td><td class="markdownTableBodyRight">2094794  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Appending 5 char string using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">450 ns  </td><td class="markdownTableBodyRight">2522 ns  </td><td class="markdownTableBodyRight">287886  </td></tr>
+<td class="markdownTableBodyNone">Appending 5 char string using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">434 ns  </td><td class="markdownTableBodyRight">2437 ns  </td><td class="markdownTableBodyRight">281586  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Appending 49 char string using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">387 ns  </td><td class="markdownTableBodyRight">387 ns  </td><td class="markdownTableBodyRight">1805660  </td></tr>
+<td class="markdownTableBodyNone">Appending 49 char string using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">370 ns  </td><td class="markdownTableBodyRight">370 ns  </td><td class="markdownTableBodyRight">1886606  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Appending 49 char string using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">490 ns  </td><td class="markdownTableBodyRight">2691 ns  </td><td class="markdownTableBodyRight">235698  </td></tr>
+<td class="markdownTableBodyNone">Appending 49 char string using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">499 ns  </td><td class="markdownTableBodyRight">2736 ns  </td><td class="markdownTableBodyRight">228720  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Appending int value using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">538 ns  </td><td class="markdownTableBodyRight">538 ns  </td><td class="markdownTableBodyRight">1301436  </td></tr>
+<td class="markdownTableBodyNone">Appending int value using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">509 ns  </td><td class="markdownTableBodyRight">509 ns  </td><td class="markdownTableBodyRight">1361391  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Appending int value using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">496 ns  </td><td class="markdownTableBodyRight">2775 ns  </td><td class="markdownTableBodyRight">238962  </td></tr>
+<td class="markdownTableBodyNone">Appending int value using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">495 ns  </td><td class="markdownTableBodyRight">2776 ns  </td><td class="markdownTableBodyRight">251646  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Appending int+float using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">921 ns  </td><td class="markdownTableBodyRight">921 ns  </td><td class="markdownTableBodyRight">762785  </td></tr>
+<td class="markdownTableBodyNone">Appending int+float using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">911 ns  </td><td class="markdownTableBodyRight">911 ns  </td><td class="markdownTableBodyRight">768870  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Appending int+float using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">576 ns  </td><td class="markdownTableBodyRight">3324 ns  </td><td class="markdownTableBodyRight">201900  </td></tr>
+<td class="markdownTableBodyNone">Appending int+float using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">581 ns  </td><td class="markdownTableBodyRight">3370 ns  </td><td class="markdownTableBodyRight">203220  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Appending int value using MessageBuffer, pattern: [%d] %m%n  </td><td class="markdownTableBodyRight">566 ns  </td><td class="markdownTableBodyRight">566 ns  </td><td class="markdownTableBodyRight">1233924  </td></tr>
+<td class="markdownTableBodyNone">Appending int+10float using MessageBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">4579 ns  </td><td class="markdownTableBodyRight">4567 ns  </td><td class="markdownTableBodyRight">151798  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Appending int value using MessageBuffer, pattern: [%d] [%c] [%p] %m%n  </td><td class="markdownTableBodyRight">624 ns  </td><td class="markdownTableBodyRight">624 ns  </td><td class="markdownTableBodyRight">1122040  </td></tr>
+<td class="markdownTableBodyNone">Appending int+10float using MessageBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">1694 ns  </td><td class="markdownTableBodyRight">10092 ns  </td><td class="markdownTableBodyRight">65982  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Appending 49 char string using FMT, pattern: %m%n  </td><td class="markdownTableBodyRight">360 ns  </td><td class="markdownTableBodyRight">360 ns  </td><td class="markdownTableBodyRight">1945236  </td></tr>
+<td class="markdownTableBodyNone">Appending int value using MessageBuffer, pattern: [%d] %m%n  </td><td class="markdownTableBodyRight">548 ns  </td><td class="markdownTableBodyRight">548 ns  </td><td class="markdownTableBodyRight">1276999  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Appending 49 char string using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">489 ns  </td><td class="markdownTableBodyRight">2666 ns  </td><td class="markdownTableBodyRight">248046  </td></tr>
+<td class="markdownTableBodyNone">Appending int value using MessageBuffer, pattern: [%d] [%c] [%p] %m%n  </td><td class="markdownTableBodyRight">600 ns  </td><td class="markdownTableBodyRight">600 ns  </td><td class="markdownTableBodyRight">1156877  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Appending int value using FMT, pattern: %m%n  </td><td class="markdownTableBodyRight">388 ns  </td><td class="markdownTableBodyRight">388 ns  </td><td class="markdownTableBodyRight">1804423  </td></tr>
+<td class="markdownTableBodyNone">Appending 49 char string using FMT, pattern: %m%n  </td><td class="markdownTableBodyRight">346 ns  </td><td class="markdownTableBodyRight">346 ns  </td><td class="markdownTableBodyRight">2021907  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Appending int value using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">496 ns  </td><td class="markdownTableBodyRight">2720 ns  </td><td class="markdownTableBodyRight">253938  </td></tr>
+<td class="markdownTableBodyNone">Appending 49 char string using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">488 ns  </td><td class="markdownTableBodyRight">2672 ns  </td><td class="markdownTableBodyRight">257544  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Appending int+float using FMT, pattern: %m%n  </td><td class="markdownTableBodyRight">519 ns  </td><td class="markdownTableBodyRight">519 ns  </td><td class="markdownTableBodyRight">1352503  </td></tr>
+<td class="markdownTableBodyNone">Appending int value using FMT, pattern: %m%n  </td><td class="markdownTableBodyRight">376 ns  </td><td class="markdownTableBodyRight">376 ns  </td><td class="markdownTableBodyRight">1863727  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Appending int+float using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">515 ns  </td><td class="markdownTableBodyRight">2900 ns  </td><td class="markdownTableBodyRight">229374  </td></tr>
+<td class="markdownTableBodyNone">Appending int value using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">486 ns  </td><td class="markdownTableBodyRight">2674 ns  </td><td class="markdownTableBodyRight">258096  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Async, Sending int+float using MessageBuffer  </td><td class="markdownTableBodyRight">1113 ns  </td><td class="markdownTableBodyRight">1113 ns  </td><td class="markdownTableBodyRight">633889  </td></tr>
+<td class="markdownTableBodyNone">Appending int+float using FMT, pattern: %m%n  </td><td class="markdownTableBodyRight">508 ns  </td><td class="markdownTableBodyRight">508 ns  </td><td class="markdownTableBodyRight">1371269  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Async, Sending int+float using MessageBuffer/threads:6  </td><td class="markdownTableBodyRight">545 ns  </td><td class="markdownTableBodyRight">3254 ns  </td><td class="markdownTableBodyRight">211344  </td></tr>
+<td class="markdownTableBodyNone">Appending int+float using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">537 ns  </td><td class="markdownTableBodyRight">3036 ns  </td><td class="markdownTableBodyRight">212844  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Logging int+float using MessageBuffer, pattern: %d %m%n  </td><td class="markdownTableBodyRight">1079 ns  </td><td class="markdownTableBodyRight">1078 ns  </td><td class="markdownTableBodyRight">641626  </td></tr>
+<td class="markdownTableBodyNone">Appending int+10float using FMT, pattern: %m%n  </td><td class="markdownTableBodyRight">1671 ns  </td><td class="markdownTableBodyRight">1671 ns  </td><td class="markdownTableBodyRight">417402  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Logging int+float using MessageBuffer, pattern: %d %m%n/threads:6  </td><td class="markdownTableBodyRight">1036 ns  </td><td class="markdownTableBodyRight">4715 ns  </td><td class="markdownTableBodyRight">144528  </td></tr>
+<td class="markdownTableBodyNone">Appending int+10float using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">1275 ns  </td><td class="markdownTableBodyRight">7297 ns  </td><td class="markdownTableBodyRight">96222  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Logging int+float using MessageBuffer, JSON  </td><td class="markdownTableBodyRight">1446 ns  </td><td class="markdownTableBodyRight">1446 ns  </td><td class="markdownTableBodyRight">487967  </td></tr>
+<td class="markdownTableBodyNone">Async, Sending int+10float using FMT  </td><td class="markdownTableBodyRight">2190 ns  </td><td class="markdownTableBodyRight">2190 ns  </td><td class="markdownTableBodyRight">320109  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Logging int+float using MessageBuffer, JSON/threads:6  </td><td class="markdownTableBodyRight">2181 ns  </td><td class="markdownTableBodyRight">7102 ns  </td><td class="markdownTableBodyRight">85848  </td></tr>
+<td class="markdownTableBodyNone">Async, Sending int+10float using FMT/threads:6  </td><td class="markdownTableBodyRight">1363 ns  </td><td class="markdownTableBodyRight">7862 ns  </td><td class="markdownTableBodyRight">84306  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Multiprocess logging int+float using MessageBuffer, pattern: %d %m%n  </td><td class="markdownTableBodyRight">3456 ns  </td><td class="markdownTableBodyRight">3456 ns  </td><td class="markdownTableBodyRight">203235  </td></tr>
+<td class="markdownTableBodyNone">Async, Sending int+10float using AsyncBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">1226 ns  </td><td class="markdownTableBodyRight">1226 ns  </td><td class="markdownTableBodyRight">571351  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Async, Sending int+10float using AsyncBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">1398 ns  </td><td class="markdownTableBodyRight">7902 ns  </td><td class="markdownTableBodyRight">89688  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Logging int+float using MessageBuffer, pattern: %d %m%n  </td><td class="markdownTableBodyRight">1073 ns  </td><td class="markdownTableBodyRight">1073 ns  </td><td class="markdownTableBodyRight">656652  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Logging int+float using MessageBuffer, pattern: %d %m%n/threads:6  </td><td class="markdownTableBodyRight">1083 ns  </td><td class="markdownTableBodyRight">4895 ns  </td><td class="markdownTableBodyRight">142776  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Logging int+float using MessageBuffer, JSON  </td><td class="markdownTableBodyRight">1394 ns  </td><td class="markdownTableBodyRight">1394 ns  </td><td class="markdownTableBodyRight">507493  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Logging int+float using MessageBuffer, JSON/threads:6  </td><td class="markdownTableBodyRight">2110 ns  </td><td class="markdownTableBodyRight">6827 ns  </td><td class="markdownTableBodyRight">104646  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Multiprocess logging int+float using MessageBuffer, pattern: %d %m%n  </td><td class="markdownTableBodyRight">3253 ns  </td><td class="markdownTableBodyRight">3253 ns  </td><td class="markdownTableBodyRight">214839  </td></tr>
 </table>
 <ol type="1">
 <li>The "Appending" benchmarks just format the message (using PatternLayout) then discard the result.</li>
@@ -192,7 +204,8 @@ Load Average: 0.07, 0.03, 0.01
 </ol>
 <p>The above table shows that the overhead of an enabled logging request varies greatly with the message content. A single operations-per-second number is not meaningful. Most importantly note that <a class="el" href="classlog4cxx_1_1FileAppender.html#a0126112f63df5a5c5e8adfb72c091d64">using buffered output</a> reduces overhead more than any other detail.</p>
 <p>Note also that logging from multiple threads concurrently to a common appender generally does not increase throughput due to lock contention in <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a5a60fc1789ef646d689c9ec517d3b90b">doAppend method</a>. To simplify the work of an appender implementator, the <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a5a60fc1789ef646d689c9ec517d3b90b">doAppend method</a> currently prevents multiple threads concurrently entering <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a26bfb021038290769331e5e8c3f86d0a">the append method</a>, which is the method required to be implemented by a concrete appender class.</p>
-<p>The <a class="el" href="classlog4cxx_1_1AsyncAppender.html">AsyncAppender</a> provides the least overhead when logging concurrently from multiple threads as it overrides the <a class="el" href="classlog4cxx_1_1AsyncAppender.html#a7c6a0118b7fa7a64bbdc28b768a229ae">doAppend method</a> and uses <a href="https://en.cppreference.com/w/cpp/atomic/atomic.html">std::atomic</a> counters and a ring buffer to store logging events. A single background thread is used to extract the logging events from the ring bufffer and send them to the attached appenders. This moves the overhead of <a class="el" href="classlog4cxx_1_1Layout.html#a66cf66d30ddbb839c8ab668021b428fa">the layout method</a> and the blocking transfer of message data to the operating system from the calling thread to the background thread. </p>
+<p>The <a class="el" href="classlog4cxx_1_1AsyncAppender.html">AsyncAppender</a> provides the least overhead when logging concurrently from multiple threads as it overrides the <a class="el" href="classlog4cxx_1_1AsyncAppender.html#a7c6a0118b7fa7a64bbdc28b768a229ae">doAppend method</a> and uses <a href="https://en.cppreference.com/w/cpp/atomic/atomic.html">std::atomic</a> counters and a ring buffer to store logging events. A single background thread is used to extract the logging events from the ring bufffer and send them to the attached appenders. This moves the overhead of <a class="el" href="classlog4cxx_1_1Layout.html#a66cf66d30ddbb839c8ab668021b428fa">the layout method</a> and the blocking transfer of message data to the operating system from the calling thread to the background thread.</p>
+<p>When logging floating point values from a high priority thread, and you cannot use a background thread to format and write the log data, the LOG4CXX_[level]_FMT series of macros impose the least overhead. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
