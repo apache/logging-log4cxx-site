@@ -170,6 +170,7 @@ Release 1.6.0 - 2025-XX-XX</h1>
 <li>Configuration ${varname} values can be set programatically prior to loading a configuration file (see <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a>) [<a href="https://github.com/apache/logging-log4cxx/pull/520">#520</a>]</li>
 <li>The current executable's file name and its components are available for use in a configuration file and the LOG4CXX_CONFIGURATION environment variable (see <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727" title="The key value pairs used when expanding ${varname} instances in a configuration file.">log4cxx::spi::Configurator::properties</a>). [<a href="https://github.com/apache/logging-log4cxx/pull/520">#520</a>]</li>
 <li>Console output (Log4cxx internal logging and BasicConfigurator) use a color per message level by default [<a href="https://github.com/apache/logging-log4cxx/pull/529">#529</a>]</li>
+<li>New logging macros that defer binary-to-text conversion until used in AsyncAppender's background thread [<a href="https://github.com/apache/logging-log4cxx/pull/548">#548</a>]</li>
 </ul>
 <p>The following issues have been addressed:</p>
 <h1 class="doxsection"><a class="anchor" id="rel_1_5_0"></a>

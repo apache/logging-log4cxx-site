@@ -4,6 +4,7 @@ var classlog4cxx_1_1spi_1_1LoggingEvent =
     [ "LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#ac4bbc9bffef46e7b27cac8b15a5d6ad0", null ],
     [ "LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#ad11706d034f9d361606af25227375a0d", null ],
     [ "LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a1ff9c1cce022bb313e497525412f8a2b", null ],
+    [ "LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a4435d0e6ed656d77b69edababf6aa69b", null ],
     [ "~LoggingEvent", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a87d59e35e5fcabd87bfa3b7d5b265526", null ],
     [ "getChronoTimeStamp", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a39d5755b3b58e782eda62984dbfe01e9", null ],
     [ "getLevel", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a1af3e5820c5904e5bfb28f20ea82bfd7", null ],
@@ -21,5 +22,6 @@ var classlog4cxx_1_1spi_1_1LoggingEvent =
     [ "getThreadUserName", "classlog4cxx_1_1spi_1_1LoggingEvent.html#afd4d0f25c89379a4110bdaa0826062fc", null ],
     [ "getTimeStamp", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a40242809f432a8061634d68cdb3439b1", null ],
     [ "LoadDC", "classlog4cxx_1_1spi_1_1LoggingEvent.html#af40b425b02893936c0b562a283f36130", null ],
+    [ "renderMessage", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a5253c089ae3be2e541230e84248184c8", null ],
     [ "setProperty", "classlog4cxx_1_1spi_1_1LoggingEvent.html#a9798cc82493f7e0113f349c9d46a9f05", null ]
 ];

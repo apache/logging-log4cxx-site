@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Apache Log4cxx: MyApp-qt.cpp</title>
+<title>Apache Log4cxx: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -79,7 +79,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('MyApp-qt_8cpp-example.html','',''); });
+$(function(){initNavTree('classlog4cxx_1_1helpers_1_1AsyncBuffer.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -105,32 +105,20 @@ $(function(){initNavTree('MyApp-qt_8cpp-example.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">MyApp-qt.cpp</div></div>
+  <div class="headertitle"><div class="title">log4cxx::helpers::AsyncBuffer Member List</div></div>
 </div><!--header-->
 <div class="contents">
-<p>This file is an example of how to configure Log4cxx in a Qt application.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;QCoreApplication&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;com/foo/config-qt.h&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;com/foo/bar.h&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv) {</div>
-<div class="line">    <span class="keywordtype">int</span> result = EXIT_SUCCESS;</div>
-<div class="line">    QCoreApplication app(argc, argv);</div>
-<div class="line">    com::foo::ConfigureLogging();</div>
-<div class="line">    <span class="keywordflow">try</span> {</div>
-<div class="line">        <span class="keyword">auto</span> logger = com::foo::getLogger(<span class="stringliteral">&quot;MyApp&quot;</span>);</div>
-<div class="line">        <a id="a0" name="a0"></a><a class="code hl_define" href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a>(logger, QString(<span class="stringliteral">&quot;Message %1&quot;</span>).arg(1));</div>
-<div class="line">        com::foo::Bar bar;</div>
-<div class="line">        bar.doIt();</div>
-<div class="line">        <a class="code hl_define" href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a>(logger, QString(<span class="stringliteral">&quot;Message %1&quot;</span>).arg(2));</div>
-<div class="line">    }</div>
-<div class="line">    <span class="keywordflow">catch</span>(std::exception&amp;) {</div>
-<div class="line">        result = EXIT_FAILURE;</div>
-<div class="line">    }</div>
-<div class="line">    <span class="keywordflow">return</span> result;</div>
-<div class="line">}</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga61dfed4f5eca82725a90a331f37857d3"><div class="ttname"><a href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a></div><div class="ttdeci">#define LOG4CXX_INFO(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:2377</div></div>
-</div><!-- fragment --> </div><!-- contents -->
+
+<p>This is the complete list of members for <a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">log4cxx::helpers::AsyncBuffer</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html#abea2a65e03d4f5547d073a0ecf46a7c3">AsyncBuffer</a>()</td><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">log4cxx::helpers::AsyncBuffer</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html#a4163ea35017ad85d33283434a3cdb6b6">AsyncBuffer</a>(AsyncBuffer &amp;&amp;other)</td><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">log4cxx::helpers::AsyncBuffer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html#ae403f6469523360d887618aef5aa640e">clear</a>()</td><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">log4cxx::helpers::AsyncBuffer</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html#a0f3e9b082996b32f3d72a09ae0015967">empty</a>() const</td><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">log4cxx::helpers::AsyncBuffer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html#adc81e4a02bcf2f8485d044dda0d19eb9">operator&lt;&lt;</a>(const T &amp;value)</td><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">log4cxx::helpers::AsyncBuffer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html#abde62603aaf1c807aba95e1cbeefff43">renderMessage</a>(LogCharMessageBuffer &amp;msg)</td><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">log4cxx::helpers::AsyncBuffer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html#a1a4ebb9f8561d6d37158b55f308b0183">~AsyncBuffer</a>()</td><td class="entry"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">log4cxx::helpers::AsyncBuffer</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- HTML footer for doxygen 1.14.0-->

@@ -187,18 +187,32 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a582f8279c50418ef8c7ad408bd84c14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new logging event containing <code>msg</code> to attached appender(s) if this logger is enabled for <code>FATAL</code> events.  <br /></td></tr>
 <tr class="memitem:a83a9e8ffb824d8dcc92704214000a8da" id="r_a83a9e8ffb824d8dcc92704214000a8da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83a9e8ffb824d8dcc92704214000a8da">addEvent</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level, std::string &amp;&amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
 <tr class="memdesc:a83a9e8ffb824d8dcc92704214000a8da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new logging event containing <code>message</code> and <code>location</code> to attached appender(s) without further checks.  <br /></td></tr>
+<tr class="memitem:a5a6eaf4cb6d3df88b0073c8caed47a08" id="r_a5a6eaf4cb6d3df88b0073c8caed47a08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a6eaf4cb6d3df88b0073c8caed47a08">addEvent</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level, <a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;sourceLocation=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
+<tr class="memdesc:a5a6eaf4cb6d3df88b0073c8caed47a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to attached appender(s) a new <code>level</code> LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks.  <br /></td></tr>
 <tr class="memitem:aaf9681fab36fd96207cc4a424c8d64a5" id="r_aaf9681fab36fd96207cc4a424c8d64a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf9681fab36fd96207cc4a424c8d64a5">addFatalEvent</a> (std::string &amp;&amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
 <tr class="memdesc:aaf9681fab36fd96207cc4a424c8d64a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new fatal level logging event containing <code>message</code> and <code>location</code> to attached appender(s) without further checks.  <br /></td></tr>
+<tr class="memitem:a892323fbc50585fa4f9acecb44d949f1" id="r_a892323fbc50585fa4f9acecb44d949f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a892323fbc50585fa4f9acecb44d949f1">addFatalEvent</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
+<tr class="memdesc:a892323fbc50585fa4f9acecb44d949f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to attached appender(s) a new FATAL level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks.  <br /></td></tr>
 <tr class="memitem:ae05fafec4e8d20d5779c5cfc15d5cde4" id="r_ae05fafec4e8d20d5779c5cfc15d5cde4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae05fafec4e8d20d5779c5cfc15d5cde4">addErrorEvent</a> (std::string &amp;&amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
 <tr class="memdesc:ae05fafec4e8d20d5779c5cfc15d5cde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new error level logging event containing <code>message</code> and <code>location</code> to attached appender(s) without further checks.  <br /></td></tr>
+<tr class="memitem:ac069adf06c924266da7d787bc592347d" id="r_ac069adf06c924266da7d787bc592347d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac069adf06c924266da7d787bc592347d">addErrorEvent</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
+<tr class="memdesc:ac069adf06c924266da7d787bc592347d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to attached appender(s) a new ERROR level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks.  <br /></td></tr>
 <tr class="memitem:a2ad273f704a7fbd32c3e44baae244cdc" id="r_a2ad273f704a7fbd32c3e44baae244cdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ad273f704a7fbd32c3e44baae244cdc">addWarnEvent</a> (std::string &amp;&amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
 <tr class="memdesc:a2ad273f704a7fbd32c3e44baae244cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new warning level logging event containing <code>message</code> and <code>location</code> to attached appender(s) without further checks.  <br /></td></tr>
+<tr class="memitem:ae61c7a012ec6ce16be21c75e13e19dbe" id="r_ae61c7a012ec6ce16be21c75e13e19dbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae61c7a012ec6ce16be21c75e13e19dbe">addWarnEvent</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
+<tr class="memdesc:ae61c7a012ec6ce16be21c75e13e19dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to attached appender(s) a new WARN level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks.  <br /></td></tr>
 <tr class="memitem:a3a3f8f7ff161d62410acc5d21a7e85a2" id="r_a3a3f8f7ff161d62410acc5d21a7e85a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a3f8f7ff161d62410acc5d21a7e85a2">addInfoEvent</a> (std::string &amp;&amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
 <tr class="memdesc:a3a3f8f7ff161d62410acc5d21a7e85a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new info level logging event containing <code>message</code> and <code>location</code> to attached appender(s) without further checks.  <br /></td></tr>
+<tr class="memitem:aa615ffd79360bdd350a2548338dfd5a6" id="r_aa615ffd79360bdd350a2548338dfd5a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa615ffd79360bdd350a2548338dfd5a6">addInfoEvent</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
+<tr class="memdesc:aa615ffd79360bdd350a2548338dfd5a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to attached appender(s) a new INFO level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks.  <br /></td></tr>
 <tr class="memitem:af0dc6afdb10e76b12a7ff7a3df0fa318" id="r_af0dc6afdb10e76b12a7ff7a3df0fa318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0dc6afdb10e76b12a7ff7a3df0fa318">addDebugEvent</a> (std::string &amp;&amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
 <tr class="memdesc:af0dc6afdb10e76b12a7ff7a3df0fa318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new debug level logging event containing <code>message</code> and <code>location</code> to attached appender(s) without further checks.  <br /></td></tr>
+<tr class="memitem:a17abf72f8291ba5616870df787f8a56b" id="r_a17abf72f8291ba5616870df787f8a56b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17abf72f8291ba5616870df787f8a56b">addDebugEvent</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
+<tr class="memdesc:a17abf72f8291ba5616870df787f8a56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to attached appender(s) a new DEBUG level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks.  <br /></td></tr>
 <tr class="memitem:afcfec4904bb6180344568336bd8a5a66" id="r_afcfec4904bb6180344568336bd8a5a66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcfec4904bb6180344568336bd8a5a66">addTraceEvent</a> (std::string &amp;&amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
 <tr class="memdesc:afcfec4904bb6180344568336bd8a5a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new trace level logging event containing <code>message</code> and <code>location</code> to attached appender(s) without further checks.  <br /></td></tr>
+<tr class="memitem:ad213c83fbbbaf0eee807378c5ab6ace0" id="r_ad213c83fbbbaf0eee807378c5ab6ace0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad213c83fbbbaf0eee807378c5ab6ace0">addTraceEvent</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
+<tr class="memdesc:ad213c83fbbbaf0eee807378c5ab6ace0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to attached appender(s) a new TRACE level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks.  <br /></td></tr>
 <tr class="memitem:ad92d0c4bec03fda336fce126d83c3891" id="r_ad92d0c4bec03fda336fce126d83c3891"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad92d0c4bec03fda336fce126d83c3891">forcedLog</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level, const std::string &amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">log4cxx::spi::LocationInfo</a> &amp;location) const</td></tr>
 <tr class="memdesc:ad92d0c4bec03fda336fce126d83c3891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new logging event containing <code>message</code> and <code>location</code> to attached appender(s) without further checks.  <br /></td></tr>
 <tr class="memitem:afd14fcf5c8f77a51f1e4db3e9cde96b6" id="r_afd14fcf5c8f77a51f1e4db3e9cde96b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd14fcf5c8f77a51f1e4db3e9cde96b6">forcedLog</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level, const std::string &amp;message) const</td></tr>
@@ -566,8 +580,38 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a17abf72f8291ba5616870df787f8a56b" name="a17abf72f8291ba5616870df787f8a56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17abf72f8291ba5616870df787f8a56b">&#9670;&#160;</a></span>addDebugEvent() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::Logger::addDebugEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>messageAppender</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>location</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add to attached appender(s) a new DEBUG level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad25395d9b14960683cd121e2f6f3bd04" name="ad25395d9b14960683cd121e2f6f3bd04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad25395d9b14960683cd121e2f6f3bd04">&#9670;&#160;</a></span>addDebugEvent() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25395d9b14960683cd121e2f6f3bd04">&#9670;&#160;</a></span>addDebugEvent() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -597,7 +641,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="af0dc6afdb10e76b12a7ff7a3df0fa318" name="af0dc6afdb10e76b12a7ff7a3df0fa318"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0dc6afdb10e76b12a7ff7a3df0fa318">&#9670;&#160;</a></span>addDebugEvent() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0dc6afdb10e76b12a7ff7a3df0fa318">&#9670;&#160;</a></span>addDebugEvent() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -627,7 +671,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a0cba262d7f1d116a9333112dec88197d" name="a0cba262d7f1d116a9333112dec88197d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cba262d7f1d116a9333112dec88197d">&#9670;&#160;</a></span>addDebugEvent() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cba262d7f1d116a9333112dec88197d">&#9670;&#160;</a></span>addDebugEvent() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -656,8 +700,38 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ac069adf06c924266da7d787bc592347d" name="ac069adf06c924266da7d787bc592347d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac069adf06c924266da7d787bc592347d">&#9670;&#160;</a></span>addErrorEvent() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::Logger::addErrorEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>messageAppender</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>location</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add to attached appender(s) a new ERROR level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa82196a923a5a2dd91ccd4e1856de72e" name="aa82196a923a5a2dd91ccd4e1856de72e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa82196a923a5a2dd91ccd4e1856de72e">&#9670;&#160;</a></span>addErrorEvent() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa82196a923a5a2dd91ccd4e1856de72e">&#9670;&#160;</a></span>addErrorEvent() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -687,7 +761,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="ae05fafec4e8d20d5779c5cfc15d5cde4" name="ae05fafec4e8d20d5779c5cfc15d5cde4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae05fafec4e8d20d5779c5cfc15d5cde4">&#9670;&#160;</a></span>addErrorEvent() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05fafec4e8d20d5779c5cfc15d5cde4">&#9670;&#160;</a></span>addErrorEvent() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,7 +791,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a97c6e8740c34ab50148657800d8320c7" name="a97c6e8740c34ab50148657800d8320c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97c6e8740c34ab50148657800d8320c7">&#9670;&#160;</a></span>addErrorEvent() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c6e8740c34ab50148657800d8320c7">&#9670;&#160;</a></span>addErrorEvent() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -746,8 +820,44 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a5a6eaf4cb6d3df88b0073c8caed47a08" name="a5a6eaf4cb6d3df88b0073c8caed47a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6eaf4cb6d3df88b0073c8caed47a08">&#9670;&#160;</a></span>addEvent() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::Logger::addEvent </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>messageAppender</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceLocation</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add to attached appender(s) a new <code>level</code> LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The logging event level. </td></tr>
+    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6f1e83431c5dd4eb3df8c79ef98e2e23" name="a6f1e83431c5dd4eb3df8c79ef98e2e23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f1e83431c5dd4eb3df8c79ef98e2e23">&#9670;&#160;</a></span>addEvent() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1e83431c5dd4eb3df8c79ef98e2e23">&#9670;&#160;</a></span>addEvent() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -783,7 +893,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a83a9e8ffb824d8dcc92704214000a8da" name="a83a9e8ffb824d8dcc92704214000a8da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83a9e8ffb824d8dcc92704214000a8da">&#9670;&#160;</a></span>addEvent() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a9e8ffb824d8dcc92704214000a8da">&#9670;&#160;</a></span>addEvent() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -819,7 +929,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a2195e4a1924e20daf1d31190077c2f55" name="a2195e4a1924e20daf1d31190077c2f55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2195e4a1924e20daf1d31190077c2f55">&#9670;&#160;</a></span>addEvent() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2195e4a1924e20daf1d31190077c2f55">&#9670;&#160;</a></span>addEvent() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -890,8 +1000,38 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a892323fbc50585fa4f9acecb44d949f1" name="a892323fbc50585fa4f9acecb44d949f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892323fbc50585fa4f9acecb44d949f1">&#9670;&#160;</a></span>addFatalEvent() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::Logger::addFatalEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>messageAppender</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>location</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add to attached appender(s) a new FATAL level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8937d76614f26098ffd2c7d72af405fc" name="a8937d76614f26098ffd2c7d72af405fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8937d76614f26098ffd2c7d72af405fc">&#9670;&#160;</a></span>addFatalEvent() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8937d76614f26098ffd2c7d72af405fc">&#9670;&#160;</a></span>addFatalEvent() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -921,7 +1061,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="aaf9681fab36fd96207cc4a424c8d64a5" name="aaf9681fab36fd96207cc4a424c8d64a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf9681fab36fd96207cc4a424c8d64a5">&#9670;&#160;</a></span>addFatalEvent() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9681fab36fd96207cc4a424c8d64a5">&#9670;&#160;</a></span>addFatalEvent() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -951,7 +1091,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a75716e016fb8223b9b1811d011fbc444" name="a75716e016fb8223b9b1811d011fbc444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75716e016fb8223b9b1811d011fbc444">&#9670;&#160;</a></span>addFatalEvent() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75716e016fb8223b9b1811d011fbc444">&#9670;&#160;</a></span>addFatalEvent() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -980,8 +1120,38 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="aa615ffd79360bdd350a2548338dfd5a6" name="aa615ffd79360bdd350a2548338dfd5a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa615ffd79360bdd350a2548338dfd5a6">&#9670;&#160;</a></span>addInfoEvent() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::Logger::addInfoEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>messageAppender</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>location</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add to attached appender(s) a new INFO level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a90e2ba753c86537a487a26988d052f47" name="a90e2ba753c86537a487a26988d052f47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90e2ba753c86537a487a26988d052f47">&#9670;&#160;</a></span>addInfoEvent() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e2ba753c86537a487a26988d052f47">&#9670;&#160;</a></span>addInfoEvent() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1011,7 +1181,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a3a3f8f7ff161d62410acc5d21a7e85a2" name="a3a3f8f7ff161d62410acc5d21a7e85a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a3f8f7ff161d62410acc5d21a7e85a2">&#9670;&#160;</a></span>addInfoEvent() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a3f8f7ff161d62410acc5d21a7e85a2">&#9670;&#160;</a></span>addInfoEvent() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1041,7 +1211,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="aedeffca902f5d961b34350a7464c2ba1" name="aedeffca902f5d961b34350a7464c2ba1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedeffca902f5d961b34350a7464c2ba1">&#9670;&#160;</a></span>addInfoEvent() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aedeffca902f5d961b34350a7464c2ba1">&#9670;&#160;</a></span>addInfoEvent() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1070,8 +1240,38 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ad213c83fbbbaf0eee807378c5ab6ace0" name="ad213c83fbbbaf0eee807378c5ab6ace0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad213c83fbbbaf0eee807378c5ab6ace0">&#9670;&#160;</a></span>addTraceEvent() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::Logger::addTraceEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>messageAppender</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>location</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add to attached appender(s) a new TRACE level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="acd938a3d5ad624d6e13ef4e40b21ec79" name="acd938a3d5ad624d6e13ef4e40b21ec79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd938a3d5ad624d6e13ef4e40b21ec79">&#9670;&#160;</a></span>addTraceEvent() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd938a3d5ad624d6e13ef4e40b21ec79">&#9670;&#160;</a></span>addTraceEvent() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1101,7 +1301,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="afcfec4904bb6180344568336bd8a5a66" name="afcfec4904bb6180344568336bd8a5a66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcfec4904bb6180344568336bd8a5a66">&#9670;&#160;</a></span>addTraceEvent() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afcfec4904bb6180344568336bd8a5a66">&#9670;&#160;</a></span>addTraceEvent() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1131,7 +1331,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a4df178bf0f320d856a0fa5aebe97933f" name="a4df178bf0f320d856a0fa5aebe97933f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4df178bf0f320d856a0fa5aebe97933f">&#9670;&#160;</a></span>addTraceEvent() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4df178bf0f320d856a0fa5aebe97933f">&#9670;&#160;</a></span>addTraceEvent() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1160,8 +1360,38 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ae61c7a012ec6ce16be21c75e13e19dbe" name="ae61c7a012ec6ce16be21c75e13e19dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61c7a012ec6ce16be21c75e13e19dbe">&#9670;&#160;</a></span>addWarnEvent() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::Logger::addWarnEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>messageAppender</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>location</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add to attached appender(s) a new WARN level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a337292a3079ee7d820cf2b2ad9febce4" name="a337292a3079ee7d820cf2b2ad9febce4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a337292a3079ee7d820cf2b2ad9febce4">&#9670;&#160;</a></span>addWarnEvent() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a337292a3079ee7d820cf2b2ad9febce4">&#9670;&#160;</a></span>addWarnEvent() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1191,7 +1421,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a2ad273f704a7fbd32c3e44baae244cdc" name="a2ad273f704a7fbd32c3e44baae244cdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad273f704a7fbd32c3e44baae244cdc">&#9670;&#160;</a></span>addWarnEvent() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad273f704a7fbd32c3e44baae244cdc">&#9670;&#160;</a></span>addWarnEvent() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1221,7 +1451,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a0c32655597e79f83208dce4c876b4f9f" name="a0c32655597e79f83208dce4c876b4f9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c32655597e79f83208dce4c876b4f9f">&#9670;&#160;</a></span>addWarnEvent() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c32655597e79f83208dce4c876b4f9f">&#9670;&#160;</a></span>addWarnEvent() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3425,7 +3655,7 @@ Friends</h2></td></tr>
 <p>By writing </p><div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="#a9a7548679bf8cfdaeb57ae9f63b7fbb8">log4cxx::Logger::isDebugEnabledFor</a>(logger)) {</div>
 <div class="line">  logger-&gt;addDebugEvent(<span class="stringliteral">&quot;Component: &quot;</span> + std::to_string(componentNumber));</div>
 <div class="line">}</div>
-<div class="ttc" id="aclasslog4cxx_1_1Logger_html_a9a7548679bf8cfdaeb57ae9f63b7fbb8"><div class="ttname"><a href="#a9a7548679bf8cfdaeb57ae9f63b7fbb8">log4cxx::Logger::isDebugEnabledFor</a></div><div class="ttdeci">static bool isDebugEnabledFor(const LoggerPtr &amp;logger)</div><div class="ttdoc">Is logger is enabled for DEBUG level logging events?</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:1186</div></div>
+<div class="ttc" id="aclasslog4cxx_1_1Logger_html_a9a7548679bf8cfdaeb57ae9f63b7fbb8"><div class="ttname"><a href="#a9a7548679bf8cfdaeb57ae9f63b7fbb8">log4cxx::Logger::isDebugEnabledFor</a></div><div class="ttdeci">static bool isDebugEnabledFor(const LoggerPtr &amp;logger)</div><div class="ttdoc">Is logger is enabled for DEBUG level logging events?</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:1245</div></div>
 </div><!-- fragment --><p> you minimise the computational cost when <code>logger</code> is not enabled for <code>DEBUG</code> logging events. This function may be inlined thereby avoiding a function call as well as the cost constructing the message when <code>logger</code> is not enabled for <code>DEBUG</code> events.</p>
 <p>See also <a class="el" href="group__LoggingMacros.html#gae1bc2ab20d5f2d7660995ea8244d3a26" title="Add a new logging event containing message to attached appender(s) if logger is enabled for DEBUG eve...">LOG4CXX_DEBUG</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>bool - <code>false</code> if <code>logger</code> is <code>null</code> or <code>DEBUG</code> logging events are disabled for <code>logger</code>, <code>true</code> otherwise. </dd></dl>

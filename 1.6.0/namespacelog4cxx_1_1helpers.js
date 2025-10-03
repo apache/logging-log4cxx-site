@@ -4,6 +4,7 @@ var namespacelog4cxx_1_1helpers =
     [ "AbsoluteTimeDateFormat", "classlog4cxx_1_1helpers_1_1AbsoluteTimeDateFormat.html", "classlog4cxx_1_1helpers_1_1AbsoluteTimeDateFormat" ],
     [ "AppenderAttachableImpl", "classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html", "classlog4cxx_1_1helpers_1_1AppenderAttachableImpl" ],
     [ "APRInitializer", "classlog4cxx_1_1helpers_1_1APRInitializer.html", "classlog4cxx_1_1helpers_1_1APRInitializer" ],
+    [ "AsyncBuffer", "classlog4cxx_1_1helpers_1_1AsyncBuffer.html", "classlog4cxx_1_1helpers_1_1AsyncBuffer" ],
     [ "BindException", "classlog4cxx_1_1helpers_1_1BindException.html", "classlog4cxx_1_1helpers_1_1BindException" ],
     [ "BufferedWriter", "classlog4cxx_1_1helpers_1_1BufferedWriter.html", "classlog4cxx_1_1helpers_1_1BufferedWriter" ],
     [ "ByteArrayInputStream", "classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html", "classlog4cxx_1_1helpers_1_1ByteArrayInputStream" ],

@@ -8,5 +8,6 @@ var searchData=
   ['appenderattachableimpl_5',['AppenderAttachableImpl',['../classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html',1,'log4cxx::helpers']]],
   ['appenderskeleton_6',['AppenderSkeleton',['../classlog4cxx_1_1AppenderSkeleton.html',1,'log4cxx']]],
   ['aprinitializer_7',['APRInitializer',['../classlog4cxx_1_1helpers_1_1APRInitializer.html',1,'log4cxx::helpers']]],
-  ['asyncappender_8',['AsyncAppender',['../classlog4cxx_1_1AsyncAppender.html',1,'log4cxx']]]
+  ['asyncappender_8',['AsyncAppender',['../classlog4cxx_1_1AsyncAppender.html',1,'log4cxx']]],
+  ['asyncbuffer_9',['AsyncBuffer',['../classlog4cxx_1_1helpers_1_1AsyncBuffer.html',1,'log4cxx::helpers']]]
 ];

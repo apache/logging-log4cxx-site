@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "log4cxx::helpers::APRInitializer", "classlog4cxx_1_1helpers_1_1APRInitializer.html", null ],
+    [ "log4cxx::helpers::AsyncBuffer", "classlog4cxx_1_1helpers_1_1AsyncBuffer.html", null ],
     [ "log4cxx::BasicConfigurator", "classlog4cxx_1_1BasicConfigurator.html", null ],
     [ "log4cxx::helpers::ByteBuffer", "classlog4cxx_1_1helpers_1_1ByteBuffer.html", null ],
     [ "log4cxx::helpers::CharMessageBuffer", "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html", null ],
