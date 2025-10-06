@@ -1,7 +1,7 @@
 var searchData=
 [
   ['data_0',['Data',['../structlog4cxx_1_1Level_1_1Data.html',1,'log4cxx::Level']]],
-  ['data_1',['data',['../classlog4cxx_1_1helpers_1_1ByteBuffer.html#af485b42d3310121073a084489b5fe24e',1,'log4cxx::helpers::ByteBuffer::data()'],['../classlog4cxx_1_1helpers_1_1ByteBuffer.html#a8346cd323d290ad7646ee18bd808aaa2',1,'log4cxx::helpers::ByteBuffer::data() const'],['../library-design.html#autotoc_md13',1,'Inheriting classes with private data'],['../library-design.html#autotoc_md12',1,'Use of class-specific structs to hold data.']]],
+  ['data_1',['data',['../classlog4cxx_1_1helpers_1_1ByteBuffer.html#af485b42d3310121073a084489b5fe24e',1,'log4cxx::helpers::ByteBuffer::data()'],['../classlog4cxx_1_1helpers_1_1ByteBuffer.html#a8346cd323d290ad7646ee18bd808aaa2',1,'log4cxx::helpers::ByteBuffer::data() const'],['../library-design.html#autotoc_md14',1,'Inheriting classes with private data'],['../library-design.html#autotoc_md13',1,'Use of class-specific structs to hold data.']]],
   ['datagrampacket_2',['DatagramPacket',['../classlog4cxx_1_1helpers_1_1DatagramPacket.html',1,'log4cxx::helpers::DatagramPacket'],['../classlog4cxx_1_1helpers_1_1DatagramPacket.html#a37c429f8b3b36a9fda32fb78246af7ed',1,'log4cxx::helpers::DatagramPacket::DatagramPacket(void *buf, int length)'],['../classlog4cxx_1_1helpers_1_1DatagramPacket.html#aefe66d42f17970fdb731b19b92b003e8',1,'log4cxx::helpers::DatagramPacket::DatagramPacket(void *buf, int length, InetAddressPtr address, int port)'],['../classlog4cxx_1_1helpers_1_1DatagramPacket.html#a5d0f2936ac56c320b797a33bca51c2b0',1,'log4cxx::helpers::DatagramPacket::DatagramPacket(void *buf, int offset, int length)'],['../classlog4cxx_1_1helpers_1_1DatagramPacket.html#a0d3f3ae04ab1783eb5c67a84d19e87b6',1,'log4cxx::helpers::DatagramPacket::DatagramPacket(void *buf, int offset, int length, InetAddressPtr address, int port)']]],
   ['datagrampacket_2eh_3',['datagrampacket.h',['../datagrampacket_8h.html',1,'']]],
   ['datagramsocket_4',['DatagramSocket',['../classlog4cxx_1_1helpers_1_1DatagramSocket.html',1,'log4cxx::helpers::DatagramSocket'],['../classlog4cxx_1_1helpers_1_1DatagramSocket.html#a08209e87ee3522991299a2291cb8d8e5',1,'log4cxx::helpers::DatagramSocket::DatagramSocket()']]],
@@ -44,16 +44,16 @@ var searchData=
   ['deny_41',['DENY',['../classlog4cxx_1_1spi_1_1Filter.html#aa59a54ffa01e4cc1635734a251afd5eeabb642c7f3bd94cb2505c0ee8f6644eb2',1,'log4cxx::spi::Filter']]],
   ['denyallfilter_42',['DenyAllFilter',['../classlog4cxx_1_1filter_1_1DenyAllFilter.html',1,'log4cxx::filter::DenyAllFilter'],['../classlog4cxx_1_1filter_1_1DenyAllFilter.html#aa6150becdd055e79977a3fed78d5bbeb',1,'log4cxx::filter::DenyAllFilter::DenyAllFilter()']]],
   ['denyallfilter_2eh_43',['denyallfilter.h',['../denyallfilter_8h.html',1,'']]],
-  ['dependencies_44',['Dependencies',['../dependencies.html',1,'Log4cxx Dependencies'],['../dependencies.html#autotoc_md5',1,'Optional Dependencies']]],
-  ['dependencies_20only_45',['Licenses(direct dependencies only)',['../dependencies.html#autotoc_md7',1,'']]],
+  ['dependencies_44',['Dependencies',['../dependencies.html',1,'Log4cxx Dependencies'],['../dependencies.html#autotoc_md6',1,'Optional Dependencies']]],
+  ['dependencies_20only_45',['Licenses(direct dependencies only)',['../dependencies.html#autotoc_md8',1,'']]],
   ['dependencies_2emd_46',['dependencies.md',['../dependencies_8md.html',1,'']]],
   ['design_20notes_47',['Library Design Notes',['../library-design.html',1,'development-overview']]],
   ['detected_20by_20oss_20fuzz_48',['detected by OSS Fuzz',['../fuzzing.html#reproduce',1,'Reproducing fuzzing failures detected by OSS-Fuzz'],['../fuzzing.html#view',1,'Viewing fuzzing failures detected by OSS-Fuzz']]],
   ['develop_49',['Develop',['../development-overview.html',1,'']]],
   ['diagnosticcontext_50',['DiagnosticContext',['../classlog4cxx_1_1NDC.html#a71944f9e094fdb5c6bdffcdb193469f4',1,'log4cxx::NDC']]],
-  ['direct_20dependencies_20only_51',['Licenses(direct dependencies only)',['../dependencies.html#autotoc_md7',1,'']]],
+  ['direct_20dependencies_20only_51',['Licenses(direct dependencies only)',['../dependencies.html#autotoc_md8',1,'']]],
   ['disabling_20console_20color_52',['Disabling Console Color',['../disabling-color.html',1,'usage-overview']]],
-  ['dll_53',['Building log4cxx.dll',['../build-vcpkg.html#autotoc_md2',1,'']]],
+  ['dll_53',['Building log4cxx.dll',['../build-vcpkg.html#autotoc_md3',1,'']]],
   ['do_20i_20add_20a_20custom_20level_20to_20apache_20log4cxx_54',['How do I add a custom level to Apache Log4cxx?',['../faq.html#custom_levels',1,'']]],
   ['do_20i_20use_20log4cxx_20with_20cmake_55',['How do I use Log4cxx with CMake?',['../buildsystems.html#use_with_cmake',1,'']]],
   ['do_20i_20use_20log4cxx_20with_20cmake_20and_20pkg_20config_56',['How do I use Log4cxx with CMake and pkg-config?',['../buildsystems.html#use_with_cmake_pkgconfig',1,'']]],
@@ -70,6 +70,6 @@ var searchData=
   ['domexception_67',['DOMException',['../classlog4cxx_1_1helpers_1_1DOMException.html',1,'log4cxx::helpers::DOMException'],['../classlog4cxx_1_1helpers_1_1DOMException.html#ada7346154143a7710b3a013bf7d5de22',1,'log4cxx::helpers::DOMException::DOMException()']]],
   ['doonchange_68',['doOnChange',['../classlog4cxx_1_1helpers_1_1FileWatchdog.html#abeb9f087164abff7fc66b1e8888fa102',1,'log4cxx::helpers::FileWatchdog']]],
   ['download_69',['Download',['../download.html',1,'get']]],
-  ['download_20apache_20log4cxx_201_206_200_70',['Download Apache Log4cxx 1.6.0',['../download.html#autotoc_md21',1,'']]],
+  ['download_20apache_20log4cxx_201_206_200_70',['Download Apache Log4cxx 1.6.0',['../download.html#autotoc_md22',1,'']]],
   ['download_2emd_71',['download.md',['../download_8md.html',1,'']]]
 ];

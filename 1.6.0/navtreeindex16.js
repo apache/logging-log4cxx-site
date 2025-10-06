@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"functions_func_z.html":[6,2,3,1,22],
 "functions_func_~.html":[6,2,3,1,23],
 "functions_g.html":[6,2,3,0,6],
 "functions_h.html":[6,2,3,0,7],
@@ -79,13 +80,13 @@ var NAVTREEINDEX16 =
 "levelrangefilter_8h.html":[6,3,0,1,0,0,0,2,4],
 "levelrangefilter_8h_source.html":[6,3,0,1,0,0,0,2,4],
 "library-design.html":[4,1],
-"library-design.html#autotoc_md12":[4,1,0],
-"library-design.html#autotoc_md13":[4,1,1],
-"library-design.html#autotoc_md14":[4,1,1,0],
-"library-design.html#autotoc_md15":[4,1,2],
+"library-design.html#autotoc_md13":[4,1,0],
+"library-design.html#autotoc_md14":[4,1,1],
+"library-design.html#autotoc_md15":[4,1,1,0],
+"library-design.html#autotoc_md16":[4,1,2],
 "license.html":[2,2],
-"license.html#autotoc_md16":[2,2,0],
-"license.html#autotoc_md17":[2,2,0,0],
+"license.html#autotoc_md17":[2,2,0],
+"license.html#autotoc_md18":[2,2,0,0],
 "linelocationpatternconverter_8h.html":[6,3,0,1,0,0,0,6,10],
 "linelocationpatternconverter_8h_source.html":[6,3,0,1,0,0,0,6,10],
 "lineseparatorpatternconverter_8h.html":[6,3,0,1,0,0,0,6,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "namespacelog4cxx_1_1helpers.html#a504ff288f6c7a49b8305c5e0aa1bf23f":[6,1,0,0,3,140],
 "namespacelog4cxx_1_1helpers.html#a5471fefffa42032314e99d3806071c86":[6,1,0,0,3,125],
 "namespacelog4cxx_1_1helpers.html#a5dcc73cec8dde9c69b41b0403b034e80":[6,1,0,0,3,101],
-"namespacelog4cxx_1_1helpers.html#a5dfb16dfeae23889fd79af6c6a029276":[6,1,0,0,3,122],
-"namespacelog4cxx_1_1helpers.html#a604fb2cdc990d3eea9bc7ff3dddd39a1":[6,1,0,0,3,138]
+"namespacelog4cxx_1_1helpers.html#a5dfb16dfeae23889fd79af6c6a029276":[6,1,0,0,3,122]
 };

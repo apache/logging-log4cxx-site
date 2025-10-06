@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"namespacelog4cxx_1_1helpers.html#a604fb2cdc990d3eea9bc7ff3dddd39a1":[6,1,0,0,3,138],
 "namespacelog4cxx_1_1helpers.html#a606a9429af6676c952edf3666ed21e7b":[6,1,0,0,3,115],
 "namespacelog4cxx_1_1helpers.html#a70e3731bbed8760be043377647d4c6b2":[6,1,0,0,3,127],
 "namespacelog4cxx_1_1helpers.html#a72134e3f0120a6cb1367be47b2640efe":[6,1,0,0,3,123],
@@ -212,12 +213,12 @@ var NAVTREEINDEX17 =
 "socketoutputstream_8h.html":[6,3,0,1,0,0,0,3,49],
 "socketoutputstream_8h_source.html":[6,3,0,1,0,0,0,3,49],
 "source-repository.html":[4,0],
-"source-repository.html#autotoc_md10":[4,0,0,1],
-"source-repository.html#autotoc_md11":[4,0,0,2],
-"source-repository.html#autotoc_md8":[4,0,0],
-"source-repository.html#autotoc_md9":[4,0,0,0],
+"source-repository.html#autotoc_md10":[4,0,0,0],
+"source-repository.html#autotoc_md11":[4,0,0,1],
+"source-repository.html#autotoc_md12":[4,0,0,2],
+"source-repository.html#autotoc_md9":[4,0,0],
 "stacktrace-support.html":[1,6],
-"stacktrace-support.html#autotoc_md18":[1,6,0],
+"stacktrace-support.html#autotoc_md19":[1,6,0],
 "stream_8h.html":[6,3,0,1,0,0,0,38],
 "stream_8h.html#a4af7d0bc66fb5c5ff6da1b97e065652f":[6,3,0,1,0,0,0,38,4],
 "stream_8h_source.html":[6,3,0,1,0,0,0,38],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "structlog4cxx_1_1Level_1_1Data.html#ac231384701d0f99886ff9141c929c775":[6,1,0,0,27,0,3],
 "structlog4cxx_1_1Level_1_1Data.html#ac231384701d0f99886ff9141c929c775":[6,2,0,0,26,0,3],
 "structlog4cxx_1_1Level_1_1Data.html#acb3ff33afd294fdabed3d43f44ecf981":[6,1,0,0,27,0,2],
-"structlog4cxx_1_1Level_1_1Data.html#acb3ff33afd294fdabed3d43f44ecf981":[6,2,0,0,26,0,2],
-"structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html":[6,1,0,0,3,78,0]
+"structlog4cxx_1_1Level_1_1Data.html#acb3ff33afd294fdabed3d43f44ecf981":[6,2,0,0,26,0,2]
 };
