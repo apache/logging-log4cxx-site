@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html":[6,1,0,0,3,78,0],
 "structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html":[6,2,0,0,3,77,0],
 "structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html#a1966a301290dc2d61631132de33a08e6":[6,1,0,0,3,78,0,1],
 "structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html#a1966a301290dc2d61631132de33a08e6":[6,2,0,0,3,77,0,1],

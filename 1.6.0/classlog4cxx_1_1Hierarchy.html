@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a56a49ebb026babefa6c7652f7eb5bc87" id="r_a56a49ebb026babefa6c7652f7eb5bc87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56a49ebb026babefa6c7652f7eb5bc87">removeHierarchyEventListener</a> (const spi::HierarchyEventListenerPtr &amp;listener)</td></tr>
 <tr class="memdesc:a56a49ebb026babefa6c7652f7eb5bc87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously added HierarchyEventListener.  <br /></td></tr>
 <tr class="memitem:a0af9204d7eac97b5bfdf9dc98d43136f" id="r_a0af9204d7eac97b5bfdf9dc98d43136f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0af9204d7eac97b5bfdf9dc98d43136f">ensureIsConfigured</a> (std::function&lt; void()&gt; configurator) override</td></tr>
-<tr class="memdesc:a0af9204d7eac97b5bfdf9dc98d43136f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <code>configurator</code> if not yet configured.  <br /></td></tr>
+<tr class="memdesc:a0af9204d7eac97b5bfdf9dc98d43136f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <code>configurator</code> if not yet configured and <code>configurator</code> has not already been tried.  <br /></td></tr>
 <tr class="memitem:ae48a5e903ef9a74d2951521bf8d2e590" id="r_ae48a5e903ef9a74d2951521bf8d2e590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae48a5e903ef9a74d2951521bf8d2e590">clear</a> ()</td></tr>
 <tr class="memdesc:ae48a5e903ef9a74d2951521bf8d2e590"><td class="mdescLeft">&#160;</td><td class="mdescRight">This call will clear all logger definitions from the internal hashtable.  <br /></td></tr>
 <tr class="memitem:a485a024cafc9d627164bd706065bd756" id="r_a485a024cafc9d627164bd706065bd756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a485a024cafc9d627164bd706065bd756">emitNoAppenderWarning</a> (const <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> *logger) override</td></tr>
@@ -360,7 +360,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Call <code>configurator</code> if not yet configured. </p>
+<p>Call <code>configurator</code> if not yet configured and <code>configurator</code> has not already been tried. </p>
+<p>If <code>configurator</code> succeeds, it must call LoggerRepository::setConfigured to ensure subsequent calls to LoggerRepository::ensureIsConfigured from overwriting the configuration. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1">log4cxx::spi::LoggerRepository</a>.</p>
 
