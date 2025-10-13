@@ -17,7 +17,7 @@ var searchData=
   ['hierarchyeventlistener_14',['HierarchyEventListener',['../classlog4cxx_1_1spi_1_1HierarchyEventListener.html',1,'log4cxx::spi']]],
   ['hierarchyeventlistener_2eh_15',['hierarchyeventlistener.h',['../hierarchyeventlistener_8h.html',1,'']]],
   ['history_16',['Release History',['../changelog.html#history',1,'']]],
-  ['hold_20data_17',['Use of class-specific structs to hold data.',['../library-design.html#autotoc_md13',1,'']]],
+  ['hold_20data_17',['Use of class-specific structs to hold data.',['../library-design.html#autotoc_md12',1,'']]],
   ['how_20do_20i_20add_20a_20custom_20level_20to_20apache_20log4cxx_18',['How do I add a custom level to Apache Log4cxx?',['../faq.html#custom_levels',1,'']]],
   ['how_20do_20i_20use_20log4cxx_20with_20cmake_19',['How do I use Log4cxx with CMake?',['../buildsystems.html#use_with_cmake',1,'']]],
   ['how_20do_20i_20use_20log4cxx_20with_20cmake_20and_20pkg_20config_20',['How do I use Log4cxx with CMake and pkg-config?',['../buildsystems.html#use_with_cmake_pkgconfig',1,'']]],

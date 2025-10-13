@@ -117,9 +117,13 @@ $(function(){initNavTree('classlog4cxx_1_1BasicConfigurator.html','','classlog4c
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3fa54f4589f908a886576c1bba3f113d" id="r_a3fa54f4589f908a886576c1bba3f113d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fa54f4589f908a886576c1bba3f113d">configure</a> (const <a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> &amp;layout=<a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a>())</td></tr>
-<tr class="memdesc:a3fa54f4589f908a886576c1bba3f113d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classlog4cxx_1_1ConsoleAppender.html" title="ConsoleAppender appends log events to stdout or stderr using a layout specified by the user.">ConsoleAppender</a> to the root logger that formats output using <code>layout</code>.  <br /></td></tr>
+<tr class="memdesc:a3fa54f4589f908a886576c1bba3f113d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classlog4cxx_1_1ConsoleAppender.html" title="ConsoleAppender appends log events to stdout or stderr using a layout specified by the user.">ConsoleAppender</a> that formats output using <code>layout</code> to the root logger.  <br /></td></tr>
 <tr class="memitem:a7ef636c261884a91b8b080b70282ba84" id="r_a7ef636c261884a91b8b080b70282ba84"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ef636c261884a91b8b080b70282ba84">configure</a> (const <a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a> &amp;appender)</td></tr>
 <tr class="memdesc:a7ef636c261884a91b8b080b70282ba84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>appender</code> to the root logger.  <br /></td></tr>
+<tr class="memitem:aaf8f153d40ba5460e7c1a67b5036e5cb" id="r_aaf8f153d40ba5460e7c1a67b5036e5cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf8f153d40ba5460e7c1a67b5036e5cb">configureAsync</a> (const <a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> &amp;layout=<a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a>())</td></tr>
+<tr class="memdesc:aaf8f153d40ba5460e7c1a67b5036e5cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classlog4cxx_1_1ConsoleAppender.html" title="ConsoleAppender appends log events to stdout or stderr using a layout specified by the user.">ConsoleAppender</a> that formats output using <code>layout</code> to an <a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender decouples logging event creation from output by processing log events asynchronousl...">AsyncAppender</a> attacted the root logger.  <br /></td></tr>
+<tr class="memitem:a153280549de63e5a9469e6ab705ae628" id="r_a153280549de63e5a9469e6ab705ae628"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a153280549de63e5a9469e6ab705ae628">configureAsync</a> (const <a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a> &amp;appender)</td></tr>
+<tr class="memdesc:a153280549de63e5a9469e6ab705ae628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>appender</code> to an <a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender decouples logging event creation from output by processing log events asynchronousl...">AsyncAppender</a> attacted to the root logger.  <br /></td></tr>
 <tr class="memitem:a198da1e973202ce4efd0da9fbee61f5f" id="r_a198da1e973202ce4efd0da9fbee61f5f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a198da1e973202ce4efd0da9fbee61f5f">resetConfiguration</a> ()</td></tr>
 <tr class="memdesc:a198da1e973202ce4efd0da9fbee61f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the default hierarchy to its defaut.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -213,13 +217,77 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Add a <a class="el" href="classlog4cxx_1_1ConsoleAppender.html" title="ConsoleAppender appends log events to stdout or stderr using a layout specified by the user.">ConsoleAppender</a> to the root logger that formats output using <code>layout</code>. </p>
+<p>Add a <a class="el" href="classlog4cxx_1_1ConsoleAppender.html" title="ConsoleAppender appends log events to stdout or stderr using a layout specified by the user.">ConsoleAppender</a> that formats output using <code>layout</code> to the root logger. </p>
 <p>If <code>layout</code> is not provided, use a <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> with the conversion pattern:</p><ul>
 <li><code>%r [%t] %p %c %x - %Y%m%y%n</code> if color is enabled (the default)</li>
 <li><code>%r [%t] %p %c %x - %m%n</code> if <a href="disabling-color.html">color is disabled</a> </li>
 </ul>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="com_2foo_2config-qt_8cpp-example.html#_a4">com/foo/config-qt.cpp</a>, <a class="el" href="com_2foo_2config1_8cpp-example.html#_a0">com/foo/config1.cpp</a>, <a class="el" href="com_2foo_2config3_8cpp-example.html#_a11">com/foo/config3.cpp</a>, <a class="el" href="com_2foo_2config4_8cpp-example.html#_a6">com/foo/config4.cpp</a>, <a class="el" href="format-string_8cpp-example.html#_a1">format-string.cpp</a>, and <a class="el" href="ndc-example_8cpp-example.html#_a0">ndc-example.cpp</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="a153280549de63e5a9469e6ab705ae628" name="a153280549de63e5a9469e6ab705ae628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a153280549de63e5a9469e6ab705ae628">&#9670;&#160;</a></span>configureAsync() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::BasicConfigurator::configureAsync </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add <code>appender</code> to an <a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender decouples logging event creation from output by processing log events asynchronousl...">AsyncAppender</a> attacted to the root logger. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appender</td><td>The appender that asynchronously formats output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaf8f153d40ba5460e7c1a67b5036e5cb" name="aaf8f153d40ba5460e7c1a67b5036e5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf8f153d40ba5460e7c1a67b5036e5cb">&#9670;&#160;</a></span>configureAsync() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::BasicConfigurator::configureAsync </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>layout</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a>()</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a <a class="el" href="classlog4cxx_1_1ConsoleAppender.html" title="ConsoleAppender appends log events to stdout or stderr using a layout specified by the user.">ConsoleAppender</a> that formats output using <code>layout</code> to an <a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender decouples logging event creation from output by processing log events asynchronousl...">AsyncAppender</a> attacted the root logger. </p>
+<p>If <code>layout</code> is not provided, use a <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> with the conversion pattern:</p><ul>
+<li><code>%r [%t] %p %c %x - %Y%m%y%n</code> if color is enabled (the default)</li>
+<li><code>%r [%t] %p %c %x - %m%n</code> if <a href="disabling-color.html">color is disabled</a> </li>
+</ul>
 
 </div>
 </div>

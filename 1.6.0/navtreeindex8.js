@@ -1,5 +1,17 @@
 var NAVTREEINDEX8 =
 {
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a0e15fe74cf59aefd15ba9e2b03bbbecb":[6,1,0,0,3,49,0],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a0e15fe74cf59aefd15ba9e2b03bbbecb":[6,2,0,0,3,48,0],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a1e6aa7d8ef10319e948573d1005359a4":[6,1,0,0,3,49,10],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a1e6aa7d8ef10319e948573d1005359a4":[6,2,0,0,3,48,10],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a4a0220ab3e6d2de7392bc8d147a825b3":[6,1,0,0,3,49,7],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a4a0220ab3e6d2de7392bc8d147a825b3":[6,2,0,0,3,48,7],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a50193524062332ae6761c3d2ce413b15":[6,1,0,0,3,49,9],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a50193524062332ae6761c3d2ce413b15":[6,2,0,0,3,48,9],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a80b66c11e245c5234806532c744f621b":[6,1,0,0,3,49,6],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a80b66c11e245c5234806532c744f621b":[6,2,0,0,3,48,6],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#aaffab1f58b57a1c3cb171537908c0ee6":[6,1,0,0,3,49,4],
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#aaffab1f58b57a1c3cb171537908c0ee6":[6,2,0,0,3,48,4],
 "classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#ab891b9d8cd61af9c42c756a0b0eed289":[6,1,0,0,3,49,3],
 "classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#ab891b9d8cd61af9c42c756a0b0eed289":[6,2,0,0,3,48,3],
 "classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#ac5d52ac8008c33634a1682b1f14af303":[6,1,0,0,3,49,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX8 =
 "classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#aacbef348c00fe2918f1067941c84fd44":[6,1,0,0,3,68,3],
 "classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#aacbef348c00fe2918f1067941c84fd44":[6,2,0,0,3,67,3],
 "classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ad264f61b4206b0aebefb74a98733697b":[6,1,0,0,3,68,0],
-"classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ad264f61b4206b0aebefb74a98733697b":[6,2,0,0,3,67,0],
-"classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ae3934e795dc0f4038333de9d51dba0a8":[6,1,0,0,3,68,1],
-"classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ae3934e795dc0f4038333de9d51dba0a8":[6,2,0,0,3,67,1],
-"classlog4cxx_1_1helpers_1_1StrictMath.html":[6,1,0,0,3,69],
-"classlog4cxx_1_1helpers_1_1StrictMath.html":[6,2,0,0,3,68],
-"classlog4cxx_1_1helpers_1_1StringHelper.html":[6,1,0,0,3,70],
-"classlog4cxx_1_1helpers_1_1StringHelper.html":[6,2,0,0,3,69],
-"classlog4cxx_1_1helpers_1_1StringTokenizer.html":[6,1,0,0,3,71],
-"classlog4cxx_1_1helpers_1_1StringTokenizer.html":[6,2,0,0,3,70],
-"classlog4cxx_1_1helpers_1_1StringTokenizer.html#a03dd5dc70fad9188fa5bb9b533981fae":[6,1,0,0,3,71,1],
-"classlog4cxx_1_1helpers_1_1StringTokenizer.html#a03dd5dc70fad9188fa5bb9b533981fae":[6,2,0,0,3,70,1],
-"classlog4cxx_1_1helpers_1_1StringTokenizer.html#a04c462e9722eacfb96a4adbe627b112d":[6,1,0,0,3,71,3],
-"classlog4cxx_1_1helpers_1_1StringTokenizer.html#a04c462e9722eacfb96a4adbe627b112d":[6,2,0,0,3,70,3]
+"classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ad264f61b4206b0aebefb74a98733697b":[6,2,0,0,3,67,0]
 };

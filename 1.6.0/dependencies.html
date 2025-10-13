@@ -125,15 +125,15 @@ $(function(){initNavTree('dependencies.html','',''); });
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">zip  </td><td class="markdownTableBodyNone">any  </td><td class="markdownTableBodyNone">Test/Runtime(optional)  </td><td class="markdownTableBodyNone">N/A  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 APR+APR-Util</h1>
 <p>The Apache Portable Runtime(APR) provides the cross-platform backend for <a class="el" href="namespacelog4cxx.html">log4cxx</a>. Both APR and APR-util need to be installed and available on your system.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 sed+gzip+zip</h1>
 <p>These applications are needed during test of <a class="el" href="namespacelog4cxx.html">log4cxx</a>. <span class="tt">gzip</span>and <span class="tt">sed</span> are generally installed by default on Linux. <span class="tt">zip</span> may not be installed by default; check your distribution's documentation for information on how to install these applications.</p>
 <p>For Windows, you will have to install those tools through a system such as MinGW, cygwin, or MSYS2.</p>
 <p><span class="tt">gzip</span> and <span class="tt">zip</span> only needed during runtime if you are compressing the log files, for example by setting a rollover policy which ends in <span class="tt">.gz</span> or <span class="tt">.zip</span>.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 Optional Dependencies</h1>
 <p>The following table lists CMake options that require additional dependencies.</p>
 <table class="markdownTable">
@@ -152,14 +152,14 @@ Optional Dependencies</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">LOG4CXX_CFSTRING  </td><td class="markdownTableBodyNone">Mac OS/X Core Foundation  </td><td class="markdownTableBodyCenter">any  </td><td class="markdownTableBodyNone">Compile/runtime  </td><td class="markdownTableBodyNone"><a href="https://developer.apple.com/documentation/corefoundation">https://developer.apple.com/documentation/corefoundation</a>  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
 A note on C++ version and Boost</h2>
 <p>By default, Log4cxx requests C++20 features. This is to avoid 3rd party dependencies as much as possible. If C++17 is not available, a search for Boost will be taken and those libraries will be used instead. If you would prefer to use Boost, there are two options you have:</p>
 <ol type="1">
 <li>Pass <span class="tt">-DPREFER_BOOST=ON</span> to CMake when compiling. This will ignore the results of the tests that check for the standard version of components that are required. Note that this will switch all components, regardless of the C++ version in effect at compile time.</li>
 <li>Revert to an earlier standard using <span class="tt">-DCMAKE_CXX_STANDARD=11</span> for example. This will still to check for standard versions of required components, but it will fall back to using Boost for newer components added in C++17.</li>
 </ol>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
 Licenses(direct dependencies only)</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">

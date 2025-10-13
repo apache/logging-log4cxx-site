@@ -1,5 +1,17 @@
 var NAVTREEINDEX9 =
 {
+"classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ae3934e795dc0f4038333de9d51dba0a8":[6,1,0,0,3,68,1],
+"classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ae3934e795dc0f4038333de9d51dba0a8":[6,2,0,0,3,67,1],
+"classlog4cxx_1_1helpers_1_1StrictMath.html":[6,1,0,0,3,69],
+"classlog4cxx_1_1helpers_1_1StrictMath.html":[6,2,0,0,3,68],
+"classlog4cxx_1_1helpers_1_1StringHelper.html":[6,1,0,0,3,70],
+"classlog4cxx_1_1helpers_1_1StringHelper.html":[6,2,0,0,3,69],
+"classlog4cxx_1_1helpers_1_1StringTokenizer.html":[6,1,0,0,3,71],
+"classlog4cxx_1_1helpers_1_1StringTokenizer.html":[6,2,0,0,3,70],
+"classlog4cxx_1_1helpers_1_1StringTokenizer.html#a03dd5dc70fad9188fa5bb9b533981fae":[6,1,0,0,3,71,1],
+"classlog4cxx_1_1helpers_1_1StringTokenizer.html#a03dd5dc70fad9188fa5bb9b533981fae":[6,2,0,0,3,70,1],
+"classlog4cxx_1_1helpers_1_1StringTokenizer.html#a04c462e9722eacfb96a4adbe627b112d":[6,1,0,0,3,71,3],
+"classlog4cxx_1_1helpers_1_1StringTokenizer.html#a04c462e9722eacfb96a4adbe627b112d":[6,2,0,0,3,70,3],
 "classlog4cxx_1_1helpers_1_1StringTokenizer.html#a27e11e16a87ed00d20dd289c4744af7e":[6,1,0,0,3,71,0],
 "classlog4cxx_1_1helpers_1_1StringTokenizer.html#a27e11e16a87ed00d20dd289c4744af7e":[6,2,0,0,3,70,0],
 "classlog4cxx_1_1helpers_1_1StringTokenizer.html#a2f13cd9dc08a6fe5f51f5aaab0deb646":[6,1,0,0,3,71,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX9 =
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8a395239cae620275e9b0de8d03b5f5a":[6,1,0,0,3,87,12],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8a395239cae620275e9b0de8d03b5f5a":[6,2,0,0,3,86,12],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9982995b17d8e9aff4fd84d657db0837":[6,1,0,0,3,87,5],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9982995b17d8e9aff4fd84d657db0837":[6,2,0,0,3,86,5],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9bf72125f64738358fc982d465b9a66b":[6,1,0,0,3,87,9],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9bf72125f64738358fc982d465b9a66b":[6,2,0,0,3,86,9],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9d23d72920d59ec321c358f60c8184e6":[6,1,0,0,3,87,7],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9d23d72920d59ec321c358f60c8184e6":[6,2,0,0,3,86,7],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#aa34e3213fd30cd56b74936c7dcd8de16":[6,1,0,0,3,87,17],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#aa34e3213fd30cd56b74936c7dcd8de16":[6,2,0,0,3,86,17],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#ab37b9a311a707d67e8f3e890dc3c9a9c":[6,1,0,0,3,87,18],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#ab37b9a311a707d67e8f3e890dc3c9a9c":[6,2,0,0,3,86,18],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#abf96f11e511de411909093fb0b93a63d":[6,1,0,0,3,87,19],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#abf96f11e511de411909093fb0b93a63d":[6,2,0,0,3,86,19],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#ad4ba1527c21efe0a48e0c6a8d828edbf":[6,1,0,0,3,87,20],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#ad4ba1527c21efe0a48e0c6a8d828edbf":[6,2,0,0,3,86,20]
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9982995b17d8e9aff4fd84d657db0837":[6,2,0,0,3,86,5]
 };
