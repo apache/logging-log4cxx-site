@@ -1,5 +1,17 @@
 var NAVTREEINDEX12 =
 {
+"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aa93ccd1e435242632dbe0496cc311c49":[6,1,0,0,6,10,2],
+"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aa93ccd1e435242632dbe0496cc311c49":[6,2,0,0,6,10,2],
+"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,1,0,0,6,10,1],
+"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,2,0,0,6,10,1],
+"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html":[6,1,0,0,6,11],
+"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html":[6,2,0,0,6,11],
+"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#a32ad24f2aae844476b699f67ae24a15f":[6,1,0,0,6,11,2],
+"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#a32ad24f2aae844476b699f67ae24a15f":[6,2,0,0,6,11,2],
+"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#a828f1ccf4c9304273ca9d017716a122f":[6,1,0,0,6,11,0],
+"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#a828f1ccf4c9304273ca9d017716a122f":[6,2,0,0,6,11,0],
+"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,1,0,0,6,11,1],
+"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,2,0,0,6,11,1],
 "classlog4cxx_1_1pattern_1_1LineSeparatorPatternConverter.html":[6,1,0,0,6,12],
 "classlog4cxx_1_1pattern_1_1LineSeparatorPatternConverter.html":[6,2,0,0,6,12],
 "classlog4cxx_1_1pattern_1_1LineSeparatorPatternConverter.html#a9963968742b93e1021855c973db60231":[6,1,0,0,6,12,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX12 =
 "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a0e6995586d7438f5d3bc6d2693ebedc1":[6,1,0,0,8,6,4],
 "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a0e6995586d7438f5d3bc6d2693ebedc1":[6,2,0,0,8,6,4],
 "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a2ead30702a791fc7eb21695f2838189a":[6,1,0,0,8,6,2],
-"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a2ead30702a791fc7eb21695f2838189a":[6,2,0,0,8,6,2],
-"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#adcc9d0204390488b57354e6705cfce8f":[6,1,0,0,8,6,3],
-"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#adcc9d0204390488b57354e6705cfce8f":[6,2,0,0,8,6,3],
-"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#ae67688da6bffadcb13d3fbf285f3e547":[6,1,0,0,8,6,0],
-"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#ae67688da6bffadcb13d3fbf285f3e547":[6,2,0,0,8,6,0],
-"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#af50d04b0cd1b1dea0072abb3f6fa83ce":[6,1,0,0,8,6,1],
-"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#af50d04b0cd1b1dea0072abb3f6fa83ce":[6,2,0,0,8,6,1],
-"classlog4cxx_1_1rolling_1_1RollingFileAppender.html":[6,1,0,0,8,7],
-"classlog4cxx_1_1rolling_1_1RollingFileAppender.html":[6,2,0,0,8,7],
-"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a17a2b2722b7f24950d22664c0be658ca":[6,1,0,0,8,7,20],
-"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a17a2b2722b7f24950d22664c0be658ca":[6,2,0,0,8,7,20],
-"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a1a3a727f036d45eb1209d9616a3ccafb":[6,1,0,0,8,7,7],
-"classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a1a3a727f036d45eb1209d9616a3ccafb":[6,2,0,0,8,7,7]
+"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a2ead30702a791fc7eb21695f2838189a":[6,2,0,0,8,6,2]
 };

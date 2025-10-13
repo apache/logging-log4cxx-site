@@ -110,6 +110,7 @@ $(function(){initNavTree('performance.html','',''); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_src_2site_2markdown_2performance"></a></p>
 <p>One important question with a logging library is: is it fast enough? While Log4cxx may not be the fastest logging implementation, it is more than fast enough for the vast majority of cases.</p>
+<p>Using Log4cxx 1.6 you can even use microsecond timestamps in TRACE level logging messages to quickly get a sense of where your application's workload is concentrated. The LOG4CXX_XXXX_ASYNC macros in Log4cxx 1.6 just capture values in a buffer and by adding the new <a href="configuration-files.html#asynch-output">asynchronous output setting</a> to your configuration file, the values are converted to text in a background thread. That combination prevents TRACE level logging being the dominate CPU load of your application's thread and provides the lowest overhead logging in the history of Log4cxx.</p>
 <p>While Log4cxx can generate 2,000,000 log messages/second, skipping a disabled logging request requires only a few nano-seconds, so application performance is not affected when logging requests are not removed from the release build.</p>
 <p>Benchmark testing shows MessageBuffer (i.e. std::stringstream) filling consumes the majority of CPU time when the logging request is not disabled. For the best performance, use the <span class="tt">LOG4CXX_[level]_FMT</span> series of macros, as the <a href="https://fmt.dev/latest/index.html">{fmt}</a> library they use is significantly faster (up to twice as fast as <span class="tt">operator&lt;&lt;</span>). Note that you must include the headers from {fmt} manually.</p>
 <p>These two pieces of logging code are logically equivalent(printing out the same
@@ -179,13 +180,13 @@ Load Average: 0.07, 0.03, 0.01
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Appending int+10float using FMT, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">1275 ns  </td><td class="markdownTableBodyRight">7297 ns  </td><td class="markdownTableBodyRight">96222  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Async, Sending int+10float using FMT  </td><td class="markdownTableBodyRight">2190 ns  </td><td class="markdownTableBodyRight">2190 ns  </td><td class="markdownTableBodyRight">320109  </td></tr>
+<td class="markdownTableBodyNone">Async, Sending int+10float using FMT and AsyncBuffer  </td><td class="markdownTableBodyRight">784 ns  </td><td class="markdownTableBodyRight">783 ns  </td><td class="markdownTableBodyRight">891953  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Async, Sending int+10float using FMT/threads:6  </td><td class="markdownTableBodyRight">1363 ns  </td><td class="markdownTableBodyRight">7862 ns  </td><td class="markdownTableBodyRight">84306  </td></tr>
+<td class="markdownTableBodyNone">Async, Sending int+10float using FMT and AsyncBuffer/threads:6  </td><td class="markdownTableBodyRight">1375 ns  </td><td class="markdownTableBodyRight">7692 ns  </td><td class="markdownTableBodyRight">88554  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Async, Sending int+10float using AsyncBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">1226 ns  </td><td class="markdownTableBodyRight">1226 ns  </td><td class="markdownTableBodyRight">571351  </td></tr>
+<td class="markdownTableBodyNone">Async, Sending int+10float using operator&lt;&lt; and AsyncBuffer, pattern: %m%n  </td><td class="markdownTableBodyRight">1211 ns  </td><td class="markdownTableBodyRight">1211 ns  </td><td class="markdownTableBodyRight">578034  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Async, Sending int+10float using AsyncBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">1398 ns  </td><td class="markdownTableBodyRight">7902 ns  </td><td class="markdownTableBodyRight">89688  </td></tr>
+<td class="markdownTableBodyNone">Async, Sending int+10float using operator&lt;&lt; and AsyncBuffer, pattern: %m%n/threads:6  </td><td class="markdownTableBodyRight">1351 ns  </td><td class="markdownTableBodyRight">7670 ns  </td><td class="markdownTableBodyRight">90912  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Logging int+float using MessageBuffer, pattern: %d %m%n  </td><td class="markdownTableBodyRight">1073 ns  </td><td class="markdownTableBodyRight">1073 ns  </td><td class="markdownTableBodyRight">656652  </td></tr>
 <tr class="markdownTableRowEven">

@@ -207,5 +207,5 @@ var searchData=
   ['google_20oss_20fuzz_204',['Google OSS-Fuzz',['../fuzzing.html#oss-fuzz',1,'']]],
   ['gzcompressaction_205',['GZCompressAction',['../classlog4cxx_1_1rolling_1_1GZCompressAction.html',1,'log4cxx::rolling::GZCompressAction'],['../classlog4cxx_1_1rolling_1_1GZCompressAction.html#ac8362ef06e6376e6e0d28c7e016686e7',1,'log4cxx::rolling::GZCompressAction::GZCompressAction()']]],
   ['gzcompressaction_2eh_206',['gzcompressaction.h',['../gzcompressaction_8h.html',1,'']]],
-  ['gzip_20zip_207',['sed+gzip+zip',['../dependencies.html#autotoc_md5',1,'']]]
+  ['gzip_20zip_207',['sed+gzip+zip',['../dependencies.html#autotoc_md4',1,'']]]
 ];

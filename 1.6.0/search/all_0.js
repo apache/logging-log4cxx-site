@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['0_0',['Download Apache Log4cxx 1.6.0',['../download.html#autotoc_md22',1,'']]],
+  ['0_0',['Download Apache Log4cxx 1.6.0',['../download.html#autotoc_md21',1,'']]],
   ['0_200_201_202003_2005_2031_1',['Release 0.0.1 - 2003-05-31',['../changelog.html#rel_0_1',1,'']]],
   ['0_200_202023_2001_2001_2',['Release 1.0.0 - 2023-01-01',['../changelog.html#rel_1_0_0',1,'']]],
   ['0_201_200_202003_2007_2008_3',['Release 0.1.0 - 2003-07-08',['../changelog.html#rel_1_0',1,'']]],

@@ -1,1 +1,1 @@
-document.getElementById('site-published-date').textContent = 'Fri Oct 03 2025';
+document.getElementById('site-published-date').textContent = 'Mon Oct 13 2025';

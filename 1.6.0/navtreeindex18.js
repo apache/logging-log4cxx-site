@@ -1,5 +1,18 @@
 var NAVTREEINDEX18 =
 {
+"structlog4cxx_1_1Level_1_1Data.html#a1cbee393cbeec6d14163c191409ffd04":[6,2,0,0,26,0,4],
+"structlog4cxx_1_1Level_1_1Data.html#a1d5ad77ea14305761d07d7f046bbac1c":[6,1,0,0,27,0,0],
+"structlog4cxx_1_1Level_1_1Data.html#a1d5ad77ea14305761d07d7f046bbac1c":[6,2,0,0,26,0,0],
+"structlog4cxx_1_1Level_1_1Data.html#a6d76e7ac97c26a5744e80b486c0dc9d6":[6,1,0,0,27,0,6],
+"structlog4cxx_1_1Level_1_1Data.html#a6d76e7ac97c26a5744e80b486c0dc9d6":[6,2,0,0,26,0,6],
+"structlog4cxx_1_1Level_1_1Data.html#aa847629e8a50e5ccf092fd0168f71759":[6,1,0,0,27,0,7],
+"structlog4cxx_1_1Level_1_1Data.html#aa847629e8a50e5ccf092fd0168f71759":[6,2,0,0,26,0,7],
+"structlog4cxx_1_1Level_1_1Data.html#aab3de6958d24613d5a2480c026c99295":[6,1,0,0,27,0,5],
+"structlog4cxx_1_1Level_1_1Data.html#aab3de6958d24613d5a2480c026c99295":[6,2,0,0,26,0,5],
+"structlog4cxx_1_1Level_1_1Data.html#ac231384701d0f99886ff9141c929c775":[6,1,0,0,27,0,3],
+"structlog4cxx_1_1Level_1_1Data.html#ac231384701d0f99886ff9141c929c775":[6,2,0,0,26,0,3],
+"structlog4cxx_1_1Level_1_1Data.html#acb3ff33afd294fdabed3d43f44ecf981":[6,1,0,0,27,0,2],
+"structlog4cxx_1_1Level_1_1Data.html#acb3ff33afd294fdabed3d43f44ecf981":[6,2,0,0,26,0,2],
 "structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html":[6,1,0,0,3,78,0],
 "structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html":[6,2,0,0,3,77,0],
 "structlog4cxx_1_1helpers_1_1ThreadSpecificData_1_1NamePair.html#a1966a301290dc2d61631132de33a08e6":[6,1,0,0,3,78,0,1],

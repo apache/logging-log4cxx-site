@@ -114,6 +114,13 @@ $(function(){initNavTree('classlog4cxx_1_1helpers_1_1AsyncBuffer.html','','class
 
 <p><code>#include &lt;<a class="el" href="asyncbuffer_8h_source.html">asyncbuffer.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aef73ad1ad617d1cccc8c554904cd96d9" id="r_aef73ad1ad617d1cccc8c554904cd96d9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef73ad1ad617d1cccc8c554904cd96d9">StringViewType</a> = fmt::basic_string_view&lt;char&gt;</td></tr>
+<tr class="memitem:a11af09304dfcc2f0e8e5c9f5f008bcf2" id="r_a11af09304dfcc2f0e8e5c9f5f008bcf2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11af09304dfcc2f0e8e5c9f5f008bcf2">FmtArgStore</a> = fmt::dynamic_format_arg_store&lt;fmt::format_context&gt;</td></tr>
+<tr class="memitem:a321997bb6e7cdf184f41b8109face552" id="r_a321997bb6e7cdf184f41b8109face552"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a321997bb6e7cdf184f41b8109face552">WideStringViewType</a> = fmt::basic_string_view&lt;wchar_t&gt;</td></tr>
+<tr class="memitem:a327a6b9b67b4bd28f9fa8b8cb8b803f0" id="r_a327a6b9b67b4bd28f9fa8b8cb8b803f0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a327a6b9b67b4bd28f9fa8b8cb8b803f0">WideFmtArgStore</a> = fmt::dynamic_format_arg_store&lt;fmt::wformat_context&gt;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abea2a65e03d4f5547d073a0ecf46a7c3" id="r_abea2a65e03d4f5547d073a0ecf46a7c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abea2a65e03d4f5547d073a0ecf46a7c3">AsyncBuffer</a> ()</td></tr>
@@ -127,15 +134,76 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adc81e4a02bcf2f8485d044dda0d19eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a function to this buffer that will convert <code>value</code> to text.  <br /></td></tr>
 <tr class="memitem:a0f3e9b082996b32f3d72a09ae0015967" id="r_a0f3e9b082996b32f3d72a09ae0015967"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f3e9b082996b32f3d72a09ae0015967">empty</a> () const</td></tr>
 <tr class="memdesc:a0f3e9b082996b32f3d72a09ae0015967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has no item been added to this?  <br /></td></tr>
-<tr class="memitem:abde62603aaf1c807aba95e1cbeefff43" id="r_abde62603aaf1c807aba95e1cbeefff43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abde62603aaf1c807aba95e1cbeefff43">renderMessage</a> (LogCharMessageBuffer &amp;msg)</td></tr>
-<tr class="memdesc:abde62603aaf1c807aba95e1cbeefff43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add text version of buffered values to <code>msg</code>.  <br /></td></tr>
+<tr class="memitem:a4838cbeb0b442af0107f5da28fcce226" id="r_a4838cbeb0b442af0107f5da28fcce226"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4838cbeb0b442af0107f5da28fcce226">renderMessage</a> (LogCharMessageBuffer &amp;msg) const</td></tr>
+<tr class="memdesc:a4838cbeb0b442af0107f5da28fcce226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add text version of buffered values to <code>msg</code>.  <br /></td></tr>
 <tr class="memitem:ae403f6469523360d887618aef5aa640e" id="r_ae403f6469523360d887618aef5aa640e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae403f6469523360d887618aef5aa640e">clear</a> ()</td></tr>
 <tr class="memdesc:ae403f6469523360d887618aef5aa640e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all message appenders.  <br /></td></tr>
+<tr class="memitem:a4366862bb1eaaf839fd719f4ec083eed" id="r_a4366862bb1eaaf839fd719f4ec083eed"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a4366862bb1eaaf839fd719f4ec083eed template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4366862bb1eaaf839fd719f4ec083eed">setMessage</a> (fmt::format_string&lt; Args... &gt; fmt_str, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:ac2a58c728d5ddd6a54372afc55a73e79" id="r_ac2a58c728d5ddd6a54372afc55a73e79"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ac2a58c728d5ddd6a54372afc55a73e79 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2a58c728d5ddd6a54372afc55a73e79">setMessage</a> (fmt::wformat_string&lt; Args... &gt; fmt_str, Args &amp;&amp;... args)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is used by the LOG4CXX_INFO_ASYNC and similar macros to support insertion operators. </p>
 <p>The class is not intended for use outside of that context. </p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a id="a11af09304dfcc2f0e8e5c9f5f008bcf2" name="a11af09304dfcc2f0e8e5c9f5f008bcf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11af09304dfcc2f0e8e5c9f5f008bcf2">&#9670;&#160;</a></span>FmtArgStore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a11af09304dfcc2f0e8e5c9f5f008bcf2">log4cxx::helpers::AsyncBuffer::FmtArgStore</a> = fmt::dynamic_format_arg_store&lt;fmt::format_context&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef73ad1ad617d1cccc8c554904cd96d9" name="aef73ad1ad617d1cccc8c554904cd96d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef73ad1ad617d1cccc8c554904cd96d9">&#9670;&#160;</a></span>StringViewType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aef73ad1ad617d1cccc8c554904cd96d9">log4cxx::helpers::AsyncBuffer::StringViewType</a> = fmt::basic_string_view&lt;char&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a327a6b9b67b4bd28f9fa8b8cb8b803f0" name="a327a6b9b67b4bd28f9fa8b8cb8b803f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327a6b9b67b4bd28f9fa8b8cb8b803f0">&#9670;&#160;</a></span>WideFmtArgStore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a327a6b9b67b4bd28f9fa8b8cb8b803f0">log4cxx::helpers::AsyncBuffer::WideFmtArgStore</a> = fmt::dynamic_format_arg_store&lt;fmt::wformat_context&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a321997bb6e7cdf184f41b8109face552" name="a321997bb6e7cdf184f41b8109face552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a321997bb6e7cdf184f41b8109face552">&#9670;&#160;</a></span>WideStringViewType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a321997bb6e7cdf184f41b8109face552">log4cxx::helpers::AsyncBuffer::WideStringViewType</a> = fmt::basic_string_view&lt;wchar_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abea2a65e03d4f5547d073a0ecf46a7c3" name="abea2a65e03d4f5547d073a0ecf46a7c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abea2a65e03d4f5547d073a0ecf46a7c3">&#9670;&#160;</a></span>AsyncBuffer() <span class="overload">[1/2]</span></h2>
 
@@ -268,8 +336,8 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a id="abde62603aaf1c807aba95e1cbeefff43" name="abde62603aaf1c807aba95e1cbeefff43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abde62603aaf1c807aba95e1cbeefff43">&#9670;&#160;</a></span>renderMessage()</h2>
+<a id="a4838cbeb0b442af0107f5da28fcce226" name="a4838cbeb0b442af0107f5da28fcce226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4838cbeb0b442af0107f5da28fcce226">&#9670;&#160;</a></span>renderMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,12 +346,74 @@ template&lt;typename T&gt; </div>
           <td class="memname">void log4cxx::helpers::AsyncBuffer::renderMessage </td>
           <td>(</td>
           <td class="paramtype">LogCharMessageBuffer &amp;</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Add text version of buffered values to <code>msg</code>. </p>
+
+</div>
+</div>
+<a id="a4366862bb1eaaf839fd719f4ec083eed" name="a4366862bb1eaaf839fd719f4ec083eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4366862bb1eaaf839fd719f4ec083eed">&#9670;&#160;</a></span>setMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::helpers::AsyncBuffer::setMessage </td>
+          <td>(</td>
+          <td class="paramtype">fmt::format_string&lt; Args... &gt;</td>          <td class="paramname"><span class="paramname"><em>fmt_str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2a58c728d5ddd6a54372afc55a73e79" name="ac2a58c728d5ddd6a54372afc55a73e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a58c728d5ddd6a54372afc55a73e79">&#9670;&#160;</a></span>setMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::helpers::AsyncBuffer::setMessage </td>
+          <td>(</td>
+          <td class="paramtype">fmt::wformat_string&lt; Args... &gt;</td>          <td class="paramname"><span class="paramname"><em>fmt_str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

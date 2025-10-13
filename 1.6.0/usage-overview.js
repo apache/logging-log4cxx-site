@@ -34,7 +34,7 @@ var usage_overview =
     [ "Configuration Files", "configuration-files.html", [
       [ "Default Initialization Behaviour", "configuration-files.html#default-initialization", null ],
       [ "Runtime Property Values", "configuration-files.html#runtime-property-values", null ],
-      [ "Configuring a logger to use asynchronous output", "configuration-files.html#autotoc_md1", null ],
+      [ "Configuring a logger to use asynchronous output", "configuration-files.html#asynch-output", null ],
       [ "Configuration Samples", "configuration-files.html#configuration-samples", [
         [ "Properties Files", "configuration-files.html#properties", [
           [ "Properties Example 1", "configuration-files.html#properties-example-1", null ],
@@ -59,7 +59,7 @@ var usage_overview =
     [ "Extending Log4cxx", "extending-log4cxx.html", null ],
     [ "Qt Support", "qt-support.html", null ],
     [ "Stacktrace Support", "stacktrace-support.html", [
-      [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md19", null ]
+      [ "Putting the stacktrace into the MDC", "stacktrace-support.html#autotoc_md18", null ]
     ] ],
     [ "Threading", "threading.html", [
       [ "Unexpected Exit", "threading.html#unexpected-exit", null ],

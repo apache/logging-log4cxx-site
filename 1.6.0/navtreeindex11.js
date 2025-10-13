@@ -1,5 +1,17 @@
 var NAVTREEINDEX11 =
 {
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af39384a7c5711a82feb2a24feff7eff2":[6,1,0,0,4,1,17],
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af39384a7c5711a82feb2a24feff7eff2":[6,2,0,0,4,1,17],
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af5b33f3f5982ee581f7cf3b7b5827d57":[6,1,0,0,4,1,9],
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af5b33f3f5982ee581f7cf3b7b5827d57":[6,2,0,0,4,1,9],
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af6d66a058b8437caad40d7a507695998":[6,1,0,0,4,1,21],
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af6d66a058b8437caad40d7a507695998":[6,2,0,0,4,1,21],
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af73d82854bd06fbe49ddcd7ac44b628b":[6,1,0,0,4,1,16],
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af73d82854bd06fbe49ddcd7ac44b628b":[6,2,0,0,4,1,16],
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af994b879a6a9f747593803429b20670c":[6,1,0,0,4,1,10],
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af994b879a6a9f747593803429b20670c":[6,2,0,0,4,1,10],
+"classlog4cxx_1_1net_1_1SyslogAppender.html":[6,1,0,0,4,2],
+"classlog4cxx_1_1net_1_1SyslogAppender.html":[6,2,0,0,4,2],
 "classlog4cxx_1_1net_1_1SyslogAppender.html#a04d9cb5e765acce3b78bc6b7d3c1521a":[6,1,0,0,4,2,10],
 "classlog4cxx_1_1net_1_1SyslogAppender.html#a04d9cb5e765acce3b78bc6b7d3c1521a":[6,2,0,0,4,2,10],
 "classlog4cxx_1_1net_1_1SyslogAppender.html#a0eb70fdc4a59ccefff863a91013bf099":[6,1,0,0,4,2,15],
@@ -237,17 +249,5 @@ var NAVTREEINDEX11 =
 "classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#a346025457e7397606a36a28e14360a0b":[6,1,0,0,6,10,0],
 "classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#a346025457e7397606a36a28e14360a0b":[6,2,0,0,6,10,0],
 "classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#a3baf358baf7e44789811844b83869295":[6,1,0,0,6,10,3],
-"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#a3baf358baf7e44789811844b83869295":[6,2,0,0,6,10,3],
-"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aa93ccd1e435242632dbe0496cc311c49":[6,1,0,0,6,10,2],
-"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aa93ccd1e435242632dbe0496cc311c49":[6,2,0,0,6,10,2],
-"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,1,0,0,6,10,1],
-"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,2,0,0,6,10,1],
-"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html":[6,1,0,0,6,11],
-"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html":[6,2,0,0,6,11],
-"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#a32ad24f2aae844476b699f67ae24a15f":[6,1,0,0,6,11,2],
-"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#a32ad24f2aae844476b699f67ae24a15f":[6,2,0,0,6,11,2],
-"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#a828f1ccf4c9304273ca9d017716a122f":[6,1,0,0,6,11,0],
-"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#a828f1ccf4c9304273ca9d017716a122f":[6,2,0,0,6,11,0],
-"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,1,0,0,6,11,1],
-"classlog4cxx_1_1pattern_1_1LineLocationPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,2,0,0,6,11,1]
+"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#a3baf358baf7e44789811844b83869295":[6,2,0,0,6,10,3]
 };
