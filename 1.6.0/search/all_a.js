@@ -88,5 +88,6 @@ var searchData=
   ['asyncbuffer_85',['AsyncBuffer',['../classlog4cxx_1_1helpers_1_1AsyncBuffer.html',1,'log4cxx::helpers::AsyncBuffer'],['../classlog4cxx_1_1helpers_1_1AsyncBuffer.html#abea2a65e03d4f5547d073a0ecf46a7c3',1,'log4cxx::helpers::AsyncBuffer::AsyncBuffer()'],['../classlog4cxx_1_1helpers_1_1AsyncBuffer.html#a4163ea35017ad85d33283434a3cdb6b6',1,'log4cxx::helpers::AsyncBuffer::AsyncBuffer(AsyncBuffer &amp;&amp;other)']]],
   ['asyncbuffer_2eh_86',['asyncbuffer.h',['../asyncbuffer_8h.html',1,'']]],
   ['asynchronous_20output_87',['Configuring a logger to use asynchronous output',['../configuration-files.html#asynch-output',1,'']]],
-  ['at_20process_20termination_88',['Does Log4cxx support logging at process termination?',['../faq.html#atexit_events',1,'']]]
+  ['asynchronous_20output_20by_20default_88',['Why doesn&apos;t Log4cxx use buffered asynchronous output by default?',['../faq.html#buffered_output',1,'']]],
+  ['at_20process_20termination_89',['Does Log4cxx support logging at process termination?',['../faq.html#atexit_events',1,'']]]
 ];

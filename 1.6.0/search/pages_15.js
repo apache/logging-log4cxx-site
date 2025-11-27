@@ -12,6 +12,7 @@ var searchData=
   ['oss_20fuzz_9',['OSS Fuzz',['../fuzzing.html#oss-fuzz',1,'Google OSS-Fuzz'],['../fuzzing.html#reproduce',1,'Reproducing fuzzing failures detected by OSS-Fuzz'],['../fuzzing.html#view',1,'Viewing fuzzing failures detected by OSS-Fuzz']]],
   ['output_10',['Output',['../filters.html#excluding-log-output',1,'Excluding Log Output'],['../filters.html#labeling-log-output',1,'Labeling Log Output']]],
   ['output_11',['Configuring a logger to use asynchronous output',['../configuration-files.html#asynch-output',1,'']]],
-  ['overhead_12',['Overhead',['../concepts.html#request-cost',1,'']]],
-  ['overview_13',['Overview',['../source-repository.html#autotoc_md8',1,'Overview'],['../license.html#autotoc_md16',1,'Overview']]]
+  ['output_20by_20default_12',['Why doesn&apos;t Log4cxx use buffered asynchronous output by default?',['../faq.html#buffered_output',1,'']]],
+  ['overhead_13',['Overhead',['../concepts.html#request-cost',1,'']]],
+  ['overview_14',['Overview',['../source-repository.html#autotoc_md8',1,'Overview'],['../license.html#autotoc_md16',1,'Overview']]]
 ];

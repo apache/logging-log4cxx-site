@@ -75,6 +75,7 @@ var usage_overview =
     [ "Log4cxx Performance", "performance.html", null ],
     [ "Conclusions", "conclusions.html", null ],
     [ "Frequently Asked Technical Questions", "faq.html", [
+      [ "Why doesn't Log4cxx use buffered asynchronous output by default?", "faq.html#buffered_output", null ],
       [ "How do I add a custom level to Apache Log4cxx?", "faq.html#custom_levels", null ],
       [ "My application on Windows crashes on shutdown?", "faq.html#msvc_crash", null ],
       [ "Does Apache Log4cxx support Unicode?", "faq.html#unicode_supported", null ],

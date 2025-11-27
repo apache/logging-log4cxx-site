@@ -48,12 +48,13 @@ var searchData=
   ['oss_20fuzz_45',['OSS Fuzz',['../fuzzing.html#oss-fuzz',1,'Google OSS-Fuzz'],['../fuzzing.html#reproduce',1,'Reproducing fuzzing failures detected by OSS-Fuzz'],['../fuzzing.html#view',1,'Viewing fuzzing failures detected by OSS-Fuzz']]],
   ['output_46',['Output',['../filters.html#excluding-log-output',1,'Excluding Log Output'],['../filters.html#labeling-log-output',1,'Labeling Log Output']]],
   ['output_47',['Configuring a logger to use asynchronous output',['../configuration-files.html#asynch-output',1,'']]],
-  ['outputdebugstringappender_48',['OutputDebugStringAppender',['../classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html',1,'log4cxx::nt::OutputDebugStringAppender'],['../classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html#a4d2dc8efe39b217072722286a03cd728',1,'log4cxx::nt::OutputDebugStringAppender::OutputDebugStringAppender()']]],
-  ['outputdebugstringappender_2eh_49',['outputdebugstringappender.h',['../outputdebugstringappender_8h.html',1,'']]],
-  ['outputstream_50',['OutputStream',['../classlog4cxx_1_1helpers_1_1OutputStream.html',1,'log4cxx::helpers::OutputStream'],['../classlog4cxx_1_1helpers_1_1OutputStream.html#a4ef70031050c7a9bad79ccd7ab6551dd',1,'log4cxx::helpers::OutputStream::OutputStream()']]],
-  ['outputstream_2eh_51',['outputstream.h',['../outputstream_8h.html',1,'']]],
-  ['outputstreamwriter_52',['OutputStreamWriter',['../classlog4cxx_1_1helpers_1_1OutputStreamWriter.html',1,'log4cxx::helpers::OutputStreamWriter'],['../classlog4cxx_1_1helpers_1_1OutputStreamWriter.html#ac96f7a5ac801ea6a05395aca190fb929',1,'log4cxx::helpers::OutputStreamWriter::OutputStreamWriter(LOG4CXX_16_CONST OutputStreamPtr &amp;out)'],['../classlog4cxx_1_1helpers_1_1OutputStreamWriter.html#a6360393573f7faf866dfef4e4d400625',1,'log4cxx::helpers::OutputStreamWriter::OutputStreamWriter(LOG4CXX_16_CONST OutputStreamPtr &amp;out, LOG4CXX_16_CONST CharsetEncoderPtr &amp;enc)']]],
-  ['outputstreamwriter_2eh_53',['outputstreamwriter.h',['../outputstreamwriter_8h.html',1,'']]],
-  ['overhead_54',['Overhead',['../concepts.html#request-cost',1,'']]],
-  ['overview_55',['Overview',['../source-repository.html#autotoc_md8',1,'Overview'],['../license.html#autotoc_md16',1,'Overview']]]
+  ['output_20by_20default_48',['Why doesn&apos;t Log4cxx use buffered asynchronous output by default?',['../faq.html#buffered_output',1,'']]],
+  ['outputdebugstringappender_49',['OutputDebugStringAppender',['../classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html',1,'log4cxx::nt::OutputDebugStringAppender'],['../classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html#a4d2dc8efe39b217072722286a03cd728',1,'log4cxx::nt::OutputDebugStringAppender::OutputDebugStringAppender()']]],
+  ['outputdebugstringappender_2eh_50',['outputdebugstringappender.h',['../outputdebugstringappender_8h.html',1,'']]],
+  ['outputstream_51',['OutputStream',['../classlog4cxx_1_1helpers_1_1OutputStream.html',1,'log4cxx::helpers::OutputStream'],['../classlog4cxx_1_1helpers_1_1OutputStream.html#a4ef70031050c7a9bad79ccd7ab6551dd',1,'log4cxx::helpers::OutputStream::OutputStream()']]],
+  ['outputstream_2eh_52',['outputstream.h',['../outputstream_8h.html',1,'']]],
+  ['outputstreamwriter_53',['OutputStreamWriter',['../classlog4cxx_1_1helpers_1_1OutputStreamWriter.html',1,'log4cxx::helpers::OutputStreamWriter'],['../classlog4cxx_1_1helpers_1_1OutputStreamWriter.html#ac96f7a5ac801ea6a05395aca190fb929',1,'log4cxx::helpers::OutputStreamWriter::OutputStreamWriter(LOG4CXX_16_CONST OutputStreamPtr &amp;out)'],['../classlog4cxx_1_1helpers_1_1OutputStreamWriter.html#a6360393573f7faf866dfef4e4d400625',1,'log4cxx::helpers::OutputStreamWriter::OutputStreamWriter(LOG4CXX_16_CONST OutputStreamPtr &amp;out, LOG4CXX_16_CONST CharsetEncoderPtr &amp;enc)']]],
+  ['outputstreamwriter_2eh_54',['outputstreamwriter.h',['../outputstreamwriter_8h.html',1,'']]],
+  ['overhead_55',['Overhead',['../concepts.html#request-cost',1,'']]],
+  ['overview_56',['Overview',['../source-repository.html#autotoc_md8',1,'Overview'],['../license.html#autotoc_md16',1,'Overview']]]
 ];

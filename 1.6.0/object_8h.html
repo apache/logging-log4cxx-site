@@ -205,15 +205,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">public</span>:\</div>
-<div class="line">    <span class="keyword">class </span>Clazz##object : <span class="keyword">public</span> helpers::Class\</div>
+<div class="line">    <span class="keyword">class </span>Clazz##object : <span class="keyword">public</span> LOG4CXX_NS::helpers::Class\</div>
 <div class="line">    {\</div>
 <div class="line">        <span class="keyword">public</span>:\</div>
-<div class="line">            Clazz##object() : helpers::Class() {}\</div>
-<div class="line">            <span class="keyword">virtual</span> ~Clazz##object() {}\</div>
-<div class="line">            <span class="keyword">virtual</span> LOG4CXX_NS::LogString getName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> LOG4CXX_STR(#<span class="keywordtype">object</span>); } \</div>
+<div class="line">            LogString getName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> LOG4CXX_STR(#<span class="keywordtype">object</span>); }\</div>
 <div class="line">    };\</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> helpers::Class&amp; getStaticClass(); \</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> LOG4CXX_NS::helpers::ClassRegistration&amp; registerClass();</div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> helpers::Class&amp; getStaticClass();\</div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> helpers::ClassRegistration&amp; registerClass();</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -232,20 +230,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">public</span>:\</div>
-<div class="line">    <span class="keyword">class </span>Clazz##object : <span class="keyword">public</span> helpers::Class\</div>
+<div class="line">    <span class="keyword">class </span>Clazz##object : <span class="keyword">public</span> LOG4CXX_NS::helpers::Class\</div>
 <div class="line">    {\</div>
 <div class="line">        <span class="keyword">public</span>:\</div>
-<div class="line">            Clazz##object() : helpers::Class() {}\</div>
-<div class="line">            <span class="keyword">virtual</span> ~Clazz##object() {}\</div>
-<div class="line">            <span class="keyword">virtual</span> LOG4CXX_NS::LogString getName()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> LOG4CXX_STR(#<span class="keywordtype">object</span>); } \</div>
-<div class="line">            <span class="keyword">virtual</span> <span class="keywordtype">object</span>* newInstance() const\</div>
+<div class="line">            LogString getName()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> LOG4CXX_STR(#<span class="keywordtype">object</span>); }\</div>
+<div class="line">            <span class="keywordtype">object</span>* newInstance() const override\</div>
 <div class="line">            {\</div>
 <div class="line">                <span class="keywordflow">return</span> <span class="keyword">new</span> object();\</div>
 <div class="line">            }\</div>
 <div class="line">    };\</div>
 <div class="line">    <span class="keyword">const</span> helpers::Class&amp; getClass() <span class="keyword">const override</span>;\</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> helpers::Class&amp; getStaticClass(); \</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> LOG4CXX_NS::helpers::ClassRegistration&amp; registerClass();</div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> helpers::ClassRegistration&amp; registerClass();</div>
 </div><!-- fragment --><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="custom-appender_8cpp-example.html#a0">custom-appender.cpp</a>.</dd>
 </dl>
 
@@ -272,7 +268,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">public</span>:\</div>
 <div class="line">    <span class="keyword">const</span> helpers::Class&amp; getClass() <span class="keyword">const override</span>;\</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> helpers::Class&amp; getStaticClass();\</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> LOG4CXX_NS::helpers::ClassRegistration&amp;  registerClass();</div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> helpers::ClassRegistration&amp; registerClass();</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -323,7 +319,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> classReg; \</div>
 <div class="line">    }\</div>
 <div class="line">    <span class="keyword">namespace </span>LOG4CXX_NS { <span class="keyword">namespace </span>classes { \</div>
-<div class="line">    const ::LOG4CXX_NS::helpers::ClassRegistration&amp; <span class="keywordtype">object</span>##Registration = object::registerClass(); \</div>
+<div class="line">    <span class="keyword">const</span> helpers::ClassRegistration&amp; <span class="keywordtype">object</span>##Registration = object::registerClass(); \</div>
 <div class="line">    } }</div>
 </div><!-- fragment --><dl class="section examples"><dt>Examples</dt><dd><a class="el" href="custom-appender_8cpp-example.html#a5">custom-appender.cpp</a>.</dd>
 </dl>
@@ -358,7 +354,7 @@ Functions</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> classReg; \</div>
 <div class="line">    }\</div>
 <div class="line">    <span class="keyword">namespace </span>LOG4CXX_NS { <span class="keyword">namespace </span>classes { \</div>
-<div class="line">    <span class="keyword">const</span> LOG4CXX_NS::helpers::ClassRegistration&amp; <span class="keywordtype">object</span>##Registration = object::registerClass(); \</div>
+<div class="line">    <span class="keyword">const</span> helpers::ClassRegistration&amp; <span class="keywordtype">object</span>##Registration = object::registerClass(); \</div>
 <div class="line">    } }</div>
 </div><!-- fragment -->
 </div>
@@ -440,7 +436,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_8f91b758b065bd819ee8f7dc3f677aaf.html">src</a></li><li class="navelem"><a href="dir_1b5b2ce64a57900ce45e762cd4aeb527.html">main</a></li><li class="navelem"><a href="dir_ab306221cab606ae77d28622ae23b6e8.html">include</a></li><li class="navelem"><a href="dir_d6ab321c53270d8e494d88f6a7352018.html">log4cxx</a></li><li class="navelem"><a href="dir_85c0a9502ea6452e43783ddabef03b11.html">helpers</a></li><li class="navelem"><a href="object_8h.html">object.h</a></li>
+    <li class="navelem"><a href="dir_0bc4fc8b7393d35237ecbb90d16b8629.html">src</a></li><li class="navelem"><a href="dir_977b45ee30f324b3f88a52182c791e35.html">main</a></li><li class="navelem"><a href="dir_9a7a7f90c91cf30fcc3943f739a8efac.html">include</a></li><li class="navelem"><a href="dir_92dc3ba9e32562412d8bd3730412f6d4.html">log4cxx</a></li><li class="navelem"><a href="dir_2641f17fa7585037864bb5063e869160.html">helpers</a></li><li class="navelem"><a href="object_8h.html">object.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.14.0 on <span id='site-published-date'>SITE_PUBLISHED_DATE</span></li>

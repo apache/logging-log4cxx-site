@@ -109,6 +109,13 @@ $(function(){initNavTree('faq.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_src_2site_2markdown_2faq"></a></p>
+<h1 class="doxsection"><a class="anchor" id="buffered_output"></a>
+Why doesn't Log4cxx use buffered asynchronous output by default?</h1>
+<p>Being able to examine logged values is critically important during application development. Buffering output prevents the log file from containing the lastest messages in two situations:</p><ol type="1">
+<li>when a debugger stops the application at a break point</li>
+<li>when the application aborts abnormally (e.g. calls <a href="https://en.cppreference.com/w/cpp/error/terminate.html">std::terminate</a> or the operating system detects a fault)</li>
+</ol>
+<p>Debugging a program becomes extremely confusing when the log file does not contain the most recently written logging requests.</p>
 <h1 class="doxsection"><a class="anchor" id="custom_levels"></a>
 How do I add a custom level to Apache Log4cxx?</h1>
 <p>This is a common topic for all the Apache logging frameworks and typically motivated to try to categorize events by functionality or audience. An common request is to add an AUDIT level so that the user can configure AUDIT level messages to go to a specific appender. However, the logger name was designed explicitly to support routing of messages by topic or audience. The common pattern of using classnames for logger names obscures the more general capability of logger name to represent the topic or audience of the logging request. The easiest approach to solve the underlying issue is to use a logger names like "AUDIT.com.example.MyPackage.MyClass" that allow all AUDIT messages to be routed to a particular appender. If you attempted to use a level for that then you would lose the ability to distinguish between different significances within the audit messages.</p>

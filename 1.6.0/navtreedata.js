@@ -100,8 +100,8 @@ var NAVTREEINDEX =
 "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#adcc9d0204390488b57354e6705cfce8f",
 "classlog4cxx_1_1spi_1_1LocationInfo.html#a0d1bc1145ead769a9d51f8b90f0831c5",
 "classlog4cxx_1_1xml_1_1DOMConfigurator.html#a63211953504ab4f48afcdb607e2a4f05",
-"functions_func_j.html",
-"namespacelog4cxx_1_1helpers.html#a12fa2d08e5002f9bc482b2f8b280a6c9",
+"functions_func_i.html",
+"namespacelog4cxx_1_1helpers.html#a0f62d572694580f4a5247622a146dcd2",
 "structlog4cxx_1_1Level_1_1Data.html#a1cbee393cbeec6d14163c191409ffd04"
 ];
 
