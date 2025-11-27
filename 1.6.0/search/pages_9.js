@@ -25,5 +25,6 @@ var searchData=
   ['apr_20util_22',['APR+APR-Util',['../dependencies.html#autotoc_md3',1,'']]],
   ['asked_20technical_20questions_23',['Frequently Asked Technical Questions',['../faq.html',1,'usage-overview']]],
   ['asynchronous_20output_24',['Configuring a logger to use asynchronous output',['../configuration-files.html#asynch-output',1,'']]],
-  ['at_20process_20termination_25',['Does Log4cxx support logging at process termination?',['../faq.html#atexit_events',1,'']]]
+  ['asynchronous_20output_20by_20default_25',['Why doesn&apos;t Log4cxx use buffered asynchronous output by default?',['../faq.html#buffered_output',1,'']]],
+  ['at_20process_20termination_26',['Does Log4cxx support logging at process termination?',['../faq.html#atexit_events',1,'']]]
 ];
