@@ -115,7 +115,7 @@ Release History</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Version  </th><th class="markdownTableHeadNone">Date  </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a class="el" href="#rel_1_6_0">1.6.0</a>  </td><td class="markdownTableBodyNone">2025-XX-XX  </td><td class="markdownTableBodyNone">Maintenance release  </td></tr>
+<td class="markdownTableBodyNone"><a class="el" href="#rel_1_6_0">1.6.0</a>  </td><td class="markdownTableBodyNone">2025-12-14  </td><td class="markdownTableBodyNone">Maintenance release  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a class="el" href="#rel_1_5_0">1.5.0</a>  </td><td class="markdownTableBodyNone">2025-08-03  </td><td class="markdownTableBodyNone">Maintenance release  </td></tr>
 <tr class="markdownTableRowOdd">
@@ -164,7 +164,7 @@ Release History</h1>
 <td class="markdownTableBodyNone"><a class="el" href="#rel_0_1">0.0.1</a>  </td><td class="markdownTableBodyNone">2003-05-31  </td><td class="markdownTableBodyNone"></td></tr>
 </table>
 <h1 class="doxsection"><a class="anchor" id="rel_1_6_0"></a>
-Release 1.6.0 - 2025-XX-XX</h1>
+Release 1.6.0 - 2025-12-14</h1>
 <p>Release 1.6.0 includes the following new features:</p>
 <ul>
 <li>Configuration ${varname} values can be set programatically prior to loading a configuration file (see <a class="el" href="com_2foo_2config4_8cpp-example.html">com/foo/config4.cpp</a>) [<a href="https://github.com/apache/logging-log4cxx/pull/520">#520</a>]</li>
@@ -177,6 +177,9 @@ Release 1.6.0 - 2025-XX-XX</h1>
 <li>A simplified way to attach an AsyncAppender to a logger using a configuration file [<a href="https://github.com/apache/logging-log4cxx/pull/550">#550</a>]</li>
 </ul>
 <p>The following issues have been addressed:</p>
+<ul>
+<li>Prevent abnormal termination when recursively defining a configuration file variable [<a href="https://github.com/apache/logging-log4cxx/pull/565">#565</a>]</li>
+</ul>
 <h1 class="doxsection"><a class="anchor" id="rel_1_5_0"></a>
 Release 1.5.0 - 2025-08-03</h1>
 <p>Release 1.5.0 includes the following new features:</p>

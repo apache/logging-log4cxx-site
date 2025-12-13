@@ -443,7 +443,7 @@ Macros</h2></td></tr>
 <div class="line">    &lt;&lt; <span class="stringliteral">&quot; at &quot;</span> &lt;&lt; obj-&gt;getBoundingBox().getCenter()</div>
 <div class="line">    &lt;&lt; <span class="stringliteral">&quot; +/- &quot;</span> &lt;&lt; obj-&gt;getBoundingBox().getHalfSize()</div>
 <div class="line">    );</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga76947b95e70fb22935afedda22e3b4ce"><div class="ttname"><a href="#ga76947b95e70fb22935afedda22e3b4ce">LOG4CXX_DEBUG_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_DEBUG_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for DEBUG eve...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:279</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga76947b95e70fb22935afedda22e3b4ce"><div class="ttname"><a href="#ga76947b95e70fb22935afedda22e3b4ce">LOG4CXX_DEBUG_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_DEBUG_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for DEBUG eve...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:289</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger that has the enabled status. </td></tr>
@@ -542,7 +542,7 @@ Macros</h2></td></tr>
 <div class="line">    , obj-&gt;getBoundingBox().getCenter()</div>
 <div class="line">    , obj-&gt;getBoundingBox().getHalfSize()</div>
 <div class="line">    );</div>
-<div class="ttc" id="agroup__LoggingMacros_html_gaafb60718e2fa57abf8efc063e59063a7"><div class="ttname"><a href="#gaafb60718e2fa57abf8efc063e59063a7">LOG4CXX_DEBUG_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_DEBUG_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:304</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_gaafb60718e2fa57abf8efc063e59063a7"><div class="ttname"><a href="#gaafb60718e2fa57abf8efc063e59063a7">LOG4CXX_DEBUG_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_DEBUG_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:314</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger to be used. </td></tr>
@@ -623,7 +623,7 @@ Macros</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_define" href="#gace33f177fbab82abc8e471ae01423c8d">LOG4CXX_ERROR_ASYNC</a>(m_log, ex.what() &lt;&lt; <span class="stringliteral">&quot; in AddScanData&quot;</span>);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__LoggingMacros_html_gace33f177fbab82abc8e471ae01423c8d"><div class="ttname"><a href="#gace33f177fbab82abc8e471ae01423c8d">LOG4CXX_ERROR_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_ERROR_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for ERROR eve...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:474</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_gace33f177fbab82abc8e471ae01423c8d"><div class="ttname"><a href="#gace33f177fbab82abc8e471ae01423c8d">LOG4CXX_ERROR_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_ERROR_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for ERROR eve...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:484</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger to be used. </td></tr>
@@ -714,7 +714,7 @@ Macros</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_define" href="#ga4d5b5a7c546c6ebdb56f4910eeb90a24">LOG4CXX_ERROR_FMT_ASYNC</a>(m_log, <span class="stringliteral">&quot;{} in AddScanData&quot;</span>, ex.what());</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga4d5b5a7c546c6ebdb56f4910eeb90a24"><div class="ttname"><a href="#ga4d5b5a7c546c6ebdb56f4910eeb90a24">LOG4CXX_ERROR_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_ERROR_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:495</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga4d5b5a7c546c6ebdb56f4910eeb90a24"><div class="ttname"><a href="#ga4d5b5a7c546c6ebdb56f4910eeb90a24">LOG4CXX_ERROR_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_ERROR_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:505</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger to be used. </td></tr>
@@ -789,7 +789,7 @@ Macros</h2></td></tr>
 <p>Add a new logging event containing <code>message</code> to attached appender(s) if <code>logger</code> is enabled for <code>FATAL</code> events. </p>
 <dl class="section user"><dt>Example usage:</dt><dd></dd></dl>
 <div class="fragment"><div class="line"><a class="code hl_define" href="#ga90281bbd9be69f11bb041f2db69594db">LOG4CXX_FATAL_ASYNC</a>(m_log, m_renderSystem-&gt;getName() &lt;&lt; <span class="stringliteral">&quot; is not supported&quot;</span>);</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga90281bbd9be69f11bb041f2db69594db"><div class="ttname"><a href="#ga90281bbd9be69f11bb041f2db69594db">LOG4CXX_FATAL_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_FATAL_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for FATAL eve...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:553</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga90281bbd9be69f11bb041f2db69594db"><div class="ttname"><a href="#ga90281bbd9be69f11bb041f2db69594db">LOG4CXX_FATAL_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_FATAL_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for FATAL eve...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:563</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger to be used. </td></tr>
@@ -874,7 +874,7 @@ Macros</h2></td></tr>
 <p>Add a new logging event containing a message defined by <code>fmt</code> and <code>...</code> to attached appender(s) if <code>logger</code> is enabled for <code>FATAL</code> events. </p>
 <dl class="section user"><dt>Example usage:</dt><dd></dd></dl>
 <div class="fragment"><div class="line"><a class="code hl_define" href="#ga5d66a17d23a004550816250b2011d35d">LOG4CXX_FATAL_FMT_ASYNC</a>(m_log, <span class="stringliteral">&quot;{} is not supported&quot;</span>, m_renderSystem-&gt;getName());</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga5d66a17d23a004550816250b2011d35d"><div class="ttname"><a href="#ga5d66a17d23a004550816250b2011d35d">LOG4CXX_FATAL_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_FATAL_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:571</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga5d66a17d23a004550816250b2011d35d"><div class="ttname"><a href="#ga5d66a17d23a004550816250b2011d35d">LOG4CXX_FATAL_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_FATAL_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:581</div></div>
 </div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger to be used. </td></tr>
@@ -962,7 +962,7 @@ Macros</h2></td></tr>
 <div class="line">    &lt;&lt; <span class="stringliteral">&quot; unplanned area &quot;</span> &lt;&lt; unplannedArea &lt;&lt; <span class="stringliteral">&quot;m^2&quot;</span></div>
 <div class="line">    &lt;&lt; <span class="stringliteral">&quot; planned segments &quot;</span> &lt;&lt; surface-&gt;GetSegmentPlanCount() &lt;&lt; <span class="stringliteral">&quot; of &quot;</span> &lt;&lt; surface-&gt;GetSegmentCount()</div>
 <div class="line">    );</div>
-<div class="ttc" id="agroup__LoggingMacros_html_gaa6869a215a3fbac23a2c05246fad30b8"><div class="ttname"><a href="#gaa6869a215a3fbac23a2c05246fad30b8">LOG4CXX_INFO_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_INFO_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:374</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_gaa6869a215a3fbac23a2c05246fad30b8"><div class="ttname"><a href="#gaa6869a215a3fbac23a2c05246fad30b8">LOG4CXX_INFO_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_INFO_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:384</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger that has the enabled status. </td></tr>
@@ -1057,7 +1057,7 @@ Macros</h2></td></tr>
 <div class="line">    , plannedArea, unplannedArea</div>
 <div class="line">    , surface-&gt;GetSegmentPlanCount(), surface-&gt;GetSegmentCount()</div>
 <div class="line">    );</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga36cb96a6a154691ad411ad56dc3dfd9e"><div class="ttname"><a href="#ga36cb96a6a154691ad411ad56dc3dfd9e">LOG4CXX_INFO_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_INFO_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:399</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga36cb96a6a154691ad411ad56dc3dfd9e"><div class="ttname"><a href="#ga36cb96a6a154691ad411ad56dc3dfd9e">LOG4CXX_INFO_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_INFO_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:409</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger to be used. </td></tr>
@@ -1449,7 +1449,7 @@ Macros</h2></td></tr>
 <p>Add a new logging event containing <code>message</code> to attached appender(s) if <code>logger</code> is enabled for <code>TRACE</code> events. </p>
 <dl class="section user"><dt>Example usage:</dt><dd></dd></dl>
 <div class="fragment"><div class="line"><a class="code hl_define" href="#gac76dc1080721c6d6b83f21e1fa1f936c">LOG4CXX_TRACE_ASYNC</a>(m_log, <span class="stringliteral">&quot;AddVertex:&quot;</span> &lt;&lt; <span class="stringliteral">&quot; at &quot;</span> &lt;&lt; p &lt;&lt; <span class="stringliteral">&quot; n &quot;</span> &lt;&lt; n &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; color);</div>
-<div class="ttc" id="agroup__LoggingMacros_html_gac76dc1080721c6d6b83f21e1fa1f936c"><div class="ttname"><a href="#gac76dc1080721c6d6b83f21e1fa1f936c">LOG4CXX_TRACE_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_TRACE_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for TRACE eve...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:327</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_gac76dc1080721c6d6b83f21e1fa1f936c"><div class="ttname"><a href="#gac76dc1080721c6d6b83f21e1fa1f936c">LOG4CXX_TRACE_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_TRACE_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for TRACE eve...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:337</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger that has the enabled status. </td></tr>
@@ -1534,7 +1534,7 @@ Macros</h2></td></tr>
 <p>Add a new logging event containing a message defined by <code>fmt</code> and <code>...</code> to attached appender(s) if <code>logger</code> is enabled for <code>TRACE</code> events. </p>
 <dl class="section user"><dt>Example usage:</dt><dd></dd></dl>
 <div class="fragment"><div class="line"><a class="code hl_define" href="#ga787ae7aaac69795807748683d48fa5e8">LOG4CXX_TRACE_FMT_ASYNC</a>(m_log, <span class="stringliteral">&quot;AddVertex: at {} n {} {}&quot;</span>, p, n, color);</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga787ae7aaac69795807748683d48fa5e8"><div class="ttname"><a href="#ga787ae7aaac69795807748683d48fa5e8">LOG4CXX_TRACE_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_TRACE_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:345</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga787ae7aaac69795807748683d48fa5e8"><div class="ttname"><a href="#ga787ae7aaac69795807748683d48fa5e8">LOG4CXX_TRACE_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_TRACE_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:355</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger to be used. </td></tr>
@@ -1617,7 +1617,7 @@ Macros</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_define" href="#gafefadeac06b718508d51f4b7f454d62f">LOG4CXX_WARN_ASYNC</a>(m_log, ex.what() &lt;&lt; <span class="stringliteral">&quot;: in &quot;</span> &lt;&lt; m_task-&gt;GetParamFilePath());</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__LoggingMacros_html_gafefadeac06b718508d51f4b7f454d62f"><div class="ttname"><a href="#gafefadeac06b718508d51f4b7f454d62f">LOG4CXX_WARN_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_WARN_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for WARN even...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:426</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_gafefadeac06b718508d51f4b7f454d62f"><div class="ttname"><a href="#gafefadeac06b718508d51f4b7f454d62f">LOG4CXX_WARN_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_WARN_ASYNC(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for WARN even...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:436</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger to be used. </td></tr>
@@ -1708,7 +1708,7 @@ Macros</h2></td></tr>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_define" href="#ga01fe85388ad2b45498eaa853d24db755">LOG4CXX_WARN_FMT_ASYNC</a>(m_log, <span class="stringliteral">&quot;{}: in {}&quot;</span>, ex.what(), m_task-&gt;GetParamFilePath());</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga01fe85388ad2b45498eaa853d24db755"><div class="ttname"><a href="#ga01fe85388ad2b45498eaa853d24db755">LOG4CXX_WARN_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_WARN_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:447</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga01fe85388ad2b45498eaa853d24db755"><div class="ttname"><a href="#ga01fe85388ad2b45498eaa853d24db755">LOG4CXX_WARN_FMT_ASYNC</a></div><div class="ttdeci">#define LOG4CXX_WARN_FMT_ASYNC(logger, fmt,...)</div><div class="ttdoc">Add a new logging event containing a message defined by fmt and ... to attached appender(s) if logger...</div><div class="ttdef"><b>Definition</b> asyncbuffer.h:457</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">logger</td><td>the logger to be used. </td></tr>

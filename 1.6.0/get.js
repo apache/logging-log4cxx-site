@@ -7,7 +7,7 @@ var get =
     ] ],
     [ "Change Log", "changelog.html", [
       [ "Release History", "changelog.html#history", null ],
-      [ "Release 1.6.0 - 2025-XX-XX", "changelog.html#rel_1_6_0", null ],
+      [ "Release 1.6.0 - 2025-12-14", "changelog.html#rel_1_6_0", null ],
       [ "Release 1.5.0 - 2025-08-03", "changelog.html#rel_1_5_0", null ],
       [ "Release 1.4.0 - 2025-03-01", "changelog.html#rel_1_4_0", null ],
       [ "Release 1.3.1 - 2024-11-30", "changelog.html#rel_1_3_1", [

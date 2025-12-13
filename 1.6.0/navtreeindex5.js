@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classlog4cxx_1_1filter_1_1LoggerMatchFilter.html#aeab363b0a6b79bf86796c98f5f2d5a04":[6,2,0,0,2,6,8],
 "classlog4cxx_1_1filter_1_1MapFilter.html":[6,1,0,0,2,7],
 "classlog4cxx_1_1filter_1_1MapFilter.html":[6,2,0,0,2,7],
 "classlog4cxx_1_1filter_1_1MapFilter.html#a1524a9d77664944bad3a8e5c5ea478a1":[6,1,0,0,2,7,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#af78e4d953d1fc09e919cec4faf9e8bf5":[6,2,0,0,3,9,1],
 "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#af9288567a90ccf416fb3bb5a5a4051e4":[6,1,0,0,3,10,23],
 "classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#af9288567a90ccf416fb3bb5a5a4051e4":[6,2,0,0,3,9,23],
-"classlog4cxx_1_1helpers_1_1CharsetDecoder.html":[6,1,0,0,3,11],
-"classlog4cxx_1_1helpers_1_1CharsetDecoder.html":[6,2,0,0,3,10]
+"classlog4cxx_1_1helpers_1_1CharsetDecoder.html":[6,1,0,0,3,11]
 };

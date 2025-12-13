@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classlog4cxx_1_1helpers_1_1CharsetDecoder.html":[6,2,0,0,3,10],
 "classlog4cxx_1_1helpers_1_1CharsetDecoder.html#a6d00aef2473475a4792f4e2b56318f60":[6,1,0,0,3,11,3],
 "classlog4cxx_1_1helpers_1_1CharsetDecoder.html#a6d00aef2473475a4792f4e2b56318f60":[6,2,0,0,3,10,3],
 "classlog4cxx_1_1helpers_1_1CharsetDecoder.html#a70cfdeb0e4597096d5de4dc9e7f7225f":[6,1,0,0,3,11,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classlog4cxx_1_1helpers_1_1IOException.html#a3b4053dc7744d7f121ffa0bc11579dc5":[6,2,0,0,3,38,1],
 "classlog4cxx_1_1helpers_1_1IOException.html#a8e3280aa71085b3cb37ea7524debbc27":[6,1,0,0,3,39,3],
 "classlog4cxx_1_1helpers_1_1IOException.html#a8e3280aa71085b3cb37ea7524debbc27":[6,2,0,0,3,38,3],
-"classlog4cxx_1_1helpers_1_1IOException.html#abc975cc3ce575d66c9c658366bd8582f":[6,1,0,0,3,39,0],
-"classlog4cxx_1_1helpers_1_1IOException.html#abc975cc3ce575d66c9c658366bd8582f":[6,2,0,0,3,38,0]
+"classlog4cxx_1_1helpers_1_1IOException.html#abc975cc3ce575d66c9c658366bd8582f":[6,1,0,0,3,39,0]
 };
