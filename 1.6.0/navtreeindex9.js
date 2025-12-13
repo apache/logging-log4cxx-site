@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ad264f61b4206b0aebefb74a98733697b":[6,2,0,0,3,67,0],
 "classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ae3934e795dc0f4038333de9d51dba0a8":[6,1,0,0,3,68,1],
 "classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ae3934e795dc0f4038333de9d51dba0a8":[6,2,0,0,3,67,1],
 "classlog4cxx_1_1helpers_1_1StrictMath.html":[6,1,0,0,3,69],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8985afae778bf1100dd940f68334e9d7":[6,2,0,0,3,86,3],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8a395239cae620275e9b0de8d03b5f5a":[6,1,0,0,3,87,12],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8a395239cae620275e9b0de8d03b5f5a":[6,2,0,0,3,86,12],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9982995b17d8e9aff4fd84d657db0837":[6,1,0,0,3,87,5],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9982995b17d8e9aff4fd84d657db0837":[6,2,0,0,3,86,5]
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9982995b17d8e9aff4fd84d657db0837":[6,1,0,0,3,87,5]
 };

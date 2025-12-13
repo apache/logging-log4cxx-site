@@ -3,6 +3,7 @@ var asyncbuffer_8h =
     [ "log4cxx::helpers::AsyncBuffer", "classlog4cxx_1_1helpers_1_1AsyncBuffer.html", "classlog4cxx_1_1helpers_1_1AsyncBuffer" ],
     [ "LOG4CXX_ASSERT_ASYNC", "group__LoggingMacros.html#ga2d0942ad52ca56c20a24993582da748e", null ],
     [ "LOG4CXX_ASSERT_FMT_ASYNC", "group__LoggingMacros.html#ga2eb746622b74cfef6eec39ba8622791a", null ],
+    [ "LOG4CXX_CONCEPTS", "asyncbuffer_8h.html#ac479ca711ce7c638d7aabcbd8af03e9d", null ],
     [ "LOG4CXX_DEBUG_ASYNC", "group__LoggingMacros.html#ga76947b95e70fb22935afedda22e3b4ce", null ],
     [ "LOG4CXX_DEBUG_FMT_ASYNC", "group__LoggingMacros.html#gaafb60718e2fa57abf8efc063e59063a7", null ],
     [ "LOG4CXX_ERROR_ASYNC", "group__LoggingMacros.html#gace33f177fbab82abc8e471ae01423c8d", null ],

@@ -25,7 +25,7 @@ var searchData=
   ['2024_2011_2030_22',['Release 1.3.1 - 2024-11-30',['../changelog.html#rel_1_3_1',1,'']]],
   ['2025_2003_2001_23',['Release 1.4.0 - 2025-03-01',['../changelog.html#rel_1_4_0',1,'']]],
   ['2025_2008_2003_24',['Release 1.5.0 - 2025-08-03',['../changelog.html#rel_1_5_0',1,'']]],
-  ['2025_20xx_20xx_25',['Release 1.6.0 - 2025-XX-XX',['../changelog.html#rel_1_6_0',1,'']]],
+  ['2025_2012_2014_25',['Release 1.6.0 - 2025-12-14',['../changelog.html#rel_1_6_0',1,'']]],
   ['21_26',['21',['../changelog.html#rel_12_1',1,'Release 0.12.1 - 2021-09-21'],['../changelog.html#rel_1_3_0',1,'Release 1.3.0 - 2024-10-21']]],
   ['25_27',['Release 0.9.4 - 2003-10-25',['../changelog.html#rel_9_4',1,'']]]
 ];

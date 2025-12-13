@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#a3baf358baf7e44789811844b83869295":[6,2,0,0,6,10,3],
 "classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aa93ccd1e435242632dbe0496cc311c49":[6,1,0,0,6,10,2],
 "classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aa93ccd1e435242632dbe0496cc311c49":[6,2,0,0,6,10,2],
 "classlog4cxx_1_1pattern_1_1LevelPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a":[6,1,0,0,6,10,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html":[6,2,0,0,8,6],
 "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a0e6995586d7438f5d3bc6d2693ebedc1":[6,1,0,0,8,6,4],
 "classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a0e6995586d7438f5d3bc6d2693ebedc1":[6,2,0,0,8,6,4],
-"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a2ead30702a791fc7eb21695f2838189a":[6,1,0,0,8,6,2],
-"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a2ead30702a791fc7eb21695f2838189a":[6,2,0,0,8,6,2]
+"classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a2ead30702a791fc7eb21695f2838189a":[6,1,0,0,8,6,2]
 };

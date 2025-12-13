@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html":[6,2,0,0,3,48],
 "classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a0e15fe74cf59aefd15ba9e2b03bbbecb":[6,1,0,0,3,49,0],
 "classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a0e15fe74cf59aefd15ba9e2b03bbbecb":[6,2,0,0,3,48,0],
 "classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a1e6aa7d8ef10319e948573d1005359a4":[6,1,0,0,3,49,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#a9c30f07fd3597d557c36450c92ca23c3":[6,2,0,0,3,67,2],
 "classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#aacbef348c00fe2918f1067941c84fd44":[6,1,0,0,3,68,3],
 "classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#aacbef348c00fe2918f1067941c84fd44":[6,2,0,0,3,67,3],
-"classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ad264f61b4206b0aebefb74a98733697b":[6,1,0,0,3,68,0],
-"classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ad264f61b4206b0aebefb74a98733697b":[6,2,0,0,3,67,0]
+"classlog4cxx_1_1helpers_1_1StrftimeDateFormat.html#ad264f61b4206b0aebefb74a98733697b":[6,1,0,0,3,68,0]
 };
