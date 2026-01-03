@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['handle_0',['HANDLE',['../classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a112956b99a29fdde362f3b2c4598e84d',1,'log4cxx::nt::NTEventLogAppender']]],
+  ['handlesthrowable_1',['handlesThrowable',['../classlog4cxx_1_1pattern_1_1LoggingEventPatternConverter.html#af5f46da7371a1ebb868375134ad83477',1,'log4cxx::pattern::LoggingEventPatternConverter::handlesThrowable()'],['../classlog4cxx_1_1pattern_1_1ThrowableInformationPatternConverter.html#ab8e37276c463422d49573f1796cfc472',1,'log4cxx::pattern::ThrowableInformationPatternConverter::handlesThrowable()']]],
+  ['handling_20with_20log4cxx_2',['Signal Handling with Log4cxx',['../threading.html#signal-handling',1,'']]],
+  ['has_5fvalue_3',['has_value',['../classlog4cxx_1_1Optional.html#a6fa440bc11aa21982a563ebf5657e128',1,'log4cxx::Optional']]],
+  ['hasmoretokens_4',['hasMoreTokens',['../classlog4cxx_1_1helpers_1_1StringTokenizer.html#a2f13cd9dc08a6fe5f51f5aaab0deb646',1,'log4cxx::helpers::StringTokenizer']]],
+  ['hasperiodictask_5',['hasPeriodicTask',['../classlog4cxx_1_1helpers_1_1ThreadUtility.html#abbef706f21a74606159520b98034a822',1,'log4cxx::helpers::ThreadUtility']]],
+  ['hasstream_6',['hasStream',['../classlog4cxx_1_1helpers_1_1CharMessageBuffer.html#a24a9b6d2feeb02c93169df611eeb8294',1,'log4cxx::helpers::CharMessageBuffer::hasStream()'],['../classlog4cxx_1_1helpers_1_1UniCharMessageBuffer.html#ace86cb36b11183abb191d34b94aa19c5',1,'log4cxx::helpers::UniCharMessageBuffer::hasStream()'],['../classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a428c5ce2b6cc3e17658e7233de1a1fd6',1,'log4cxx::helpers::WideMessageBuffer::hasStream()'],['../classlog4cxx_1_1helpers_1_1MessageBuffer.html#a30df6d3bee2979219db9b86531e4c1db',1,'log4cxx::helpers::MessageBuffer::hasStream()']]],
+  ['help_7',['Getting help',['../community.html#support',1,'']]],
+  ['helpers_3a_3awidelife_3c_20aprinitializer_20_3e_8',['WideLife&lt; APRInitializer &gt;',['../classlog4cxx_1_1helpers_1_1APRInitializer.html#a2d966458f82fb4484e55665dbcb41195',1,'log4cxx::helpers::APRInitializer']]],
+  ['hexdump_9',['hexdump',['../namespacelog4cxx.html#a665e2dfa292d69e4f8071c0785fc0834',1,'log4cxx']]],
+  ['hexdump_2eh_10',['hexdump.h',['../hexdump_8h.html',1,'']]],
+  ['hexdumpflags_11',['HexdumpFlags',['../namespacelog4cxx.html#a01e366bb431da3b770d2ae4bcd23573d',1,'log4cxx']]],
+  ['hierarchy_12',['Hierarchy',['../classlog4cxx_1_1Hierarchy.html',1,'log4cxx::Hierarchy'],['../classlog4cxx_1_1Logger.html#a11617a6fb68ec7260e4acfc6d2d81ca6',1,'log4cxx::Logger::Hierarchy()']]],
+  ['hierarchy_2eh_13',['hierarchy.h',['../hierarchy_8h.html',1,'']]],
+  ['hierarchyeventlistener_14',['HierarchyEventListener',['../classlog4cxx_1_1spi_1_1HierarchyEventListener.html',1,'log4cxx::spi']]],
+  ['hierarchyeventlistener_2eh_15',['hierarchyeventlistener.h',['../hierarchyeventlistener_8h.html',1,'']]],
+  ['history_16',['Release History',['../changelog.html#history',1,'']]],
+  ['hold_20data_17',['Use of class-specific structs to hold data.',['../library-design.html#autotoc_md12',1,'']]],
+  ['how_20do_20i_20add_20a_20custom_20level_20to_20apache_20log4cxx_18',['How do I add a custom level to Apache Log4cxx?',['../faq.html#custom_levels',1,'']]],
+  ['how_20do_20i_20use_20log4cxx_20with_20cmake_19',['How do I use Log4cxx with CMake?',['../buildsystems.html#use_with_cmake',1,'']]],
+  ['how_20do_20i_20use_20log4cxx_20with_20cmake_20and_20pkg_20config_20',['How do I use Log4cxx with CMake and pkg-config?',['../buildsystems.html#use_with_cmake_pkgconfig',1,'']]],
+  ['how_20do_20i_20use_20log4cxx_20with_20plain_20make_21',['How do I use Log4cxx with plain Make?',['../buildsystems.html#use_with_make',1,'']]],
+  ['how_20do_20i_20use_20log4cxx_20with_20qmake_22',['How do I use Log4cxx with QMake?',['../buildsystems.html#use_with_qmake',1,'']]],
+  ['htmllayout_23',['HTMLLayout',['../classlog4cxx_1_1HTMLLayout.html',1,'log4cxx::HTMLLayout'],['../classlog4cxx_1_1HTMLLayout.html#a40604ca7e4deab6bdca95c098d2b46c4',1,'log4cxx::HTMLLayout::HTMLLayout()']]],
+  ['htmllayout_2eh_24',['htmllayout.h',['../htmllayout_8h.html',1,'']]]
+];
