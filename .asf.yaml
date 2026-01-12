@@ -5,7 +5,6 @@ notifications:
   jira_options: link label comment
 
 staging:
-  profile: ~
   whoami: asf-staging
   subdir: content/log4cxx
 
