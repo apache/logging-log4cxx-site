@@ -25,7 +25,7 @@ var searchData=
   ['release_201_205_200_202025_2008_2003_22',['Release 1.5.0 - 2025-08-03',['../changelog.html#rel_1_5_0',1,'']]],
   ['release_201_206_200_202025_2012_2014_23',['Release 1.6.0 - 2025-12-14',['../changelog.html#rel_1_6_0',1,'']]],
   ['release_201_206_201_202026_2001_2009_24',['Release 1.6.1 - 2026-01-09',['../changelog.html#rel_1_6_1',1,'']]],
-  ['release_201_207_200_202026_20xx_20xx_25',['Release 1.7.0 - 2026-XX-XX',['../changelog.html#rel_1_7_0',1,'']]],
+  ['release_201_207_200_202026_2004_2004_25',['Release 1.7.0 - 2026-04-04',['../changelog.html#rel_1_7_0',1,'']]],
   ['release_20history_26',['Release History',['../changelog.html#history',1,'']]],
   ['releases_27',['Previous Releases',['../download.html#autotoc_md22',1,'']]],
   ['releases_28',['Official releases',['../community.html#artifacts',1,'']]],
