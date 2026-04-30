@@ -135,10 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85eef2762411dbcf04bf1b619ae888d8" id="r_a85eef2762411dbcf04bf1b619ae888d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85eef2762411dbcf04bf1b619ae888d8">~SyslogAppender</a> ()</td></tr>
 <tr class="memitem:a5e9e74602499a7b5ca95b4c60a3b8427" id="r_a5e9e74602499a7b5ca95b4c60a3b8427"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e9e74602499a7b5ca95b4c60a3b8427">close</a> () override</td></tr>
 <tr class="memdesc:a5e9e74602499a7b5ca95b4c60a3b8427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources held by this <a class="el" href="classlog4cxx_1_1net_1_1SyslogAppender.html" title="Use SyslogAppender to send log messages to a remote syslog daemon.">SyslogAppender</a>.  <br /></td></tr>
-<tr class="memitem:a27e2abeb2fe9835bb3e9cf436a27139c" id="r_a27e2abeb2fe9835bb3e9cf436a27139c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27e2abeb2fe9835bb3e9cf436a27139c">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) override</td></tr>
-<tr class="memdesc:a27e2abeb2fe9835bb3e9cf436a27139c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses of <code><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders.">AppenderSkeleton</a></code> must implement this method to perform actual logging.  <br /></td></tr>
-<tr class="memitem:a2521e3fcdcb70de242b8a5be7d11c483" id="r_a2521e3fcdcb70de242b8a5be7d11c483"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2521e3fcdcb70de242b8a5be7d11c483">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) override</td></tr>
-<tr class="memdesc:a2521e3fcdcb70de242b8a5be7d11c483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.        <br /></td></tr>
+<tr class="memitem:a32ec3f219a616ca21fa3fee6d643207e" id="r_a32ec3f219a616ca21fa3fee6d643207e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32ec3f219a616ca21fa3fee6d643207e">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;1) override</td></tr>
+<tr class="memdesc:a32ec3f219a616ca21fa3fee6d643207e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses of <code><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders.">AppenderSkeleton</a></code> must implement this method to perform actual logging.  <br /></td></tr>
+<tr class="memitem:a4002f038b6358b5c5d84c214d05960ac" id="r_a4002f038b6358b5c5d84c214d05960ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4002f038b6358b5c5d84c214d05960ac">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;1) override</td></tr>
 <tr class="memitem:a7763860c155355db6e05f6523d6cd65f" id="r_a7763860c155355db6e05f6523d6cd65f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7763860c155355db6e05f6523d6cd65f">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
 <tr class="memdesc:a7763860c155355db6e05f6523d6cd65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.        <br /></td></tr>
 <tr class="memitem:a1449ff8266be8cf68efb472ce6efe38f" id="r_a1449ff8266be8cf68efb472ce6efe38f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1449ff8266be8cf68efb472ce6efe38f">requiresLayout</a> () const override</td></tr>
@@ -191,10 +190,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8f43cc72bbddcd95ddaeb274cd040b3c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a9a0d49cd8867995f2ad8bd1df8b0fcea inherit pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a9a0d49cd8867995f2ad8bd1df8b0fcea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a9a0d49cd8867995f2ad8bd1df8b0fcea">setThreshold</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;threshold)</td></tr>
 <tr class="memdesc:a9a0d49cd8867995f2ad8bd1df8b0fcea inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the threshold level.  <br /></td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd inherit pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1Appender"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1Appender')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1Appender.html">log4cxx::Appender</a></td></tr>
 <tr class="memitem:adb76477fa620be64de22efe12b127ad5 inherit pub_methods_classlog4cxx_1_1Appender" id="r_adb76477fa620be64de22efe12b127ad5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Appender.html#adb76477fa620be64de22efe12b127ad5">~Appender</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1OptionHandler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1spi_1_1OptionHandler')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html">log4cxx::spi::OptionHandler</a></td></tr>
 <tr class="memitem:a556b59c5ef41477c0bc3f50efadc859e inherit pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a556b59c5ef41477c0bc3f50efadc859e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a556b59c5ef41477c0bc3f50efadc859e">~OptionHandler</a> ()</td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd inherit pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1helpers_1_1Object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
 <tr class="memitem:a8ba23411233a652fac44a619e6356115 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a8ba23411233a652fac44a619e6356115"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a8ba23411233a652fac44a619e6356115">~Object</a> ()</td></tr>
 <tr class="memitem:a581992e532894891e83b9afd605ca492 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a581992e532894891e83b9afd605ca492"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">helpers::Class</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a581992e532894891e83b9afd605ca492">getClass</a> () const =0</td></tr>
@@ -306,8 +307,8 @@ RFC 3164). Modern syslog implementations(e.g. syslog-ng) can accept messages muc
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a2521e3fcdcb70de242b8a5be7d11c483" name="a2521e3fcdcb70de242b8a5be7d11c483"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2521e3fcdcb70de242b8a5be7d11c483">&#9670;&#160;</a></span>activateOptions()</h2>
+<a id="a4002f038b6358b5c5d84c214d05960ac" name="a4002f038b6358b5c5d84c214d05960ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4002f038b6358b5c5d84c214d05960ac">&#9670;&#160;</a></span>activateOptions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -318,7 +319,7 @@ RFC 3164). Modern syslog implementations(e.g. syslog-ng) can accept messages muc
         <tr>
           <td class="memname">void log4cxx::net::SyslogAppender::activateOptions </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -329,15 +330,15 @@ RFC 3164). Modern syslog implementations(e.g. syslog-ng) can accept messages muc
 </table>
 </div><div class="memdoc">
 
-<p>Activate the options that were previously set with calls to option setters.       </p>
+<p></p>
 <p>No action is performed in this implementation. </p>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a748043d02b71acad6205444ebeb6a75c">log4cxx::AppenderSkeleton</a>.</p>
 
 </div>
 </div>
-<a id="a27e2abeb2fe9835bb3e9cf436a27139c" name="a27e2abeb2fe9835bb3e9cf436a27139c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27e2abeb2fe9835bb3e9cf436a27139c">&#9670;&#160;</a></span>append()</h2>
+<a id="a32ec3f219a616ca21fa3fee6d643207e" name="a32ec3f219a616ca21fa3fee6d643207e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32ec3f219a616ca21fa3fee6d643207e">&#9670;&#160;</a></span>append()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -353,7 +354,7 @@ RFC 3164). Modern syslog implementations(e.g. syslog-ng) can accept messages muc
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -366,7 +367,7 @@ RFC 3164). Modern syslog implementations(e.g. syslog-ng) can accept messages muc
 <p>Subclasses of <code><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders.">AppenderSkeleton</a></code> must implement this method to perform actual logging. </p>
 <p>See also <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a5a60fc1789ef646d689c9ec517d3b90b" title="Call AppenderSkeleton::doAppendImpl after acquiring a lock that prevents other threads from concurren...">AppenderSkeleton::doAppend</a> method. </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a26bfb021038290769331e5e8c3f86d0a">log4cxx::AppenderSkeleton</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#abe8352e985764d6d30e530f07fb63aaf">log4cxx::AppenderSkeleton</a>.</p>
 
 </div>
 </div>

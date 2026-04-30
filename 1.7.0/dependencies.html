@@ -127,13 +127,18 @@ $(function(){initNavTree('dependencies.html','',''); });
 </table>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 APR+APR-Util</h1>
-<p>The Apache Portable Runtime(APR) provides the cross-platform backend for <a class="el" href="namespacelog4cxx.html">log4cxx</a>. Both APR and APR-util need to be installed and available on your system.</p>
+<p>The Apache Portable Runtime(APR) provides the cross-platform backend for Log4cxx. Both APR and APR-util need to be installed and available on your system.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 sed+gzip+zip</h1>
-<p>These applications are needed during test of <a class="el" href="namespacelog4cxx.html">log4cxx</a>. <span class="tt">gzip</span>and <span class="tt">sed</span> are generally installed by default on Linux. <span class="tt">zip</span> may not be installed by default; check your distribution's documentation for information on how to install these applications.</p>
+<p>These applications are needed to test Log4cxx. <em>gzip</em> and <em>sed</em> are generally installed by default on Linux. <em>zip</em> may not be installed by default; check your distribution's documentation for information on how to install these applications.</p>
 <p>For Windows, you will have to install those tools through a system such as MinGW, cygwin, or MSYS2.</p>
-<p><span class="tt">gzip</span> and <span class="tt">zip</span> only needed during runtime if you are compressing the log files, for example by setting a rollover policy which ends in <span class="tt">.gz</span> or <span class="tt">.zip</span>.</p>
+<p><em>gzip</em> and <em>zip</em> only needed during runtime if you are compressing the log files, for example by setting a rollover policy which ends in <em>.gz</em> or <em>.zip</em>.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+Using std::format instead of fmt::format</h1>
+<p>The <em>LOG4CXX_XXXXX_FMT</em> logging macros use the macro <em>LOG4CXX_FORMAT_NS</em> to select the <em>format</em> function version.</p>
+<p>Use the CMake option <em>LOG4CXX_FORMAT_NAMESPACE=std</em> to set the default value for <em>LOG4CXX_FORMAT_NS</em> to <em>std</em>. If <em>LOG4CXX_FORMAT_NAMESPACE</em> is not specified when Log4cxx is built, the default value for <em>LOG4CXX_FORMAT_NS</em> is <em>fmt</em>.</p>
+<p>Setting <em>LOG4CXX_FORMAT_NAMESPACE=std</em> when building Log4cxx does not prevent an application from using the {fmt} library. An application developer can choose the implementation by adding <em>LOG4CXX_FORMAT_NS=std</em> or <em>LOG4CXX_FORMAT_NS=fmt</em> to the <a href="https://cmake.org/cmake/help/latest/command/target_compile_definitions.html">target_compile_definitions</a> command in their CMakeLists.txt. If that preprocessor macro is absent, the <em>LOG4CXX_XXXXX_FMT</em> logging macros will expand to the default value of <em>LOG4CXX_FORMAT_NS</em> defined when Log4cxx was built.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
 Optional Dependencies</h1>
 <p>The following table lists CMake options that require additional dependencies.</p>
 <table class="markdownTable">
@@ -142,42 +147,48 @@ Optional Dependencies</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">LOG4CXX_MULTIPROCESS_ROLLING_FILE_APPENDER  </td><td class="markdownTableBodyNone">Boost  </td><td class="markdownTableBodyCenter">any  </td><td class="markdownTableBodyNone">Compile/runtime. Not required if your compiler supports C++17  </td><td class="markdownTableBodyNone"><a href="https://boost.org">https://boost.org</a>  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ENABLE_FMT_ASYNC  </td><td class="markdownTableBodyNone">{fmt}  </td><td class="markdownTableBodyCenter">9+  </td><td class="markdownTableBodyNone">Compile/runtime  </td><td class="markdownTableBodyNone"><a href="https://github.com/fmtlib/fmt">https://github.com/fmtlib/fmt</a>  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">ENABLE_FMT_LAYOUT  </td><td class="markdownTableBodyNone">{fmt}  </td><td class="markdownTableBodyCenter">9+  </td><td class="markdownTableBodyNone">Compile/runtime  </td><td class="markdownTableBodyNone"><a href="https://github.com/fmtlib/fmt">https://github.com/fmtlib/fmt</a>  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">LOG4CXX_ENABLE_ODBC  </td><td class="markdownTableBodyNone">unixodbc  </td><td class="markdownTableBodyCenter">any  </td><td class="markdownTableBodyNone">Compile/runtime (not on Windows)  </td><td class="markdownTableBodyNone"><a href="https://www.unixodbc.org/">https://www.unixodbc.org/</a>  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">LOG4CXX_ENABLE_ESMTP  </td><td class="markdownTableBodyNone">libesmtp  </td><td class="markdownTableBodyCenter">any  </td><td class="markdownTableBodyNone">Compile/runtime (not on Windows)  </td><td class="markdownTableBodyNone"><a href="https://github.com/libesmtp/libESMTP">https://github.com/libesmtp/libESMTP</a>  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">LOG4CXX_QT_SUPPORT  </td><td class="markdownTableBodyNone">Qt  </td><td class="markdownTableBodyCenter">5  </td><td class="markdownTableBodyNone">Compile/runtime  </td><td class="markdownTableBodyNone"><a href="https://www.qt.io/download">https://www.qt.io/download</a>  </td></tr>
+<td class="markdownTableBodyNone">LOG4CXX_ENABLE_ESMTP  </td><td class="markdownTableBodyNone">libesmtp  </td><td class="markdownTableBodyCenter">any  </td><td class="markdownTableBodyNone">Compile/runtime (not on Windows)  </td><td class="markdownTableBodyNone"><a href="https://github.com/libesmtp/libESMTP">https://github.com/libesmtp/libESMTP</a>  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">LOG4CXX_QT_SUPPORT  </td><td class="markdownTableBodyNone">Qt  </td><td class="markdownTableBodyCenter">5  </td><td class="markdownTableBodyNone">Compile/runtime  </td><td class="markdownTableBodyNone"><a href="https://www.qt.io/download">https://www.qt.io/download</a>  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">LOG4CXX_CFSTRING  </td><td class="markdownTableBodyNone">Mac OS/X Core Foundation  </td><td class="markdownTableBodyCenter">any  </td><td class="markdownTableBodyNone">Compile/runtime  </td><td class="markdownTableBodyNone"><a href="https://developer.apple.com/documentation/corefoundation">https://developer.apple.com/documentation/corefoundation</a>  </td></tr>
 </table>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+Default CMake option values</h2>
+<p>All the above CMake options default to OFF except for the {fmt} library options.</p>
+<p>If the {fmt} library is found (by <em>find_package(fmt 7.1 QUIET)</em>) when Log4cxx is built, the options <em>ENABLE_FMT_ASYNC</em> and <em>ENABLE_FMT_LAYOUT</em> default to <em>ON</em>.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
 A note on C++ version and Boost</h2>
 <p>By default, Log4cxx requests C++20 features. This is to avoid 3rd party dependencies as much as possible. If C++17 is not available, a search for Boost will be taken and those libraries will be used instead. If you would prefer to use Boost, there are two options you have:</p>
 <ol type="1">
-<li>Pass <span class="tt">-DPREFER_BOOST=ON</span> to CMake when compiling. This will ignore the results of the tests that check for the standard version of components that are required. Note that this will switch all components, regardless of the C++ version in effect at compile time.</li>
-<li>Revert to an earlier standard using <span class="tt">-DCMAKE_CXX_STANDARD=11</span> for example. This will still to check for standard versions of required components, but it will fall back to using Boost for newer components added in C++17.</li>
+<li>Pass <em>-DPREFER_BOOST=ON</em> to CMake when compiling. This will ignore the results of the tests that check for the standard version of components that are required. Note that this will switch all components, regardless of the C++ version in effect at compile time.</li>
+<li>Revert to an earlier standard using <em>-DCMAKE_CXX_STANDARD=11</em> for example. This will still to check for standard versions of required components, but it will fall back to using Boost for newer components added in C++17.</li>
 </ol>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
 Licenses(direct dependencies only)</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Dependency  </th><th class="markdownTableHeadNone">License  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">APR, APR-util  </td><td class="markdownTableBodyNone"><b>Apache License, Version 2.0</b>  </td></tr>
+<td class="markdownTableBodyNone">APR, APR-util  </td><td class="markdownTableBodyNone"><em>Apache License, Version 2.0</em>  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Boost  </td><td class="markdownTableBodyNone"><b>Boost License, Version 1.0</b>  </td></tr>
+<td class="markdownTableBodyNone">Boost  </td><td class="markdownTableBodyNone"><em>Boost License, Version 1.0</em>  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">{fmt}  </td><td class="markdownTableBodyNone"><b>MIT</b>  </td></tr>
+<td class="markdownTableBodyNone">{fmt}  </td><td class="markdownTableBodyNone"><em>MIT</em>  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">unixodbc  </td><td class="markdownTableBodyNone"><b>LGPL</b>  </td></tr>
+<td class="markdownTableBodyNone">unixodbc  </td><td class="markdownTableBodyNone"><em>LGPL</em>  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">libesmtp  </td><td class="markdownTableBodyNone"><b>LGPL</b>  </td></tr>
+<td class="markdownTableBodyNone">libesmtp  </td><td class="markdownTableBodyNone"><em>LGPL</em>  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Qt  </td><td class="markdownTableBodyNone">Refer <a href="https://www.qt.io/licensing/">https://www.qt.io/licensing/</a>  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Mac OS/X Core Foundation  </td><td class="markdownTableBodyNone"><b>APSL 2.0</b>  </td></tr>
+<td class="markdownTableBodyNone">Mac OS/X Core Foundation  </td><td class="markdownTableBodyNone"><em>APSL 2.0</em>  </td></tr>
 </table>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

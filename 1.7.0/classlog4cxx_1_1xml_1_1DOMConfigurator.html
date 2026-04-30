@@ -128,7 +128,7 @@ Inheritance diagram for log4cxx::xml::DOMConfigurator:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aedcbcc31c53966cc7dfbd13b649f8406" id="r_aedcbcc31c53966cc7dfbd13b649f8406"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedcbcc31c53966cc7dfbd13b649f8406">~DOMConfigurator</a> ()</td></tr>
 <tr class="memitem:a1babd7efe69a811b2367ad8036812685" id="r_a1babd7efe69a811b2367ad8036812685"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1babd7efe69a811b2367ad8036812685">DOMConfigurator</a> ()</td></tr>
-<tr class="memitem:a75077af3e7985c1ab9e5e4e7a230d803" id="r_a75077af3e7985c1ab9e5e4e7a230d803"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75077af3e7985c1ab9e5e4e7a230d803">DOMConfigurator</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p)</td></tr>
+<tr class="memitem:ae308df50d2c9956e060cbe6ad34a0323" id="r_ae308df50d2c9956e060cbe6ad34a0323"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae308df50d2c9956e060cbe6ad34a0323">DOMConfigurator</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1)</td></tr>
 <tr class="memitem:a0262bacc14b262b7ca4ccf90a5e83091" id="r_a0262bacc14b262b7ca4ccf90a5e83091"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0262bacc14b262b7ca4ccf90a5e83091">doConfigure</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;filename, <a class="el" href="namespacelog4cxx_1_1spi.html#a38a7dc69832e0647515f643f01be6fa5">spi::LoggerRepositoryPtr</a> repository) override</td></tr>
 <tr class="memdesc:a0262bacc14b262b7ca4ccf90a5e83091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpret <code>filename</code> as an XML file and set up Log4cxx accordingly.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1helpers_1_1Object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
@@ -181,35 +181,35 @@ Protected Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab112d6f354a35ef5329933fb7f574bb3" id="r_ab112d6f354a35ef5329933fb7f574bb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab112d6f354a35ef5329933fb7f574bb3">findAppenderByName</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *elem, apr_xml_doc *doc, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;appenderName, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
-<tr class="memdesc:ab112d6f354a35ef5329933fb7f574bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse appenders by IDREF name.  <br /></td></tr>
-<tr class="memitem:a69f5ed79a11855790dccd4f04dff506b" id="r_a69f5ed79a11855790dccd4f04dff506b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69f5ed79a11855790dccd4f04dff506b">findAppenderByReference</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *appenderRef, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
-<tr class="memdesc:a69f5ed79a11855790dccd4f04dff506b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse appenders by IDREF element.  <br /></td></tr>
-<tr class="memitem:a3d8f12e5d8d1ca8723ad7b993aa8c723" id="r_a3d8f12e5d8d1ca8723ad7b993aa8c723"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d8f12e5d8d1ca8723ad7b993aa8c723">parseAppender</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *appenderElement, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
-<tr class="memdesc:a3d8f12e5d8d1ca8723ad7b993aa8c723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse an appender element.  <br /></td></tr>
-<tr class="memitem:a076f8b5cd2dbb81da5dbba54905823fe" id="r_a076f8b5cd2dbb81da5dbba54905823fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a076f8b5cd2dbb81da5dbba54905823fe">parseErrorHandler</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *element, <a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a> &amp;appender, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
-<tr class="memdesc:a076f8b5cd2dbb81da5dbba54905823fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse an <code><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html">ErrorHandler </a></code> element.  <br /></td></tr>
-<tr class="memitem:a95c5a6ae434f82586ee29840a0a251ef" id="r_a95c5a6ae434f82586ee29840a0a251ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95c5a6ae434f82586ee29840a0a251ef">parseFilters</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *element, std::vector&lt; <a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">log4cxx::spi::FilterPtr</a> &gt; &amp;filters)</td></tr>
-<tr class="memdesc:a95c5a6ae434f82586ee29840a0a251ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse a filter element.  <br /></td></tr>
-<tr class="memitem:ab3ee78b85baefcbdb806adb44127272e" id="r_ab3ee78b85baefcbdb806adb44127272e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3ee78b85baefcbdb806adb44127272e">parseLogger</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *loggerElement, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
-<tr class="memdesc:ab3ee78b85baefcbdb806adb44127272e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse a logger element.  <br /></td></tr>
-<tr class="memitem:a2dba2c062887dd38e264b427012f43ea" id="r_a2dba2c062887dd38e264b427012f43ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dba2c062887dd38e264b427012f43ea">parseLoggerFactory</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *factoryElement)</td></tr>
-<tr class="memdesc:a2dba2c062887dd38e264b427012f43ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse the logger factory element.  <br /></td></tr>
-<tr class="memitem:a66a0a7cc6b25317003584ed9bcbe62d8" id="r_a66a0a7cc6b25317003584ed9bcbe62d8"><td class="memItemLeft" align="right" valign="top">log4cxx::helpers::ObjectPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66a0a7cc6b25317003584ed9bcbe62d8">parseTriggeringPolicy</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *factoryElement)</td></tr>
-<tr class="memdesc:a66a0a7cc6b25317003584ed9bcbe62d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse the logger factory element.  <br /></td></tr>
-<tr class="memitem:acbc3d4ff0e39a4c1c9e8e3cd2acc2987" id="r_acbc3d4ff0e39a4c1c9e8e3cd2acc2987"><td class="memItemLeft" align="right" valign="top">log4cxx::rolling::RollingPolicyPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbc3d4ff0e39a4c1c9e8e3cd2acc2987">parseRollingPolicy</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *factoryElement)</td></tr>
-<tr class="memdesc:acbc3d4ff0e39a4c1c9e8e3cd2acc2987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse the logger factory element.  <br /></td></tr>
-<tr class="memitem:a63211953504ab4f48afcdb607e2a4f05" id="r_a63211953504ab4f48afcdb607e2a4f05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63211953504ab4f48afcdb607e2a4f05">parseRoot</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *rootElement, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
-<tr class="memdesc:a63211953504ab4f48afcdb607e2a4f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse the root logger element.  <br /></td></tr>
-<tr class="memitem:aa92efcf86fa9d0051f9a06879b56b420" id="r_aa92efcf86fa9d0051f9a06879b56b420"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa92efcf86fa9d0051f9a06879b56b420">parseChildrenOfLoggerElement</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *catElement, <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> logger, bool isRoot, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
-<tr class="memdesc:aa92efcf86fa9d0051f9a06879b56b420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse the children of a logger element.  <br /></td></tr>
-<tr class="memitem:a8e7313920828bd68d7b4c0499ac647f0" id="r_a8e7313920828bd68d7b4c0499ac647f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e7313920828bd68d7b4c0499ac647f0">parseLayout</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *layout_element)</td></tr>
-<tr class="memdesc:a8e7313920828bd68d7b4c0499ac647f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse a layout element.  <br /></td></tr>
-<tr class="memitem:a08c5460a037645ec655139e402c1dad0" id="r_a08c5460a037645ec655139e402c1dad0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08c5460a037645ec655139e402c1dad0">parseLevel</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *element, <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> logger, bool isRoot)</td></tr>
-<tr class="memdesc:a08c5460a037645ec655139e402c1dad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse a level element.  <br /></td></tr>
-<tr class="memitem:a93a50c8907020332e2267b9de8b8f61b" id="r_a93a50c8907020332e2267b9de8b8f61b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93a50c8907020332e2267b9de8b8f61b">setParameter</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *elem, <a class="el" href="classlog4cxx_1_1config_1_1PropertySetter.html">log4cxx::config::PropertySetter</a> &amp;propSetter)</td></tr>
-<tr class="memitem:af021b6d7c26fc11ac254cdc308caccb0" id="r_af021b6d7c26fc11ac254cdc308caccb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af021b6d7c26fc11ac254cdc308caccb0">parse</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *element, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
-<tr class="memdesc:af021b6d7c26fc11ac254cdc308caccb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to configure the <a class="el" href="namespacelog4cxx.html">log4cxx</a> framework from an in-memory representation of an XML document.  <br /></td></tr>
+<tr class="memitem:a39bc0db40c04a13f21d852bcca640599" id="r_a39bc0db40c04a13f21d852bcca640599"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39bc0db40c04a13f21d852bcca640599">findAppenderByName</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *elem, apr_xml_doc *doc, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;appenderName, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
+<tr class="memdesc:a39bc0db40c04a13f21d852bcca640599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse appenders by IDREF name.  <br /></td></tr>
+<tr class="memitem:a379fa6ba87d9eefbf632e9531e22dcff" id="r_a379fa6ba87d9eefbf632e9531e22dcff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a379fa6ba87d9eefbf632e9531e22dcff">findAppenderByReference</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *appenderRef, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
+<tr class="memdesc:a379fa6ba87d9eefbf632e9531e22dcff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse appenders by IDREF element.  <br /></td></tr>
+<tr class="memitem:aa5dc9fd6566b5bc13010ee32999f3236" id="r_aa5dc9fd6566b5bc13010ee32999f3236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5dc9fd6566b5bc13010ee32999f3236">parseAppender</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *appenderElement, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
+<tr class="memdesc:aa5dc9fd6566b5bc13010ee32999f3236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse an appender element.  <br /></td></tr>
+<tr class="memitem:aeb01801c61248c1699937640158a4f3b" id="r_aeb01801c61248c1699937640158a4f3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb01801c61248c1699937640158a4f3b">parseErrorHandler</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *element, <a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a> &amp;appender, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
+<tr class="memdesc:aeb01801c61248c1699937640158a4f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse an <code><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html">ErrorHandler </a></code> element.  <br /></td></tr>
+<tr class="memitem:a50ef43e8aec538968304d2f9d4804da7" id="r_a50ef43e8aec538968304d2f9d4804da7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50ef43e8aec538968304d2f9d4804da7">parseFilters</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *element, std::vector&lt; <a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">log4cxx::spi::FilterPtr</a> &gt; &amp;filters)</td></tr>
+<tr class="memdesc:a50ef43e8aec538968304d2f9d4804da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse a filter element.  <br /></td></tr>
+<tr class="memitem:ac6a060104ff82c4f3f0ce7433cb0d694" id="r_ac6a060104ff82c4f3f0ce7433cb0d694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6a060104ff82c4f3f0ce7433cb0d694">parseLogger</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *loggerElement, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
+<tr class="memdesc:ac6a060104ff82c4f3f0ce7433cb0d694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse a logger element.  <br /></td></tr>
+<tr class="memitem:aa8a8dfb06ca90cc29b6e971b558e27c4" id="r_aa8a8dfb06ca90cc29b6e971b558e27c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8a8dfb06ca90cc29b6e971b558e27c4">parseLoggerFactory</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *factoryElement)</td></tr>
+<tr class="memdesc:aa8a8dfb06ca90cc29b6e971b558e27c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse the logger factory element.  <br /></td></tr>
+<tr class="memitem:aa58a34a3a1ab99184f9a492a733379f5" id="r_aa58a34a3a1ab99184f9a492a733379f5"><td class="memItemLeft" align="right" valign="top">log4cxx::helpers::ObjectPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa58a34a3a1ab99184f9a492a733379f5">parseTriggeringPolicy</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *factoryElement)</td></tr>
+<tr class="memdesc:aa58a34a3a1ab99184f9a492a733379f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse the logger factory element.  <br /></td></tr>
+<tr class="memitem:a4adf566b76ade24c1b6ca9c4d13e2670" id="r_a4adf566b76ade24c1b6ca9c4d13e2670"><td class="memItemLeft" align="right" valign="top">log4cxx::rolling::RollingPolicyPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4adf566b76ade24c1b6ca9c4d13e2670">parseRollingPolicy</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *factoryElement)</td></tr>
+<tr class="memdesc:a4adf566b76ade24c1b6ca9c4d13e2670"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse the logger factory element.  <br /></td></tr>
+<tr class="memitem:a9cd296818d18470e5ba1817937a7fcf2" id="r_a9cd296818d18470e5ba1817937a7fcf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cd296818d18470e5ba1817937a7fcf2">parseRoot</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *rootElement, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
+<tr class="memdesc:a9cd296818d18470e5ba1817937a7fcf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse the root logger element.  <br /></td></tr>
+<tr class="memitem:a77b125f6bae07ebc0f608b89b303581b" id="r_a77b125f6bae07ebc0f608b89b303581b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77b125f6bae07ebc0f608b89b303581b">parseChildrenOfLoggerElement</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *catElement, <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> logger, bool isRoot, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
+<tr class="memdesc:a77b125f6bae07ebc0f608b89b303581b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse the children of a logger element.  <br /></td></tr>
+<tr class="memitem:a5d7fa47c8cef840eae7dd1e5169726d6" id="r_a5d7fa47c8cef840eae7dd1e5169726d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d7fa47c8cef840eae7dd1e5169726d6">parseLayout</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *layout_element)</td></tr>
+<tr class="memdesc:a5d7fa47c8cef840eae7dd1e5169726d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse a layout element.  <br /></td></tr>
+<tr class="memitem:a8c063dcd59e28d1cd7616c8d93a350fa" id="r_a8c063dcd59e28d1cd7616c8d93a350fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c063dcd59e28d1cd7616c8d93a350fa">parseLevel</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *element, <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> logger, bool isRoot)</td></tr>
+<tr class="memdesc:a8c063dcd59e28d1cd7616c8d93a350fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to parse a level element.  <br /></td></tr>
+<tr class="memitem:ae0cc7553f9e3802f66e71f7092643937" id="r_ae0cc7553f9e3802f66e71f7092643937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0cc7553f9e3802f66e71f7092643937">setParameter</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *elem, <a class="el" href="classlog4cxx_1_1config_1_1PropertySetter.html">log4cxx::config::PropertySetter</a> &amp;propSetter)</td></tr>
+<tr class="memitem:a85aefaf0ee44e8683880dc583c51a32c" id="r_a85aefaf0ee44e8683880dc583c51a32c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85aefaf0ee44e8683880dc583c51a32c">parse</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1, log4cxx::helpers::CharsetDecoderPtr &amp;utf8Decoder, apr_xml_elem *element, apr_xml_doc *doc, <a class="el" href="#a8bed79fd5c7635ae588037b7b32a65cc">AppenderMap</a> &amp;appenders)</td></tr>
+<tr class="memdesc:a85aefaf0ee44e8683880dc583c51a32c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally to configure the <a class="el" href="namespacelog4cxx.html">log4cxx</a> framework from an in-memory representation of an XML document.  <br /></td></tr>
 <tr class="memitem:aaa1ce321f2cc0a81b36b314a8d22f2b3" id="r_aaa1ce321f2cc0a81b36b314a8d22f2b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa1ce321f2cc0a81b36b314a8d22f2b3">subst</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value)</td></tr>
 <tr class="inherit_header pro_methods_classlog4cxx_1_1spi_1_1Configurator"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classlog4cxx_1_1spi_1_1Configurator')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html">log4cxx::spi::Configurator</a></td></tr>
 <tr class="memitem:a5f9a2b5151d862147ed2641e82429523 inherit pro_methods_classlog4cxx_1_1spi_1_1Configurator" id="r_a5f9a2b5151d862147ed2641e82429523"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a5f9a2b5151d862147ed2641e82429523">Configurator</a> ()</td></tr>
@@ -283,8 +283,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a75077af3e7985c1ab9e5e4e7a230d803" name="a75077af3e7985c1ab9e5e4e7a230d803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75077af3e7985c1ab9e5e4e7a230d803">&#9670;&#160;</a></span>DOMConfigurator() <span class="overload">[2/2]</span></h2>
+<a id="ae308df50d2c9956e060cbe6ad34a0323" name="ae308df50d2c9956e060cbe6ad34a0323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae308df50d2c9956e060cbe6ad34a0323">&#9670;&#160;</a></span>DOMConfigurator() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +292,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">log4cxx::xml::DOMConfigurator::DOMConfigurator </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -837,8 +837,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab112d6f354a35ef5329933fb7f574bb3" name="ab112d6f354a35ef5329933fb7f574bb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab112d6f354a35ef5329933fb7f574bb3">&#9670;&#160;</a></span>findAppenderByName()</h2>
+<a id="a39bc0db40c04a13f21d852bcca640599" name="a39bc0db40c04a13f21d852bcca640599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39bc0db40c04a13f21d852bcca640599">&#9670;&#160;</a></span>findAppenderByName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -849,7 +849,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a> log4cxx::xml::DOMConfigurator::findAppenderByName </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -888,8 +888,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a69f5ed79a11855790dccd4f04dff506b" name="a69f5ed79a11855790dccd4f04dff506b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69f5ed79a11855790dccd4f04dff506b">&#9670;&#160;</a></span>findAppenderByReference()</h2>
+<a id="a379fa6ba87d9eefbf632e9531e22dcff" name="a379fa6ba87d9eefbf632e9531e22dcff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379fa6ba87d9eefbf632e9531e22dcff">&#9670;&#160;</a></span>findAppenderByReference()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -900,7 +900,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a> log4cxx::xml::DOMConfigurator::findAppenderByReference </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -968,8 +968,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af021b6d7c26fc11ac254cdc308caccb0" name="af021b6d7c26fc11ac254cdc308caccb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af021b6d7c26fc11ac254cdc308caccb0">&#9670;&#160;</a></span>parse()</h2>
+<a id="a85aefaf0ee44e8683880dc583c51a32c" name="a85aefaf0ee44e8683880dc583c51a32c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85aefaf0ee44e8683880dc583c51a32c">&#9670;&#160;</a></span>parse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -980,7 +980,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::xml::DOMConfigurator::parse </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1014,8 +1014,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3d8f12e5d8d1ca8723ad7b993aa8c723" name="a3d8f12e5d8d1ca8723ad7b993aa8c723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d8f12e5d8d1ca8723ad7b993aa8c723">&#9670;&#160;</a></span>parseAppender()</h2>
+<a id="aa5dc9fd6566b5bc13010ee32999f3236" name="aa5dc9fd6566b5bc13010ee32999f3236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5dc9fd6566b5bc13010ee32999f3236">&#9670;&#160;</a></span>parseAppender()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1026,7 +1026,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespacelog4cxx.html#ac9c3a599709adda1f3dc34b2060bbbe1">AppenderPtr</a> log4cxx::xml::DOMConfigurator::parseAppender </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1060,8 +1060,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa92efcf86fa9d0051f9a06879b56b420" name="aa92efcf86fa9d0051f9a06879b56b420"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa92efcf86fa9d0051f9a06879b56b420">&#9670;&#160;</a></span>parseChildrenOfLoggerElement()</h2>
+<a id="a77b125f6bae07ebc0f608b89b303581b" name="a77b125f6bae07ebc0f608b89b303581b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b125f6bae07ebc0f608b89b303581b">&#9670;&#160;</a></span>parseChildrenOfLoggerElement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1072,7 +1072,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::xml::DOMConfigurator::parseChildrenOfLoggerElement </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1116,8 +1116,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a076f8b5cd2dbb81da5dbba54905823fe" name="a076f8b5cd2dbb81da5dbba54905823fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a076f8b5cd2dbb81da5dbba54905823fe">&#9670;&#160;</a></span>parseErrorHandler()</h2>
+<a id="aeb01801c61248c1699937640158a4f3b" name="aeb01801c61248c1699937640158a4f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb01801c61248c1699937640158a4f3b">&#9670;&#160;</a></span>parseErrorHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1128,7 +1128,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::xml::DOMConfigurator::parseErrorHandler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1167,8 +1167,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a95c5a6ae434f82586ee29840a0a251ef" name="a95c5a6ae434f82586ee29840a0a251ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95c5a6ae434f82586ee29840a0a251ef">&#9670;&#160;</a></span>parseFilters()</h2>
+<a id="a50ef43e8aec538968304d2f9d4804da7" name="a50ef43e8aec538968304d2f9d4804da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ef43e8aec538968304d2f9d4804da7">&#9670;&#160;</a></span>parseFilters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1179,7 +1179,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::xml::DOMConfigurator::parseFilters </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1208,8 +1208,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8e7313920828bd68d7b4c0499ac647f0" name="a8e7313920828bd68d7b4c0499ac647f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e7313920828bd68d7b4c0499ac647f0">&#9670;&#160;</a></span>parseLayout()</h2>
+<a id="a5d7fa47c8cef840eae7dd1e5169726d6" name="a5d7fa47c8cef840eae7dd1e5169726d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7fa47c8cef840eae7dd1e5169726d6">&#9670;&#160;</a></span>parseLayout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1220,7 +1220,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> log4cxx::xml::DOMConfigurator::parseLayout </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1244,8 +1244,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a08c5460a037645ec655139e402c1dad0" name="a08c5460a037645ec655139e402c1dad0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08c5460a037645ec655139e402c1dad0">&#9670;&#160;</a></span>parseLevel()</h2>
+<a id="a8c063dcd59e28d1cd7616c8d93a350fa" name="a8c063dcd59e28d1cd7616c8d93a350fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c063dcd59e28d1cd7616c8d93a350fa">&#9670;&#160;</a></span>parseLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1256,7 +1256,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::xml::DOMConfigurator::parseLevel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1290,8 +1290,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab3ee78b85baefcbdb806adb44127272e" name="ab3ee78b85baefcbdb806adb44127272e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3ee78b85baefcbdb806adb44127272e">&#9670;&#160;</a></span>parseLogger()</h2>
+<a id="ac6a060104ff82c4f3f0ce7433cb0d694" name="ac6a060104ff82c4f3f0ce7433cb0d694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a060104ff82c4f3f0ce7433cb0d694">&#9670;&#160;</a></span>parseLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1302,7 +1302,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::xml::DOMConfigurator::parseLogger </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1336,8 +1336,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2dba2c062887dd38e264b427012f43ea" name="a2dba2c062887dd38e264b427012f43ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dba2c062887dd38e264b427012f43ea">&#9670;&#160;</a></span>parseLoggerFactory()</h2>
+<a id="aa8a8dfb06ca90cc29b6e971b558e27c4" name="aa8a8dfb06ca90cc29b6e971b558e27c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8a8dfb06ca90cc29b6e971b558e27c4">&#9670;&#160;</a></span>parseLoggerFactory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1348,7 +1348,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::xml::DOMConfigurator::parseLoggerFactory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1372,8 +1372,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acbc3d4ff0e39a4c1c9e8e3cd2acc2987" name="acbc3d4ff0e39a4c1c9e8e3cd2acc2987"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbc3d4ff0e39a4c1c9e8e3cd2acc2987">&#9670;&#160;</a></span>parseRollingPolicy()</h2>
+<a id="a4adf566b76ade24c1b6ca9c4d13e2670" name="a4adf566b76ade24c1b6ca9c4d13e2670"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4adf566b76ade24c1b6ca9c4d13e2670">&#9670;&#160;</a></span>parseRollingPolicy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1384,7 +1384,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">log4cxx::rolling::RollingPolicyPtr log4cxx::xml::DOMConfigurator::parseRollingPolicy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1408,8 +1408,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a63211953504ab4f48afcdb607e2a4f05" name="a63211953504ab4f48afcdb607e2a4f05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63211953504ab4f48afcdb607e2a4f05">&#9670;&#160;</a></span>parseRoot()</h2>
+<a id="a9cd296818d18470e5ba1817937a7fcf2" name="a9cd296818d18470e5ba1817937a7fcf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cd296818d18470e5ba1817937a7fcf2">&#9670;&#160;</a></span>parseRoot()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1420,7 +1420,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::xml::DOMConfigurator::parseRoot </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1454,8 +1454,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a66a0a7cc6b25317003584ed9bcbe62d8" name="a66a0a7cc6b25317003584ed9bcbe62d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66a0a7cc6b25317003584ed9bcbe62d8">&#9670;&#160;</a></span>parseTriggeringPolicy()</h2>
+<a id="aa58a34a3a1ab99184f9a492a733379f5" name="aa58a34a3a1ab99184f9a492a733379f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa58a34a3a1ab99184f9a492a733379f5">&#9670;&#160;</a></span>parseTriggeringPolicy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1466,7 +1466,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">log4cxx::helpers::ObjectPtr log4cxx::xml::DOMConfigurator::parseTriggeringPolicy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1490,8 +1490,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a93a50c8907020332e2267b9de8b8f61b" name="a93a50c8907020332e2267b9de8b8f61b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93a50c8907020332e2267b9de8b8f61b">&#9670;&#160;</a></span>setParameter()</h2>
+<a id="ae0cc7553f9e3802f66e71f7092643937" name="ae0cc7553f9e3802f66e71f7092643937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0cc7553f9e3802f66e71f7092643937">&#9670;&#160;</a></span>setParameter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1502,7 +1502,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::xml::DOMConfigurator::setParameter </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

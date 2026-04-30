@@ -33,7 +33,7 @@ var classlog4cxx_1_1Logger =
     [ "addWarnEvent", "classlog4cxx_1_1Logger.html#a337292a3079ee7d820cf2b2ad9febce4", null ],
     [ "addWarnEvent", "classlog4cxx_1_1Logger.html#a2ad273f704a7fbd32c3e44baae244cdc", null ],
     [ "addWarnEvent", "classlog4cxx_1_1Logger.html#a0c32655597e79f83208dce4c876b4f9f", null ],
-    [ "callAppenders", "classlog4cxx_1_1Logger.html#a9c4c6d2fe258529ad6a9456b77e76d93", null ],
+    [ "callAppenders", "classlog4cxx_1_1Logger.html#a860009136227b8f804ce25427138dc6e", null ],
     [ "changeParentTo", "classlog4cxx_1_1Logger.html#aaef29171ede7f366b9ab765f721e8dc3", null ],
     [ "closeNestedAppenders", "classlog4cxx_1_1Logger.html#adf4916f818281f48ee3fd33576635c23", null ],
     [ "debug", "classlog4cxx_1_1Logger.html#a1bae58e2f29a4b149cf1a1ec19ee4f77", null ],

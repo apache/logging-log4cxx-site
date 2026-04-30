@@ -2,7 +2,7 @@ var classlog4cxx_1_1rolling_1_1FixedWindowRollingPolicy =
 [
     [ "FixedWindowRollingPolicy", "classlog4cxx_1_1rolling_1_1FixedWindowRollingPolicy.html#ab3a833b7fd2ee4d091d8a81078f32949", null ],
     [ "~FixedWindowRollingPolicy", "classlog4cxx_1_1rolling_1_1FixedWindowRollingPolicy.html#a94767da632533d958847e9d12958561e", null ],
-    [ "activateOptions", "classlog4cxx_1_1rolling_1_1FixedWindowRollingPolicy.html#ac478f89b727b9da4293cc4b6cfdf473c", null ],
+    [ "activateOptions", "classlog4cxx_1_1rolling_1_1FixedWindowRollingPolicy.html#a63f74e78dccf18e4564f9dc19ba62b2a", null ],
     [ "getFormatSpecifiers", "classlog4cxx_1_1rolling_1_1FixedWindowRollingPolicy.html#a4722cee999207f311d9dbc6acd945f71", null ],
     [ "getMaxIndex", "classlog4cxx_1_1rolling_1_1FixedWindowRollingPolicy.html#a4e46aabade343ca11f1bff7e086d4587", null ],
     [ "getMinIndex", "classlog4cxx_1_1rolling_1_1FixedWindowRollingPolicy.html#a3b785d839579c7316b169ff7ce263a50", null ],

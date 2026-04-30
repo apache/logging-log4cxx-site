@@ -2,8 +2,9 @@ var classlog4cxx_1_1net_1_1TelnetAppender =
 [
     [ "TelnetAppender", "classlog4cxx_1_1net_1_1TelnetAppender.html#adcd56b31340ae54f0d00b95319bc6ad0", null ],
     [ "~TelnetAppender", "classlog4cxx_1_1net_1_1TelnetAppender.html#a4c4a06a26d4b895f0a063d621ef87820", null ],
-    [ "activateOptions", "classlog4cxx_1_1net_1_1TelnetAppender.html#a09edfb59842af09ebd26f1aa37d5186d", null ],
-    [ "append", "classlog4cxx_1_1net_1_1TelnetAppender.html#a166b3d21ee2b50e2a15e1e19b16d0905", null ],
+    [ "activateOptions", "classlog4cxx_1_1net_1_1TelnetAppender.html#a88e56ef02484030e23b96f7200f4c6dd", null ],
+    [ "activateOptions", "classlog4cxx_1_1net_1_1TelnetAppender.html#a685b1919f0b0db6a7905dbb7896b3e70", null ],
+    [ "append", "classlog4cxx_1_1net_1_1TelnetAppender.html#a517487bdb54a234df9c6e2ceea64d799", null ],
     [ "close", "classlog4cxx_1_1net_1_1TelnetAppender.html#a02d35f0ee49a7689e076863797af3835", null ],
     [ "getEncoding", "classlog4cxx_1_1net_1_1TelnetAppender.html#a853c8d0ee86219d7cd91822b64acc702", null ],
     [ "getHostname", "classlog4cxx_1_1net_1_1TelnetAppender.html#a1f57a9a7818041f012801914865d30d4", null ],

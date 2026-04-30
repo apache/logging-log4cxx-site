@@ -130,17 +130,16 @@ Inheritance diagram for log4cxx::net::SMTPAppender:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a69c9e4f5eafb8cd2e06c32f16078d769" id="r_a69c9e4f5eafb8cd2e06c32f16078d769"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69c9e4f5eafb8cd2e06c32f16078d769">SMTPAppender</a> ()</td></tr>
-<tr class="memitem:afa530e8fa0612f4830157acaf0b5bb5a" id="r_afa530e8fa0612f4830157acaf0b5bb5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa530e8fa0612f4830157acaf0b5bb5a">SMTPAppender</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p)</td></tr>
-<tr class="memdesc:afa530e8fa0612f4830157acaf0b5bb5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor will instantiate the appender with a <a class="el" href="classlog4cxx_1_1spi_1_1TriggeringEventEvaluator.html" title="Implementions of this interface allow certain appenders to decide when to perform an appender specifi...">spi::TriggeringEventEvaluator</a> that will trigger on events with level ERROR or higher.  <br /></td></tr>
+<tr class="memitem:a5d55debe756392697ed8294d197c9937" id="r_a5d55debe756392697ed8294d197c9937"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d55debe756392697ed8294d197c9937">SMTPAppender</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1)</td></tr>
+<tr class="memdesc:a5d55debe756392697ed8294d197c9937"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default constructor will instantiate the appender with a <a class="el" href="classlog4cxx_1_1spi_1_1TriggeringEventEvaluator.html" title="Implementions of this interface allow certain appenders to decide when to perform an appender specifi...">spi::TriggeringEventEvaluator</a> that will trigger on events with level ERROR or higher.  <br /></td></tr>
 <tr class="memitem:a5ef1ba5def98d39593121cb8822f59c1" id="r_a5ef1ba5def98d39593121cb8822f59c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ef1ba5def98d39593121cb8822f59c1">SMTPAppender</a> (spi::TriggeringEventEvaluatorPtr evaluator)</td></tr>
 <tr class="memdesc:a5ef1ba5def98d39593121cb8822f59c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>evaluator</code> passed as parameter as the <a class="el" href="classlog4cxx_1_1spi_1_1TriggeringEventEvaluator.html" title="Implementions of this interface allow certain appenders to decide when to perform an appender specifi...">spi::TriggeringEventEvaluator</a> for this <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html" title="Send an e-mail when a specific logging event occurs, typically when an ERROR level logging event is s...">net::SMTPAppender</a>.  <br /></td></tr>
 <tr class="memitem:afa6351dfb71749765d253844e6eec83b" id="r_afa6351dfb71749765d253844e6eec83b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa6351dfb71749765d253844e6eec83b">~SMTPAppender</a> ()</td></tr>
 <tr class="memitem:abc7cf7c6dba6688f349ed76228731457" id="r_abc7cf7c6dba6688f349ed76228731457"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc7cf7c6dba6688f349ed76228731457">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
 <tr class="memdesc:abc7cf7c6dba6688f349ed76228731457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.        <br /></td></tr>
-<tr class="memitem:ac3946f61995a313d788aa01098d06696" id="r_ac3946f61995a313d788aa01098d06696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3946f61995a313d788aa01098d06696">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) override</td></tr>
-<tr class="memdesc:ac3946f61995a313d788aa01098d06696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.        <br /></td></tr>
-<tr class="memitem:af24560c8a65364dbb0fa4fc67f2f86a5" id="r_af24560c8a65364dbb0fa4fc67f2f86a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af24560c8a65364dbb0fa4fc67f2f86a5">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) override</td></tr>
-<tr class="memdesc:af24560c8a65364dbb0fa4fc67f2f86a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html" title="Send an e-mail when a specific logging event occurs, typically when an ERROR level logging event is s...">SMTPAppender</a> specific appending actions, mainly adding the event to a cyclic buffer and checking if the event triggers an e-mail to be sent.  <br /></td></tr>
+<tr class="memitem:a088775af49f57aafba89d0bb9534c337" id="r_a088775af49f57aafba89d0bb9534c337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a088775af49f57aafba89d0bb9534c337">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;) override</td></tr>
+<tr class="memitem:a29a8386423db9fc93ccdd8a611ab7a21" id="r_a29a8386423db9fc93ccdd8a611ab7a21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29a8386423db9fc93ccdd8a611ab7a21">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;1) override</td></tr>
+<tr class="memdesc:a29a8386423db9fc93ccdd8a611ab7a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html" title="Send an e-mail when a specific logging event occurs, typically when an ERROR level logging event is s...">SMTPAppender</a> specific appending actions, mainly adding the event to a cyclic buffer and checking if the event triggers an e-mail to be sent.  <br /></td></tr>
 <tr class="memitem:a66599643aad2d261696c5153920ecf43" id="r_a66599643aad2d261696c5153920ecf43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66599643aad2d261696c5153920ecf43">close</a> () override</td></tr>
 <tr class="memdesc:a66599643aad2d261696c5153920ecf43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.  <br /></td></tr>
 <tr class="memitem:a608fe6a83e30c286d7457c4842b531fb" id="r_a608fe6a83e30c286d7457c4842b531fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a608fe6a83e30c286d7457c4842b531fb">getTo</a> () const</td></tr>
@@ -151,8 +150,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:addf38cf415a9a211238a4349e0973bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns value of the <b>bcc</b> option.  <br /></td></tr>
 <tr class="memitem:aeebd15d013ed0469f564096b8ee03821" id="r_aeebd15d013ed0469f564096b8ee03821"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeebd15d013ed0469f564096b8ee03821">requiresLayout</a> () const override</td></tr>
 <tr class="memdesc:aeebd15d013ed0469f564096b8ee03821"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code><a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html" title="Send an e-mail when a specific logging event occurs, typically when an ERROR level logging event is s...">SMTPAppender</a></code> requires a <code><a class="el" href="classlog4cxx_1_1Layout.html" title="Extend this abstract class to create your own log layout format.">Layout</a></code>.  <br /></td></tr>
-<tr class="memitem:a91ee75cd447e92c24d4ed9d44e3be94a" id="r_a91ee75cd447e92c24d4ed9d44e3be94a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91ee75cd447e92c24d4ed9d44e3be94a">sendBuffer</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p)</td></tr>
-<tr class="memdesc:a91ee75cd447e92c24d4ed9d44e3be94a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the contents of the cyclic buffer as an e-mail message.  <br /></td></tr>
+<tr class="memitem:ae607a4ed09ad3f42ad04403b7557166a" id="r_ae607a4ed09ad3f42ad04403b7557166a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae607a4ed09ad3f42ad04403b7557166a">sendBuffer</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1)</td></tr>
+<tr class="memdesc:ae607a4ed09ad3f42ad04403b7557166a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the contents of the cyclic buffer as an e-mail message.  <br /></td></tr>
 <tr class="memitem:a0676b059b950cda7cda7948599225857" id="r_a0676b059b950cda7cda7948599225857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0676b059b950cda7cda7948599225857">getEvaluatorClass</a> ()</td></tr>
 <tr class="memdesc:a0676b059b950cda7cda7948599225857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns value of the <b>EvaluatorClass</b> option.  <br /></td></tr>
 <tr class="memitem:ab3e975e723eb11ad749e0b9044ef1e79" id="r_ab3e975e723eb11ad749e0b9044ef1e79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3e975e723eb11ad749e0b9044ef1e79">getFrom</a> () const</td></tr>
@@ -233,10 +232,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8f43cc72bbddcd95ddaeb274cd040b3c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a9a0d49cd8867995f2ad8bd1df8b0fcea inherit pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a9a0d49cd8867995f2ad8bd1df8b0fcea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a9a0d49cd8867995f2ad8bd1df8b0fcea">setThreshold</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;threshold)</td></tr>
 <tr class="memdesc:a9a0d49cd8867995f2ad8bd1df8b0fcea inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the threshold level.  <br /></td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd inherit pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1Appender"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1Appender')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1Appender.html">log4cxx::Appender</a></td></tr>
 <tr class="memitem:adb76477fa620be64de22efe12b127ad5 inherit pub_methods_classlog4cxx_1_1Appender" id="r_adb76477fa620be64de22efe12b127ad5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Appender.html#adb76477fa620be64de22efe12b127ad5">~Appender</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1OptionHandler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1spi_1_1OptionHandler')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html">log4cxx::spi::OptionHandler</a></td></tr>
 <tr class="memitem:a556b59c5ef41477c0bc3f50efadc859e inherit pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a556b59c5ef41477c0bc3f50efadc859e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a556b59c5ef41477c0bc3f50efadc859e">~OptionHandler</a> ()</td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd inherit pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1helpers_1_1Object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
 <tr class="memitem:a8ba23411233a652fac44a619e6356115 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a8ba23411233a652fac44a619e6356115"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a8ba23411233a652fac44a619e6356115">~Object</a> ()</td></tr>
 <tr class="memitem:a581992e532894891e83b9afd605ca492 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a581992e532894891e83b9afd605ca492"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">helpers::Class</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a581992e532894891e83b9afd605ca492">getClass</a> () const =0</td></tr>
@@ -316,8 +317,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="afa530e8fa0612f4830157acaf0b5bb5a" name="afa530e8fa0612f4830157acaf0b5bb5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa530e8fa0612f4830157acaf0b5bb5a">&#9670;&#160;</a></span>SMTPAppender() <span class="overload">[2/3]</span></h2>
+<a id="a5d55debe756392697ed8294d197c9937" name="a5d55debe756392697ed8294d197c9937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d55debe756392697ed8294d197c9937">&#9670;&#160;</a></span>SMTPAppender() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +326,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">log4cxx::net::SMTPAppender::SMTPAppender </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -372,8 +373,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="ac3946f61995a313d788aa01098d06696" name="ac3946f61995a313d788aa01098d06696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3946f61995a313d788aa01098d06696">&#9670;&#160;</a></span>activateOptions()</h2>
+<a id="a088775af49f57aafba89d0bb9534c337" name="a088775af49f57aafba89d0bb9534c337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a088775af49f57aafba89d0bb9534c337">&#9670;&#160;</a></span>activateOptions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,7 +385,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::net::SMTPAppender::activateOptions </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -395,7 +396,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Activate the options that were previously set with calls to option setters.       </p>
+<p></p>
 <p>Will not activate and will log an error message if:</p><ul>
 <li>
 no layout is provided </li>
@@ -412,8 +413,8 @@ a non-ascii character is detected where not permitted </li>
 
 </div>
 </div>
-<a id="af24560c8a65364dbb0fa4fc67f2f86a5" name="af24560c8a65364dbb0fa4fc67f2f86a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af24560c8a65364dbb0fa4fc67f2f86a5">&#9670;&#160;</a></span>append()</h2>
+<a id="a29a8386423db9fc93ccdd8a611ab7a21" name="a29a8386423db9fc93ccdd8a611ab7a21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a8386423db9fc93ccdd8a611ab7a21">&#9670;&#160;</a></span>append()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -429,7 +430,7 @@ a non-ascii character is detected where not permitted </li>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -441,7 +442,7 @@ a non-ascii character is detected where not permitted </li>
 
 <p>Perform <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html" title="Send an e-mail when a specific logging event occurs, typically when an ERROR level logging event is s...">SMTPAppender</a> specific appending actions, mainly adding the event to a cyclic buffer and checking if the event triggers an e-mail to be sent. </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a26bfb021038290769331e5e8c3f86d0a">log4cxx::AppenderSkeleton</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#abe8352e985764d6d30e530f07fb63aaf">log4cxx::AppenderSkeleton</a>.</p>
 
 </div>
 </div>
@@ -752,8 +753,8 @@ a non-ascii character is detected where not permitted </li>
 
 </div>
 </div>
-<a id="a91ee75cd447e92c24d4ed9d44e3be94a" name="a91ee75cd447e92c24d4ed9d44e3be94a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91ee75cd447e92c24d4ed9d44e3be94a">&#9670;&#160;</a></span>sendBuffer()</h2>
+<a id="ae607a4ed09ad3f42ad04403b7557166a" name="ae607a4ed09ad3f42ad04403b7557166a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae607a4ed09ad3f42ad04403b7557166a">&#9670;&#160;</a></span>sendBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -761,7 +762,7 @@ a non-ascii character is detected where not permitted </li>
         <tr>
           <td class="memname">void log4cxx::net::SMTPAppender::sendBuffer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

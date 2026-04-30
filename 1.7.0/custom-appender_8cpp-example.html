@@ -155,7 +155,11 @@ $(function(){initNavTree('custom-appender_8cpp-example.html','',''); });
 <div class="line">        <span class="comment">// This gets called whenever there is a valid event for our appender.</span></div>
 <div class="line">    }</div>
 <div class="line"> </div>
+<div class="line"><span class="preprocessor">#if LOG4CXX_ABI_VERSION &lt;= 15</span></div>
 <div class="line">    <span class="keywordtype">void</span> activateOptions(helpers::Pool&amp; <span class="comment">/* pool */</span>)<span class="keyword"> override </span>{</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line">    <span class="keywordtype">void</span> activateOptions()<span class="keyword"> override </span>{</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line">        <span class="comment">// Given all of our options, do something useful(e.g. open a file)</span></div>
 <div class="line">    }</div>
 <div class="line"> </div>

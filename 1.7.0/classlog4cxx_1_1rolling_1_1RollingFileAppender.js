@@ -2,7 +2,8 @@ var classlog4cxx_1_1rolling_1_1RollingFileAppender =
 [
     [ "RollingFileAppender", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ac9d54ab92ed5e16867a5bd5008237bd1", null ],
     [ "RollingFileAppender", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a8e1805afff90ec863edcc147ad716e42", null ],
-    [ "activateOptions", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#af748ad0314b771f71a3aaa7c24da3fd9", null ],
+    [ "activateOptions", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a88e56ef02484030e23b96f7200f4c6dd", null ],
+    [ "activateOptions", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a887ecdf57c2478ad8c55b29e44bb2377", null ],
     [ "close", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a36053b943ce279cbec156073a15179a9", null ],
     [ "createWriter", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a287c7bdf3d47902c68f780a9eae50e7e", null ],
     [ "getFileLength", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ac2abca18ddba02294f9f9298cc2a52b2", null ],
@@ -12,8 +13,8 @@ var classlog4cxx_1_1rolling_1_1RollingFileAppender =
     [ "getTriggeringPolicy", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a89692add4131920df9a72a9313a0e6c6", null ],
     [ "incrementFileLength", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a3f2b3a6183e2544faac8351a291eca78", null ],
     [ "makeFileNamePattern", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ab545ea46ac4b141e3785e59ea40ee4fe", null ],
-    [ "rollover", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a4ea298e25cdfc74207685ac7a2103d6c", null ],
-    [ "rolloverInternal", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a902cbff9b27ba2154ddc70ea26cefc35", null ],
+    [ "rollover", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#aa3a43fb45b51dc535cfc26aedb8a44a5", null ],
+    [ "rolloverInternal", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a59baddc1330f3fde52aa51555b071063", null ],
     [ "setDatePattern", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ae839a8809b8396b02c8da98d9367abb1", null ],
     [ "setMaxBackupIndex", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ac332eba61efb744254490053391f4b0e", null ],
     [ "setMaxFileSize", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ad07983333c7b467c5ba2302d7f34162f", null ],
@@ -21,5 +22,5 @@ var classlog4cxx_1_1rolling_1_1RollingFileAppender =
     [ "setOption", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#adc143e550e3ed25c462a73a0280fe51e", null ],
     [ "setRollingPolicy", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a9a6abb62884faf0fb50928ba1e361ad2", null ],
     [ "setTriggeringPolicy", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a17a2b2722b7f24950d22664c0be658ca", null ],
-    [ "subAppend", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a76e8886860e9162cd520f5b2255ef2e1", null ]
+    [ "subAppend", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a457263da883e094bf9459e923d9238fe", null ]
 ];

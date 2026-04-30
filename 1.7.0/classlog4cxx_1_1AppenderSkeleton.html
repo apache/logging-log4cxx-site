@@ -144,7 +144,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af6d1ab262b89bbea3a1e90b571dd844f" id="r_af6d1ab262b89bbea3a1e90b571dd844f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6d1ab262b89bbea3a1e90b571dd844f">finalize</a> ()</td></tr>
 <tr class="memdesc:af6d1ab262b89bbea3a1e90b571dd844f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize this appender by calling the derived class' <code>close</code> method.  <br /></td></tr>
 <tr class="memitem:a748043d02b71acad6205444ebeb6a75c" id="r_a748043d02b71acad6205444ebeb6a75c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a748043d02b71acad6205444ebeb6a75c">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;) override</td></tr>
-<tr class="memdesc:a748043d02b71acad6205444ebeb6a75c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.     <br /></td></tr>
 <tr class="memitem:a79c778323e79f6b9a2df5b0e54de0337" id="r_a79c778323e79f6b9a2df5b0e54de0337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79c778323e79f6b9a2df5b0e54de0337">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
 <tr class="memdesc:a79c778323e79f6b9a2df5b0e54de0337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.     <br /></td></tr>
 <tr class="memitem:aa4c1444922c46ebfee546b6486531491" id="r_aa4c1444922c46ebfee546b6486531491"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4c1444922c46ebfee546b6486531491">addFilter</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a> newFilter) override</td></tr>
@@ -175,6 +174,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8f43cc72bbddcd95ddaeb274cd040b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a9a0d49cd8867995f2ad8bd1df8b0fcea" id="r_a9a0d49cd8867995f2ad8bd1df8b0fcea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a0d49cd8867995f2ad8bd1df8b0fcea">setThreshold</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;threshold)</td></tr>
 <tr class="memdesc:a9a0d49cd8867995f2ad8bd1df8b0fcea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the threshold level.  <br /></td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1Appender"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1Appender')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1Appender.html">log4cxx::Appender</a></td></tr>
 <tr class="memitem:adb76477fa620be64de22efe12b127ad5 inherit pub_methods_classlog4cxx_1_1Appender" id="r_adb76477fa620be64de22efe12b127ad5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Appender.html#adb76477fa620be64de22efe12b127ad5">~Appender</a> ()</td></tr>
 <tr class="memitem:a63bbe5d72b11d0fcbbb4d06d435a7012 inherit pub_methods_classlog4cxx_1_1Appender" id="r_a63bbe5d72b11d0fcbbb4d06d435a7012"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Appender.html#a63bbe5d72b11d0fcbbb4d06d435a7012">close</a> ()=0</td></tr>
@@ -183,6 +183,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a59cf35c2fb097cce8ca435d2141790d9 inherit pub_methods_classlog4cxx_1_1Appender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configurators call this method to determine if the appender requires a layout.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1OptionHandler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1spi_1_1OptionHandler')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html">log4cxx::spi::OptionHandler</a></td></tr>
 <tr class="memitem:a556b59c5ef41477c0bc3f50efadc859e inherit pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a556b59c5ef41477c0bc3f50efadc859e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a556b59c5ef41477c0bc3f50efadc859e">~OptionHandler</a> ()</td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd inherit pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1helpers_1_1Object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
 <tr class="memitem:a8ba23411233a652fac44a619e6356115 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a8ba23411233a652fac44a619e6356115"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a8ba23411233a652fac44a619e6356115">~Object</a> ()</td></tr>
 <tr class="memitem:a581992e532894891e83b9afd605ca492 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a581992e532894891e83b9afd605ca492"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">helpers::Class</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a581992e532894891e83b9afd605ca492">getClass</a> () const =0</td></tr>
@@ -192,8 +193,8 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:accb02a0eabe4b11f2c771b4c796f3739" id="r_accb02a0eabe4b11f2c771b4c796f3739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accb02a0eabe4b11f2c771b4c796f3739">AppenderSkeleton</a> (LOG4CXX_PRIVATE_PTR(AppenderSkeletonPrivate) priv)</td></tr>
-<tr class="memitem:a26bfb021038290769331e5e8c3f86d0a" id="r_a26bfb021038290769331e5e8c3f86d0a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26bfb021038290769331e5e8c3f86d0a">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p)=0</td></tr>
-<tr class="memdesc:a26bfb021038290769331e5e8c3f86d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses of <code><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders.">AppenderSkeleton</a></code> must implement this method to perform actual logging.  <br /></td></tr>
+<tr class="memitem:abe8352e985764d6d30e530f07fb63aaf" id="r_abe8352e985764d6d30e530f07fb63aaf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe8352e985764d6d30e530f07fb63aaf">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;1)=0</td></tr>
+<tr class="memdesc:abe8352e985764d6d30e530f07fb63aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses of <code><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders.">AppenderSkeleton</a></code> must implement this method to perform actual logging.  <br /></td></tr>
 <tr class="memitem:ae88694d212b1b81dba3dd0c7ea16651b" id="r_ae88694d212b1b81dba3dd0c7ea16651b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae88694d212b1b81dba3dd0c7ea16651b">doAppendImpl</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;pool)</td></tr>
 <tr class="memdesc:ae88694d212b1b81dba3dd0c7ea16651b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare <code>event</code> level against the appender threshold and check that <code>event</code> is accepted.  <br /></td></tr>
 <tr class="memitem:ab2d12190b995b82d5ceae323212f69d0" id="r_ab2d12190b995b82d5ceae323212f69d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2d12190b995b82d5ceae323212f69d0">isAccepted</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) const</td></tr>
@@ -288,8 +289,25 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a88e56ef02484030e23b96f7200f4c6dd" name="a88e56ef02484030e23b96f7200f4c6dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e56ef02484030e23b96f7200f4c6dd">&#9670;&#160;</a></span>activateOptions() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::spi::OptionHandler::activateOptions </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a748043d02b71acad6205444ebeb6a75c" name="a748043d02b71acad6205444ebeb6a75c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a748043d02b71acad6205444ebeb6a75c">&#9670;&#160;</a></span>activateOptions()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a748043d02b71acad6205444ebeb6a75c">&#9670;&#160;</a></span>activateOptions() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,17 +324,18 @@ Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Activate the options that were previously set with calls to option setters.    </p>
-<p>No action is performed in this implementation. </p>
+<p></p>
+<p>No action is performed in this implementation.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>The <code>pool</code> parameter is not required and will be removed in a future version. </dd></dl>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#ad06d4f5c6d414fcb421bc2a35c9593fe">log4cxx::spi::OptionHandler</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a025b654c3e8f842c747d6e6e53a8f4d6">log4cxx::spi::OptionHandler</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classlog4cxx_1_1ConsoleAppender.html#a81296641d2b12a7b01b46fd1448b06f7">log4cxx::ConsoleAppender</a>, <a class="el" href="classlog4cxx_1_1db_1_1DBAppender.html#abc3f4778edd14dd98466aac247b64957">log4cxx::db::DBAppender</a>, <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a31efbacf9f68a473fcb1e1a0966f1b22">log4cxx::db::ODBCAppender</a>, <a class="el" href="classlog4cxx_1_1FileAppender.html#a96376a431d8ba930944c3dcd061202d1">log4cxx::FileAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html#ac3946f61995a313d788aa01098d06696">log4cxx::net::SMTPAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#ae2f6bd7a99d7200c1f7b24c95d99e215">log4cxx::net::SocketAppenderSkeleton</a>, <a class="el" href="classlog4cxx_1_1net_1_1SyslogAppender.html#a2521e3fcdcb70de242b8a5be7d11c483">log4cxx::net::SyslogAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html#a09edfb59842af09ebd26f1aa37d5186d">log4cxx::net::TelnetAppender</a>, <a class="el" href="classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a2f498553aacabad66792a5c0683775df">log4cxx::nt::NTEventLogAppender</a>, <a class="el" href="classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#af50d04b0cd1b1dea0072abb3f6fa83ce">log4cxx::rolling::MultiprocessRollingFileAppender</a>, <a class="el" href="classlog4cxx_1_1rolling_1_1RollingFileAppender.html#af748ad0314b771f71a3aaa7c24da3fd9">log4cxx::rolling::RollingFileAppender</a>, and <a class="el" href="classlog4cxx_1_1WriterAppender.html#a9bb7a414c7c91f3f50c358746b874ff0">log4cxx::WriterAppender</a>.</p>
+<p>Reimplemented in <a class="el" href="classlog4cxx_1_1ConsoleAppender.html#a50073aec7b35227374adb972455aea2e">log4cxx::ConsoleAppender</a>, <a class="el" href="classlog4cxx_1_1db_1_1DBAppender.html#af80fc27b8848dab4aba1fe8bf8ec3085">log4cxx::db::DBAppender</a>, <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#ae734923316138bf6a848a04b3f898844">log4cxx::db::ODBCAppender</a>, <a class="el" href="classlog4cxx_1_1FileAppender.html#a897247bd4a9112ecf6411f8cc0b19e63">log4cxx::FileAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html#a088775af49f57aafba89d0bb9534c337">log4cxx::net::SMTPAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#aaf0ff3e1ebff5c24da7f9519d3de29d8">log4cxx::net::SocketAppenderSkeleton</a>, <a class="el" href="classlog4cxx_1_1net_1_1SyslogAppender.html#a4002f038b6358b5c5d84c214d05960ac">log4cxx::net::SyslogAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html#a685b1919f0b0db6a7905dbb7896b3e70">log4cxx::net::TelnetAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1XMLSocketAppender.html#aaf0ff3e1ebff5c24da7f9519d3de29d8">log4cxx::net::XMLSocketAppender</a>, <a class="el" href="classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a42d71468c20e9c6b62b0574bd07e78d8">log4cxx::nt::NTEventLogAppender</a>, <a class="el" href="classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a48efef385d728b495fbb0d81cedcce87">log4cxx::rolling::MultiprocessRollingFileAppender</a>, <a class="el" href="classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a887ecdf57c2478ad8c55b29e44bb2377">log4cxx::rolling::RollingFileAppender</a>, and <a class="el" href="classlog4cxx_1_1WriterAppender.html#aac2bd8f3e63fc386cdc0fa0d28991203">log4cxx::WriterAppender</a>.</p>
 
 </div>
 </div>
@@ -349,8 +368,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a26bfb021038290769331e5e8c3f86d0a" name="a26bfb021038290769331e5e8c3f86d0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26bfb021038290769331e5e8c3f86d0a">&#9670;&#160;</a></span>append()</h2>
+<a id="abe8352e985764d6d30e530f07fb63aaf" name="abe8352e985764d6d30e530f07fb63aaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe8352e985764d6d30e530f07fb63aaf">&#9670;&#160;</a></span>append()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +385,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -379,7 +398,7 @@ Protected Member Functions</h2></td></tr>
 <p>Subclasses of <code><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders.">AppenderSkeleton</a></code> must implement this method to perform actual logging. </p>
 <p>See also <a class="el" href="#a5a60fc1789ef646d689c9ec517d3b90b" title="Call AppenderSkeleton::doAppendImpl after acquiring a lock that prevents other threads from concurren...">AppenderSkeleton::doAppend</a> method. </p>
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#a2469dcc262f33efd4c208e4dce482b68">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1db_1_1DBAppender.html#a0d2f743da351e8cc110532fb5340339d">log4cxx::db::DBAppender</a>, <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#abc6e92ce59c8823b455e281dfcd32b6c">log4cxx::db::ODBCAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html#af24560c8a65364dbb0fa4fc67f2f86a5">log4cxx::net::SMTPAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1SyslogAppender.html#a27e2abeb2fe9835bb3e9cf436a27139c">log4cxx::net::SyslogAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html#a166b3d21ee2b50e2a15e1e19b16d0905">log4cxx::net::TelnetAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1XMLSocketAppender.html#adf25aa89a9d74fee70f43ca6c4c7fe79">log4cxx::net::XMLSocketAppender</a>, <a class="el" href="classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a972b0c3a95c862fba3ad3400b45a612e">log4cxx::nt::NTEventLogAppender</a>, <a class="el" href="classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html#ab8a50af3bcd3805189f70dab16bd7bc9">log4cxx::nt::OutputDebugStringAppender</a>, and <a class="el" href="classlog4cxx_1_1WriterAppender.html#a1a41f99a12bc9f3b13afef05a5e8cde4">log4cxx::WriterAppender</a>.</p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#a0a734af158b80836755a120bef2239d8">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1db_1_1DBAppender.html#a0d2f743da351e8cc110532fb5340339d">log4cxx::db::DBAppender</a>, <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#abc6e92ce59c8823b455e281dfcd32b6c">log4cxx::db::ODBCAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html#a29a8386423db9fc93ccdd8a611ab7a21">log4cxx::net::SMTPAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1SyslogAppender.html#a32ec3f219a616ca21fa3fee6d643207e">log4cxx::net::SyslogAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html#a517487bdb54a234df9c6e2ceea64d799">log4cxx::net::TelnetAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1XMLSocketAppender.html#adf25aa89a9d74fee70f43ca6c4c7fe79">log4cxx::net::XMLSocketAppender</a>, <a class="el" href="classlog4cxx_1_1nt_1_1NTEventLogAppender.html#acd1dc4d3d9b419d4ed09178be7a75251">log4cxx::nt::NTEventLogAppender</a>, <a class="el" href="classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html#add62c6f0eca5bd3ee4531c66dece0aa7">log4cxx::nt::OutputDebugStringAppender</a>, and <a class="el" href="classlog4cxx_1_1WriterAppender.html#a97c21c127fa08bcf32be8ea969d7d6f2">log4cxx::WriterAppender</a>.</p>
 
 </div>
 </div>
@@ -476,7 +495,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Compare <code>event</code> level against the appender threshold and check that <code>event</code> is accepted. </p>
-<p>If <code>event</code> is accepted, delegate log output to the subclass implementation of the <a class="el" href="#a26bfb021038290769331e5e8c3f86d0a" title="Subclasses of AppenderSkeleton must implement this method to perform actual logging.">AppenderSkeleton::append</a> method. </p>
+<p>If <code>event</code> is accepted, delegate log output to the subclass implementation of the <a class="el" href="#abe8352e985764d6d30e530f07fb63aaf" title="Subclasses of AppenderSkeleton must implement this method to perform actual logging.">AppenderSkeleton::append</a> method. </p>
 
 </div>
 </div>
