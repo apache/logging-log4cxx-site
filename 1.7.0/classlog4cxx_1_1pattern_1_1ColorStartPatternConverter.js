@@ -1,8 +1,8 @@
 var classlog4cxx_1_1pattern_1_1ColorStartPatternConverter =
 [
     [ "ColorStartPatternConverter", "classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html#aedb81a33e0b84a41fd82862119f1bf0f", null ],
-    [ "format", "classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html#aae23f5bbbea89f6cb71111b5b861fc3a", null ],
-    [ "format", "classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html#ac42bd55fcfa78a653cf04b0bd870d7f7", null ],
+    [ "format", "classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html#ad2bc2a2f3db637c49a397a3666224b69", null ],
+    [ "format", "classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html#a8c92f151dbf0cb987ad876295804cde8", null ],
     [ "setDebugColor", "classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html#a8e05b924dc3a02c72849167af6ad94e6", null ],
     [ "setErrorColor", "classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html#af017dabb6f63a73ad044ed607e2237f2", null ],
     [ "setFatalColor", "classlog4cxx_1_1pattern_1_1ColorStartPatternConverter.html#a31d28658e21bb601a65d44c2acefda1f", null ],

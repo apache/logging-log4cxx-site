@@ -5,8 +5,9 @@ var classlog4cxx_1_1net_1_1SocketAppenderSkeleton =
     [ "SocketAppenderSkeleton", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a9a44e3c132e07a8678673f4c0149d807", null ],
     [ "SocketAppenderSkeleton", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a5fd46655af974d7a9791d2b8140da213", null ],
     [ "SocketAppenderSkeleton", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a5fb6a3e98044a6911e8d66d512a7d673", null ],
-    [ "activateOptions", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#ae2f6bd7a99d7200c1f7b24c95d99e215", null ],
-    [ "cleanUp", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a00d271ebc45fdfac9ee0031f23a6d5ad", null ],
+    [ "activateOptions", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a88e56ef02484030e23b96f7200f4c6dd", null ],
+    [ "activateOptions", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#aaf0ff3e1ebff5c24da7f9519d3de29d8", null ],
+    [ "cleanUp", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a06b099ecb91f3c2ffc8e6d282c8f33f0", null ],
     [ "close", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a06ab5cd0948038816b702e149aef82a3", null ],
     [ "fireConnector", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a1619368e92552b4bc3c386b91359ad96", null ],
     [ "getDefaultDelay", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af5b33f3f5982ee581f7cf3b7b5827d57", null ],
@@ -21,5 +22,5 @@ var classlog4cxx_1_1net_1_1SocketAppenderSkeleton =
     [ "setPort", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a9fdf687b74c237e1f8abfcca42d4fabb", null ],
     [ "setReconnectionDelay", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#ac2233aad3e7f7e137858b29447c060ff", null ],
     [ "setRemoteHost", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#ad20ace725c223efac847d912fb3c1d41", null ],
-    [ "setSocket", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af6d66a058b8437caad40d7a507695998", null ]
+    [ "setSocket", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#ac708e60ca845aa0bc9e0177c305297dc", null ]
 ];

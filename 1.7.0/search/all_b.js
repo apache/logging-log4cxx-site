@@ -10,7 +10,7 @@ var searchData=
   ['bindexception_7',['BindException',['../classlog4cxx_1_1helpers_1_1BindException.html',1,'log4cxx::helpers::BindException'],['../classlog4cxx_1_1helpers_1_1BindException.html#adc1f0c3172080849ca0c07ee1b2df55c',1,'log4cxx::helpers::BindException::BindException(log4cxx_status_t status)'],['../classlog4cxx_1_1helpers_1_1BindException.html#a121699592a2f2ff474ef6fab8bbecaec',1,'log4cxx::helpers::BindException::BindException(const BindException &amp;)']]],
   ['blocksignalsandnamethread_8',['BlockSignalsAndNameThread',['../namespacelog4cxx_1_1helpers.html#a84bb84c01710854af8519e70d8a548d4ace3cf34390ba5c8471c51d27d58a8456',1,'log4cxx::helpers']]],
   ['blocksignalsonly_9',['BlockSignalsOnly',['../namespacelog4cxx_1_1helpers.html#a84bb84c01710854af8519e70d8a548d4af1de03e4530e983a87f6cfa89774ebe1',1,'log4cxx::helpers']]],
-  ['boost_10',['A note on C++ version and Boost',['../dependencies.html#autotoc_md6',1,'']]],
+  ['boost_10',['A note on C++ version and Boost',['../dependencies.html#autotoc_md8',1,'']]],
   ['buffered_20asynchronous_20output_20by_20default_11',['Why doesn&apos;t Log4cxx use buffered asynchronous output by default?',['../faq.html#buffered_output',1,'']]],
   ['bufferedwriter_12',['BufferedWriter',['../classlog4cxx_1_1helpers_1_1BufferedWriter.html',1,'log4cxx::helpers::BufferedWriter'],['../classlog4cxx_1_1helpers_1_1BufferedWriter.html#abe4e2d5d12c2d8394330a70fab7e913c',1,'log4cxx::helpers::BufferedWriter::BufferedWriter(WriterPtr &amp;out)'],['../classlog4cxx_1_1helpers_1_1BufferedWriter.html#a6d08559618eeb13babe72f87236fc8a2',1,'log4cxx::helpers::BufferedWriter::BufferedWriter(WriterPtr &amp;out, size_t sz)']]],
   ['bufferedwriter_2eh_13',['bufferedwriter.h',['../bufferedwriter_8h.html',1,'']]],

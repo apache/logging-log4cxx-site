@@ -109,7 +109,7 @@ $(function(){initNavTree('build-cmake.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__2tmp_2build_2src_2site_2markdown_2development_2build-cmake"></a></p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 Supported options</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -141,9 +141,9 @@ Supported options</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">LOG4CXX_EVENTS_AT_EXIT=ON  </td><td class="markdownTableBodyNone">Prevent static data cleanup to allow event logging during application exit.  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">LOG4CXX_FORMAT_NAMESPACE=std  </td><td class="markdownTableBodyNone">Make the <span class="tt">LOG4CXX_[level]_FMT</span> macros use <a href="https://en.cppreference.com/w/cpp/utility/format/format">std::format</a> by default.  </td></tr>
+<td class="markdownTableBodyNone">LOG4CXX_FORMAT_NAMESPACE=std  </td><td class="markdownTableBodyNone">Set LOG4CXX_FORMAT_NS=std when not provided in <a href="https://cmake.org/cmake/help/latest/command/target_compile_definitions.html">target_compile_definitions</a>. LOG4CXX_FORMAT_NS is used in <span class="tt">LOG4CXX_[level]_FMT</span> logging macros.  </td></tr>
 </table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
 Examples</h1>
 <h2 class="doxsection"><a class="anchor" id="Linux"></a>
 Unix type systems</h2>
@@ -192,7 +192,7 @@ Windows</h2>
 <p class="startli">Use your browser to download Windows source:</p><ul>
 <li>Expat from <a href="https://github.com/libexpat/libexpat/releases">https://github.com/libexpat/libexpat/releases</a>,</li>
 <li>APR and APR-Util from <a href="https://apr.apache.org/download.cgi">https://apr.apache.org/download.cgi</a> and</li>
-<li>Log4cxx from <a href="https://www.apache.org/dyn/closer.cgi/logging/log4cxx/1.7.0">https://www.apache.org/dyn/closer.cgi/logging/log4cxx/1.7.0</a>.</li>
+<li>Log4cxx from <a href="https://www.apache.org/dyn/closer.lua/logging/log4cxx/1.7.0">https://www.apache.org/dyn/closer.lua/logging/log4cxx/1.7.0</a>.</li>
 </ul>
 <p class="startli">Extract the source code into directories in %HOMEPATH%/Libraries named:</p><ul>
 <li>expat-2.7.3</li>

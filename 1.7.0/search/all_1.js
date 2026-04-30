@@ -19,7 +19,7 @@ var searchData=
   ['1_205_200_202025_2008_2003_16',['Release 1.5.0 - 2025-08-03',['../changelog.html#rel_1_5_0',1,'']]],
   ['1_206_200_202025_2012_2014_17',['Release 1.6.0 - 2025-12-14',['../changelog.html#rel_1_6_0',1,'']]],
   ['1_206_201_202026_2001_2009_18',['Release 1.6.1 - 2026-01-09',['../changelog.html#rel_1_6_1',1,'']]],
-  ['1_207_200_19',['Download Apache Log4cxx 1.7.0',['../download.html#autotoc_md21',1,'']]],
+  ['1_207_200_19',['Download Apache Log4cxx 1.7.0',['../download.html#autotoc_md23',1,'']]],
   ['1_207_200_202026_2004_2004_20',['Release 1.7.0 - 2026-04-04',['../changelog.html#rel_1_7_0',1,'']]],
   ['1_2dusage_2emd_21',['1-usage.md',['../1-usage_8md.html',1,'']]],
   ['10_22',['10',['../changelog.html#rel_9_2',1,'Release 0.9.2 - 2003-08-10'],['../changelog.html#rel_9_7',1,'Release 0.9.7 - 2004-05-10']]],

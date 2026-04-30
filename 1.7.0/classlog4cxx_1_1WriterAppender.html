@@ -136,14 +136,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af877df3d994adf2c0a249b2461d9e66f" id="r_af877df3d994adf2c0a249b2461d9e66f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af877df3d994adf2c0a249b2461d9e66f">WriterAppender</a> ()</td></tr>
 <tr class="memdesc:af877df3d994adf2c0a249b2461d9e66f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This default constructor does nothing.  <br /></td></tr>
 <tr class="memitem:a4b3d78b818fdd319866d5aed61c4d5f0" id="r_a4b3d78b818fdd319866d5aed61c4d5f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b3d78b818fdd319866d5aed61c4d5f0">~WriterAppender</a> ()</td></tr>
-<tr class="memitem:a9bb7a414c7c91f3f50c358746b874ff0" id="r_a9bb7a414c7c91f3f50c358746b874ff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bb7a414c7c91f3f50c358746b874ff0">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;pool) override</td></tr>
-<tr class="memdesc:a9bb7a414c7c91f3f50c358746b874ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived appenders should override this method if option structure requires it.  <br /></td></tr>
+<tr class="memitem:aac2bd8f3e63fc386cdc0fa0d28991203" id="r_aac2bd8f3e63fc386cdc0fa0d28991203"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac2bd8f3e63fc386cdc0fa0d28991203">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;) override</td></tr>
+<tr class="memdesc:aac2bd8f3e63fc386cdc0fa0d28991203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived appenders should override this method if option structure requires it.  <br /></td></tr>
 <tr class="memitem:a56518505baf553fe96902f9b25b58ca4" id="r_a56518505baf553fe96902f9b25b58ca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56518505baf553fe96902f9b25b58ca4">setImmediateFlush</a> (bool value)</td></tr>
 <tr class="memdesc:a56518505baf553fe96902f9b25b58ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the <b>ImmediateFlush</b> option is set to <code>true</code>, the appender will flush at the end of each write.  <br /></td></tr>
 <tr class="memitem:aa75377a1f40e3f6021d584e8e85f7a53" id="r_aa75377a1f40e3f6021d584e8e85f7a53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa75377a1f40e3f6021d584e8e85f7a53">getImmediateFlush</a> () const</td></tr>
 <tr class="memdesc:aa75377a1f40e3f6021d584e8e85f7a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns value of the <b>ImmediateFlush</b> option.  <br /></td></tr>
-<tr class="memitem:a1a41f99a12bc9f3b13afef05a5e8cde4" id="r_a1a41f99a12bc9f3b13afef05a5e8cde4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a41f99a12bc9f3b13afef05a5e8cde4">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) override</td></tr>
-<tr class="memdesc:a1a41f99a12bc9f3b13afef05a5e8cde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called by the <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a5a60fc1789ef646d689c9ec517d3b90b" title="Call AppenderSkeleton::doAppendImpl after acquiring a lock that prevents other threads from concurren...">AppenderSkeleton::doAppend</a> method.  <br /></td></tr>
+<tr class="memitem:a97c21c127fa08bcf32be8ea969d7d6f2" id="r_a97c21c127fa08bcf32be8ea969d7d6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97c21c127fa08bcf32be8ea969d7d6f2">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;1) override</td></tr>
+<tr class="memdesc:a97c21c127fa08bcf32be8ea969d7d6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is called by the <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a5a60fc1789ef646d689c9ec517d3b90b" title="Call AppenderSkeleton::doAppendImpl after acquiring a lock that prevents other threads from concurren...">AppenderSkeleton::doAppend</a> method.  <br /></td></tr>
 <tr class="memitem:ac3bef44d27707e1100538a789dd81a30" id="r_ac3bef44d27707e1100538a789dd81a30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3bef44d27707e1100538a789dd81a30">close</a> () override</td></tr>
 <tr class="memdesc:ac3bef44d27707e1100538a789dd81a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close this appender instance.  <br /></td></tr>
 <tr class="memitem:a0a7936961e28c1d61469039193ae5482" id="r_a0a7936961e28c1d61469039193ae5482"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a7936961e28c1d61469039193ae5482">getEncoding</a> () const</td></tr>
@@ -156,6 +156,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d1b61ad28e148adb8be2bf57f5d249d" id="r_a5d1b61ad28e148adb8be2bf57f5d249d"><td class="memItemLeft" align="right" valign="top">const helpers::WriterPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d1b61ad28e148adb8be2bf57f5d249d">getWriter</a> () const</td></tr>
 <tr class="memitem:a96cf8d9a7af09d7f360e274948058f39" id="r_a96cf8d9a7af09d7f360e274948058f39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96cf8d9a7af09d7f360e274948058f39">requiresLayout</a> () const override</td></tr>
 <tr class="memdesc:a96cf8d9a7af09d7f360e274948058f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configurators call this method to determine if the appender requires a layout.  <br /></td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1AppenderSkeleton"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1AppenderSkeleton')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html">log4cxx::AppenderSkeleton</a></td></tr>
 <tr class="memitem:a1395bdbbd217ee7d36eec1c05aa15dd2 inherit pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a1395bdbbd217ee7d36eec1c05aa15dd2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a1395bdbbd217ee7d36eec1c05aa15dd2">AppenderSkeleton</a> ()</td></tr>
 <tr class="memitem:aa3aee1ae3a3825ae2249e9fc520c4cce inherit pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_aa3aee1ae3a3825ae2249e9fc520c4cce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aa3aee1ae3a3825ae2249e9fc520c4cce">AppenderSkeleton</a> (const <a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> &amp;layout)</td></tr>
@@ -190,10 +191,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8f43cc72bbddcd95ddaeb274cd040b3c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a9a0d49cd8867995f2ad8bd1df8b0fcea inherit pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a9a0d49cd8867995f2ad8bd1df8b0fcea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a9a0d49cd8867995f2ad8bd1df8b0fcea">setThreshold</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;threshold)</td></tr>
 <tr class="memdesc:a9a0d49cd8867995f2ad8bd1df8b0fcea inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the threshold level.  <br /></td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd inherit pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1Appender"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1Appender')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1Appender.html">log4cxx::Appender</a></td></tr>
 <tr class="memitem:adb76477fa620be64de22efe12b127ad5 inherit pub_methods_classlog4cxx_1_1Appender" id="r_adb76477fa620be64de22efe12b127ad5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Appender.html#adb76477fa620be64de22efe12b127ad5">~Appender</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1OptionHandler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1spi_1_1OptionHandler')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html">log4cxx::spi::OptionHandler</a></td></tr>
 <tr class="memitem:a556b59c5ef41477c0bc3f50efadc859e inherit pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a556b59c5ef41477c0bc3f50efadc859e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a556b59c5ef41477c0bc3f50efadc859e">~OptionHandler</a> ()</td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd inherit pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1helpers_1_1Object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
 <tr class="memitem:a8ba23411233a652fac44a619e6356115 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a8ba23411233a652fac44a619e6356115"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a8ba23411233a652fac44a619e6356115">~Object</a> ()</td></tr>
 <tr class="memitem:a581992e532894891e83b9afd605ca492 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a581992e532894891e83b9afd605ca492"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">helpers::Class</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a581992e532894891e83b9afd605ca492">getClass</a> () const =0</td></tr>
@@ -211,12 +214,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a62f333597bbdf9b28520e91845725222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the underlying <code><a class="el" href="classlog4cxx_1_1helpers_1_1Writer.html">log4cxx::helpers::Writer</a></code>.  <br /></td></tr>
 <tr class="memitem:a378090a22edff54b3272e4d26496e0d4" id="r_a378090a22edff54b3272e4d26496e0d4"><td class="memItemLeft" align="right" valign="top">virtual helpers::WriterPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a378090a22edff54b3272e4d26496e0d4">createWriter</a> (<a class="el" href="outputstreamwriter_8h.html#a92214610d1492e7c19a8b858fded1f3b">LOG4CXX_16_CONST</a> helpers::OutputStreamPtr &amp;os)</td></tr>
 <tr class="memdesc:a378090a22edff54b3272e4d26496e0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an OutputStreamWriter when passed an OutputStream.  <br /></td></tr>
-<tr class="memitem:a3208253345000ccee1f896f929601558" id="r_a3208253345000ccee1f896f929601558"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3208253345000ccee1f896f929601558">subAppend</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p)</td></tr>
-<tr class="memdesc:a3208253345000ccee1f896f929601558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actual writing occurs here.  <br /></td></tr>
-<tr class="memitem:a0ab4c7d483dd8babe1713f978cc7bd34" id="r_a0ab4c7d483dd8babe1713f978cc7bd34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ab4c7d483dd8babe1713f978cc7bd34">writeFooter</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p)</td></tr>
-<tr class="memdesc:a0ab4c7d483dd8babe1713f978cc7bd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a footer as produced by the embedded layout's <a class="el" href="classlog4cxx_1_1Layout.html#a41a69f4426ef02a7fec069183670477d" title="Append the footer for the layout format.">Layout::appendFooter</a> method.  <br /></td></tr>
-<tr class="memitem:aae5371a7fe9a44743bd1f36190a2e036" id="r_aae5371a7fe9a44743bd1f36190a2e036"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae5371a7fe9a44743bd1f36190a2e036">writeHeader</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p)</td></tr>
-<tr class="memdesc:aae5371a7fe9a44743bd1f36190a2e036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a header as produced by the embedded layout's <a class="el" href="classlog4cxx_1_1Layout.html#a2dd60f1e482375df01d1ae5adfd2847f" title="Append the header for the layout format.">Layout::appendHeader</a> method.  <br /></td></tr>
+<tr class="memitem:a63513ced27bfd9a74c9def8c057b6ff9" id="r_a63513ced27bfd9a74c9def8c057b6ff9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63513ced27bfd9a74c9def8c057b6ff9">subAppend</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;1)</td></tr>
+<tr class="memdesc:a63513ced27bfd9a74c9def8c057b6ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actual writing occurs here.  <br /></td></tr>
+<tr class="memitem:aded9d67d8e629c9cea1840ac40443caa" id="r_aded9d67d8e629c9cea1840ac40443caa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aded9d67d8e629c9cea1840ac40443caa">writeFooter</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;1)</td></tr>
+<tr class="memdesc:aded9d67d8e629c9cea1840ac40443caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a footer as produced by the embedded layout's <a class="el" href="classlog4cxx_1_1Layout.html#a3f2cb85531b7912c5ef38dcc335183d2" title="Append the footer for the layout format.">Layout::appendFooter</a> method.  <br /></td></tr>
+<tr class="memitem:a5be5100a8b77127965c7abf9fa14ce6c" id="r_a5be5100a8b77127965c7abf9fa14ce6c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5be5100a8b77127965c7abf9fa14ce6c">writeHeader</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;1)</td></tr>
+<tr class="memdesc:a5be5100a8b77127965c7abf9fa14ce6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a header as produced by the embedded layout's <a class="el" href="classlog4cxx_1_1Layout.html#a6180ace771849e268e3b0de47471014d" title="Append the header for the layout format.">Layout::appendHeader</a> method.  <br /></td></tr>
 <tr class="memitem:a3c5c4dfdbf0c6c4dd4df8a4b816a3617" id="r_a3c5c4dfdbf0c6c4dd4df8a4b816a3617"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c5c4dfdbf0c6c4dd4df8a4b816a3617">setWriterInternal</a> (const helpers::WriterPtr &amp;writer)</td></tr>
 <tr class="memdesc:a3c5c4dfdbf0c6c4dd4df8a4b816a3617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the writer.  <br /></td></tr>
 <tr class="inherit_header pro_methods_classlog4cxx_1_1AppenderSkeleton"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classlog4cxx_1_1AppenderSkeleton')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Member Functions inherited from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html">log4cxx::AppenderSkeleton</a></td></tr>
@@ -345,8 +348,25 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a9bb7a414c7c91f3f50c358746b874ff0" name="a9bb7a414c7c91f3f50c358746b874ff0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bb7a414c7c91f3f50c358746b874ff0">&#9670;&#160;</a></span>activateOptions()</h2>
+<a id="a88e56ef02484030e23b96f7200f4c6dd" name="a88e56ef02484030e23b96f7200f4c6dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e56ef02484030e23b96f7200f4c6dd">&#9670;&#160;</a></span>activateOptions() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::spi::OptionHandler::activateOptions </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac2bd8f3e63fc386cdc0fa0d28991203" name="aac2bd8f3e63fc386cdc0fa0d28991203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac2bd8f3e63fc386cdc0fa0d28991203">&#9670;&#160;</a></span>activateOptions() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,7 +377,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::WriterAppender::activateOptions </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pool</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -374,8 +394,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1a41f99a12bc9f3b13afef05a5e8cde4" name="a1a41f99a12bc9f3b13afef05a5e8cde4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a41f99a12bc9f3b13afef05a5e8cde4">&#9670;&#160;</a></span>append()</h2>
+<a id="a97c21c127fa08bcf32be8ea969d7d6f2" name="a97c21c127fa08bcf32be8ea969d7d6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c21c127fa08bcf32be8ea969d7d6f2">&#9670;&#160;</a></span>append()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -391,7 +411,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -405,7 +425,7 @@ Protected Member Functions</h2></td></tr>
 <p>If the output stream exists and is writable then write a log statement to the output stream. Otherwise, write a single warning message to <code>stderr</code>.</p>
 <p>The format of the output will depend on this appender's layout. </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a26bfb021038290769331e5e8c3f86d0a">log4cxx::AppenderSkeleton</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#abe8352e985764d6d30e530f07fb63aaf">log4cxx::AppenderSkeleton</a>.</p>
 
 </div>
 </div>
@@ -747,8 +767,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3208253345000ccee1f896f929601558" name="a3208253345000ccee1f896f929601558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3208253345000ccee1f896f929601558">&#9670;&#160;</a></span>subAppend()</h2>
+<a id="a63513ced27bfd9a74c9def8c057b6ff9" name="a63513ced27bfd9a74c9def8c057b6ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63513ced27bfd9a74c9def8c057b6ff9">&#9670;&#160;</a></span>subAppend()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -764,7 +784,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -776,12 +796,12 @@ Protected Member Functions</h2></td></tr>
 
 <p>Actual writing occurs here. </p>
 
-<p>Reimplemented in <a class="el" href="classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a0e6995586d7438f5d3bc6d2693ebedc1">log4cxx::rolling::MultiprocessRollingFileAppender</a>, and <a class="el" href="classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a76e8886860e9162cd520f5b2255ef2e1">log4cxx::rolling::RollingFileAppender</a>.</p>
+<p>Reimplemented in <a class="el" href="classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#a8455cd03b0b73a52a1bb65aee103b5b9">log4cxx::rolling::MultiprocessRollingFileAppender</a>, and <a class="el" href="classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a457263da883e094bf9459e923d9238fe">log4cxx::rolling::RollingFileAppender</a>.</p>
 
 </div>
 </div>
-<a id="a0ab4c7d483dd8babe1713f978cc7bd34" name="a0ab4c7d483dd8babe1713f978cc7bd34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ab4c7d483dd8babe1713f978cc7bd34">&#9670;&#160;</a></span>writeFooter()</h2>
+<a id="aded9d67d8e629c9cea1840ac40443caa" name="aded9d67d8e629c9cea1840ac40443caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded9d67d8e629c9cea1840ac40443caa">&#9670;&#160;</a></span>writeFooter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -792,7 +812,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void log4cxx::WriterAppender::writeFooter </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -803,12 +823,12 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Write a footer as produced by the embedded layout's <a class="el" href="classlog4cxx_1_1Layout.html#a41a69f4426ef02a7fec069183670477d" title="Append the footer for the layout format.">Layout::appendFooter</a> method. </p>
+<p>Write a footer as produced by the embedded layout's <a class="el" href="classlog4cxx_1_1Layout.html#a3f2cb85531b7912c5ef38dcc335183d2" title="Append the footer for the layout format.">Layout::appendFooter</a> method. </p>
 
 </div>
 </div>
-<a id="aae5371a7fe9a44743bd1f36190a2e036" name="aae5371a7fe9a44743bd1f36190a2e036"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae5371a7fe9a44743bd1f36190a2e036">&#9670;&#160;</a></span>writeHeader()</h2>
+<a id="a5be5100a8b77127965c7abf9fa14ce6c" name="a5be5100a8b77127965c7abf9fa14ce6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be5100a8b77127965c7abf9fa14ce6c">&#9670;&#160;</a></span>writeHeader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -819,7 +839,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void log4cxx::WriterAppender::writeHeader </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -830,7 +850,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Write a header as produced by the embedded layout's <a class="el" href="classlog4cxx_1_1Layout.html#a2dd60f1e482375df01d1ae5adfd2847f" title="Append the header for the layout format.">Layout::appendHeader</a> method. </p>
+<p>Write a header as produced by the embedded layout's <a class="el" href="classlog4cxx_1_1Layout.html#a6180ace771849e268e3b0de47471014d" title="Append the header for the layout format.">Layout::appendHeader</a> method. </p>
 
 </div>
 </div>

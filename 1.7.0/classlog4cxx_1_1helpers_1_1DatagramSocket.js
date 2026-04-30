@@ -12,6 +12,6 @@ var classlog4cxx_1_1helpers_1_1DatagramSocket =
     [ "isBound", "classlog4cxx_1_1helpers_1_1DatagramSocket.html#aedf87f2fee446ac3a9a69edce2863c8d", null ],
     [ "isClosed", "classlog4cxx_1_1helpers_1_1DatagramSocket.html#a8090be2ff0dfb0fbfd719914c5c3bad7", null ],
     [ "isConnected", "classlog4cxx_1_1helpers_1_1DatagramSocket.html#a87bc37a1b9a0d18d5f040fa73d9e3b99", null ],
-    [ "receive", "classlog4cxx_1_1helpers_1_1DatagramSocket.html#a17e90bcee02722d270280e0aa8f56511", null ],
-    [ "send", "classlog4cxx_1_1helpers_1_1DatagramSocket.html#acb097edf7a7c354ade48145c3c2e5e1e", null ]
+    [ "receive", "classlog4cxx_1_1helpers_1_1DatagramSocket.html#a72e08b497f40fd555cdd2d6642162a09", null ],
+    [ "send", "classlog4cxx_1_1helpers_1_1DatagramSocket.html#a892732792fc366583339f1388704e09b", null ]
 ];

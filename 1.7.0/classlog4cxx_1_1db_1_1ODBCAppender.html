@@ -140,14 +140,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad64ec638194e019b247c9f0c781d8c5d" id="r_ad64ec638194e019b247c9f0c781d8c5d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad64ec638194e019b247c9f0c781d8c5d">~ODBCAppender</a> ()</td></tr>
 <tr class="memitem:a85e6fa461f2db789f3fa9321278b12c0" id="r_a85e6fa461f2db789f3fa9321278b12c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85e6fa461f2db789f3fa9321278b12c0">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
 <tr class="memdesc:a85e6fa461f2db789f3fa9321278b12c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.        <br /></td></tr>
-<tr class="memitem:a31efbacf9f68a473fcb1e1a0966f1b22" id="r_a31efbacf9f68a473fcb1e1a0966f1b22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31efbacf9f68a473fcb1e1a0966f1b22">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) override</td></tr>
-<tr class="memdesc:a31efbacf9f68a473fcb1e1a0966f1b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the specified options.  <br /></td></tr>
+<tr class="memitem:ae734923316138bf6a848a04b3f898844" id="r_ae734923316138bf6a848a04b3f898844"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae734923316138bf6a848a04b3f898844">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;) override</td></tr>
+<tr class="memdesc:ae734923316138bf6a848a04b3f898844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the specified options.  <br /></td></tr>
 <tr class="memitem:abc6e92ce59c8823b455e281dfcd32b6c" id="r_abc6e92ce59c8823b455e281dfcd32b6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc6e92ce59c8823b455e281dfcd32b6c">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;) override</td></tr>
 <tr class="memdesc:abc6e92ce59c8823b455e281dfcd32b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the event to the buffer.  <br /></td></tr>
 <tr class="memitem:ac7d85dd16b6d5d37e782a49f469d53dd" id="r_ac7d85dd16b6d5d37e782a49f469d53dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7d85dd16b6d5d37e782a49f469d53dd">close</a> () override</td></tr>
 <tr class="memdesc:ac7d85dd16b6d5d37e782a49f469d53dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the appender, flushing the buffer first then closing the default connection if it is open.  <br /></td></tr>
-<tr class="memitem:a141deda09c89495e8091efea1e93e959" id="r_a141deda09c89495e8091efea1e93e959"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a141deda09c89495e8091efea1e93e959">flushBuffer</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p)</td></tr>
-<tr class="memdesc:a141deda09c89495e8091efea1e93e959"><td class="mdescLeft">&#160;</td><td class="mdescRight">loops through the buffer of LoggingEvents, gets a sql string from <a class="el" href="#a5b520b4aa7dc66346734e8bfab4f44bc" title="To be removed.">getLogStatement()</a> and sends it to <a class="el" href="#acc1fb7d41337d5cb40c7e7e74eb9945b" title="To be removed.">execute()</a>.  <br /></td></tr>
+<tr class="memitem:a2cec3452509671690fd8c81b018e5e44" id="r_a2cec3452509671690fd8c81b018e5e44"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cec3452509671690fd8c81b018e5e44">flushBuffer</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1)</td></tr>
+<tr class="memdesc:a2cec3452509671690fd8c81b018e5e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">loops through the buffer of LoggingEvents, gets a sql string from <a class="el" href="#a81d34225a01af2f8cf31102f0bb53f5a" title="To be removed.">getLogStatement()</a> and sends it to <a class="el" href="#ab0b07fc90c09c4d7266b361aab9a7b70" title="To be removed.">execute()</a>.  <br /></td></tr>
 <tr class="memitem:a294a7f60e6284c213b5d2fdb98f708ba" id="r_a294a7f60e6284c213b5d2fdb98f708ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a294a7f60e6284c213b5d2fdb98f708ba">requiresLayout</a> () const override</td></tr>
 <tr class="memdesc:a294a7f60e6284c213b5d2fdb98f708ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does this appender require a layout?  <br /></td></tr>
 <tr class="memitem:ad2b3e730cbc2e5b77cd14aa0c8fa16a7" id="r_ad2b3e730cbc2e5b77cd14aa0c8fa16a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2b3e730cbc2e5b77cd14aa0c8fa16a7">setSql</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;s)</td></tr>
@@ -196,10 +196,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8f43cc72bbddcd95ddaeb274cd040b3c inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a9a0d49cd8867995f2ad8bd1df8b0fcea inherit pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a9a0d49cd8867995f2ad8bd1df8b0fcea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a9a0d49cd8867995f2ad8bd1df8b0fcea">setThreshold</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;threshold)</td></tr>
 <tr class="memdesc:a9a0d49cd8867995f2ad8bd1df8b0fcea inherit pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the threshold level.  <br /></td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd inherit pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1Appender"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1Appender')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1Appender.html">log4cxx::Appender</a></td></tr>
 <tr class="memitem:adb76477fa620be64de22efe12b127ad5 inherit pub_methods_classlog4cxx_1_1Appender" id="r_adb76477fa620be64de22efe12b127ad5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1Appender.html#adb76477fa620be64de22efe12b127ad5">~Appender</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1OptionHandler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1spi_1_1OptionHandler')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html">log4cxx::spi::OptionHandler</a></td></tr>
 <tr class="memitem:a556b59c5ef41477c0bc3f50efadc859e inherit pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a556b59c5ef41477c0bc3f50efadc859e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a556b59c5ef41477c0bc3f50efadc859e">~OptionHandler</a> ()</td></tr>
+<tr class="memitem:a88e56ef02484030e23b96f7200f4c6dd inherit pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a88e56ef02484030e23b96f7200f4c6dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a88e56ef02484030e23b96f7200f4c6dd">activateOptions</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classlog4cxx_1_1helpers_1_1Object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
 <tr class="memitem:a8ba23411233a652fac44a619e6356115 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a8ba23411233a652fac44a619e6356115"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a8ba23411233a652fac44a619e6356115">~Object</a> ()</td></tr>
 <tr class="memitem:a581992e532894891e83b9afd605ca492 inherit pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a581992e532894891e83b9afd605ca492"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">helpers::Class</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a581992e532894891e83b9afd605ca492">getClass</a> () const =0</td></tr>
@@ -208,14 +210,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5b520b4aa7dc66346734e8bfab4f44bc" id="r_a5b520b4aa7dc66346734e8bfab4f44bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b520b4aa7dc66346734e8bfab4f44bc">getLogStatement</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) const</td></tr>
-<tr class="memdesc:a5b520b4aa7dc66346734e8bfab4f44bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be removed.  <br /></td></tr>
-<tr class="memitem:acc1fb7d41337d5cb40c7e7e74eb9945b" id="r_acc1fb7d41337d5cb40c7e7e74eb9945b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc1fb7d41337d5cb40c7e7e74eb9945b">execute</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;sql, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p)</td></tr>
-<tr class="memdesc:acc1fb7d41337d5cb40c7e7e74eb9945b"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be removed.  <br /></td></tr>
+<tr class="memitem:a81d34225a01af2f8cf31102f0bb53f5a" id="r_a81d34225a01af2f8cf31102f0bb53f5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81d34225a01af2f8cf31102f0bb53f5a">getLogStatement</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;1) const</td></tr>
+<tr class="memdesc:a81d34225a01af2f8cf31102f0bb53f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be removed.  <br /></td></tr>
+<tr class="memitem:ab0b07fc90c09c4d7266b361aab9a7b70" id="r_ab0b07fc90c09c4d7266b361aab9a7b70"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0b07fc90c09c4d7266b361aab9a7b70">execute</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;sql, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1)</td></tr>
+<tr class="memdesc:ab0b07fc90c09c4d7266b361aab9a7b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be removed.  <br /></td></tr>
 <tr class="memitem:a2d07254cf0f1e7118652a5c044bc643c" id="r_a2d07254cf0f1e7118652a5c044bc643c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d07254cf0f1e7118652a5c044bc643c">closeConnection</a> (<a class="el" href="#a80cbdd0e4d300d4b087b8d7cb247f543">SQLHDBC</a> con)</td></tr>
 <tr class="memdesc:a2d07254cf0f1e7118652a5c044bc643c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to return the connection to a pool, or to clean up the resource.  <br /></td></tr>
-<tr class="memitem:a028b9afc13c94b31b5fc5d85f4df25c0" id="r_a028b9afc13c94b31b5fc5d85f4df25c0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#a80cbdd0e4d300d4b087b8d7cb247f543">SQLHDBC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a028b9afc13c94b31b5fc5d85f4df25c0">getConnection</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;p)</td></tr>
-<tr class="memdesc:a028b9afc13c94b31b5fc5d85f4df25c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to link with your connection pooling system.  <br /></td></tr>
+<tr class="memitem:ae2f17410c9e879c8dcac7dcf87bcaf2d" id="r_ae2f17410c9e879c8dcac7dcf87bcaf2d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="#a80cbdd0e4d300d4b087b8d7cb247f543">SQLHDBC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f17410c9e879c8dcac7dcf87bcaf2d">getConnection</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;1)</td></tr>
+<tr class="memdesc:ae2f17410c9e879c8dcac7dcf87bcaf2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to link with your connection pooling system.  <br /></td></tr>
 <tr class="inherit_header pro_methods_classlog4cxx_1_1AppenderSkeleton"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classlog4cxx_1_1AppenderSkeleton')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Member Functions inherited from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html">log4cxx::AppenderSkeleton</a></td></tr>
 <tr class="memitem:accb02a0eabe4b11f2c771b4c796f3739 inherit pro_methods_classlog4cxx_1_1AppenderSkeleton" id="r_accb02a0eabe4b11f2c771b4c796f3739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#accb02a0eabe4b11f2c771b4c796f3739">AppenderSkeleton</a> (LOG4CXX_PRIVATE_PTR(AppenderSkeletonPrivate) priv)</td></tr>
 <tr class="memitem:ae88694d212b1b81dba3dd0c7ea16651b inherit pro_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ae88694d212b1b81dba3dd0c7ea16651b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ae88694d212b1b81dba3dd0c7ea16651b">doAppendImpl</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;pool)</td></tr>
@@ -254,7 +256,7 @@ Protected Member Functions</h2></td></tr>
 <p>For use as a base class:</p>
 <ul>
 <li>
-<p class="startli">Override <a class="el" href="#a028b9afc13c94b31b5fc5d85f4df25c0" title="Override this to link with your connection pooling system.">getConnection()</a> to pass any connection you want. Typically this is used to enable application wide connection pooling.</p>
+<p class="startli">Override <a class="el" href="#ae2f17410c9e879c8dcac7dcf87bcaf2d" title="Override this to link with your connection pooling system.">getConnection()</a> to pass any connection you want. Typically this is used to enable application wide connection pooling.</p>
 <p class="endli"></p>
 </li>
 <li>
@@ -387,8 +389,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a31efbacf9f68a473fcb1e1a0966f1b22" name="a31efbacf9f68a473fcb1e1a0966f1b22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31efbacf9f68a473fcb1e1a0966f1b22">&#9670;&#160;</a></span>activateOptions()</h2>
+<a id="ae734923316138bf6a848a04b3f898844" name="ae734923316138bf6a848a04b3f898844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae734923316138bf6a848a04b3f898844">&#9670;&#160;</a></span>activateOptions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -399,7 +401,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::db::ODBCAppender::activateOptions </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -446,7 +448,7 @@ Protected Member Functions</h2></td></tr>
 <p>Adds the event to the buffer. </p>
 <p>When full the buffer is flushed. </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a26bfb021038290769331e5e8c3f86d0a">log4cxx::AppenderSkeleton</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#abe8352e985764d6d30e530f07fb63aaf">log4cxx::AppenderSkeleton</a>.</p>
 
 </div>
 </div>
@@ -507,8 +509,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acc1fb7d41337d5cb40c7e7e74eb9945b" name="acc1fb7d41337d5cb40c7e7e74eb9945b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc1fb7d41337d5cb40c7e7e74eb9945b">&#9670;&#160;</a></span>execute()</h2>
+<a id="ab0b07fc90c09c4d7266b361aab9a7b70" name="ab0b07fc90c09c4d7266b361aab9a7b70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0b07fc90c09c4d7266b361aab9a7b70">&#9670;&#160;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -524,7 +526,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -538,8 +540,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a141deda09c89495e8091efea1e93e959" name="a141deda09c89495e8091efea1e93e959"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a141deda09c89495e8091efea1e93e959">&#9670;&#160;</a></span>flushBuffer()</h2>
+<a id="a2cec3452509671690fd8c81b018e5e44" name="a2cec3452509671690fd8c81b018e5e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cec3452509671690fd8c81b018e5e44">&#9670;&#160;</a></span>flushBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,7 +552,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void log4cxx::db::ODBCAppender::flushBuffer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -561,7 +563,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>loops through the buffer of LoggingEvents, gets a sql string from <a class="el" href="#a5b520b4aa7dc66346734e8bfab4f44bc" title="To be removed.">getLogStatement()</a> and sends it to <a class="el" href="#acc1fb7d41337d5cb40c7e7e74eb9945b" title="To be removed.">execute()</a>. </p>
+<p>loops through the buffer of LoggingEvents, gets a sql string from <a class="el" href="#a81d34225a01af2f8cf31102f0bb53f5a" title="To be removed.">getLogStatement()</a> and sends it to <a class="el" href="#ab0b07fc90c09c4d7266b361aab9a7b70" title="To be removed.">execute()</a>. </p>
 <p>Errors are sent to the errorHandler.</p>
 <p>If a statement fails the LoggingEvent stays in the buffer! </p>
 
@@ -584,8 +586,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a028b9afc13c94b31b5fc5d85f4df25c0" name="a028b9afc13c94b31b5fc5d85f4df25c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a028b9afc13c94b31b5fc5d85f4df25c0">&#9670;&#160;</a></span>getConnection()</h2>
+<a id="ae2f17410c9e879c8dcac7dcf87bcaf2d" name="ae2f17410c9e879c8dcac7dcf87bcaf2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f17410c9e879c8dcac7dcf87bcaf2d">&#9670;&#160;</a></span>getConnection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -596,7 +598,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="#a80cbdd0e4d300d4b087b8d7cb247f543">SQLHDBC</a> log4cxx::db::ODBCAppender::getConnection </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -612,8 +614,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5b520b4aa7dc66346734e8bfab4f44bc" name="a5b520b4aa7dc66346734e8bfab4f44bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b520b4aa7dc66346734e8bfab4f44bc">&#9670;&#160;</a></span>getLogStatement()</h2>
+<a id="a81d34225a01af2f8cf31102f0bb53f5a" name="a81d34225a01af2f8cf31102f0bb53f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d34225a01af2f8cf31102f0bb53f5a">&#9670;&#160;</a></span>getLogStatement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -629,7 +631,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;) const</td>
+          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>1</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>

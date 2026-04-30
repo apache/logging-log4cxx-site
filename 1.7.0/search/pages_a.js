@@ -2,7 +2,7 @@ var searchData=
 [
   ['basic_20selection_20rule_0',['Basic Selection Rule',['../concepts.html#selection-rule',1,'']]],
   ['behaviour_1',['Default Initialization Behaviour',['../configuration-files.html#default-initialization',1,'']]],
-  ['boost_2',['A note on C++ version and Boost',['../dependencies.html#autotoc_md6',1,'']]],
+  ['boost_2',['A note on C++ version and Boost',['../dependencies.html#autotoc_md8',1,'']]],
   ['buffered_20asynchronous_20output_20by_20default_3',['Why doesn&apos;t Log4cxx use buffered asynchronous output by default?',['../faq.html#buffered_output',1,'']]],
   ['bug_4',['Bug',['../changelog.html#rel_1_6_1_bugs',1,'Bug'],['../changelog.html#rel_1_3_1_bugs',1,'Bug'],['../changelog.html#rel_1_0_0_bugs',1,'Bug'],['../changelog.html#rel_13_0_bugs',1,'Bug'],['../changelog.html#rel_12_1_bugs',1,'Bug'],['../changelog.html#rel_12_0_bugs',1,'Bug']]],
   ['build_5',['Build',['../build.html',1,'']]],

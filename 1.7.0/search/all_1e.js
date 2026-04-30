@@ -21,10 +21,11 @@ var searchData=
   ['use_20log4cxx_20with_20cmake_20and_20pkg_20config_18',['How do I use Log4cxx with CMake and pkg-config?',['../buildsystems.html#use_with_cmake_pkgconfig',1,'']]],
   ['use_20log4cxx_20with_20plain_20make_19',['How do I use Log4cxx with plain Make?',['../buildsystems.html#use_with_make',1,'']]],
   ['use_20log4cxx_20with_20qmake_20',['How do I use Log4cxx with QMake?',['../buildsystems.html#use_with_qmake',1,'']]],
-  ['use_20of_20class_20specific_20structs_20to_20hold_20data_21',['Use of class-specific structs to hold data.',['../library-design.html#autotoc_md12',1,'']]],
+  ['use_20of_20class_20specific_20structs_20to_20hold_20data_21',['Use of class-specific structs to hold data.',['../library-design.html#autotoc_md14',1,'']]],
   ['used_20by_20log4cxx_22',['Environment Variables Used by Log4cxx',['../environment-variables.html',1,'usage-overview']]],
   ['using_20fmt_20style_20requests_23',['Using {fmt} style requests',['../concepts.html#logging-with-fmt',1,'']]],
   ['using_20mdc_20values_24',['Using MDC Values',['../filters.html#map-filter',1,'']]],
-  ['using_20the_20request_20location_25',['Using the Request Location',['../filters.html#location-info-filter',1,'']]],
-  ['util_26',['APR+APR-Util',['../dependencies.html#autotoc_md3',1,'']]]
+  ['using_20std_3a_3aformat_20instead_20of_20fmt_3a_3aformat_25',['Using std::format instead of fmt::format',['../dependencies.html#autotoc_md5',1,'']]],
+  ['using_20the_20request_20location_26',['Using the Request Location',['../filters.html#location-info-filter',1,'']]],
+  ['util_27',['APR+APR-Util',['../dependencies.html#autotoc_md3',1,'']]]
 ];

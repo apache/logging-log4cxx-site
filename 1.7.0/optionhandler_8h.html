@@ -123,10 +123,64 @@ Namespaces</h2></td></tr>
 <tr class="memitem:log4cxx" id="r_log4cxx"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelog4cxx.html">log4cxx</a></td></tr>
 <tr class="memitem:log4cxx_3A_3Aspi" id="r_log4cxx_3A_3Aspi"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelog4cxx_1_1spi.html">log4cxx::spi</a></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ac6c3df492ba6be4bab3e9ded74202d05" id="r_ac6c3df492ba6be4bab3e9ded74202d05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6c3df492ba6be4bab3e9ded74202d05">LOG4CXX_ACTIVATE_OPTIONS_FORMAL_PARAMETERS</a>&#160;&#160;&#160;helpers::Pool&amp; p</td></tr>
+<tr class="memdesc:ac6c3df492ba6be4bab3e9ded74202d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.  <br /></td></tr>
+<tr class="memitem:a30c2c5f2472df319a4fffffb16a1c9f8" id="r_a30c2c5f2472df319a4fffffb16a1c9f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30c2c5f2472df319a4fffffb16a1c9f8">LOG4CXX_ACTIVATE_OPTIONS_PARAMETER</a>&#160;&#160;&#160;p</td></tr>
+<tr class="memitem:a87138129ddab5d29a786400d87147b41" id="r_a87138129ddab5d29a786400d87147b41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87138129ddab5d29a786400d87147b41">LOG4CXX_16_VIRTUAL_SPECIFIER</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a1d969c8e32b6c5b1dcbfbdab6f88df71" id="r_a1d969c8e32b6c5b1dcbfbdab6f88df71"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html">OptionHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelog4cxx_1_1spi.html#a1d969c8e32b6c5b1dcbfbdab6f88df71">log4cxx::spi::OptionHandlerPtr</a></td></tr>
 </table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a87138129ddab5d29a786400d87147b41" name="a87138129ddab5d29a786400d87147b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87138129ddab5d29a786400d87147b41">&#9670;&#160;</a></span>LOG4CXX_16_VIRTUAL_SPECIFIER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG4CXX_16_VIRTUAL_SPECIFIER</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6c3df492ba6be4bab3e9ded74202d05" name="ac6c3df492ba6be4bab3e9ded74202d05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6c3df492ba6be4bab3e9ded74202d05">&#9670;&#160;</a></span>LOG4CXX_ACTIVATE_OPTIONS_FORMAL_PARAMETERS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG4CXX_ACTIVATE_OPTIONS_FORMAL_PARAMETERS&#160;&#160;&#160;helpers::Pool&amp; p</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Activate the options that were previously set with calls to option setters. </p>
+<p>This allows to defer activiation of the options until all options have been set. This is required for components which have related options that remain ambiguous until all are set.</p>
+<p>For example, the FileAppender has the <code>File</code> and <b>Append</b> options both of which are ambiguous until the other is also set. </p>
+
+</div>
+</div>
+<a id="a30c2c5f2472df319a4fffffb16a1c9f8" name="a30c2c5f2472df319a4fffffb16a1c9f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c2c5f2472df319a4fffffb16a1c9f8">&#9670;&#160;</a></span>LOG4CXX_ACTIVATE_OPTIONS_PARAMETER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG4CXX_ACTIVATE_OPTIONS_PARAMETER&#160;&#160;&#160;p</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

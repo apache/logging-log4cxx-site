@@ -1,8 +1,8 @@
 var classlog4cxx_1_1config_1_1PropertySetter =
 [
     [ "PropertySetter", "classlog4cxx_1_1config_1_1PropertySetter.html#a4c5ff58ab0b88213096839207fab62c6", null ],
-    [ "activate", "classlog4cxx_1_1config_1_1PropertySetter.html#a21f10b506c7629be9856aa1b27d6353d", null ],
-    [ "setProperties", "classlog4cxx_1_1config_1_1PropertySetter.html#ae8abba8a238c9722ede86b91534524a1", null ],
-    [ "setProperty", "classlog4cxx_1_1config_1_1PropertySetter.html#a229d5ad9fd471d6b74971464b48ece18", null ],
+    [ "activate", "classlog4cxx_1_1config_1_1PropertySetter.html#af63f05f7d571b3098aebc3163cdfb890", null ],
+    [ "setProperties", "classlog4cxx_1_1config_1_1PropertySetter.html#a1c5f8a3b99749981ad2ffb755e357921", null ],
+    [ "setProperty", "classlog4cxx_1_1config_1_1PropertySetter.html#ae4e57c8a1ba98f0309c7f6a0f1b4bf0f", null ],
     [ "obj", "classlog4cxx_1_1config_1_1PropertySetter.html#a9742d3858128c7d025f58f4d4b0552bd", null ]
 ];

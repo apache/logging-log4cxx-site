@@ -5,8 +5,9 @@ var classlog4cxx_1_1WriterAppender =
     [ "WriterAppender", "classlog4cxx_1_1WriterAppender.html#a81a9777e5e9b7d3a1f89c7330607f529", null ],
     [ "WriterAppender", "classlog4cxx_1_1WriterAppender.html#ac650decade2f024c978aca17f94339b2", null ],
     [ "~WriterAppender", "classlog4cxx_1_1WriterAppender.html#a4b3d78b818fdd319866d5aed61c4d5f0", null ],
-    [ "activateOptions", "classlog4cxx_1_1WriterAppender.html#a9bb7a414c7c91f3f50c358746b874ff0", null ],
-    [ "append", "classlog4cxx_1_1WriterAppender.html#a1a41f99a12bc9f3b13afef05a5e8cde4", null ],
+    [ "activateOptions", "classlog4cxx_1_1WriterAppender.html#a88e56ef02484030e23b96f7200f4c6dd", null ],
+    [ "activateOptions", "classlog4cxx_1_1WriterAppender.html#aac2bd8f3e63fc386cdc0fa0d28991203", null ],
+    [ "append", "classlog4cxx_1_1WriterAppender.html#a97c21c127fa08bcf32be8ea969d7d6f2", null ],
     [ "checkEntryConditions", "classlog4cxx_1_1WriterAppender.html#ae3e57b01ceb856933ad9008b7da2aa23", null ],
     [ "close", "classlog4cxx_1_1WriterAppender.html#ac3bef44d27707e1100538a789dd81a30", null ],
     [ "closeWriter", "classlog4cxx_1_1WriterAppender.html#a62f333597bbdf9b28520e91845725222", null ],
@@ -20,7 +21,7 @@ var classlog4cxx_1_1WriterAppender =
     [ "setOption", "classlog4cxx_1_1WriterAppender.html#a37f265da10c647588e6ce699a55992ff", null ],
     [ "setWriter", "classlog4cxx_1_1WriterAppender.html#a95944a97715db0a2658431b159275b44", null ],
     [ "setWriterInternal", "classlog4cxx_1_1WriterAppender.html#a3c5c4dfdbf0c6c4dd4df8a4b816a3617", null ],
-    [ "subAppend", "classlog4cxx_1_1WriterAppender.html#a3208253345000ccee1f896f929601558", null ],
-    [ "writeFooter", "classlog4cxx_1_1WriterAppender.html#a0ab4c7d483dd8babe1713f978cc7bd34", null ],
-    [ "writeHeader", "classlog4cxx_1_1WriterAppender.html#aae5371a7fe9a44743bd1f36190a2e036", null ]
+    [ "subAppend", "classlog4cxx_1_1WriterAppender.html#a63513ced27bfd9a74c9def8c057b6ff9", null ],
+    [ "writeFooter", "classlog4cxx_1_1WriterAppender.html#aded9d67d8e629c9cea1840ac40443caa", null ],
+    [ "writeHeader", "classlog4cxx_1_1WriterAppender.html#a5be5100a8b77127965c7abf9fa14ce6c", null ]
 ];

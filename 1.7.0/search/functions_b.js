@@ -1,7 +1,7 @@
 var searchData=
 [
   ['makefilenamepattern_0',['makeFileNamePattern',['../classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ab545ea46ac4b141e3785e59ea40ee4fe',1,'log4cxx::rolling::RollingFileAppender']]],
-  ['makemessage_1',['makeMessage',['../classlog4cxx_1_1helpers_1_1Exception.html#a3d18819187ea1ab9b650809d201b57d6',1,'log4cxx::helpers::Exception']]],
+  ['makemessage_1',['makeMessage',['../classlog4cxx_1_1helpers_1_1Exception.html#a3d18819187ea1ab9b650809d201b57d6',1,'log4cxx::helpers::Exception::makeMessage(const LogString &amp;type, log4cxx_status_t stat)'],['../classlog4cxx_1_1helpers_1_1Exception.html#a9ced4955f70d02a6f7725ba4de3c5b78',1,'log4cxx::helpers::Exception::makeMessage(const char *type, log4cxx_status_t stat)']]],
   ['makenewloggerinstance_2',['makeNewLoggerInstance',['../classlog4cxx_1_1DefaultLoggerFactory.html#ab1a63896e9c8299d82881db2ca3c225d',1,'log4cxx::DefaultLoggerFactory::makeNewLoggerInstance()'],['../classlog4cxx_1_1spi_1_1LoggerFactory.html#aad64a37ce31ebbc562deeebb6d7a515d',1,'log4cxx::spi::LoggerFactory::makeNewLoggerInstance(helpers::Pool &amp;pool, const LogString &amp;name) const =0'],['../classlog4cxx_1_1spi_1_1LoggerFactory.html#a4d25f86e1f69c8539490defaa59fb71e',1,'log4cxx::spi::LoggerFactory::makeNewLoggerInstance(const LogString &amp;name) const']]],
   ['manualtriggeringpolicy_3',['ManualTriggeringPolicy',['../classlog4cxx_1_1rolling_1_1ManualTriggeringPolicy.html#aca939f2660b57a292e22be60a9724d23',1,'log4cxx::rolling::ManualTriggeringPolicy']]],
   ['mapfilter_4',['MapFilter',['../classlog4cxx_1_1filter_1_1MapFilter.html#afbb29156323f90edb324f90cdcc90b25',1,'log4cxx::filter::MapFilter']]],
@@ -14,6 +14,6 @@ var searchData=
   ['methodlocationpatternconverter_11',['MethodLocationPatternConverter',['../classlog4cxx_1_1pattern_1_1MethodLocationPatternConverter.html#a33183eef1fbcf65392cbf45d46e5cc17',1,'log4cxx::pattern::MethodLocationPatternConverter']]],
   ['minimum_12',['minimum',['../classlog4cxx_1_1helpers_1_1StrictMath.html#a612d308d00febe1ec236245a521b65f8',1,'log4cxx::helpers::StrictMath']]],
   ['missingresourceexception_13',['MissingResourceException',['../classlog4cxx_1_1helpers_1_1MissingResourceException.html#a0d4fc201c558a31945a76a54fa41ce3b',1,'log4cxx::helpers::MissingResourceException::MissingResourceException(const LogString &amp;key)'],['../classlog4cxx_1_1helpers_1_1MissingResourceException.html#ae5d1f1d5642b778047b08887a41d1f52',1,'log4cxx::helpers::MissingResourceException::MissingResourceException(const MissingResourceException &amp;src)']]],
-  ['mkdirs_14',['mkdirs',['../classlog4cxx_1_1File.html#ae8e67bb9c6a4d3f5b1fe72aed79e0a6b',1,'log4cxx::File']]],
+  ['mkdirs_14',['mkdirs',['../classlog4cxx_1_1File.html#a575c37fd9d96345f3fadc712449a466f',1,'log4cxx::File::mkdirs() const'],['../classlog4cxx_1_1File.html#a40fbdb8b552cc427edc9409e362c3b93',1,'log4cxx::File::mkdirs(helpers::Pool &amp;1) const']]],
   ['multiprocessrollingfileappender_15',['MultiprocessRollingFileAppender',['../classlog4cxx_1_1rolling_1_1MultiprocessRollingFileAppender.html#ae67688da6bffadcb13d3fbf285f3e547',1,'log4cxx::rolling::MultiprocessRollingFileAppender']]]
 ];

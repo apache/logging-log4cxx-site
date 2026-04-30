@@ -2,7 +2,7 @@ var classlog4cxx_1_1varia_1_1FallbackErrorHandler =
 [
     [ "FallbackErrorHandler", "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a85d7ba5413bcdd2696e7f14c26f47213", null ],
     [ "~FallbackErrorHandler", "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#abed0d6aa5ae069e2c619bfdf32092cc1", null ],
-    [ "activateOptions", "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a6dd226545293d94e7b13cc5a9d0ee07d", null ],
+    [ "activateOptions", "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#ada21150f86e313c2dd4610fa8c296b2b", null ],
     [ "addAppenderHolder", "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#ad85f7e34e80abc8fbc71c465cb9817e2", null ],
     [ "error", "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a5a0813cddc8020b41b41a50fadb036dd", null ],
     [ "error", "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a4abb365f55664e32adb7b19e8d2e0ec1", null ],

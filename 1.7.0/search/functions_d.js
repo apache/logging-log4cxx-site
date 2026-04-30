@@ -2,7 +2,7 @@ var searchData=
 [
   ['odbcappender_0',['ODBCAppender',['../classlog4cxx_1_1db_1_1ODBCAppender.html#a0e3297ea1ce2e6fe69262b70f288d70a',1,'log4cxx::db::ODBCAppender']]],
   ['onlyonceerrorhandler_1',['OnlyOnceErrorHandler',['../classlog4cxx_1_1helpers_1_1OnlyOnceErrorHandler.html#a0e15fe74cf59aefd15ba9e2b03bbbecb',1,'log4cxx::helpers::OnlyOnceErrorHandler']]],
-  ['open_2',['open',['../classlog4cxx_1_1File.html#aa5f6c3539250daac429198f5b9402fc4',1,'log4cxx::File']]],
+  ['open_2',['open',['../classlog4cxx_1_1File.html#a728d6f13cfc51a72cfd5902948bb1375',1,'log4cxx::File']]],
   ['operator_20bool_3',['operator bool',['../classlog4cxx_1_1Optional.html#a9b96451d95390d3c3344d68d05ee2d6e',1,'log4cxx::Optional::operator bool()'],['../classlog4cxx_1_1LoggerInstancePtr.html#aa39634bf3d564978e91002f45fda072a',1,'log4cxx::LoggerInstancePtr::operator bool() const noexcept']]],
   ['operator_20const_20loggerptr_20_26_4',['operator const LoggerPtr &amp;',['../classlog4cxx_1_1LoggerInstancePtr.html#aec75b01806fa6dcf63e65ca271f6c55c',1,'log4cxx::LoggerInstancePtr']]],
   ['operator_20const_20t_20_26_5',['operator const T &amp;',['../classlog4cxx_1_1helpers_1_1WideLife.html#a4bbbc68c7c20a02df46b6c24e205c922',1,'log4cxx::helpers::WideLife']]],

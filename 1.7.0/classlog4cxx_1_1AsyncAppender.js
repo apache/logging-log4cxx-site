@@ -3,7 +3,7 @@ var classlog4cxx_1_1AsyncAppender =
     [ "AsyncAppender", "classlog4cxx_1_1AsyncAppender.html#a0ab310653817b3a955b3c73cb11df8f9", null ],
     [ "~AsyncAppender", "classlog4cxx_1_1AsyncAppender.html#ab3e1003b9e2a415b914ccae6b5c34a58", null ],
     [ "addAppender", "classlog4cxx_1_1AsyncAppender.html#ab4a83d26aa49533f59c8a03c8b13d899", null ],
-    [ "append", "classlog4cxx_1_1AsyncAppender.html#a2469dcc262f33efd4c208e4dce482b68", null ],
+    [ "append", "classlog4cxx_1_1AsyncAppender.html#a0a734af158b80836755a120bef2239d8", null ],
     [ "close", "classlog4cxx_1_1AsyncAppender.html#ad301701db4a25e571391272edaf3431f", null ],
     [ "doAppend", "classlog4cxx_1_1AsyncAppender.html#a7c6a0118b7fa7a64bbdc28b768a229ae", null ],
     [ "getAllAppenders", "classlog4cxx_1_1AsyncAppender.html#a7042786b4ddb7fc252e520634da25095", null ],

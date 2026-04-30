@@ -4,7 +4,7 @@ var classlog4cxx_1_1JSONLayout =
     [ "~JSONLayout", "classlog4cxx_1_1JSONLayout.html#a14bf7660f54b3cef896a10d326e079e8", null ],
     [ "activateOptions", "classlog4cxx_1_1JSONLayout.html#af5613e7984551c78ad53da93a9619c90", null ],
     [ "appendQuotedEscapedString", "classlog4cxx_1_1JSONLayout.html#a142d4016c9f8c4916605561aae34d855", null ],
-    [ "appendSerializedLocationInfo", "classlog4cxx_1_1JSONLayout.html#af1ffc6ad123963ed150c064e91a3ced7", null ],
+    [ "appendSerializedLocationInfo", "classlog4cxx_1_1JSONLayout.html#ae684781fb303230f1cc09795f29c031f", null ],
     [ "appendSerializedMDC", "classlog4cxx_1_1JSONLayout.html#a3be3210487ed9e058e06b94926729e32", null ],
     [ "appendSerializedNDC", "classlog4cxx_1_1JSONLayout.html#a8b8e16ecde4991cb12034d455e5d0a5d", null ],
     [ "format", "classlog4cxx_1_1JSONLayout.html#a8b594add11407e405273a3784c7b4ec1", null ],
