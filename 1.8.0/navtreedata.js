@@ -102,11 +102,11 @@ var NAVTREEINDEX =
 "classlog4cxx_1_1rolling_1_1GZCompressAction.html#ac8362ef06e6376e6e0d28c7e016686e7",
 "classlog4cxx_1_1spi_1_1ErrorHandler.html#a520b2938b153e653bce80a15140abde9",
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#abed0d6aa5ae069e2c619bfdf32092cc1",
-"faq.html#unicode_supported",
-"multiprocessrollingfileappender_8h.html",
-"propertysetter_8h_source.html"
+"fileappender_8h.html",
+"namepatternconverter_8h.html",
+"quick-start.html"
 ];
 
-const SYNCONMSG = 'click to disable panel synchronization';
-const SYNCOFFMSG = 'click to enable panel synchronization';
-const LISTOFALLMEMBERS = 'List of all members';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';
