@@ -334,7 +334,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Append a transformation of <code>input</code> onto <code>buf</code>. </p>
-<p>Only the valid XML 1.0 specification characters (&amp;#35;x9 | &amp;#35;xA | &amp;#35;xD | [&amp;#35;x20-&amp;#35;xD7FF] | [&amp;#35;xE000-&amp;#35;xFFFD] | [&amp;#35;x10000-&amp;#35;x10FFFF]) are copied to <code>buf</code>. Any special character (&lt;, &gt;, &amp; and &quot;) is replaced with an entity reference.</p>
+<p>Only the valid XML 1.0 specification characters (0x9 | 0xA | 0xD | [0x20-0xD7FF] | [0xE000-0xFFFD] | [0x10000-0x10FFFF]) are copied to <code>buf</code>. Any special character (&lt;, &gt;, &amp; and &quot;) is replaced with an entity reference.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buf</td><td>Transformed <code>input</code> text is added to this. </td></tr>
