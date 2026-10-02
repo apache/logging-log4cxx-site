@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['a_20custom_20level_20to_20apache_20log4cxx_0',['How do I add a custom level to Apache Log4cxx?',['../faq.html#custom_levels',1,'']]],
+  ['a_20less_20simple_20example_1',['A Less Simple Example',['../quick-start.html#example2',1,'']]],
+  ['a_20logger_20to_20use_20asynchronous_20output_2',['Configuring a logger to use asynchronous output',['../configuration-files.html#asynch-output',1,'']]],
+  ['a_20security_20issue_3',['Reporting a security issue',['../community.html#security',1,'']]],
+  ['a_20simple_20example_4',['A Simple Example',['../quick-start.html#example1',1,'']]],
+  ['access_5',['Web Access',['../source-repository.html#autotoc_md10',1,'']]],
+  ['access_6',['Anonymous access',['../source-repository.html#autotoc_md11',1,'']]],
+  ['add_20a_20custom_20level_20to_20apache_20log4cxx_7',['How do I add a custom level to Apache Log4cxx?',['../faq.html#custom_levels',1,'']]],
+  ['additivity_8',['Additivity',['../concepts.html#appender-additivity',1,'']]],
+  ['also_9',['See Also',['../library-design.html#autotoc_md16',1,'']]],
+  ['and_20layouts_10',['Loggers, Appenders and Layouts',['../concepts.html',1,'usage-overview']]],
+  ['and_20pkg_20config_11',['How do I use Log4cxx with CMake and pkg-config?',['../buildsystems.html#use_with_cmake_pkgconfig',1,'']]],
+  ['anonymous_20access_12',['Anonymous access',['../source-repository.html#autotoc_md11',1,'']]],
+  ['apache_20log4cxx_13',['How do I add a custom level to Apache Log4cxx?',['../faq.html#custom_levels',1,'']]],
+  ['apache_20log4cxx_202_200_200_14',['Download Apache Log4cxx 2.0.0',['../download.html#autotoc_md22',1,'']]],
+  ['apache_20log4cxx_20support_20unicode_15',['Does Apache Log4cxx support Unicode?',['../faq.html#unicode_supported',1,'']]],
+  ['appenders_16',['Appenders',['../concepts.html#appenders',1,'']]],
+  ['appenders_20and_20layouts_17',['Loggers, Appenders and Layouts',['../concepts.html',1,'usage-overview']]],
+  ['application_20on_20windows_20crashes_20on_20shutdown_18',['My application on Windows crashes on shutdown?',['../faq.html#msvc_crash',1,'']]],
+  ['apr_20apr_20util_19',['APR+APR-Util',['../dependencies.html#autotoc_md3',1,'']]],
+  ['apr_20util_20',['APR+APR-Util',['../dependencies.html#autotoc_md3',1,'']]],
+  ['asked_20technical_20questions_21',['Frequently Asked Technical Questions',['../faq.html',1,'usage-overview']]],
+  ['asynchronous_20output_22',['Configuring a logger to use asynchronous output',['../configuration-files.html#asynch-output',1,'']]],
+  ['asynchronous_20output_20by_20default_23',['Why doesn&apos;t Log4cxx use buffered asynchronous output by default?',['../faq.html#buffered_output',1,'']]],
+  ['at_20process_20termination_24',['Does Log4cxx support logging at process termination?',['../faq.html#atexit_events',1,'']]]
+];

@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['unexpected_20exit_0',['Unexpected Exit',['../threading.html#unexpected-exit',1,'']]],
+  ['unicode_1',['Does Apache Log4cxx support Unicode?',['../faq.html#unicode_supported',1,'']]],
+  ['unix_20type_20systems_2',['Unix type systems',['../build-cmake.html#Linux',1,'']]],
+  ['unknownhostexception_3',['UnknownHostException',['../classlog4cxx_1_1helpers_1_1UnknownHostException.html',1,'log4cxx::helpers::UnknownHostException'],['../classlog4cxx_1_1helpers_1_1UnknownHostException.html#a3acb5c1f30ac3b244a7b3b2831f51792',1,'log4cxx::helpers::UnknownHostException::UnknownHostException(const LogString &amp;msg)'],['../classlog4cxx_1_1helpers_1_1UnknownHostException.html#a96216d487abc8c97b8137442bc2da284',1,'log4cxx::helpers::UnknownHostException::UnknownHostException(const UnknownHostException &amp;src)']]],
+  ['unrecognized_5fmilliseconds_4',['UNRECOGNIZED_MILLISECONDS',['../classlog4cxx_1_1pattern_1_1CachedDateFormat.html#ae3a6bc943e5d08d9aa0e2aae20dfc386a20be3a3524fd1e36013bc5a38c0469f0',1,'log4cxx::pattern::CachedDateFormat']]],
+  ['updatechildren_5',['updateChildren',['../classlog4cxx_1_1Hierarchy.html#a9836b2763eb49d6bb67639feb93e5ab8',1,'log4cxx::Hierarchy']]],
+  ['updatethreshold_6',['updateThreshold',['../classlog4cxx_1_1Logger.html#ad5b0374c9cff962f0d070882d3b01fa2',1,'log4cxx::Logger']]],
+  ['usage_20with_20your_20build_20system_7',['Usage with your build system',['../buildsystems.html',1,'usage-overview']]],
+  ['use_8',['Use',['../usage-overview.html',1,'']]],
+  ['use_20asynchronous_20output_9',['Configuring a logger to use asynchronous output',['../configuration-files.html#asynch-output',1,'']]],
+  ['use_20buffered_20asynchronous_20output_20by_20default_10',['Why doesn&apos;t Log4cxx use buffered asynchronous output by default?',['../faq.html#buffered_output',1,'']]],
+  ['use_20log4cxx_20with_20cmake_11',['How do I use Log4cxx with CMake?',['../buildsystems.html#use_with_cmake',1,'']]],
+  ['use_20log4cxx_20with_20cmake_20and_20pkg_20config_12',['How do I use Log4cxx with CMake and pkg-config?',['../buildsystems.html#use_with_cmake_pkgconfig',1,'']]],
+  ['use_20log4cxx_20with_20plain_20make_13',['How do I use Log4cxx with plain Make?',['../buildsystems.html#use_with_make',1,'']]],
+  ['use_20log4cxx_20with_20qmake_14',['How do I use Log4cxx with QMake?',['../buildsystems.html#use_with_qmake',1,'']]],
+  ['use_20of_20class_20specific_20structs_20to_20hold_20data_15',['Use of class-specific structs to hold data.',['../library-design.html#autotoc_md13',1,'']]],
+  ['used_20by_20log4cxx_16',['Environment Variables Used by Log4cxx',['../environment-variables.html',1,'usage-overview']]],
+  ['using_20fmt_20style_20requests_17',['Using {fmt} style requests',['../concepts.html#logging-with-fmt',1,'']]],
+  ['using_20mdc_20values_18',['Using MDC Values',['../filters.html#map-filter',1,'']]],
+  ['using_20std_3a_3aformat_20instead_20of_20fmt_3a_3aformat_19',['Using std::format instead of fmt::format',['../dependencies.html#autotoc_md5',1,'']]],
+  ['using_20the_20request_20location_20',['Using the Request Location',['../filters.html#location-info-filter',1,'']]],
+  ['util_21',['APR+APR-Util',['../dependencies.html#autotoc_md3',1,'']]]
+];
