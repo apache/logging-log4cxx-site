@@ -9,7 +9,7 @@ var classlog4cxx_1_1Logger =
     [ "addErrorEvent", "classlog4cxx_1_1Logger.html#ac069adf06c924266da7d787bc592347d", null ],
     [ "addErrorEvent", "classlog4cxx_1_1Logger.html#ae05fafec4e8d20d5779c5cfc15d5cde4", null ],
     [ "addErrorEvent", "classlog4cxx_1_1Logger.html#a97c6e8740c34ab50148657800d8320c7", null ],
-    [ "addEvent", "classlog4cxx_1_1Logger.html#a5a6eaf4cb6d3df88b0073c8caed47a08", null ],
+    [ "addEvent", "classlog4cxx_1_1Logger.html#af93600d153054e6b68bfc3f0b3ba9dc9", null ],
     [ "addEvent", "classlog4cxx_1_1Logger.html#a83a9e8ffb824d8dcc92704214000a8da", null ],
     [ "addEvent", "classlog4cxx_1_1Logger.html#a2195e4a1924e20daf1d31190077c2f55", null ],
     [ "addEventLS", "classlog4cxx_1_1Logger.html#a5e028b433e255fb5970b68da942eef81", null ],

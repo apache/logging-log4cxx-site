@@ -195,8 +195,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a582f8279c50418ef8c7ad408bd84c14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new logging event containing <code>msg</code> to attached appender(s) if this logger is enabled for <code>FATAL</code> events.  <br /></td></tr>
 <tr class="memitem:a83a9e8ffb824d8dcc92704214000a8da" id="r_a83a9e8ffb824d8dcc92704214000a8da"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a83a9e8ffb824d8dcc92704214000a8da">addEvent</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level, std::string &amp;&amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
 <tr class="memdesc:a83a9e8ffb824d8dcc92704214000a8da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new logging event containing <code>message</code> and <code>location</code> to attached appender(s) without further checks.  <br /></td></tr>
-<tr class="memitem:a5a6eaf4cb6d3df88b0073c8caed47a08" id="r_a5a6eaf4cb6d3df88b0073c8caed47a08"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5a6eaf4cb6d3df88b0073c8caed47a08">addEvent</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level, <a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;sourceLocation=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
-<tr class="memdesc:a5a6eaf4cb6d3df88b0073c8caed47a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to attached appender(s) a new <code>level</code> LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks.  <br /></td></tr>
+<tr class="memitem:af93600d153054e6b68bfc3f0b3ba9dc9" id="r_af93600d153054e6b68bfc3f0b3ba9dc9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af93600d153054e6b68bfc3f0b3ba9dc9">addEvent</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level, <a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
+<tr class="memdesc:af93600d153054e6b68bfc3f0b3ba9dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to attached appender(s) a new <code>level</code> LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks.  <br /></td></tr>
 <tr class="memitem:aaf9681fab36fd96207cc4a424c8d64a5" id="r_aaf9681fab36fd96207cc4a424c8d64a5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaf9681fab36fd96207cc4a424c8d64a5">addFatalEvent</a> (std::string &amp;&amp;message, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
 <tr class="memdesc:aaf9681fab36fd96207cc4a424c8d64a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new fatal level logging event containing <code>message</code> and <code>location</code> to attached appender(s) without further checks.  <br /></td></tr>
 <tr class="memitem:a892323fbc50585fa4f9acecb44d949f1" id="r_a892323fbc50585fa4f9acecb44d949f1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a892323fbc50585fa4f9acecb44d949f1">addFatalEvent</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1AsyncBuffer.html">helpers::AsyncBuffer</a> &amp;&amp;messageAppender, const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;location=<a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()) const</td></tr>
@@ -548,7 +548,7 @@ Friends</h2></td></tr>
 <p>Add to attached appender(s) a new DEBUG level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">messageAppender</td><td>The buffer to add to the <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The data recorded for each logging request.">spi::LoggingEvent</a>. </td></tr>
     <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
   </table>
   </dd>
@@ -638,7 +638,7 @@ Friends</h2></td></tr>
 <p>Add to attached appender(s) a new ERROR level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">messageAppender</td><td>The buffer to add to the <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The data recorded for each logging request.">spi::LoggingEvent</a>. </td></tr>
     <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
   </table>
   </dd>
@@ -706,8 +706,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a5a6eaf4cb6d3df88b0073c8caed47a08" name="a5a6eaf4cb6d3df88b0073c8caed47a08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a6eaf4cb6d3df88b0073c8caed47a08">&#9670;&#160;</a></span>addEvent() <span class="overload">[1/3]</span></h2>
+<a id="af93600d153054e6b68bfc3f0b3ba9dc9" name="af93600d153054e6b68bfc3f0b3ba9dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af93600d153054e6b68bfc3f0b3ba9dc9">&#9670;&#160;</a></span>addEvent() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -725,7 +725,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sourceLocation</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()</span>&#160;) const</td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html">spi::LocationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>location</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="classlog4cxx_1_1spi_1_1LocationInfo.html#ab2e0d1b2a4f6903ac8657b5f183303ac">spi::LocationInfo::getLocationUnavailable</a>()</span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -734,7 +734,7 @@ Friends</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">level</td><td>The logging event level. </td></tr>
-    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">messageAppender</td><td>The buffer to add to the <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The data recorded for each logging request.">spi::LoggingEvent</a>. </td></tr>
     <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
   </table>
   </dd>
@@ -872,7 +872,7 @@ Friends</h2></td></tr>
 <p>Add to attached appender(s) a new FATAL level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">messageAppender</td><td>The buffer to add to the <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The data recorded for each logging request.">spi::LoggingEvent</a>. </td></tr>
     <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
   </table>
   </dd>
@@ -962,7 +962,7 @@ Friends</h2></td></tr>
 <p>Add to attached appender(s) a new INFO level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">messageAppender</td><td>The buffer to add to the <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The data recorded for each logging request.">spi::LoggingEvent</a>. </td></tr>
     <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
   </table>
   </dd>
@@ -1052,7 +1052,7 @@ Friends</h2></td></tr>
 <p>Add to attached appender(s) a new TRACE level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">messageAppender</td><td>The buffer to add to the <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The data recorded for each logging request.">spi::LoggingEvent</a>. </td></tr>
     <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
   </table>
   </dd>
@@ -1142,7 +1142,7 @@ Friends</h2></td></tr>
 <p>Add to attached appender(s) a new WARN level LoggingEvent which was requested at <code>sourceLocation</code> where the message is built asynchronously by <code>messageAppender</code> without further checks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>The text to add to the logging event. </td></tr>
+    <tr><td class="paramname">messageAppender</td><td>The buffer to add to the <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The data recorded for each logging request.">spi::LoggingEvent</a>. </td></tr>
     <tr><td class="paramname">location</td><td>The source code location of the logging request. </td></tr>
   </table>
   </dd>
@@ -3010,7 +3010,7 @@ Friends</h2></td></tr>
 <p>By writing </p><div class="fragment"><div class="line"><span class="keywordflow">if</span>(<a class="code hl_function" href="#a9a7548679bf8cfdaeb57ae9f63b7fbb8">log4cxx::Logger::isDebugEnabledFor</a>(logger)) {</div>
 <div class="line">  logger-&gt;addDebugEvent(<span class="stringliteral">&quot;Component: &quot;</span> + std::to_string(componentNumber));</div>
 <div class="line">}</div>
-<div class="ttc" id="aclasslog4cxx_1_1Logger_html_a9a7548679bf8cfdaeb57ae9f63b7fbb8"><div class="ttname"><a href="#a9a7548679bf8cfdaeb57ae9f63b7fbb8">log4cxx::Logger::isDebugEnabledFor</a></div><div class="ttdeci">static bool isDebugEnabledFor(const LoggerPtr &amp;logger)</div><div class="ttdoc">Is logger is enabled for DEBUG level logging events?</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:1003</div></div>
+<div class="ttc" id="aclasslog4cxx_1_1Logger_html_a9a7548679bf8cfdaeb57ae9f63b7fbb8"><div class="ttname"><a href="#a9a7548679bf8cfdaeb57ae9f63b7fbb8">log4cxx::Logger::isDebugEnabledFor</a></div><div class="ttdeci">static bool isDebugEnabledFor(const LoggerPtr &amp;logger)</div><div class="ttdoc">Is logger is enabled for DEBUG level logging events?</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:1002</div></div>
 </div><!-- fragment --><p> you minimise the computational cost when <code>logger</code> is not enabled for <code>DEBUG</code> logging events. This function may be inlined thereby avoiding a function call as well as the cost constructing the message when <code>logger</code> is not enabled for <code>DEBUG</code> events.</p>
 <p>See also <a class="el" href="group__LoggingMacros.html#gae1bc2ab20d5f2d7660995ea8244d3a26" title="Add a new logging event containing message to attached appender(s) if logger is enabled for DEBUG eve...">LOG4CXX_DEBUG</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>bool - <code>false</code> if <code>logger</code> is <code>null</code> or <code>DEBUG</code> logging events are disabled for <code>logger</code>, <code>true</code> otherwise. </dd></dl>

@@ -88,7 +88,7 @@ var NAVTREEINDEX =
 "MyApp-qt_2CMakeLists_8txt-example.html",
 "classlog4cxx_1_1FMTLayout.html",
 "classlog4cxx_1_1Layout.html#ae1615431c586393b321a8ad55afc3548",
-"classlog4cxx_1_1Logger.html#ac3ea6f5f3a626bed7e3056f5b891e341",
+"classlog4cxx_1_1Logger.html#ac466584a8c1c32a55a88575134238f30",
 "classlog4cxx_1_1db_1_1ODBCAppender.html#a294a7f60e6284c213b5d2fdb98f708ba",
 "classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a63fc9b7c9a5b13b8ffc89284598c330e",
 "classlog4cxx_1_1helpers_1_1CyclicBuffer.html",
