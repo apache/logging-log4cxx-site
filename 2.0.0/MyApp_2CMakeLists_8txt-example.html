@@ -149,6 +149,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('MyApp_2CMakeLi
 <div class="line">cmake_minimum_required(VERSION 3.13)</div>
 <div class="line">project(MyApp LANGUAGES CXX)</div>
 <div class="line"> </div>
+<div class="line"><span class="preprocessor"># Ensure Log4cxx does not throw any warnings when used</span></div>
+<div class="line">set(CMAKE_COMPILE_WARNING_AS_ERROR ON)</div>
+<div class="line"><span class="keywordflow">if</span>(MSVC)</div>
+<div class="line">  add_compile_options(/W4)</div>
+<div class="line"><span class="keywordflow">else</span>()</div>
+<div class="line">  add_compile_options(-Wall -Wextra)</div>
+<div class="line">endif()</div>
+<div class="line"> </div>
 <div class="line"><span class="preprocessor"># Find the required library</span></div>
 <div class="line">find_package(<a class="code hl_namespace" href="namespacelog4cxx.html">log4cxx</a> REQUIRED)</div>
 <div class="line"><span class="preprocessor"># Optionally locate fmt::fmt</span></div>

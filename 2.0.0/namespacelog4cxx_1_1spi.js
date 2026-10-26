@@ -17,7 +17,6 @@ var namespacelog4cxx_1_1spi =
     [ "TriggeringEventEvaluator", "classlog4cxx_1_1spi_1_1TriggeringEventEvaluator.html", "classlog4cxx_1_1spi_1_1TriggeringEventEvaluator" ],
     [ "ErrorHandlerPtr", "namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648", null ],
     [ "FilterPtr", "namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97", null ],
-    [ "LoggerFactoryPtr", "namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5", null ],
     [ "LoggerRepositoryPtr", "namespacelog4cxx_1_1spi.html#a601415735b45ce1d45c7a3c45d797b37", null ],
     [ "LoggingEventPtr", "namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c", null ],
     [ "OptionHandlerPtr", "namespacelog4cxx_1_1spi.html#a1d969c8e32b6c5b1dcbfbdab6f88df71", null ],

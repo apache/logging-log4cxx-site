@@ -150,62 +150,63 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('action_8h_sour
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#define _LOG4CXX_ROLLING_ACTION_H</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="object_8h.html">log4cxx/helpers/object.h</a>&gt;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="pool_8h.html">log4cxx/helpers/pool.h</a>&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>LOG4CXX_NS</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacelog4cxx_1_1rolling.html">   26</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelog4cxx_1_1rolling.html">rolling</a></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html">   33</a></span><span class="keyword">class </span><a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#aafbc026f71918e2897bdb0cd7e948985">Action</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> LOG4CXX_NS::helpers::Object</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_define" href="object_8h.html#a7a13485fd2b3040ee5cae53c2bc00f13">DECLARE_ABSTRACT_LOG4CXX_OBJECT</a>(<a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#aafbc026f71918e2897bdb0cd7e948985">Action</a>)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_define" href="object_8h.html#ac8ff8f70159e03fe7d8c4aa743cc9cda">BEGIN_LOG4CXX_CAST_MAP</a>()</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_define" href="object_8h.html#a642180530328ec0378468edda5bc94e2">LOG4CXX_CAST_ENTRY</a>(<a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#aafbc026f71918e2897bdb0cd7e948985">Action</a>)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_define" href="object_8h.html#a917a7d053853b1ffdf45a3d91aeca4f1">END_LOG4CXX_CAST_MAP</a>()</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        LOG4CXX_DECLARE_PRIVATE_MEMBER_PTR(ActionPrivate, m_priv)</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#aafbc026f71918e2897bdb0cd7e948985">   46</a></span>        <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#aafbc026f71918e2897bdb0cd7e948985">Action</a>();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#ab5260cfbd96a3c526da4569cdc05cbb5">   47</a></span>        <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#ab5260cfbd96a3c526da4569cdc05cbb5">Action</a>(LOG4CXX_PRIVATE_PTR(ActionPrivate) priv);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#a891225b78f0b84bd2a76cff09efecdfa">   48</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#a891225b78f0b84bd2a76cff09efecdfa">~Action</a>();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#a4c310f25f7c079f11c081b15dca883d6">   56</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#a4c310f25f7c079f11c081b15dca883d6">execute</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        [[deprecated(<span class="stringliteral">&quot;Use execute() without a Pool parameter instead&quot;</span>)]]</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#a1a5426361dcc0dd3c7db2b6daa9ea281">   61</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#a1a5426361dcc0dd3c7db2b6daa9ea281">execute</a>(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a>&amp; pool) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="comment">/* Call execute() if not already closed.</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">        */</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#a28561f2f2b842cd0e863bd60e334607d">   65</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#a28561f2f2b842cd0e863bd60e334607d">run</a>();</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">/* Wait until run() completes.</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">        */</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#add5afe799b91b44a82213fd9f523e00b">   69</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#add5afe799b91b44a82213fd9f523e00b">close</a>();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#ab1d20c8d7dd252275f9388b5e265af3a">   74</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#ab1d20c8d7dd252275f9388b5e265af3a">isComplete</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="comment">/* The action description</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">        */</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#acf2f52eb2e7c80fd9f27d5d998063d5c">   78</a></span>        <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#acf2f52eb2e7c80fd9f27d5d998063d5c">getName</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>LOG4CXX_NS</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>helpers { <span class="keyword">class </span>Pool; }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespacelog4cxx_1_1rolling.html">   27</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacelog4cxx_1_1rolling.html">rolling</a></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html">   34</a></span><span class="keyword">class </span><a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#aafbc026f71918e2897bdb0cd7e948985">Action</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> LOG4CXX_NS::helpers::Object</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_define" href="object_8h.html#a7a13485fd2b3040ee5cae53c2bc00f13">DECLARE_ABSTRACT_LOG4CXX_OBJECT</a>(<a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#aafbc026f71918e2897bdb0cd7e948985">Action</a>)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_define" href="object_8h.html#ac8ff8f70159e03fe7d8c4aa743cc9cda">BEGIN_LOG4CXX_CAST_MAP</a>()</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_define" href="object_8h.html#a642180530328ec0378468edda5bc94e2">LOG4CXX_CAST_ENTRY</a>(<a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#aafbc026f71918e2897bdb0cd7e948985">Action</a>)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_define" href="object_8h.html#a917a7d053853b1ffdf45a3d91aeca4f1">END_LOG4CXX_CAST_MAP</a>()</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        LOG4CXX_DECLARE_PRIVATE_MEMBER_PTR(ActionPrivate, m_priv)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#aafbc026f71918e2897bdb0cd7e948985">   47</a></span>        <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#aafbc026f71918e2897bdb0cd7e948985">Action</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#ab5260cfbd96a3c526da4569cdc05cbb5">   48</a></span>        <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#ab5260cfbd96a3c526da4569cdc05cbb5">Action</a>(LOG4CXX_PRIVATE_PTR(ActionPrivate) priv);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#a891225b78f0b84bd2a76cff09efecdfa">   49</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#a891225b78f0b84bd2a76cff09efecdfa">~Action</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#a4c310f25f7c079f11c081b15dca883d6">   57</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#a4c310f25f7c079f11c081b15dca883d6">execute</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        [[deprecated(<span class="stringliteral">&quot;Use execute() without a Pool parameter instead&quot;</span>)]]</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#a1a5426361dcc0dd3c7db2b6daa9ea281">   62</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#a1a5426361dcc0dd3c7db2b6daa9ea281">execute</a>(<a class="code hl_class" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a>&amp; pool) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">/* Call execute() if not already closed.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">        */</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#a28561f2f2b842cd0e863bd60e334607d">   66</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#a28561f2f2b842cd0e863bd60e334607d">run</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">/* Wait until run() completes.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">        */</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#add5afe799b91b44a82213fd9f523e00b">   70</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#add5afe799b91b44a82213fd9f523e00b">close</a>();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#ab1d20c8d7dd252275f9388b5e265af3a">   75</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#ab1d20c8d7dd252275f9388b5e265af3a">isComplete</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="comment">/* The action description</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">        */</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classlog4cxx_1_1rolling_1_1Action.html#acf2f52eb2e7c80fd9f27d5d998063d5c">   79</a></span>        <a class="code hl_typedef" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> <a class="code hl_function" href="classlog4cxx_1_1rolling_1_1Action.html#acf2f52eb2e7c80fd9f27d5d998063d5c">getName</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
 </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="namespacelog4cxx_1_1rolling.html#a349aa89f172bd1dbdc80b2683c916849">   83</a></span><a class="code hl_function" href="namespacelog4cxx_1_1rolling.html#a349aa89f172bd1dbdc80b2683c916849">LOG4CXX_PTR_DEF</a>(<a class="code hl_class" href="classlog4cxx_1_1rolling_1_1Action.html">Action</a>);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
-</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="namespacelog4cxx_1_1rolling.html#a349aa89f172bd1dbdc80b2683c916849">   84</a></span><a class="code hl_function" href="namespacelog4cxx_1_1rolling.html#a349aa89f172bd1dbdc80b2683c916849">LOG4CXX_PTR_DEF</a>(<a class="code hl_class" href="classlog4cxx_1_1rolling_1_1Action.html">Action</a>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1Pool_html"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1Pool.html">log4cxx::helpers::Pool</a></div><div class="ttdef"><b>Definition</b> pool.h:33</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1rolling_1_1Action_html"><div class="ttname"><a href="classlog4cxx_1_1rolling_1_1Action.html">log4cxx::rolling::Action</a></div><div class="ttdoc">A file system action performed as part of a rollover event.</div><div class="ttdef"><b>Definition</b> action.h:34</div></div>
+<div class="ttc" id="aclasslog4cxx_1_1rolling_1_1Action_html"><div class="ttname"><a href="classlog4cxx_1_1rolling_1_1Action.html">log4cxx::rolling::Action</a></div><div class="ttdoc">A file system action performed as part of a rollover event.</div><div class="ttdef"><b>Definition</b> action.h:35</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1rolling_1_1Action_html_a1a5426361dcc0dd3c7db2b6daa9ea281"><div class="ttname"><a href="classlog4cxx_1_1rolling_1_1Action.html#a1a5426361dcc0dd3c7db2b6daa9ea281">log4cxx::rolling::Action::execute</a></div><div class="ttdeci">bool execute(helpers::Pool &amp;pool) const</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1rolling_1_1Action_html_a28561f2f2b842cd0e863bd60e334607d"><div class="ttname"><a href="classlog4cxx_1_1rolling_1_1Action.html#a28561f2f2b842cd0e863bd60e334607d">log4cxx::rolling::Action::run</a></div><div class="ttdeci">void run()</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1rolling_1_1Action_html_a4c310f25f7c079f11c081b15dca883d6"><div class="ttname"><a href="classlog4cxx_1_1rolling_1_1Action.html#a4c310f25f7c079f11c081b15dca883d6">log4cxx::rolling::Action::execute</a></div><div class="ttdeci">virtual bool execute() const =0</div><div class="ttdoc">Perform the action.</div></div>
@@ -215,15 +216,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('action_8h_sour
 <div class="ttc" id="aclasslog4cxx_1_1rolling_1_1Action_html_ab5260cfbd96a3c526da4569cdc05cbb5"><div class="ttname"><a href="classlog4cxx_1_1rolling_1_1Action.html#ab5260cfbd96a3c526da4569cdc05cbb5">log4cxx::rolling::Action::Action</a></div><div class="ttdeci">Action(LOG4CXX_PRIVATE_PTR(ActionPrivate) priv)</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1rolling_1_1Action_html_acf2f52eb2e7c80fd9f27d5d998063d5c"><div class="ttname"><a href="classlog4cxx_1_1rolling_1_1Action.html#acf2f52eb2e7c80fd9f27d5d998063d5c">log4cxx::rolling::Action::getName</a></div><div class="ttdeci">LogString getName() const</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1rolling_1_1Action_html_add5afe799b91b44a82213fd9f523e00b"><div class="ttname"><a href="classlog4cxx_1_1rolling_1_1Action.html#add5afe799b91b44a82213fd9f523e00b">log4cxx::rolling::Action::close</a></div><div class="ttdeci">void close()</div></div>
-<div class="ttc" id="anamespacelog4cxx_1_1rolling_html"><div class="ttname"><a href="namespacelog4cxx_1_1rolling.html">log4cxx::rolling</a></div><div class="ttdef"><b>Definition</b> action.h:27</div></div>
+<div class="ttc" id="anamespacelog4cxx_1_1rolling_html"><div class="ttname"><a href="namespacelog4cxx_1_1rolling.html">log4cxx::rolling</a></div><div class="ttdef"><b>Definition</b> action.h:28</div></div>
 <div class="ttc" id="anamespacelog4cxx_1_1rolling_html_a349aa89f172bd1dbdc80b2683c916849"><div class="ttname"><a href="namespacelog4cxx_1_1rolling.html#a349aa89f172bd1dbdc80b2683c916849">log4cxx::rolling::LOG4CXX_PTR_DEF</a></div><div class="ttdeci">LOG4CXX_PTR_DEF(Action)</div></div>
 <div class="ttc" id="anamespacelog4cxx_html_aa2308ed05fef2a1366066cb38b177e94"><div class="ttname"><a href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a></div><div class="ttdeci">std::basic_string&lt; logchar &gt; LogString</div><div class="ttdef"><b>Definition</b> logstring.h:51</div></div>
 <div class="ttc" id="aobject_8h_html"><div class="ttname"><a href="object_8h.html">object.h</a></div></div>
-<div class="ttc" id="aobject_8h_html_a642180530328ec0378468edda5bc94e2"><div class="ttname"><a href="object_8h.html#a642180530328ec0378468edda5bc94e2">LOG4CXX_CAST_ENTRY</a></div><div class="ttdeci">#define LOG4CXX_CAST_ENTRY(Interface)</div><div class="ttdef"><b>Definition</b> object.h:154</div></div>
+<div class="ttc" id="aobject_8h_html_a642180530328ec0378468edda5bc94e2"><div class="ttname"><a href="object_8h.html#a642180530328ec0378468edda5bc94e2">LOG4CXX_CAST_ENTRY</a></div><div class="ttdeci">#define LOG4CXX_CAST_ENTRY(Interface)</div><div class="ttdef"><b>Definition</b> object.h:153</div></div>
 <div class="ttc" id="aobject_8h_html_a7a13485fd2b3040ee5cae53c2bc00f13"><div class="ttname"><a href="object_8h.html#a7a13485fd2b3040ee5cae53c2bc00f13">DECLARE_ABSTRACT_LOG4CXX_OBJECT</a></div><div class="ttdeci">#define DECLARE_ABSTRACT_LOG4CXX_OBJECT(object)</div><div class="ttdef"><b>Definition</b> object.h:37</div></div>
-<div class="ttc" id="aobject_8h_html_a917a7d053853b1ffdf45a3d91aeca4f1"><div class="ttname"><a href="object_8h.html#a917a7d053853b1ffdf45a3d91aeca4f1">END_LOG4CXX_CAST_MAP</a></div><div class="ttdeci">#define END_LOG4CXX_CAST_MAP()</div><div class="ttdef"><b>Definition</b> object.h:148</div></div>
-<div class="ttc" id="aobject_8h_html_ac8ff8f70159e03fe7d8c4aa743cc9cda"><div class="ttname"><a href="object_8h.html#ac8ff8f70159e03fe7d8c4aa743cc9cda">BEGIN_LOG4CXX_CAST_MAP</a></div><div class="ttdeci">#define BEGIN_LOG4CXX_CAST_MAP()</div><div class="ttdef"><b>Definition</b> object.h:142</div></div>
-<div class="ttc" id="apool_8h_html"><div class="ttname"><a href="pool_8h.html">pool.h</a></div></div>
+<div class="ttc" id="aobject_8h_html_a917a7d053853b1ffdf45a3d91aeca4f1"><div class="ttname"><a href="object_8h.html#a917a7d053853b1ffdf45a3d91aeca4f1">END_LOG4CXX_CAST_MAP</a></div><div class="ttdeci">#define END_LOG4CXX_CAST_MAP()</div><div class="ttdef"><b>Definition</b> object.h:147</div></div>
+<div class="ttc" id="aobject_8h_html_ac8ff8f70159e03fe7d8c4aa743cc9cda"><div class="ttname"><a href="object_8h.html#ac8ff8f70159e03fe7d8c4aa743cc9cda">BEGIN_LOG4CXX_CAST_MAP</a></div><div class="ttdeci">#define BEGIN_LOG4CXX_CAST_MAP()</div><div class="ttdef"><b>Definition</b> object.h:141</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('action_8h_sour
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_a6cb9619a5d72715564e5371e6007824.html">src</a></li><li class="navelem"><a href="dir_baac5e210e1da7cede90a6597c1b4ea0.html">main</a></li><li class="navelem"><a href="dir_353545ae1ca66fd3867e90cea1a1b11b.html">include</a></li><li class="navelem"><a href="dir_7187feaef934e8e726380ab1bac4bb84.html">log4cxx</a></li><li class="navelem"><a href="dir_c38579b61d6244ae0e4cb084e52dcb50.html">rolling</a></li><li class="navelem"><a href="action_8h.html">action.h</a></li>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_5eb159725f84c66aafd839904a4acdd0.html">main</a></li><li class="navelem"><a href="dir_df3bee86fdbfb464c3a94507855b0bdc.html">include</a></li><li class="navelem"><a href="dir_7be30a74690c85c659aa4940da9d1914.html">log4cxx</a></li><li class="navelem"><a href="dir_c7fd10e362d45ad1567cac355ef67d36.html">rolling</a></li><li class="navelem"><a href="action_8h.html">action.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="https://www.doxygen.nl/images/doxygen.png" alt="Doxygen"/></a> 1.18.0 on <span id='site-published-date'>SITE_PUBLISHED_DATE</span></li>

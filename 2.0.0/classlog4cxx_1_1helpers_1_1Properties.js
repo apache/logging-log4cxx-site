@@ -7,7 +7,7 @@ var classlog4cxx_1_1helpers_1_1Properties =
     [ "get", "classlog4cxx_1_1helpers_1_1Properties.html#a447a79b111a046058d0c2d955511c2ad", null ],
     [ "getProperty", "classlog4cxx_1_1helpers_1_1Properties.html#aa09f1e7290f98bf7d9bc619bc06783d7", null ],
     [ "isEmpty", "classlog4cxx_1_1helpers_1_1Properties.html#a0a403a9009449d2f0ed61da068df8c87", null ],
-    [ "load", "classlog4cxx_1_1helpers_1_1Properties.html#a7335a110b996ba89cddfa240909bcc39", null ],
+    [ "load", "classlog4cxx_1_1helpers_1_1Properties.html#a1ba33bfd93e9e512381560673f349ce5", null ],
     [ "operator=", "classlog4cxx_1_1helpers_1_1Properties.html#ad89b1453272bc0b94cb0f600a56c0da6", null ],
     [ "operator=", "classlog4cxx_1_1helpers_1_1Properties.html#ae7068b00338dee9ef0370bea51b8a575", null ],
     [ "propertyNames", "classlog4cxx_1_1helpers_1_1Properties.html#a070ef1ddd695bc17fb4186403b3c16a3", null ],

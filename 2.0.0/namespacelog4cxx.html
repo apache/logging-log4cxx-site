@@ -181,7 +181,7 @@ Classes</h2></td></tr>
 <tr class="memitem:Logger" id="r_Logger"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1Logger.html">Logger</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the central class in the <a class="el" href="namespacelog4cxx.html">log4cxx</a> package.  <a href="classlog4cxx_1_1Logger.html#details">More...</a><br /></td></tr>
 <tr class="memitem:LoggerInstancePtr" id="r_LoggerInstancePtr"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1LoggerInstancePtr.html">LoggerInstancePtr</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A smart pointer (implicity convertable to <a class="el" href="#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>) that conditionally removes a <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> from the <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html" title="A LoggerRepository is used to create and retrieve Loggers.">spi::LoggerRepository</a> at the end of the instance variable's lifetime.  <a href="classlog4cxx_1_1LoggerInstancePtr.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A smart pointer (implicity convertable to <a class="el" href="#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>) that conditionally removes a <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> from the <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html" title="A LoggerRepository is used to create and retrieve Loggers.">spi::LoggerRepository</a> at the end of the instance variable's lifetime.  <a href="classlog4cxx_1_1LoggerInstancePtr.html#details">More...</a><br /></td></tr>
 <tr class="memitem:LogManager" id="r_LogManager"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1LogManager.html">LogManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the <code><a class="el" href="classlog4cxx_1_1LogManager.html" title="Use the LogManager class to retreive Logger instances or to operate on the current LoggerRepository.">LogManager</a></code> class to retreive <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instances or to operate on the current <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code>.  <a href="classlog4cxx_1_1LogManager.html#details">More...</a><br /></td></tr>
 <tr class="memitem:logstream" id="r_logstream"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1logstream.html">logstream</a></td></tr>
@@ -202,17 +202,16 @@ Classes</h2></td></tr>
 <tr class="memitem:wlogstream" id="r_wlogstream"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1wlogstream.html">wlogstream</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An STL-like stream API for <a class="el" href="namespacelog4cxx.html">log4cxx</a> using wchar_t as the character type.  <a href="classlog4cxx_1_1wlogstream.html#details">More...</a><br /></td></tr>
 <tr class="memitem:WriterAppender" id="r_WriterAppender"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1WriterAppender.html">WriterAppender</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classlog4cxx_1_1WriterAppender.html" title="WriterAppender appends log events to a standard output stream.">WriterAppender</a> appends log events to a standard output stream.  <a href="classlog4cxx_1_1WriterAppender.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract base for an appender that writes to a character stream.  <a href="classlog4cxx_1_1WriterAppender.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:abdcdc973d46623f53379dbb4ba33ae86" id="r_abdcdc973d46623f53379dbb4ba33ae86"><td class="memItemLeft">typedef std::shared_ptr&lt; <a class="el" href="classlog4cxx_1_1Layout.html">Layout</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a></td></tr>
 <tr class="memitem:ab95263625ea65ffbeb4f814dea7c781a" id="r_ab95263625ea65ffbeb4f814dea7c781a"><td class="memItemLeft">typedef std::shared_ptr&lt; <a class="el" href="classlog4cxx_1_1Appender.html">Appender</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a></td></tr>
 <tr class="memitem:abab74d1809c0c810f3f7eae2c3fa511e" id="r_abab74d1809c0c810f3f7eae2c3fa511e"><td class="memItemLeft">typedef std::shared_ptr&lt; <a class="el" href="classlog4cxx_1_1Level.html">Level</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a></td></tr>
-<tr class="memitem:acd073adf77cc8545b10ac024a474be0d" id="r_acd073adf77cc8545b10ac024a474be0d"><td class="memItemLeft">typedef std::shared_ptr&lt; <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a></td></tr>
-<tr class="memitem:ae64ef75ca642eee661fb51aa04b6c227" id="r_ae64ef75ca642eee661fb51aa04b6c227"><td class="memItemLeft">typedef std::vector&lt; <a class="el" href="#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a></td></tr>
 <tr class="memitem:aa2308ed05fef2a1366066cb38b177e94" id="r_aa2308ed05fef2a1366066cb38b177e94"><td class="memItemLeft">typedef std::basic_string&lt; logchar &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa2308ed05fef2a1366066cb38b177e94">LogString</a></td></tr>
-<tr class="memitem:a756fe33f36a5b1cda9010e2d48965f95" id="r_a756fe33f36a5b1cda9010e2d48965f95"><td class="memItemLeft">typedef std::vector&lt; <a class="el" href="#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a756fe33f36a5b1cda9010e2d48965f95">ProvisionNode</a></td></tr>
+<tr class="memitem:ad522ae36a5a181a63e3f80503a5796a0" id="r_ad522ae36a5a181a63e3f80503a5796a0"><td class="memItemLeft">typedef std::shared_ptr&lt; <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a></td></tr>
+<tr class="memitem:a756fe33f36a5b1cda9010e2d48965f95" id="r_a756fe33f36a5b1cda9010e2d48965f95"><td class="memItemLeft">typedef std::vector&lt; <a class="el" href="#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a756fe33f36a5b1cda9010e2d48965f95">ProvisionNode</a></td></tr>
 <tr class="memitem:a1d6373f3eed7c82d871c564a90e24a5e" id="r_a1d6373f3eed7c82d871c564a90e24a5e"><td class="memItemLeft">typedef <a class="el" href="classlog4cxx_1_1logstream__base.html">logstream_base</a> &amp;(*)&#160;</td><td class="memItemRight"><a class="el" href="#a1d6373f3eed7c82d871c564a90e24a5e">logstream_manipulator</a>(<a class="el" href="classlog4cxx_1_1logstream__base.html">logstream_base</a> &amp;)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -245,7 +244,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a8ddef2f817a835cbf4596e525fe7a76b" id="r_a8ddef2f817a835cbf4596e525fe7a76b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8ddef2f817a835cbf4596e525fe7a76b">LOG4CXX_PTR_DEF</a> (<a class="el" href="classlog4cxx_1_1JSONLayout.html">JSONLayout</a>)</td></tr>
 <tr class="memitem:a5db518d86dc7275a6089ae3eba49da6c" id="r_a5db518d86dc7275a6089ae3eba49da6c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5db518d86dc7275a6089ae3eba49da6c">LOG4CXX_PTR_DEF</a> (<a class="el" href="classlog4cxx_1_1Layout.html">Layout</a>)</td></tr>
 <tr class="memitem:aefd002553075ef58ba2c92c5dc152fb1" id="r_aefd002553075ef58ba2c92c5dc152fb1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aefd002553075ef58ba2c92c5dc152fb1">LOG4CXX_PTR_DEF</a> (<a class="el" href="classlog4cxx_1_1Logger.html">Logger</a>)</td></tr>
-<tr class="memitem:ae273fb0f54f87928855e6e11e8d5297c" id="r_ae273fb0f54f87928855e6e11e8d5297c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae273fb0f54f87928855e6e11e8d5297c">LOG4CXX_LIST_DEF</a> (<a class="el" href="#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a>, <a class="el" href="#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>)</td></tr>
+<tr class="memitem:ae273fb0f54f87928855e6e11e8d5297c" id="r_ae273fb0f54f87928855e6e11e8d5297c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae273fb0f54f87928855e6e11e8d5297c">LOG4CXX_LIST_DEF</a> (LoggerList, <a class="el" href="#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>)</td></tr>
 <tr class="memitem:a493864da208cf35303fceb83d74443a3" id="r_a493864da208cf35303fceb83d74443a3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a493864da208cf35303fceb83d74443a3">LOG4CXX_LIST_DEF</a> (LoggingEventPatternConverterList, log4cxx::pattern::LoggingEventPatternConverterPtr)</td></tr>
 <tr class="memitem:a765ee41060e7c6800758ec4731bb59a3" id="r_a765ee41060e7c6800758ec4731bb59a3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a765ee41060e7c6800758ec4731bb59a3">LOG4CXX_LIST_DEF</a> (FormattingInfoList, <a class="el" href="namespacelog4cxx_1_1pattern.html#a649a4a8c3440bc72f57c2f8061abac8c">log4cxx::pattern::FormattingInfoPtr</a>)</td></tr>
 <tr class="memitem:a915a2895559f016b2728e0c1fb02e6fd" id="r_a915a2895559f016b2728e0c1fb02e6fd"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a915a2895559f016b2728e0c1fb02e6fd">LOG4CXX_PTR_DEF</a> (<a class="el" href="classlog4cxx_1_1PatternLayout.html">PatternLayout</a>)</td></tr>
@@ -295,28 +294,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae64ef75ca642eee661fb51aa04b6c227" name="ae64ef75ca642eee661fb51aa04b6c227"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae64ef75ca642eee661fb51aa04b6c227">&#9670;&#160;</a></span>LoggerList</h2>
+<a id="ad522ae36a5a181a63e3f80503a5796a0" name="ad522ae36a5a181a63e3f80503a5796a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad522ae36a5a181a63e3f80503a5796a0">&#9670;&#160;</a></span>LoggerPtr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&gt; <a class="el" href="#ae64ef75ca642eee661fb51aa04b6c227">log4cxx::LoggerList</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acd073adf77cc8545b10ac024a474be0d" name="acd073adf77cc8545b10ac024a474be0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd073adf77cc8545b10ac024a474be0d">&#9670;&#160;</a></span>LoggerPtr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::shared_ptr&lt; <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> &gt; <a class="el" href="#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a></td>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classlog4cxx_1_1Logger.html">Logger</a>&gt; <a class="el" href="#ad522ae36a5a181a63e3f80503a5796a0">log4cxx::LoggerPtr</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -362,7 +347,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&gt; <a class="el" href="#a756fe33f36a5b1cda9010e2d48965f95">log4cxx::ProvisionNode</a></td>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&gt; <a class="el" href="#a756fe33f36a5b1cda9010e2d48965f95">log4cxx::ProvisionNode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -510,12 +495,12 @@ template&lt;typename Ret, typename Type, bool = std::is_base_of&lt;Ret, helpers:
         <tr>
           <td class="memname">log4cxx::LOG4CXX_LIST_DEF </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+          <td class="paramtype">LoggerList</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

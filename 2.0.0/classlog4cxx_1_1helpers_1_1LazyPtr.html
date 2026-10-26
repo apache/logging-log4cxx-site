@@ -137,12 +137,12 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classlog4cxx_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a40fe1c463463a18cb048bddc44f2c496" id="r_a40fe1c463463a18cb048bddc44f2c496"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a40fe1c463463a18cb048bddc44f2c496">LazyPtr</a> ()=default</td></tr>
+<tr class="memitem:a863c3731b285a1db1c0b3aae9b2e2a4f" id="r_a863c3731b285a1db1c0b3aae9b2e2a4f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a863c3731b285a1db1c0b3aae9b2e2a4f">LazyPtr</a> (std::function&lt; void(T *)&gt; initialiser={})</td></tr>
 <tr class="memitem:a1d414b2cdfda1886ea91624f01ecc505" id="r_a1d414b2cdfda1886ea91624f01ecc505"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1d414b2cdfda1886ea91624f01ecc505">~LazyPtr</a> ()</td></tr>
 <tr class="memitem:a5de8043ce8b5c246f582c8354e4da6d2" id="r_a5de8043ce8b5c246f582c8354e4da6d2"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5de8043ce8b5c246f582c8354e4da6d2">LazyPtr</a> (const LazyPtr &amp;)=delete</td></tr>
-<tr class="memitem:a492d4dfc09eae3889cd0203d90903af6" id="r_a492d4dfc09eae3889cd0203d90903af6"><td class="memItemLeft"><a class="el" href="#a40fe1c463463a18cb048bddc44f2c496">LazyPtr</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a492d4dfc09eae3889cd0203d90903af6">operator=</a> (const <a class="el" href="#a40fe1c463463a18cb048bddc44f2c496">LazyPtr</a> &amp;)=delete</td></tr>
+<tr class="memitem:a492d4dfc09eae3889cd0203d90903af6" id="r_a492d4dfc09eae3889cd0203d90903af6"><td class="memItemLeft"><a class="el" href="#a863c3731b285a1db1c0b3aae9b2e2a4f">LazyPtr</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a492d4dfc09eae3889cd0203d90903af6">operator=</a> (const <a class="el" href="#a863c3731b285a1db1c0b3aae9b2e2a4f">LazyPtr</a> &amp;)=delete</td></tr>
 <tr class="memitem:a6d2a141e2b43ff867c7105e8f4c7dfe3" id="r_a6d2a141e2b43ff867c7105e8f4c7dfe3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a6d2a141e2b43ff867c7105e8f4c7dfe3">LazyPtr</a> (LazyPtr &amp;&amp;other) noexcept</td></tr>
-<tr class="memitem:a3da01c3a68f637af56e1b979e998729b" id="r_a3da01c3a68f637af56e1b979e998729b"><td class="memItemLeft"><a class="el" href="#a40fe1c463463a18cb048bddc44f2c496">LazyPtr</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a3da01c3a68f637af56e1b979e998729b">operator=</a> (<a class="el" href="#a40fe1c463463a18cb048bddc44f2c496">LazyPtr</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memitem:a3da01c3a68f637af56e1b979e998729b" id="r_a3da01c3a68f637af56e1b979e998729b"><td class="memItemLeft"><a class="el" href="#a863c3731b285a1db1c0b3aae9b2e2a4f">LazyPtr</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a3da01c3a68f637af56e1b979e998729b">operator=</a> (<a class="el" href="#a863c3731b285a1db1c0b3aae9b2e2a4f">LazyPtr</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="memitem:a0402f81276555bf619f8856ddb5508d4" id="r_a0402f81276555bf619f8856ddb5508d4"><td class="memItemLeft">T &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0402f81276555bf619f8856ddb5508d4">operator*</a> ()</td></tr>
 <tr class="memitem:ab9b6fee28ba93cf67e78c0c81e8cff02" id="r_ab9b6fee28ba93cf67e78c0c81e8cff02"><td class="memItemLeft">T *&#160;</td><td class="memItemRight"><a class="el" href="#ab9b6fee28ba93cf67e78c0c81e8cff02">operator-&gt;</a> ()</td></tr>
 <tr class="memitem:aab3e8712f855b282fdb01e955235c856" id="r_aab3e8712f855b282fdb01e955235c856"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aab3e8712f855b282fdb01e955235c856">operator bool</a> () const noexcept</td></tr>
@@ -152,8 +152,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
 class log4cxx::helpers::LazyPtr&lt; T &gt;</div><p>A create-on-first-use smart pointer. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a40fe1c463463a18cb048bddc44f2c496" name="a40fe1c463463a18cb048bddc44f2c496"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40fe1c463463a18cb048bddc44f2c496">&#9670;&#160;</a></span>LazyPtr() <span class="overload">[1/3]</span></h2>
+<a id="a863c3731b285a1db1c0b3aae9b2e2a4f" name="a863c3731b285a1db1c0b3aae9b2e2a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a863c3731b285a1db1c0b3aae9b2e2a4f">&#9670;&#160;</a></span>LazyPtr() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,13 +166,13 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classlog4cxx_1_1helpers_1_1LazyPtr.html">log4cxx::helpers::LazyPtr</a>&lt; T &gt;::LazyPtr </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">std::function&lt; void(T *)&gt;</td>          <td class="paramname"><span class="paramname"><em>initialiser</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -191,7 +191,7 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlog4cxx_1_1helpers_1_1LazyPtr.html">log4cxx::helpers::LazyPtr</a>&lt; T &gt;::~<a class="el" href="#a40fe1c463463a18cb048bddc44f2c496">LazyPtr</a> </td>
+          <td class="memname"><a class="el" href="classlog4cxx_1_1helpers_1_1LazyPtr.html">log4cxx::helpers::LazyPtr</a>&lt; T &gt;::~<a class="el" href="#a863c3731b285a1db1c0b3aae9b2e2a4f">LazyPtr</a> </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -381,9 +381,9 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a40fe1c463463a18cb048bddc44f2c496">LazyPtr</a> &amp; <a class="el" href="classlog4cxx_1_1helpers_1_1LazyPtr.html">log4cxx::helpers::LazyPtr</a>&lt; T &gt;::operator= </td>
+          <td class="memname"><a class="el" href="#a863c3731b285a1db1c0b3aae9b2e2a4f">LazyPtr</a> &amp; <a class="el" href="classlog4cxx_1_1helpers_1_1LazyPtr.html">log4cxx::helpers::LazyPtr</a>&lt; T &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="#a40fe1c463463a18cb048bddc44f2c496">LazyPtr</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="#a863c3731b285a1db1c0b3aae9b2e2a4f">LazyPtr</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -408,9 +408,9 @@ template&lt;typename T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a40fe1c463463a18cb048bddc44f2c496">LazyPtr</a> &amp; <a class="el" href="classlog4cxx_1_1helpers_1_1LazyPtr.html">log4cxx::helpers::LazyPtr</a>&lt; T &gt;::operator= </td>
+          <td class="memname"><a class="el" href="#a863c3731b285a1db1c0b3aae9b2e2a4f">LazyPtr</a> &amp; <a class="el" href="classlog4cxx_1_1helpers_1_1LazyPtr.html">log4cxx::helpers::LazyPtr</a>&lt; T &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a40fe1c463463a18cb048bddc44f2c496">LazyPtr</a>&lt; T &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#a863c3731b285a1db1c0b3aae9b2e2a4f">LazyPtr</a>&lt; T &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -192,16 +192,16 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('com_2foo_2conf
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Retrieve the \c name logger pointer.</span></div>
-<div class="line"><span class="keyword">auto</span> getLogger(<span class="keyword">const</span> QString&amp; name) -&gt; <a id="_a5" name="_a5"></a><a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> {</div>
+<div class="line"><span class="keyword">auto</span> getLogger(<span class="keyword">const</span> QString&amp; name) -&gt; <a id="_a5" name="_a5"></a><a class="code hl_typedef" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> {</div>
 <div class="line">    <span class="keywordflow">return</span> name.isEmpty()</div>
 <div class="line">        ? <a id="_a6" name="_a6"></a><a class="code hl_function" href="classlog4cxx_1_1LogManager.html#a653a8b4b1548f75d9e12615dd4a677f7">LogManager::getRootLogger</a>()</div>
-<div class="line">        : <a id="_a7" name="_a7"></a><a class="code hl_function" href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">LogManager::getLogger</a>(name.toStdString());</div>
+<div class="line">        : <a id="_a7" name="_a7"></a><a class="code hl_function" href="classlog4cxx_1_1LogManager.html#ac6ef0f251195da5fe25124a33e0ae793">LogManager::getLogger</a>(name.toStdString());</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Retrieve the \c name logger pointer.</span></div>
-<div class="line"><span class="keyword">auto</span> getLogger(<span class="keyword">const</span> <span class="keywordtype">char</span>* name) -&gt; <a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> {</div>
+<div class="line"><span class="keyword">auto</span> getLogger(<span class="keyword">const</span> <span class="keywordtype">char</span>* name) -&gt; <a class="code hl_typedef" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> {</div>
 <div class="line">    <span class="keywordflow">return</span> name</div>
-<div class="line">        ? <a class="code hl_function" href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">LogManager::getLogger</a>(name)</div>
+<div class="line">        ? <a class="code hl_function" href="classlog4cxx_1_1LogManager.html#ac6ef0f251195da5fe25124a33e0ae793">LogManager::getLogger</a>(name)</div>
 <div class="line">        : <a class="code hl_function" href="classlog4cxx_1_1LogManager.html#a653a8b4b1548f75d9e12615dd4a677f7">LogManager::getRootLogger</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('com_2foo_2conf
 <div class="ttc" id="abasicconfigurator_8h_html"><div class="ttname"><a href="basicconfigurator_8h.html">basicconfigurator.h</a></div></div>
 <div class="ttc" id="aclasslog4cxx_1_1BasicConfigurator_html_a3fa54f4589f908a886576c1bba3f113d"><div class="ttname"><a href="classlog4cxx_1_1BasicConfigurator.html#a3fa54f4589f908a886576c1bba3f113d">log4cxx::BasicConfigurator::configure</a></div><div class="ttdeci">static void configure(const LayoutPtr &amp;layout=LayoutPtr())</div><div class="ttdoc">Add a ConsoleAppender that formats output using layout to the root logger.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1LogManager_html_a653a8b4b1548f75d9e12615dd4a677f7"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html#a653a8b4b1548f75d9e12615dd4a677f7">log4cxx::LogManager::getRootLogger</a></div><div class="ttdeci">static LoggerPtr getRootLogger()</div><div class="ttdoc">Retrieve the root logger from the LoggerRepository.</div></div>
-<div class="ttc" id="aclasslog4cxx_1_1LogManager_html_ac1c64a1bd2c15d3018f3a022a059074e"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html#ac1c64a1bd2c15d3018f3a022a059074e">log4cxx::LogManager::getLogger</a></div><div class="ttdeci">static LoggerPtr getLogger(const std::string &amp;name)</div><div class="ttdoc">Retrieve the name Logger instance from the LoggerRepository using the default factory to create it if...</div></div>
+<div class="ttc" id="aclasslog4cxx_1_1LogManager_html_ac6ef0f251195da5fe25124a33e0ae793"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html#ac6ef0f251195da5fe25124a33e0ae793">log4cxx::LogManager::getLogger</a></div><div class="ttdeci">static LoggerPtr getLogger(const std::string &amp;name, const spi::LoggerFactoryPtr &amp;factory={})</div><div class="ttdoc">Retrieve the name Logger instance from the LoggerRepository using factory to create it if required.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1LogManager_html_ad8845f4e8c6c840c7825bde2c9ce7e7c"><div class="ttname"><a href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c">log4cxx::LogManager::shutdown</a></div><div class="ttdeci">static void shutdown()</div><div class="ttdoc">Safely close and remove all appenders in all loggers including the root logger.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1qt_1_1Configuration_html_a204500634c75d81d2b50b24ab0cd6683"><div class="ttname"><a href="classlog4cxx_1_1qt_1_1Configuration.html#a204500634c75d81d2b50b24ab0cd6683">log4cxx::qt::Configuration::configureFromFileAndWatch</a></div><div class="ttdeci">static std::tuple&lt; spi::ConfigurationStatus, QString &gt; configureFromFileAndWatch(const QVector&lt; QString &gt; &amp;directories, const QVector&lt; QString &gt; &amp;filenames)</div><div class="ttdoc">Select the file to configure Log4cxx and watch the file for changes.</div></div>
 <div class="ttc" id="aconfiguration_8h_html"><div class="ttname"><a href="configuration_8h.html">configuration.h</a></div></div>
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('com_2foo_2conf
 <div class="ttc" id="anamespacelog4cxx_1_1qt_html_a92c8f8e62b31dbd28c9f3995318dcad6"><div class="ttname"><a href="namespacelog4cxx_1_1qt.html#a92c8f8e62b31dbd28c9f3995318dcad6">log4cxx::qt::messageHandler</a></div><div class="ttdeci">LOG4CXX_EXPORT void messageHandler(QtMsgType type, const QMessageLogContext &amp;context, const QString &amp;message)</div><div class="ttdoc">The messageHandler function is a log4cxx replacement of the standard Qt message handler.</div></div>
 <div class="ttc" id="anamespacelog4cxx_1_1spi_html_a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815"><div class="ttname"><a href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815">log4cxx::spi::ConfigurationStatus::NotConfigured</a></div><div class="ttdeci">@ NotConfigured</div><div class="ttdef"><b>Definition</b> configurator.h:33</div></div>
 <div class="ttc" id="anamespacelog4cxx_html"><div class="ttname"><a href="namespacelog4cxx.html">log4cxx</a></div><div class="ttdef"><b>Definition</b> configuration.h:26</div></div>
-<div class="ttc" id="anamespacelog4cxx_html_acd073adf77cc8545b10ac024a474be0d"><div class="ttname"><a href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Logger &gt; LoggerPtr</div><div class="ttdef"><b>Definition</b> logmanager.h:28</div></div>
+<div class="ttc" id="anamespacelog4cxx_html_ad522ae36a5a181a63e3f80503a5796a0"><div class="ttname"><a href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">log4cxx::LoggerPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Logger &gt; LoggerPtr</div><div class="ttdef"><b>Definition</b> provisionnode.h:28</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

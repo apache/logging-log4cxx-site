@@ -150,46 +150,65 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf8ba689451b7cf5905fb6a5581b357d" id="r_acf8ba689451b7cf5905fb6a5581b357d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acf8ba689451b7cf5905fb6a5581b357d">~Hierarchy</a> ()</td></tr>
 <tr class="memitem:ac7d2effec69f274de76013ad17fcb026" id="r_ac7d2effec69f274de76013ad17fcb026"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac7d2effec69f274de76013ad17fcb026">addHierarchyEventListener</a> (const spi::HierarchyEventListenerPtr &amp;listener) override</td></tr>
 <tr class="memitem:a5f17c81798b81d857c8803b68e1ad725" id="r_a5f17c81798b81d857c8803b68e1ad725"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5f17c81798b81d857c8803b68e1ad725">removeHierarchyEventListener</a> (const spi::HierarchyEventListenerPtr &amp;listener) override</td></tr>
-<tr class="memdesc:a5f17c81798b81d857c8803b68e1ad725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously added HierarchyEventListener.  <br /></td></tr>
+<tr class="memdesc:a5f17c81798b81d857c8803b68e1ad725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove <code>listener</code> from the repository.  <br /></td></tr>
 <tr class="memitem:a0af9204d7eac97b5bfdf9dc98d43136f" id="r_a0af9204d7eac97b5bfdf9dc98d43136f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0af9204d7eac97b5bfdf9dc98d43136f">ensureIsConfigured</a> (std::function&lt; void()&gt; configurator) override</td></tr>
-<tr class="memdesc:a0af9204d7eac97b5bfdf9dc98d43136f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <code>configurator</code> if not yet configured and <code>configurator</code> has not already been tried.  <br /></td></tr>
+<tr class="memdesc:a0af9204d7eac97b5bfdf9dc98d43136f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <code>configurator</code> if not yet configured and <code>configurator</code> has not already been tried.If <code>configurator</code> succeeds, it must call <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a9509e82a54c31e17174597e1dd3830b8" title="Set the configured status to true.">LoggerRepository::setConfigured</a> to ensure subsequent calls to <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1" title="Call configurator if not yet configured and configurator has not already been tried.">LoggerRepository::ensureIsConfigured</a> from overwriting the configuration.  <br /></td></tr>
 <tr class="memitem:ae48a5e903ef9a74d2951521bf8d2e590" id="r_ae48a5e903ef9a74d2951521bf8d2e590"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae48a5e903ef9a74d2951521bf8d2e590">clear</a> ()</td></tr>
 <tr class="memdesc:ae48a5e903ef9a74d2951521bf8d2e590"><td class="mdescLeft">&#160;</td><td class="mdescRight">This call will clear all logger definitions from the internal hashtable.  <br /></td></tr>
 <tr class="memitem:a485a024cafc9d627164bd706065bd756" id="r_a485a024cafc9d627164bd706065bd756"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a485a024cafc9d627164bd706065bd756">emitNoAppenderWarning</a> (const <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> *logger) override</td></tr>
-<tr class="memitem:a5a637708453c309757f072ea56f562b9" id="r_a5a637708453c309757f072ea56f562b9"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5a637708453c309757f072ea56f562b9">exists</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name) override</td></tr>
-<tr class="memdesc:a5a637708453c309757f072ea56f562b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the named logger exists in the hierarchy.  <br /></td></tr>
+<tr class="memdesc:a485a024cafc9d627164bd706065bd756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a warning to internal debug output that <code>logger</code> does not have any <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a> attached.  <br /></td></tr>
+<tr class="memitem:a5a637708453c309757f072ea56f562b9" id="r_a5a637708453c309757f072ea56f562b9"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5a637708453c309757f072ea56f562b9">exists</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name) override</td></tr>
+<tr class="memdesc:a5a637708453c309757f072ea56f562b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does <code>name</code> exist in the repository?<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance if <code>name</code> exists in the repository.</dd></dl>
+  <br /></td></tr>
 <tr class="memitem:ae9972356bd2073ec1c4fcf24ccc21771" id="r_ae9972356bd2073ec1c4fcf24ccc21771"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae9972356bd2073ec1c4fcf24ccc21771">setThreshold</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;levelStr) override</td></tr>
-<tr class="memdesc:ae9972356bd2073ec1c4fcf24ccc21771"><td class="mdescLeft">&#160;</td><td class="mdescRight">The string form of <code><a class="el" href="#a6a80bc2f5fdab4ababc731224952d8ab">setThreshold</a></code>.  <br /></td></tr>
+<tr class="memdesc:ae9972356bd2073ec1c4fcf24ccc21771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable logging for logging requests with level <code>newLevel</code> or higher.The threshold is set the <code>DEBUG</code> if <code>newLevel</code> is not recognised by Level::getLevel. All logging requests below the threshold are immediately dropped. By default, the threshold is set to <code><a class="el" href="classlog4cxx_1_1Level.html#a17165f1a2ffae195b6de57c2ef4f5e91">Level::getAll()</a></code> which has the lowest possible rank.  <br /></td></tr>
 <tr class="memitem:a6a80bc2f5fdab4ababc731224952d8ab" id="r_a6a80bc2f5fdab4ababc731224952d8ab"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6a80bc2f5fdab4ababc731224952d8ab">setThreshold</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;newLevel) override</td></tr>
-<tr class="memdesc:a6a80bc2f5fdab4ababc731224952d8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable logging for logging requests with level <code>newLevel</code> or higher.  <br /></td></tr>
+<tr class="memdesc:a6a80bc2f5fdab4ababc731224952d8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable logging for logging requests with level <code>newLevel</code> or higher.All logging requests below the threshold are immediately dropped. By default, the threshold is set to <code><a class="el" href="classlog4cxx_1_1Level.html#a17165f1a2ffae195b6de57c2ef4f5e91">Level::getAll()</a></code> which has the lowest possible rank.  <br /></td></tr>
 <tr class="memitem:a7bcae88dfffa9a653062ec74d82eb1d4" id="r_a7bcae88dfffa9a653062ec74d82eb1d4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7bcae88dfffa9a653062ec74d82eb1d4">fireAddAppenderEvent</a> (const <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> *logger, const <a class="el" href="classlog4cxx_1_1Appender.html">Appender</a> *appender) override</td></tr>
+<tr class="memdesc:a7bcae88dfffa9a653062ec74d82eb1d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call addAppenderEvent on all registered listeners.  <br /></td></tr>
 <tr class="memitem:afbaf451978fb8ca7f29a23c80f83d4f0" id="r_afbaf451978fb8ca7f29a23c80f83d4f0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afbaf451978fb8ca7f29a23c80f83d4f0">fireRemoveAppenderEvent</a> (const <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> *logger, const <a class="el" href="classlog4cxx_1_1Appender.html">Appender</a> *appender) override</td></tr>
+<tr class="memdesc:afbaf451978fb8ca7f29a23c80f83d4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call removeAppenderEvent on all registered listeners.  <br /></td></tr>
 <tr class="memitem:a57ad15e850836ed445f211d256e11ecb" id="r_a57ad15e850836ed445f211d256e11ecb"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a57ad15e850836ed445f211d256e11ecb">getThreshold</a> () const override</td></tr>
-<tr class="memdesc:a57ad15e850836ed445f211d256e11ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classlog4cxx_1_1Level.html" title="Defines the minimum set of levels recognized by the system, that is OFF, FATAL, ERROR,...">Level</a> representation of the <code>enable</code> state.  <br /></td></tr>
-<tr class="memitem:a620aa936bbdfc1636970dc357ecf57c8" id="r_a620aa936bbdfc1636970dc357ecf57c8"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a620aa936bbdfc1636970dc357ecf57c8">getLogger</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name) override</td></tr>
-<tr class="memdesc:a620aa936bbdfc1636970dc357ecf57c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance using the default factory to create it if required.  <br /></td></tr>
-<tr class="memitem:af3f382ffa3df79b5acbf88ff11e9d898" id="r_af3f382ffa3df79b5acbf88ff11e9d898"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#af3f382ffa3df79b5acbf88ff11e9d898">getLogger</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name, const <a class="el" href="namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5">spi::LoggerFactoryPtr</a> &amp;factory) override</td></tr>
-<tr class="memdesc:af3f382ffa3df79b5acbf88ff11e9d898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance using <code>factory</code> to create it if required.  <br /></td></tr>
-<tr class="memitem:a3c3bb2d633719f91cf718ba6ca82617b" id="r_a3c3bb2d633719f91cf718ba6ca82617b"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3c3bb2d633719f91cf718ba6ca82617b">getCurrentLoggers</a> () const override</td></tr>
-<tr class="memdesc:a3c3bb2d633719f91cf718ba6ca82617b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all the currently defined loggers in this hierarchy as a <a class="el" href="namespacelog4cxx.html#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a>.  <br /></td></tr>
-<tr class="memitem:a4a9074136800768ade62f6e0add7a20a" id="r_a4a9074136800768ade62f6e0add7a20a"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4a9074136800768ade62f6e0add7a20a">getRootLogger</a> () const override</td></tr>
-<tr class="memdesc:a4a9074136800768ade62f6e0add7a20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the root of this hierarchy.  <br /></td></tr>
+<tr class="memdesc:a57ad15e850836ed445f211d256e11ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current repository-wide threshold.See <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a06519869193e7f13d24f084c95dbda21" title="Enable logging for logging requests with level newLevel or higher.">setThreshold</a> for an explanation.  <br /></td></tr>
+<tr class="memitem:acd165c6f0090da9d405e7cfcf364a752" id="r_acd165c6f0090da9d405e7cfcf364a752"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#acd165c6f0090da9d405e7cfcf364a752">getLogger</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name, const spi::LoggerFactoryPtr &amp;factory={}) override</td></tr>
+<tr class="memdesc:acd165c6f0090da9d405e7cfcf364a752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance.If a logger of that name already exists, it will be returned. Otherwise, a new logger will be instantiated, optionally by calling <code>factory-&gt;makeNewLoggerInstance()</code>.<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The logger to retrieve. </td></tr>
+    <tr><td class="paramname">factory</td><td>If provided, used to instantiate a new logger.</td></tr>
+  </table>
+  </dd>
+</dl>
+  <br /></td></tr>
+<tr class="memitem:a3c3bb2d633719f91cf718ba6ca82617b" id="r_a3c3bb2d633719f91cf718ba6ca82617b"><td class="memItemLeft">LoggerList&#160;</td><td class="memItemRight"><a class="el" href="#a3c3bb2d633719f91cf718ba6ca82617b">getCurrentLoggers</a> () const override</td></tr>
+<tr class="memdesc:a3c3bb2d633719f91cf718ba6ca82617b"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the loggers currently defined in this repository.The root logger is <em>not</em> included in the returned LoggerList.  <br /></td></tr>
+<tr class="memitem:a4a9074136800768ade62f6e0add7a20a" id="r_a4a9074136800768ade62f6e0add7a20a"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4a9074136800768ade62f6e0add7a20a">getRootLogger</a> () const override</td></tr>
+<tr class="memdesc:a4a9074136800768ade62f6e0add7a20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The logger that cannot be retrieved by name.  <br /></td></tr>
 <tr class="memitem:a92a51c5b6942af9fb838924e2bd0df3a" id="r_a92a51c5b6942af9fb838924e2bd0df3a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a92a51c5b6942af9fb838924e2bd0df3a">isDisabled</a> (int level) const override</td></tr>
-<tr class="memdesc:a92a51c5b6942af9fb838924e2bd0df3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will return <code>true</code> if this repository is disabled for <code>level</code> object passed as parameter and <code>false</code> otherwise.  <br /></td></tr>
+<tr class="memdesc:a92a51c5b6942af9fb838924e2bd0df3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the repository disabled for <code>level</code>?The answer depends on the repository threshold and the <code>level</code> parameter. See also the <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a06519869193e7f13d24f084c95dbda21" title="Enable logging for logging requests with level newLevel or higher.">setThreshold</a> method.  <br /></td></tr>
 <tr class="memitem:a50388a7cb84a6330f319591794bebeb0" id="r_a50388a7cb84a6330f319591794bebeb0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a50388a7cb84a6330f319591794bebeb0">resetConfiguration</a> () override</td></tr>
-<tr class="memdesc:a50388a7cb84a6330f319591794bebeb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all values contained in this hierarchy instance to their default.  <br /></td></tr>
+<tr class="memdesc:a50388a7cb84a6330f319591794bebeb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all values contained in this repository instance to their default.This removes all appenders from all categories, sets the level of all non-root categories to <code>null</code>, sets their additivity flag to <code>true</code> and sets the level of the root logger to DEBUG. Also the repository wide threshold is set its default "ALL" value.Existing categories are not removed.This method should be used sparingly and with care as it will block all logging until this is configured again.  <br /></td></tr>
 <tr class="memitem:afd118ef62597d91a08f3a31e6d75c6e9" id="r_afd118ef62597d91a08f3a31e6d75c6e9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afd118ef62597d91a08f3a31e6d75c6e9">shutdown</a> () override</td></tr>
-<tr class="memdesc:afd118ef62597d91a08f3a31e6d75c6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by subclasses to add a renderer to the hierarchy passed as parameter.  <br /></td></tr>
+<tr class="memdesc:afd118ef62597d91a08f3a31e6d75c6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutting down a hierarchy will <em>safely</em> close and remove all appenders in all categories including the root logger.  <br /></td></tr>
 <tr class="memitem:ab3274a017a533e6dd3b637896efdeef0" id="r_ab3274a017a533e6dd3b637896efdeef0"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ab3274a017a533e6dd3b637896efdeef0">isConfigured</a> () override</td></tr>
+<tr class="memdesc:ab3274a017a533e6dd3b637896efdeef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value of the configured status.  <br /></td></tr>
 <tr class="memitem:a7968560d9f9754f5e5e6894db02f9a8d" id="r_a7968560d9f9754f5e5e6894db02f9a8d"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a7968560d9f9754f5e5e6894db02f9a8d">setConfigured</a> (bool configured) override</td></tr>
-<tr class="memitem:a9836b2763eb49d6bb67639feb93e5ab8" id="r_a9836b2763eb49d6bb67639feb93e5ab8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9836b2763eb49d6bb67639feb93e5ab8">updateChildren</a> (const <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> *parent)</td></tr>
-<tr class="memdesc:a9836b2763eb49d6bb67639feb93e5ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh the threshold in children of parent.  <br /></td></tr>
+<tr class="memdesc:a7968560d9f9754f5e5e6894db02f9a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the configured status to <code>true</code>.  <br /></td></tr>
+<tr class="memitem:a8d327735d323ca5084d8779a765a5146" id="r_a8d327735d323ca5084d8779a765a5146"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8d327735d323ca5084d8779a765a5146">updateChildren</a> (const <a class="el" href="classlog4cxx_1_1Logger.html">Logger</a> *parent) override</td></tr>
+<tr class="memdesc:a8d327735d323ca5084d8779a765a5146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh the configuration of all loggers where <code>parent</code> is somewhere in their ancestor chain.The ancestor chain ends at the root logger.  <br /></td></tr>
 <tr class="memitem:a330ea1bf5a394706f939ce992211f8b4" id="r_a330ea1bf5a394706f939ce992211f8b4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a330ea1bf5a394706f939ce992211f8b4">removeLogger</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name, bool ifNotUsed=true) override</td></tr>
-<tr class="memdesc:a330ea1bf5a394706f939ce992211f8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> from the hierarchy.  <br /></td></tr>
+<tr class="memdesc:a330ea1bf5a394706f939ce992211f8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> from the repository.Note: The <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> must be retrieved from the repository <b>after</b> any subsequent configuration file change for the newly loaded settings to be used.<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The logger to remove. </td></tr>
+    <tr><td class="paramname">ifNotUsed</td><td>If true and use_count() indicates there are other references, do not remove the <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> and return false. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> was removed from the repository.</dd></dl>
+  <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1LoggerRepository"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">log4cxx::spi::LoggerRepository</a></td></tr>
 <tr class="memitem:a936b2812e0fb3ca695ceb644b422f1e9 pub_methods_classlog4cxx_1_1spi_1_1LoggerRepository" id="r_a936b2812e0fb3ca695ceb644b422f1e9"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a936b2812e0fb3ca695ceb644b422f1e9">~LoggerRepository</a> ()</td></tr>
 <tr class="memitem:aca052c8cadb17a86696953c8018e18da pub_methods_classlog4cxx_1_1spi_1_1LoggerRepository" id="r_aca052c8cadb17a86696953c8018e18da"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#aca052c8cadb17a86696953c8018e18da">addHierarchyEventListener</a> (const HierarchyEventListenerPtr &amp;listener)=0</td></tr>
-<tr class="memdesc:aca052c8cadb17a86696953c8018e18da pub_methods_classlog4cxx_1_1spi_1_1LoggerRepository"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <code><a class="el" href="classlog4cxx_1_1spi_1_1HierarchyEventListener.html">HierarchyEventListener</a></code> event to the repository.  <br /></td></tr>
+<tr class="memdesc:aca052c8cadb17a86696953c8018e18da pub_methods_classlog4cxx_1_1spi_1_1LoggerRepository"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>listener</code> to the repository.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
 <tr class="memitem:a8ba23411233a652fac44a619e6356115 pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a8ba23411233a652fac44a619e6356115"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a8ba23411233a652fac44a619e6356115">~Object</a> ()</td></tr>
 <tr class="memitem:a581992e532894891e83b9afd605ca492 pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a581992e532894891e83b9afd605ca492"><td class="memItemLeft">virtual const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">helpers::Class</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a581992e532894891e83b9afd605ca492">getClass</a> () const =0</td></tr>
@@ -199,11 +218,12 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a922299158abb3a45f4bfa10684423345" id="r_a922299158abb3a45f4bfa10684423345"><td class="memItemLeft">static HierarchyPtr&#160;</td><td class="memItemRight"><a class="el" href="#a922299158abb3a45f4bfa10684423345">create</a> ()</td></tr>
+<tr class="memdesc:a922299158abb3a45f4bfa10684423345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new logger hierarchy.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is specialized in retrieving loggers by name and also maintaining the logger hierarchy. </p>
 <p><em>The casual user does not have to deal with this class directly.</em></p>
-<p>The structure of the logger hierarchy is maintained by the <a class="el" href="#a620aa936bbdfc1636970dc357ecf57c8" title="Retrieve the name Logger instance using the default factory to create it if required.">getLogger</a> method. The hierarchy is such that children link to their parent but parents do not have any pointers to their children. Moreover, loggers can be instantiated in any order, in particular descendant before ancestor.</p>
+<p>The structure of the logger hierarchy is maintained by the <a class="el" href="#acd165c6f0090da9d405e7cfcf364a752" title="Retrieve the name Logger instance.If a logger of that name already exists, it will be returned....">getLogger</a> method. The hierarchy is such that children link to their parent but parents do not have any pointers to their children. Moreover, loggers can be instantiated in any order, in particular descendant before ancestor.</p>
 <p>In case a descendant is created before a particular ancestor, then it creates a provision node for the ancestor and adds itself to the provision node. Other descendants of the same ancestor add themselves to the previously created provision node. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acf8ba689451b7cf5905fb6a5581b357d" name="acf8ba689451b7cf5905fb6a5581b357d"></a>
@@ -246,6 +266,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p></p>
 
 </div>
 </div>
@@ -293,6 +315,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Create a new logger hierarchy. </p>
+
 </div>
 </div>
 <a id="a485a024cafc9d627164bd706065bd756" name="a485a024cafc9d627164bd706065bd756"></a>
@@ -317,6 +341,9 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Add a warning to internal debug output that <code>logger</code> does not have any <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a> attached. </p>
+<p>To avoid overloading the output stream, the warning is emitted only once. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a9119ad23e026f881cb59a93e4ed11a46">log4cxx::spi::LoggerRepository</a>.</p>
 
@@ -345,8 +372,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Call <code>configurator</code> if not yet configured and <code>configurator</code> has not already been tried. </p>
-<p>If <code>configurator</code> succeeds, it must call LoggerRepository::setConfigured to ensure subsequent calls to LoggerRepository::ensureIsConfigured from overwriting the configuration. </p>
+<p>Call <code>configurator</code> if not yet configured and <code>configurator</code> has not already been tried.If <code>configurator</code> succeeds, it must call <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a9509e82a54c31e17174597e1dd3830b8" title="Set the configured status to true.">LoggerRepository::setConfigured</a> to ensure subsequent calls to <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1" title="Call configurator if not yet configured and configurator has not already been tried.">LoggerRepository::ensureIsConfigured</a> from overwriting the configuration. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1">log4cxx::spi::LoggerRepository</a>.</p>
 
@@ -362,7 +388,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::Hierarchy::exists </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::Hierarchy::exists </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
@@ -375,14 +401,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if the named logger exists in the hierarchy. </p>
-<p>If so return its reference, otherwise returns <code>null</code>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the logger to search for. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Does <code>name</code> exist in the repository?<dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance if <code>name</code> exists in the repository.</dd></dl>
+ </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a95c2f05f1c30dd684a5bfd1015d5d746">log4cxx::spi::LoggerRepository</a>.</p>
 
@@ -415,6 +435,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Call addAppenderEvent on all registered listeners. </p>
+
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a467d6af6bb3f5713d20c8902484b217f">log4cxx::spi::LoggerRepository</a>.</p>
 
 </div>
@@ -446,6 +468,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Call removeAppenderEvent on all registered listeners. </p>
+
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#ab3a9683775f74c84b13a4aa09cb4e530">log4cxx::spi::LoggerRepository</a>.</p>
 
 </div>
@@ -460,7 +484,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a> log4cxx::Hierarchy::getCurrentLoggers </td>
+          <td class="memname">LoggerList log4cxx::Hierarchy::getCurrentLoggers </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -473,15 +497,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns all the currently defined loggers in this hierarchy as a <a class="el" href="namespacelog4cxx.html#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a>. </p>
-<p>The root logger is <em>not</em> included in the returned <a class="el" href="namespacelog4cxx.html#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a>. </p>
+<p>All the loggers currently defined in this repository.The root logger is <em>not</em> included in the returned LoggerList. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a2e17aefd436ad4fed06a60a9520a8f4f">log4cxx::spi::LoggerRepository</a>.</p>
 
 </div>
 </div>
-<a id="a620aa936bbdfc1636970dc357ecf57c8" name="a620aa936bbdfc1636970dc357ecf57c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a620aa936bbdfc1636970dc357ecf57c8">&#9670;&#160;</a></span>getLogger() <span class="overload">[1/2]</span></h2>
+<a id="acd165c6f0090da9d405e7cfcf364a752" name="acd165c6f0090da9d405e7cfcf364a752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd165c6f0090da9d405e7cfcf364a752">&#9670;&#160;</a></span>getLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -490,50 +513,14 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::Hierarchy::getLogger </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance using the default factory to create it if required. </p>
-<p>If a logger of that name already exists, then it will be returned. Otherwise, a new logger will be instantiated and then linked with its existing ancestors as well as children.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the logger to retrieve. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a2c2593262c074af2493bc4988189deab">log4cxx::spi::LoggerRepository</a>.</p>
-
-</div>
-</div>
-<a id="af3f382ffa3df79b5acbf88ff11e9d898" name="af3f382ffa3df79b5acbf88ff11e9d898"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3f382ffa3df79b5acbf88ff11e9d898">&#9670;&#160;</a></span>getLogger() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::Hierarchy::getLogger </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::Hierarchy::getLogger </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5">spi::LoggerFactoryPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span>&#160;)</td>
+          <td class="paramtype">const spi::LoggerFactoryPtr &amp;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -543,17 +530,16 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance using <code>factory</code> to create it if required. </p>
-<p>If a logger of that name already exists, then it will be returned. Otherwise, a new logger will be instantiated by the <code>factory</code> parameter and linked with its existing ancestors as well as children.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance.If a logger of that name already exists, it will be returned. Otherwise, a new logger will be instantiated, optionally by calling <code>factory-&gt;makeNewLoggerInstance()</code>.<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>The name of the logger to retrieve. </td></tr>
-    <tr><td class="paramname">factory</td><td>The factory that will make the new logger instance. </td></tr>
+    <tr><td class="paramname">name</td><td>The logger to retrieve. </td></tr>
+    <tr><td class="paramname">factory</td><td>If provided, used to instantiate a new logger.</td></tr>
   </table>
   </dd>
 </dl>
+ </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#af218670cba71f6a713ac8353e1e7bb7a">log4cxx::spi::LoggerRepository</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a1235bf4c2bd4f92a0f09644926466aeb">log4cxx::spi::LoggerRepository</a>.</p>
 
 </div>
 </div>
@@ -567,7 +553,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::Hierarchy::getRootLogger </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::Hierarchy::getRootLogger </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -580,7 +566,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the root of this hierarchy. </p>
+<p>The logger that cannot be retrieved by name. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a0fb0e21aa687b83b3dd909c19346c4e3">log4cxx::spi::LoggerRepository</a>.</p>
 
@@ -609,7 +595,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a <a class="el" href="classlog4cxx_1_1Level.html" title="Defines the minimum set of levels recognized by the system, that is OFF, FATAL, ERROR,...">Level</a> representation of the <code>enable</code> state. </p>
+<p>The current repository-wide threshold.See <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a06519869193e7f13d24f084c95dbda21" title="Enable logging for logging requests with level newLevel or higher.">setThreshold</a> for an explanation. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#af847a82cafb2b2a45f841012e0ade360">log4cxx::spi::LoggerRepository</a>.</p>
 
@@ -638,6 +624,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The value of the configured status. </p>
+
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#aa9e3c90be74472e94ba6c463ed819a84">log4cxx::spi::LoggerRepository</a>.</p>
 
 </div>
@@ -665,8 +653,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>This method will return <code>true</code> if this repository is disabled for <code>level</code> object passed as parameter and <code>false</code> otherwise. </p>
-<p>See also the <code><a class="el" href="#a6a80bc2f5fdab4ababc731224952d8ab">setThreshold</a></code> method. </p>
+<p>Is the repository disabled for <code>level</code>?The answer depends on the repository threshold and the <code>level</code> parameter. See also the <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a06519869193e7f13d24f084c95dbda21" title="Enable logging for logging requests with level newLevel or higher.">setThreshold</a> method. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#ae85f14ee09d7433e38cae4d8b9d39981">log4cxx::spi::LoggerRepository</a>.</p>
 
@@ -695,7 +682,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove a previously added HierarchyEventListener. </p>
+<p>Remove <code>listener</code> from the repository. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a055e10ebaf42334637616355c732a3a5">log4cxx::spi::LoggerRepository</a>.</p>
 
@@ -728,16 +715,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> from the hierarchy. </p>
-<p>Note: The <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> must be retrieved from the hierarchy <b>after</b> any subsequent configuration file change for the newly loaded settings to be used.</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Remove the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> from the repository.Note: The <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> must be retrieved from the repository <b>after</b> any subsequent configuration file change for the newly loaded settings to be used.<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The logger to remove. </td></tr>
     <tr><td class="paramname">ifNotUsed</td><td>If true and use_count() indicates there are other references, do not remove the <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> and return false. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> was removed from the hierarchy. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> was removed from the repository.</dd></dl>
+ </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a1a25ce96b47643bf196f3eda1d391bbf">log4cxx::spi::LoggerRepository</a>.</p>
 
@@ -766,10 +752,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reset all values contained in this hierarchy instance to their default. </p>
-<p>This removes all appenders from all categories, sets the level of all non-root categories to <code>null</code>, sets their additivity flag to <code>true</code> and sets the level of the root logger to DEBUG. Moreover, message disabling is set its default "off" value.</p>
-<p>Existing categories are not removed. They are just reset.</p>
-<p>This method should be used sparingly and with care as it will block all logging until it is completed.</p>
+<p>Reset all values contained in this repository instance to their default.This removes all appenders from all categories, sets the level of all non-root categories to <code>null</code>, sets their additivity flag to <code>true</code> and sets the level of the root logger to DEBUG. Also the repository wide threshold is set its default "ALL" value.Existing categories are not removed.This method should be used sparingly and with care as it will block all logging until this is configured again. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#ab2a31a195a5c82793805a16417b1a387">log4cxx::spi::LoggerRepository</a>.</p>
 
@@ -798,6 +781,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Set the configured status to <code>true</code>. </p>
+
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a9509e82a54c31e17174597e1dd3830b8">log4cxx::spi::LoggerRepository</a>.</p>
 
 </div>
@@ -825,16 +810,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Enable logging for logging requests with level <code>newLevel</code> or higher. </p>
-<p>By default all levels are enabled.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">newLevel</td><td>The minimum level of logging requests that are sent to appenders. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Enable logging for logging requests with level <code>newLevel</code> or higher.All logging requests below the threshold are immediately dropped. By default, the threshold is set to <code><a class="el" href="classlog4cxx_1_1Level.html#a17165f1a2ffae195b6de57c2ef4f5e91">Level::getAll()</a></code> which has the lowest possible rank. </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#ad61177f7f97f2278c24535d0c9d176ae">log4cxx::spi::LoggerRepository</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a06519869193e7f13d24f084c95dbda21">log4cxx::spi::LoggerRepository</a>.</p>
 
 </div>
 </div>
@@ -861,9 +839,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The string form of <code><a class="el" href="#a6a80bc2f5fdab4ababc731224952d8ab">setThreshold</a></code>. </p>
+<p>Enable logging for logging requests with level <code>newLevel</code> or higher.The threshold is set the <code>DEBUG</code> if <code>newLevel</code> is not recognised by Level::getLevel. All logging requests below the threshold are immediately dropped. By default, the threshold is set to <code><a class="el" href="classlog4cxx_1_1Level.html#a17165f1a2ffae195b6de57c2ef4f5e91">Level::getAll()</a></code> which has the lowest possible rank. </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a44d4f7eb0136c4fdc7f232f540f0ffef">log4cxx::spi::LoggerRepository</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a24ed86cbd481a06438d290bbc14d976e">log4cxx::spi::LoggerRepository</a>.</p>
 
 </div>
 </div>
@@ -890,20 +868,21 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Used by subclasses to add a renderer to the hierarchy passed as parameter. </p>
-<p>Shutting down a hierarchy will <em>safely</em> close and remove all appenders in all categories including the root logger.</p>
-<p>Some appenders such as <code><a class="el" href="classlog4cxx_1_1net_1_1XMLSocketAppender.html">XMLSocketAppender</a></code> and <a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender decouples logging event creation from output by processing log events asynchronousl...">AsyncAppender</a> need to be closed before the application exists. Otherwise, pending logging events might be lost.</p>
+<p>Shutting down a hierarchy will <em>safely</em> close and remove all appenders in all categories including the root logger. </p>
 <p>The <code>shutdown</code> method is careful to close nested appenders before closing regular appenders. This is allows configurations where a regular appender is attached to a logger and again to a nested appender. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a6e1d9fe80e31da57c414ebf8f23f5514">log4cxx::spi::LoggerRepository</a>.</p>
 
 </div>
 </div>
-<a id="a9836b2763eb49d6bb67639feb93e5ab8" name="a9836b2763eb49d6bb67639feb93e5ab8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9836b2763eb49d6bb67639feb93e5ab8">&#9670;&#160;</a></span>updateChildren()</h2>
+<a id="a8d327735d323ca5084d8779a765a5146" name="a8d327735d323ca5084d8779a765a5146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d327735d323ca5084d8779a765a5146">&#9670;&#160;</a></span>updateChildren()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void log4cxx::Hierarchy::updateChildren </td>
@@ -912,9 +891,16 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Refresh the threshold in children of parent. </p>
+<p>Refresh the configuration of all loggers where <code>parent</code> is somewhere in their ancestor chain.The ancestor chain ends at the root logger. </p>
+
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a19a11505a0cfeb2fe8cfeb723cbb956b">log4cxx::spi::LoggerRepository</a>.</p>
 
 </div>
 </div>

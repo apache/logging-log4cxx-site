@@ -152,7 +152,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a240993bbbd9758b6353c92a1240e3f92" id="r_a240993bbbd9758b6353c92a1240e3f92"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a240993bbbd9758b6353c92a1240e3f92">~ErrorHandler</a> ()</td></tr>
 <tr class="memitem:a708783c3bcde0f4d502f6cdb7197e9a2" id="r_a708783c3bcde0f4d502f6cdb7197e9a2"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a708783c3bcde0f4d502f6cdb7197e9a2">addAppenderHolder</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name, const AppenderAttachablePtr &amp;clx)</td></tr>
 <tr class="memdesc:a708783c3bcde0f4d502f6cdb7197e9a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>clx</code> to the list of collections to search for the failed appender.  <br /></td></tr>
-<tr class="memitem:a520b2938b153e653bce80a15140abde9" id="r_a520b2938b153e653bce80a15140abde9"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a520b2938b153e653bce80a15140abde9">setLogger</a> (const <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> &amp;logger)=0</td></tr>
+<tr class="memitem:a520b2938b153e653bce80a15140abde9" id="r_a520b2938b153e653bce80a15140abde9"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a520b2938b153e653bce80a15140abde9">setLogger</a> (const <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> &amp;logger)=0</td></tr>
 <tr class="memdesc:a520b2938b153e653bce80a15140abde9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a reference to a logger to which the failing appender might be attached to.  <br /></td></tr>
 <tr class="memitem:a2dd0abc4e4ccf3a006892f9c4a34d52e" id="r_a2dd0abc4e4ccf3a006892f9c4a34d52e"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a2dd0abc4e4ccf3a006892f9c4a34d52e">error</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;message, const std::exception &amp;e, int errorCode) const =0</td></tr>
 <tr class="memdesc:a2dd0abc4e4ccf3a006892f9c4a34d52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to the error(const String&amp;, helpers::Exception&amp;, int,
@@ -283,7 +283,7 @@ spi::LoggingEvent&amp;) with the the event parameteter set to null.  <br /></td>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -519,7 +519,7 @@ spi::LoggingEvent&amp;) with the the event parameteter set to null. </p>
         <tr>
           <td class="memname">virtual void log4cxx::spi::ErrorHandler::setLogger </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>logger</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>logger</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

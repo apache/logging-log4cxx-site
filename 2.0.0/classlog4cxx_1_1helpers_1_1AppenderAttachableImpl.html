@@ -147,22 +147,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a63fc9b7c9a5b13b8ffc89284598c330e" id="r_a63fc9b7c9a5b13b8ffc89284598c330e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a63fc9b7c9a5b13b8ffc89284598c330e">AppenderAttachableImpl</a> ()</td></tr>
 <tr class="memdesc:a63fc9b7c9a5b13b8ffc89284598c330e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new instance.  <br /></td></tr>
 <tr class="memitem:afa16d23898b71b87500174e28975b47f" id="r_afa16d23898b71b87500174e28975b47f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afa16d23898b71b87500174e28975b47f">~AppenderAttachableImpl</a> ()</td></tr>
-<tr class="memitem:a34648d972e80273548f19246f15985fa" id="r_a34648d972e80273548f19246f15985fa"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a34648d972e80273548f19246f15985fa">addAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> newAppender) override</td></tr>
-<tr class="memdesc:a34648d972e80273548f19246f15985fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an appender.  <br /></td></tr>
+<tr class="memitem:a56aee5656b84e3acfe91820768c5023b" id="r_a56aee5656b84e3acfe91820768c5023b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a56aee5656b84e3acfe91820768c5023b">addAppendersOf</a> (const <a class="el" href="#a63fc9b7c9a5b13b8ffc89284598c330e">AppenderAttachableImpl</a> &amp;other)</td></tr>
+<tr class="memdesc:a56aee5656b84e3acfe91820768c5023b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the appenders of <code>other</code>.  <br /></td></tr>
+<tr class="memitem:a25b83508d3783bb3b4fe85af345757e6" id="r_a25b83508d3783bb3b4fe85af345757e6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a25b83508d3783bb3b4fe85af345757e6">addAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;newAppender) override</td></tr>
+<tr class="memdesc:a25b83508d3783bb3b4fe85af345757e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an appender.  <br /></td></tr>
 <tr class="memitem:a3b121f9a3ea01fec90f71808e76955eb" id="r_a3b121f9a3ea01fec90f71808e76955eb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3b121f9a3ea01fec90f71808e76955eb">appendLoopOnAppenders</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event)</td></tr>
 <tr class="memdesc:a3b121f9a3ea01fec90f71808e76955eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send <code>event</code> to all attached appenders.  <br /></td></tr>
 <tr class="memitem:aff7501080730594d8300d98992582534" id="r_aff7501080730594d8300d98992582534"><td class="memItemLeft">AppenderList&#160;</td><td class="memItemRight"><a class="el" href="#aff7501080730594d8300d98992582534">getAllAppenders</a> () const override</td></tr>
 <tr class="memdesc:aff7501080730594d8300d98992582534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all previously added appenders as an Enumeration.  <br /></td></tr>
 <tr class="memitem:a4034d0572ef7e07460984a018266fa6c" id="r_a4034d0572ef7e07460984a018266fa6c"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4034d0572ef7e07460984a018266fa6c">getAppender</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name) const override</td></tr>
 <tr class="memdesc:a4034d0572ef7e07460984a018266fa6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an appender by name.  <br /></td></tr>
-<tr class="memitem:a82e2b2aa75d7eddcc1796dccdc709d72" id="r_a82e2b2aa75d7eddcc1796dccdc709d72"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a82e2b2aa75d7eddcc1796dccdc709d72">isAttached</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> appender) const override</td></tr>
-<tr class="memdesc:a82e2b2aa75d7eddcc1796dccdc709d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> if the specified appender is in the list of attached appenders, <code>false</code> otherwise.  <br /></td></tr>
+<tr class="memitem:acb0accba42f3879a2e7fe2c8ff23b374" id="r_acb0accba42f3879a2e7fe2c8ff23b374"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acb0accba42f3879a2e7fe2c8ff23b374">isAttached</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;appender) const override</td></tr>
+<tr class="memdesc:acb0accba42f3879a2e7fe2c8ff23b374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> if the specified appender is in the list of attached appenders, <code>false</code> otherwise.  <br /></td></tr>
 <tr class="memitem:a288aa8eda75d7c620a0494bdf7046893" id="r_a288aa8eda75d7c620a0494bdf7046893"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a288aa8eda75d7c620a0494bdf7046893">removeAllAppenders</a> () override</td></tr>
 <tr class="memdesc:a288aa8eda75d7c620a0494bdf7046893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all previously added appenders.  <br /></td></tr>
-<tr class="memitem:a1e37d94663a4c7f228e180d8543960bf" id="r_a1e37d94663a4c7f228e180d8543960bf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1e37d94663a4c7f228e180d8543960bf">removeAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> appender) override</td></tr>
-<tr class="memdesc:a1e37d94663a4c7f228e180d8543960bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the appender passed as parameter from the list of appenders.  <br /></td></tr>
-<tr class="memitem:aff52a7f3a227f12709b73e7c061838d3" id="r_aff52a7f3a227f12709b73e7c061838d3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aff52a7f3a227f12709b73e7c061838d3">removeAppender</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name) override</td></tr>
-<tr class="memdesc:aff52a7f3a227f12709b73e7c061838d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the appender with the name passed as parameter from the list of appenders.  <br /></td></tr>
+<tr class="memitem:af4bb6a42e127139c0dd7a4c3fa9847b5" id="r_af4bb6a42e127139c0dd7a4c3fa9847b5"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af4bb6a42e127139c0dd7a4c3fa9847b5">removeAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;appender) override</td></tr>
+<tr class="memdesc:af4bb6a42e127139c0dd7a4c3fa9847b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove <code>appender</code> from the list of appenders.  <br /></td></tr>
+<tr class="memitem:a23281eb9a4befef937d8f10c3a6f77be" id="r_a23281eb9a4befef937d8f10c3a6f77be"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a23281eb9a4befef937d8f10c3a6f77be">removeAppender</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name) override</td></tr>
+<tr class="memdesc:a23281eb9a4befef937d8f10c3a6f77be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the appender <code>name</code> from the list of appenders.  <br /></td></tr>
 <tr class="memitem:ac2a0d83fc6ffe83effa2902d53991dd0" id="r_ac2a0d83fc6ffe83effa2902d53991dd0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac2a0d83fc6ffe83effa2902d53991dd0">replaceAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;oldAppender, const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;newAppender) override</td></tr>
 <tr class="memdesc:ac2a0d83fc6ffe83effa2902d53991dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace <code>oldAppender</code> with <code>newAppender</code>.  <br /></td></tr>
 <tr class="memitem:ac5138b658c325fe866f22e0e376e5484" id="r_ac5138b658c325fe866f22e0e376e5484"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac5138b658c325fe866f22e0e376e5484">replaceAppenders</a> (const AppenderList &amp;newList) override</td></tr>
@@ -217,8 +219,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a34648d972e80273548f19246f15985fa" name="a34648d972e80273548f19246f15985fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34648d972e80273548f19246f15985fa">&#9670;&#160;</a></span>addAppender()</h2>
+<a id="a25b83508d3783bb3b4fe85af345757e6" name="a25b83508d3783bb3b4fe85af345757e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b83508d3783bb3b4fe85af345757e6">&#9670;&#160;</a></span>addAppender()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,7 +231,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::helpers::AppenderAttachableImpl::addAppender </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a></td>          <td class="paramname"><span class="paramname"><em>newAppender</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>newAppender</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -242,7 +244,26 @@ Protected Member Functions</h2></td></tr>
 
 <p>Add an appender. </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1AppenderAttachable.html#af97d21cf7ac3b3e732afee24a58e4d49">log4cxx::spi::AppenderAttachable</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1AppenderAttachable.html#a1b8885053d1ed32d6e56fa0942183115">log4cxx::spi::AppenderAttachable</a>.</p>
+
+</div>
+</div>
+<a id="a56aee5656b84e3acfe91820768c5023b" name="a56aee5656b84e3acfe91820768c5023b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56aee5656b84e3acfe91820768c5023b">&#9670;&#160;</a></span>addAppendersOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::helpers::AppenderAttachableImpl::addAppendersOf </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a63fc9b7c9a5b13b8ffc89284598c330e">AppenderAttachableImpl</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add the appenders of <code>other</code>. </p>
 
 </div>
 </div>
@@ -348,8 +369,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a82e2b2aa75d7eddcc1796dccdc709d72" name="a82e2b2aa75d7eddcc1796dccdc709d72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82e2b2aa75d7eddcc1796dccdc709d72">&#9670;&#160;</a></span>isAttached()</h2>
+<a id="acb0accba42f3879a2e7fe2c8ff23b374" name="acb0accba42f3879a2e7fe2c8ff23b374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb0accba42f3879a2e7fe2c8ff23b374">&#9670;&#160;</a></span>isAttached()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,7 +381,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">bool log4cxx::helpers::AppenderAttachableImpl::isAttached </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a></td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -373,7 +394,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Returns <code>true</code> if the specified appender is in the list of attached appenders, <code>false</code> otherwise. </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1AppenderAttachable.html#a14bee34fddc5da5db85ea0212791b311">log4cxx::spi::AppenderAttachable</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1AppenderAttachable.html#a96757f6aab79a0476e1ff80bf7403306">log4cxx::spi::AppenderAttachable</a>.</p>
 
 </div>
 </div>
@@ -406,8 +427,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1e37d94663a4c7f228e180d8543960bf" name="a1e37d94663a4c7f228e180d8543960bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e37d94663a4c7f228e180d8543960bf">&#9670;&#160;</a></span>removeAppender() <span class="overload">[1/2]</span></h2>
+<a id="af4bb6a42e127139c0dd7a4c3fa9847b5" name="af4bb6a42e127139c0dd7a4c3fa9847b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4bb6a42e127139c0dd7a4c3fa9847b5">&#9670;&#160;</a></span>removeAppender() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,9 +437,9 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void log4cxx::helpers::AppenderAttachableImpl::removeAppender </td>
+          <td class="memname">bool log4cxx::helpers::AppenderAttachableImpl::removeAppender </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a></td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -429,14 +450,15 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove the appender passed as parameter from the list of appenders. </p>
+<p>Remove <code>appender</code> from the list of appenders. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if successful. </dd></dl>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1AppenderAttachable.html#a012c1fe7b979f4bb520f7e6899977125">log4cxx::spi::AppenderAttachable</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1AppenderAttachable.html#a9d1f4ef0dac7191eb8037343155de271">log4cxx::spi::AppenderAttachable</a>.</p>
 
 </div>
 </div>
-<a id="aff52a7f3a227f12709b73e7c061838d3" name="aff52a7f3a227f12709b73e7c061838d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff52a7f3a227f12709b73e7c061838d3">&#9670;&#160;</a></span>removeAppender() <span class="overload">[2/2]</span></h2>
+<a id="a23281eb9a4befef937d8f10c3a6f77be" name="a23281eb9a4befef937d8f10c3a6f77be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23281eb9a4befef937d8f10c3a6f77be">&#9670;&#160;</a></span>removeAppender() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,7 +467,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void log4cxx::helpers::AppenderAttachableImpl::removeAppender </td>
+          <td class="memname">bool log4cxx::helpers::AppenderAttachableImpl::removeAppender </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
@@ -458,9 +480,10 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove the appender with the name passed as parameter from the list of appenders. </p>
+<p>Remove the appender <code>name</code> from the list of appenders. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if successful. </dd></dl>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1AppenderAttachable.html#af9a793dd93782be7455e2219e7d3097a">log4cxx::spi::AppenderAttachable</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1AppenderAttachable.html#ace80f03738c2e0cdbeeb0ddfa04e5b1e">log4cxx::spi::AppenderAttachable</a>.</p>
 
 </div>
 </div>

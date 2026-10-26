@@ -202,6 +202,7 @@ Release 2.0.0 - 2026-XX-XX</h1>
 </ul>
 <p>Release 2.0.0 includes the following new features:</p>
 <ul>
+<li>A new <a class="el" href="classlog4cxx_1_1FileAppender.html" title="FileAppender appends log events to a file.">log4cxx::FileAppender</a> option to delay log file creation until an event is added. [<a href="https://github.com/apache/logging-log4cxx/pull/775">#775</a>]</li>
 <li>A new <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a4781ffda7ddc9a47b272241ed6c94478" title="Call start() on a monitor of filename that uses processor to configure target.">log4cxx::helpers::FileWatchdog::startWatching</a> method to create a periodic task without a needing to sub-class. [<a href="https://github.com/apache/logging-log4cxx/pull/769">#769</a>]</li>
 <li>An incorrect configuration option name generates a warning in the Log4cxx internal debugging output [<a href="https://github.com/apache/logging-log4cxx/pull/738">#738</a>]</li>
 <li>Improved SMTPAppender diagnostic messages in the Log4cxx internal debugging output [<a href="https://github.com/apache/logging-log4cxx/pull/735">#735</a>]</li>
@@ -217,6 +218,13 @@ Release 2.0.0 - 2026-XX-XX</h1>
 <li><a href="https://github.com/apache/logging-log4cxx/pull/629">#629</a> , <a href="https://github.com/apache/logging-log4cxx/pull/637">#637</a></li>
 </ul>
 </li>
+</ul>
+<p>The other Log4cxx behaviour changes are:</p>
+<ul>
+<li>Use 'find_package(log4cxx COMPONENTS qt)' instead of 'find_package(log4cxx-qt)' to access Log4cxx Qt support [<a href="https://github.com/apache/logging-log4cxx/pull/600">#600</a>]</li>
+<li>In Msys2, the Windows native thread number is displayed instead of the pthread_self() value. [<a href="https://github.com/apache/logging-log4cxx/pull/783">#783</a>]</li>
+<li>Default configuration does not check the 'log4j.configuration' and 'log4j.configuratorClass' environment variables. Instead, use 'LOG4CXX_CONFIGURATION' and 'LOG4CXX_CONFIGURATOR_CLASS'. [<a href="https://github.com/apache/logging-log4cxx/pull/784">#784</a>]</li>
+<li>Threads created by Log4cxx are assigned a name. Call <a class="el" href="classlog4cxx_1_1helpers_1_1ThreadUtility.html#ad563caa1f94fd9038c5023bd1781687a" title="Use new_value as the behviour when starting a thread.">log4cxx::helpers::ThreadUtility::configure</a> to alter this behaviour. [<a href="https://github.com/apache/logging-log4cxx/pull/785">#785</a>]</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="rel_1_8_0"></a>
 Release 1.8.0 - 2026-07-29</h1>
@@ -495,7 +503,7 @@ Release 0.12.0 - 2021-05-01</h1>
 <div class="line">AppenderPtr appender = <a class="code hl_function" href="namespacelog4cxx.html#abe6393af314024e7ab6e6fad84343572">log4cxx::cast&lt;Appender&gt;</a>(instance);</div>
 <div class="line"><span class="comment">// At this point(assuming the cast was good), instance and appender</span></div>
 <div class="line"><span class="comment">// both point at the same object.</span></div>
-<div class="ttc" id="anamespacelog4cxx_html_abe6393af314024e7ab6e6fad84343572"><div class="ttname"><a href="namespacelog4cxx.html#abe6393af314024e7ab6e6fad84343572">log4cxx::cast</a></div><div class="ttdeci">std::shared_ptr&lt; Ret &gt; cast(const std::shared_ptr&lt; Type &gt; &amp;incoming)</div><div class="ttdoc">Attempt to cast one Object to another kind of Object.</div><div class="ttdef"><b>Definition</b> object.h:123</div></div>
+<div class="ttc" id="anamespacelog4cxx_html_abe6393af314024e7ab6e6fad84343572"><div class="ttname"><a href="namespacelog4cxx.html#abe6393af314024e7ab6e6fad84343572">log4cxx::cast</a></div><div class="ttdeci">std::shared_ptr&lt; Ret &gt; cast(const std::shared_ptr&lt; Type &gt; &amp;incoming)</div><div class="ttdoc">Attempt to cast one Object to another kind of Object.</div><div class="ttdef"><b>Definition</b> object.h:122</div></div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="rel_12_0_bugs"></a>
 Bug</h2>
 <ul>

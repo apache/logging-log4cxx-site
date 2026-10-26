@@ -15,6 +15,7 @@ var classlog4cxx_1_1File =
     [ "getName", "classlog4cxx_1_1File.html#a373e8fe184597fd55fce4ae5846bf15e", null ],
     [ "getParent", "classlog4cxx_1_1File.html#a53c806b538f117cc1d4e57f49d646efc", null ],
     [ "getPath", "classlog4cxx_1_1File.html#ad1b4f9ddc03b479af34a49eca3657f5a", null ],
+    [ "hasPath", "classlog4cxx_1_1File.html#aebf6fb1bafc6b1f399631d38eacf50bd", null ],
     [ "lastModified", "classlog4cxx_1_1File.html#ac1ef2641f86fe69d4860d6674d12b4ff", null ],
     [ "length", "classlog4cxx_1_1File.html#ac5c109f534a3c0b366863b550aa8b721", null ],
     [ "list", "classlog4cxx_1_1File.html#a418099d417a29e3154acde30487658d4", null ],

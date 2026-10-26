@@ -1,8 +1,7 @@
 var classlog4cxx_1_1net_1_1SMTPAppender =
 [
     [ "SMTPAppender", "classlog4cxx_1_1net_1_1SMTPAppender.html#a69c9e4f5eafb8cd2e06c32f16078d769", null ],
-    [ "SMTPAppender", "classlog4cxx_1_1net_1_1SMTPAppender.html#afa530e8fa0612f4830157acaf0b5bb5a", null ],
-    [ "SMTPAppender", "classlog4cxx_1_1net_1_1SMTPAppender.html#a5ef1ba5def98d39593121cb8822f59c1", null ],
+    [ "SMTPAppender", "classlog4cxx_1_1net_1_1SMTPAppender.html#ae3f635709d629d89372568808c809eed", null ],
     [ "~SMTPAppender", "classlog4cxx_1_1net_1_1SMTPAppender.html#afa6351dfb71749765d253844e6eec83b", null ],
     [ "activateOptions", "classlog4cxx_1_1net_1_1SMTPAppender.html#aee713733c5824f29797946be822a6600", null ],
     [ "activateOptions", "classlog4cxx_1_1net_1_1SMTPAppender.html#a069a811a37097a1979ed9028c5b4a712", null ],
@@ -22,11 +21,10 @@ var classlog4cxx_1_1net_1_1SMTPAppender =
     [ "getSubject", "classlog4cxx_1_1net_1_1SMTPAppender.html#a75e3799f9a058d9a7f2c9a2b4e7be793", null ],
     [ "getTo", "classlog4cxx_1_1net_1_1SMTPAppender.html#a608fe6a83e30c286d7457c4842b531fb", null ],
     [ "requiresLayout", "classlog4cxx_1_1net_1_1SMTPAppender.html#aeebd15d013ed0469f564096b8ee03821", null ],
-    [ "sendBuffer", "classlog4cxx_1_1net_1_1SMTPAppender.html#a91ee75cd447e92c24d4ed9d44e3be94a", null ],
     [ "setBcc", "classlog4cxx_1_1net_1_1SMTPAppender.html#ade06a63a7137cb2161ab206e85d6887d", null ],
     [ "setBufferSize", "classlog4cxx_1_1net_1_1SMTPAppender.html#ac20d0ed8a750a2297434e5ab316e1f06", null ],
     [ "setCc", "classlog4cxx_1_1net_1_1SMTPAppender.html#a05700c210ca7fcfe0ac74ec2ac3f71c7", null ],
-    [ "setEvaluator", "classlog4cxx_1_1net_1_1SMTPAppender.html#a83b6eb2ce892446c3804efb9cbe04657", null ],
+    [ "setEvaluator", "classlog4cxx_1_1net_1_1SMTPAppender.html#a7bb7251637b20764e9066901d3d93369", null ],
     [ "setEvaluatorClass", "classlog4cxx_1_1net_1_1SMTPAppender.html#abe47be4dd21ce8e3418d12b1dc4725c8", null ],
     [ "setFrom", "classlog4cxx_1_1net_1_1SMTPAppender.html#aaa4ea1909da5e3c04b0519a3286f2b9e", null ],
     [ "setLocationInfo", "classlog4cxx_1_1net_1_1SMTPAppender.html#a08f25256758e7bae16c9f172c0d4d191", null ],

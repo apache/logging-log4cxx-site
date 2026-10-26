@@ -8,8 +8,7 @@ var classlog4cxx_1_1spi_1_1LoggerRepository =
     [ "fireAddAppenderEvent", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a467d6af6bb3f5713d20c8902484b217f", null ],
     [ "fireRemoveAppenderEvent", "classlog4cxx_1_1spi_1_1LoggerRepository.html#ab3a9683775f74c84b13a4aa09cb4e530", null ],
     [ "getCurrentLoggers", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a2e17aefd436ad4fed06a60a9520a8f4f", null ],
-    [ "getLogger", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a2c2593262c074af2493bc4988189deab", null ],
-    [ "getLogger", "classlog4cxx_1_1spi_1_1LoggerRepository.html#af218670cba71f6a713ac8353e1e7bb7a", null ],
+    [ "getLogger", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a1235bf4c2bd4f92a0f09644926466aeb", null ],
     [ "getRootLogger", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a0fb0e21aa687b83b3dd909c19346c4e3", null ],
     [ "getThreshold", "classlog4cxx_1_1spi_1_1LoggerRepository.html#af847a82cafb2b2a45f841012e0ade360", null ],
     [ "isConfigured", "classlog4cxx_1_1spi_1_1LoggerRepository.html#aa9e3c90be74472e94ba6c463ed819a84", null ],
@@ -18,7 +17,8 @@ var classlog4cxx_1_1spi_1_1LoggerRepository =
     [ "removeLogger", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a1a25ce96b47643bf196f3eda1d391bbf", null ],
     [ "resetConfiguration", "classlog4cxx_1_1spi_1_1LoggerRepository.html#ab2a31a195a5c82793805a16417b1a387", null ],
     [ "setConfigured", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a9509e82a54c31e17174597e1dd3830b8", null ],
-    [ "setThreshold", "classlog4cxx_1_1spi_1_1LoggerRepository.html#ad61177f7f97f2278c24535d0c9d176ae", null ],
-    [ "setThreshold", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a44d4f7eb0136c4fdc7f232f540f0ffef", null ],
-    [ "shutdown", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a6e1d9fe80e31da57c414ebf8f23f5514", null ]
+    [ "setThreshold", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a06519869193e7f13d24f084c95dbda21", null ],
+    [ "setThreshold", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a24ed86cbd481a06438d290bbc14d976e", null ],
+    [ "shutdown", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a6e1d9fe80e31da57c414ebf8f23f5514", null ],
+    [ "updateChildren", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a19a11505a0cfeb2fe8cfeb723cbb956b", null ]
 ];

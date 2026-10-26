@@ -147,14 +147,10 @@ Inheritance diagram for log4cxx::helpers::ClassNotFoundException:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8051797b53ddc90f268c85c931d95315" id="r_a8051797b53ddc90f268c85c931d95315"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8051797b53ddc90f268c85c931d95315">ClassNotFoundException</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;className)</td></tr>
-<tr class="memitem:a9c28de3acbc02ad722912ee89aae658a" id="r_a9c28de3acbc02ad722912ee89aae658a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9c28de3acbc02ad722912ee89aae658a">ClassNotFoundException</a> (const ClassNotFoundException &amp;msg)</td></tr>
-<tr class="memitem:ac7190ae4f85e5498e9e45a3903b71dca" id="r_ac7190ae4f85e5498e9e45a3903b71dca"><td class="memItemLeft"><a class="el" href="#a8051797b53ddc90f268c85c931d95315">ClassNotFoundException</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ac7190ae4f85e5498e9e45a3903b71dca">operator=</a> (const <a class="el" href="#a8051797b53ddc90f268c85c931d95315">ClassNotFoundException</a> &amp;msg)</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Exception"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html">log4cxx::helpers::Exception</a></td></tr>
 <tr class="memitem:acc325b8671b87a3307919e4fd6069ab9 pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_acc325b8671b87a3307919e4fd6069ab9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#acc325b8671b87a3307919e4fd6069ab9">Exception</a> (const char *msg)</td></tr>
 <tr class="memitem:a1eeb9fbdec44913a787d28f00f75ab43 pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_a1eeb9fbdec44913a787d28f00f75ab43"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#a1eeb9fbdec44913a787d28f00f75ab43">Exception</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;msg)</td></tr>
-<tr class="memitem:acd54626e36acd5dbe4b4e12f6df00e54 pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_acd54626e36acd5dbe4b4e12f6df00e54"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#acd54626e36acd5dbe4b4e12f6df00e54">Exception</a> (const Exception &amp;src)</td></tr>
-<tr class="memitem:ab6e49b8c70d5da08e45f4bec6b480775 pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_ab6e49b8c70d5da08e45f4bec6b480775"><td class="memItemLeft"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#acc325b8671b87a3307919e4fd6069ab9">Exception</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#ab6e49b8c70d5da08e45f4bec6b480775">operator=</a> (const <a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#acc325b8671b87a3307919e4fd6069ab9">Exception</a> &amp;src)</td></tr>
-<tr class="memitem:a4527fd9795a4500bec72bb8346478cec pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_a4527fd9795a4500bec72bb8346478cec"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#a4527fd9795a4500bec72bb8346478cec">what</a> () const  throw ()</td></tr>
+<tr class="memitem:ae5bf2d1e078f2cf1ca3f9a85a99a870f pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_ae5bf2d1e078f2cf1ca3f9a85a99a870f"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#ae5bf2d1e078f2cf1ca3f9a85a99a870f">what</a> () const noexcept override</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -166,7 +162,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Thrown when an application tries to load in a class through its string name but no definition for the class with the specified name could be found. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8051797b53ddc90f268c85c931d95315" name="a8051797b53ddc90f268c85c931d95315"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8051797b53ddc90f268c85c931d95315">&#9670;&#160;</a></span>ClassNotFoundException() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8051797b53ddc90f268c85c931d95315">&#9670;&#160;</a></span>ClassNotFoundException()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,41 +171,6 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">log4cxx::helpers::ClassNotFoundException::ClassNotFoundException </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>className</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9c28de3acbc02ad722912ee89aae658a" name="a9c28de3acbc02ad722912ee89aae658a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c28de3acbc02ad722912ee89aae658a">&#9670;&#160;</a></span>ClassNotFoundException() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">log4cxx::helpers::ClassNotFoundException::ClassNotFoundException </td>
-          <td>(</td>
-          <td class="paramtype">const ClassNotFoundException &amp;</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="ac7190ae4f85e5498e9e45a3903b71dca" name="ac7190ae4f85e5498e9e45a3903b71dca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7190ae4f85e5498e9e45a3903b71dca">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#a8051797b53ddc90f268c85c931d95315">ClassNotFoundException</a> &amp; log4cxx::helpers::ClassNotFoundException::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#a8051797b53ddc90f268c85c931d95315">ClassNotFoundException</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>msg</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

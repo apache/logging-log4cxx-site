@@ -137,36 +137,28 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classlog4cxx_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2d9e4c6ea7b4b8219f53070018040ea5" id="r_a2d9e4c6ea7b4b8219f53070018040ea5"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a2d9e4c6ea7b4b8219f53070018040ea5">setRepositorySelector</a> (spi::RepositorySelectorPtr selector, void *guard)</td></tr>
-<tr class="memdesc:a2d9e4c6ea7b4b8219f53070018040ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>selector</code> to source the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code>, but only if the correct <code>guard</code> is passed as parameter.  <br /></td></tr>
+<tr class="memitem:a1b9f3ec8dc5a742979e405db59a6e5e8" id="r_a1b9f3ec8dc5a742979e405db59a6e5e8"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a1b9f3ec8dc5a742979e405db59a6e5e8">setRepositorySelector</a> (const spi::RepositorySelectorPtr &amp;selector, void *guard)</td></tr>
+<tr class="memdesc:a1b9f3ec8dc5a742979e405db59a6e5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>selector</code> to source the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code>, but only if the correct <code>guard</code> is passed as parameter.  <br /></td></tr>
 <tr class="memitem:a449c4461f8f1ca95f897968f1584f26a" id="r_a449c4461f8f1ca95f897968f1584f26a"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx_1_1spi.html#a601415735b45ce1d45c7a3c45d797b37">spi::LoggerRepositoryPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a449c4461f8f1ca95f897968f1584f26a">getLoggerRepository</a> ()</td></tr>
-<tr class="memitem:a653a8b4b1548f75d9e12615dd4a677f7" id="r_a653a8b4b1548f75d9e12615dd4a677f7"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a653a8b4b1548f75d9e12615dd4a677f7">getRootLogger</a> ()</td></tr>
+<tr class="memitem:a653a8b4b1548f75d9e12615dd4a677f7" id="r_a653a8b4b1548f75d9e12615dd4a677f7"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a653a8b4b1548f75d9e12615dd4a677f7">getRootLogger</a> ()</td></tr>
 <tr class="memdesc:a653a8b4b1548f75d9e12615dd4a677f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the root logger from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code>.  <br /></td></tr>
-<tr class="memitem:ac1c64a1bd2c15d3018f3a022a059074e" id="r_ac1c64a1bd2c15d3018f3a022a059074e"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac1c64a1bd2c15d3018f3a022a059074e">getLogger</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:ac1c64a1bd2c15d3018f3a022a059074e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using the default factory to create it if required.  <br /></td></tr>
-<tr class="memitem:a2177280f7646ff9a875f85f4001f71af" id="r_a2177280f7646ff9a875f85f4001f71af"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2177280f7646ff9a875f85f4001f71af">getLogger</a> (const std::string &amp;name, const <a class="el" href="namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5">spi::LoggerFactoryPtr</a> &amp;factory)</td></tr>
-<tr class="memdesc:a2177280f7646ff9a875f85f4001f71af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using <code>factory</code> to create it if required.  <br /></td></tr>
-<tr class="memitem:afdc50729e650e71c80f765c7fe996d45" id="r_afdc50729e650e71c80f765c7fe996d45"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#afdc50729e650e71c80f765c7fe996d45">exists</a> (const std::string &amp;name)</td></tr>
+<tr class="memitem:ac6ef0f251195da5fe25124a33e0ae793" id="r_ac6ef0f251195da5fe25124a33e0ae793"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac6ef0f251195da5fe25124a33e0ae793">getLogger</a> (const std::string &amp;name, const spi::LoggerFactoryPtr &amp;factory={})</td></tr>
+<tr class="memdesc:ac6ef0f251195da5fe25124a33e0ae793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using <code>factory</code> to create it if required.  <br /></td></tr>
+<tr class="memitem:afdc50729e650e71c80f765c7fe996d45" id="r_afdc50729e650e71c80f765c7fe996d45"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#afdc50729e650e71c80f765c7fe996d45">exists</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:afdc50729e650e71c80f765c7fe996d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> <code>name</code> instance if it exists in the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code>.  <br /></td></tr>
-<tr class="memitem:a01c3286df9f120cc1e58df611d4ad797" id="r_a01c3286df9f120cc1e58df611d4ad797"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a01c3286df9f120cc1e58df611d4ad797">getLogger</a> (const std::wstring &amp;name)</td></tr>
-<tr class="memdesc:a01c3286df9f120cc1e58df611d4ad797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using the default factory to create it if required.  <br /></td></tr>
-<tr class="memitem:a9f18050f789522513345102ebfd4e48f" id="r_a9f18050f789522513345102ebfd4e48f"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9f18050f789522513345102ebfd4e48f">getLogger</a> (const std::wstring &amp;name, const <a class="el" href="namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5">spi::LoggerFactoryPtr</a> &amp;factory)</td></tr>
-<tr class="memdesc:a9f18050f789522513345102ebfd4e48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using <code>factory</code> to create it if required.  <br /></td></tr>
-<tr class="memitem:a11682e707fd7315aa273573d13561615" id="r_a11682e707fd7315aa273573d13561615"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a11682e707fd7315aa273573d13561615">exists</a> (const std::wstring &amp;name)</td></tr>
+<tr class="memitem:a5dba177993214d8178b22513d9a17834" id="r_a5dba177993214d8178b22513d9a17834"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5dba177993214d8178b22513d9a17834">getLogger</a> (const std::wstring &amp;name, const spi::LoggerFactoryPtr &amp;factory={})</td></tr>
+<tr class="memdesc:a5dba177993214d8178b22513d9a17834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using <code>factory</code> to create it if required.  <br /></td></tr>
+<tr class="memitem:a11682e707fd7315aa273573d13561615" id="r_a11682e707fd7315aa273573d13561615"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a11682e707fd7315aa273573d13561615">exists</a> (const std::wstring &amp;name)</td></tr>
 <tr class="memdesc:a11682e707fd7315aa273573d13561615"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> <code>name</code> instance if it exists in the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code>.  <br /></td></tr>
-<tr class="memitem:a130f9536d86fa4d81fd33b25cd2e0439" id="r_a130f9536d86fa4d81fd33b25cd2e0439"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a130f9536d86fa4d81fd33b25cd2e0439">getLogger</a> (const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;name)</td></tr>
-<tr class="memdesc:a130f9536d86fa4d81fd33b25cd2e0439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using the default factory to create it if required.  <br /></td></tr>
-<tr class="memitem:a63d19d2b2e0c65ea8c6dc386a0bce6e1" id="r_a63d19d2b2e0c65ea8c6dc386a0bce6e1"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a63d19d2b2e0c65ea8c6dc386a0bce6e1">getLogger</a> (const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;name, const <a class="el" href="namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5">spi::LoggerFactoryPtr</a> &amp;factory)</td></tr>
-<tr class="memdesc:a63d19d2b2e0c65ea8c6dc386a0bce6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using <code>factory</code> to create it if required.  <br /></td></tr>
-<tr class="memitem:aa741db2f56b9d40068ad96f460c5f16e" id="r_aa741db2f56b9d40068ad96f460c5f16e"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa741db2f56b9d40068ad96f460c5f16e">exists</a> (const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;name)</td></tr>
+<tr class="memitem:a98a657f2ba0b6f881023def3961ee03f" id="r_a98a657f2ba0b6f881023def3961ee03f"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a98a657f2ba0b6f881023def3961ee03f">getLogger</a> (const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;name, const spi::LoggerFactoryPtr &amp;factory={})</td></tr>
+<tr class="memdesc:a98a657f2ba0b6f881023def3961ee03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using <code>factory</code> to create it if required.  <br /></td></tr>
+<tr class="memitem:aa741db2f56b9d40068ad96f460c5f16e" id="r_aa741db2f56b9d40068ad96f460c5f16e"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa741db2f56b9d40068ad96f460c5f16e">exists</a> (const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;name)</td></tr>
 <tr class="memdesc:aa741db2f56b9d40068ad96f460c5f16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> <code>name</code> instance if it exists in the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code>.  <br /></td></tr>
-<tr class="memitem:ae72e96f00c273e984a34282cd1ccaa84" id="r_ae72e96f00c273e984a34282cd1ccaa84"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae72e96f00c273e984a34282cd1ccaa84">getLoggerLS</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name)</td></tr>
-<tr class="memdesc:ae72e96f00c273e984a34282cd1ccaa84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using the default factory to create it if required.  <br /></td></tr>
-<tr class="memitem:aad50ae01d8fd85d69208b8dff723b9a3" id="r_aad50ae01d8fd85d69208b8dff723b9a3"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#aad50ae01d8fd85d69208b8dff723b9a3">getLoggerLS</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name, const <a class="el" href="namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5">spi::LoggerFactoryPtr</a> &amp;factory)</td></tr>
-<tr class="memdesc:aad50ae01d8fd85d69208b8dff723b9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using <code>factory</code> to create it if required.  <br /></td></tr>
-<tr class="memitem:a14e89389550e6573d4ea30004e01b0bb" id="r_a14e89389550e6573d4ea30004e01b0bb"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a14e89389550e6573d4ea30004e01b0bb">existsLS</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name)</td></tr>
+<tr class="memitem:a00ef527cbbaae9ff27d770bac82ba8ef" id="r_a00ef527cbbaae9ff27d770bac82ba8ef"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a00ef527cbbaae9ff27d770bac82ba8ef">getLoggerLS</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name, const spi::LoggerFactoryPtr &amp;factory={})</td></tr>
+<tr class="memdesc:a00ef527cbbaae9ff27d770bac82ba8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using <code>factory</code> to create it if required.  <br /></td></tr>
+<tr class="memitem:a14e89389550e6573d4ea30004e01b0bb" id="r_a14e89389550e6573d4ea30004e01b0bb"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a14e89389550e6573d4ea30004e01b0bb">existsLS</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name)</td></tr>
 <tr class="memdesc:a14e89389550e6573d4ea30004e01b0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> <code>name</code> instance if it exists in the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code>.  <br /></td></tr>
-<tr class="memitem:aa572c6bc88ba050a287bec97bf3c16ef" id="r_aa572c6bc88ba050a287bec97bf3c16ef"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa572c6bc88ba050a287bec97bf3c16ef">getCurrentLoggers</a> ()</td></tr>
+<tr class="memitem:aa572c6bc88ba050a287bec97bf3c16ef" id="r_aa572c6bc88ba050a287bec97bf3c16ef"><td class="memItemLeft">static LoggerList&#160;</td><td class="memItemRight"><a class="el" href="#aa572c6bc88ba050a287bec97bf3c16ef">getCurrentLoggers</a> ()</td></tr>
 <tr class="memitem:ad8845f4e8c6c840c7825bde2c9ce7e7c" id="r_ad8845f4e8c6c840c7825bde2c9ce7e7c"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad8845f4e8c6c840c7825bde2c9ce7e7c">shutdown</a> ()</td></tr>
 <tr class="memdesc:ad8845f4e8c6c840c7825bde2c9ce7e7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely close and remove all appenders in all loggers including the root logger.  <br /></td></tr>
 <tr class="memitem:ab2a8789c02074af6a409fa00d82d43eb" id="r_ab2a8789c02074af6a409fa00d82d43eb"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ab2a8789c02074af6a409fa00d82d43eb">resetConfiguration</a> ()</td></tr>
@@ -188,7 +180,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::exists </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::LogManager::exists </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
@@ -216,7 +208,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::exists </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::LogManager::exists </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
@@ -244,7 +236,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::exists </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::LogManager::exists </td>
           <td>(</td>
           <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
@@ -272,7 +264,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::existsLS </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::LogManager::existsLS </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
@@ -300,7 +292,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#ae64ef75ca642eee661fb51aa04b6c227">LoggerList</a> log4cxx::LogManager::getCurrentLoggers </td>
+          <td class="memname">LoggerList log4cxx::LogManager::getCurrentLoggers </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -315,8 +307,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a130f9536d86fa4d81fd33b25cd2e0439" name="a130f9536d86fa4d81fd33b25cd2e0439"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a130f9536d86fa4d81fd33b25cd2e0439">&#9670;&#160;</a></span>getLogger() <span class="overload">[1/6]</span></h2>
+<a id="a98a657f2ba0b6f881023def3961ee03f" name="a98a657f2ba0b6f881023def3961ee03f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98a657f2ba0b6f881023def3961ee03f">&#9670;&#160;</a></span>getLogger() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,42 +317,14 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::getLogger </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using the default factory to create it if required. </p>
-<p>Calls <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1">ensureIsConfigured</a></code> passing <code><a class="el" href="classlog4cxx_1_1DefaultConfigurator.html#a879d97599dc6db3558356fa5954689d3">DefaultConfigurator::configure</a></code> to ensure the repository is configured. </p>
-
-</div>
-</div>
-<a id="a63d19d2b2e0c65ea8c6dc386a0bce6e1" name="a63d19d2b2e0c65ea8c6dc386a0bce6e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63d19d2b2e0c65ea8c6dc386a0bce6e1">&#9670;&#160;</a></span>getLogger() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::getLogger </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::LogManager::getLogger </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="logstring_8h.html#a782e95610ad4dd24aee670f3b5846a3b">CFStringRef</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5">spi::LoggerFactoryPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span>&#160;)</td>
+          <td class="paramtype">const spi::LoggerFactoryPtr &amp;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -375,8 +339,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac1c64a1bd2c15d3018f3a022a059074e" name="ac1c64a1bd2c15d3018f3a022a059074e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1c64a1bd2c15d3018f3a022a059074e">&#9670;&#160;</a></span>getLogger() <span class="overload">[3/6]</span></h2>
+<a id="ac6ef0f251195da5fe25124a33e0ae793" name="ac6ef0f251195da5fe25124a33e0ae793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6ef0f251195da5fe25124a33e0ae793">&#9670;&#160;</a></span>getLogger() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,44 +349,14 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::getLogger </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using the default factory to create it if required. </p>
-<p>Calls <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1">ensureIsConfigured</a></code> passing <code><a class="el" href="classlog4cxx_1_1DefaultConfigurator.html#a879d97599dc6db3558356fa5954689d3">DefaultConfigurator::configure</a></code> to ensure the repository is configured. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="com_2foo_2config-qt_8cpp-example.html#_a7">com/foo/config-qt.cpp</a>, <a class="el" href="com_2foo_2config1_8cpp-example.html#_a3">com/foo/config1.cpp</a>, <a class="el" href="com_2foo_2config2_8cpp-example.html#_a5">com/foo/config2.cpp</a>, and <a class="el" href="com_2foo_2config4_8cpp-example.html#_a9">com/foo/config4.cpp</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a2177280f7646ff9a875f85f4001f71af" name="a2177280f7646ff9a875f85f4001f71af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2177280f7646ff9a875f85f4001f71af">&#9670;&#160;</a></span>getLogger() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::getLogger </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::LogManager::getLogger </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5">spi::LoggerFactoryPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span>&#160;)</td>
+          <td class="paramtype">const spi::LoggerFactoryPtr &amp;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -434,11 +368,13 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using <code>factory</code> to create it if required. </p>
 <p>Calls <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1">ensureIsConfigured</a></code> passing <code><a class="el" href="classlog4cxx_1_1DefaultConfigurator.html#a879d97599dc6db3558356fa5954689d3">DefaultConfigurator::configure</a></code> to ensure the repository is configured. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="com_2foo_2config-qt_8cpp-example.html#_a7">com/foo/config-qt.cpp</a>, <a class="el" href="com_2foo_2config1_8cpp-example.html#_a3">com/foo/config1.cpp</a>, <a class="el" href="com_2foo_2config2_8cpp-example.html#_a5">com/foo/config2.cpp</a>, and <a class="el" href="com_2foo_2config4_8cpp-example.html#_a9">com/foo/config4.cpp</a>.</dd>
+</dl>
 
 </div>
 </div>
-<a id="a01c3286df9f120cc1e58df611d4ad797" name="a01c3286df9f120cc1e58df611d4ad797"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01c3286df9f120cc1e58df611d4ad797">&#9670;&#160;</a></span>getLogger() <span class="overload">[5/6]</span></h2>
+<a id="a5dba177993214d8178b22513d9a17834" name="a5dba177993214d8178b22513d9a17834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dba177993214d8178b22513d9a17834">&#9670;&#160;</a></span>getLogger() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -447,42 +383,14 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::getLogger </td>
-          <td>(</td>
-          <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using the default factory to create it if required. </p>
-<p>Calls <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1">ensureIsConfigured</a></code> passing <code><a class="el" href="classlog4cxx_1_1DefaultConfigurator.html#a879d97599dc6db3558356fa5954689d3">DefaultConfigurator::configure</a></code> to ensure the repository is configured. </p>
-
-</div>
-</div>
-<a id="a9f18050f789522513345102ebfd4e48f" name="a9f18050f789522513345102ebfd4e48f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f18050f789522513345102ebfd4e48f">&#9670;&#160;</a></span>getLogger() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::getLogger </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::LogManager::getLogger </td>
           <td>(</td>
           <td class="paramtype">const std::wstring &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5">spi::LoggerFactoryPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span>&#160;)</td>
+          <td class="paramtype">const spi::LoggerFactoryPtr &amp;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -497,8 +405,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae72e96f00c273e984a34282cd1ccaa84" name="ae72e96f00c273e984a34282cd1ccaa84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae72e96f00c273e984a34282cd1ccaa84">&#9670;&#160;</a></span>getLoggerLS() <span class="overload">[1/2]</span></h2>
+<a id="a00ef527cbbaae9ff27d770bac82ba8ef" name="a00ef527cbbaae9ff27d770bac82ba8ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00ef527cbbaae9ff27d770bac82ba8ef">&#9670;&#160;</a></span>getLoggerLS()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,42 +415,14 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::getLoggerLS </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieve the <code>name</code> <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> instance from the <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html">LoggerRepository</a></code> using the default factory to create it if required. </p>
-<p>Calls <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1">ensureIsConfigured</a></code> passing <code><a class="el" href="classlog4cxx_1_1DefaultConfigurator.html#a879d97599dc6db3558356fa5954689d3">DefaultConfigurator::configure</a></code> to ensure the repository is configured. </p>
-
-</div>
-</div>
-<a id="aad50ae01d8fd85d69208b8dff723b9a3" name="aad50ae01d8fd85d69208b8dff723b9a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad50ae01d8fd85d69208b8dff723b9a3">&#9670;&#160;</a></span>getLoggerLS() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::getLoggerLS </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::LogManager::getLoggerLS </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5">spi::LoggerFactoryPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span>&#160;)</td>
+          <td class="paramtype">const spi::LoggerFactoryPtr &amp;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -592,7 +472,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">LoggerPtr</a> log4cxx::LogManager::getRootLogger </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> log4cxx::LogManager::getRootLogger </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -679,8 +559,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d9e4c6ea7b4b8219f53070018040ea5" name="a2d9e4c6ea7b4b8219f53070018040ea5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d9e4c6ea7b4b8219f53070018040ea5">&#9670;&#160;</a></span>setRepositorySelector()</h2>
+<a id="a1b9f3ec8dc5a742979e405db59a6e5e8" name="a1b9f3ec8dc5a742979e405db59a6e5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9f3ec8dc5a742979e405db59a6e5e8">&#9670;&#160;</a></span>setRepositorySelector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -691,7 +571,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::LogManager::setRepositorySelector </td>
           <td>(</td>
-          <td class="paramtype">spi::RepositorySelectorPtr</td>          <td class="paramname"><span class="paramname"><em>selector</em></span>, </td>
+          <td class="paramtype">const spi::RepositorySelectorPtr &amp;</td>          <td class="paramname"><span class="paramname"><em>selector</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

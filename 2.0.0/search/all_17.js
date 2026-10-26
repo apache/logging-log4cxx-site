@@ -31,7 +31,7 @@ var searchData=
   ['methodlocationpatternconverter_2eh_28',['methodlocationpatternconverter.h',['../methodlocationpatternconverter_8h.html',1,'']]],
   ['minimum_29',['minimum',['../classlog4cxx_1_1helpers_1_1StrictMath.html#a612d308d00febe1ec236245a521b65f8',1,'log4cxx::helpers::StrictMath']]],
   ['missing_5flayout_30',['MISSING_LAYOUT',['../classlog4cxx_1_1spi_1_1ErrorCode.html#abb0b7ad2537cdf503d0c21a11b6933f3a8df574548e67ea07cf6dc6e1682ee45f',1,'log4cxx::spi::ErrorCode']]],
-  ['missingresourceexception_31',['MissingResourceException',['../classlog4cxx_1_1helpers_1_1MissingResourceException.html',1,'log4cxx::helpers::MissingResourceException'],['../classlog4cxx_1_1helpers_1_1MissingResourceException.html#a0d4fc201c558a31945a76a54fa41ce3b',1,'log4cxx::helpers::MissingResourceException::MissingResourceException(const LogString &amp;key)'],['../classlog4cxx_1_1helpers_1_1MissingResourceException.html#ae5d1f1d5642b778047b08887a41d1f52',1,'log4cxx::helpers::MissingResourceException::MissingResourceException(const MissingResourceException &amp;src)']]],
+  ['missingresourceexception_31',['MissingResourceException',['../classlog4cxx_1_1helpers_1_1MissingResourceException.html',1,'log4cxx::helpers::MissingResourceException'],['../classlog4cxx_1_1helpers_1_1MissingResourceException.html#a0d4fc201c558a31945a76a54fa41ce3b',1,'log4cxx::helpers::MissingResourceException::MissingResourceException()']]],
   ['mkdirs_32',['mkdirs',['../classlog4cxx_1_1File.html#a575c37fd9d96345f3fadc712449a466f',1,'log4cxx::File']]],
   ['multiple_20processes_33',['Logging With Multiple Processes',['../multiprocess-logging.html',1,'usage-overview']]],
   ['multiprocess_2emd_34',['multiprocess.md',['../multiprocess_8md.html',1,'']]],

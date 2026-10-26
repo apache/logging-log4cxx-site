@@ -144,14 +144,10 @@ Inheritance diagram for log4cxx::helpers::MissingResourceException:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d4fc201c558a31945a76a54fa41ce3b" id="r_a0d4fc201c558a31945a76a54fa41ce3b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0d4fc201c558a31945a76a54fa41ce3b">MissingResourceException</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;key)</td></tr>
-<tr class="memitem:ae5d1f1d5642b778047b08887a41d1f52" id="r_ae5d1f1d5642b778047b08887a41d1f52"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae5d1f1d5642b778047b08887a41d1f52">MissingResourceException</a> (const MissingResourceException &amp;src)</td></tr>
-<tr class="memitem:a503f6590a6285ebfbe183c4a4297234c" id="r_a503f6590a6285ebfbe183c4a4297234c"><td class="memItemLeft"><a class="el" href="#a0d4fc201c558a31945a76a54fa41ce3b">MissingResourceException</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a503f6590a6285ebfbe183c4a4297234c">operator=</a> (const <a class="el" href="#a0d4fc201c558a31945a76a54fa41ce3b">MissingResourceException</a> &amp;)</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Exception"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html">log4cxx::helpers::Exception</a></td></tr>
 <tr class="memitem:acc325b8671b87a3307919e4fd6069ab9 pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_acc325b8671b87a3307919e4fd6069ab9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#acc325b8671b87a3307919e4fd6069ab9">Exception</a> (const char *msg)</td></tr>
 <tr class="memitem:a1eeb9fbdec44913a787d28f00f75ab43 pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_a1eeb9fbdec44913a787d28f00f75ab43"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#a1eeb9fbdec44913a787d28f00f75ab43">Exception</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;msg)</td></tr>
-<tr class="memitem:acd54626e36acd5dbe4b4e12f6df00e54 pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_acd54626e36acd5dbe4b4e12f6df00e54"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#acd54626e36acd5dbe4b4e12f6df00e54">Exception</a> (const Exception &amp;src)</td></tr>
-<tr class="memitem:ab6e49b8c70d5da08e45f4bec6b480775 pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_ab6e49b8c70d5da08e45f4bec6b480775"><td class="memItemLeft"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#acc325b8671b87a3307919e4fd6069ab9">Exception</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#ab6e49b8c70d5da08e45f4bec6b480775">operator=</a> (const <a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#acc325b8671b87a3307919e4fd6069ab9">Exception</a> &amp;src)</td></tr>
-<tr class="memitem:a4527fd9795a4500bec72bb8346478cec pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_a4527fd9795a4500bec72bb8346478cec"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#a4527fd9795a4500bec72bb8346478cec">what</a> () const  throw ()</td></tr>
+<tr class="memitem:ae5bf2d1e078f2cf1ca3f9a85a99a870f pub_methods_classlog4cxx_1_1helpers_1_1Exception" id="r_ae5bf2d1e078f2cf1ca3f9a85a99a870f"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Exception.html#ae5bf2d1e078f2cf1ca3f9a85a99a870f">what</a> () const noexcept override</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -161,7 +157,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0d4fc201c558a31945a76a54fa41ce3b" name="a0d4fc201c558a31945a76a54fa41ce3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d4fc201c558a31945a76a54fa41ce3b">&#9670;&#160;</a></span>MissingResourceException() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4fc201c558a31945a76a54fa41ce3b">&#9670;&#160;</a></span>MissingResourceException()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,41 +166,6 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">log4cxx::helpers::MissingResourceException::MissingResourceException </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae5d1f1d5642b778047b08887a41d1f52" name="ae5d1f1d5642b778047b08887a41d1f52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5d1f1d5642b778047b08887a41d1f52">&#9670;&#160;</a></span>MissingResourceException() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">log4cxx::helpers::MissingResourceException::MissingResourceException </td>
-          <td>(</td>
-          <td class="paramtype">const MissingResourceException &amp;</td>          <td class="paramname"><span class="paramname"><em>src</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a503f6590a6285ebfbe183c4a4297234c" name="a503f6590a6285ebfbe183c4a4297234c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a503f6590a6285ebfbe183c4a4297234c">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#a0d4fc201c558a31945a76a54fa41ce3b">MissingResourceException</a> &amp; log4cxx::helpers::MissingResourceException::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="#a0d4fc201c558a31945a76a54fa41ce3b">MissingResourceException</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

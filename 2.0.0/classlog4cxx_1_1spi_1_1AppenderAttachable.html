@@ -150,20 +150,20 @@ Inheritance diagram for log4cxx::spi::AppenderAttachable:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af97d21cf7ac3b3e732afee24a58e4d49" id="r_af97d21cf7ac3b3e732afee24a58e4d49"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#af97d21cf7ac3b3e732afee24a58e4d49">addAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> newAppender)=0</td></tr>
-<tr class="memdesc:af97d21cf7ac3b3e732afee24a58e4d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an appender.  <br /></td></tr>
+<tr class="memitem:a1b8885053d1ed32d6e56fa0942183115" id="r_a1b8885053d1ed32d6e56fa0942183115"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a1b8885053d1ed32d6e56fa0942183115">addAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;newAppender)=0</td></tr>
+<tr class="memdesc:a1b8885053d1ed32d6e56fa0942183115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an appender.  <br /></td></tr>
 <tr class="memitem:a171fcf5737cd632e6c1568192d3c7ce1" id="r_a171fcf5737cd632e6c1568192d3c7ce1"><td class="memItemLeft">virtual AppenderList&#160;</td><td class="memItemRight"><a class="el" href="#a171fcf5737cd632e6c1568192d3c7ce1">getAllAppenders</a> () const =0</td></tr>
 <tr class="memdesc:a171fcf5737cd632e6c1568192d3c7ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all previously added appenders as an AppenderList.  <br /></td></tr>
 <tr class="memitem:acc6083fb0d08ca3b62a9f4a1bf08717c" id="r_acc6083fb0d08ca3b62a9f4a1bf08717c"><td class="memItemLeft">virtual <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#acc6083fb0d08ca3b62a9f4a1bf08717c">getAppender</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name) const =0</td></tr>
 <tr class="memdesc:acc6083fb0d08ca3b62a9f4a1bf08717c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an appender by name.  <br /></td></tr>
-<tr class="memitem:a14bee34fddc5da5db85ea0212791b311" id="r_a14bee34fddc5da5db85ea0212791b311"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a14bee34fddc5da5db85ea0212791b311">isAttached</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> appender) const =0</td></tr>
-<tr class="memdesc:a14bee34fddc5da5db85ea0212791b311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> if the specified appender is in list of attached appenders, <code>false</code> otherwise.  <br /></td></tr>
+<tr class="memitem:a96757f6aab79a0476e1ff80bf7403306" id="r_a96757f6aab79a0476e1ff80bf7403306"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a96757f6aab79a0476e1ff80bf7403306">isAttached</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;appender) const =0</td></tr>
+<tr class="memdesc:a96757f6aab79a0476e1ff80bf7403306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <code>true</code> if the specified appender is in list of attached appenders, <code>false</code> otherwise.  <br /></td></tr>
 <tr class="memitem:a2ecf8e95263099d65e6256651030aeac" id="r_a2ecf8e95263099d65e6256651030aeac"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a2ecf8e95263099d65e6256651030aeac">removeAllAppenders</a> ()=0</td></tr>
 <tr class="memdesc:a2ecf8e95263099d65e6256651030aeac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all previously added appenders.  <br /></td></tr>
-<tr class="memitem:a012c1fe7b979f4bb520f7e6899977125" id="r_a012c1fe7b979f4bb520f7e6899977125"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a012c1fe7b979f4bb520f7e6899977125">removeAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> appender)=0</td></tr>
-<tr class="memdesc:a012c1fe7b979f4bb520f7e6899977125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the appender passed as parameter from the list of appenders.  <br /></td></tr>
-<tr class="memitem:af9a793dd93782be7455e2219e7d3097a" id="r_af9a793dd93782be7455e2219e7d3097a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#af9a793dd93782be7455e2219e7d3097a">removeAppender</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name)=0</td></tr>
-<tr class="memdesc:af9a793dd93782be7455e2219e7d3097a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the appender with the name passed as parameter from the list of appenders.  <br /></td></tr>
+<tr class="memitem:a9d1f4ef0dac7191eb8037343155de271" id="r_a9d1f4ef0dac7191eb8037343155de271"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a9d1f4ef0dac7191eb8037343155de271">removeAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;appender)=0</td></tr>
+<tr class="memdesc:a9d1f4ef0dac7191eb8037343155de271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove <code>appender</code> from the list of appenders.  <br /></td></tr>
+<tr class="memitem:ace80f03738c2e0cdbeeb0ddfa04e5b1e" id="r_ace80f03738c2e0cdbeeb0ddfa04e5b1e"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ace80f03738c2e0cdbeeb0ddfa04e5b1e">removeAppender</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name)=0</td></tr>
+<tr class="memdesc:ace80f03738c2e0cdbeeb0ddfa04e5b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the <code>name</code> appender from the list of appenders.  <br /></td></tr>
 <tr class="memitem:a88fc698e797ec5ef883514e0e44d84f8" id="r_a88fc698e797ec5ef883514e0e44d84f8"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a88fc698e797ec5ef883514e0e44d84f8">replaceAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;oldAppender, const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;newAppender)=0</td></tr>
 <tr class="memdesc:a88fc698e797ec5ef883514e0e44d84f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace <code>oldAppender</code> with <code>newAppender</code>.  <br /></td></tr>
 <tr class="memitem:ac55285fd834f7b69f709bd4cad136c9e" id="r_ac55285fd834f7b69f709bd4cad136c9e"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac55285fd834f7b69f709bd4cad136c9e">replaceAppenders</a> (const AppenderList &amp;newList)=0</td></tr>
@@ -204,8 +204,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="af97d21cf7ac3b3e732afee24a58e4d49" name="af97d21cf7ac3b3e732afee24a58e4d49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af97d21cf7ac3b3e732afee24a58e4d49">&#9670;&#160;</a></span>addAppender()</h2>
+<a id="a1b8885053d1ed32d6e56fa0942183115" name="a1b8885053d1ed32d6e56fa0942183115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b8885053d1ed32d6e56fa0942183115">&#9670;&#160;</a></span>addAppender()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +216,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void log4cxx::spi::AppenderAttachable::addAppender </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a></td>          <td class="paramname"><span class="paramname"><em>newAppender</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>newAppender</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -229,7 +229,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Add an appender. </p>
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#ab4a83d26aa49533f59c8a03c8b13d899">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a34648d972e80273548f19246f15985fa">log4cxx::helpers::AppenderAttachableImpl</a>, and <a class="el" href="classlog4cxx_1_1Logger.html#afb398258ec8033737ed95aed016daf6c">log4cxx::Logger</a>.</p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#a933e59bf07c4e53cd720216e2e076588">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a25b83508d3783bb3b4fe85af345757e6">log4cxx::helpers::AppenderAttachableImpl</a>, and <a class="el" href="classlog4cxx_1_1Logger.html#a60b676705af73b37c317a6b72c7478c1">log4cxx::Logger</a>.</p>
 
 </div>
 </div>
@@ -291,8 +291,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a14bee34fddc5da5db85ea0212791b311" name="a14bee34fddc5da5db85ea0212791b311"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14bee34fddc5da5db85ea0212791b311">&#9670;&#160;</a></span>isAttached()</h2>
+<a id="a96757f6aab79a0476e1ff80bf7403306" name="a96757f6aab79a0476e1ff80bf7403306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96757f6aab79a0476e1ff80bf7403306">&#9670;&#160;</a></span>isAttached()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +303,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual bool log4cxx::spi::AppenderAttachable::isAttached </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a></td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -316,7 +316,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Returns <code>true</code> if the specified appender is in list of attached appenders, <code>false</code> otherwise. </p>
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#ae88546fb9d37850638d50b1645b99469">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a82e2b2aa75d7eddcc1796dccdc709d72">log4cxx::helpers::AppenderAttachableImpl</a>, and <a class="el" href="classlog4cxx_1_1Logger.html#a3a46bce75a21a7a7bc8d8f3f9ba2fd06">log4cxx::Logger</a>.</p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#a84b78f0612488186159f0a67e2c947aa">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#acb0accba42f3879a2e7fe2c8ff23b374">log4cxx::helpers::AppenderAttachableImpl</a>, and <a class="el" href="classlog4cxx_1_1Logger.html#adec57e453bcb04c5fb53f48785564047">log4cxx::Logger</a>.</p>
 
 </div>
 </div>
@@ -349,8 +349,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a012c1fe7b979f4bb520f7e6899977125" name="a012c1fe7b979f4bb520f7e6899977125"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a012c1fe7b979f4bb520f7e6899977125">&#9670;&#160;</a></span>removeAppender() <span class="overload">[1/2]</span></h2>
+<a id="a9d1f4ef0dac7191eb8037343155de271" name="a9d1f4ef0dac7191eb8037343155de271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d1f4ef0dac7191eb8037343155de271">&#9670;&#160;</a></span>removeAppender() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -359,9 +359,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void log4cxx::spi::AppenderAttachable::removeAppender </td>
+          <td class="memname">virtual bool log4cxx::spi::AppenderAttachable::removeAppender </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a></td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -372,14 +372,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove the appender passed as parameter from the list of appenders. </p>
+<p>Remove <code>appender</code> from the list of appenders. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if successful. </dd></dl>
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#a71c0a88bc215109bbb74932cf1f4106a">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a1e37d94663a4c7f228e180d8543960bf">log4cxx::helpers::AppenderAttachableImpl</a>, and <a class="el" href="classlog4cxx_1_1Logger.html#af20ced5b18e1efef6efd9df353b6ecdf">log4cxx::Logger</a>.</p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#a4b515d29110f15ebf3fcf6f693038815">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#af4bb6a42e127139c0dd7a4c3fa9847b5">log4cxx::helpers::AppenderAttachableImpl</a>, and <a class="el" href="classlog4cxx_1_1Logger.html#a0e0bb556480e5afb5d8acbaa88638028">log4cxx::Logger</a>.</p>
 
 </div>
 </div>
-<a id="af9a793dd93782be7455e2219e7d3097a" name="af9a793dd93782be7455e2219e7d3097a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9a793dd93782be7455e2219e7d3097a">&#9670;&#160;</a></span>removeAppender() <span class="overload">[2/2]</span></h2>
+<a id="ace80f03738c2e0cdbeeb0ddfa04e5b1e" name="ace80f03738c2e0cdbeeb0ddfa04e5b1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace80f03738c2e0cdbeeb0ddfa04e5b1e">&#9670;&#160;</a></span>removeAppender() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -388,7 +389,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void log4cxx::spi::AppenderAttachable::removeAppender </td>
+          <td class="memname">virtual bool log4cxx::spi::AppenderAttachable::removeAppender </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
@@ -401,9 +402,10 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove the appender with the name passed as parameter from the list of appenders. </p>
+<p>Remove the <code>name</code> appender from the list of appenders. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if successful. </dd></dl>
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#af7a2982bfad1d9cda6556dccae8767d8">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#aff52a7f3a227f12709b73e7c061838d3">log4cxx::helpers::AppenderAttachableImpl</a>, and <a class="el" href="classlog4cxx_1_1Logger.html#a539923b3bd74ea1b0ea5476840de9244">log4cxx::Logger</a>.</p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#af2811561ac52b5883334f39696624e24">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1helpers_1_1AppenderAttachableImpl.html#a23281eb9a4befef937d8f10c3a6f77be">log4cxx::helpers::AppenderAttachableImpl</a>, and <a class="el" href="classlog4cxx_1_1Logger.html#a5f1aeecc902d86b3c1e9c3ef5f36d046">log4cxx::Logger</a>.</p>
 
 </div>
 </div>

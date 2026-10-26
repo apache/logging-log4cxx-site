@@ -147,8 +147,8 @@ Inheritance diagram for log4cxx::helpers::FileOutputStream:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9171ab291c7cdca5433756711731dcf9" id="r_a9171ab291c7cdca5433756711731dcf9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9171ab291c7cdca5433756711731dcf9">FileOutputStream</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;filename, bool append=false)</td></tr>
-<tr class="memitem:a317697f01007db312f4c7ebe84936ee2" id="r_a317697f01007db312f4c7ebe84936ee2"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a317697f01007db312f4c7ebe84936ee2">FileOutputStream</a> (const logchar *filename, bool append=false)</td></tr>
+<tr class="memitem:a85eee6c4ad2f0013638914b84eb97e1e" id="r_a85eee6c4ad2f0013638914b84eb97e1e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a85eee6c4ad2f0013638914b84eb97e1e">FileOutputStream</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;filename, bool append=false, bool lazyOpen=false)</td></tr>
+<tr class="memdesc:a85eee6c4ad2f0013638914b84eb97e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open <code>filename</code> unless <code>lazyOpen</code> is true, in which case the file is opened on first write (or when <a class="el" href="#a040fcfc5109e51a0f375d2e34f6da0f7">getFilePtr</a> is called) and an existing file is truncated immediately if <code>append</code> is false.  <br /></td></tr>
 <tr class="memitem:aee56a84884c4a3948b5f76332acb7b65" id="r_aee56a84884c4a3948b5f76332acb7b65"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#aee56a84884c4a3948b5f76332acb7b65">~FileOutputStream</a> ()</td></tr>
 <tr class="memitem:a9b4a8dd3d45cc98ffb3c13f8bb891d0c" id="r_a9b4a8dd3d45cc98ffb3c13f8bb891d0c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b4a8dd3d45cc98ffb3c13f8bb891d0c">close</a> () override</td></tr>
 <tr class="memitem:a9901e4b9dbc0eba0f8991dc59d46f97c" id="r_a9901e4b9dbc0eba0f8991dc59d46f97c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9901e4b9dbc0eba0f8991dc59d46f97c">flush</a> () override</td></tr>
@@ -175,9 +175,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classlog4cxx_1_1helpers_1_1OutputStream.html" title="Abstract class for writing to character streams.">OutputStream</a> implemented on top of APR file IO. </p>
+<p>This class assumes a single active thread: the file is opened lazily without synchronization. The guarantee is provided by the mutex held in <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ac4e798eb488e305d85d1d3ea102b4917" title="Call AppenderSkeleton::doAppendImpl after acquiring a lock that prevents other threads from concurren...">AppenderSkeleton::doAppend</a>. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9171ab291c7cdca5433756711731dcf9" name="a9171ab291c7cdca5433756711731dcf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9171ab291c7cdca5433756711731dcf9">&#9670;&#160;</a></span>FileOutputStream() <span class="overload">[1/2]</span></h2>
+<a id="a85eee6c4ad2f0013638914b84eb97e1e" name="a85eee6c4ad2f0013638914b84eb97e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85eee6c4ad2f0013638914b84eb97e1e">&#9670;&#160;</a></span>FileOutputStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,31 +191,17 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>append</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a317697f01007db312f4c7ebe84936ee2" name="a317697f01007db312f4c7ebe84936ee2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a317697f01007db312f4c7ebe84936ee2">&#9670;&#160;</a></span>FileOutputStream() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">log4cxx::helpers::FileOutputStream::FileOutputStream </td>
-          <td>(</td>
-          <td class="paramtype">const logchar *</td>          <td class="paramname"><span class="paramname"><em>filename</em></span>, </td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>append</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>append</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>lazyOpen</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Open <code>filename</code> unless <code>lazyOpen</code> is true, in which case the file is opened on first write (or when <a class="el" href="#a040fcfc5109e51a0f375d2e34f6da0f7">getFilePtr</a> is called) and an existing file is truncated immediately if <code>append</code> is false. </p>
 
 </div>
 </div>

@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('custom-appende
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> append( <span class="keyword">const</span> <a id="_a6" name="_a6"></a><a class="code hl_typedef" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">log4cxx::spi::LoggingEventPtr</a>&amp; event )<span class="keyword"> override </span>{</div>
+<div class="line">    <span class="keywordtype">void</span> append( <span class="keyword">const</span> <a id="_a6" name="_a6"></a><a class="code hl_typedef" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">log4cxx::spi::LoggingEventPtr</a>&amp; )<span class="keyword"> override </span>{</div>
 <div class="line">        <span class="comment">// This gets called whenever there is a valid event for our appender.</span></div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -186,6 +186,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('custom-appende
 <div class="line">            ))</div>
 <div class="line">        {</div>
 <div class="line">            <span class="comment">// Do something with the &#39;value&#39; here.</span></div>
+<div class="line">            (void)value;</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">};</div>
@@ -194,33 +195,33 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('custom-appende
 <div class="line"> </div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv )</div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    LOG4CXX_NS::xml::DOMConfigurator::configure( <span class="stringliteral">&quot;custom-appender.xml&quot;</span> );</div>
 <div class="line"> </div>
-<div class="line">    <a id="_a10" name="_a10"></a><a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a> rootLogger = <a id="a11" name="a11"></a><a class="code hl_function" href="classlog4cxx_1_1Logger.html#ac53c8f83b37b20ff4b18ee87b772be25">log4cxx::Logger::getRootLogger</a>();</div>
-<div class="line">    <a class="code hl_typedef" href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a> nullLogger = <a id="a12" name="a12"></a><a class="code hl_function" href="classlog4cxx_1_1Logger.html#ab2d1e6be52dbe1bc81e01fd70a755a63">log4cxx::Logger::getLogger</a>( <span class="stringliteral">&quot;NullLogger&quot;</span> );</div>
+<div class="line">    <a id="_a10" name="_a10"></a><a class="code hl_typedef" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">log4cxx::LoggerPtr</a> rootLogger = <a id="a11" name="a11"></a><a class="code hl_function" href="classlog4cxx_1_1Logger.html#ac53c8f83b37b20ff4b18ee87b772be25">log4cxx::Logger::getRootLogger</a>();</div>
+<div class="line">    <a class="code hl_typedef" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">log4cxx::LoggerPtr</a> nullLogger = <a id="a12" name="a12"></a><a class="code hl_function" href="classlog4cxx_1_1Logger.html#ab2d1e6be52dbe1bc81e01fd70a755a63">log4cxx::Logger::getLogger</a>( <span class="stringliteral">&quot;NullLogger&quot;</span> );</div>
 <div class="line"> </div>
 <div class="line">    <a id="_a13" name="_a13"></a><a class="code hl_define" href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a>( rootLogger, <span class="stringliteral">&quot;This is some root message&quot;</span> );</div>
 <div class="line">    <a class="code hl_define" href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a>( nullLogger, <span class="stringliteral">&quot;This message will be discarded&quot;</span> );</div>
 <div class="line">}</div>
 <div class="ttc" id="aappenderskeleton_8h_html"><div class="ttname"><a href="appenderskeleton_8h.html">appenderskeleton.h</a></div></div>
 <div class="ttc" id="abasicconfigurator_8h_html"><div class="ttname"><a href="basicconfigurator_8h.html">basicconfigurator.h</a></div></div>
-<div class="ttc" id="aclasslog4cxx_1_1AppenderSkeleton_html"><div class="ttname"><a href="classlog4cxx_1_1AppenderSkeleton.html">log4cxx::AppenderSkeleton</a></div><div class="ttdoc">Implementation base class for all appenders.</div><div class="ttdef"><b>Definition</b> appenderskeleton.h:40</div></div>
+<div class="ttc" id="aclasslog4cxx_1_1AppenderSkeleton_html"><div class="ttname"><a href="classlog4cxx_1_1AppenderSkeleton.html">log4cxx::AppenderSkeleton</a></div><div class="ttdoc">Implementation base class for all appenders.</div><div class="ttdef"><b>Definition</b> appenderskeleton.h:39</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1Logger_html_ab2d1e6be52dbe1bc81e01fd70a755a63"><div class="ttname"><a href="classlog4cxx_1_1Logger.html#ab2d1e6be52dbe1bc81e01fd70a755a63">log4cxx::Logger::getLogger</a></div><div class="ttdeci">static LoggerPtr getLogger(const std::string &amp;name)</div><div class="ttdoc">Retrieve a logger by name in current encoding.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1Logger_html_ac53c8f83b37b20ff4b18ee87b772be25"><div class="ttname"><a href="classlog4cxx_1_1Logger.html#ac53c8f83b37b20ff4b18ee87b772be25">log4cxx::Logger::getRootLogger</a></div><div class="ttdeci">static LoggerPtr getRootLogger()</div><div class="ttdoc">Retrieve the root logger.</div></div>
 <div class="ttc" id="aclasslog4cxx_1_1helpers_1_1StringHelper_html_a554ae8afa4efbacac01f5cde47ae3b05"><div class="ttname"><a href="classlog4cxx_1_1helpers_1_1StringHelper.html#a554ae8afa4efbacac01f5cde47ae3b05">log4cxx::helpers::StringHelper::equalsIgnoreCase</a></div><div class="ttdeci">static bool equalsIgnoreCase(const LogString &amp;s, const logchar *upper, const logchar *lower)</div><div class="ttdoc">Is each character in s identical to the character at the corresponding position in either upper or lo...</div></div>
 <div class="ttc" id="adomconfigurator_8h_html"><div class="ttname"><a href="domconfigurator_8h.html">domconfigurator.h</a></div></div>
-<div class="ttc" id="agroup__LoggingMacros_html_ga61dfed4f5eca82725a90a331f37857d3"><div class="ttname"><a href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a></div><div class="ttdeci">#define LOG4CXX_INFO(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:1976</div></div>
+<div class="ttc" id="agroup__LoggingMacros_html_ga61dfed4f5eca82725a90a331f37857d3"><div class="ttname"><a href="group__LoggingMacros.html#ga61dfed4f5eca82725a90a331f37857d3">LOG4CXX_INFO</a></div><div class="ttdeci">#define LOG4CXX_INFO(logger, message)</div><div class="ttdoc">Add a new logging event containing message to attached appender(s) if logger is enabled for INFO even...</div><div class="ttdef"><b>Definition</b> log4cxx/logger.h:1422</div></div>
 <div class="ttc" id="anamespacelog4cxx_1_1spi_html_aae6992e1b33222c26bdc1173b6aedc6c"><div class="ttname"><a href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">log4cxx::spi::LoggingEventPtr</a></div><div class="ttdeci">std::shared_ptr&lt; LoggingEvent &gt; LoggingEventPtr</div><div class="ttdef"><b>Definition</b> appender.h:32</div></div>
 <div class="ttc" id="anamespacelog4cxx_html_aa2308ed05fef2a1366066cb38b177e94"><div class="ttname"><a href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">log4cxx::LogString</a></div><div class="ttdeci">std::basic_string&lt; logchar &gt; LogString</div><div class="ttdef"><b>Definition</b> logstring.h:51</div></div>
-<div class="ttc" id="anamespacelog4cxx_html_acd073adf77cc8545b10ac024a474be0d"><div class="ttname"><a href="namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d">log4cxx::LoggerPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Logger &gt; LoggerPtr</div><div class="ttdef"><b>Definition</b> logmanager.h:28</div></div>
-<div class="ttc" id="aobject_8h_html_a642180530328ec0378468edda5bc94e2"><div class="ttname"><a href="object_8h.html#a642180530328ec0378468edda5bc94e2">LOG4CXX_CAST_ENTRY</a></div><div class="ttdeci">#define LOG4CXX_CAST_ENTRY(Interface)</div><div class="ttdef"><b>Definition</b> object.h:154</div></div>
+<div class="ttc" id="anamespacelog4cxx_html_ad522ae36a5a181a63e3f80503a5796a0"><div class="ttname"><a href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">log4cxx::LoggerPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Logger &gt; LoggerPtr</div><div class="ttdef"><b>Definition</b> provisionnode.h:28</div></div>
+<div class="ttc" id="aobject_8h_html_a642180530328ec0378468edda5bc94e2"><div class="ttname"><a href="object_8h.html#a642180530328ec0378468edda5bc94e2">LOG4CXX_CAST_ENTRY</a></div><div class="ttdeci">#define LOG4CXX_CAST_ENTRY(Interface)</div><div class="ttdef"><b>Definition</b> object.h:153</div></div>
 <div class="ttc" id="aobject_8h_html_a7407bf6e747dc0c5db5208a4ae4a07e6"><div class="ttname"><a href="object_8h.html#a7407bf6e747dc0c5db5208a4ae4a07e6">IMPLEMENT_LOG4CXX_OBJECT</a></div><div class="ttdeci">#define IMPLEMENT_LOG4CXX_OBJECT(object)</div><div class="ttdef"><b>Definition</b> object.h:62</div></div>
-<div class="ttc" id="aobject_8h_html_a917a7d053853b1ffdf45a3d91aeca4f1"><div class="ttname"><a href="object_8h.html#a917a7d053853b1ffdf45a3d91aeca4f1">END_LOG4CXX_CAST_MAP</a></div><div class="ttdeci">#define END_LOG4CXX_CAST_MAP()</div><div class="ttdef"><b>Definition</b> object.h:148</div></div>
+<div class="ttc" id="aobject_8h_html_a917a7d053853b1ffdf45a3d91aeca4f1"><div class="ttname"><a href="object_8h.html#a917a7d053853b1ffdf45a3d91aeca4f1">END_LOG4CXX_CAST_MAP</a></div><div class="ttdeci">#define END_LOG4CXX_CAST_MAP()</div><div class="ttdef"><b>Definition</b> object.h:147</div></div>
 <div class="ttc" id="aobject_8h_html_a9e129ec12609d98bb2a10d15b46709ba"><div class="ttname"><a href="object_8h.html#a9e129ec12609d98bb2a10d15b46709ba">DECLARE_LOG4CXX_OBJECT</a></div><div class="ttdeci">#define DECLARE_LOG4CXX_OBJECT(object)</div><div class="ttdef"><b>Definition</b> object.h:41</div></div>
-<div class="ttc" id="aobject_8h_html_ab14dc1a75d63a11359c8861a59786abc"><div class="ttname"><a href="object_8h.html#ab14dc1a75d63a11359c8861a59786abc">LOG4CXX_CAST_ENTRY_CHAIN</a></div><div class="ttdeci">#define LOG4CXX_CAST_ENTRY_CHAIN(Interface)</div><div class="ttdef"><b>Definition</b> object.h:160</div></div>
-<div class="ttc" id="aobject_8h_html_ac8ff8f70159e03fe7d8c4aa743cc9cda"><div class="ttname"><a href="object_8h.html#ac8ff8f70159e03fe7d8c4aa743cc9cda">BEGIN_LOG4CXX_CAST_MAP</a></div><div class="ttdeci">#define BEGIN_LOG4CXX_CAST_MAP()</div><div class="ttdef"><b>Definition</b> object.h:142</div></div>
+<div class="ttc" id="aobject_8h_html_ab14dc1a75d63a11359c8861a59786abc"><div class="ttname"><a href="object_8h.html#ab14dc1a75d63a11359c8861a59786abc">LOG4CXX_CAST_ENTRY_CHAIN</a></div><div class="ttdeci">#define LOG4CXX_CAST_ENTRY_CHAIN(Interface)</div><div class="ttdef"><b>Definition</b> object.h:159</div></div>
+<div class="ttc" id="aobject_8h_html_ac8ff8f70159e03fe7d8c4aa743cc9cda"><div class="ttname"><a href="object_8h.html#ac8ff8f70159e03fe7d8c4aa743cc9cda">BEGIN_LOG4CXX_CAST_MAP</a></div><div class="ttdeci">#define BEGIN_LOG4CXX_CAST_MAP()</div><div class="ttdef"><b>Definition</b> object.h:141</div></div>
 <div class="ttc" id="astringhelper_8h_html"><div class="ttname"><a href="stringhelper_8h.html">stringhelper.h</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->

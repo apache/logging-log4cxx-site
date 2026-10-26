@@ -28,10 +28,8 @@ var hierarchy =
             [ "log4cxx::helpers::ConnectException", "classlog4cxx_1_1helpers_1_1ConnectException.html", null ]
           ] ]
         ] ],
-        [ "log4cxx::helpers::IllegalMonitorStateException", "classlog4cxx_1_1helpers_1_1IllegalMonitorStateException.html", null ],
         [ "log4cxx::helpers::IllegalStateException", "classlog4cxx_1_1helpers_1_1IllegalStateException.html", null ],
         [ "log4cxx::helpers::InstantiationException", "classlog4cxx_1_1helpers_1_1InstantiationException.html", null ],
-        [ "log4cxx::helpers::InterruptedException", "classlog4cxx_1_1helpers_1_1InterruptedException.html", null ],
         [ "log4cxx::helpers::MissingResourceException", "classlog4cxx_1_1helpers_1_1MissingResourceException.html", null ],
         [ "log4cxx::helpers::NoSuchElementException", "classlog4cxx_1_1helpers_1_1NoSuchElementException.html", null ],
         [ "log4cxx::helpers::PoolException", "classlog4cxx_1_1helpers_1_1PoolException.html", null ],
@@ -41,8 +39,6 @@ var hierarchy =
           [ "log4cxx::helpers::NullPointerException", "classlog4cxx_1_1helpers_1_1NullPointerException.html", null ]
         ] ],
         [ "log4cxx::helpers::SubProcessFailure", "classlog4cxx_1_1helpers_1_1SubProcessFailure.html", null ],
-        [ "log4cxx::helpers::ThreadException", "classlog4cxx_1_1helpers_1_1ThreadException.html", null ],
-        [ "log4cxx::helpers::TranscoderException", "classlog4cxx_1_1helpers_1_1TranscoderException.html", null ],
         [ "log4cxx::helpers::UnknownHostException", "classlog4cxx_1_1helpers_1_1UnknownHostException.html", null ]
       ] ]
     ] ],

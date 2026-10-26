@@ -1,7 +1,9 @@
 var logmanager_8h =
 [
     [ "log4cxx::LogManager", "classlog4cxx_1_1LogManager.html", null ],
-    [ "log4cxx::spi::LoggerFactoryPtr", "namespacelog4cxx_1_1spi.html#a1ecb69c51265df069784fb6bde79dae5", null ],
-    [ "log4cxx::LoggerList", "namespacelog4cxx.html#ae64ef75ca642eee661fb51aa04b6c227", null ],
-    [ "log4cxx::LoggerPtr", "namespacelog4cxx.html#acd073adf77cc8545b10ac024a474be0d", null ]
+    [ "log4cxx::LOG4CXX_LIST_DEF", "namespacelog4cxx.html#ae273fb0f54f87928855e6e11e8d5297c", null ],
+    [ "log4cxx::LOG4CXX_PTR_DEF", "namespacelog4cxx.html#aefd002553075ef58ba2c92c5dc152fb1", null ],
+    [ "log4cxx::spi::LOG4CXX_PTR_DEF", "namespacelog4cxx_1_1spi.html#a3c35d3e407c765d271b3bfc943038d61", null ],
+    [ "log4cxx::spi::LOG4CXX_PTR_DEF", "namespacelog4cxx_1_1spi.html#a499039308bf624c907892022691032f7", null ],
+    [ "log4cxx::spi::LOG4CXX_PTR_DEF", "namespacelog4cxx_1_1spi.html#af9f264bce01afa0cf9fff33dda293d8a", null ]
 ];

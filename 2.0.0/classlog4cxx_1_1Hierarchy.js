@@ -9,8 +9,7 @@ var classlog4cxx_1_1Hierarchy =
     [ "fireAddAppenderEvent", "classlog4cxx_1_1Hierarchy.html#a7bcae88dfffa9a653062ec74d82eb1d4", null ],
     [ "fireRemoveAppenderEvent", "classlog4cxx_1_1Hierarchy.html#afbaf451978fb8ca7f29a23c80f83d4f0", null ],
     [ "getCurrentLoggers", "classlog4cxx_1_1Hierarchy.html#a3c3bb2d633719f91cf718ba6ca82617b", null ],
-    [ "getLogger", "classlog4cxx_1_1Hierarchy.html#a620aa936bbdfc1636970dc357ecf57c8", null ],
-    [ "getLogger", "classlog4cxx_1_1Hierarchy.html#af3f382ffa3df79b5acbf88ff11e9d898", null ],
+    [ "getLogger", "classlog4cxx_1_1Hierarchy.html#acd165c6f0090da9d405e7cfcf364a752", null ],
     [ "getRootLogger", "classlog4cxx_1_1Hierarchy.html#a4a9074136800768ade62f6e0add7a20a", null ],
     [ "getThreshold", "classlog4cxx_1_1Hierarchy.html#a57ad15e850836ed445f211d256e11ecb", null ],
     [ "isConfigured", "classlog4cxx_1_1Hierarchy.html#ab3274a017a533e6dd3b637896efdeef0", null ],
@@ -22,5 +21,5 @@ var classlog4cxx_1_1Hierarchy =
     [ "setThreshold", "classlog4cxx_1_1Hierarchy.html#a6a80bc2f5fdab4ababc731224952d8ab", null ],
     [ "setThreshold", "classlog4cxx_1_1Hierarchy.html#ae9972356bd2073ec1c4fcf24ccc21771", null ],
     [ "shutdown", "classlog4cxx_1_1Hierarchy.html#afd118ef62597d91a08f3a31e6d75c6e9", null ],
-    [ "updateChildren", "classlog4cxx_1_1Hierarchy.html#a9836b2763eb49d6bb67639feb93e5ab8", null ]
+    [ "updateChildren", "classlog4cxx_1_1Hierarchy.html#a8d327735d323ca5084d8779a765a5146", null ]
 ];

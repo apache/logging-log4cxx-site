@@ -9,7 +9,6 @@ var classlog4cxx_1_1WriterAppender =
     [ "append", "classlog4cxx_1_1WriterAppender.html#a5cf4f35b10b1480d91667a0cb6d1285a", null ],
     [ "checkEntryConditions", "classlog4cxx_1_1WriterAppender.html#ae3e57b01ceb856933ad9008b7da2aa23", null ],
     [ "close", "classlog4cxx_1_1WriterAppender.html#ac3bef44d27707e1100538a789dd81a30", null ],
-    [ "createWriter", "classlog4cxx_1_1WriterAppender.html#afcd3294bc2782905fb4ab124f94fa65a", null ],
     [ "getEncoding", "classlog4cxx_1_1WriterAppender.html#a0a7936961e28c1d61469039193ae5482", null ],
     [ "getImmediateFlush", "classlog4cxx_1_1WriterAppender.html#aa75377a1f40e3f6021d584e8e85f7a53", null ],
     [ "requiresLayout", "classlog4cxx_1_1WriterAppender.html#a96cf8d9a7af09d7f360e274948058f39", null ],
