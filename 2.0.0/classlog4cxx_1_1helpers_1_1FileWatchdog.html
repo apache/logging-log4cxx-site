@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0dbb1fcd01be5613cf6642f3cf4b4a90" id="r_a0dbb1fcd01be5613cf6642f3cf4b4a90"><td class="memItemLeft">FileWatchdogPtr&#160;</td><td class="memItemRight"><a class="el" href="#a0dbb1fcd01be5613cf6642f3cf4b4a90">getSharedPtr</a> ()</td></tr>
 <tr class="memdesc:a0dbb1fcd01be5613cf6642f3cf4b4a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shareable pointer to this.  <br /></td></tr>
 <tr class="memitem:aef64749933123e64c26ae81390a65fb3" id="r_aef64749933123e64c26ae81390a65fb3"><td class="memItemLeft"><a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight"><a class="el" href="#aef64749933123e64c26ae81390a65fb3">getStatus</a> ()</td></tr>
-<tr class="memdesc:aef64749933123e64c26ae81390a65fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The result from the most recent call to <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a1ba2b4e823c34abca73fd529d36ef483" title="Read configuration from configFileName.">spi::Configurator::doConfigure</a>.  <br /></td></tr>
+<tr class="memdesc:aef64749933123e64c26ae81390a65fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The result from the most recent call to <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#aa6543ce79c31cf638ae4d956dd799d39" title="Apply the directives in configFileName to target.">spi::Configurator::doConfigure</a>.  <br /></td></tr>
 <tr class="memitem:a90e8e68d4bb92b6ae13cdd433d42cf02" id="r_a90e8e68d4bb92b6ae13cdd433d42cf02"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a90e8e68d4bb92b6ae13cdd433d42cf02">setDelay</a> (long millisecondDelay)</td></tr>
 <tr class="memdesc:a90e8e68d4bb92b6ae13cdd433d42cf02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait <code>millisecondDelay</code> between each check for file changes.  <br /></td></tr>
 <tr class="memitem:acd993ba9603393f5152615ef1d8bf955" id="r_acd993ba9603393f5152615ef1d8bf955"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acd993ba9603393f5152615ef1d8bf955">setFile</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;filename)</td></tr>
@@ -170,7 +170,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a22e99d3a638605e3397a0ba49ae394eb" id="r_a22e99d3a638605e3397a0ba49ae394eb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a22e99d3a638605e3397a0ba49ae394eb">FileWatchdog</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;filename, const spi::ConfiguratorPtr &amp;processor={}, const <a class="el" href="namespacelog4cxx_1_1spi.html#a601415735b45ce1d45c7a3c45d797b37">spi::LoggerRepositoryPtr</a> &amp;target={})</td></tr>
 <tr class="memdesc:a22e99d3a638605e3397a0ba49ae394eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monitors <code>filename</code> and optionally uses <code>processor</code> to configure <code>target</code>.  <br /></td></tr>
 <tr class="memitem:a74277a8982d3fe8c80a98337178d54cb" id="r_a74277a8982d3fe8c80a98337178d54cb"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a74277a8982d3fe8c80a98337178d54cb">doOnChange</a> ()</td></tr>
-<tr class="memdesc:a74277a8982d3fe8c80a98337178d54cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a1ba2b4e823c34abca73fd529d36ef483" title="Read configuration from configFileName.">spi::Configurator::doConfigure</a> if a processor has been provided.  <br /></td></tr>
+<tr class="memdesc:a74277a8982d3fe8c80a98337178d54cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#aa6543ce79c31cf638ae4d956dd799d39" title="Apply the directives in configFileName to target.">spi::Configurator::doConfigure</a> if a processor has been provided.  <br /></td></tr>
 <tr class="memitem:a04d22c14940ed109b6e5a63660931d8a" id="r_a04d22c14940ed109b6e5a63660931d8a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a04d22c14940ed109b6e5a63660931d8a">checkAndConfigure</a> ()</td></tr>
 <tr class="memdesc:a04d22c14940ed109b6e5a63660931d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="#a74277a8982d3fe8c80a98337178d54cb" title="Call spi::Configurator::doConfigure if a processor has been provided.">doOnChange()</a> if the watched file has changed.  <br /></td></tr>
 <tr class="memitem:a44c38e1ebb57f9b34f01efa8a05ea788" id="r_a44c38e1ebb57f9b34f01efa8a05ea788"><td class="memItemLeft">const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a44c38e1ebb57f9b34f01efa8a05ea788">file</a> ()</td></tr>
@@ -291,7 +291,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Call <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a1ba2b4e823c34abca73fd529d36ef483" title="Read configuration from configFileName.">spi::Configurator::doConfigure</a> if a processor has been provided. </p>
+<p>Call <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#aa6543ce79c31cf638ae4d956dd799d39" title="Apply the directives in configFileName to target.">spi::Configurator::doConfigure</a> if a processor has been provided. </p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The result from the most recent call to <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a1ba2b4e823c34abca73fd529d36ef483" title="Read configuration from configFileName.">spi::Configurator::doConfigure</a>. </p>
+<p>The result from the most recent call to <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#aa6543ce79c31cf638ae4d956dd799d39" title="Apply the directives in configFileName to target.">spi::Configurator::doConfigure</a>. </p>
 
 </div>
 </div>

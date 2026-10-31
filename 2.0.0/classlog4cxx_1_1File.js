@@ -6,7 +6,7 @@ var classlog4cxx_1_1File =
     [ "File", "classlog4cxx_1_1File.html#a01b90ebb41b888737854583bf37d87a3", null ],
     [ "File", "classlog4cxx_1_1File.html#a812bb7f16669dd4ca9a4bb48685d0102", null ],
     [ "File", "classlog4cxx_1_1File.html#a78eddfc89c7d35a8cc5863f527b38258", null ],
-    [ "File", "classlog4cxx_1_1File.html#aa78c6705d96c63636de3b154830630c1", null ],
+    [ "File", "classlog4cxx_1_1File.html#aae2583e2997773b808acc5af23e5611a", null ],
     [ "~File", "classlog4cxx_1_1File.html#a760c9b21ddd193d0acd482d77e1dc442", null ],
     [ "deleteFile", "classlog4cxx_1_1File.html#a33fc467af70851e2a8524fd346cc314a", null ],
     [ "exists", "classlog4cxx_1_1File.html#a964ec6c8b9c3811b0889faecce685eb7", null ],
@@ -20,8 +20,8 @@ var classlog4cxx_1_1File =
     [ "length", "classlog4cxx_1_1File.html#ac5c109f534a3c0b366863b550aa8b721", null ],
     [ "list", "classlog4cxx_1_1File.html#a418099d417a29e3154acde30487658d4", null ],
     [ "mkdirs", "classlog4cxx_1_1File.html#a575c37fd9d96345f3fadc712449a466f", null ],
-    [ "operator=", "classlog4cxx_1_1File.html#a4d015ce2bf0b84b2f0e163b5509f5637", null ],
-    [ "renameTo", "classlog4cxx_1_1File.html#ac03958ec49b34f1e1702f2ec2edf1673", null ],
+    [ "operator=", "classlog4cxx_1_1File.html#a98a0f4294fc2a072c3d1e11fc244da9d", null ],
+    [ "renameTo", "classlog4cxx_1_1File.html#a1ee789da30c5c784069537d763c78432", null ],
     [ "setAutoDelete", "classlog4cxx_1_1File.html#aecbb30619fbd497ef55159ac1e365494", null ],
-    [ "setPath", "classlog4cxx_1_1File.html#a63161f4f37dee91a99528045875d99ad", null ]
+    [ "setPath", "classlog4cxx_1_1File.html#a228ee2962df22821d9f51e612f631ad5", null ]
 ];

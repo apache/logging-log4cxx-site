@@ -148,8 +148,8 @@ Inheritance diagram for log4cxx::spi::LoggerRepository:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a936b2812e0fb3ca695ceb644b422f1e9" id="r_a936b2812e0fb3ca695ceb644b422f1e9"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a936b2812e0fb3ca695ceb644b422f1e9">~LoggerRepository</a> ()</td></tr>
-<tr class="memitem:aca052c8cadb17a86696953c8018e18da" id="r_aca052c8cadb17a86696953c8018e18da"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aca052c8cadb17a86696953c8018e18da">addHierarchyEventListener</a> (const HierarchyEventListenerPtr &amp;listener)=0</td></tr>
-<tr class="memdesc:aca052c8cadb17a86696953c8018e18da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>listener</code> to the repository.  <br /></td></tr>
+<tr class="memitem:a9af2a7449eebb8136a4cbeaa41aac0cc" id="r_a9af2a7449eebb8136a4cbeaa41aac0cc"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9af2a7449eebb8136a4cbeaa41aac0cc">addHierarchyEventListener</a> (const spi::HierarchyEventListenerPtr &amp;listener)=0</td></tr>
+<tr class="memdesc:a9af2a7449eebb8136a4cbeaa41aac0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>listener</code> to the repository.  <br /></td></tr>
 <tr class="memitem:a055e10ebaf42334637616355c732a3a5" id="r_a055e10ebaf42334637616355c732a3a5"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a055e10ebaf42334637616355c732a3a5">removeHierarchyEventListener</a> (const spi::HierarchyEventListenerPtr &amp;listener)=0</td></tr>
 <tr class="memdesc:a055e10ebaf42334637616355c732a3a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove <code>listener</code> from the repository.  <br /></td></tr>
 <tr class="memitem:a3e9920aeb4b7dcee64f26b3aa69277c1" id="r_a3e9920aeb4b7dcee64f26b3aa69277c1"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3e9920aeb4b7dcee64f26b3aa69277c1">ensureIsConfigured</a> (std::function&lt; void()&gt; configurator)=0</td></tr>
@@ -225,8 +225,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="aca052c8cadb17a86696953c8018e18da" name="aca052c8cadb17a86696953c8018e18da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca052c8cadb17a86696953c8018e18da">&#9670;&#160;</a></span>addHierarchyEventListener()</h2>
+<a id="a9af2a7449eebb8136a4cbeaa41aac0cc" name="a9af2a7449eebb8136a4cbeaa41aac0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af2a7449eebb8136a4cbeaa41aac0cc">&#9670;&#160;</a></span>addHierarchyEventListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,7 +237,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void log4cxx::spi::LoggerRepository::addHierarchyEventListener </td>
           <td>(</td>
-          <td class="paramtype">const HierarchyEventListenerPtr &amp;</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
+          <td class="paramtype">const spi::HierarchyEventListenerPtr &amp;</td>          <td class="paramname"><span class="paramname"><em>listener</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -249,6 +249,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add <code>listener</code> to the repository. </p>
+
+<p>Implemented in <a class="el" href="classlog4cxx_1_1Hierarchy.html#ac7d2effec69f274de76013ad17fcb026">log4cxx::Hierarchy</a>.</p>
 
 </div>
 </div>
@@ -785,7 +787,7 @@ Public Member Functions</h2></td></tr>
 <p>Enable logging for logging requests with level <code>newLevel</code> or higher. </p>
 <p>The threshold is set the <code>DEBUG</code> if <code>newLevel</code> is not recognised by Level::getLevel. All logging requests below the threshold are immediately dropped. By default, the threshold is set to <code><a class="el" href="classlog4cxx_1_1Level.html#a17165f1a2ffae195b6de57c2ef4f5e91">Level::getAll()</a></code> which has the lowest possible rank. </p>
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1Hierarchy.html#ae9972356bd2073ec1c4fcf24ccc21771">log4cxx::Hierarchy</a>.</p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1Hierarchy.html#ad800168ad2519991a6c688dd3adfb0d1">log4cxx::Hierarchy</a>.</p>
 
 </div>
 </div>

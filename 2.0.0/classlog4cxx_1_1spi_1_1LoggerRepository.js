@@ -1,7 +1,7 @@
 var classlog4cxx_1_1spi_1_1LoggerRepository =
 [
     [ "~LoggerRepository", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a936b2812e0fb3ca695ceb644b422f1e9", null ],
-    [ "addHierarchyEventListener", "classlog4cxx_1_1spi_1_1LoggerRepository.html#aca052c8cadb17a86696953c8018e18da", null ],
+    [ "addHierarchyEventListener", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a9af2a7449eebb8136a4cbeaa41aac0cc", null ],
     [ "emitNoAppenderWarning", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a9119ad23e026f881cb59a93e4ed11a46", null ],
     [ "ensureIsConfigured", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a3e9920aeb4b7dcee64f26b3aa69277c1", null ],
     [ "exists", "classlog4cxx_1_1spi_1_1LoggerRepository.html#a95c2f05f1c30dd684a5bfd1015d5d746", null ],

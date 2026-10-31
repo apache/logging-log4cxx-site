@@ -151,10 +151,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca84a9a508a193c5c880aaaa3c7e49bf" id="r_aca84a9a508a193c5c880aaaa3c7e49bf"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aca84a9a508a193c5c880aaaa3c7e49bf">RootLogger</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level)</td></tr>
 <tr class="memdesc:aca84a9a508a193c5c880aaaa3c7e49bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The root logger names itself as "root".  <br /></td></tr>
 <tr class="memitem:a0602fb60433a49f3a634acb6b4ede405" id="r_a0602fb60433a49f3a634acb6b4ede405"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0602fb60433a49f3a634acb6b4ede405">~RootLogger</a> ()</td></tr>
-<tr class="memitem:a3224edb152d8068f5f23ef87fe2f5739" id="r_a3224edb152d8068f5f23ef87fe2f5739"><td class="memItemLeft">virtual <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3224edb152d8068f5f23ef87fe2f5739">getEffectiveLevel</a> () const</td></tr>
-<tr class="memdesc:a3224edb152d8068f5f23ef87fe2f5739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the assigned level value without walking the logger hierarchy.  <br /></td></tr>
-<tr class="memitem:a5c11794e0e6f9308d0d3e4f93b631d17" id="r_a5c11794e0e6f9308d0d3e4f93b631d17"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5c11794e0e6f9308d0d3e4f93b631d17">setLevel</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level)</td></tr>
-<tr class="memdesc:a5c11794e0e6f9308d0d3e4f93b631d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting a null value to the level of the root logger may have catastrophic results.  <br /></td></tr>
+<tr class="memitem:ac0689b0f2df8a514c8f2424d1ec299c0" id="r_ac0689b0f2df8a514c8f2424d1ec299c0"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac0689b0f2df8a514c8f2424d1ec299c0">getEffectiveLevel</a> () const override</td></tr>
+<tr class="memdesc:ac0689b0f2df8a514c8f2424d1ec299c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the assigned level value without walking the logger hierarchy.  <br /></td></tr>
+<tr class="memitem:a23295269391434a85ea7898f24404e2c" id="r_a23295269391434a85ea7898f24404e2c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a23295269391434a85ea7898f24404e2c">setLevel</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level) override</td></tr>
+<tr class="memdesc:a23295269391434a85ea7898f24404e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setting a null value to the level of the root logger may have catastrophic results.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1Logger"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1Logger.html">log4cxx::Logger</a></td></tr>
 <tr class="memitem:aae2098bec35d63d8a4a417aa890618e0 pub_methods_classlog4cxx_1_1Logger" id="r_aae2098bec35d63d8a4a417aa890618e0"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1Logger.html#aae2098bec35d63d8a4a417aa890618e0">Logger</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name)</td></tr>
 <tr class="memdesc:aae2098bec35d63d8a4a417aa890618e0 pub_methods_classlog4cxx_1_1Logger"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor initializes a new <code>logger</code> instance and sets its name.  <br /></td></tr>
@@ -377,7 +377,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classlog4cxx_1_1spi_1_1RootLogger.html" title="RootLogger sits at the top of the logger hierachy.">RootLogger</a> sits at the top of the logger hierachy. </p>
 <p>It is a regular logger except that it provides several guarantees.</p>
-<p>First, it cannot be assigned a null level. Second, since root logger cannot have a parent, the <a class="el" href="#a3224edb152d8068f5f23ef87fe2f5739" title="Return the assigned level value without walking the logger hierarchy.">getEffectiveLevel</a> method always returns the value of the level field without walking the hierarchy. </p>
+<p>First, it cannot be assigned a null level. Second, since root logger cannot have a parent, the <a class="el" href="#ac0689b0f2df8a514c8f2424d1ec299c0" title="Return the assigned level value without walking the logger hierarchy.">getEffectiveLevel</a> method always returns the value of the level field without walking the hierarchy. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aca84a9a508a193c5c880aaaa3c7e49bf" name="aca84a9a508a193c5c880aaaa3c7e49bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca84a9a508a193c5c880aaaa3c7e49bf">&#9670;&#160;</a></span>RootLogger()</h2>
@@ -425,8 +425,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a3224edb152d8068f5f23ef87fe2f5739" name="a3224edb152d8068f5f23ef87fe2f5739"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3224edb152d8068f5f23ef87fe2f5739">&#9670;&#160;</a></span>getEffectiveLevel()</h2>
+<a id="ac0689b0f2df8a514c8f2424d1ec299c0" name="ac0689b0f2df8a514c8f2424d1ec299c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0689b0f2df8a514c8f2424d1ec299c0">&#9670;&#160;</a></span>getEffectiveLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -435,7 +435,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> log4cxx::spi::RootLogger::getEffectiveLevel </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> log4cxx::spi::RootLogger::getEffectiveLevel </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -443,7 +443,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -454,8 +454,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c11794e0e6f9308d0d3e4f93b631d17" name="a5c11794e0e6f9308d0d3e4f93b631d17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c11794e0e6f9308d0d3e4f93b631d17">&#9670;&#160;</a></span>setLevel()</h2>
+<a id="a23295269391434a85ea7898f24404e2c" name="a23295269391434a85ea7898f24404e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23295269391434a85ea7898f24404e2c">&#9670;&#160;</a></span>setLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,7 +472,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -158,11 +158,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aafa1b494d72c4a565d138777808c240e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open <code>fileName</code> and prepare to write <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The data recorded for each logging request.">spi::LoggingEvent</a> messages formatted by <code>layout</code>.  <br /></td></tr>
 <tr class="memitem:a2c041297b0ebdacb6588adb2e23f237a" id="r_a2c041297b0ebdacb6588adb2e23f237a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2c041297b0ebdacb6588adb2e23f237a">~FileAppender</a> ()</td></tr>
 <tr class="memitem:abe4966b44f6ee955e03d4f3c541f1286" id="r_abe4966b44f6ee955e03d4f3c541f1286"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abe4966b44f6ee955e03d4f3c541f1286">setFile</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;file)</td></tr>
-<tr class="memdesc:abe4966b44f6ee955e03d4f3c541f1286"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b><a class="el" href="classlog4cxx_1_1File.html" title="An abstract representation of file and directory path names.">File</a></b> property takes a string value which should be the name of the file to append to.  <br /></td></tr>
+<tr class="memdesc:abe4966b44f6ee955e03d4f3c541f1286"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b><a class="el" href="classlog4cxx_1_1File.html" title="Holds the path to a file or directory.">File</a></b> property takes a string value which should be the name of the file to append to.  <br /></td></tr>
 <tr class="memitem:ad3cee8618fe99f0381b5db9fb2e3ed1e" id="r_ad3cee8618fe99f0381b5db9fb2e3ed1e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad3cee8618fe99f0381b5db9fb2e3ed1e">getAppend</a> () const</td></tr>
 <tr class="memdesc:ad3cee8618fe99f0381b5db9fb2e3ed1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the <b>Append</b> option.  <br /></td></tr>
 <tr class="memitem:a44b0574944894a7e4414f553d97e88b8" id="r_a44b0574944894a7e4414f553d97e88b8"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#a44b0574944894a7e4414f553d97e88b8">getFile</a> () const</td></tr>
-<tr class="memdesc:a44b0574944894a7e4414f553d97e88b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the <b><a class="el" href="classlog4cxx_1_1File.html" title="An abstract representation of file and directory path names.">File</a></b> option.  <br /></td></tr>
+<tr class="memdesc:a44b0574944894a7e4414f553d97e88b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the <b><a class="el" href="classlog4cxx_1_1File.html" title="Holds the path to a file or directory.">File</a></b> option.  <br /></td></tr>
 <tr class="memitem:a77fe8f4e7e45384885e4db9ed9067e2f" id="r_a77fe8f4e7e45384885e4db9ed9067e2f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a77fe8f4e7e45384885e4db9ed9067e2f">activateOptions</a> () override</td></tr>
 <tr class="memdesc:a77fe8f4e7e45384885e4db9ed9067e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived appenders should override this method if option structure requires it.     <br /></td></tr>
 <tr class="memitem:a0126112f63df5a5c5e8adfb72c091d64" id="r_a0126112f63df5a5c5e8adfb72c091d64"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0126112f63df5a5c5e8adfb72c091d64">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
@@ -513,7 +513,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the value of the <b><a class="el" href="classlog4cxx_1_1File.html" title="An abstract representation of file and directory path names.">File</a></b> option. </p>
+<p>Returns the value of the <b><a class="el" href="classlog4cxx_1_1File.html" title="Holds the path to a file or directory.">File</a></b> option. </p>
 
 </div>
 </div>
@@ -552,7 +552,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set file open mode to <code>newValue</code>. </p>
-<p>The <b>Append</b> option takes a boolean value. It is set to <code>true</code> by default. If true, then <code><a class="el" href="classlog4cxx_1_1File.html" title="An abstract representation of file and directory path names.">File</a></code> will be opened in append mode by <a class="el" href="#abe4966b44f6ee955e03d4f3c541f1286" title="The File property takes a string value which should be the name of the file to append to.">setFile</a> (see above). Otherwise, setFile will open <code><a class="el" href="classlog4cxx_1_1File.html" title="An abstract representation of file and directory path names.">File</a></code> in truncate mode.</p>
+<p>The <b>Append</b> option takes a boolean value. It is set to <code>true</code> by default. If true, then <code><a class="el" href="classlog4cxx_1_1File.html" title="Holds the path to a file or directory.">File</a></code> will be opened in append mode by <a class="el" href="#abe4966b44f6ee955e03d4f3c541f1286" title="The File property takes a string value which should be the name of the file to append to.">setFile</a> (see above). Otherwise, setFile will open <code><a class="el" href="classlog4cxx_1_1File.html" title="Holds the path to a file or directory.">File</a></code> in truncate mode.</p>
 <p>Note: The file is opened when <a class="el" href="#a77fe8f4e7e45384885e4db9ed9067e2f" title="Derived appenders should override this method if option structure requires it.">activateOptions</a> is called, not when the options are set. </p>
 
 </div>
@@ -634,7 +634,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The <b><a class="el" href="classlog4cxx_1_1File.html" title="An abstract representation of file and directory path names.">File</a></b> property takes a string value which should be the name of the file to append to. </p>
+<p>The <b><a class="el" href="classlog4cxx_1_1File.html" title="Holds the path to a file or directory.">File</a></b> property takes a string value which should be the name of the file to append to. </p>
 <p><b>Note that the special values "System.out" or "System.err" are no longer honored.</b></p>
 <p>Note: Actual opening of the file is made when <a class="el" href="#a77fe8f4e7e45384885e4db9ed9067e2f" title="Derived appenders should override this method if option structure requires it.">activateOptions</a> is called, not when the options are set. </p>
 
