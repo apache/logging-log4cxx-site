@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a549498a58589ab5590a0b52a7a002a04" id="r_a549498a58589ab5590a0b52a7a002a04"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a549498a58589ab5590a0b52a7a002a04">activateOptions</a> () override</td></tr>
 <tr class="memdesc:a549498a58589ab5590a0b52a7a002a04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.     <br /></td></tr>
 <tr class="memitem:a68433bfbfdec4ff87f1d3e98d22a98f5" id="r_a68433bfbfdec4ff87f1d3e98d22a98f5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a68433bfbfdec4ff87f1d3e98d22a98f5">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a68433bfbfdec4ff87f1d3e98d22a98f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.     <br /></td></tr>
+<tr class="memdesc:a68433bfbfdec4ff87f1d3e98d22a98f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.     <br /></td></tr>
 <tr class="memitem:a77e94bdad33a7260989db9316ba1b482" id="r_a77e94bdad33a7260989db9316ba1b482"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a77e94bdad33a7260989db9316ba1b482">ignoresThrowable</a> () const override</td></tr>
 <tr class="memdesc:a77e94bdad33a7260989db9316ba1b482"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classlog4cxx_1_1PatternLayout.html" title="A flexible layout configurable with pattern string.">PatternLayout</a> does not handle the throwable contained within <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html">LoggingEvents</a></code>.  <br /></td></tr>
 <tr class="memitem:a49687846d37a520cb0712eeac927fb19" id="r_a49687846d37a520cb0712eeac927fb19"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a49687846d37a520cb0712eeac927fb19">format</a> (<a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;output, const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) const override</td></tr>
@@ -488,7 +488,7 @@ Strikethrough </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. Call <a class="el" href="#a549498a58589ab5590a0b52a7a002a04" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated</a></b></dt><dd>Use <a class="el" href="#a549498a58589ab5590a0b52a7a002a04" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead</dd></dl>
 
 </div>
@@ -675,7 +675,7 @@ Strikethrough </li>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.    </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported options  </th><th class="markdownTableHeadNone">Supported values  </th><th class="markdownTableHeadNone">Default value  </th></tr>

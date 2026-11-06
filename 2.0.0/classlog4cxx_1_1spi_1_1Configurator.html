@@ -148,6 +148,8 @@ Inheritance diagram for log4cxx::spi::Configurator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac26318c53c7f65cb327d2b23ad732311" id="r_ac26318c53c7f65cb327d2b23ad732311"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ac26318c53c7f65cb327d2b23ad732311">isValid</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFileName)=0</td></tr>
+<tr class="memdesc:ac26318c53c7f65cb327d2b23ad732311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does <code>configFileName</code> contain directives that this class uses?  <br /></td></tr>
 <tr class="memitem:aa6543ce79c31cf638ae4d956dd799d39" id="r_aa6543ce79c31cf638ae4d956dd799d39"><td class="memItemLeft">virtual <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">ConfigurationStatus</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa6543ce79c31cf638ae4d956dd799d39">doConfigure</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFileName, const <a class="el" href="namespacelog4cxx_1_1spi.html#a601415735b45ce1d45c7a3c45d797b37">spi::LoggerRepositoryPtr</a> &amp;target={})=0</td></tr>
 <tr class="memdesc:aa6543ce79c31cf638ae4d956dd799d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the directives in <code>configFileName</code> to <code>target</code>.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
@@ -233,6 +235,41 @@ Protected Member Functions</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#a992b82dd7bf0e34c9c24d7b6c987671e">log4cxx::PropertyConfigurator</a>, and <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#aeff8e303e61384cb2470c1df5195e124">log4cxx::xml::DOMConfigurator</a>.</p>
+
+</div>
+</div>
+<a id="ac26318c53c7f65cb327d2b23ad732311" name="ac26318c53c7f65cb327d2b23ad732311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac26318c53c7f65cb327d2b23ad732311">&#9670;&#160;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool log4cxx::spi::Configurator::isValid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>configFileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Does <code>configFileName</code> contain directives that this class uses? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">configFileName</td><td>The file to examine </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classlog4cxx_1_1PropertyConfigurator.html#abe65e39f21b8b76358eafb1aaf65921c">log4cxx::PropertyConfigurator</a>, and <a class="el" href="classlog4cxx_1_1xml_1_1DOMConfigurator.html#a26bb1840fe78c3749d03131a3ab79dc8">log4cxx::xml::DOMConfigurator</a>.</p>
 
 </div>
 </div>

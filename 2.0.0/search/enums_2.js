@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hexdumpflags_0',['HexdumpFlags',['../namespacelog4cxx.html#a01e366bb431da3b770d2ae4bcd23573d',1,'log4cxx']]]
+  ['filterdecision_0',['FilterDecision',['../classlog4cxx_1_1spi_1_1Filter.html#aa59a54ffa01e4cc1635734a251afd5ee',1,'log4cxx::spi::Filter']]]
 ];

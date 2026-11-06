@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filterdecision_0',['FilterDecision',['../classlog4cxx_1_1spi_1_1Filter.html#aa59a54ffa01e4cc1635734a251afd5ee',1,'log4cxx::spi::Filter']]]
+  ['errorcode_0',['ErrorCode',['../namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740',1,'log4cxx::spi']]]
 ];

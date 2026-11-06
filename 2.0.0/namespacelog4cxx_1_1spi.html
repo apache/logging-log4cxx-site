@@ -137,7 +137,6 @@ Classes</h2></td></tr>
 <tr class="memitem:Configurator" id="r_Configurator"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html">Configurator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract base for classes capable of configuring Log4cxx.  <a href="classlog4cxx_1_1spi_1_1Configurator.html#details">More...</a><br /></td></tr>
 <tr class="memitem:DefaultRepositorySelector" id="r_DefaultRepositorySelector"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1DefaultRepositorySelector.html">DefaultRepositorySelector</a></td></tr>
-<tr class="memitem:ErrorCode" id="r_ErrorCode"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1ErrorCode.html">ErrorCode</a></td></tr>
 <tr class="memitem:ErrorHandler" id="r_ErrorHandler"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html">ErrorHandler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appenders may delegate their error handling to <code>ErrorHandlers</code>.  <a href="classlog4cxx_1_1spi_1_1ErrorHandler.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Filter" id="r_Filter"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1Filter.html">Filter</a></td></tr>
@@ -173,6 +172,17 @@ Typedefs</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:a923765e65a08eea7c6b417a2525226ab" id="r_a923765e65a08eea7c6b417a2525226ab"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a923765e65a08eea7c6b417a2525226ab">ConfigurationStatus</a> { <a class="el" href="#a923765e65a08eea7c6b417a2525226aba61aa63eb3ac1c3408640463ee5fe8aa3">Configured</a>
 , <a class="el" href="#a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815">NotConfigured</a>
+ }</td></tr>
+<tr class="memitem:ad2172977b3901348982aad48112cb740" id="r_ad2172977b3901348982aad48112cb740"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ad2172977b3901348982aad48112cb740">ErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="#ad2172977b3901348982aad48112cb740a25a79da8b9115b64ce679b550c12671f">GENERIC_FAILURE</a> = 0
+, <a class="el" href="#ad2172977b3901348982aad48112cb740ac6cb9b7c8f790f0226ce9a8368955860">WRITE_FAILURE</a> = 1
+, <a class="el" href="#ad2172977b3901348982aad48112cb740ac356473fdcd2195e5eabb0250a73a6a2">FLUSH_FAILURE</a> = 2
+, <a class="el" href="#ad2172977b3901348982aad48112cb740a5b1c483bef13a901b63e8c7c51036cef">CLOSE_FAILURE</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#ad2172977b3901348982aad48112cb740afde64cc2a1876ed7ccd62f748973b6a5">OPEN_FAILURE</a> = 4
+, <a class="el" href="#ad2172977b3901348982aad48112cb740a3a7f692afb1567bac9699c014b06c0bd">ROLLOVER_FAILURE</a> = 7
+, <a class="el" href="#ad2172977b3901348982aad48112cb740a00a2a8889f387961671f45ab121c2b97">INVALID_CONFIGURATION</a> = 8
+<br />
  }</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
@@ -287,6 +297,29 @@ Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a923765e65a08eea7c6b417a2525226aba61aa63eb3ac1c3408640463ee5fe8aa3" name="a923765e65a08eea7c6b417a2525226aba61aa63eb3ac1c3408640463ee5fe8aa3"></a>Configured&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815" name="a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815"></a>NotConfigured&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ad2172977b3901348982aad48112cb740" name="ad2172977b3901348982aad48112cb740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2172977b3901348982aad48112cb740">&#9670;&#160;</a></span>ErrorCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ad2172977b3901348982aad48112cb740">log4cxx::spi::ErrorCode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad2172977b3901348982aad48112cb740a25a79da8b9115b64ce679b550c12671f" name="ad2172977b3901348982aad48112cb740a25a79da8b9115b64ce679b550c12671f"></a>GENERIC_FAILURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2172977b3901348982aad48112cb740ac6cb9b7c8f790f0226ce9a8368955860" name="ad2172977b3901348982aad48112cb740ac6cb9b7c8f790f0226ce9a8368955860"></a>WRITE_FAILURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2172977b3901348982aad48112cb740ac356473fdcd2195e5eabb0250a73a6a2" name="ad2172977b3901348982aad48112cb740ac356473fdcd2195e5eabb0250a73a6a2"></a>FLUSH_FAILURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2172977b3901348982aad48112cb740a5b1c483bef13a901b63e8c7c51036cef" name="ad2172977b3901348982aad48112cb740a5b1c483bef13a901b63e8c7c51036cef"></a>CLOSE_FAILURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2172977b3901348982aad48112cb740afde64cc2a1876ed7ccd62f748973b6a5" name="ad2172977b3901348982aad48112cb740afde64cc2a1876ed7ccd62f748973b6a5"></a>OPEN_FAILURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2172977b3901348982aad48112cb740a3a7f692afb1567bac9699c014b06c0bd" name="ad2172977b3901348982aad48112cb740a3a7f692afb1567bac9699c014b06c0bd"></a>ROLLOVER_FAILURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2172977b3901348982aad48112cb740a00a2a8889f387961671f45ab121c2b97" name="ad2172977b3901348982aad48112cb740a00a2a8889f387961671f45ab121c2b97"></a>INVALID_CONFIGURATION&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

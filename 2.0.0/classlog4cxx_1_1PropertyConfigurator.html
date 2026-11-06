@@ -149,6 +149,8 @@ Inheritance diagram for log4cxx::PropertyConfigurator:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab7f2057232e18bf38d02323e86820109" id="r_ab7f2057232e18bf38d02323e86820109"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab7f2057232e18bf38d02323e86820109">PropertyConfigurator</a> ()</td></tr>
 <tr class="memitem:a7c5a1eb166c4189e95412d8d28b8d410" id="r_a7c5a1eb166c4189e95412d8d28b8d410"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a7c5a1eb166c4189e95412d8d28b8d410">~PropertyConfigurator</a> ()</td></tr>
+<tr class="memitem:abe65e39f21b8b76358eafb1aaf65921c" id="r_abe65e39f21b8b76358eafb1aaf65921c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#abe65e39f21b8b76358eafb1aaf65921c">isValid</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFileName) override</td></tr>
+<tr class="memdesc:abe65e39f21b8b76358eafb1aaf65921c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does <code>configFileName</code> contain directives that this class uses?     <br /></td></tr>
 <tr class="memitem:a992b82dd7bf0e34c9c24d7b6c987671e" id="r_a992b82dd7bf0e34c9c24d7b6c987671e"><td class="memItemLeft"><a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight"><a class="el" href="#a992b82dd7bf0e34c9c24d7b6c987671e">doConfigure</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFileName, const <a class="el" href="namespacelog4cxx_1_1spi.html#a601415735b45ce1d45c7a3c45d797b37">spi::LoggerRepositoryPtr</a> &amp;target={}) override</td></tr>
 <tr class="memdesc:a992b82dd7bf0e34c9c24d7b6c987671e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the directives in <code>configFileName</code> to <code>target</code>.     <br /></td></tr>
 <tr class="memitem:a99d6a1f52a3ad473927a78c09e8c3dba" id="r_a99d6a1f52a3ad473927a78c09e8c3dba"><td class="memItemLeft"><a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight"><a class="el" href="#a99d6a1f52a3ad473927a78c09e8c3dba">doConfigure</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">helpers::Properties</a> &amp;properties, const <a class="el" href="namespacelog4cxx_1_1spi.html#a601415735b45ce1d45c7a3c45d797b37">spi::LoggerRepositoryPtr</a> &amp;target)</td></tr>
@@ -195,7 +197,7 @@ log4j.appender.appenderName.layout=fully.qualified.name.of.layout.class
 log4j.appender.appenderName.layout.option1=value1
 ....
 log4j.appender.appenderName.layout.optionN=valueN
-</pre><p>Refer to the <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a4b1e5e0b09723d8105dc361850766c2b" title="Set option to value.">Appender::setOption</a> override of each implemented appender and <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a4b1e5e0b09723d8105dc361850766c2b" title="Set option to value.">Layout::setOption</a> override of each implemented layout for class specific options.</p>
+</pre><p>Refer to the <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a4b1e5e0b09723d8105dc361850766c2b" title="Override this method to set option to value.">Appender::setOption</a> override of each implemented appender and <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a4b1e5e0b09723d8105dc361850766c2b" title="Override this method to set option to value.">Layout::setOption</a> override of each implemented layout for class specific options.</p>
 <h3>Configuring loggers</h3>
 <p>The syntax for configuring the root logger is: </p><pre>
 log4j.rootLogger=[level], appenderName, appenderName, ...
@@ -494,6 +496,42 @@ log4j.debug=true
 <p>Apply the directives in <code>properties</code> to <code>target</code>. </p>
 <p>See the <a class="el" href="#PropertyConfigurator_details" title="PropertyConfigurator_details">detailed description</a> for the expected keys and values.</p>
 <p><b>The existing configuration is not cleared nor reset.</b> If you require a different behavior, call <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#ab2a31a195a5c82793805a16417b1a387">resetConfiguration</a></code> before calling <code>doConfigure</code>. </p>
+
+</div>
+</div>
+<a id="abe65e39f21b8b76358eafb1aaf65921c" name="abe65e39f21b8b76358eafb1aaf65921c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe65e39f21b8b76358eafb1aaf65921c">&#9670;&#160;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool log4cxx::PropertyConfigurator::isValid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>configFileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Does <code>configFileName</code> contain directives that this class uses?    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">configFileName</td><td>The file to examine   </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This implementation checks <code>configFileName</code> contains at least one line begining with "log4j.". </p>
+
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#ac26318c53c7f65cb327d2b23ad732311">log4cxx::spi::Configurator</a>.</p>
 
 </div>
 </div>

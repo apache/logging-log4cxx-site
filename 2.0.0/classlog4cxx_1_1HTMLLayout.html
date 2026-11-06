@@ -161,7 +161,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a63d20205c8875f1a8ba4c44010353d9a" id="r_a63d20205c8875f1a8ba4c44010353d9a"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#a63d20205c8875f1a8ba4c44010353d9a">getContentType</a> () const override</td></tr>
 <tr class="memdesc:a63d20205c8875f1a8ba4c44010353d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the content type output by this layout, i.e "text/html".  <br /></td></tr>
 <tr class="memitem:a82870fcf320b86f915c58c0f370ad5a2" id="r_a82870fcf320b86f915c58c0f370ad5a2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a82870fcf320b86f915c58c0f370ad5a2">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a82870fcf320b86f915c58c0f370ad5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.     <br /></td></tr>
+<tr class="memdesc:a82870fcf320b86f915c58c0f370ad5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.     <br /></td></tr>
 <tr class="memitem:a3d54627436c64fde392e7484bab6f553" id="r_a3d54627436c64fde392e7484bab6f553"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3d54627436c64fde392e7484bab6f553">format</a> (<a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;output, const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) const override</td></tr>
 <tr class="memdesc:a3d54627436c64fde392e7484bab6f553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append the attributes of <code>event</code> as a HTML table row onto <code>output</code>.  <br /></td></tr>
 <tr class="memitem:a03ac33b7eaf1cfe4914ac950b86b5e68" id="r_a03ac33b7eaf1cfe4914ac950b86b5e68"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a03ac33b7eaf1cfe4914ac950b86b5e68">appendHeader</a> (<a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;output) override</td></tr>
@@ -576,7 +576,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.    </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported options  </th><th class="markdownTableHeadNone">Supported values  </th><th class="markdownTableHeadNone">Default value  </th></tr>

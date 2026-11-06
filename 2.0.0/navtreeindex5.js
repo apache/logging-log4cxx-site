@@ -1,9 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#aec073e4e37aec58c87c020f0d9c92996":[7,2,0,0,3,6,0],
-"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#af009964a34ba5afeb3b685462116a591":[7,1,0,0,3,7,1],
-"classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#af009964a34ba5afeb3b685462116a591":[7,2,0,0,3,6,1],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html":[7,1,0,0,3,8],
 "classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html":[7,2,0,0,3,7],
 "classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a2b6d9c725578d00024381f011045df9c":[7,1,0,0,3,8,0],
 "classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a2b6d9c725578d00024381f011045df9c":[7,2,0,0,3,7,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX5 =
 "classlog4cxx_1_1helpers_1_1Date.html#a43f0a4e7fae4310660099d3e2dc42a40":[7,2,0,0,3,20,3],
 "classlog4cxx_1_1helpers_1_1Date.html#a551746cad7712e8355aa2903fd367396":[7,1,0,0,3,21,5],
 "classlog4cxx_1_1helpers_1_1Date.html#a551746cad7712e8355aa2903fd367396":[7,2,0,0,3,20,5],
-"classlog4cxx_1_1helpers_1_1Date.html#a57a9b200decd9ae103168aa13af60e38":[7,1,0,0,3,21,0]
+"classlog4cxx_1_1helpers_1_1Date.html#a57a9b200decd9ae103168aa13af60e38":[7,1,0,0,3,21,0],
+"classlog4cxx_1_1helpers_1_1Date.html#a57a9b200decd9ae103168aa13af60e38":[7,2,0,0,3,20,0],
+"classlog4cxx_1_1helpers_1_1Date.html#a5db304859ae436dda9db8313fcac2b0d":[7,1,0,0,3,21,1],
+"classlog4cxx_1_1helpers_1_1Date.html#a5db304859ae436dda9db8313fcac2b0d":[7,2,0,0,3,20,1],
+"classlog4cxx_1_1helpers_1_1Date.html#afb418dd3d1f78172d4534f3ea7b384e3":[7,1,0,0,3,21,4]
 };

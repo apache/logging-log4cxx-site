@@ -154,15 +154,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0ab310653817b3a955b3c73cb11df8f9" id="r_a0ab310653817b3a955b3c73cb11df8f9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0ab310653817b3a955b3c73cb11df8f9">AsyncAppender</a> ()</td></tr>
 <tr class="memdesc:a0ab310653817b3a955b3c73cb11df8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new instance.  <br /></td></tr>
 <tr class="memitem:ab3e1003b9e2a415b914ccae6b5c34a58" id="r_ab3e1003b9e2a415b914ccae6b5c34a58"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#ab3e1003b9e2a415b914ccae6b5c34a58">~AsyncAppender</a> ()</td></tr>
-<tr class="memdesc:ab3e1003b9e2a415b914ccae6b5c34a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">If not closed, calls <a class="el" href="#ad301701db4a25e571391272edaf3431f" title="Close this AsyncAppender by interrupting the dispatcher thread which will process all pending events ...">AsyncAppender::close</a>.  <br /></td></tr>
+<tr class="memdesc:ab3e1003b9e2a415b914ccae6b5c34a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">If not closed, calls <a class="el" href="classlog4cxx_1_1Appender.html#a63bbe5d72b11d0fcbbb4d06d435a7012" title="Release any resources allocated within the appender such as file handles, network connections,...">AsyncAppender::close</a>.  <br /></td></tr>
 <tr class="memitem:a933e59bf07c4e53cd720216e2e076588" id="r_a933e59bf07c4e53cd720216e2e076588"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a933e59bf07c4e53cd720216e2e076588">addAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;newAppender) override</td></tr>
 <tr class="memdesc:a933e59bf07c4e53cd720216e2e076588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure <code>newAppender</code> receives any logging event added to this appender.  <br /></td></tr>
 <tr class="memitem:a623dd67fcb148dd5e794028486954cc4" id="r_a623dd67fcb148dd5e794028486954cc4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a623dd67fcb148dd5e794028486954cc4">doAppend</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) override</td></tr>
 <tr class="memdesc:a623dd67fcb148dd5e794028486954cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aaf6a9c9afe672e30a79efaf0c3f87fc8" title="Compare event level against the appender threshold and check that event is accepted.">AppenderSkeleton::doAppendImpl</a> without acquiring a lock.  <br /></td></tr>
 <tr class="memitem:a187f67dd9aff470ceb5e81ba8e33194c" id="r_a187f67dd9aff470ceb5e81ba8e33194c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a187f67dd9aff470ceb5e81ba8e33194c">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) override</td></tr>
 <tr class="memdesc:a187f67dd9aff470ceb5e81ba8e33194c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>event</code> to a ring buffer.  <br /></td></tr>
-<tr class="memitem:ad301701db4a25e571391272edaf3431f" id="r_ad301701db4a25e571391272edaf3431f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad301701db4a25e571391272edaf3431f">close</a> () override</td></tr>
-<tr class="memdesc:ad301701db4a25e571391272edaf3431f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close this <code><a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender decouples logging event creation from output by processing log events asynchronousl...">AsyncAppender</a></code> by interrupting the dispatcher thread which will process all pending events before exiting.  <br /></td></tr>
 <tr class="memitem:a7042786b4ddb7fc252e520634da25095" id="r_a7042786b4ddb7fc252e520634da25095"><td class="memItemLeft">AppenderList&#160;</td><td class="memItemRight"><a class="el" href="#a7042786b4ddb7fc252e520634da25095">getAllAppenders</a> () const override</td></tr>
 <tr class="memdesc:a7042786b4ddb7fc252e520634da25095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get iterator over attached appenders.  <br /></td></tr>
 <tr class="memitem:a94a5789adc2221f8d8dc48647ced145b" id="r_a94a5789adc2221f8d8dc48647ced145b"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a94a5789adc2221f8d8dc48647ced145b">getAppender</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name) const override</td></tr>
@@ -190,7 +188,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a389a89a4ed26995129bc850949238304" id="r_a389a89a4ed26995129bc850949238304"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a389a89a4ed26995129bc850949238304">getBlocking</a> () const</td></tr>
 <tr class="memdesc:a389a89a4ed26995129bc850949238304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether appender should block calling thread when ring buffer is full.  <br /></td></tr>
 <tr class="memitem:a24279523766272eb55872afa1b0e1726" id="r_a24279523766272eb55872afa1b0e1726"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a24279523766272eb55872afa1b0e1726">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a24279523766272eb55872afa1b0e1726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.        <br /></td></tr>
+<tr class="memdesc:a24279523766272eb55872afa1b0e1726"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.        <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1AppenderAttachable"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1AppenderAttachable.html">log4cxx::spi::AppenderAttachable</a></td></tr>
 <tr class="memitem:a3ef162cc3bff3b984ae494473f525a1c pub_methods_classlog4cxx_1_1spi_1_1AppenderAttachable" id="r_a3ef162cc3bff3b984ae494473f525a1c"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1AppenderAttachable.html#a3ef162cc3bff3b984ae494473f525a1c">~AppenderAttachable</a> ()</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
@@ -208,6 +206,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a62757130f678fb9e1b236a07297212cc pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a filter to end of the filter list.  <br /></td></tr>
 <tr class="memitem:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab8a68d594edffba72856ff25753d5911"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab8a68d594edffba72856ff25753d5911">clearFilters</a> () override</td></tr>
 <tr class="memdesc:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the filters chain.  <br /></td></tr>
+<tr class="memitem:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab3760465840fab6e19d73680a53701e0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab3760465840fab6e19d73680a53701e0">close</a> () override</td></tr>
+<tr class="memdesc:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.     <br /></td></tr>
 <tr class="memitem:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ada96367511614d645b4410c2de00d99e"><td class="memItemLeft">const <a class="el" href="namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648">spi::ErrorHandlerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ada96367511614d645b4410c2de00d99e">getErrorHandler</a> () const</td></tr>
 <tr class="memdesc:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the currently set <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html" title="Appenders may delegate their error handling to ErrorHandlers.">spi::ErrorHandler</a> for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a2334ac3560b4247480d6a9cd3356c4e3 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a2334ac3560b4247480d6a9cd3356c4e3"><td class="memItemLeft"><a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a2334ac3560b4247480d6a9cd3356c4e3">getFilter</a> () const override</td></tr>
@@ -294,7 +294,7 @@ Additional Inherited Members</h2></td></tr>
 Configurable properties</h3>
 <p><a class="anchor" id="BlockingProperty"></a>When the application produces logging events faster than the background thread is able to process, the bounded buffer can become full. In this situation <a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender decouples logging event creation from output by processing log events asynchronousl...">AsyncAppender</a> will either block until the bounded buffer has a free slot or discard the event. The <a class="el" href="#a24279523766272eb55872afa1b0e1726" title="AsyncAppender::setOption">Blocking property</a> controls which behaviour is used. When events are discarded, the logged output will indicate this with a log message prefixed with <em>Discarded</em>. The output may contain one <em>Discarded</em> message per logger name, the logging event of the highest level for each logger whose events have been discarded.</p>
 <p>To determine whether the application produces logging events faster than the background thread is able to process, enable <a href="internal-debugging.html">Log4cxx internal debugging</a>. The <a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender decouples logging event creation from output by processing log events asynchronousl...">AsyncAppender</a> will output a histogram of queue length frequencies when closed.</p>
-<p>See <a class="el" href="#a24279523766272eb55872afa1b0e1726" title="Set option to value.">AsyncAppender::setOption</a> for details. </p>
+<p>See <a class="el" href="#a24279523766272eb55872afa1b0e1726" title="Override this method to set option to value.">AsyncAppender::setOption</a> for details. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0ab310653817b3a955b3c73cb11df8f9" name="a0ab310653817b3a955b3c73cb11df8f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ab310653817b3a955b3c73cb11df8f9">&#9670;&#160;</a></span>AsyncAppender()</h2>
@@ -338,7 +338,7 @@ Configurable properties</h3>
 </table>
 </div><div class="memdoc">
 
-<p>If not closed, calls <a class="el" href="#ad301701db4a25e571391272edaf3431f" title="Close this AsyncAppender by interrupting the dispatcher thread which will process all pending events ...">AsyncAppender::close</a>. </p>
+<p>If not closed, calls <a class="el" href="classlog4cxx_1_1Appender.html#a63bbe5d72b11d0fcbbb4d06d435a7012" title="Release any resources allocated within the appender such as file handles, network connections,...">AsyncAppender::close</a>. </p>
 
 </div>
 </div>
@@ -405,35 +405,6 @@ Configurable properties</h3>
 <p>The behaviour when the ring buffer is full is controlled by the <a class="el" href="#BlockingProperty" title="BlockingProperty">Blocking property</a> value. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a8d784b0800f51afd9a19de38a80510de">log4cxx::AppenderSkeleton</a>.</p>
-
-</div>
-</div>
-<a id="ad301701db4a25e571391272edaf3431f" name="ad301701db4a25e571391272edaf3431f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad301701db4a25e571391272edaf3431f">&#9670;&#160;</a></span>close()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::AsyncAppender::close </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Close this <code><a class="el" href="classlog4cxx_1_1AsyncAppender.html" title="The AsyncAppender decouples logging event creation from output by processing log events asynchronousl...">AsyncAppender</a></code> by interrupting the dispatcher thread which will process all pending events before exiting. </p>
-
-<p>Implements <a class="el" href="classlog4cxx_1_1Appender.html#a63bbe5d72b11d0fcbbb4d06d435a7012">log4cxx::Appender</a>.</p>
 
 </div>
 </div>
@@ -862,7 +833,7 @@ Configurable properties</h3>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.       </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.       </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported options  </th><th class="markdownTableHeadNone">Supported values  </th><th class="markdownTableHeadNone">Default value  </th></tr>
@@ -871,7 +842,7 @@ Configurable properties</h3>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Blocking  </td><td class="markdownTableBodyNone">True,False  </td><td class="markdownTableBodyNone">True  </td></tr>
 </table>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Override this method to set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337">log4cxx::AppenderSkeleton</a>.</p>
 

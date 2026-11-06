@@ -152,13 +152,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad77942e68c0904d7f72b4a13fd8504de" id="r_ad77942e68c0904d7f72b4a13fd8504de"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad77942e68c0904d7f72b4a13fd8504de">DBAppender</a> ()</td></tr>
 <tr class="memitem:a3cf17af552b2d877bbeaa03a9dd9ebef" id="r_a3cf17af552b2d877bbeaa03a9dd9ebef"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a3cf17af552b2d877bbeaa03a9dd9ebef">~DBAppender</a> ()</td></tr>
 <tr class="memitem:a5ef06427b346152e107c87e69b658dee" id="r_a5ef06427b346152e107c87e69b658dee"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5ef06427b346152e107c87e69b658dee">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a5ef06427b346152e107c87e69b658dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.        <br /></td></tr>
+<tr class="memdesc:a5ef06427b346152e107c87e69b658dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.        <br /></td></tr>
 <tr class="memitem:a6d835e0571f229e4eec76ba7a67d6b12" id="r_a6d835e0571f229e4eec76ba7a67d6b12"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6d835e0571f229e4eec76ba7a67d6b12">activateOptions</a> () override</td></tr>
 <tr class="memdesc:a6d835e0571f229e4eec76ba7a67d6b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the specified options.  <br /></td></tr>
 <tr class="memitem:ac2f44c1d0a7064e983e12b84d9863f21" id="r_ac2f44c1d0a7064e983e12b84d9863f21"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac2f44c1d0a7064e983e12b84d9863f21">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) override</td></tr>
 <tr class="memdesc:ac2f44c1d0a7064e983e12b84d9863f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the event to the buffer.  <br /></td></tr>
-<tr class="memitem:a7dfc7960eeb001c222619cb1cfb9eb1f" id="r_a7dfc7960eeb001c222619cb1cfb9eb1f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7dfc7960eeb001c222619cb1cfb9eb1f">close</a> () override</td></tr>
-<tr class="memdesc:a7dfc7960eeb001c222619cb1cfb9eb1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.  <br /></td></tr>
 <tr class="memitem:aef0eea44c1dd0ad0415039cb458970a2" id="r_aef0eea44c1dd0ad0415039cb458970a2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aef0eea44c1dd0ad0415039cb458970a2">requiresLayout</a> () const override</td></tr>
 <tr class="memdesc:aef0eea44c1dd0ad0415039cb458970a2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classlog4cxx_1_1db_1_1DBAppender.html" title="The DBAppender lets you log messages to a database.">DBAppender</a> does not require a layout.  <br /></td></tr>
 <tr class="memitem:a563db5a008fe5c8877fa8cb0d27d47cc" id="r_a563db5a008fe5c8877fa8cb0d27d47cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a563db5a008fe5c8877fa8cb0d27d47cc">setSql</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;s)</td></tr>
@@ -173,6 +171,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a62757130f678fb9e1b236a07297212cc pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a filter to end of the filter list.  <br /></td></tr>
 <tr class="memitem:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab8a68d594edffba72856ff25753d5911"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab8a68d594edffba72856ff25753d5911">clearFilters</a> () override</td></tr>
 <tr class="memdesc:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the filters chain.  <br /></td></tr>
+<tr class="memitem:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab3760465840fab6e19d73680a53701e0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab3760465840fab6e19d73680a53701e0">close</a> () override</td></tr>
+<tr class="memdesc:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.     <br /></td></tr>
 <tr class="memitem:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ada96367511614d645b4410c2de00d99e"><td class="memItemLeft">const <a class="el" href="namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648">spi::ErrorHandlerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ada96367511614d645b4410c2de00d99e">getErrorHandler</a> () const</td></tr>
 <tr class="memdesc:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the currently set <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html" title="Appenders may delegate their error handling to ErrorHandlers.">spi::ErrorHandler</a> for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a2334ac3560b4247480d6a9cd3356c4e3 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a2334ac3560b4247480d6a9cd3356c4e3"><td class="memItemLeft"><a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a2334ac3560b4247480d6a9cd3356c4e3">getFilter</a> () const override</td></tr>
@@ -399,36 +399,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a7dfc7960eeb001c222619cb1cfb9eb1f" name="a7dfc7960eeb001c222619cb1cfb9eb1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dfc7960eeb001c222619cb1cfb9eb1f">&#9670;&#160;</a></span>close()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::db::DBAppender::close </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Release any resources allocated within the appender such as file handles, network connections, etc. </p>
-<p>It is a programming error to append to a closed appender. </p>
-
-<p>Implements <a class="el" href="classlog4cxx_1_1Appender.html#a63bbe5d72b11d0fcbbb4d06d435a7012">log4cxx::Appender</a>.</p>
-
-</div>
-</div>
 <a id="a4a746eed383a1c044359ec29a9db6291" name="a4a746eed383a1c044359ec29a9db6291"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a746eed383a1c044359ec29a9db6291">&#9670;&#160;</a></span>getSql()</h2>
 
@@ -504,7 +474,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.       </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.       </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadLeft">Supported options  </th><th class="markdownTableHeadCenter">Supported values  </th><th class="markdownTableHeadCenter">Default value  </th></tr>
@@ -519,7 +489,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft">ColumnMapping  </td><td class="markdownTableBodyCenter">(<a class="el" href="#rep" title="rep">^</a>)  </td><td class="markdownTableBodyCenter">-  </td></tr>
 </table>
-<p><a class="anchor" id="rep"></a>(^) One value for each '%' character in the SQL value. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
+<p><a class="anchor" id="rep"></a>(^) One value for each '%' character in the SQL value. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Override this method to set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337">log4cxx::AppenderSkeleton</a>.</p>
 

@@ -153,12 +153,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab478d5f8a5b1a07f7ec05753915c7da6" id="r_ab478d5f8a5b1a07f7ec05753915c7da6"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ab478d5f8a5b1a07f7ec05753915c7da6">SyslogAppender</a> (const <a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> &amp;layout, int syslogFacility)</td></tr>
 <tr class="memitem:a562595bfc72c5aaf721ae484c9860e4a" id="r_a562595bfc72c5aaf721ae484c9860e4a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a562595bfc72c5aaf721ae484c9860e4a">SyslogAppender</a> (const <a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> &amp;layout, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;syslogHost, int syslogFacility)</td></tr>
 <tr class="memitem:a85eef2762411dbcf04bf1b619ae888d8" id="r_a85eef2762411dbcf04bf1b619ae888d8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a85eef2762411dbcf04bf1b619ae888d8">~SyslogAppender</a> ()</td></tr>
-<tr class="memitem:a5e9e74602499a7b5ca95b4c60a3b8427" id="r_a5e9e74602499a7b5ca95b4c60a3b8427"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5e9e74602499a7b5ca95b4c60a3b8427">close</a> () override</td></tr>
-<tr class="memdesc:a5e9e74602499a7b5ca95b4c60a3b8427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources held by this <a class="el" href="classlog4cxx_1_1net_1_1SyslogAppender.html" title="Use SyslogAppender to send log messages to a remote syslog daemon.">SyslogAppender</a>.  <br /></td></tr>
 <tr class="memitem:a0e1cdaa4e7be70e0ca96327ecfe09214" id="r_a0e1cdaa4e7be70e0ca96327ecfe09214"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0e1cdaa4e7be70e0ca96327ecfe09214">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) override</td></tr>
 <tr class="memdesc:a0e1cdaa4e7be70e0ca96327ecfe09214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses of <code><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders.">AppenderSkeleton</a></code> must implement this method to perform actual logging.  <br /></td></tr>
 <tr class="memitem:a7763860c155355db6e05f6523d6cd65f" id="r_a7763860c155355db6e05f6523d6cd65f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7763860c155355db6e05f6523d6cd65f">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a7763860c155355db6e05f6523d6cd65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.        <br /></td></tr>
+<tr class="memdesc:a7763860c155355db6e05f6523d6cd65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.        <br /></td></tr>
 <tr class="memitem:a1449ff8266be8cf68efb472ce6efe38f" id="r_a1449ff8266be8cf68efb472ce6efe38f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1449ff8266be8cf68efb472ce6efe38f">requiresLayout</a> () const override</td></tr>
 <tr class="memdesc:a1449ff8266be8cf68efb472ce6efe38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classlog4cxx_1_1net_1_1SyslogAppender.html" title="Use SyslogAppender to send log messages to a remote syslog daemon.">SyslogAppender</a> requires a layout.  <br /></td></tr>
 <tr class="memitem:aa3ecf9ece5ececa872f0b4fbc08942e1" id="r_aa3ecf9ece5ececa872f0b4fbc08942e1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa3ecf9ece5ececa872f0b4fbc08942e1">setSyslogHost</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;syslogHost)</td></tr>
@@ -185,6 +183,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a62757130f678fb9e1b236a07297212cc pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a filter to end of the filter list.  <br /></td></tr>
 <tr class="memitem:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab8a68d594edffba72856ff25753d5911"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab8a68d594edffba72856ff25753d5911">clearFilters</a> () override</td></tr>
 <tr class="memdesc:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the filters chain.  <br /></td></tr>
+<tr class="memitem:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab3760465840fab6e19d73680a53701e0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab3760465840fab6e19d73680a53701e0">close</a> () override</td></tr>
+<tr class="memdesc:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.     <br /></td></tr>
 <tr class="memitem:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ada96367511614d645b4410c2de00d99e"><td class="memItemLeft">const <a class="el" href="namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648">spi::ErrorHandlerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ada96367511614d645b4410c2de00d99e">getErrorHandler</a> () const</td></tr>
 <tr class="memdesc:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the currently set <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html" title="Appenders may delegate their error handling to ErrorHandlers.">spi::ErrorHandler</a> for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a2334ac3560b4247480d6a9cd3356c4e3 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a2334ac3560b4247480d6a9cd3356c4e3"><td class="memItemLeft"><a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a2334ac3560b4247480d6a9cd3356c4e3">getFilter</a> () const override</td></tr>
@@ -354,35 +354,6 @@ RFC 3164). Modern syslog implementations(e.g. syslog-ng) can accept messages muc
 <p>See also <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ac4e798eb488e305d85d1d3ea102b4917" title="Call AppenderSkeleton::doAppendImpl after acquiring a lock that prevents other threads from concurren...">AppenderSkeleton::doAppend</a> method. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a8d784b0800f51afd9a19de38a80510de">log4cxx::AppenderSkeleton</a>.</p>
-
-</div>
-</div>
-<a id="a5e9e74602499a7b5ca95b4c60a3b8427" name="a5e9e74602499a7b5ca95b4c60a3b8427"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e9e74602499a7b5ca95b4c60a3b8427">&#9670;&#160;</a></span>close()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::net::SyslogAppender::close </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Release any resources held by this <a class="el" href="classlog4cxx_1_1net_1_1SyslogAppender.html" title="Use SyslogAppender to send log messages to a remote syslog daemon.">SyslogAppender</a>. </p>
-
-<p>Implements <a class="el" href="classlog4cxx_1_1Appender.html#a63bbe5d72b11d0fcbbb4d06d435a7012">log4cxx::Appender</a>.</p>
 
 </div>
 </div>
@@ -661,7 +632,7 @@ RFC 3164). Modern syslog implementations(e.g. syslog-ng) can accept messages muc
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.       </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.       </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported options  </th><th class="markdownTableHeadNone">Supported values  </th><th class="markdownTableHeadNone">Default value  </th></tr>
@@ -674,7 +645,7 @@ RFC 3164). Modern syslog implementations(e.g. syslog-ng) can accept messages muc
 </table>
 <p><a class="anchor" id="sysLogAddress"></a>(1) A valid internet address, optionally with the port number as a suffix after a ':'.</p>
 <p><a class="anchor" id="facility"></a>(2) One of kern,user,mail,daemon,auth,syslog,lpr,news,uucp,cron,ftp,local0,local1,local2,local3,local4,local5,local6,local7</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Override this method to set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337">log4cxx::AppenderSkeleton</a>.</p>
 

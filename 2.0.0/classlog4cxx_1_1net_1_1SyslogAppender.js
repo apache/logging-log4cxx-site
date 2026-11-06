@@ -5,7 +5,6 @@ var classlog4cxx_1_1net_1_1SyslogAppender =
     [ "SyslogAppender", "classlog4cxx_1_1net_1_1SyslogAppender.html#a562595bfc72c5aaf721ae484c9860e4a", null ],
     [ "~SyslogAppender", "classlog4cxx_1_1net_1_1SyslogAppender.html#a85eef2762411dbcf04bf1b619ae888d8", null ],
     [ "append", "classlog4cxx_1_1net_1_1SyslogAppender.html#a0e1cdaa4e7be70e0ca96327ecfe09214", null ],
-    [ "close", "classlog4cxx_1_1net_1_1SyslogAppender.html#a5e9e74602499a7b5ca95b4c60a3b8427", null ],
     [ "getFacility", "classlog4cxx_1_1net_1_1SyslogAppender.html#ad7754ec984d14cc799e8501c3461a0ba", null ],
     [ "getFacilityPrinting", "classlog4cxx_1_1net_1_1SyslogAppender.html#a624aa2eb05b3c7f391ceb5bcb376fdcc", null ],
     [ "getMaxMessageLength", "classlog4cxx_1_1net_1_1SyslogAppender.html#aa695b0c35b012cc292c631eb9106d2ce", null ],

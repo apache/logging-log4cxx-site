@@ -153,7 +153,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f4809a03b8ffb2c1f1d8b1d8fc9d752" id="r_a7f4809a03b8ffb2c1f1d8b1d8fc9d752"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7f4809a03b8ffb2c1f1d8b1d8fc9d752">ignoresThrowable</a> () const override</td></tr>
 <tr class="memdesc:a7f4809a03b8ffb2c1f1d8b1d8fc9d752"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classlog4cxx_1_1SimpleLayout.html" title="SimpleLayout consists of the level of the log statement, followed by &quot; - &quot; and then the log message i...">SimpleLayout</a> does not handle the throwable contained within <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html">LoggingEvents</a></code>.  <br /></td></tr>
 <tr class="memitem:a306170f966a1b9a05bdeb0d5725ab607" id="r_a306170f966a1b9a05bdeb0d5725ab607"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a306170f966a1b9a05bdeb0d5725ab607">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;) override</td></tr>
-<tr class="memdesc:a306170f966a1b9a05bdeb0d5725ab607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.     <br /></td></tr>
+<tr class="memdesc:a306170f966a1b9a05bdeb0d5725ab607"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.     <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1Layout"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1Layout.html">log4cxx::Layout</a></td></tr>
 <tr class="memitem:ac4649c3faf730f066c8a88bb059077bc pub_methods_classlog4cxx_1_1Layout" id="r_ac4649c3faf730f066c8a88bb059077bc"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1Layout.html#ac4649c3faf730f066c8a88bb059077bc">~Layout</a> ()</td></tr>
 <tr class="memitem:aec270a094df8494e8117c69cee426de9 pub_methods_classlog4cxx_1_1Layout" id="r_aec270a094df8494e8117c69cee426de9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1Layout.html#aec270a094df8494e8117c69cee426de9">format</a> (<a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;output, const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;p) const</td></tr>
@@ -281,7 +281,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.    </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported options  </th><th class="markdownTableHeadNone">Supported values  </th><th class="markdownTableHeadNone">Default value  </th></tr>

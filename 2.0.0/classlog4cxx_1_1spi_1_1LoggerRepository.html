@@ -149,9 +149,9 @@ Inheritance diagram for log4cxx::spi::LoggerRepository:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a936b2812e0fb3ca695ceb644b422f1e9" id="r_a936b2812e0fb3ca695ceb644b422f1e9"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a936b2812e0fb3ca695ceb644b422f1e9">~LoggerRepository</a> ()</td></tr>
 <tr class="memitem:a9af2a7449eebb8136a4cbeaa41aac0cc" id="r_a9af2a7449eebb8136a4cbeaa41aac0cc"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9af2a7449eebb8136a4cbeaa41aac0cc">addHierarchyEventListener</a> (const spi::HierarchyEventListenerPtr &amp;listener)=0</td></tr>
-<tr class="memdesc:a9af2a7449eebb8136a4cbeaa41aac0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>listener</code> to the repository.  <br /></td></tr>
+<tr class="memdesc:a9af2a7449eebb8136a4cbeaa41aac0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this to be able to notify <code>listener</code> when an <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a> is added or removed from a logger in the repository.  <br /></td></tr>
 <tr class="memitem:a055e10ebaf42334637616355c732a3a5" id="r_a055e10ebaf42334637616355c732a3a5"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a055e10ebaf42334637616355c732a3a5">removeHierarchyEventListener</a> (const spi::HierarchyEventListenerPtr &amp;listener)=0</td></tr>
-<tr class="memdesc:a055e10ebaf42334637616355c732a3a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove <code>listener</code> from the repository.  <br /></td></tr>
+<tr class="memdesc:a055e10ebaf42334637616355c732a3a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this to be able to stop notifying <code>listener</code> when an <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a> is added or removed from a logger in the repository.  <br /></td></tr>
 <tr class="memitem:a3e9920aeb4b7dcee64f26b3aa69277c1" id="r_a3e9920aeb4b7dcee64f26b3aa69277c1"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3e9920aeb4b7dcee64f26b3aa69277c1">ensureIsConfigured</a> (std::function&lt; void()&gt; configurator)=0</td></tr>
 <tr class="memdesc:a3e9920aeb4b7dcee64f26b3aa69277c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <code>configurator</code> if not yet configured and <code>configurator</code> has not already been tried.  <br /></td></tr>
 <tr class="memitem:ae85f14ee09d7433e38cae4d8b9d39981" id="r_ae85f14ee09d7433e38cae4d8b9d39981"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ae85f14ee09d7433e38cae4d8b9d39981">isDisabled</a> (int level) const =0</td></tr>
@@ -248,7 +248,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Add <code>listener</code> to the repository. </p>
+<p>Implement this to be able to notify <code>listener</code> when an <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a> is added or removed from a logger in the repository. </p>
 
 <p>Implemented in <a class="el" href="classlog4cxx_1_1Hierarchy.html#ac7d2effec69f274de76013ad17fcb026">log4cxx::Hierarchy</a>.</p>
 
@@ -622,7 +622,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove <code>listener</code> from the repository. </p>
+<p>Implement this to be able to stop notifying <code>listener</code> when an <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a> is added or removed from a logger in the repository. </p>
 
 <p>Implemented in <a class="el" href="classlog4cxx_1_1Hierarchy.html#a5f17c81798b81d857c8803b68e1ad725">log4cxx::Hierarchy</a>.</p>
 

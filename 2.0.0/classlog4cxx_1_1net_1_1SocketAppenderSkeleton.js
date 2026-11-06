@@ -7,7 +7,6 @@ var classlog4cxx_1_1net_1_1SocketAppenderSkeleton =
     [ "SocketAppenderSkeleton", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a5fb6a3e98044a6911e8d66d512a7d673", null ],
     [ "activateOptions", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a3709020b2edce60f92cc088fa2c263f7", null ],
     [ "activateOptions", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a069a811a37097a1979ed9028c5b4a712", null ],
-    [ "close", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a06ab5cd0948038816b702e149aef82a3", null ],
     [ "getDefaultDelay", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af5b33f3f5982ee581f7cf3b7b5827d57", null ],
     [ "getDefaultPort", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#af994b879a6a9f747593803429b20670c", null ],
     [ "getLocationInfo", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#a77df917ecbada47e548ad7359ce124ee", null ],

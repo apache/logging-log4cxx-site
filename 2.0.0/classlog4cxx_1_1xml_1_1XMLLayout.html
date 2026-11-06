@@ -159,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a50b088a1e17eac72d5bdfc454ea0b5" id="r_a3a50b088a1e17eac72d5bdfc454ea0b5"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3a50b088a1e17eac72d5bdfc454ea0b5">getProperties</a> ()</td></tr>
 <tr class="memdesc:a3a50b088a1e17eac72d5bdfc454ea0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether <a class="el" href="classlog4cxx_1_1MDC.html" title="A Mapped Diagnostic Context, or MDC in short, is an instrument for distinguishing interleaved log out...">MDC</a> key-value pairs should be output.  <br /></td></tr>
 <tr class="memitem:a758568a10bb14a6413749c5e7db288e3" id="r_a758568a10bb14a6413749c5e7db288e3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a758568a10bb14a6413749c5e7db288e3">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a758568a10bb14a6413749c5e7db288e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.     <br /></td></tr>
+<tr class="memdesc:a758568a10bb14a6413749c5e7db288e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.     <br /></td></tr>
 <tr class="memitem:a14783812f354af3e9f069b9fcf511517" id="r_a14783812f354af3e9f069b9fcf511517"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a14783812f354af3e9f069b9fcf511517">format</a> (<a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;output, const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) const override</td></tr>
 <tr class="memdesc:a14783812f354af3e9f069b9fcf511517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a <code><a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html">LoggingEvent</a></code> in conformance with <a href="https://logging.apache.org/log4j/1.x/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">this XML data definition file</a>.  <br /></td></tr>
 <tr class="memitem:a0ff42c38c0062bc87f3078641bf04192" id="r_a0ff42c38c0062bc87f3078641bf04192"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0ff42c38c0062bc87f3078641bf04192">ignoresThrowable</a> () const override</td></tr>
@@ -421,7 +421,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.    </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported options  </th><th class="markdownTableHeadNone">Supported values  </th><th class="markdownTableHeadNone">Default value  </th></tr>

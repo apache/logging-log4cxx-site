@@ -155,13 +155,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae3f635709d629d89372568808c809eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>evaluator</code> passed as parameter as the <a class="el" href="classlog4cxx_1_1spi_1_1TriggeringEventEvaluator.html" title="Implementions of this interface allow certain appenders to decide when to perform an appender specifi...">spi::TriggeringEventEvaluator</a> for this <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html" title="Send an e-mail when a specific logging event occurs, typically when an ERROR level logging event is s...">net::SMTPAppender</a>.  <br /></td></tr>
 <tr class="memitem:afa6351dfb71749765d253844e6eec83b" id="r_afa6351dfb71749765d253844e6eec83b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afa6351dfb71749765d253844e6eec83b">~SMTPAppender</a> ()</td></tr>
 <tr class="memitem:abc7cf7c6dba6688f349ed76228731457" id="r_abc7cf7c6dba6688f349ed76228731457"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abc7cf7c6dba6688f349ed76228731457">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:abc7cf7c6dba6688f349ed76228731457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.        <br /></td></tr>
+<tr class="memdesc:abc7cf7c6dba6688f349ed76228731457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.        <br /></td></tr>
 <tr class="memitem:aee713733c5824f29797946be822a6600" id="r_aee713733c5824f29797946be822a6600"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aee713733c5824f29797946be822a6600">activateOptions</a> () override</td></tr>
 <tr class="memdesc:aee713733c5824f29797946be822a6600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.        <br /></td></tr>
 <tr class="memitem:a8b9120e5ab994c4b42779427b1dd823d" id="r_a8b9120e5ab994c4b42779427b1dd823d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8b9120e5ab994c4b42779427b1dd823d">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) override</td></tr>
 <tr class="memdesc:a8b9120e5ab994c4b42779427b1dd823d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html" title="Send an e-mail when a specific logging event occurs, typically when an ERROR level logging event is s...">SMTPAppender</a> specific appending actions, mainly adding the event to a cyclic buffer and checking if the event triggers an e-mail to be sent.  <br /></td></tr>
-<tr class="memitem:a66599643aad2d261696c5153920ecf43" id="r_a66599643aad2d261696c5153920ecf43"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a66599643aad2d261696c5153920ecf43">close</a> () override</td></tr>
-<tr class="memdesc:a66599643aad2d261696c5153920ecf43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.  <br /></td></tr>
 <tr class="memitem:a608fe6a83e30c286d7457c4842b531fb" id="r_a608fe6a83e30c286d7457c4842b531fb"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#a608fe6a83e30c286d7457c4842b531fb">getTo</a> () const</td></tr>
 <tr class="memdesc:a608fe6a83e30c286d7457c4842b531fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns value of the <b>To</b> option.  <br /></td></tr>
 <tr class="memitem:a80b54536d8afbc8018fe2183e9aeed5d" id="r_a80b54536d8afbc8018fe2183e9aeed5d"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#a80b54536d8afbc8018fe2183e9aeed5d">getCc</a> () const</td></tr>
@@ -225,6 +223,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a62757130f678fb9e1b236a07297212cc pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a filter to end of the filter list.  <br /></td></tr>
 <tr class="memitem:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab8a68d594edffba72856ff25753d5911"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab8a68d594edffba72856ff25753d5911">clearFilters</a> () override</td></tr>
 <tr class="memdesc:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the filters chain.  <br /></td></tr>
+<tr class="memitem:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab3760465840fab6e19d73680a53701e0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab3760465840fab6e19d73680a53701e0">close</a> () override</td></tr>
+<tr class="memdesc:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.     <br /></td></tr>
 <tr class="memitem:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ada96367511614d645b4410c2de00d99e"><td class="memItemLeft">const <a class="el" href="namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648">spi::ErrorHandlerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ada96367511614d645b4410c2de00d99e">getErrorHandler</a> () const</td></tr>
 <tr class="memdesc:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the currently set <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html" title="Appenders may delegate their error handling to ErrorHandlers.">spi::ErrorHandler</a> for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a2334ac3560b4247480d6a9cd3356c4e3 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a2334ac3560b4247480d6a9cd3356c4e3"><td class="memItemLeft"><a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a2334ac3560b4247480d6a9cd3356c4e3">getFilter</a> () const override</td></tr>
@@ -428,7 +428,7 @@ a non-ascii character is detected where not permitted </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. Call <a class="el" href="#aee713733c5824f29797946be822a6600" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated</a></b></dt><dd>Use <a class="el" href="#aee713733c5824f29797946be822a6600" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead</dd></dl>
 
 </div>
@@ -459,36 +459,6 @@ a non-ascii character is detected where not permitted </li>
 <p>Perform <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html" title="Send an e-mail when a specific logging event occurs, typically when an ERROR level logging event is s...">SMTPAppender</a> specific appending actions, mainly adding the event to a cyclic buffer and checking if the event triggers an e-mail to be sent. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a8d784b0800f51afd9a19de38a80510de">log4cxx::AppenderSkeleton</a>.</p>
-
-</div>
-</div>
-<a id="a66599643aad2d261696c5153920ecf43" name="a66599643aad2d261696c5153920ecf43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66599643aad2d261696c5153920ecf43">&#9670;&#160;</a></span>close()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::net::SMTPAppender::close </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Release any resources allocated within the appender such as file handles, network connections, etc. </p>
-<p>It is a programming error to append to a closed appender. </p>
-
-<p>Implements <a class="el" href="classlog4cxx_1_1Appender.html#a63bbe5d72b11d0fcbbb4d06d435a7012">log4cxx::Appender</a>.</p>
 
 </div>
 </div>
@@ -937,7 +907,7 @@ a non-ascii character is detected where not permitted </li>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.       </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.       </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported options  </th><th class="markdownTableHeadNone">Supported values  </th><th class="markdownTableHeadNone">Default value  </th></tr>
@@ -963,10 +933,12 @@ a non-ascii character is detected where not permitted </li>
 <td class="markdownTableBodyNone">buffersize  </td><td class="markdownTableBodyNone">{int}  </td><td class="markdownTableBodyNone">512  </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">evaluatorClass  </td><td class="markdownTableBodyNone">(<a class="el" href="classlog4cxx_1_1AppenderSkeleton.html" title="AppenderSkeleton">2</a>)  </td><td class="markdownTableBodyNone">-  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">allowPlainTextAuthentication  </td><td class="markdownTableBodyNone">True,False  </td><td class="markdownTableBodyNone">False  </td></tr>
 </table>
 <p><a class="anchor" id="asciiCheck"></a>(1) Only ASCII charaters</p>
 <p><a class="anchor" id="TriggeringEventEvaluator"></a>(2) A registered class deriving from TriggeringEventEvaluator</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Override this method to set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337">log4cxx::AppenderSkeleton</a>.</p>
 

@@ -9,7 +9,6 @@ var classlog4cxx_1_1nt_1_1NTEventLogAppender =
     [ "activateOptions", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a069a811a37097a1979ed9028c5b4a712", null ],
     [ "addRegistryInfo", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#ad56314ef108282e4afec48a038e5b0cc", null ],
     [ "append", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#ae2c6f3e3d3e107415577cefb9c930a52", null ],
-    [ "close", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a7280f7d539c9c48b308540f0b7fd80c9", null ],
     [ "getLog", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a2ed755f30b026ba6c678f7a0f4b4cb61", null ],
     [ "getServer", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a161f30d3e4961bb39e38e882d5240cff", null ],
     [ "getSource", "classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a95a4b2cc8de13123d8d50e9d01a0dd2d", null ],

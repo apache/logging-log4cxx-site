@@ -139,12 +139,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classlog4cxx_1
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a879d97599dc6db3558356fa5954689d3" id="r_a879d97599dc6db3558356fa5954689d3"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight"><a class="el" href="#a879d97599dc6db3558356fa5954689d3">configure</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#a601415735b45ce1d45c7a3c45d797b37">spi::LoggerRepositoryPtr</a> &amp;repository={})</td></tr>
 <tr class="memdesc:a879d97599dc6db3558356fa5954689d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure <code>repository</code>.  <br /></td></tr>
-<tr class="memitem:a3c824ec93d0e7121ba727eada3c02464" id="r_a3c824ec93d0e7121ba727eada3c02464"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a3c824ec93d0e7121ba727eada3c02464">setConfigurationFileName</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;path)</td></tr>
-<tr class="memdesc:a3c824ec93d0e7121ba727eada3c02464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make <code>path</code> the configuration file used by <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a>.  <br /></td></tr>
-<tr class="memitem:aa19bd82d66d292615969db6ef930dff0" id="r_aa19bd82d66d292615969db6ef930dff0"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aa19bd82d66d292615969db6ef930dff0">setConfigurationWatchSeconds</a> (int seconds)</td></tr>
-<tr class="memdesc:aa19bd82d66d292615969db6ef930dff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make <code>seconds</code> the time a background thread will delay before checking for a change to the configuration file used by <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a>.  <br /></td></tr>
+<tr class="memitem:a90713cb48b7a729bf2af34084eee42d2" id="r_a90713cb48b7a729bf2af34084eee42d2"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#a90713cb48b7a729bf2af34084eee42d2">setConfiguratorClass</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;className)</td></tr>
+<tr class="memdesc:a90713cb48b7a729bf2af34084eee42d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate an instance of <code>className</code> to process the configuration file used by <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a>.  <br /></td></tr>
+<tr class="memitem:af737f6922794a75c2f39f590f2c741e0" id="r_af737f6922794a75c2f39f590f2c741e0"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#af737f6922794a75c2f39f590f2c741e0">setConfigurationFileName</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;path)</td></tr>
+<tr class="memdesc:af737f6922794a75c2f39f590f2c741e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make <code>path</code> the configuration file used by <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a>.  <br /></td></tr>
+<tr class="memitem:a1f8d3221ecd15ef0da9eda83e5d353be" id="r_a1f8d3221ecd15ef0da9eda83e5d353be"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#a1f8d3221ecd15ef0da9eda83e5d353be">setConfigurationWatchSeconds</a> (int seconds)</td></tr>
+<tr class="memdesc:a1f8d3221ecd15ef0da9eda83e5d353be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make <code>seconds</code> the time a background task will delay before checking for a change to the configuration file used by <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a>.  <br /></td></tr>
 <tr class="memitem:af42ab8271732d7b1c7a08ebe252feb09" id="r_af42ab8271732d7b1c7a08ebe252feb09"><td class="memItemLeft">static std::tuple&lt; <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>, <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af42ab8271732d7b1c7a08ebe252feb09">configureFromFile</a> (const std::vector&lt; <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &gt; &amp;directories, const std::vector&lt; <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &gt; &amp;filenames)</td></tr>
-<tr class="memdesc:af42ab8271732d7b1c7a08ebe252feb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a> passing the default repository after calling <a class="el" href="#a3c824ec93d0e7121ba727eada3c02464" title="Make path the configuration file used by configure().">setConfigurationFileName()</a> with a path composed of an entry in <code>directories</code> and an entry in <code>filenames</code> when the combination identifies an existing file.  <br /></td></tr>
+<tr class="memdesc:af42ab8271732d7b1c7a08ebe252feb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a> passing the default repository after calling <a class="el" href="#af737f6922794a75c2f39f590f2c741e0" title="Make path the configuration file used by configure().">setConfigurationFileName()</a> with a path composed of an entry in <code>directories</code> and an entry in <code>filenames</code> when the combination identifies an existing file.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configures the repository from environmental settings and files. </p>
@@ -173,12 +175,12 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Configure <code>repository</code>. </p>
-<p>If the configuration file name has not been provided by a call to <a class="el" href="#a3c824ec93d0e7121ba727eada3c02464" title="Make path the configuration file used by configure().">setConfigurationFileName()</a>, the environment variable "LOG4CXX_CONFIGURATION" value is used, with ${varname} instances using either a system environment variable value (if found) otherwise using the <a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">helpers::Properties</a> object provided by <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727" title="The key value pairs used when expanding ${varname} instances in a configuration file.">spi::Configurator::properties</a>.</p>
+<p>If the configuration file name has not been provided by a call to <a class="el" href="#af737f6922794a75c2f39f590f2c741e0" title="Make path the configuration file used by configure().">setConfigurationFileName()</a>, the environment variable "LOG4CXX_CONFIGURATION" value is used, with ${varname} instances using either a system environment variable value (if found) otherwise using the <a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">helpers::Properties</a> object provided by <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727" title="The key value pairs used when expanding ${varname} instances in a configuration file.">spi::Configurator::properties</a>.</p>
 <dl class="section user"><dt>Example usage:</dt><dd></dd></dl>
 <div class="fragment"><div class="line">setenv LOG4CXX_CONFIGURATION=<span class="stringliteral">&quot;${PROGRAM_FILE_PATH.PARENT_PATH}/${PROGRAM_FILE_PATH.STEM}.xml&quot;</span></div>
-</div><!-- fragment --><p>Unless a custom configurator is specified using the "LOG4CXX_CONFIGURATOR_CLASS" environment variable, the <a class="el" href="classlog4cxx_1_1PropertyConfigurator.html" title="Allows Loggers, Appenders and Layouts to be set up using directives in a properties file.">PropertyConfigurator</a> will be used to configure <a class="el" href="namespacelog4cxx.html">log4cxx</a> unless the file name ends with the ".xml" extension, in which case the DOMConfigurator will be used. If a custom configurator is specified, the environment variable should contain a fully qualified class name of a class that implements the Configurator interface.</p>
-<p>If the configuration file name is not found using any of the previous approaches, the current directory is examined for a file with extension ".xml" or ".properties" with a base name "log4cxx" or "log4j".</p>
-<p>If a positive number has been provided by a call to <a class="el" href="#aa19bd82d66d292615969db6ef930dff0" title="Make seconds the time a background thread will delay before checking for a change to the configuratio...">setConfigurationWatchSeconds()</a> or the environment variables "LOG4CXX_CONFIGURATION_WATCH_SECONDS" contains a positive number a background thread is started that will periodically check for a change to the configuration file and apply any configuration changes found. </p>
+</div><!-- fragment --><p>If the configuration file name is not specified, the current directory is examined for a file with extension ".xml" or ".properties" with a base name "log4cxx" or "log4j".</p>
+<p>Unless a configurator is specified using the "LOG4CXX_CONFIGURATOR_CLASS" environment variable, or by a call to <a class="el" href="#a90713cb48b7a729bf2af34084eee42d2" title="Instantiate an instance of className to process the configuration file used by configure().">setConfiguratorClass()</a>, Log4cxx will call the <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#ac26318c53c7f65cb327d2b23ad732311" title="Does configFileName contain directives that this class uses?">spi::Configurator::isValid</a> method on an instance of each class registered with Log4cxx whose name ends with "Configurator". The first configurator instance whose <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#ac26318c53c7f65cb327d2b23ad732311" title="Does configFileName contain directives that this class uses?">spi::Configurator::isValid</a> method returns <code>true</code> is used to process the configuration file.</p>
+<p>If a positive number has been provided by a call to <a class="el" href="#a1f8d3221ecd15ef0da9eda83e5d353be" title="Make seconds the time a background task will delay before checking for a change to the configuration ...">setConfigurationWatchSeconds()</a> or the environment variables "LOG4CXX_CONFIGURATION_WATCH_SECONDS" contains a positive number a background task is started that will periodically check for a change to the configuration file and apply any configuration changes found. </p>
 
 </div>
 </div>
@@ -209,7 +211,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Call <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a> passing the default repository after calling <a class="el" href="#a3c824ec93d0e7121ba727eada3c02464" title="Make path the configuration file used by configure().">setConfigurationFileName()</a> with a path composed of an entry in <code>directories</code> and an entry in <code>filenames</code> when the combination identifies an existing file. </p>
+<p>Call <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a> passing the default repository after calling <a class="el" href="#af737f6922794a75c2f39f590f2c741e0" title="Make path the configuration file used by configure().">setConfigurationFileName()</a> with a path composed of an entry in <code>directories</code> and an entry in <code>filenames</code> when the combination identifies an existing file. </p>
 <dl class="section user"><dt>Example usage:</dt><dd></dd></dl>
 <div class="fragment"><div class="line">std::vector&lt;LogString&gt; directories</div>
 <div class="line">    { LOG4CXX_STR(<span class="stringliteral">&quot;.&quot;</span>)</div>
@@ -244,8 +246,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3c824ec93d0e7121ba727eada3c02464" name="a3c824ec93d0e7121ba727eada3c02464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c824ec93d0e7121ba727eada3c02464">&#9670;&#160;</a></span>setConfigurationFileName()</h2>
+<a id="af737f6922794a75c2f39f590f2c741e0" name="af737f6922794a75c2f39f590f2c741e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af737f6922794a75c2f39f590f2c741e0">&#9670;&#160;</a></span>setConfigurationFileName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,7 +256,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void log4cxx::DefaultConfigurator::setConfigurationFileName </td>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> log4cxx::DefaultConfigurator::setConfigurationFileName </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>path</em></span></td><td>)</td>
           <td></td>
@@ -270,13 +272,14 @@ Static Public Member Functions</h2></td></tr>
 <p>Make <code>path</code> the configuration file used by <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a>. </p>
 <p>Any ${varname} instances in the <code>path</code> value are expanded using either a system environment variable value (if found) otherwise using the map provided by <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727" title="The key value pairs used when expanding ${varname} instances in a configuration file.">spi::Configurator::properties</a>.</p>
 <dl class="section user"><dt>Example usage:</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><a class="code hl_function" href="#a3c824ec93d0e7121ba727eada3c02464">DefaultConfigurator::setConfigurationFileName</a>(LOG4CXX_STR(<span class="stringliteral">&quot;${PROGRAM_FILE_PATH.PARENT_PATH}/${PROGRAM_FILE_PATH.STEM}.xml&quot;</span>))</div>
-<div class="ttc" id="aclasslog4cxx_1_1DefaultConfigurator_html_a3c824ec93d0e7121ba727eada3c02464"><div class="ttname"><a href="#a3c824ec93d0e7121ba727eada3c02464">log4cxx::DefaultConfigurator::setConfigurationFileName</a></div><div class="ttdeci">static void setConfigurationFileName(const LogString &amp;path)</div><div class="ttdoc">Make path the configuration file used by configure().</div></div>
-</div><!-- fragment --> 
+<div class="fragment"><div class="line"><a class="code hl_function" href="#af737f6922794a75c2f39f590f2c741e0">DefaultConfigurator::setConfigurationFileName</a>(LOG4CXX_STR(<span class="stringliteral">&quot;${PROGRAM_FILE_PATH.PARENT_PATH}/${PROGRAM_FILE_PATH.STEM}.xml&quot;</span>))</div>
+<div class="ttc" id="aclasslog4cxx_1_1DefaultConfigurator_html_af737f6922794a75c2f39f590f2c741e0"><div class="ttname"><a href="#af737f6922794a75c2f39f590f2c741e0">log4cxx::DefaultConfigurator::setConfigurationFileName</a></div><div class="ttdeci">static LogString setConfigurationFileName(const LogString &amp;path)</div><div class="ttdoc">Make path the configuration file used by configure().</div></div>
+</div><!-- fragment --> <dl class="section return"><dt>Returns</dt><dd>The previous value of LOG4CXX_CONFIGURATION in <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727" title="The key value pairs used when expanding ${varname} instances in a configuration file.">spi::Configurator::properties</a> or environment variable </dd></dl>
+
 </div>
 </div>
-<a id="aa19bd82d66d292615969db6ef930dff0" name="aa19bd82d66d292615969db6ef930dff0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa19bd82d66d292615969db6ef930dff0">&#9670;&#160;</a></span>setConfigurationWatchSeconds()</h2>
+<a id="a1f8d3221ecd15ef0da9eda83e5d353be" name="a1f8d3221ecd15ef0da9eda83e5d353be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f8d3221ecd15ef0da9eda83e5d353be">&#9670;&#160;</a></span>setConfigurationWatchSeconds()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,7 +288,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void log4cxx::DefaultConfigurator::setConfigurationWatchSeconds </td>
+          <td class="memname">int log4cxx::DefaultConfigurator::setConfigurationWatchSeconds </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>seconds</em></span></td><td>)</td>
           <td></td>
@@ -298,12 +301,41 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Make <code>seconds</code> the time a background thread will delay before checking for a change to the configuration file used by <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a>. </p>
+<p>Make <code>seconds</code> the time a background task will delay before checking for a change to the configuration file used by <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a>. </p>
 <dl class="section user"><dt>Example usage:</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><a class="code hl_function" href="#aa19bd82d66d292615969db6ef930dff0">DefaultConfigurator::setConfigurationWatchSeconds</a>(1);</div>
-<div class="ttc" id="aclasslog4cxx_1_1DefaultConfigurator_html_aa19bd82d66d292615969db6ef930dff0"><div class="ttname"><a href="#aa19bd82d66d292615969db6ef930dff0">log4cxx::DefaultConfigurator::setConfigurationWatchSeconds</a></div><div class="ttdeci">static void setConfigurationWatchSeconds(int seconds)</div><div class="ttdoc">Make seconds the time a background thread will delay before checking for a change to the configuratio...</div></div>
-</div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="com_2foo_2config4_8cpp-example.html#_a2">com/foo/config4.cpp</a>.</dd>
+<div class="fragment"><div class="line"><a class="code hl_function" href="#a1f8d3221ecd15ef0da9eda83e5d353be">DefaultConfigurator::setConfigurationWatchSeconds</a>(1);</div>
+<div class="ttc" id="aclasslog4cxx_1_1DefaultConfigurator_html_a1f8d3221ecd15ef0da9eda83e5d353be"><div class="ttname"><a href="#a1f8d3221ecd15ef0da9eda83e5d353be">log4cxx::DefaultConfigurator::setConfigurationWatchSeconds</a></div><div class="ttdeci">static int setConfigurationWatchSeconds(int seconds)</div><div class="ttdoc">Make seconds the time a background task will delay before checking for a change to the configuration ...</div></div>
+</div><!-- fragment --> <dl class="section return"><dt>Returns</dt><dd>The previous value of LOG4CXX_CONFIGURATION_WATCH_SECONDS in <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727" title="The key value pairs used when expanding ${varname} instances in a configuration file.">spi::Configurator::properties</a> or environment variable </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="com_2foo_2config4_8cpp-example.html#_a2">com/foo/config4.cpp</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="a90713cb48b7a729bf2af34084eee42d2" name="a90713cb48b7a729bf2af34084eee42d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90713cb48b7a729bf2af34084eee42d2">&#9670;&#160;</a></span>setConfiguratorClass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> log4cxx::DefaultConfigurator::setConfiguratorClass </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>className</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Instantiate an instance of <code>className</code> to process the configuration file used by <a class="el" href="#a879d97599dc6db3558356fa5954689d3" title="Configure repository.">configure()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>The previous value of LOG4CXX_CONFIGURATOR_CLASS in <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#a34fef1dc93e7b44cfb601f30100a3727" title="The key value pairs used when expanding ${varname} instances in a configuration file.">spi::Configurator::properties</a> or environment variable </dd></dl>
 
 </div>
 </div>

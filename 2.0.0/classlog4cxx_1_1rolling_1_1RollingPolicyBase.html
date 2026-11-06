@@ -157,7 +157,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72a8efd3d2b89be20421a5c66b56de1d" id="r_a72a8efd3d2b89be20421a5c66b56de1d"><td class="memItemLeft">virtual <a class="el" href="namespacelog4cxx_1_1pattern.html#a46412c36b812db386d71ed0321e7ab05">pattern::PatternMap</a>&#160;</td><td class="memItemRight"><a class="el" href="#a72a8efd3d2b89be20421a5c66b56de1d">getFormatSpecifiers</a> () const =0</td></tr>
 <tr class="memdesc:a72a8efd3d2b89be20421a5c66b56de1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map from a name to the object implementing the (date or index) formatting.  <br /></td></tr>
 <tr class="memitem:aa6065f41b297c5571fa046ccaf62a824" id="r_aa6065f41b297c5571fa046ccaf62a824"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa6065f41b297c5571fa046ccaf62a824">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:aa6065f41b297c5571fa046ccaf62a824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.     <br /></td></tr>
+<tr class="memdesc:aa6065f41b297c5571fa046ccaf62a824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.     <br /></td></tr>
 <tr class="memitem:a95f6d9245eb843458f6e8c92c4189596" id="r_a95f6d9245eb843458f6e8c92c4189596"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a95f6d9245eb843458f6e8c92c4189596">setFileNamePattern</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;fnp)</td></tr>
 <tr class="memdesc:a95f6d9245eb843458f6e8c92c4189596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set file name pattern.  <br /></td></tr>
 <tr class="memitem:a3bbcce36d0db16cd45974d44c504233a" id="r_a3bbcce36d0db16cd45974d44c504233a"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3bbcce36d0db16cd45974d44c504233a">getFileNamePattern</a> () const</td></tr>
@@ -310,7 +310,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. Call <a class="el" href="#a82821429ecb732515795e26878d3da2b" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated</a></b></dt><dd>Use <a class="el" href="#a82821429ecb732515795e26878d3da2b" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead</dd></dl>
 
 </div>
@@ -582,7 +582,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.    </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.    </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadLeft">Supported options  </th><th class="markdownTableHeadCenter">Supported values  </th><th class="markdownTableHeadCenter">Default value  </th></tr>

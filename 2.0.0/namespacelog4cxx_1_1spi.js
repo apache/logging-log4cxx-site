@@ -3,7 +3,6 @@ var namespacelog4cxx_1_1spi =
     [ "AppenderAttachable", "classlog4cxx_1_1spi_1_1AppenderAttachable.html", "classlog4cxx_1_1spi_1_1AppenderAttachable" ],
     [ "Configurator", "classlog4cxx_1_1spi_1_1Configurator.html", "classlog4cxx_1_1spi_1_1Configurator" ],
     [ "DefaultRepositorySelector", "classlog4cxx_1_1spi_1_1DefaultRepositorySelector.html", "classlog4cxx_1_1spi_1_1DefaultRepositorySelector" ],
-    [ "ErrorCode", "classlog4cxx_1_1spi_1_1ErrorCode.html", null ],
     [ "ErrorHandler", "classlog4cxx_1_1spi_1_1ErrorHandler.html", "classlog4cxx_1_1spi_1_1ErrorHandler" ],
     [ "Filter", "classlog4cxx_1_1spi_1_1Filter.html", "classlog4cxx_1_1spi_1_1Filter" ],
     [ "HierarchyEventListener", "classlog4cxx_1_1spi_1_1HierarchyEventListener.html", "classlog4cxx_1_1spi_1_1HierarchyEventListener" ],
@@ -23,6 +22,15 @@ var namespacelog4cxx_1_1spi =
     [ "ConfigurationStatus", "namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab", [
       [ "Configured", "namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226aba61aa63eb3ac1c3408640463ee5fe8aa3", null ],
       [ "NotConfigured", "namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226aba52c1415ae26d69e91093beaac88e0815", null ]
+    ] ],
+    [ "ErrorCode", "namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740", [
+      [ "GENERIC_FAILURE", "namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740a25a79da8b9115b64ce679b550c12671f", null ],
+      [ "WRITE_FAILURE", "namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740ac6cb9b7c8f790f0226ce9a8368955860", null ],
+      [ "FLUSH_FAILURE", "namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740ac356473fdcd2195e5eabb0250a73a6a2", null ],
+      [ "CLOSE_FAILURE", "namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740a5b1c483bef13a901b63e8c7c51036cef", null ],
+      [ "OPEN_FAILURE", "namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740afde64cc2a1876ed7ccd62f748973b6a5", null ],
+      [ "ROLLOVER_FAILURE", "namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740a3a7f692afb1567bac9699c014b06c0bd", null ],
+      [ "INVALID_CONFIGURATION", "namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740a00a2a8889f387961671f45ab121c2b97", null ]
     ] ],
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx_1_1spi.html#a6ab25986d504e55b9c149bb64675db23", null ],
     [ "LOG4CXX_LIST_DEF", "namespacelog4cxx_1_1spi.html#aff48fc766c5f87e68ab46e2555d2eddf", null ],

@@ -6,7 +6,6 @@ var classlog4cxx_1_1net_1_1SMTPAppender =
     [ "activateOptions", "classlog4cxx_1_1net_1_1SMTPAppender.html#aee713733c5824f29797946be822a6600", null ],
     [ "activateOptions", "classlog4cxx_1_1net_1_1SMTPAppender.html#a069a811a37097a1979ed9028c5b4a712", null ],
     [ "append", "classlog4cxx_1_1net_1_1SMTPAppender.html#a8b9120e5ab994c4b42779427b1dd823d", null ],
-    [ "close", "classlog4cxx_1_1net_1_1SMTPAppender.html#a66599643aad2d261696c5153920ecf43", null ],
     [ "getBcc", "classlog4cxx_1_1net_1_1SMTPAppender.html#addf38cf415a9a211238a4349e0973bd5", null ],
     [ "getBufferSize", "classlog4cxx_1_1net_1_1SMTPAppender.html#abd1f45947e0be91eb64e3aed7455f5ac", null ],
     [ "getCc", "classlog4cxx_1_1net_1_1SMTPAppender.html#a80b54536d8afbc8018fe2183e9aeed5d", null ],

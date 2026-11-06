@@ -150,32 +150,32 @@ Inheritance diagram for log4cxx::helpers::OnlyOnceErrorHandler:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e15fe74cf59aefd15ba9e2b03bbbecb" id="r_a0e15fe74cf59aefd15ba9e2b03bbbecb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0e15fe74cf59aefd15ba9e2b03bbbecb">OnlyOnceErrorHandler</a> ()</td></tr>
 <tr class="memitem:aed8366cb359fdf0ce2f43ce48ffd991b" id="r_aed8366cb359fdf0ce2f43ce48ffd991b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aed8366cb359fdf0ce2f43ce48ffd991b">~OnlyOnceErrorHandler</a> ()</td></tr>
-<tr class="memitem:a50193524062332ae6761c3d2ce413b15" id="r_a50193524062332ae6761c3d2ce413b15"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a50193524062332ae6761c3d2ce413b15">setLogger</a> (const <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> &amp;logger) override</td></tr>
-<tr class="memdesc:a50193524062332ae6761c3d2ce413b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does not do anything.  <br /></td></tr>
-<tr class="memitem:a1e6aa7d8ef10319e948573d1005359a4" id="r_a1e6aa7d8ef10319e948573d1005359a4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1e6aa7d8ef10319e948573d1005359a4">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a1e6aa7d8ef10319e948573d1005359a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.     <br /></td></tr>
-<tr class="memitem:aaffab1f58b57a1c3cb171537908c0ee6" id="r_aaffab1f58b57a1c3cb171537908c0ee6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaffab1f58b57a1c3cb171537908c0ee6">error</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;message, const std::exception &amp;e, int errorCode) const override</td></tr>
-<tr class="memdesc:aaffab1f58b57a1c3cb171537908c0ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the message and the stack trace of the exception on <code>System.err</code>.  <br /></td></tr>
-<tr class="memitem:acdce35bf2a4c4f7d7ca3e36f5ef96824" id="r_acdce35bf2a4c4f7d7ca3e36f5ef96824"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acdce35bf2a4c4f7d7ca3e36f5ef96824">error</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;message, const std::exception &amp;e, int errorCode, const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) const override</td></tr>
-<tr class="memdesc:acdce35bf2a4c4f7d7ca3e36f5ef96824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the message and the stack trace of the exception on <code>System.err</code>.  <br /></td></tr>
-<tr class="memitem:ab891b9d8cd61af9c42c756a0b0eed289" id="r_ab891b9d8cd61af9c42c756a0b0eed289"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab891b9d8cd61af9c42c756a0b0eed289">error</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;message) const override</td></tr>
-<tr class="memdesc:ab891b9d8cd61af9c42c756a0b0eed289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a the error message passed as parameter on <code>System.err</code>.  <br /></td></tr>
-<tr class="memitem:a4a0220ab3e6d2de7392bc8d147a825b3" id="r_a4a0220ab3e6d2de7392bc8d147a825b3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4a0220ab3e6d2de7392bc8d147a825b3">setAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;appender) override</td></tr>
-<tr class="memdesc:a4a0220ab3e6d2de7392bc8d147a825b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does not do anything.  <br /></td></tr>
-<tr class="memitem:ad02c34d84b9ebac42c9c9e64eb2cb182" id="r_ad02c34d84b9ebac42c9c9e64eb2cb182"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad02c34d84b9ebac42c9c9e64eb2cb182">setBackupAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;appender) override</td></tr>
-<tr class="memdesc:ad02c34d84b9ebac42c9c9e64eb2cb182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does not do anything.  <br /></td></tr>
+<tr class="memitem:aabc82a57c062b3ead1eb843d09dd1cd6" id="r_aabc82a57c062b3ead1eb843d09dd1cd6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aabc82a57c062b3ead1eb843d09dd1cd6">error</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;context, const std::exception &amp;e, <a class="el" href="namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740">spi::ErrorCode</a> category=<a class="el" href="namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740a25a79da8b9115b64ce679b550c12671f">spi::ErrorCode::GENERIC_FAILURE</a>) override</td></tr>
+<tr class="memdesc:aabc82a57c062b3ead1eb843d09dd1cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">On the first call to this, writes <code>context</code> and <code>e</code> to stderr .  <br /></td></tr>
+<tr class="memitem:a9377823d98de67c7a2458ce67e910696" id="r_a9377823d98de67c7a2458ce67e910696"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9377823d98de67c7a2458ce67e910696">error</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;message, <a class="el" href="namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740">spi::ErrorCode</a> category=<a class="el" href="namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740a00a2a8889f387961671f45ab121c2b97">spi::ErrorCode::INVALID_CONFIGURATION</a>) override</td></tr>
+<tr class="memdesc:a9377823d98de67c7a2458ce67e910696"><td class="mdescLeft">&#160;</td><td class="mdescRight">On the first call to this, writes <code>message</code> to stderr .  <br /></td></tr>
 <tr class="memitem:a41249c5caccd56500743fb9c397ace87" id="r_a41249c5caccd56500743fb9c397ace87"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a41249c5caccd56500743fb9c397ace87">errorReported</a> () const override</td></tr>
 <tr class="memdesc:a41249c5caccd56500743fb9c397ace87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has an error been reported?  <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html">log4cxx::spi::ErrorHandler</a></td></tr>
 <tr class="memitem:a240993bbbd9758b6353c92a1240e3f92 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler" id="r_a240993bbbd9758b6353c92a1240e3f92"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a240993bbbd9758b6353c92a1240e3f92">~ErrorHandler</a> ()</td></tr>
 <tr class="memitem:a708783c3bcde0f4d502f6cdb7197e9a2 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler" id="r_a708783c3bcde0f4d502f6cdb7197e9a2"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a708783c3bcde0f4d502f6cdb7197e9a2">addAppenderHolder</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name, const AppenderAttachablePtr &amp;clx)</td></tr>
-<tr class="memdesc:a708783c3bcde0f4d502f6cdb7197e9a2 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>clx</code> to the list of collections to search for the failed appender.  <br /></td></tr>
+<tr class="memdesc:a708783c3bcde0f4d502f6cdb7197e9a2 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to add <code>clx</code> to the list of collections to search for the failed appender.  <br /></td></tr>
+<tr class="memitem:ada0b81d6401bb51c72ce3564d4af7897 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler" id="r_ada0b81d6401bb51c72ce3564d4af7897"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#ada0b81d6401bb51c72ce3564d4af7897">setLogger</a> (const <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> &amp;logger)</td></tr>
+<tr class="memdesc:ada0b81d6401bb51c72ce3564d4af7897 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to add a reference to a logger to which the failing appender might be attached.  <br /></td></tr>
+<tr class="memitem:a5ed20e1a31f58128d04e2b2313a420ca pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler" id="r_a5ed20e1a31f58128d04e2b2313a420ca"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a5ed20e1a31f58128d04e2b2313a420ca">error</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;context, const std::exception &amp;e, <a class="el" href="namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740">ErrorCode</a> category, const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">LoggingEventPtr</a> &amp;event)</td></tr>
+<tr class="memdesc:a5ed20e1a31f58128d04e2b2313a420ca pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is invoked when an exception is thown while processing a <a class="el" href="classlog4cxx_1_1spi_1_1LoggingEvent.html" title="The data recorded for each logging request.">spi::LoggingEvent</a>.  <br /></td></tr>
+<tr class="memitem:a557c83962cee8bafff3b6080584df77d pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler" id="r_a557c83962cee8bafff3b6080584df77d"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a557c83962cee8bafff3b6080584df77d">setAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;appender)</td></tr>
+<tr class="memdesc:a557c83962cee8bafff3b6080584df77d pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to set the appender holding this error handler.  <br /></td></tr>
+<tr class="memitem:a7444b6baedfc37f80d0884c3267f9213 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler" id="r_a7444b6baedfc37f80d0884c3267f9213"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a7444b6baedfc37f80d0884c3267f9213">setBackupAppender</a> (const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;appender)</td></tr>
+<tr class="memdesc:a7444b6baedfc37f80d0884c3267f9213 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this to set the appender to fallback upon in case of failure.  <br /></td></tr>
 <tr class="memitem:adbce9000c3eaf89c113180013b015c00 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler" id="r_adbce9000c3eaf89c113180013b015c00"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#adbce9000c3eaf89c113180013b015c00">activateOptions</a> () override</td></tr>
 <tr class="memdesc:adbce9000c3eaf89c113180013b015c00 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.     <br /></td></tr>
 <tr class="memitem:a069a811a37097a1979ed9028c5b4a712 pub_methods_classlog4cxx_1_1spi_1_1ErrorHandler" id="r_a069a811a37097a1979ed9028c5b4a712"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a069a811a37097a1979ed9028c5b4a712">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;)</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1OptionHandler"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html">log4cxx::spi::OptionHandler</a></td></tr>
 <tr class="memitem:a556b59c5ef41477c0bc3f50efadc859e pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a556b59c5ef41477c0bc3f50efadc859e"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a556b59c5ef41477c0bc3f50efadc859e">~OptionHandler</a> ()</td></tr>
 <tr class="memitem:a069a811a37097a1979ed9028c5b4a712 pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a069a811a37097a1979ed9028c5b4a712"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a069a811a37097a1979ed9028c5b4a712">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;)</td></tr>
+<tr class="memitem:a4b1e5e0b09723d8105dc361850766c2b pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a4b1e5e0b09723d8105dc361850766c2b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a4b1e5e0b09723d8105dc361850766c2b">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value)</td></tr>
+<tr class="memdesc:a4b1e5e0b09723d8105dc361850766c2b pub_methods_classlog4cxx_1_1spi_1_1OptionHandler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1helpers_1_1Object"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1helpers_1_1Object.html">log4cxx::helpers::Object</a></td></tr>
 <tr class="memitem:a8ba23411233a652fac44a619e6356115 pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a8ba23411233a652fac44a619e6356115"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a8ba23411233a652fac44a619e6356115">~Object</a> ()</td></tr>
 <tr class="memitem:a581992e532894891e83b9afd605ca492 pub_methods_classlog4cxx_1_1helpers_1_1Object" id="r_a581992e532894891e83b9afd605ca492"><td class="memItemLeft">virtual const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">helpers::Class</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1helpers_1_1Object.html#a581992e532894891e83b9afd605ca492">getClass</a> () const =0</td></tr>
@@ -222,8 +222,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="ab891b9d8cd61af9c42c756a0b0eed289" name="ab891b9d8cd61af9c42c756a0b0eed289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab891b9d8cd61af9c42c756a0b0eed289">&#9670;&#160;</a></span>error() <span class="overload">[1/3]</span></h2>
+<a id="aabc82a57c062b3ead1eb843d09dd1cd6" name="aabc82a57c062b3ead1eb843d09dd1cd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabc82a57c062b3ead1eb843d09dd1cd6">&#9670;&#160;</a></span>error() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,8 +234,17 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::helpers::OnlyOnceErrorHandler::error </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>context</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::exception &amp;</td>          <td class="paramname"><span class="paramname"><em>e</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740">spi::ErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>category</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740a25a79da8b9115b64ce679b550c12671f">spi::ErrorCode::GENERIC_FAILURE</a></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -245,14 +254,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Print a the error message passed as parameter on <code>System.err</code>. </p>
+<p>On the first call to this, writes <code>context</code> and <code>e</code> to stderr . </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a788b1af6176f73130015cde9eb8a6b57">log4cxx::spi::ErrorHandler</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a53aa79cfed222e2036c35b8b7a60e705">log4cxx::spi::ErrorHandler</a>.</p>
 
 </div>
 </div>
-<a id="aaffab1f58b57a1c3cb171537908c0ee6" name="aaffab1f58b57a1c3cb171537908c0ee6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaffab1f58b57a1c3cb171537908c0ee6">&#9670;&#160;</a></span>error() <span class="overload">[2/3]</span></h2>
+<a id="a9377823d98de67c7a2458ce67e910696" name="a9377823d98de67c7a2458ce67e910696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9377823d98de67c7a2458ce67e910696">&#9670;&#160;</a></span>error() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,12 +277,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::exception &amp;</td>          <td class="paramname"><span class="paramname"><em>e</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>&#160;) const</td>
+          <td class="paramtype"><a class="el" href="namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740">spi::ErrorCode</a></td>          <td class="paramname"><span class="paramname"><em>category</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacelog4cxx_1_1spi.html#ad2172977b3901348982aad48112cb740a00a2a8889f387961671f45ab121c2b97">spi::ErrorCode::INVALID_CONFIGURATION</a></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -283,52 +287,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Prints the message and the stack trace of the exception on <code>System.err</code>. </p>
+<p>On the first call to this, writes <code>message</code> to stderr . </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a2dd0abc4e4ccf3a006892f9c4a34d52e">log4cxx::spi::ErrorHandler</a>.</p>
-
-</div>
-</div>
-<a id="acdce35bf2a4c4f7d7ca3e36f5ef96824" name="acdce35bf2a4c4f7d7ca3e36f5ef96824"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdce35bf2a4c4f7d7ca3e36f5ef96824">&#9670;&#160;</a></span>error() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::helpers::OnlyOnceErrorHandler::error </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::exception &amp;</td>          <td class="paramname"><span class="paramname"><em>e</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>errorCode</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span>&#160;) const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prints the message and the stack trace of the exception on <code>System.err</code>. </p>
-
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a246111649ec0b07e487b280a43f99b20">log4cxx::spi::ErrorHandler</a>.</p>
+<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a8c0be5332cbbf2250c001eca7454b90c">log4cxx::spi::ErrorHandler</a>.</p>
 
 </div>
 </div>
@@ -357,133 +318,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Has an error been reported? </p>
 
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#afeac8d62c1cf0dec7527416c56fa0b28">log4cxx::spi::ErrorHandler</a>.</p>
-
-</div>
-</div>
-<a id="a4a0220ab3e6d2de7392bc8d147a825b3" name="a4a0220ab3e6d2de7392bc8d147a825b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a0220ab3e6d2de7392bc8d147a825b3">&#9670;&#160;</a></span>setAppender()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::helpers::OnlyOnceErrorHandler::setAppender </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Does not do anything. </p>
-
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#aa54c12239b87cb22d03547b6d6009406">log4cxx::spi::ErrorHandler</a>.</p>
-
-</div>
-</div>
-<a id="ad02c34d84b9ebac42c9c9e64eb2cb182" name="ad02c34d84b9ebac42c9c9e64eb2cb182"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad02c34d84b9ebac42c9c9e64eb2cb182">&#9670;&#160;</a></span>setBackupAppender()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::helpers::OnlyOnceErrorHandler::setBackupAppender </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a">AppenderPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>appender</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Does not do anything. </p>
-
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a02f668b1a0cc301eb354940210e3f642">log4cxx::spi::ErrorHandler</a>.</p>
-
-</div>
-</div>
-<a id="a50193524062332ae6761c3d2ce413b15" name="a50193524062332ae6761c3d2ce413b15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50193524062332ae6761c3d2ce413b15">&#9670;&#160;</a></span>setLogger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::helpers::OnlyOnceErrorHandler::setLogger </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#ad522ae36a5a181a63e3f80503a5796a0">LoggerPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>logger</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Does not do anything. </p>
-
-<p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a520b2938b153e653bce80a15140abde9">log4cxx::spi::ErrorHandler</a>.</p>
-
-</div>
-</div>
-<a id="a1e6aa7d8ef10319e948573d1005359a4" name="a1e6aa7d8ef10319e948573d1005359a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e6aa7d8ef10319e948573d1005359a4">&#9670;&#160;</a></span>setOption()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::helpers::OnlyOnceErrorHandler::setOption </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>option</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set <code>option</code> to <code>value</code>.    </p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Supported options  </th><th class="markdownTableHeadNone">Supported values  </th><th class="markdownTableHeadNone">Default value  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">-  </td></tr>
-</table>
-
-<p>Reimplemented from <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a4b1e5e0b09723d8105dc361850766c2b">log4cxx::spi::OptionHandler</a>.</p>
+<p>Reimplemented from <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a83d96d2459735bbb45385e4173997c98">log4cxx::spi::ErrorHandler</a>.</p>
 
 </div>
 </div>

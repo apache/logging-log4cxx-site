@@ -8,7 +8,6 @@ var classlog4cxx_1_1db_1_1ODBCAppender =
     [ "~ODBCAppender", "classlog4cxx_1_1db_1_1ODBCAppender.html#ad64ec638194e019b247c9f0c781d8c5d", null ],
     [ "activateOptions", "classlog4cxx_1_1db_1_1ODBCAppender.html#aeb05a79f9fb2fb1ce22210026511a072", null ],
     [ "append", "classlog4cxx_1_1db_1_1ODBCAppender.html#a4f8d772e9193125702a7f6dbd016110d", null ],
-    [ "close", "classlog4cxx_1_1db_1_1ODBCAppender.html#ac7d85dd16b6d5d37e782a49f469d53dd", null ],
     [ "closeConnection", "classlog4cxx_1_1db_1_1ODBCAppender.html#a2d07254cf0f1e7118652a5c044bc643c", null ],
     [ "flushBuffer", "classlog4cxx_1_1db_1_1ODBCAppender.html#a090a90785de7a0d635a4b6b94ecf2608", null ],
     [ "getBufferSize", "classlog4cxx_1_1db_1_1ODBCAppender.html#afffb749ec2572027f23f0ac41ff74b4f", null ],

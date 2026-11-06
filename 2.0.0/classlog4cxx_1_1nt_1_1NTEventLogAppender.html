@@ -154,10 +154,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9feeaa23b1c28b5713bac53392a72083" id="r_a9feeaa23b1c28b5713bac53392a72083"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a9feeaa23b1c28b5713bac53392a72083">~NTEventLogAppender</a> ()</td></tr>
 <tr class="memitem:a145aeccacac6ff3c1716f65162944112" id="r_a145aeccacac6ff3c1716f65162944112"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a145aeccacac6ff3c1716f65162944112">activateOptions</a> () override</td></tr>
 <tr class="memdesc:a145aeccacac6ff3c1716f65162944112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.        <br /></td></tr>
-<tr class="memitem:a7280f7d539c9c48b308540f0b7fd80c9" id="r_a7280f7d539c9c48b308540f0b7fd80c9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7280f7d539c9c48b308540f0b7fd80c9">close</a> () override</td></tr>
-<tr class="memdesc:a7280f7d539c9c48b308540f0b7fd80c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.  <br /></td></tr>
 <tr class="memitem:a4f9ec81f4888ea4bcbab0075ef239efa" id="r_a4f9ec81f4888ea4bcbab0075ef239efa"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4f9ec81f4888ea4bcbab0075ef239efa">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a4f9ec81f4888ea4bcbab0075ef239efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.        <br /></td></tr>
+<tr class="memdesc:a4f9ec81f4888ea4bcbab0075ef239efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.        <br /></td></tr>
 <tr class="memitem:a70122b060ccbe92422e3bb07760b26eb" id="r_a70122b060ccbe92422e3bb07760b26eb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a70122b060ccbe92422e3bb07760b26eb">requiresLayout</a> () const override</td></tr>
 <tr class="memdesc:a70122b060ccbe92422e3bb07760b26eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This appender does need a layout.  <br /></td></tr>
 <tr class="memitem:a9c84f5b4c7a79837b297fe7da3968773" id="r_a9c84f5b4c7a79837b297fe7da3968773"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9c84f5b4c7a79837b297fe7da3968773">setSource</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;source)</td></tr>
@@ -175,6 +173,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a62757130f678fb9e1b236a07297212cc pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a filter to end of the filter list.  <br /></td></tr>
 <tr class="memitem:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab8a68d594edffba72856ff25753d5911"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab8a68d594edffba72856ff25753d5911">clearFilters</a> () override</td></tr>
 <tr class="memdesc:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the filters chain.  <br /></td></tr>
+<tr class="memitem:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab3760465840fab6e19d73680a53701e0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab3760465840fab6e19d73680a53701e0">close</a> () override</td></tr>
+<tr class="memdesc:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.     <br /></td></tr>
 <tr class="memitem:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ada96367511614d645b4410c2de00d99e"><td class="memItemLeft">const <a class="el" href="namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648">spi::ErrorHandlerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ada96367511614d645b4410c2de00d99e">getErrorHandler</a> () const</td></tr>
 <tr class="memdesc:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the currently set <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html" title="Appenders may delegate their error handling to ErrorHandlers.">spi::ErrorHandler</a> for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a2334ac3560b4247480d6a9cd3356c4e3 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a2334ac3560b4247480d6a9cd3356c4e3"><td class="memItemLeft"><a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a2334ac3560b4247480d6a9cd3356c4e3">getFilter</a> () const override</td></tr>
@@ -401,7 +401,7 @@ Static Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. Call <a class="el" href="#a145aeccacac6ff3c1716f65162944112" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated</a></b></dt><dd>Use <a class="el" href="#a145aeccacac6ff3c1716f65162944112" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead</dd></dl>
 
 </div>
@@ -458,36 +458,6 @@ Static Protected Member Functions</h2></td></tr>
 <p>See also <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ac4e798eb488e305d85d1d3ea102b4917" title="Call AppenderSkeleton::doAppendImpl after acquiring a lock that prevents other threads from concurren...">AppenderSkeleton::doAppend</a> method. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a8d784b0800f51afd9a19de38a80510de">log4cxx::AppenderSkeleton</a>.</p>
-
-</div>
-</div>
-<a id="a7280f7d539c9c48b308540f0b7fd80c9" name="a7280f7d539c9c48b308540f0b7fd80c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7280f7d539c9c48b308540f0b7fd80c9">&#9670;&#160;</a></span>close()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::nt::NTEventLogAppender::close </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Release any resources allocated within the appender such as file handles, network connections, etc. </p>
-<p>It is a programming error to append to a closed appender. </p>
-
-<p>Implements <a class="el" href="classlog4cxx_1_1Appender.html#a63bbe5d72b11d0fcbbb4d06d435a7012">log4cxx::Appender</a>.</p>
 
 </div>
 </div>
@@ -691,7 +661,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.       </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.       </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported options  </th><th class="markdownTableHeadNone">Supported values  </th><th class="markdownTableHeadNone">Default value  </th></tr>
@@ -704,7 +674,7 @@ Static Protected Member Functions</h2></td></tr>
 </table>
 <p><a class="anchor" id="winapi"></a>(1) Passed to the Win32 API method <a href="https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-registereventsourcew">RegisterEventSource</a>.</p>
 <p><a class="anchor" id="eventLog"></a>(2) An event log name.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337" title="Override this method to set option to value.">AppenderSkeleton::setOption()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337">log4cxx::AppenderSkeleton</a>.</p>
 

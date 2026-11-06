@@ -4,7 +4,6 @@ var classlog4cxx_1_1rolling_1_1RollingFileAppender =
     [ "RollingFileAppender", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a8e1805afff90ec863edcc147ad716e42", null ],
     [ "activateOptions", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a0541562f001d8cefb9070ac620dd7951", null ],
     [ "activateOptions", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a069a811a37097a1979ed9028c5b4a712", null ],
-    [ "close", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a36053b943ce279cbec156073a15179a9", null ],
     [ "getFileLength", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#ac2abca18ddba02294f9f9298cc2a52b2", null ],
     [ "getMaxBackupIndex", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#afea833c3991489f584834c080e533e4e", null ],
     [ "getMaximumFileSize", "classlog4cxx_1_1rolling_1_1RollingFileAppender.html#a1a3a727f036d45eb1209d9616a3ccafb", null ],

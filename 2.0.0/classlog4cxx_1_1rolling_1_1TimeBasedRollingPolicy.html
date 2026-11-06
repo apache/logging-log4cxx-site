@@ -180,7 +180,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a143f46cff72820c493801a0fc4ce44c7" id="r_a143f46cff72820c493801a0fc4ce44c7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a143f46cff72820c493801a0fc4ce44c7">isTriggeringEvent</a> (<a class="el" href="classlog4cxx_1_1Appender.html">Appender</a> *appender, const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;filename, size_t fileLength) override</td></tr>
 <tr class="memdesc:a143f46cff72820c493801a0fc4ce44c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a rollover may be appropriate at this time.  <br /></td></tr>
 <tr class="memitem:a8cdcc3b74c7205560c86d02e0edaebcb" id="r_a8cdcc3b74c7205560c86d02e0edaebcb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8cdcc3b74c7205560c86d02e0edaebcb">setOption</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;option, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value) override</td></tr>
-<tr class="memdesc:a8cdcc3b74c7205560c86d02e0edaebcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <code>option</code> to <code>value</code>.        <br /></td></tr>
+<tr class="memdesc:a8cdcc3b74c7205560c86d02e0edaebcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.        <br /></td></tr>
 <tr class="memitem:a61672dc25aee1428c8d5adae6637e36c" id="r_a61672dc25aee1428c8d5adae6637e36c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a61672dc25aee1428c8d5adae6637e36c">isLastFileNameUnchanged</a> ()</td></tr>
 <tr class="memdesc:a61672dc25aee1428c8d5adae6637e36c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Was the name in shared memory set by this process?  <br /></td></tr>
 <tr class="memitem:ae4a0fab0b7319674e2c183309f13d090" id="r_ae4a0fab0b7319674e2c183309f13d090"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae4a0fab0b7319674e2c183309f13d090">loadLastFileName</a> ()</td></tr>
@@ -345,7 +345,7 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. Call <a class="el" href="#ae011b9a18346ac49bad8c66052265b0f" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. </dd></dl>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated</a></b></dt><dd>Use <a class="el" href="#ae011b9a18346ac49bad8c66052265b0f" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead</dd></dl>
 
 </div>
@@ -654,14 +654,14 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set <code>option</code> to <code>value</code>.       </p>
+<p>Override this method to set <code>option</code> to <code>value</code>.       </p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadLeft">Supported options  </th><th class="markdownTableHeadCenter">Supported values  </th><th class="markdownTableHeadCenter">Default value  </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft">ThrowIOExceptionOnForkFailure  </td><td class="markdownTableBodyCenter">True,False  </td><td class="markdownTableBodyCenter">True  </td></tr>
 </table>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#aa6065f41b297c5571fa046ccaf62a824" title="Set option to value.">RollingPolicyBase::setOption()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#aa6065f41b297c5571fa046ccaf62a824" title="Override this method to set option to value.">RollingPolicyBase::setOption()</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1rolling_1_1RollingPolicyBase.html#aa6065f41b297c5571fa046ccaf62a824">log4cxx::rolling::RollingPolicyBase</a>.</p>
 

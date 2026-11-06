@@ -13,7 +13,6 @@ var hierarchy =
     [ "log4cxx::helpers::CyclicBuffer", "classlog4cxx_1_1helpers_1_1CyclicBuffer.html", null ],
     [ "log4cxx::Level::Data", "structlog4cxx_1_1Level_1_1Data.html", null ],
     [ "log4cxx::DefaultConfigurator", "classlog4cxx_1_1DefaultConfigurator.html", null ],
-    [ "log4cxx::spi::ErrorCode", "classlog4cxx_1_1spi_1_1ErrorCode.html", null ],
     [ "std::exception", null, [
       [ "log4cxx::helpers::Exception", "classlog4cxx_1_1helpers_1_1Exception.html", [
         [ "log4cxx::db::SQLException", "classlog4cxx_1_1db_1_1SQLException.html", null ],

@@ -149,8 +149,9 @@ Inheritance diagram for log4cxx::Hierarchy:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acf8ba689451b7cf5905fb6a5581b357d" id="r_acf8ba689451b7cf5905fb6a5581b357d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acf8ba689451b7cf5905fb6a5581b357d">~Hierarchy</a> ()</td></tr>
 <tr class="memitem:ac7d2effec69f274de76013ad17fcb026" id="r_ac7d2effec69f274de76013ad17fcb026"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac7d2effec69f274de76013ad17fcb026">addHierarchyEventListener</a> (const spi::HierarchyEventListenerPtr &amp;listener) override</td></tr>
+<tr class="memdesc:ac7d2effec69f274de76013ad17fcb026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify <code>listener</code> when an <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a> is added or removed from a logger in the repository.  <br /></td></tr>
 <tr class="memitem:a5f17c81798b81d857c8803b68e1ad725" id="r_a5f17c81798b81d857c8803b68e1ad725"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5f17c81798b81d857c8803b68e1ad725">removeHierarchyEventListener</a> (const spi::HierarchyEventListenerPtr &amp;listener) override</td></tr>
-<tr class="memdesc:a5f17c81798b81d857c8803b68e1ad725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove <code>listener</code> from the repository.     <br /></td></tr>
+<tr class="memdesc:a5f17c81798b81d857c8803b68e1ad725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop notifying <code>listener</code> when an <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a> is added or removed from a logger in the repository.  <br /></td></tr>
 <tr class="memitem:a0af9204d7eac97b5bfdf9dc98d43136f" id="r_a0af9204d7eac97b5bfdf9dc98d43136f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0af9204d7eac97b5bfdf9dc98d43136f">ensureIsConfigured</a> (std::function&lt; void()&gt; configurator) override</td></tr>
 <tr class="memdesc:a0af9204d7eac97b5bfdf9dc98d43136f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <code>configurator</code> if not yet configured and <code>configurator</code> has not already been tried.     <br /></td></tr>
 <tr class="memitem:ae48a5e903ef9a74d2951521bf8d2e590" id="r_ae48a5e903ef9a74d2951521bf8d2e590"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae48a5e903ef9a74d2951521bf8d2e590">clear</a> ()</td></tr>
@@ -249,7 +250,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Notify <code>listener</code> when an <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a> is added or removed from a logger in the repository. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a9af2a7449eebb8136a4cbeaa41aac0cc">log4cxx::spi::LoggerRepository</a>.</p>
 
@@ -664,7 +665,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove <code>listener</code> from the repository.    </p>
+<p>Stop notifying <code>listener</code> when an <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a> is added or removed from a logger in the repository. </p>
 
 <p>Implements <a class="el" href="classlog4cxx_1_1spi_1_1LoggerRepository.html#a055e10ebaf42334637616355c732a3a5">log4cxx::spi::LoggerRepository</a>.</p>
 

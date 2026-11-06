@@ -196,24 +196,26 @@ Release History</h1>
 Release 2.0.0 - 2026-XX-XX</h1>
 <p>This major release includes the following alterations to the application binary interface (ABI).</p>
 <ul>
-<li>The helpers::Pool parameter is not longer required in virtual functions. User-defined subclasses of Appender, Filter or Layout may require modification.</li>
-<li>The helpers::Pool parameter has been removed from <a class="el" href="classlog4cxx_1_1File.html" title="Holds the path to a file or directory.">log4cxx::File</a> member function argument lists. Code that uses <a class="el" href="classlog4cxx_1_1File.html" title="Holds the path to a file or directory.">log4cxx::File</a> may require modification.</li>
-<li>The 'LOG4CXX_CHAR=unichar' CMake option is no longer supported. Support remains for 'LOG4CXX_CHAR=wchar_t' for applications using std::wstring.</li>
+<li>The <code>helpers::Pool</code> parameter is not longer required in virtual functions. User-defined subclasses of <a class="el" href="classlog4cxx_1_1Appender.html" title="log4cxx::Appender">Appender</a>, <a class="el" href="classlog4cxx_1_1spi_1_1Filter.html" title="log4cxx::spi::Filter">Filter</a> or <a class="el" href="classlog4cxx_1_1Layout.html" title="log4cxx::Layout">Layout</a> may require modification.</li>
+<li>The <code>helpers::Pool</code> parameter has been removed from <a class="el" href="classlog4cxx_1_1File.html" title="log4cxx::File">File</a> member function argument lists. Code that uses <a class="el" href="classlog4cxx_1_1File.html" title="Holds the path to a file or directory.">log4cxx::File</a> may require modification.</li>
+<li>The <code>LOG4CXX_CHAR=unichar</code> CMake option is no longer supported. Support remains for <code>LOG4CXX_CHAR=wchar_t</code> for applications using std::wstring.</li>
+<li>The <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html#a53aa79cfed222e2036c35b8b7a60e705" title="log4cxx::spi::ErrorHandler::error">ErrorHandler::error</a> method signatures have changed. User-defined subclasses of <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html" title="log4cxx::spi::ErrorHandler">spi::ErrorHandler</a> will require modification.</li>
+<li>The <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#ac26318c53c7f65cb327d2b23ad732311" title="log4cxx::spi::Configurator::isValid">spi::Configurator::isValid</a> method must be implemented in subclasses. User-defined subclasses of <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html" title="log4cxx::spi::Configurator">spi::Configurator</a> will need to implement this new method.</li>
 </ul>
 <p>Release 2.0.0 includes the following new features:</p>
 <ul>
-<li>A new <a class="el" href="classlog4cxx_1_1FileAppender.html" title="FileAppender appends log events to a file.">log4cxx::FileAppender</a> option to delay log file creation until an event is added. [<a href="https://github.com/apache/logging-log4cxx/pull/775">#775</a>]</li>
-<li>A new <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a4781ffda7ddc9a47b272241ed6c94478" title="Call start() on a monitor of filename that uses processor to configure target.">log4cxx::helpers::FileWatchdog::startWatching</a> method to create a periodic task without a needing to sub-class. [<a href="https://github.com/apache/logging-log4cxx/pull/769">#769</a>]</li>
-<li>An incorrect configuration option name generates a warning in the Log4cxx internal debugging output [<a href="https://github.com/apache/logging-log4cxx/pull/738">#738</a>]</li>
-<li>Improved SMTPAppender diagnostic messages in the Log4cxx internal debugging output [<a href="https://github.com/apache/logging-log4cxx/pull/735">#735</a>]</li>
-<li>SMTP and Telnet appenders use secure-by-default configurations [<a href="https://github.com/apache/logging-log4cxx/pull/734">#734</a>]</li>
-<li>The encoder returned by CharsetEncoder::getUTF8Encoder() inserts the Unicode replacement character (0xFFFD) to indicate an invalid codepoint [<a href="https://github.com/apache/logging-log4cxx/pull/730">#730</a>]</li>
+<li>A new <a class="el" href="classlog4cxx_1_1FileAppender.html#a0126112f63df5a5c5e8adfb72c091d64" title="log4cxx::FileAppender::setOption">FileAppender</a> option to delay log file creation until an event is added. [<a href="https://github.com/apache/logging-log4cxx/pull/775">#775</a>]</li>
+<li>A new <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html#a4781ffda7ddc9a47b272241ed6c94478" title="log4cxx::helpers::FileWatchdog::startWatching">FileWatchdog::startWatching</a> method to create a periodic task without a needing to sub-class. [<a href="https://github.com/apache/logging-log4cxx/pull/769">#769</a>]</li>
+<li>An incorrect configuration option name generates a warning in the <a href="internal-debugging.html">Log4cxx internal debugging</a> output [<a href="https://github.com/apache/logging-log4cxx/pull/738">#738</a>]</li>
+<li>Improved [SMTPAppender](<a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html" title="log4cxx::net::SMTPAppender">log4cxx::net::SMTPAppender</a>] diagnostic messages in the <a href="internal-debugging.html">Log4cxx internal debugging</a> output [<a href="https://github.com/apache/logging-log4cxx/pull/735">#735</a>]</li>
+<li><a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html#abc7cf7c6dba6688f349ed76228731457" title="log4cxx::net::SMTPAppender::setOption">SMTP</a> and <a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html#a82baa915d3520f409f3f16b351014b2d" title="log4cxx::net::TelnetAppender::setOption">Telnet</a> appenders use secure-by-default configurations [<a href="https://github.com/apache/logging-log4cxx/pull/734">#734</a>]</li>
+<li>The encoder returned by <a class="el" href="classlog4cxx_1_1helpers_1_1CharsetEncoder.html#a340e5d199d2b1f1bd71402138a943942" title="log4cxx::helpers::CharsetEncoder::getUTF8Encoder">CharsetEncoder::getUTF8Encoder</a> inserts the Unicode replacement character (0xFFFD) to indicate an invalid codepoint [<a href="https://github.com/apache/logging-log4cxx/pull/730">#730</a>]</li>
 </ul>
 <p>The following issues have been addressed:</p>
 <ul>
-<li>A performance regression with JSON &amp; XML output [<a href="https://github.com/apache/logging-log4cxx/pull/757">#757</a>]</li>
-<li>Using default configuration, BufferedIO and a watchdog caused recursive configuration [<a href="https://github.com/apache/logging-log4cxx/pull/739">#739</a>]</li>
-<li>Using BufferedIO in multiple FileAppenders with the same name could cause a fault [<a href="https://github.com/apache/logging-log4cxx/pull/733">#733</a>]</li>
+<li>A performance regression with <a class="el" href="classlog4cxx_1_1JSONLayout.html" title="log4cxx::JSONLayout">JSON</a> &amp; <a class="el" href="classlog4cxx_1_1xml_1_1XMLLayout.html" title="log4cxx::xml::XMLLayout">XML</a> output [<a href="https://github.com/apache/logging-log4cxx/pull/757">#757</a>]</li>
+<li>Using <a class="el" href="classlog4cxx_1_1DefaultConfigurator.html#a879d97599dc6db3558356fa5954689d3" title="log4cxx::DefaultConfigurator::configure">default configuration</a>, <a class="el" href="classlog4cxx_1_1FileAppender.html#a34dd51e760a5a3f8200c604be627f8d2" title="log4cxx::FileAppender::setBufferedIO">BufferedIO</a> and <a class="el" href="classlog4cxx_1_1helpers_1_1FileWatchdog.html" title="log4cxx::helpers::FileWatchdog">a watchdog</a> caused recursive configuration [<a href="https://github.com/apache/logging-log4cxx/pull/739">#739</a>]</li>
+<li>Using <a class="el" href="classlog4cxx_1_1FileAppender.html#a34dd51e760a5a3f8200c604be627f8d2" title="log4cxx::FileAppender::setBufferedIO">BufferedIO</a> in multiple <a class="el" href="classlog4cxx_1_1FileAppender.html" title="log4cxx::FileAppender">FileAppenders</a> with the same name could cause a fault [<a href="https://github.com/apache/logging-log4cxx/pull/733">#733</a>]</li>
 <li>A seg-fault when a user-defined class inherited from a non-abstract base class<ul>
 <li><a href="https://github.com/apache/logging-log4cxx/pull/629">#629</a> , <a href="https://github.com/apache/logging-log4cxx/pull/637">#637</a></li>
 </ul>
@@ -221,10 +223,10 @@ Release 2.0.0 - 2026-XX-XX</h1>
 </ul>
 <p>The other Log4cxx behaviour changes are:</p>
 <ul>
-<li>Use 'find_package(log4cxx COMPONENTS qt)' instead of 'find_package(log4cxx-qt)' to access Log4cxx Qt support [<a href="https://github.com/apache/logging-log4cxx/pull/600">#600</a>]</li>
-<li>In Msys2, the Windows native thread number is displayed instead of the pthread_self() value. [<a href="https://github.com/apache/logging-log4cxx/pull/783">#783</a>]</li>
-<li>Default configuration does not check the 'log4j.configuration' and 'log4j.configuratorClass' environment variables. Instead, use 'LOG4CXX_CONFIGURATION' and 'LOG4CXX_CONFIGURATOR_CLASS'. [<a href="https://github.com/apache/logging-log4cxx/pull/784">#784</a>]</li>
-<li>Threads created by Log4cxx are assigned a name. Call <a class="el" href="classlog4cxx_1_1helpers_1_1ThreadUtility.html#ad563caa1f94fd9038c5023bd1781687a" title="Use new_value as the behviour when starting a thread.">log4cxx::helpers::ThreadUtility::configure</a> to alter this behaviour. [<a href="https://github.com/apache/logging-log4cxx/pull/785">#785</a>]</li>
+<li>Use <code>find_package(log4cxx COMPONENTS qt)</code> instead of <code>find_package(log4cxx-qt)</code> to access Log4cxx Qt support [<a href="https://github.com/apache/logging-log4cxx/pull/600">#600</a>]</li>
+<li>In Msys2, the Windows native thread number is displayed instead of the <a href="https://man7.org/linux/man-pages/man3/pthread_self.3.html">pthread_self</a> value. [<a href="https://github.com/apache/logging-log4cxx/pull/783">#783</a>]</li>
+<li>Default configuration does not check the <code>log4j.configuration</code> and <code>log4j.configuratorClass</code> environment variables. Instead, use <code>LOG4CXX_CONFIGURATION</code> and <code>LOG4CXX_CONFIGURATOR_CLASS</code>. [<a href="https://github.com/apache/logging-log4cxx/pull/784">#784</a>]</li>
+<li>Threads created by Log4cxx are assigned a name. Call <a class="el" href="classlog4cxx_1_1helpers_1_1ThreadUtility.html#ad563caa1f94fd9038c5023bd1781687a" title="log4cxx::helpers::ThreadUtility::configure">ThreadUtility::configure</a> to alter this behaviour. [<a href="https://github.com/apache/logging-log4cxx/pull/785">#785</a>]</li>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="rel_1_8_0"></a>
 Release 1.8.0 - 2026-07-29</h1>

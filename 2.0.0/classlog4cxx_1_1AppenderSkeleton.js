@@ -9,6 +9,7 @@ var classlog4cxx_1_1AppenderSkeleton =
     [ "addFilter", "classlog4cxx_1_1AppenderSkeleton.html#a62757130f678fb9e1b236a07297212cc", null ],
     [ "append", "classlog4cxx_1_1AppenderSkeleton.html#a8d784b0800f51afd9a19de38a80510de", null ],
     [ "clearFilters", "classlog4cxx_1_1AppenderSkeleton.html#ab8a68d594edffba72856ff25753d5911", null ],
+    [ "close", "classlog4cxx_1_1AppenderSkeleton.html#ab3760465840fab6e19d73680a53701e0", null ],
     [ "doAppend", "classlog4cxx_1_1AppenderSkeleton.html#ac4e798eb488e305d85d1d3ea102b4917", null ],
     [ "doAppendImpl", "classlog4cxx_1_1AppenderSkeleton.html#aaf6a9c9afe672e30a79efaf0c3f87fc8", null ],
     [ "getErrorHandler", "classlog4cxx_1_1AppenderSkeleton.html#ada96367511614d645b4410c2de00d99e", null ],
