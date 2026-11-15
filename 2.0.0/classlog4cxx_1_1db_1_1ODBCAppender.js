@@ -16,7 +16,6 @@ var classlog4cxx_1_1db_1_1ODBCAppender =
     [ "getSql", "classlog4cxx_1_1db_1_1ODBCAppender.html#a5e58d0e5860963b8037237817ad50095", null ],
     [ "getURL", "classlog4cxx_1_1db_1_1ODBCAppender.html#afd4a8005bf5545f70ab4e81418fbcadf", null ],
     [ "getUser", "classlog4cxx_1_1db_1_1ODBCAppender.html#a35a275bede23362dfcd8638efc988d4d", null ],
-    [ "requiresLayout", "classlog4cxx_1_1db_1_1ODBCAppender.html#a294a7f60e6284c213b5d2fdb98f708ba", null ],
     [ "setBufferSize", "classlog4cxx_1_1db_1_1ODBCAppender.html#a4da79bf0bcca80ff1a96c73f2a7eab12", null ],
     [ "setOption", "classlog4cxx_1_1db_1_1ODBCAppender.html#a85e6fa461f2db789f3fa9321278b12c0", null ],
     [ "setPassword", "classlog4cxx_1_1db_1_1ODBCAppender.html#a6e1077b750f521e55e1bec89bb57819b", null ],

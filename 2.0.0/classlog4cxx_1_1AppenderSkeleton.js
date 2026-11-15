@@ -1,8 +1,7 @@
 var classlog4cxx_1_1AppenderSkeleton =
 [
     [ "AppenderSkeleton", "classlog4cxx_1_1AppenderSkeleton.html#accb02a0eabe4b11f2c771b4c796f3739", null ],
-    [ "AppenderSkeleton", "classlog4cxx_1_1AppenderSkeleton.html#a1395bdbbd217ee7d36eec1c05aa15dd2", null ],
-    [ "AppenderSkeleton", "classlog4cxx_1_1AppenderSkeleton.html#aa3aee1ae3a3825ae2249e9fc520c4cce", null ],
+    [ "AppenderSkeleton", "classlog4cxx_1_1AppenderSkeleton.html#a27e65584565f68d3f17f152a21fcd91d", null ],
     [ "~AppenderSkeleton", "classlog4cxx_1_1AppenderSkeleton.html#aa281300e79f814e8458511552debce57", null ],
     [ "activateOptions", "classlog4cxx_1_1AppenderSkeleton.html#a59bad7bedbefa125889471a26068acd0", null ],
     [ "activateOptions", "classlog4cxx_1_1AppenderSkeleton.html#a069a811a37097a1979ed9028c5b4a712", null ],
@@ -20,9 +19,9 @@ var classlog4cxx_1_1AppenderSkeleton =
     [ "getThreshold", "classlog4cxx_1_1AppenderSkeleton.html#a8ab44d31691c5de3df16c539189f1060", null ],
     [ "isAccepted", "classlog4cxx_1_1AppenderSkeleton.html#ab2d12190b995b82d5ceae323212f69d0", null ],
     [ "isAsSevereAsThreshold", "classlog4cxx_1_1AppenderSkeleton.html#aa8670b15977dcefc4f30f8d9cf0d6885", null ],
-    [ "setErrorHandler", "classlog4cxx_1_1AppenderSkeleton.html#aa6d47a5a93444dc732075234f7b98d1a", null ],
-    [ "setLayout", "classlog4cxx_1_1AppenderSkeleton.html#a9829bf262c78e84c1b09fe8e90212ded", null ],
-    [ "setName", "classlog4cxx_1_1AppenderSkeleton.html#a8f43cc72bbddcd95ddaeb274cd040b3c", null ],
+    [ "setErrorHandler", "classlog4cxx_1_1AppenderSkeleton.html#ad1ab52a91fdb6f8c3c1fe35ee102e753", null ],
+    [ "setLayout", "classlog4cxx_1_1AppenderSkeleton.html#a500167c163fc69b2313c2d833ca126a5", null ],
+    [ "setName", "classlog4cxx_1_1AppenderSkeleton.html#aadd6e97c3fe71697b7dc89ba17521847", null ],
     [ "setOption", "classlog4cxx_1_1AppenderSkeleton.html#a79c778323e79f6b9a2df5b0e54de0337", null ],
-    [ "setThreshold", "classlog4cxx_1_1AppenderSkeleton.html#a9a0d49cd8867995f2ad8bd1df8b0fcea", null ]
+    [ "setThreshold", "classlog4cxx_1_1AppenderSkeleton.html#ac6dadb3675724f9e4dffe882ad26b98c", null ]
 ];

@@ -112,6 +112,7 @@ var annotated_dup =
         [ "XMLDOMNodeList", "classlog4cxx_1_1helpers_1_1XMLDOMNodeList.html", "classlog4cxx_1_1helpers_1_1XMLDOMNodeList" ]
       ] ],
       [ "net", "namespacelog4cxx_1_1net.html", [
+        [ "JSONSocketAppender", "classlog4cxx_1_1net_1_1JSONSocketAppender.html", "classlog4cxx_1_1net_1_1JSONSocketAppender" ],
         [ "SMTPAppender", "classlog4cxx_1_1net_1_1SMTPAppender.html", "classlog4cxx_1_1net_1_1SMTPAppender" ],
         [ "SocketAppenderSkeleton", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton" ],
         [ "SyslogAppender", "classlog4cxx_1_1net_1_1SyslogAppender.html", "classlog4cxx_1_1net_1_1SyslogAppender" ],

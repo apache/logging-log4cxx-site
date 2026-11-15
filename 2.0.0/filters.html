@@ -200,6 +200,19 @@ Using MDC Values</h2>
 <div class="line">        &lt;<span class="keywordtype">appender-ref</span>   <span class="keyword">ref</span>=<span class="stringliteral">&quot;SIMPLE&quot;</span>    /&gt;</div>
 <div class="line">    &lt;/<span class="keywordtype">root</span>&gt;</div>
 <div class="line">&lt;/<span class="keywordtype">log4j:configuration</span>&gt;</div>
+</div><!-- fragment --><p>The equivalent <a class="el" href="classlog4cxx_1_1PropertyConfigurator.html" title="log4cxx::PropertyConfigurator">properties file</a> configuration is:</p>
+<div class="fragment"><div class="line">log4j.rootLogger=ALL, SIMPLE</div>
+<div class="line"> </div>
+<div class="line">log4j.appender.SIMPLE=org.apache.log4j.FileAppender</div>
+<div class="line">log4j.appender.SIMPLE.File=logs/app.log</div>
+<div class="line">log4j.appender.SIMPLE.Append=true</div>
+<div class="line">log4j.appender.SIMPLE.layout=org.apache.log4j.SimpleLayout</div>
+<div class="line"> </div>
+<div class="line">log4j.appender.SIMPLE.filter.1=org.apache.log4j.filter.MapFilter</div>
+<div class="line">log4j.appender.SIMPLE.filter.1.user.ip=127.0.0.1</div>
+<div class="line">log4j.appender.SIMPLE.filter.1.user.name=test</div>
+<div class="line">log4j.appender.SIMPLE.filter.1.Operator=AND</div>
+<div class="line">log4j.appender.SIMPLE.filter.1.AcceptOnMatch=false</div>
 </div><!-- fragment --><p>If we wanted to exclude multiple IP addresses from the log, we need to define a separate filter for each one as we don’t support wildcards. Since the default <span class="tt">AcceptOnMatch</span> value is <span class="tt">false</span>, we can simplify to a single line per filter. In the configuration below we would skip logs for IP addresses matching 192.168.0.5 - 7.</p>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;UTF-8&quot;</span>?&gt;</div>
 <div class="line">&lt;<span class="keywordtype">log4j:configuration</span> <span class="keyword">xmlns:log4j</span>=<span class="stringliteral">&quot;http://logging.apache.org/&quot;</span>&gt;</div>
@@ -285,7 +298,7 @@ Using the Request Location</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyLeft">LineNumber  </td><td class="markdownTableBodyLeft">int  </td><td class="markdownTableBodyLeft">The line number to match on. The default line number is -1.  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Method  </td><td class="markdownTableBodyLeft">LogString  </td><td class="markdownTableBodyLeft">The method to match on. The method name may be compiler-specific. On GCC, the method name will look like <span class="tt">Class::methodName</span>  </td></tr>
+<td class="markdownTableBodyLeft">Method  </td><td class="markdownTableBodyLeft">LogString  </td><td class="markdownTableBodyLeft">The method to match on. Either the method name without any class or namespace (e.g. <span class="tt">methodName</span>), or the method name qualified by its class and/or namespace names (e.g. <span class="tt">Class::methodName</span> or <span class="tt">ns::Class::methodName</span>).  </td></tr>
 </table>
 <p>Assume that our code looks something like the following:</p>
 <div class="fragment"><div class="line"><a class="code hl_define" href="group__LoggingMacros.html#ga806900dd7eafb458d0472d9c8f84594b">LOG4CXX_TRACE</a>(logger, <span class="stringliteral">&quot;About to do something!&quot;</span>);</div>

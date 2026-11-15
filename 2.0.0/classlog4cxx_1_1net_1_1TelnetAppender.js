@@ -9,7 +9,6 @@ var classlog4cxx_1_1net_1_1TelnetAppender =
     [ "getHostname", "classlog4cxx_1_1net_1_1TelnetAppender.html#a1f57a9a7818041f012801914865d30d4", null ],
     [ "getMaxConnections", "classlog4cxx_1_1net_1_1TelnetAppender.html#aeb84b34cc07655387e3b8e396dd70e5c", null ],
     [ "getPort", "classlog4cxx_1_1net_1_1TelnetAppender.html#a8c0dd98a183021f805798de542c9e5b1", null ],
-    [ "requiresLayout", "classlog4cxx_1_1net_1_1TelnetAppender.html#ab0d71e12965f52730bf522b938535a92", null ],
     [ "setEncoding", "classlog4cxx_1_1net_1_1TelnetAppender.html#a90bce24b5449af06cd03d2d18c81d32a", null ],
     [ "setHostname", "classlog4cxx_1_1net_1_1TelnetAppender.html#a950c6e822d918c972b33f7df0c5473ef", null ],
     [ "setMaxConnections", "classlog4cxx_1_1net_1_1TelnetAppender.html#a9a57610063809481b25fe72cacac527d", null ],

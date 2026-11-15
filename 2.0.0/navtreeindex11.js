@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"classlog4cxx_1_1pattern_1_1FullLocationPatternConverter.html#ab00ee800e074ee6adbf2bda89b4cefa7":[7,2,0,0,6,8,3],
-"classlog4cxx_1_1pattern_1_1IntegerPatternConverter.html":[7,1,0,0,6,9],
 "classlog4cxx_1_1pattern_1_1IntegerPatternConverter.html":[7,2,0,0,6,9],
 "classlog4cxx_1_1pattern_1_1IntegerPatternConverter.html#a25e1e10304bfeb871db5efa6d99082bf":[7,1,0,0,6,9,1],
 "classlog4cxx_1_1pattern_1_1IntegerPatternConverter.html#a25e1e10304bfeb871db5efa6d99082bf":[7,2,0,0,6,9,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "classlog4cxx_1_1rolling_1_1Action.html#ab5260cfbd96a3c526da4569cdc05cbb5":[7,2,0,0,8,0,1],
 "classlog4cxx_1_1rolling_1_1Action.html#acf2f52eb2e7c80fd9f27d5d998063d5c":[7,1,0,0,8,0,6],
 "classlog4cxx_1_1rolling_1_1Action.html#acf2f52eb2e7c80fd9f27d5d998063d5c":[7,2,0,0,8,0,6],
-"classlog4cxx_1_1rolling_1_1Action.html#add5afe799b91b44a82213fd9f523e00b":[7,1,0,0,8,0,3]
+"classlog4cxx_1_1rolling_1_1Action.html#add5afe799b91b44a82213fd9f523e00b":[7,1,0,0,8,0,3],
+"classlog4cxx_1_1rolling_1_1Action.html#add5afe799b91b44a82213fd9f523e00b":[7,2,0,0,8,0,3],
+"classlog4cxx_1_1rolling_1_1FileRenameAction.html":[7,1,0,0,8,1]
 };

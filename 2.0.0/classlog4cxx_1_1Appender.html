@@ -168,7 +168,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a63bbe5d72b11d0fcbbb4d06d435a7012" id="r_a63bbe5d72b11d0fcbbb4d06d435a7012"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a63bbe5d72b11d0fcbbb4d06d435a7012">close</a> ()=0</td></tr>
 <tr class="memdesc:a63bbe5d72b11d0fcbbb4d06d435a7012"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.  <br /></td></tr>
 <tr class="memitem:a528b19d21dd1bd5a2990c4f8c7c51d1c" id="r_a528b19d21dd1bd5a2990c4f8c7c51d1c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a528b19d21dd1bd5a2990c4f8c7c51d1c">doAppend</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event)=0</td></tr>
-<tr class="memdesc:a528b19d21dd1bd5a2990c4f8c7c51d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log in <code><a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a></code> specific way.  <br /></td></tr>
+<tr class="memdesc:a528b19d21dd1bd5a2990c4f8c7c51d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a formatted equivalent of <code>event</code> to the output.  <br /></td></tr>
 <tr class="memitem:a24d0c180f5542e6c402bfd4b4dc0547e" id="r_a24d0c180f5542e6c402bfd4b4dc0547e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a24d0c180f5542e6c402bfd4b4dc0547e">doAppend</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;pool)</td></tr>
 <tr class="memitem:a33a1ed0d3298e0765887f12024220266" id="r_a33a1ed0d3298e0765887f12024220266"><td class="memItemLeft">virtual <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#a33a1ed0d3298e0765887f12024220266">getName</a> () const =0</td></tr>
 <tr class="memdesc:a33a1ed0d3298e0765887f12024220266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of this appender.  <br /></td></tr>
@@ -178,8 +178,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a981e3ccbe871e03ec734a6216f52ca9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this appenders layout.  <br /></td></tr>
 <tr class="memitem:af1f47b41cc3a55924a71428c69c3f419" id="r_af1f47b41cc3a55924a71428c69c3f419"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#af1f47b41cc3a55924a71428c69c3f419">setName</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name)=0</td></tr>
 <tr class="memdesc:af1f47b41cc3a55924a71428c69c3f419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of this appender.  <br /></td></tr>
-<tr class="memitem:a59cf35c2fb097cce8ca435d2141790d9" id="r_a59cf35c2fb097cce8ca435d2141790d9"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a59cf35c2fb097cce8ca435d2141790d9">requiresLayout</a> () const =0</td></tr>
-<tr class="memdesc:a59cf35c2fb097cce8ca435d2141790d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configurators call this method to determine if the appender requires a layout.  <br /></td></tr>
+<tr class="memitem:ab60c57ddf11608c8863ea768a73fd8e6" id="r_ab60c57ddf11608c8863ea768a73fd8e6"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ab60c57ddf11608c8863ea768a73fd8e6">requiresLayout</a> () const</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1OptionHandler"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html">log4cxx::spi::OptionHandler</a></td></tr>
 <tr class="memitem:a556b59c5ef41477c0bc3f50efadc859e pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a556b59c5ef41477c0bc3f50efadc859e"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a556b59c5ef41477c0bc3f50efadc859e">~OptionHandler</a> ()</td></tr>
 <tr class="memitem:a1ee75324fb1c8df55780d17ec53e457a pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a1ee75324fb1c8df55780d17ec53e457a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a1ee75324fb1c8df55780d17ec53e457a">activateOptions</a> ()=0</td></tr>
@@ -332,8 +331,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Log in <code><a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a></code> specific way. </p>
-<p>When appropriate, Loggers will call the <code>doAppend</code> method of appender implementations in order to log. </p>
+<p>Add a formatted equivalent of <code>event</code> to the output. </p>
+<p>A <a class="el" href="classlog4cxx_1_1Logger.html" title="This is the central class in the log4cxx package.">Logger</a> uses this entry point (via AppenderAttachable::appendLoopOnAppenders) when a logging request is enabled. </p>
 
 <p>Implemented in <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ac4e798eb488e305d85d1d3ea102b4917">log4cxx::AppenderSkeleton</a>, and <a class="el" href="classlog4cxx_1_1AsyncAppender.html#a623dd67fcb148dd5e794028486954cc4">log4cxx::AsyncAppender</a>.</p>
 
@@ -358,7 +357,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated</a></b></dt><dd>Backward compatability support will be removed in a future version. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>Use <a class="el" href="#a528b19d21dd1bd5a2990c4f8c7c51d1c" title="Log in Appender specific way.">doAppend()</a> without a Pool parameter instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>Use <a class="el" href="#a528b19d21dd1bd5a2990c4f8c7c51d1c" title="Add a formatted equivalent of event to the output.">doAppend()</a> without a Pool parameter instead</dd></dl>
 
 </div>
 </div>
@@ -452,8 +451,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a59cf35c2fb097cce8ca435d2141790d9" name="a59cf35c2fb097cce8ca435d2141790d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59cf35c2fb097cce8ca435d2141790d9">&#9670;&#160;</a></span>requiresLayout()</h2>
+<a id="ab60c57ddf11608c8863ea768a73fd8e6" name="ab60c57ddf11608c8863ea768a73fd8e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab60c57ddf11608c8863ea768a73fd8e6">&#9670;&#160;</a></span>requiresLayout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -470,16 +469,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Configurators call this method to determine if the appender requires a layout. </p>
-<p>If this method returns <code>true</code>, meaning that layout is required, then the configurator will configure an layout using the configuration information at its disposal. If this method returns <code>false</code>, meaning that a layout is not required, then layout configuration will be skipped even if there is available layout configuration information at the disposal of the configurator..</p>
-<p>In the rather exceptional case, where the appender implementation admits a layout but can also work without it, then the appender should return <code>true</code>. </p>
-
-<p>Implemented in <a class="el" href="classlog4cxx_1_1AsyncAppender.html#a34dfee4f09db55101e6d02a9517e0410">log4cxx::AsyncAppender</a>, <a class="el" href="classlog4cxx_1_1db_1_1DBAppender.html#aef0eea44c1dd0ad0415039cb458970a2">log4cxx::db::DBAppender</a>, <a class="el" href="classlog4cxx_1_1db_1_1ODBCAppender.html#a294a7f60e6284c213b5d2fdb98f708ba">log4cxx::db::ODBCAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1SMTPAppender.html#aeebd15d013ed0469f564096b8ee03821">log4cxx::net::SMTPAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1SyslogAppender.html#a1449ff8266be8cf68efb472ce6efe38f">log4cxx::net::SyslogAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1TelnetAppender.html#ab0d71e12965f52730bf522b938535a92">log4cxx::net::TelnetAppender</a>, <a class="el" href="classlog4cxx_1_1net_1_1XMLSocketAppender.html#a641a47570b2fb1405992dd2c5f5bb535">log4cxx::net::XMLSocketAppender</a>, <a class="el" href="classlog4cxx_1_1nt_1_1NTEventLogAppender.html#a70122b060ccbe92422e3bb07760b26eb">log4cxx::nt::NTEventLogAppender</a>, <a class="el" href="classlog4cxx_1_1nt_1_1OutputDebugStringAppender.html#a4a44d9d3443e0ed9932c36dcb3692375">log4cxx::nt::OutputDebugStringAppender</a>, and <a class="el" href="classlog4cxx_1_1WriterAppender.html#a96cf8d9a7af09d7f360e274948058f39">log4cxx::WriterAppender</a>.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated</a></b></dt><dd>This method will be removed in a future version. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated</a></b></dt><dd>This method is no longer used by Log4cxx configurators</dd></dl>
 
 </div>
 </div>
@@ -508,7 +503,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Set the <a class="el" href="classlog4cxx_1_1Layout.html" title="Extend this abstract class to create your own log layout format.">Layout</a> for this appender. </p>
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a9829bf262c78e84c1b09fe8e90212ded">log4cxx::AppenderSkeleton</a>.</p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a500167c163fc69b2313c2d833ca126a5">log4cxx::AppenderSkeleton</a>.</p>
 
 </div>
 </div>
@@ -538,7 +533,7 @@ Public Member Functions</h2></td></tr>
 <p>Set the name of this appender. </p>
 <p>The name is used by other components to identify this appender. </p>
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a8f43cc72bbddcd95ddaeb274cd040b3c">log4cxx::AppenderSkeleton</a>.</p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aadd6e97c3fe71697b7dc89ba17521847">log4cxx::AppenderSkeleton</a>.</p>
 
 </div>
 </div>

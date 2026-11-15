@@ -1,7 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html":[7,2,0,0,10,0],
-"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a1217e029574f5d9da8ae6165a979733b":[7,1,0,0,11,0,3],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a1217e029574f5d9da8ae6165a979733b":[7,2,0,0,10,0,3],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a36799928be383de10ac9b5126482aa5c":[7,1,0,0,11,0,4],
 "classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a36799928be383de10ac9b5126482aa5c":[7,2,0,0,10,0,4],
@@ -131,6 +129,7 @@ var NAVTREEINDEX14 =
 "configuration-files.html#properties":[1,2,3,0],
 "configuration-files.html#properties-example-1":[1,2,3,0,0],
 "configuration-files.html#properties-example-2":[1,2,3,0,1],
+"configuration-files.html#properties-example-3":[1,2,3,0,2],
 "configuration-files.html#runtime-property-values":[1,2,1],
 "configuration-files.html#xml-example-1":[1,2,3,1,0],
 "configuration-files.html#xml-example-2":[1,2,3,1,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "filterbasedtriggeringpolicy_8h.html":[7,3,0,1,0,0,0,7,2],
 "filterbasedtriggeringpolicy_8h.html#a8e433eadf68a5132bd0c62d75852513c":[7,3,0,1,0,0,0,7,2,1],
 "filterbasedtriggeringpolicy_8h_source.html":[7,3,0,1,0,0,0,7,2],
-"filters.html":[1,3]
+"filters.html":[1,3],
+"filters.html#configure-filter":[1,3,2]
 };

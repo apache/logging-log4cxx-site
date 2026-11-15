@@ -220,6 +220,23 @@ Properties Example 2</h3>
 <div class="line"> </div>
 <div class="line"># Log4cxx internal debugging</div>
 <div class="line">#log4j.debug=true</div>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="properties-example-3"></a>
+Properties Example 3</h3>
+<p>This example adds a chain of filters to an appender, so that it only writes messages that contain the string "specific" (the same as <a class="el" href="#xml-example-4" title="XML Example 4">XML Example 4</a>). The filters are consulted in the order of their identifiers (<span class="tt">1</span> then <span class="tt">2</span>).</p>
+<div class="fragment"><div class="line">log4j.rootLogger=TRACE, ConsoleAppender</div>
+<div class="line"> </div>
+<div class="line">log4j.appender.ConsoleAppender=org.apache.log4j.ConsoleAppender</div>
+<div class="line">log4j.appender.ConsoleAppender.Target=System.out</div>
+<div class="line">log4j.appender.ConsoleAppender.layout=org.apache.log4j.PatternLayout</div>
+<div class="line">log4j.appender.ConsoleAppender.layout.ConversionPattern=%.30c - %Y%m%y%n</div>
+<div class="line"> </div>
+<div class="line"># Accept messages that contain &quot;specific&quot;</div>
+<div class="line">log4j.appender.ConsoleAppender.filter.1=org.apache.log4j.varia.StringMatchFilter</div>
+<div class="line">log4j.appender.ConsoleAppender.filter.1.StringToMatch=specific</div>
+<div class="line">log4j.appender.ConsoleAppender.filter.1.AcceptOnMatch=true</div>
+<div class="line"> </div>
+<div class="line"># Deny all other messages</div>
+<div class="line">log4j.appender.ConsoleAppender.filter.2=org.apache.log4j.varia.DenyAllFilter</div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="xmlfiles"></a>
 XML Files</h2>
 <p>Another way of configuring Log4cxx is with an XML file. The following are some XML configuration examples.</p>

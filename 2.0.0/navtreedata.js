@@ -87,23 +87,23 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "MyApp-qt_2CMakeLists_8txt-example.html",
-"classlog4cxx_1_1FMTLayout.html",
-"classlog4cxx_1_1Layout.html#aec270a094df8494e8117c69cee426de9",
-"classlog4cxx_1_1LoggerInstancePtr.html#a60a877d69948f88095b2841bddbdf6fb",
-"classlog4cxx_1_1filter_1_1ExpressionFilter.html#a3dd8f89261150603e9dba293c5e14a93",
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html",
-"classlog4cxx_1_1helpers_1_1Date.html#afb418dd3d1f78172d4534f3ea7b384e3",
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d61d6bbd39b2868c5a4e101e9b19f05",
-"classlog4cxx_1_1helpers_1_1SingletonHolder.html",
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8057a321fd9989b1a15ecd592b7f4955",
-"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#ad20ace725c223efac847d912fb3c1d41",
-"classlog4cxx_1_1pattern_1_1FullLocationPatternConverter.html#ab00ee800e074ee6adbf2bda89b4cefa7",
-"classlog4cxx_1_1rolling_1_1Action.html#add5afe799b91b44a82213fd9f523e00b",
-"classlog4cxx_1_1rolling_1_1ZipCompressAction.html#aa9d5c03b54c6e088dde92a2d9d62fec7",
-"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html",
-"filters.html#configure-filter",
-"namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86",
-"simpledateformat_8h_source.html"
+"classlog4cxx_1_1FMTLayout.html#a06342b222d267cc8efff2ab48bc7fe1b",
+"classlog4cxx_1_1Level.html",
+"classlog4cxx_1_1LoggerInstancePtr.html#a92877637d81d10fa7641d116bc7db545",
+"classlog4cxx_1_1filter_1_1LevelMatchFilter.html#a0cd04f3e71ca6aab9e05e7795a06fd4b",
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#abbd4669d145593c6fb8499d120cecfad",
+"classlog4cxx_1_1helpers_1_1DateFormat.html#ad0e744dc7295b9ceb5a17f28be48a2ce",
+"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a773e9b6442134f6e9edc08753f1aa359",
+"classlog4cxx_1_1helpers_1_1SingletonHolder.html#aaea3bd09ce4aa8ff89ea438aee528d2b",
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9bf72125f64738358fc982d465b9a66b",
+"classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html#ad5afb6dc02d624014dc4bc6b1b5b8710",
+"classlog4cxx_1_1pattern_1_1IntegerPatternConverter.html",
+"classlog4cxx_1_1rolling_1_1FileRenameAction.html",
+"classlog4cxx_1_1spi_1_1AppenderAttachable.html",
+"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a1217e029574f5d9da8ae6165a979733b",
+"filters.html#excluding-log-output",
+"namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e",
+"shortfilelocationpatternconverter_8h_source.html"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

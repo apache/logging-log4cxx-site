@@ -178,6 +178,7 @@ var hierarchy =
             [ "log4cxx::db::ODBCAppender", "classlog4cxx_1_1db_1_1ODBCAppender.html", null ],
             [ "log4cxx::net::SMTPAppender", "classlog4cxx_1_1net_1_1SMTPAppender.html", null ],
             [ "log4cxx::net::SocketAppenderSkeleton", "classlog4cxx_1_1net_1_1SocketAppenderSkeleton.html", [
+              [ "log4cxx::net::JSONSocketAppender", "classlog4cxx_1_1net_1_1JSONSocketAppender.html", null ],
               [ "log4cxx::net::XMLSocketAppender", "classlog4cxx_1_1net_1_1XMLSocketAppender.html", null ]
             ] ],
             [ "log4cxx::net::SyslogAppender", "classlog4cxx_1_1net_1_1SyslogAppender.html", null ],

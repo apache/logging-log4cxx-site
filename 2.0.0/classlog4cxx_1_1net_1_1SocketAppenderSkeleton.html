@@ -140,40 +140,41 @@ Inheritance diagram for log4cxx::net::SocketAppenderSkeleton:</div>
  <div class="center">
   <img src="classlog4cxx_1_1net_1_1SocketAppenderSkeleton.png" usemap="#log4cxx_3A_3Anet_3A_3ASocketAppenderSkeleton_map" alt=""/>
   <map id="log4cxx_3A_3Anet_3A_3ASocketAppenderSkeleton_map" name="log4cxx_3A_3Anet_3A_3ASocketAppenderSkeleton_map">
-<area href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders." alt="log4cxx::AppenderSkeleton" shape="rect" coords="0,168,226,192"/>
-<area href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements." alt="log4cxx::Appender" shape="rect" coords="0,112,226,136"/>
-<area href="classlog4cxx_1_1spi_1_1OptionHandler.html" title="A string based interface to configure package components." alt="log4cxx::spi::OptionHandler" shape="rect" coords="0,56,226,80"/>
-<area href="classlog4cxx_1_1helpers_1_1Object.html" title="base class for java-like objects." alt="log4cxx::helpers::Object" shape="rect" coords="0,0,226,24"/>
-<area href="classlog4cxx_1_1net_1_1XMLSocketAppender.html" title="Sends spi::LoggingEvent elements to a remote a log server, usually in XML format." alt="log4cxx::net::XMLSocketAppender" shape="rect" coords="0,280,226,304"/>
+<area href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders." alt="log4cxx::AppenderSkeleton" shape="rect" coords="118,168,344,192"/>
+<area href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements." alt="log4cxx::Appender" shape="rect" coords="118,112,344,136"/>
+<area href="classlog4cxx_1_1spi_1_1OptionHandler.html" title="A string based interface to configure package components." alt="log4cxx::spi::OptionHandler" shape="rect" coords="118,56,344,80"/>
+<area href="classlog4cxx_1_1helpers_1_1Object.html" title="base class for java-like objects." alt="log4cxx::helpers::Object" shape="rect" coords="118,0,344,24"/>
+<area href="classlog4cxx_1_1net_1_1JSONSocketAppender.html" title="Sends spi::LoggingEvent elements to a remote a log server, usually in JSON format." alt="log4cxx::net::JSONSocketAppender" shape="rect" coords="0,280,226,304"/>
+<area href="classlog4cxx_1_1net_1_1XMLSocketAppender.html" title="Sends spi::LoggingEvent elements to a remote a log server, usually in XML format." alt="log4cxx::net::XMLSocketAppender" shape="rect" coords="236,280,462,304"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4d0ae245c2a87e8168e85bd9f242e7a9" id="r_a4d0ae245c2a87e8168e85bd9f242e7a9"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4d0ae245c2a87e8168e85bd9f242e7a9">SocketAppenderSkeleton</a> (int defaultPort, int reconnectionDelay)</td></tr>
+<tr class="memitem:a0ab918d30d16fd03f57d9477608f934a" id="r_a0ab918d30d16fd03f57d9477608f934a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0ab918d30d16fd03f57d9477608f934a">SocketAppenderSkeleton</a> (int defaultPort, int millisecondDelay)</td></tr>
+<tr class="memdesc:a0ab918d30d16fd03f57d9477608f934a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unconnected appender sending to <code>defaultPort</code>, with a retry after <code>millisecondDelay</code> when unable to establish a connection.  <br /></td></tr>
 <tr class="memitem:ad893f102969e5fc84378f20dc3810ba6" id="r_ad893f102969e5fc84378f20dc3810ba6"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad893f102969e5fc84378f20dc3810ba6">~SocketAppenderSkeleton</a> ()</td></tr>
-<tr class="memitem:aee893501f2304d39e7209a72f03b7786" id="r_aee893501f2304d39e7209a72f03b7786"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aee893501f2304d39e7209a72f03b7786">SocketAppenderSkeleton</a> (const helpers::InetAddressPtr &amp;address, int port, int reconnectionDelay)</td></tr>
-<tr class="memdesc:aee893501f2304d39e7209a72f03b7786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to remote server at <code>address</code> and <code>port</code>.  <br /></td></tr>
-<tr class="memitem:a5fd46655af974d7a9791d2b8140da213" id="r_a5fd46655af974d7a9791d2b8140da213"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5fd46655af974d7a9791d2b8140da213">SocketAppenderSkeleton</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;host, int port, int reconnectionDelay)</td></tr>
-<tr class="memdesc:a5fd46655af974d7a9791d2b8140da213"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to remote server at <code>host</code> and <code>port</code>.  <br /></td></tr>
+<tr class="memdesc:ad893f102969e5fc84378f20dc3810ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close and shutdown the connection if not already done.  <br /></td></tr>
+<tr class="memitem:a4ad86b0cb39e9aeced493e6a6e654d1c" id="r_a4ad86b0cb39e9aeced493e6a6e654d1c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4ad86b0cb39e9aeced493e6a6e654d1c">SocketAppenderSkeleton</a> (const helpers::InetAddressPtr &amp;address, int port, int millisecondDelay)</td></tr>
+<tr class="memdesc:a4ad86b0cb39e9aeced493e6a6e654d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A remote server at <code>address</code> and <code>port</code>, with a retry after <code>millisecondDelay</code> when unable to establish a connection.  <br /></td></tr>
+<tr class="memitem:ad6c41fc634b97002f569c22396f901da" id="r_ad6c41fc634b97002f569c22396f901da"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad6c41fc634b97002f569c22396f901da">SocketAppenderSkeleton</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;host, int port, int millisecondDelay)</td></tr>
+<tr class="memdesc:ad6c41fc634b97002f569c22396f901da"><td class="mdescLeft">&#160;</td><td class="mdescRight">A remote server at <code>host</code> and <code>port</code>, with a retry after <code>millisecondDelay</code> when unable to establish a connection.  <br /></td></tr>
 <tr class="memitem:a3709020b2edce60f92cc088fa2c263f7" id="r_a3709020b2edce60f92cc088fa2c263f7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3709020b2edce60f92cc088fa2c263f7">activateOptions</a> () override</td></tr>
-<tr class="memdesc:a3709020b2edce60f92cc088fa2c263f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activate the options that were previously set with calls to option setters.        <br /></td></tr>
-<tr class="memitem:ad20ace725c223efac847d912fb3c1d41" id="r_ad20ace725c223efac847d912fb3c1d41"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad20ace725c223efac847d912fb3c1d41">setRemoteHost</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;host)</td></tr>
-<tr class="memdesc:ad20ace725c223efac847d912fb3c1d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>RemoteHost</b> option takes a string value which should be the host name of the server where a Apache Chainsaw or compatible is running.  <br /></td></tr>
+<tr class="memdesc:a3709020b2edce60f92cc088fa2c263f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to the configured <b>RemoteHost</b> and <b>Port</b>.  <br /></td></tr>
+<tr class="memitem:af0a4f31b1042b93b4993f0d5e69327df" id="r_af0a4f31b1042b93b4993f0d5e69327df"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af0a4f31b1042b93b4993f0d5e69327df">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) override</td></tr>
+<tr class="memdesc:af0a4f31b1042b93b4993f0d5e69327df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the message that the configured <a class="el" href="classlog4cxx_1_1Layout.html" title="Extend this abstract class to create your own log layout format.">Layout</a> produces from <code>event</code> to the output sink.  <br /></td></tr>
+<tr class="memitem:a6ba5750166f7bbadfde98898acdcde44" id="r_a6ba5750166f7bbadfde98898acdcde44"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6ba5750166f7bbadfde98898acdcde44">setRemoteHost</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;newValue)</td></tr>
+<tr class="memdesc:a6ba5750166f7bbadfde98898acdcde44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>newValue</code> as the name of the server.  <br /></td></tr>
 <tr class="memitem:ad8f7be3ecf2246cc185434cc919b4d22" id="r_ad8f7be3ecf2246cc185434cc919b4d22"><td class="memItemLeft">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad8f7be3ecf2246cc185434cc919b4d22">getRemoteHost</a> () const</td></tr>
 <tr class="memdesc:ad8f7be3ecf2246cc185434cc919b4d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns value of the <b>RemoteHost</b> option.  <br /></td></tr>
-<tr class="memitem:a9fdf687b74c237e1f8abfcca42d4fabb" id="r_a9fdf687b74c237e1f8abfcca42d4fabb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9fdf687b74c237e1f8abfcca42d4fabb">setPort</a> (int port1)</td></tr>
-<tr class="memdesc:a9fdf687b74c237e1f8abfcca42d4fabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>Port</b> option takes a positive integer representing the port where the server is waiting for connections.  <br /></td></tr>
+<tr class="memitem:aed6a4651305c8fc45b5ca4deca0626fb" id="r_aed6a4651305c8fc45b5ca4deca0626fb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aed6a4651305c8fc45b5ca4deca0626fb">setPort</a> (int newValue)</td></tr>
+<tr class="memdesc:aed6a4651305c8fc45b5ca4deca0626fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>newValue</code>, which must be a positive integer, as the port on which the server is waiting for connections.  <br /></td></tr>
 <tr class="memitem:ac13a7af6a0cdd775022ab93e7c8794d4" id="r_ac13a7af6a0cdd775022ab93e7c8794d4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac13a7af6a0cdd775022ab93e7c8794d4">getPort</a> () const</td></tr>
 <tr class="memdesc:ac13a7af6a0cdd775022ab93e7c8794d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns value of the <b>Port</b> option.  <br /></td></tr>
-<tr class="memitem:af73d82854bd06fbe49ddcd7ac44b628b" id="r_af73d82854bd06fbe49ddcd7ac44b628b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af73d82854bd06fbe49ddcd7ac44b628b">setLocationInfo</a> (bool locationInfo1)</td></tr>
-<tr class="memdesc:af73d82854bd06fbe49ddcd7ac44b628b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>LocationInfo</b> option takes a boolean value.  <br /></td></tr>
-<tr class="memitem:a77df917ecbada47e548ad7359ce124ee" id="r_a77df917ecbada47e548ad7359ce124ee"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a77df917ecbada47e548ad7359ce124ee">getLocationInfo</a> () const</td></tr>
-<tr class="memdesc:a77df917ecbada47e548ad7359ce124ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns value of the <b>LocationInfo</b> option.  <br /></td></tr>
-<tr class="memitem:ac2233aad3e7f7e137858b29447c060ff" id="r_ac2233aad3e7f7e137858b29447c060ff"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac2233aad3e7f7e137858b29447c060ff">setReconnectionDelay</a> (int reconnectionDelay1)</td></tr>
-<tr class="memdesc:ac2233aad3e7f7e137858b29447c060ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>ReconnectionDelay</b> option takes a positive integer representing the number of milliseconds to wait between each failed connection attempt to the server.  <br /></td></tr>
+<tr class="memitem:ad5afb6dc02d624014dc4bc6b1b5b8710" id="r_ad5afb6dc02d624014dc4bc6b1b5b8710"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad5afb6dc02d624014dc4bc6b1b5b8710">setReconnectionDelay</a> (int millisecondDelay)</td></tr>
+<tr class="memdesc:ad5afb6dc02d624014dc4bc6b1b5b8710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>millisecondDelay</code> as the number of milliseconds to wait between each failed connection attempt to the server.  <br /></td></tr>
 <tr class="memitem:a95cf7d3097a6727b45562bf47f993eeb" id="r_a95cf7d3097a6727b45562bf47f993eeb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a95cf7d3097a6727b45562bf47f993eeb">getReconnectionDelay</a> () const</td></tr>
-<tr class="memdesc:a95cf7d3097a6727b45562bf47f993eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns value of the <b>ReconnectionDelay</b> option.  <br /></td></tr>
+<tr class="memdesc:a95cf7d3097a6727b45562bf47f993eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value of the <b>ReconnectionDelay</b> option, the number of milliseconds to wait between each failed connection attempt to the server.  <br /></td></tr>
 <tr class="memitem:ac36d277689ba5a797213c886683fccfb" id="r_ac36d277689ba5a797213c886683fccfb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac36d277689ba5a797213c886683fccfb">setSocketSubclass</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;newSubclass)</td></tr>
 <tr class="memdesc:ac36d277689ba5a797213c886683fccfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>newSubclass</code> as the <a class="el" href="classlog4cxx_1_1helpers_1_1Socket.html" title="Abstract base class for an outgoing socket connection.">helpers::Socket</a> interface instead of the default implementation.  <br /></td></tr>
 <tr class="memitem:a36c6c013f9412025f4dd02b1e3f0e5e0" id="r_a36c6c013f9412025f4dd02b1e3f0e5e0"><td class="memItemLeft">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a36c6c013f9412025f4dd02b1e3f0e5e0">getSocketSubclass</a> () const</td></tr>
@@ -182,45 +183,43 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af39384a7c5711a82feb2a24feff7eff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this method to set <code>option</code> to <code>value</code>.        <br /></td></tr>
 <tr class="memitem:a069a811a37097a1979ed9028c5b4a712" id="r_a069a811a37097a1979ed9028c5b4a712"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a069a811a37097a1979ed9028c5b4a712">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;)</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1AppenderSkeleton"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html">log4cxx::AppenderSkeleton</a></td></tr>
-<tr class="memitem:a1395bdbbd217ee7d36eec1c05aa15dd2 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a1395bdbbd217ee7d36eec1c05aa15dd2"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a1395bdbbd217ee7d36eec1c05aa15dd2">AppenderSkeleton</a> ()</td></tr>
-<tr class="memitem:aa3aee1ae3a3825ae2249e9fc520c4cce pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_aa3aee1ae3a3825ae2249e9fc520c4cce"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aa3aee1ae3a3825ae2249e9fc520c4cce">AppenderSkeleton</a> (const <a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> &amp;layout)</td></tr>
+<tr class="memitem:a27e65584565f68d3f17f152a21fcd91d pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a27e65584565f68d3f17f152a21fcd91d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a27e65584565f68d3f17f152a21fcd91d">AppenderSkeleton</a> (const <a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> &amp;layout={})</td></tr>
 <tr class="memitem:aa281300e79f814e8458511552debce57 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_aa281300e79f814e8458511552debce57"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aa281300e79f814e8458511552debce57">~AppenderSkeleton</a> ()</td></tr>
 <tr class="memitem:a62757130f678fb9e1b236a07297212cc pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a62757130f678fb9e1b236a07297212cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a62757130f678fb9e1b236a07297212cc">addFilter</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a> &amp;newFilter) override</td></tr>
-<tr class="memdesc:a62757130f678fb9e1b236a07297212cc pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a filter to end of the filter list.  <br /></td></tr>
+<tr class="memdesc:a62757130f678fb9e1b236a07297212cc pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add <code>newFilter</code> to end of the <a class="el" href="classlog4cxx_1_1spi_1_1Filter.html" title="Users should extend this class to implement customized logging event filtering.">spi::Filter</a> chain.  <br /></td></tr>
 <tr class="memitem:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab8a68d594edffba72856ff25753d5911"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab8a68d594edffba72856ff25753d5911">clearFilters</a> () override</td></tr>
-<tr class="memdesc:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the filters chain.  <br /></td></tr>
+<tr class="memdesc:ab8a68d594edffba72856ff25753d5911 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the <a class="el" href="classlog4cxx_1_1spi_1_1Filter.html" title="Users should extend this class to implement customized logging event filtering.">spi::Filter</a> chain.  <br /></td></tr>
 <tr class="memitem:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab3760465840fab6e19d73680a53701e0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab3760465840fab6e19d73680a53701e0">close</a> () override</td></tr>
 <tr class="memdesc:ab3760465840fab6e19d73680a53701e0 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release any resources allocated within the appender such as file handles, network connections, etc.     <br /></td></tr>
 <tr class="memitem:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ada96367511614d645b4410c2de00d99e"><td class="memItemLeft">const <a class="el" href="namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648">spi::ErrorHandlerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ada96367511614d645b4410c2de00d99e">getErrorHandler</a> () const</td></tr>
-<tr class="memdesc:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the currently set <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html" title="Appenders may delegate their error handling to ErrorHandlers.">spi::ErrorHandler</a> for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
+<tr class="memdesc:ada96367511614d645b4410c2de00d99e pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently set <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html" title="Appenders may delegate their error handling to ErrorHandlers.">spi::ErrorHandler</a> for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a2334ac3560b4247480d6a9cd3356c4e3 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a2334ac3560b4247480d6a9cd3356c4e3"><td class="memItemLeft"><a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a2334ac3560b4247480d6a9cd3356c4e3">getFilter</a> () const override</td></tr>
-<tr class="memdesc:a2334ac3560b4247480d6a9cd3356c4e3 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the head Filter.  <br /></td></tr>
+<tr class="memdesc:a2334ac3560b4247480d6a9cd3356c4e3 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first <a class="el" href="classlog4cxx_1_1spi_1_1Filter.html" title="Users should extend this class to implement customized logging event filtering.">spi::Filter</a> in the filter chain for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a643ca5a24d3318f89a468549509bd407 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a643ca5a24d3318f89a468549509bd407"><td class="memItemLeft">const <a class="el" href="namespacelog4cxx_1_1spi.html#a98940dd5338fd77ed3018e8ad9d5ac97">spi::FilterPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a643ca5a24d3318f89a468549509bd407">getFirstFilter</a> () const</td></tr>
-<tr class="memdesc:a643ca5a24d3318f89a468549509bd407 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the first filter in the filter chain for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
+<tr class="memdesc:a643ca5a24d3318f89a468549509bd407 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first <a class="el" href="classlog4cxx_1_1spi_1_1Filter.html" title="Users should extend this class to implement customized logging event filtering.">spi::Filter</a> in the filter chain for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a6bc4a8700fbbdd59080c2e23f3b77ed8 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a6bc4a8700fbbdd59080c2e23f3b77ed8"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a6bc4a8700fbbdd59080c2e23f3b77ed8">getLayout</a> () const override</td></tr>
-<tr class="memdesc:a6bc4a8700fbbdd59080c2e23f3b77ed8 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the layout of this appender.  <br /></td></tr>
+<tr class="memdesc:a6bc4a8700fbbdd59080c2e23f3b77ed8 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently set <a class="el" href="classlog4cxx_1_1Layout.html" title="Extend this abstract class to create your own log layout format.">Layout</a> for this appender.  <br /></td></tr>
 <tr class="memitem:a0cf82e380c24d121dbee9225e9491a84 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a0cf82e380c24d121dbee9225e9491a84"><td class="memItemLeft"><a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a0cf82e380c24d121dbee9225e9491a84">getName</a> () const override</td></tr>
-<tr class="memdesc:a0cf82e380c24d121dbee9225e9491a84 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
+<tr class="memdesc:a0cf82e380c24d121dbee9225e9491a84 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
 <tr class="memitem:a8ab44d31691c5de3df16c539189f1060 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a8ab44d31691c5de3df16c539189f1060"><td class="memItemLeft">const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a8ab44d31691c5de3df16c539189f1060">getThreshold</a> () const</td></tr>
-<tr class="memdesc:a8ab44d31691c5de3df16c539189f1060 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns this appenders threshold level.  <br /></td></tr>
+<tr class="memdesc:a8ab44d31691c5de3df16c539189f1060 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">This appender's current threshold level.  <br /></td></tr>
 <tr class="memitem:aa8670b15977dcefc4f30f8d9cf0d6885 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_aa8670b15977dcefc4f30f8d9cf0d6885"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aa8670b15977dcefc4f30f8d9cf0d6885">isAsSevereAsThreshold</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;level) const</td></tr>
-<tr class="memdesc:aa8670b15977dcefc4f30f8d9cf0d6885 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the message level is below the appender's threshold.  <br /></td></tr>
+<tr class="memdesc:aa8670b15977dcefc4f30f8d9cf0d6885 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is <code>level</code> greater than or equal to this appender's threshold?  <br /></td></tr>
 <tr class="memitem:ac4e798eb488e305d85d1d3ea102b4917 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ac4e798eb488e305d85d1d3ea102b4917"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ac4e798eb488e305d85d1d3ea102b4917">doAppend</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) override</td></tr>
-<tr class="memdesc:ac4e798eb488e305d85d1d3ea102b4917 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aaf6a9c9afe672e30a79efaf0c3f87fc8" title="Compare event level against the appender threshold and check that event is accepted.">AppenderSkeleton::doAppendImpl</a> after acquiring a lock that prevents other threads from concurrently executing <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aaf6a9c9afe672e30a79efaf0c3f87fc8" title="Compare event level against the appender threshold and check that event is accepted.">AppenderSkeleton::doAppendImpl</a>.  <br /></td></tr>
-<tr class="memitem:aa6d47a5a93444dc732075234f7b98d1a pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_aa6d47a5a93444dc732075234f7b98d1a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aa6d47a5a93444dc732075234f7b98d1a">setErrorHandler</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648">spi::ErrorHandlerPtr</a> &amp;eh)</td></tr>
-<tr class="memdesc:aa6d47a5a93444dc732075234f7b98d1a pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <code><a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html">ErrorHandler</a></code> for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
-<tr class="memitem:a9829bf262c78e84c1b09fe8e90212ded pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a9829bf262c78e84c1b09fe8e90212ded"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a9829bf262c78e84c1b09fe8e90212ded">setLayout</a> (const <a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> &amp;layout1) override</td></tr>
-<tr class="memdesc:a9829bf262c78e84c1b09fe8e90212ded pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the layout for this appender.  <br /></td></tr>
-<tr class="memitem:a8f43cc72bbddcd95ddaeb274cd040b3c pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a8f43cc72bbddcd95ddaeb274cd040b3c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a8f43cc72bbddcd95ddaeb274cd040b3c">setName</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;name1) override</td></tr>
-<tr class="memdesc:a8f43cc72bbddcd95ddaeb274cd040b3c pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the name of this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
-<tr class="memitem:a9a0d49cd8867995f2ad8bd1df8b0fcea pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a9a0d49cd8867995f2ad8bd1df8b0fcea"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a9a0d49cd8867995f2ad8bd1df8b0fcea">setThreshold</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;threshold)</td></tr>
-<tr class="memdesc:a9a0d49cd8867995f2ad8bd1df8b0fcea pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the threshold level.  <br /></td></tr>
+<tr class="memdesc:ac4e798eb488e305d85d1d3ea102b4917 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aaf6a9c9afe672e30a79efaf0c3f87fc8" title="Call the AppenderSkeleton::append method if the level of event is not lower than this appender&#39;s thre...">doAppendImpl</a> after acquiring a lock that prevents other threads from concurrently executing <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aaf6a9c9afe672e30a79efaf0c3f87fc8" title="Call the AppenderSkeleton::append method if the level of event is not lower than this appender&#39;s thre...">doAppendImpl</a>.  <br /></td></tr>
+<tr class="memitem:ad1ab52a91fdb6f8c3c1fe35ee102e753 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ad1ab52a91fdb6f8c3c1fe35ee102e753"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ad1ab52a91fdb6f8c3c1fe35ee102e753">setErrorHandler</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#a4b51e2c44c1900d369ab6ca0d79c5648">spi::ErrorHandlerPtr</a> &amp;newValue)</td></tr>
+<tr class="memdesc:ad1ab52a91fdb6f8c3c1fe35ee102e753 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>newValue</code> as the <a class="el" href="classlog4cxx_1_1spi_1_1ErrorHandler.html" title="Appenders may delegate their error handling to ErrorHandlers.">spi::ErrorHandler</a> for this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
+<tr class="memitem:a500167c163fc69b2313c2d833ca126a5 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a500167c163fc69b2313c2d833ca126a5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a500167c163fc69b2313c2d833ca126a5">setLayout</a> (const <a class="el" href="namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86">LayoutPtr</a> &amp;newValue) override</td></tr>
+<tr class="memdesc:a500167c163fc69b2313c2d833ca126a5 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>newValue</code> as the layout for this appender.  <br /></td></tr>
+<tr class="memitem:aadd6e97c3fe71697b7dc89ba17521847 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_aadd6e97c3fe71697b7dc89ba17521847"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aadd6e97c3fe71697b7dc89ba17521847">setName</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;newValue) override</td></tr>
+<tr class="memdesc:aadd6e97c3fe71697b7dc89ba17521847 pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>newValue</code> for the name of this <a class="el" href="classlog4cxx_1_1Appender.html" title="Implement this interface for your own strategies for outputting log statements.">Appender</a>.  <br /></td></tr>
+<tr class="memitem:ac6dadb3675724f9e4dffe882ad26b98c pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ac6dadb3675724f9e4dffe882ad26b98c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ac6dadb3675724f9e4dffe882ad26b98c">setThreshold</a> (const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;newValue)</td></tr>
+<tr class="memdesc:ac6dadb3675724f9e4dffe882ad26b98c pub_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <code>newValue</code> as this appender's threshold level.  <br /></td></tr>
 <tr class="memitem:a069a811a37097a1979ed9028c5b4a712 pub_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a069a811a37097a1979ed9028c5b4a712"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a069a811a37097a1979ed9028c5b4a712">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;)</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1Appender"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1Appender.html">log4cxx::Appender</a></td></tr>
 <tr class="memitem:adb76477fa620be64de22efe12b127ad5 pub_methods_classlog4cxx_1_1Appender" id="r_adb76477fa620be64de22efe12b127ad5"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1Appender.html#adb76477fa620be64de22efe12b127ad5">~Appender</a> ()</td></tr>
 <tr class="memitem:a24d0c180f5542e6c402bfd4b4dc0547e pub_methods_classlog4cxx_1_1Appender" id="r_a24d0c180f5542e6c402bfd4b4dc0547e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1Appender.html#a24d0c180f5542e6c402bfd4b4dc0547e">doAppend</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event, <a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;pool)</td></tr>
-<tr class="memitem:a59cf35c2fb097cce8ca435d2141790d9 pub_methods_classlog4cxx_1_1Appender" id="r_a59cf35c2fb097cce8ca435d2141790d9"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1Appender.html#a59cf35c2fb097cce8ca435d2141790d9">requiresLayout</a> () const =0</td></tr>
-<tr class="memdesc:a59cf35c2fb097cce8ca435d2141790d9 pub_methods_classlog4cxx_1_1Appender"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configurators call this method to determine if the appender requires a layout.  <br /></td></tr>
+<tr class="memitem:ab60c57ddf11608c8863ea768a73fd8e6 pub_methods_classlog4cxx_1_1Appender" id="r_ab60c57ddf11608c8863ea768a73fd8e6"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1Appender.html#ab60c57ddf11608c8863ea768a73fd8e6">requiresLayout</a> () const</td></tr>
 <tr class="inherit_header pub_methods_classlog4cxx_1_1spi_1_1OptionHandler"><td colspan="2">Public Member Functions inherited from <a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html">log4cxx::spi::OptionHandler</a></td></tr>
 <tr class="memitem:a556b59c5ef41477c0bc3f50efadc859e pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a556b59c5ef41477c0bc3f50efadc859e"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a556b59c5ef41477c0bc3f50efadc859e">~OptionHandler</a> ()</td></tr>
 <tr class="memitem:a069a811a37097a1979ed9028c5b4a712 pub_methods_classlog4cxx_1_1spi_1_1OptionHandler" id="r_a069a811a37097a1979ed9028c5b4a712"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1spi_1_1OptionHandler.html#a069a811a37097a1979ed9028c5b4a712">activateOptions</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Pool.html">helpers::Pool</a> &amp;)</td></tr>
@@ -237,10 +236,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af994b879a6a9f747593803429b20670c" id="r_af994b879a6a9f747593803429b20670c"><td class="memItemLeft">virtual int&#160;</td><td class="memItemRight"><a class="el" href="#af994b879a6a9f747593803429b20670c">getDefaultPort</a> () const =0</td></tr>
 <tr class="inherit_header pro_methods_classlog4cxx_1_1AppenderSkeleton"><td colspan="2">Protected Member Functions inherited from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html">log4cxx::AppenderSkeleton</a></td></tr>
 <tr class="memitem:accb02a0eabe4b11f2c771b4c796f3739 pro_methods_classlog4cxx_1_1AppenderSkeleton" id="r_accb02a0eabe4b11f2c771b4c796f3739"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#accb02a0eabe4b11f2c771b4c796f3739">AppenderSkeleton</a> (LOG4CXX_PRIVATE_PTR(AppenderSkeletonPrivate) priv)</td></tr>
-<tr class="memitem:a8d784b0800f51afd9a19de38a80510de pro_methods_classlog4cxx_1_1AppenderSkeleton" id="r_a8d784b0800f51afd9a19de38a80510de"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a8d784b0800f51afd9a19de38a80510de">append</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event)=0</td></tr>
-<tr class="memdesc:a8d784b0800f51afd9a19de38a80510de pro_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses of <code><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html" title="Implementation base class for all appenders.">AppenderSkeleton</a></code> must implement this method to perform actual logging.  <br /></td></tr>
 <tr class="memitem:aaf6a9c9afe672e30a79efaf0c3f87fc8 pro_methods_classlog4cxx_1_1AppenderSkeleton" id="r_aaf6a9c9afe672e30a79efaf0c3f87fc8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#aaf6a9c9afe672e30a79efaf0c3f87fc8">doAppendImpl</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event)</td></tr>
-<tr class="memdesc:aaf6a9c9afe672e30a79efaf0c3f87fc8 pro_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare <code>event</code> level against the appender threshold and check that <code>event</code> is accepted.  <br /></td></tr>
+<tr class="memdesc:aaf6a9c9afe672e30a79efaf0c3f87fc8 pro_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call the <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a8d784b0800f51afd9a19de38a80510de" title="Subclasses of AppenderSkeleton must implement this method to perform actual logging.">AppenderSkeleton::append</a> method if the level of <code>event</code> is not lower than this appender's threshold and no attached <a class="el" href="classlog4cxx_1_1spi_1_1Filter.html" title="Users should extend this class to implement customized logging event filtering.">spi::Filter</a> indicates <code>event</code> is rejected.  <br /></td></tr>
 <tr class="memitem:ab2d12190b995b82d5ceae323212f69d0 pro_methods_classlog4cxx_1_1AppenderSkeleton" id="r_ab2d12190b995b82d5ceae323212f69d0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab2d12190b995b82d5ceae323212f69d0">isAccepted</a> (const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;event) const</td></tr>
 <tr class="memdesc:ab2d12190b995b82d5ceae323212f69d0 pro_methods_classlog4cxx_1_1AppenderSkeleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does no attached filter deny <code>event</code> or does an attached filter accept <code>event</code>?  <br /></td></tr>
 </table>
@@ -255,11 +252,11 @@ Protected Member Functions</h2></td></tr>
 <li>If the application hosting this appender exits before it is closed, either explicitly or subsequent to destruction, then there might be untransmitted data in the pipe which might be lost.</li>
 </ul>
 <p>To avoid lost data, it is usually sufficient to <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#ab3760465840fab6e19d73680a53701e0" title="Release any resources allocated within the appender such as file handles, network connections,...">close</a> the appender either explicitly or by calling the <a class="el" href="classlog4cxx_1_1LogManager.html#ad8845f4e8c6c840c7825bde2c9ce7e7c" title="Safely close and remove all appenders in all loggers including the root logger.">LogManager::shutdown</a> method before exiting the application.</p>
-<p>A periodic task will connect when the server becomes available. It does this by attempting to open a new connection every <code>reconnectionDelay</code> milliseconds.</p>
+<p>A periodic task will connect when the server becomes available. It does this by attempting to open a new connection every <code>millisecondDelay</code> milliseconds.</p>
 <p>The periodic task stops trying whenever a connection is established. It will restart attempting to open a new connection to the server when a previously open connection is droppped. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4d0ae245c2a87e8168e85bd9f242e7a9" name="a4d0ae245c2a87e8168e85bd9f242e7a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d0ae245c2a87e8168e85bd9f242e7a9">&#9670;&#160;</a></span>SocketAppenderSkeleton() <span class="overload">[1/4]</span></h2>
+<a id="a0ab918d30d16fd03f57d9477608f934a" name="a0ab918d30d16fd03f57d9477608f934a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab918d30d16fd03f57d9477608f934a">&#9670;&#160;</a></span>SocketAppenderSkeleton() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,10 +269,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reconnectionDelay</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>millisecondDelay</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A unconnected appender sending to <code>defaultPort</code>, with a retry after <code>millisecondDelay</code> when unable to establish a connection. </p>
 
 </div>
 </div>
@@ -294,10 +293,12 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Close and shutdown the connection if not already done. </p>
+
 </div>
 </div>
-<a id="aee893501f2304d39e7209a72f03b7786" name="aee893501f2304d39e7209a72f03b7786"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee893501f2304d39e7209a72f03b7786">&#9670;&#160;</a></span>SocketAppenderSkeleton() <span class="overload">[2/4]</span></h2>
+<a id="a4ad86b0cb39e9aeced493e6a6e654d1c" name="a4ad86b0cb39e9aeced493e6a6e654d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad86b0cb39e9aeced493e6a6e654d1c">&#9670;&#160;</a></span>SocketAppenderSkeleton() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,17 +316,17 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reconnectionDelay</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>millisecondDelay</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Connects to remote server at <code>address</code> and <code>port</code>. </p>
+<p>A remote server at <code>address</code> and <code>port</code>, with a retry after <code>millisecondDelay</code> when unable to establish a connection. </p>
 
 </div>
 </div>
-<a id="a5fd46655af974d7a9791d2b8140da213" name="a5fd46655af974d7a9791d2b8140da213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fd46655af974d7a9791d2b8140da213">&#9670;&#160;</a></span>SocketAppenderSkeleton() <span class="overload">[3/4]</span></h2>
+<a id="ad6c41fc634b97002f569c22396f901da" name="ad6c41fc634b97002f569c22396f901da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c41fc634b97002f569c22396f901da">&#9670;&#160;</a></span>SocketAppenderSkeleton() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,12 +344,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reconnectionDelay</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>millisecondDelay</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Connects to remote server at <code>host</code> and <code>port</code>. </p>
+<p>A remote server at <code>host</code> and <code>port</code>, with a retry after <code>millisecondDelay</code> when unable to establish a connection. </p>
 
 </div>
 </div>
@@ -401,12 +402,9 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Activate the options that were previously set with calls to option setters.       </p>
-<p>Connects to the specified <b>RemoteHost</b> and <b>Port</b>. </p>
+<p>Connects to the configured <b>RemoteHost</b> and <b>Port</b>. </p>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a59bad7bedbefa125889471a26068acd0">log4cxx::AppenderSkeleton</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classlog4cxx_1_1net_1_1XMLSocketAppender.html#a3709020b2edce60f92cc088fa2c263f7">log4cxx::net::XMLSocketAppender</a>.</p>
 
 </div>
 </div>
@@ -424,8 +422,37 @@ Protected Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">Deprecated</a></b></dt><dd>Use <a class="el" href="#a3709020b2edce60f92cc088fa2c263f7" title="Activate the options that were previously set with calls to option setters.">activateOptions()</a> without parameters instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">Deprecated</a></b></dt><dd>This function is deprecated and will be removed in a future version. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated</a></b></dt><dd>Use <a class="el" href="#a3709020b2edce60f92cc088fa2c263f7" title="Connects to the configured RemoteHost and Port.">activateOptions()</a> without parameters instead</dd></dl>
+
+</div>
+</div>
+<a id="af0a4f31b1042b93b4993f0d5e69327df" name="af0a4f31b1042b93b4993f0d5e69327df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a4f31b1042b93b4993f0d5e69327df">&#9670;&#160;</a></span>append()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log4cxx::net::SocketAppenderSkeleton::append </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx_1_1spi.html#aae6992e1b33222c26bdc1173b6aedc6c">spi::LoggingEventPtr</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends the message that the configured <a class="el" href="classlog4cxx_1_1Layout.html" title="Extend this abstract class to create your own log layout format.">Layout</a> produces from <code>event</code> to the output sink. </p>
+
+<p>Implements <a class="el" href="classlog4cxx_1_1AppenderSkeleton.html#a8d784b0800f51afd9a19de38a80510de">log4cxx::AppenderSkeleton</a>.</p>
 
 </div>
 </div>
@@ -452,7 +479,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1net_1_1XMLSocketAppender.html#a798904d3059a31829030e32daab9f589">log4cxx::net::XMLSocketAppender</a>.</p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1net_1_1JSONSocketAppender.html#a109a680964ab4c77861abae498544a03">log4cxx::net::JSONSocketAppender</a>, and <a class="el" href="classlog4cxx_1_1net_1_1XMLSocketAppender.html#a798904d3059a31829030e32daab9f589">log4cxx::net::XMLSocketAppender</a>.</p>
 
 </div>
 </div>
@@ -479,26 +506,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classlog4cxx_1_1net_1_1XMLSocketAppender.html#a82b5fb088374ed5a7232a16bd8d42ea8">log4cxx::net::XMLSocketAppender</a>.</p>
-
-</div>
-</div>
-<a id="a77df917ecbada47e548ad7359ce124ee" name="a77df917ecbada47e548ad7359ce124ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77df917ecbada47e548ad7359ce124ee">&#9670;&#160;</a></span>getLocationInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool log4cxx::net::SocketAppenderSkeleton::getLocationInfo </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns value of the <b>LocationInfo</b> option. </p>
+<p>Implemented in <a class="el" href="classlog4cxx_1_1net_1_1JSONSocketAppender.html#a04f0dcfea12d07b4a6b175c4115d31a8">log4cxx::net::JSONSocketAppender</a>, and <a class="el" href="classlog4cxx_1_1net_1_1XMLSocketAppender.html#a82b5fb088374ed5a7232a16bd8d42ea8">log4cxx::net::XMLSocketAppender</a>.</p>
 
 </div>
 </div>
@@ -536,7 +544,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns value of the <b>ReconnectionDelay</b> option. </p>
+<p>The value of the <b>ReconnectionDelay</b> option, the number of milliseconds to wait between each failed connection attempt to the server. </p>
 
 </div>
 </div>
@@ -578,26 +586,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af73d82854bd06fbe49ddcd7ac44b628b" name="af73d82854bd06fbe49ddcd7ac44b628b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af73d82854bd06fbe49ddcd7ac44b628b">&#9670;&#160;</a></span>setLocationInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void log4cxx::net::SocketAppenderSkeleton::setLocationInfo </td>
-          <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>locationInfo1</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The <b>LocationInfo</b> option takes a boolean value. </p>
-<p>If true, the information sent to the remote host will include location information. By default no location information is sent to the server. </p>
-
-</div>
-</div>
 <a id="af39384a7c5711a82feb2a24feff7eff2" name="af39384a7c5711a82feb2a24feff7eff2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af39384a7c5711a82feb2a24feff7eff2">&#9670;&#160;</a></span>setOption()</h2>
 
@@ -634,8 +622,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Port  </td><td class="markdownTableBodyNone">{int}  </td><td class="markdownTableBodyNone">(<a class="el" href="#defaultPort" title="defaultPort">2</a>)  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">LocationInfo  </td><td class="markdownTableBodyNone">True,False  </td><td class="markdownTableBodyNone">False  </td></tr>
-<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">SocketSubclass  </td><td class="markdownTableBodyNone">(<a class="el" href="#socketSubclass" title="socketSubclass">3</a>)  </td><td class="markdownTableBodyNone">APRSocket  </td></tr>
 </table>
 <p><a class="anchor" id="inetAddress"></a>(1) A valid internet address.</p>
@@ -647,8 +633,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9fdf687b74c237e1f8abfcca42d4fabb" name="a9fdf687b74c237e1f8abfcca42d4fabb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fdf687b74c237e1f8abfcca42d4fabb">&#9670;&#160;</a></span>setPort()</h2>
+<a id="aed6a4651305c8fc45b5ca4deca0626fb" name="aed6a4651305c8fc45b5ca4deca0626fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6a4651305c8fc45b5ca4deca0626fb">&#9670;&#160;</a></span>setPort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -656,18 +642,18 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::net::SocketAppenderSkeleton::setPort </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>port1</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newValue</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The <b>Port</b> option takes a positive integer representing the port where the server is waiting for connections. </p>
+<p>Use <code>newValue</code>, which must be a positive integer, as the port on which the server is waiting for connections. </p>
 
 </div>
 </div>
-<a id="ac2233aad3e7f7e137858b29447c060ff" name="ac2233aad3e7f7e137858b29447c060ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2233aad3e7f7e137858b29447c060ff">&#9670;&#160;</a></span>setReconnectionDelay()</h2>
+<a id="ad5afb6dc02d624014dc4bc6b1b5b8710" name="ad5afb6dc02d624014dc4bc6b1b5b8710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5afb6dc02d624014dc4bc6b1b5b8710">&#9670;&#160;</a></span>setReconnectionDelay()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -675,20 +661,19 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::net::SocketAppenderSkeleton::setReconnectionDelay </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reconnectionDelay1</em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>millisecondDelay</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The <b>ReconnectionDelay</b> option takes a positive integer representing the number of milliseconds to wait between each failed connection attempt to the server. </p>
-<p>The default value of this option is 30000 which corresponds to 30 seconds.</p>
+<p>Use <code>millisecondDelay</code> as the number of milliseconds to wait between each failed connection attempt to the server. </p>
 <p>Setting this option to zero turns off reconnection capability. </p>
 
 </div>
 </div>
-<a id="ad20ace725c223efac847d912fb3c1d41" name="ad20ace725c223efac847d912fb3c1d41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad20ace725c223efac847d912fb3c1d41">&#9670;&#160;</a></span>setRemoteHost()</h2>
+<a id="a6ba5750166f7bbadfde98898acdcde44" name="a6ba5750166f7bbadfde98898acdcde44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba5750166f7bbadfde98898acdcde44">&#9670;&#160;</a></span>setRemoteHost()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,13 +681,13 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void log4cxx::net::SocketAppenderSkeleton::setRemoteHost </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>host</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>newValue</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The <b>RemoteHost</b> option takes a string value which should be the host name of the server where a Apache Chainsaw or compatible is running. </p>
+<p>Use <code>newValue</code> as the name of the server. </p>
 
 </div>
 </div>

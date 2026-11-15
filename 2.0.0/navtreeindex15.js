@@ -1,6 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"filters.html#configure-filter":[1,3,2],
 "filters.html#excluding-log-output":[1,3,1],
 "filters.html#labeling-log-output":[1,3,0],
 "filters.html#location-info-filter":[1,3,2,1],
@@ -113,6 +112,8 @@ var NAVTREEINDEX15 =
 "iso8601dateformat_8h_source.html":[7,3,0,1,0,0,0,3,28],
 "jsonlayout_8h.html":[7,3,0,1,0,0,0,23],
 "jsonlayout_8h_source.html":[7,3,0,1,0,0,0,23],
+"jsonsocketappender_8h.html":[7,3,0,1,0,0,0,4,0],
+"jsonsocketappender_8h_source.html":[7,3,0,1,0,0,0,4,0],
 "layout_8h.html":[7,3,0,1,0,0,0,24],
 "layout_8h_source.html":[7,3,0,1,0,0,0,24],
 "lazyptr_8h.html":[7,3,0,1,0,0,0,3,29],
@@ -192,10 +193,10 @@ var NAVTREEINDEX15 =
 "loggingeventpatternconverter_8h.html":[7,3,0,1,0,0,0,6,14],
 "loggingeventpatternconverter_8h_source.html":[7,3,0,1,0,0,0,6,14],
 "loglog_8h.html":[7,3,0,1,0,0,0,3,32],
+"loglog_8h.html#a3b62a8fbeba2b87f1277dda7e78520b4":[7,3,0,1,0,0,0,3,32,1],
 "loglog_8h.html#a6d9aaa4f13e9a4ee2c2ea569c61dadb9":[7,3,0,1,0,0,0,3,32,2],
-"loglog_8h.html#a7fb11fe774a5fb95e72c2363ef479638":[7,3,0,1,0,0,0,3,32,1],
-"loglog_8h.html#acbdf9338eab20ab2b370803feb3dd93d":[7,3,0,1,0,0,0,3,32,3],
 "loglog_8h.html#aec1c851349ade3fd9befd3e2908e5ef1":[7,3,0,1,0,0,0,3,32,4],
+"loglog_8h.html#afb88778b8669067c00fc0f35fc0a3a99":[7,3,0,1,0,0,0,3,32,3],
 "loglog_8h_source.html":[7,3,0,1,0,0,0,3,32],
 "logmanager_8h.html":[7,3,0,1,0,0,0,29],
 "logmanager_8h_source.html":[7,3,0,1,0,0,0,29],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "namespacelog4cxx.html#a9cde73000b89fc0b7a018825c70369b9":[7,1,0,0,71],
 "namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94":[7,1,0,0,46],
 "namespacelog4cxx.html#aa8fd541156d3d0d766d0bfe724dd3e54":[7,1,0,0,60],
-"namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a":[7,1,0,0,41],
-"namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e":[7,1,0,0,43]
+"namespacelog4cxx.html#ab95263625ea65ffbeb4f814dea7c781a":[7,1,0,0,41]
 };

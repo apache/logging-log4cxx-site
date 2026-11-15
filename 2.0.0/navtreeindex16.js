@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e":[7,1,0,0,43],
 "namespacelog4cxx.html#abdcdc973d46623f53379dbb4ba33ae86":[7,1,0,0,42],
 "namespacelog4cxx.html#abe6393af314024e7ab6e6fad84343572":[7,1,0,0,49],
 "namespacelog4cxx.html#ac7a1618f0d84c53886bfaa1d88dd946b":[7,1,0,0,63],
@@ -79,10 +80,11 @@ var NAVTREEINDEX16 =
 "namespacelog4cxx_1_1helpers.html#afece62256472f52c5ded7fc891d12044":[7,1,0,0,3,126],
 "namespacelog4cxx_1_1helpers_1_1SimpleDateFormatImpl.html":[7,1,0,0,3,0],
 "namespacelog4cxx_1_1net.html":[7,1,0,0,4],
-"namespacelog4cxx_1_1net.html#a368c60c00c3dd492218e59712c9e2c5d":[7,1,0,0,4,7],
-"namespacelog4cxx_1_1net.html#a8d0b6f1839a292186d15f8e17c8e27c1":[7,1,0,0,4,8],
-"namespacelog4cxx_1_1net.html#a9d28e829aadb20c53054d6bdf2acda3c":[7,1,0,0,4,5],
-"namespacelog4cxx_1_1net.html#aa23e5d05e078eaf1c599b5ffa696c63f":[7,1,0,0,4,6],
+"namespacelog4cxx_1_1net.html#a368c60c00c3dd492218e59712c9e2c5d":[7,1,0,0,4,9],
+"namespacelog4cxx_1_1net.html#a8d0b6f1839a292186d15f8e17c8e27c1":[7,1,0,0,4,10],
+"namespacelog4cxx_1_1net.html#a9d28e829aadb20c53054d6bdf2acda3c":[7,1,0,0,4,7],
+"namespacelog4cxx_1_1net.html#aa23e5d05e078eaf1c599b5ffa696c63f":[7,1,0,0,4,8],
+"namespacelog4cxx_1_1net.html#aa778b81940337869b0d9729a033faf39":[7,1,0,0,4,6],
 "namespacelog4cxx_1_1nt.html":[7,1,0,0,5],
 "namespacelog4cxx_1_1nt.html#a5f70675c75408dabddd1c24d3265e5b4":[7,1,0,0,5,2],
 "namespacelog4cxx_1_1pattern.html":[7,1,0,0,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "rootlogger_8h_source.html":[7,3,0,1,0,0,0,8,12],
 "serversocket_8h.html":[7,3,0,1,0,0,0,3,46],
 "serversocket_8h_source.html":[7,3,0,1,0,0,0,3,46],
-"shortfilelocationpatternconverter_8h.html":[7,3,0,1,0,0,0,6,25],
-"shortfilelocationpatternconverter_8h_source.html":[7,3,0,1,0,0,0,6,25],
-"simpledateformat_8h.html":[7,3,0,1,0,0,0,3,47]
+"shortfilelocationpatternconverter_8h.html":[7,3,0,1,0,0,0,6,25]
 };

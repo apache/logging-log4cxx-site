@@ -9,7 +9,7 @@ var classlog4cxx_1_1Appender =
     [ "getFilter", "classlog4cxx_1_1Appender.html#a4c1544732bea68f2e215141bddc6af49", null ],
     [ "getLayout", "classlog4cxx_1_1Appender.html#a981e3ccbe871e03ec734a6216f52ca9b", null ],
     [ "getName", "classlog4cxx_1_1Appender.html#a33a1ed0d3298e0765887f12024220266", null ],
-    [ "requiresLayout", "classlog4cxx_1_1Appender.html#a59cf35c2fb097cce8ca435d2141790d9", null ],
+    [ "requiresLayout", "classlog4cxx_1_1Appender.html#ab60c57ddf11608c8863ea768a73fd8e6", null ],
     [ "setLayout", "classlog4cxx_1_1Appender.html#ac2231614972755ba9e8f278e0be67c12", null ],
     [ "setName", "classlog4cxx_1_1Appender.html#af1f47b41cc3a55924a71428c69c3f419", null ]
 ];

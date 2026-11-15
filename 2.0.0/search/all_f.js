@@ -29,7 +29,7 @@ var searchData=
   ['example_26',['Example',['../quick-start.html#example2',1,'A Less Simple Example'],['../quick-start.html#example1',1,'A Simple Example'],['../library-design.html#autotoc_md15',1,'Example']]],
   ['example_201_27',['Example 1',['../configuration-files.html#properties-example-1',1,'Properties Example 1'],['../configuration-files.html#xml-example-1',1,'XML Example 1']]],
   ['example_202_28',['Example 2',['../configuration-files.html#properties-example-2',1,'Properties Example 2'],['../configuration-files.html#xml-example-2',1,'XML Example 2']]],
-  ['example_203_29',['XML Example 3',['../configuration-files.html#xml-example-3',1,'']]],
+  ['example_203_29',['Example 3',['../configuration-files.html#properties-example-3',1,'Properties Example 3'],['../configuration-files.html#xml-example-3',1,'XML Example 3']]],
   ['example_204_30',['XML Example 4',['../configuration-files.html#xml-example-4',1,'']]],
   ['example_2dprograms_2emd_31',['example-programs.md',['../example-programs_8md.html',1,'']]],
   ['examples_32',['Examples',['../build-cmake.html#autotoc_md21',1,'']]],

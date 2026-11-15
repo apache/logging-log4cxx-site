@@ -391,15 +391,16 @@ Additional Inherited Members</h2></td></tr>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Supported options  </th><th class="markdownTableHeadNone">Supported values  </th><th class="markdownTableHeadNone">Default value  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Method  </td><td class="markdownTableBodyNone">{any}  </td><td class="markdownTableBodyNone">-  </td></tr>
+<td class="markdownTableBodyNone">Method  </td><td class="markdownTableBodyNone">(<a class="el" href="#locationMethodName" title="locationMethodName">1</a>)  </td><td class="markdownTableBodyNone">-  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">LineNumber  </td><td class="markdownTableBodyNone">{int}  </td><td class="markdownTableBodyNone">-  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Operator  </td><td class="markdownTableBodyNone">(<a class="el" href="#andOrAny" title="andOrAny">1</a>)  </td><td class="markdownTableBodyNone">Or  </td></tr>
+<td class="markdownTableBodyNone">Operator  </td><td class="markdownTableBodyNone">(<a class="el" href="#andOrAny" title="andOrAny">2</a>)  </td><td class="markdownTableBodyNone">Or  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">AcceptOnMatch  </td><td class="markdownTableBodyNone">True,False  </td><td class="markdownTableBodyNone">True  </td></tr>
 </table>
-<p><a class="anchor" id="andOrAny"></a>(1) If "And", both method name and line number must match, otherwise either method name or line number match. </p>
+<p><a class="anchor" id="locationMethodName"></a>(1) The method name without any class or namespace (e.g. "methodName"), or qualified by its class and/or namespace names (e.g. "Class::methodName" or "ns::Class::methodName").</p>
+<p><a class="anchor" id="andOrAny"></a>(2) If "And", both method name and line number must match, otherwise either method name or line number match. </p>
 
 <p>Reimplemented from <a class="el" href="classlog4cxx_1_1spi_1_1Filter.html#a82c43817f2c01efdf5b17408ae50e2d2">log4cxx::spi::Filter</a>.</p>
 

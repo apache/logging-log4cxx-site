@@ -4,7 +4,7 @@ var searchData=
   ['example_1',['Example',['../quick-start.html#example2',1,'A Less Simple Example'],['../quick-start.html#example1',1,'A Simple Example'],['../library-design.html#autotoc_md15',1,'Example']]],
   ['example_201_2',['Example 1',['../configuration-files.html#properties-example-1',1,'Properties Example 1'],['../configuration-files.html#xml-example-1',1,'XML Example 1']]],
   ['example_202_3',['Example 2',['../configuration-files.html#properties-example-2',1,'Properties Example 2'],['../configuration-files.html#xml-example-2',1,'XML Example 2']]],
-  ['example_203_4',['XML Example 3',['../configuration-files.html#xml-example-3',1,'']]],
+  ['example_203_4',['Example 3',['../configuration-files.html#properties-example-3',1,'Properties Example 3'],['../configuration-files.html#xml-example-3',1,'XML Example 3']]],
   ['example_204_5',['XML Example 4',['../configuration-files.html#xml-example-4',1,'']]],
   ['examples_6',['Examples',['../build-cmake.html#autotoc_md21',1,'']]],
   ['excluding_20log_20output_7',['Excluding Log Output',['../filters.html#excluding-log-output',1,'']]],

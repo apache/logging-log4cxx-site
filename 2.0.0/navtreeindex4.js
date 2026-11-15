@@ -1,15 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classlog4cxx_1_1filter_1_1ExpressionFilter.html#a3dd8f89261150603e9dba293c5e14a93":[7,2,0,0,2,2,2],
-"classlog4cxx_1_1filter_1_1ExpressionFilter.html#a42a9af1ff098137dcca9b5c9a88cb7b3":[7,1,0,0,2,2,0],
-"classlog4cxx_1_1filter_1_1ExpressionFilter.html#a42a9af1ff098137dcca9b5c9a88cb7b3":[7,2,0,0,2,2,0],
-"classlog4cxx_1_1filter_1_1ExpressionFilter.html#a4c8f6f4ef5a6defab058acd024abafb8":[7,1,0,0,2,2,1],
-"classlog4cxx_1_1filter_1_1ExpressionFilter.html#a4c8f6f4ef5a6defab058acd024abafb8":[7,2,0,0,2,2,1],
-"classlog4cxx_1_1filter_1_1ExpressionFilter.html#ae41beb6bd3ddac0ce740fdf82e8442b4":[7,1,0,0,2,2,5],
-"classlog4cxx_1_1filter_1_1ExpressionFilter.html#ae41beb6bd3ddac0ce740fdf82e8442b4":[7,2,0,0,2,2,5],
-"classlog4cxx_1_1filter_1_1LevelMatchFilter.html":[7,1,0,0,2,3],
-"classlog4cxx_1_1filter_1_1LevelMatchFilter.html":[7,2,0,0,2,3],
-"classlog4cxx_1_1filter_1_1LevelMatchFilter.html#a0cd04f3e71ca6aab9e05e7795a06fd4b":[7,1,0,0,2,3,3],
 "classlog4cxx_1_1filter_1_1LevelMatchFilter.html#a0cd04f3e71ca6aab9e05e7795a06fd4b":[7,2,0,0,2,3,3],
 "classlog4cxx_1_1filter_1_1LevelMatchFilter.html#a0d0dbdebde3bb3ae71d9a06842151d4a":[7,1,0,0,2,3,0],
 "classlog4cxx_1_1filter_1_1LevelMatchFilter.html#a0d0dbdebde3bb3ae71d9a06842151d4a":[7,2,0,0,2,3,0],
@@ -249,5 +239,15 @@ var NAVTREEINDEX4 =
 "classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#aec073e4e37aec58c87c020f0d9c92996":[7,2,0,0,3,6,0],
 "classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#af009964a34ba5afeb3b685462116a591":[7,1,0,0,3,7,1],
 "classlog4cxx_1_1helpers_1_1ByteArrayInputStream.html#af009964a34ba5afeb3b685462116a591":[7,2,0,0,3,6,1],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html":[7,1,0,0,3,8]
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html":[7,1,0,0,3,8],
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html":[7,2,0,0,3,7],
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a2b6d9c725578d00024381f011045df9c":[7,1,0,0,3,8,0],
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a2b6d9c725578d00024381f011045df9c":[7,2,0,0,3,7,0],
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a36719e193309d11d60f309f7c7080ec9":[7,1,0,0,3,8,7],
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a36719e193309d11d60f309f7c7080ec9":[7,2,0,0,3,7,7],
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a4f56e43adef6957358da594cbd891ecd":[7,1,0,0,3,8,6],
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a4f56e43adef6957358da594cbd891ecd":[7,2,0,0,3,7,6],
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a824dfb64486b95096c1215bdc0d69296":[7,1,0,0,3,8,1],
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a824dfb64486b95096c1215bdc0d69296":[7,2,0,0,3,7,1],
+"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#abbd4669d145593c6fb8499d120cecfad":[7,1,0,0,3,8,4]
 };

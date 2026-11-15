@@ -1,15 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html":[7,2,0,0,3,7],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a2b6d9c725578d00024381f011045df9c":[7,1,0,0,3,8,0],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a2b6d9c725578d00024381f011045df9c":[7,2,0,0,3,7,0],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a36719e193309d11d60f309f7c7080ec9":[7,1,0,0,3,8,7],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a36719e193309d11d60f309f7c7080ec9":[7,2,0,0,3,7,7],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a4f56e43adef6957358da594cbd891ecd":[7,1,0,0,3,8,6],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a4f56e43adef6957358da594cbd891ecd":[7,2,0,0,3,7,6],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a824dfb64486b95096c1215bdc0d69296":[7,1,0,0,3,8,1],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#a824dfb64486b95096c1215bdc0d69296":[7,2,0,0,3,7,1],
-"classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#abbd4669d145593c6fb8499d120cecfad":[7,1,0,0,3,8,4],
 "classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#abbd4669d145593c6fb8499d120cecfad":[7,2,0,0,3,7,4],
 "classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#ad3e2e84d023018a141ee0382b76621b8":[7,1,0,0,3,8,2],
 "classlog4cxx_1_1helpers_1_1ByteArrayOutputStream.html#ad3e2e84d023018a141ee0382b76621b8":[7,2,0,0,3,7,2],
@@ -249,5 +239,15 @@ var NAVTREEINDEX5 =
 "classlog4cxx_1_1helpers_1_1Date.html#a57a9b200decd9ae103168aa13af60e38":[7,2,0,0,3,20,0],
 "classlog4cxx_1_1helpers_1_1Date.html#a5db304859ae436dda9db8313fcac2b0d":[7,1,0,0,3,21,1],
 "classlog4cxx_1_1helpers_1_1Date.html#a5db304859ae436dda9db8313fcac2b0d":[7,2,0,0,3,20,1],
-"classlog4cxx_1_1helpers_1_1Date.html#afb418dd3d1f78172d4534f3ea7b384e3":[7,1,0,0,3,21,4]
+"classlog4cxx_1_1helpers_1_1Date.html#afb418dd3d1f78172d4534f3ea7b384e3":[7,1,0,0,3,21,4],
+"classlog4cxx_1_1helpers_1_1Date.html#afb418dd3d1f78172d4534f3ea7b384e3":[7,2,0,0,3,20,4],
+"classlog4cxx_1_1helpers_1_1DateFormat.html":[7,1,0,0,3,22],
+"classlog4cxx_1_1helpers_1_1DateFormat.html":[7,2,0,0,3,21],
+"classlog4cxx_1_1helpers_1_1DateFormat.html#a5caed86bbc026955f0c5510942aca556":[7,1,0,0,3,22,1],
+"classlog4cxx_1_1helpers_1_1DateFormat.html#a5caed86bbc026955f0c5510942aca556":[7,2,0,0,3,21,1],
+"classlog4cxx_1_1helpers_1_1DateFormat.html#a910d7ea0df4479a3a60da0d1a15a1a83":[7,1,0,0,3,22,5],
+"classlog4cxx_1_1helpers_1_1DateFormat.html#a910d7ea0df4479a3a60da0d1a15a1a83":[7,2,0,0,3,21,5],
+"classlog4cxx_1_1helpers_1_1DateFormat.html#ac60a9aa7abed64c588289e7c9e4ecd1e":[7,1,0,0,3,22,2],
+"classlog4cxx_1_1helpers_1_1DateFormat.html#ac60a9aa7abed64c588289e7c9e4ecd1e":[7,2,0,0,3,21,2],
+"classlog4cxx_1_1helpers_1_1DateFormat.html#ad0e744dc7295b9ceb5a17f28be48a2ce":[7,1,0,0,3,22,4]
 };

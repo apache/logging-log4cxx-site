@@ -1,13 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a4d61d6bbd39b2868c5a4e101e9b19f05":[7,2,0,0,3,42,25],
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a5f03301691ee0d2b8fcbc0381cf5f022":[7,1,0,0,3,43,22],
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a5f03301691ee0d2b8fcbc0381cf5f022":[7,2,0,0,3,42,22],
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a6b33e48275dcc0332639f2f53565990c":[7,1,0,0,3,43,24],
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a6b33e48275dcc0332639f2f53565990c":[7,2,0,0,3,42,24],
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a6fcae2e69563e4e4942392e361c4336c":[7,1,0,0,3,43,9],
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a6fcae2e69563e4e4942392e361c4336c":[7,2,0,0,3,42,9],
-"classlog4cxx_1_1helpers_1_1MessageBuffer.html#a773e9b6442134f6e9edc08753f1aa359":[7,1,0,0,3,43,5],
 "classlog4cxx_1_1helpers_1_1MessageBuffer.html#a773e9b6442134f6e9edc08753f1aa359":[7,2,0,0,3,42,5],
 "classlog4cxx_1_1helpers_1_1MessageBuffer.html#a88c0af0da2a950d0f92e73004f1567b7":[7,1,0,0,3,43,17],
 "classlog4cxx_1_1helpers_1_1MessageBuffer.html#a88c0af0da2a950d0f92e73004f1567b7":[7,2,0,0,3,42,17],
@@ -249,5 +241,13 @@ var NAVTREEINDEX7 =
 "classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#aee64c84459e795228edd9fb00550ee79":[7,2,0,0,3,60,3],
 "classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#af2a266462a33afcc8ddd8a674dd16ed0":[7,1,0,0,3,61,4],
 "classlog4cxx_1_1helpers_1_1SimpleDateFormat.html#af2a266462a33afcc8ddd8a674dd16ed0":[7,2,0,0,3,60,4],
-"classlog4cxx_1_1helpers_1_1SingletonHolder.html":[7,1,0,0,3,62]
+"classlog4cxx_1_1helpers_1_1SingletonHolder.html":[7,1,0,0,3,62],
+"classlog4cxx_1_1helpers_1_1SingletonHolder.html":[7,2,0,0,3,61],
+"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a189f6c81cce3e549bd9439c45ff6f591":[7,1,0,0,3,62,4],
+"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a189f6c81cce3e549bd9439c45ff6f591":[7,2,0,0,3,61,4],
+"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a6d5f13225a705674ad077e68510d2d08":[7,1,0,0,3,62,0],
+"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a6d5f13225a705674ad077e68510d2d08":[7,2,0,0,3,61,0],
+"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a7860c8c73b86ad579d45333ed9125385":[7,1,0,0,3,62,2],
+"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a7860c8c73b86ad579d45333ed9125385":[7,2,0,0,3,61,2],
+"classlog4cxx_1_1helpers_1_1SingletonHolder.html#aaea3bd09ce4aa8ff89ea438aee528d2b":[7,1,0,0,3,62,1]
 };

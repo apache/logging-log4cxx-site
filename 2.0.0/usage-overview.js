@@ -38,7 +38,8 @@ var usage_overview =
       [ "Configuration Samples", "configuration-files.html#configuration-samples", [
         [ "Properties Files", "configuration-files.html#properties", [
           [ "Properties Example 1", "configuration-files.html#properties-example-1", null ],
-          [ "Properties Example 2", "configuration-files.html#properties-example-2", null ]
+          [ "Properties Example 2", "configuration-files.html#properties-example-2", null ],
+          [ "Properties Example 3", "configuration-files.html#properties-example-3", null ]
         ] ],
         [ "XML Files", "configuration-files.html#xmlfiles", [
           [ "XML Example 1", "configuration-files.html#xml-example-1", null ],

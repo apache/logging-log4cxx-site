@@ -1,7 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classlog4cxx_1_1rolling_1_1ZipCompressAction.html#aa9d5c03b54c6e088dde92a2d9d62fec7":[7,2,0,0,8,14,0],
-"classlog4cxx_1_1spi_1_1AppenderAttachable.html":[7,1,0,0,10,0],
 "classlog4cxx_1_1spi_1_1AppenderAttachable.html":[7,2,0,0,9,0],
 "classlog4cxx_1_1spi_1_1AppenderAttachable.html#a171fcf5737cd632e6c1568192d3c7ce1":[7,1,0,0,10,0,2],
 "classlog4cxx_1_1spi_1_1AppenderAttachable.html#a171fcf5737cd632e6c1568192d3c7ce1":[7,2,0,0,9,0,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX13 =
 "classlog4cxx_1_1spi_1_1TriggeringEventEvaluator.html":[7,2,0,0,9,13],
 "classlog4cxx_1_1spi_1_1TriggeringEventEvaluator.html#af17435002814c7ea2f18b4e578f31605":[7,1,0,0,10,13,0],
 "classlog4cxx_1_1spi_1_1TriggeringEventEvaluator.html#af17435002814c7ea2f18b4e578f31605":[7,2,0,0,9,13,0],
-"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html":[7,1,0,0,11,0]
+"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html":[7,1,0,0,11,0],
+"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html":[7,2,0,0,10,0],
+"classlog4cxx_1_1varia_1_1FallbackErrorHandler.html#a1217e029574f5d9da8ae6165a979733b":[7,1,0,0,11,0,3]
 };

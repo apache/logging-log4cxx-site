@@ -15,7 +15,6 @@ var classlog4cxx_1_1AsyncAppender =
     [ "removeAppender", "classlog4cxx_1_1AsyncAppender.html#af2811561ac52b5883334f39696624e24", null ],
     [ "replaceAppender", "classlog4cxx_1_1AsyncAppender.html#afe451b35065d6e02a41479bbf6208748", null ],
     [ "replaceAppenders", "classlog4cxx_1_1AsyncAppender.html#accdf30afbe290555c8f85cc82cccc082", null ],
-    [ "requiresLayout", "classlog4cxx_1_1AsyncAppender.html#a34dfee4f09db55101e6d02a9517e0410", null ],
     [ "setBlocking", "classlog4cxx_1_1AsyncAppender.html#add533be9e6aaf117fbb2f1cc26c03336", null ],
     [ "setBufferSize", "classlog4cxx_1_1AsyncAppender.html#a4d6e00ddad6ce4d7a7c16d71826d907f", null ],
     [ "setOption", "classlog4cxx_1_1AsyncAppender.html#a24279523766272eb55872afa1b0e1726", null ]

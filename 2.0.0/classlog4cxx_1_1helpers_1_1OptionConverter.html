@@ -142,18 +142,19 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a58f581196122598434d43b02c3b5cc16"><td class="mdescLeft">&#160;</td><td class="mdescRight">The boolean equivalent of <code>value</code> if it is not empty, otherwise <code>defaultValue</code>.  <br /></td></tr>
 <tr class="memitem:af0462428ca4c014fab0f81e4da0fe424" id="r_af0462428ca4c014fab0f81e4da0fe424"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#af0462428ca4c014fab0f81e4da0fe424">toInt</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value, int defaultValue)</td></tr>
 <tr class="memdesc:af0462428ca4c014fab0f81e4da0fe424"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numeric equivalent of <code>value</code> if it is not empty, otherwise <code>defaultValue</code>.  <br /></td></tr>
-<tr class="memitem:a1479a7a9835fc631dcfa9187194a8c8d" id="r_a1479a7a9835fc631dcfa9187194a8c8d"><td class="memItemLeft">static long&#160;</td><td class="memItemRight"><a class="el" href="#a1479a7a9835fc631dcfa9187194a8c8d">toFileSize</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value, long defaultValue)</td></tr>
-<tr class="memdesc:a1479a7a9835fc631dcfa9187194a8c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numeric equivalent of <code>value</code> if it is not empty, otherwise <code>defaultValue</code>.  <br /></td></tr>
+<tr class="memitem:a96379bc89305c27c63bc42092a0b9099" id="r_a96379bc89305c27c63bc42092a0b9099"><td class="memItemLeft">static size_t&#160;</td><td class="memItemRight"><a class="el" href="#a96379bc89305c27c63bc42092a0b9099">toFileSize</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value, size_t defaultValue)</td></tr>
+<tr class="memdesc:a96379bc89305c27c63bc42092a0b9099"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numeric equivalent of <code>value</code> if it is an integer in the range 0 - 2^63, otherwise <code>defaultValue</code>.  <br /></td></tr>
 <tr class="memitem:a283d02a868da5f3d196d80872f551271" id="r_a283d02a868da5f3d196d80872f551271"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a283d02a868da5f3d196d80872f551271">toLevel</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;value, const <a class="el" href="namespacelog4cxx.html#abab74d1809c0c810f3f7eae2c3fa511e">LevelPtr</a> &amp;defaultValue)</td></tr>
 <tr class="memdesc:a283d02a868da5f3d196d80872f551271"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classlog4cxx_1_1Level.html" title="Defines the minimum set of levels recognized by the system, that is OFF, FATAL, ERROR,...">Level</a> indicated by <code>value</code> if recognised otherwise <code>defaultValue</code>.  <br /></td></tr>
-<tr class="memitem:a5f6f13492e81a9c6b38ddfe112102cce" id="r_a5f6f13492e81a9c6b38ddfe112102cce"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5f6f13492e81a9c6b38ddfe112102cce">findAndSubst</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;key, <a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;props)</td></tr>
-<tr class="memdesc:a5f6f13492e81a9c6b38ddfe112102cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the value corresponding to <code>key</code> in <code>props</code>.  <br /></td></tr>
-<tr class="memitem:ab8106a35fe8f61b58f4a88ce19707d83" id="r_ab8106a35fe8f61b58f4a88ce19707d83"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab8106a35fe8f61b58f4a88ce19707d83">substVars</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;val, <a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;props)</td></tr>
-<tr class="memdesc:ab8106a35fe8f61b58f4a88ce19707d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform variable substitution in string <code>val</code> from the values of keys found in the system propeties.  <br /></td></tr>
+<tr class="memitem:aa8671eeb8a971f746981ccbdcc1ad481" id="r_aa8671eeb8a971f746981ccbdcc1ad481"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa8671eeb8a971f746981ccbdcc1ad481">findAndSubst</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;key, const <a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;props)</td></tr>
+<tr class="memdesc:aa8671eeb8a971f746981ccbdcc1ad481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the value corresponding to <code>key</code> in <code>props</code>.  <br /></td></tr>
+<tr class="memitem:af796a7ed1d7da0c3439097a29235172c" id="r_af796a7ed1d7da0c3439097a29235172c"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#af796a7ed1d7da0c3439097a29235172c">substVars</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;val, const <a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;props)</td></tr>
+<tr class="memdesc:af796a7ed1d7da0c3439097a29235172c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform variable substitution in string <code>val</code> from the values of keys found in the system propeties.  <br /></td></tr>
 <tr class="memitem:a0be0a85c51d1301bd0a4bfb46b7826ec" id="r_a0be0a85c51d1301bd0a4bfb46b7826ec"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0be0a85c51d1301bd0a4bfb46b7826ec">getSystemProperty</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;key, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;def)</td></tr>
 <tr class="memitem:aea6ca9e53725a132bae3015b5e473b36" id="r_aea6ca9e53725a132bae3015b5e473b36"><td class="memItemLeft">static ObjectPtr&#160;</td><td class="memItemRight"><a class="el" href="#aea6ca9e53725a132bae3015b5e473b36">instantiateByClassName</a> (const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;className, const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">Class</a> &amp;superClass, const ObjectPtr &amp;defaultValue)</td></tr>
 <tr class="memdesc:aea6ca9e53725a132bae3015b5e473b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate an object given a class name.  <br /></td></tr>
-<tr class="memitem:a21ac93452932ab2618393aeb2d036534" id="r_a21ac93452932ab2618393aeb2d036534"><td class="memItemLeft">static ObjectPtr&#160;</td><td class="memItemRight"><a class="el" href="#a21ac93452932ab2618393aeb2d036534">instantiateByKey</a> (<a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;props, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;key, const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">Class</a> &amp;superClass, const ObjectPtr &amp;defaultValue)</td></tr>
+<tr class="memitem:aa5750dfd654c1f9bbc39fb5984d1f268" id="r_aa5750dfd654c1f9bbc39fb5984d1f268"><td class="memItemLeft">static ObjectPtr&#160;</td><td class="memItemRight"><a class="el" href="#aa5750dfd654c1f9bbc39fb5984d1f268">instantiateByKey</a> (const <a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;props, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;key, const <a class="el" href="classlog4cxx_1_1helpers_1_1Class.html">Class</a> &amp;superClass, const ObjectPtr &amp;defaultValue)</td></tr>
+<tr class="memdesc:aa5750dfd654c1f9bbc39fb5984d1f268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate an object using the value in <code>props</code> associated with <code>key</code> as a registered class name.  <br /></td></tr>
 <tr class="memitem:ab10ef16cf54c4065e689f4c3aa989e00" id="r_ab10ef16cf54c4065e689f4c3aa989e00"><td class="memItemLeft">static <a class="el" href="namespacelog4cxx_1_1spi.html#a923765e65a08eea7c6b417a2525226ab">spi::ConfigurationStatus</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab10ef16cf54c4065e689f4c3aa989e00">selectAndConfigure</a> (const <a class="el" href="classlog4cxx_1_1File.html">File</a> &amp;configFileName, const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;className={}, const <a class="el" href="namespacelog4cxx_1_1spi.html#a601415735b45ce1d45c7a3c45d797b37">spi::LoggerRepositoryPtr</a> &amp;target={}, int millisecondDelay=0)</td></tr>
 <tr class="memdesc:ab10ef16cf54c4065e689f4c3aa989e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the information in <code>configFileName</code> to configure Log4cxx.  <br /></td></tr>
 </table>
@@ -185,8 +186,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5f6f13492e81a9c6b38ddfe112102cce" name="a5f6f13492e81a9c6b38ddfe112102cce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f6f13492e81a9c6b38ddfe112102cce">&#9670;&#160;</a></span>findAndSubst()</h2>
+<a id="aa8671eeb8a971f746981ccbdcc1ad481" name="aa8671eeb8a971f746981ccbdcc1ad481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8671eeb8a971f746981ccbdcc1ad481">&#9670;&#160;</a></span>findAndSubst()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +203,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>props</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>props</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -288,20 +289,20 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Instantiate an object given a class name. </p>
-<p>Check that the <code>className</code> is a subclass of <code>superClass</code>. If that test fails or the object could not be instantiated, then <code>defaultValue</code> is returned.</p>
+<p>Returns <code>defaultValue</code> if the named class is not a registered class or the class does not inherit from <code>superClass</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">className</td><td>The fully qualified class name of the object to instantiate. </td></tr>
-    <tr><td class="paramname">superClass</td><td>The class to which the new object should belong. </td></tr>
-    <tr><td class="paramname">defaultValue</td><td>The object to return in case of non-fulfillment </td></tr>
+    <tr><td class="paramname">className</td><td>The registered name of the class to construct. </td></tr>
+    <tr><td class="paramname">superClass</td><td>The class from which the new object must inherit. </td></tr>
+    <tr><td class="paramname">defaultValue</td><td>The value to return in case of failure </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a21ac93452932ab2618393aeb2d036534" name="a21ac93452932ab2618393aeb2d036534"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21ac93452932ab2618393aeb2d036534">&#9670;&#160;</a></span>instantiateByKey()</h2>
+<a id="aa5750dfd654c1f9bbc39fb5984d1f268" name="aa5750dfd654c1f9bbc39fb5984d1f268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5750dfd654c1f9bbc39fb5984d1f268">&#9670;&#160;</a></span>instantiateByKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +313,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">ObjectPtr log4cxx::helpers::OptionConverter::instantiateByKey </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>props</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>props</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -336,6 +337,17 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Instantiate an object using the value in <code>props</code> associated with <code>key</code> as a registered class name. </p>
+<p>Returns <code>defaultValue</code> if the named class is not a registered class or the class does not inherit from <code>superClass</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The <code>props</code> entry whose value is the registered name of the class to construct. </td></tr>
+    <tr><td class="paramname">superClass</td><td>The class from which the new object must inherit. </td></tr>
+    <tr><td class="paramname">defaultValue</td><td>The value to return in case of failure </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -380,7 +392,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">configFileName</td><td>Holds the path of the configuration file. </td></tr>
-    <tr><td class="paramname">className</td><td>If provided, the name of the class used to process <code>configFileName</code>, which must be a subclass of Configurator. <a class="el" href="classlog4cxx_1_1PropertyConfigurator.html" title="Allows Loggers, Appenders and Layouts to be set up using directives in a properties file.">PropertyConfigurator</a> is used if <code>className</code> is empty or if <code>configFileName</code> does not end in '.xml', in which case DOMConfigurator is used. </td></tr>
+    <tr><td class="paramname">className</td><td>The <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html" title="An abstract base for classes capable of configuring Log4cxx.">spi::Configurator</a> subclass used to process <code>configFileName</code>. If empty, a registered class whose name ends with "Configurator" and whose <a class="el" href="classlog4cxx_1_1spi_1_1Configurator.html#ac26318c53c7f65cb327d2b23ad732311" title="Does configFileName contain directives that this class uses?">spi::Configurator::isValid</a> instance method returns <code>true</code> is used to process the configuration file. </td></tr>
     <tr><td class="paramname">target</td><td>Holds the configuration result </td></tr>
     <tr><td class="paramname">millisecondDelay</td><td>If greater than zero, the milliseconds to sleep between checking if <code>configFileName</code> has been modified and needs to be reloaded. </td></tr>
   </table>
@@ -389,8 +401,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab8106a35fe8f61b58f4a88ce19707d83" name="ab8106a35fe8f61b58f4a88ce19707d83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8106a35fe8f61b58f4a88ce19707d83">&#9670;&#160;</a></span>substVars()</h2>
+<a id="af796a7ed1d7da0c3439097a29235172c" name="af796a7ed1d7da0c3439097a29235172c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af796a7ed1d7da0c3439097a29235172c">&#9670;&#160;</a></span>substVars()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +418,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>props</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="classlog4cxx_1_1helpers_1_1Properties.html">Properties</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>props</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -474,8 +486,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1479a7a9835fc631dcfa9187194a8c8d" name="a1479a7a9835fc631dcfa9187194a8c8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1479a7a9835fc631dcfa9187194a8c8d">&#9670;&#160;</a></span>toFileSize()</h2>
+<a id="a96379bc89305c27c63bc42092a0b9099" name="a96379bc89305c27c63bc42092a0b9099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96379bc89305c27c63bc42092a0b9099">&#9670;&#160;</a></span>toFileSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,14 +496,14 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">long log4cxx::helpers::OptionConverter::toFileSize </td>
+          <td class="memname">size_t log4cxx::helpers::OptionConverter::toFileSize </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacelog4cxx.html#aa2308ed05fef2a1366066cb38b177e94">LogString</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>defaultValue</em></span>&#160;)</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>defaultValue</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -501,7 +513,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The numeric equivalent of <code>value</code> if it is not empty, otherwise <code>defaultValue</code>. </p>
+<p>The numeric equivalent of <code>value</code> if it is an integer in the range 0 - 2^63, otherwise <code>defaultValue</code>. </p>
 <p>A suffix "KB", "MB" or "GB" after an integer value converts the provided number respectively to kilobytes, megabytes and gigabytes. For example, the value "10KB" will be interpreted as 10240. </p>
 
 </div>

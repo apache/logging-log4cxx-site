@@ -1,13 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"classlog4cxx_1_1helpers_1_1SingletonHolder.html":[7,2,0,0,3,61],
-"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a189f6c81cce3e549bd9439c45ff6f591":[7,1,0,0,3,62,4],
-"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a189f6c81cce3e549bd9439c45ff6f591":[7,2,0,0,3,61,4],
-"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a6d5f13225a705674ad077e68510d2d08":[7,1,0,0,3,62,0],
-"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a6d5f13225a705674ad077e68510d2d08":[7,2,0,0,3,61,0],
-"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a7860c8c73b86ad579d45333ed9125385":[7,1,0,0,3,62,2],
-"classlog4cxx_1_1helpers_1_1SingletonHolder.html#a7860c8c73b86ad579d45333ed9125385":[7,2,0,0,3,61,2],
-"classlog4cxx_1_1helpers_1_1SingletonHolder.html#aaea3bd09ce4aa8ff89ea438aee528d2b":[7,1,0,0,3,62,1],
 "classlog4cxx_1_1helpers_1_1SingletonHolder.html#aaea3bd09ce4aa8ff89ea438aee528d2b":[7,2,0,0,3,61,1],
 "classlog4cxx_1_1helpers_1_1SingletonHolder.html#abe81998b94382845da4e4f1347817a01":[7,1,0,0,3,62,5],
 "classlog4cxx_1_1helpers_1_1SingletonHolder.html#abe81998b94382845da4e4f1347817a01":[7,2,0,0,3,61,5],
@@ -249,5 +241,13 @@ var NAVTREEINDEX8 =
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a784b836d88ba2cc47e9a7cea79d4b92d":[7,2,0,0,3,82,13],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a7b827288b2b71e2f5fc082989c8a9152":[7,1,0,0,3,83,2],
 "classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a7b827288b2b71e2f5fc082989c8a9152":[7,2,0,0,3,82,2],
-"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8057a321fd9989b1a15ecd592b7f4955":[7,1,0,0,3,83,15]
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8057a321fd9989b1a15ecd592b7f4955":[7,1,0,0,3,83,15],
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8057a321fd9989b1a15ecd592b7f4955":[7,2,0,0,3,82,15],
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8985afae778bf1100dd940f68334e9d7":[7,1,0,0,3,83,3],
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8985afae778bf1100dd940f68334e9d7":[7,2,0,0,3,82,3],
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8a395239cae620275e9b0de8d03b5f5a":[7,1,0,0,3,83,12],
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a8a395239cae620275e9b0de8d03b5f5a":[7,2,0,0,3,82,12],
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9982995b17d8e9aff4fd84d657db0837":[7,1,0,0,3,83,5],
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9982995b17d8e9aff4fd84d657db0837":[7,2,0,0,3,82,5],
+"classlog4cxx_1_1helpers_1_1WideMessageBuffer.html#a9bf72125f64738358fc982d465b9a66b":[7,1,0,0,3,83,9]
 };

@@ -1,9 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classlog4cxx_1_1Layout.html#aec270a094df8494e8117c69cee426de9":[7,2,0,0,24,8],
-"classlog4cxx_1_1Layout.html#aff7a63f8fb8b5e85d48a8fff158c5929":[7,1,0,0,25,6],
-"classlog4cxx_1_1Layout.html#aff7a63f8fb8b5e85d48a8fff158c5929":[7,2,0,0,24,6],
-"classlog4cxx_1_1Level.html":[7,1,0,0,26],
 "classlog4cxx_1_1Level.html":[7,2,0,0,25],
 "classlog4cxx_1_1Level.html#a55a750dcef1241108ba1a42bf5d7c2b4":[7,1,0,0,26,10],
 "classlog4cxx_1_1Level.html#a55a750dcef1241108ba1a42bf5d7c2b4":[7,2,0,0,25,10],
@@ -249,5 +245,9 @@ var NAVTREEINDEX2 =
 "classlog4cxx_1_1LoggerInstancePtr.html":[7,2,0,0,28],
 "classlog4cxx_1_1LoggerInstancePtr.html#a42f278421d1bf6b798a1d229a32034d5":[7,1,0,0,29,1],
 "classlog4cxx_1_1LoggerInstancePtr.html#a42f278421d1bf6b798a1d229a32034d5":[7,2,0,0,28,1],
-"classlog4cxx_1_1LoggerInstancePtr.html#a60a877d69948f88095b2841bddbdf6fb":[7,1,0,0,29,4]
+"classlog4cxx_1_1LoggerInstancePtr.html#a60a877d69948f88095b2841bddbdf6fb":[7,1,0,0,29,4],
+"classlog4cxx_1_1LoggerInstancePtr.html#a60a877d69948f88095b2841bddbdf6fb":[7,2,0,0,28,4],
+"classlog4cxx_1_1LoggerInstancePtr.html#a9193135a709be7020a1ed0cbe6c8eeb4":[7,1,0,0,29,3],
+"classlog4cxx_1_1LoggerInstancePtr.html#a9193135a709be7020a1ed0cbe6c8eeb4":[7,2,0,0,28,3],
+"classlog4cxx_1_1LoggerInstancePtr.html#a92877637d81d10fa7641d116bc7db545":[7,1,0,0,29,10]
 };
